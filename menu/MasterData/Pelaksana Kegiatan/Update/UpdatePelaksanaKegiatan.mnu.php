@@ -1,0 +1,26 @@
+<?php
+class UpdatePelaksanaKegiatanMenu extends MenuInterface{
+  	public $IdSatker = NULL;
+	public $IdTahun = NULL;
+	
+	public function UpdatePelaksanaKegiatanMenu(){MenuInterface::MenuInterface();}
+	public function Name(){return 'Edit Pelaksana Kegiatan';}
+	public function OnSetKey($key = array()){
+		if(
+		   $key['id__mst_satker'] != NULL&&
+		   $key['id__mst_tahun_anggaran'] != NULL
+		){		
+			$this->IdSatker = $key['id__mst_satker'];
+			$this->IdTahun = $key['id__mst_tahun_anggaran'];
+		}
+		
+		if($this->Child() != NULL)$this->Child()->OnSetKey($key);
+	}
+	public function Path(){return __FILE__;}
+	public function HaveDownloadButton(){return true;}
+	public function ClassName(){return __CLASS__;}
+	public function MakeApplication(){return SimpajatanApplication::Instance();}
+	public function MakeFrame(){return SimpajatanFrame::Instance();}
+	public function MakeDatabase(){return SimpajatanMySqlDatabase::Instance();}
+}
+?>

@@ -1,0 +1,766 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	color : #333;
+	background-color : #FFF;
+	font-size : 18px;
+	font-family : Arial;
+}
+
+#wrapper {
+        border: 0px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+}
+
+#header {
+        background-color: #FFF;
+        background-position: right top;
+        border-bottom: 4px solid #80B5D7;
+}
+
+#mambo {
+        position: relative;
+        width: 100%;
+        background: url(./images/bgheader.gif) #30569D no-repeat;
+        background-position: top right;
+        margin: 0px;
+        padding: 0px;
+}
+
+#break {
+	height: 50px;
+}
+
+form {
+    margin: 0px;
+}
+
+.content_button {
+	border : solid 1px #000000;
+	background: #E9ECEF;
+	color : #000000;
+	font-size : 11px;
+}
+
+.button {
+	border-top : solid 1px #d5d5d5;
+	border-right : solid 1px #808080;
+	border-bottom : solid 1px #808080;
+	border-left : solid 1px #d5d5d5;
+	color : #004618;
+	background-color:#92c3e3;
+	height:22px;
+	font-family:Tahoma;
+	font-size:14px;
+}
+
+.login {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6em;
+	padding: 15px;
+	border: 1px solid #cccccc;
+	width: 429px;
+	background: #F1F3F5;
+}
+	
+.login h1 {
+	background: url(../images/login_header.png) no-repeat;
+	background-position: left top;
+	color: #333;
+	margin: 0px;
+	height: 50px;
+	padding: 15px 4px 0 50px;
+ 	text-align: left;
+	font-size: 1.5em;
+}
+
+.login p {
+	padding: 0 1em 0 1em;
+	}
+	
+.form-block {
+	border: 1px solid #cccccc;
+	background: #E9ECEF;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.login-form {
+	text-align: left;
+	float: right;
+	width: 60%;
+}
+
+.login-form1 {
+	text-align: left;
+	float: left;
+	width: 20%;
+}
+
+.login-text {
+	text-align: left;
+	width: 40%;
+	float: left;
+}
+
+.inputlabel {
+	font-weight: bold;
+	text-align: left;
+	vertical-align:top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+
+.inputbox {
+        border : 1px solid #ccc;
+        z-index: -3;
+        font-size: 11px;
+		width:150px;
+		height:23px;
+}
+.content_inputbox {
+	width: 150px;
+	height: 18px;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	}
+
+.inputbox_dynamic {
+	height: 18px;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	}
+
+.textarea_dynamic {
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	}
+	
+.content_inputbox2 {
+	width: 200px;
+	height: 18px;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	}
+	
+.small_inputbox {
+	width: 50px;
+	height: 18px;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	}
+.dynamic_inputbox {
+	width:	70px;
+	height: 14px;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000066;
+	}
+.long_inputbox {
+	width: 500px;
+	height: 18px;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	}
+.text_area {
+	width: 500px;
+	height: 100px;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	}
+.clr {
+    clear:both;
+    }
+
+.ctr {
+	text-align: center;
+}
+
+.version {
+	font-size: 0.8em;
+}
+
+.footer {
+
+}
+.main {
+	border: 1px solid #d5d5d5;
+	width: 97%;
+}
+
+.main_print {
+	border: 1px solid #d5d5d5;
+	width: 90%;
+}
+
+table.menubar {
+	width: 100%;
+	
+}
+
+td {
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.menubackgr {
+	background: #F1F3F5;
+	border-bottom: 1px solid #cccccc;
+}
+
+.menuline {
+	border-bottom: 1px solid #F1F3F5;
+	border-top: 1px solid #FFF;
+}
+
+.menuline_buttom {
+	border-bottom: 1px solid #F1F3F5;
+	border-top: 1px solid #F1F3F5;
+}
+
+.menuwhiteline {
+	border-bottom: 1px solid #FFF;
+}
+
+.contentheading, .componentheading, .moduleheading {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.modulename {
+	color:	#333333 ;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 14px;
+	font-weight : bold;
+	text-align : left;
+	vertical-align : middle;
+	text-transform:uppercase;
+}
+
+.sub_modulename {
+	color :	#666666;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 14px;
+	font-weight : bold;
+	text-align : left;
+	vertical-align : middle;
+}
+table.heading td {
+	color : #000;
+}
+/* standard list style table */
+table.list {
+	background-color: #80B5D7;
+	margin: 0px;
+	padding: 10px;
+	border: 0px solid #CCCCCC;
+	border-spacing: 0px;
+	width: 98%;
+	border-collapse: collapse;
+}
+
+table.list th {
+	margin: 0px;
+	padding: 6px 4px 2px 4px;
+	height: 20px;
+	background: url(../images/background2.gif);
+	background-repeat: repeat;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight:bold;
+}
+table.list th.title {
+	text-align: left;
+}
+
+table.list th a {
+	color: #ff9900;
+}
+
+table.list tr.row0 {
+	background-color: #E5E5E5;
+}
+table.list tr.row1 {
+	background-color: #FFF;
+}
+table.list td {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 4px;
+}
+table.list tr.row0:hover {
+	background-color: #f1f1f1;
+}
+table.list tr.row1:hover {
+	background-color: #f1f1f1;
+}
+table.list td.options {
+	background-color: #ffffff;
+	font-size: 8px;
+}
+select.options, input.options {
+	font-size: 13px;
+	font-weight: normal;
+	border: 1px solid #999999;
+}
+/* standard form style table */
+table.form {
+	background-color:  #d5d5d5;
+	width: 95%;
+	border: solid 1px #d5d5d5;
+	border-collapse: collapse;
+}
+
+table.form tr.row0 {
+	background: url(../images/back2.gif);
+	background-repeat: repeat;
+ 	text-align: right;
+}
+
+table.form tr.row1 {
+	background-color: #FFFFFF;
+}
+
+table.form th {
+	font-size: 12px;
+	text-align: left;
+	height: 30px;
+	color: #000000;
+	background: url(../images/back3.gif);
+	background-repeat: repeat;
+}
+
+table.form th.buttom {
+	font-size: 14px;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align:	center;
+	height: 30px;
+	color: #ffffff;
+	background: url(../images/background2.gif);
+	background-repeat: repeat;
+}
+
+table.form td {
+	padding: 3px;
+	text-align: left;
+}
+
+table.form td.editor {
+	font-size: 9px;
+}
+
+table.cpanel td {
+	text-align: center;
+}
+
+form {
+	margin: 0px 0px 0px 0px;
+}
+
+/*Win XP tabs look n feel*/
+.dynamic-tab-pane-control.tab-pane {
+	position:	relative;
+	width:		98%;		/* width needed weird IE bug */
+	margin-right:	-2px;	/* to make room for the shadow */
+}
+
+.dynamic-tab-pane-control .tab-row .tab {
+
+	width:				116px;
+	height:				16px;
+	background-image:	url( "../images/tab.png" );
+	
+	position:		relative;
+	top:			0;
+	display:		inline;
+	float:			left;
+	overflow:		hidden;
+	
+	cursor:			Default;
+
+	margin:			1px -1px 1px 2px;
+	padding:		2px 0px 0px 0px;
+	border:			0;
+
+	z-index:		1;
+	font:			11px Tahoma;
+	white-space:	nowrap;
+	text-align:		center;
+}
+
+.dynamic-tab-pane-control .tab-row .tab.selected {
+	width:				120px !important;
+	height:				18px !important;
+	background-image:	url( "images/tab.active.png" ) !important;
+	background-repeat:	no-repeat;
+	
+	border-bottom-width:	0;
+	z-index:		3;
+	padding:		2px 0 0px 0;
+	margin:			1px -3px -3px 0px;
+	top:			-2px;
+	font:				11px Tahoma;
+}
+
+.dynamic-tab-pane-control .tab-row .tab a {
+	font:				11px Tahoma;
+	color:				Black;
+	text-decoration:	none;
+	cursor:				pointer;
+}
+
+.dynamic-tab-pane-control .tab-row .tab.hover {
+	font:				11px Tahoma;
+	width:				116px;
+	height:				16px;
+	background-image:	url( "../images/tab.hover.png" );
+	background-repeat:	no-repeat;
+	cursor:				pointer;
+}
+
+
+.dynamic-tab-pane-control .tab-page {
+	clear:			both;
+	border:			1px solid rgb( 145, 155, 156 );
+	background:		rgb( 252, 252, 254 );
+	z-index:		2;
+	position:		relative;
+	top:			-2px;
+
+	font:				11px Tahoma;
+	color:				Black;
+
+/*
+	filter:			progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#fffcfcfe, EndColorStr=#fff4f3ee, GradientType=0)
+					progid:DXImageTransform.Microsoft.Shadow(Color=#ff919899, Strength=2, Direction=135);
+*/					
+	
+	/*244, 243, 238*/
+	/* 145, 155, 156*/
+	
+	padding:		3px;
+}
+
+.dynamic-tab-pane-control .tab-row {
+	z-index:		1;
+	white-space:	nowrap;
+}
+
+
+.hand{
+	border :0;
+	cursor : pointer;
+}
+.printheading {
+	height: 23px;
+	background: url(../images/contenthead.gif)  repeat-x;
+	color: #000000;
+	text-align: right;
+	padding-top: 0px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+
+.warning {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color:#FF0000;
+	text-align:center;
+}
+
+.info_text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #241BCF;
+	text-align:left;
+}
+
+.info {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #241BCF;
+	text-align:	center;
+}
+.frame1 {
+	border: 1px solid #CCCCCC;
+}
+a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006699;
+	text-decoration: none;
+}
+a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006699;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006699;
+	text-decoration: underline;
+}
+.font_1 {
+	font-family:"Times New Roman", Times, serif;
+	font-size: 12px;
+}
+
+.td_atas {
+	font-family:"Times New Roman", Times, serif;
+	font-size: 12px;
+	border-top: 1px solid #000000;
+	border-right: none;
+	border-bottom: none;
+	border-left: 1px solid #000000;
+}
+.td_atas_bawah {
+	font-family:"Times New Roman", Times, serif;
+	font-size: 12px;
+	border-top: 1px solid #000000;
+	border-right: none;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+}
+.td_end {
+	font-family:"Times New Roman", Times, serif;
+	font-size: 12px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+}
+.td_atas_kanan {
+	font-family:"Times New Roman", Times, serif;
+	font-size: 12px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: none;
+	border-left: 1px solid #000000;
+}
+.td_kr_kanan {
+	border-top: none;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+}
+
+
+/* tab dua */
+.tabdepan{
+padding: 3px 0;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+padding-left:5px;
+font: bold 11px Arial;
+text-transform: capitalize;
+border-bottom: 1px solid #999;
+list-style-type: none;
+}
+
+.tabdepan li{
+display: inline;
+margin: 0;
+
+}
+
+.tabdepan li a{
+text-decoration: none;
+padding: 3px 5px;
+border: 1px solid #999;
+border-bottom: none;
+background-color: #b6d6eb;
+color: #2d2b2b;
+
+}
+
+.tabdepan li a:visited{
+color: #2d2b2b;
+}
+
+.tabdepan li a:hover{
+background-image:none;
+background-color: #0d58a9;
+color: white;
+}
+
+.tabdepan li a:active{
+color: black;
+}
+
+.tabdepan li a.selected{ 
+position: relative;
+top: 1px;
+}
+
+.tabdepan li a.selected{ 
+background-color: #FFF;
+border-bottom-color: white;
+}
+
+.tabdepan li a.selected:hover{ 
+text-decoration: none;
+color: black;
+}
+/* standard form style table */
+table.adminform {
+	background-color: #f9f9f9;
+	border: solid 1px #d5d5d5;
+	padding: 10px;
+	border-collapse: collapse;
+}
+
+/* header block */
+table.adminheading {
+	font-family : Arial, Helvetica, sans-serif;
+	padding: 0px;
+	border: 0px;
+	border-collapse: collapse;
+	color: #C64934;
+	font-size : 18px;
+	font-weight: bold;
+	text-align: left;
+}
+
+/* standard list style table */
+table.adminlist {
+	background-color: #FFFFFF;
+	padding: 0px;
+	border: 1px solid #ddd;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+table.adminlist2 {
+	background-color: #FFFFFF;
+	padding: 0px;
+	border: 1px solid #ddd;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+table.adminlist2 th {
+	margin: 0px;
+	padding: 6px 4px 2px 4px;
+	height: 25px;
+	background: url(../images/background.jpg);
+	background-repeat: repeat;
+	font-size: 11px;
+	color: #000;
+}
+
+table.adminlist th {
+	margin: 0px;
+	padding: 6px 4px 2px 4px;
+	height: 25px;
+	background: url(../images/background.jpg);
+	background-repeat: repeat;
+	font-size: 11px;
+	color: #000;
+}
+table.adminlist th.title {
+	text-align: left;
+}
+
+table.adminlist th a:link, table.adminlist th a:visited {
+	color: #c64934;
+	text-decoration: none;
+}
+
+table.adminlist th a:hover {
+	text-decoration: underline;
+}
+
+table.adminlist tr.row0 {
+	background-color: #F9F9F9;
+	text-align: left;
+}
+table.adminlist tr.row1 {
+	background-color: #FFF;
+	text-align: left;
+}
+table.adminlist td {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 4px;
+}
+table.adminlist tr.row0:hover {
+	background-color: #f1f1f1;
+}
+table.adminlist tr.row1:hover {
+	background-color: #f1f1f1;
+}
+table.adminlist td.options {
+	background-color: #ffffff;
+	font-size: 8px;
+}
+select.options, input.options {
+	font-size: 8px;
+	font-weight: normal;
+	border: 1px solid #999999;
+}
+/* standard form style table */
+table.adminform {
+	background-color: #f9f9f9;
+	border: solid 1px #d5d5d5;
+	width: 98%;
+	padding: 10px;
+	border-collapse: collapse;
+}
+table.adminform tr.row0 {
+	background-color: #f9f9f9;
+}
+table.adminform tr.row1 {
+	background-color: #eeeeee;
+}
+table.adminform th {
+	font-size: 11px;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+	height: 25px;
+	background: url(../images/background.jpg);
+	color: #000;
+	background-repeat: repeat;
+}
+table.adminform td {
+	padding: 3px;
+	text-align: left;
+}
+table.adminform td.editor {
+	font-size: 9px;
+}
+
+table.cpanel td {
+	text-align: center;
+}
+

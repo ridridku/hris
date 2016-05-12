@@ -1,0 +1,77 @@
+.site-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/site/site-normal-big.gif) 0 0px no-repeat;}
+.site-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/site/site-serius-big.gif) 0 0px no-repeat;}
+.site-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/site/site-fatal-big.gif) 0 0px no-repeat;}
+
+
+.pac-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/pac/pac-normal-big.gif) 0 0px no-repeat;}
+.pac-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/pac/pac-serius-big.gif) 0 0px no-repeat;}
+.pac-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/pac/pac-fatal-big.gif) 0 0px no-repeat;}
+
+
+.battery-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/battery/battery-normal-big.gif) 0 0px no-repeat;}
+.battery-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/battery/battery-serius-big.gif) 0 0px no-repeat;}
+.battery-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/battery/battery-fatal-big.gif) 0 0px no-repeat;}
+
+.gedung-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/gedung/gedung-normal-big.gif) 0 0px no-repeat;}
+.gedung-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/gedung/gedung-serius-big.gif) 0 0px no-repeat;}
+.gedung-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/gedung/gedung-fatal-big.gif) 0 0px no-repeat;}
+
+.genset-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/genset/genset-normal-big.gif) 0 0px no-repeat;}
+.genset-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/genset/genset-serius-big.gif) 0 0px no-repeat;}
+.genset-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/genset/genset-fatal-big.gif) 0 0px no-repeat;}
+
+.lantai-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/lantai/lantai-normal-big.gif) 0 0px no-repeat;}
+.lantai-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/lantai/lantai-serius-big.gif) 0 0px no-repeat;}
+.lantai-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/lantai/lantai-fatal-big.gif) 0 0px no-repeat;}
+
+.rectifier-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/rectifier/rectifier-normal-big.gif) 0 0px no-repeat;}
+.rectifier-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/rectifier/rectifier-serius-big.gif) 0 0px no-repeat;}
+.rectifier-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/rectifier/rectifier-fatal-big.gif) 0 0px no-repeat;}
+
+.ruangan-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/ruangan/ruangan-normal-big.gif) 0 0px no-repeat;}
+.ruangan-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/ruangan/ruangan-serius-big.gif) 0 0px no-repeat;}
+.ruangan-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/ruangan/ruangan-fatal-big.gif) 0 0px no-repeat;}
+
+.ups-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/ups/ups-normal-big.gif) 0 0px no-repeat;}
+.ups-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/ups/ups-serius-big.gif) 0 0px no-repeat;}
+.ups-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/ups/ups-fatal-big.gif) 0 0px no-repeat;}
+
+.firealarm-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/firealarm/firealarm-normal-big.gif) 0 0px no-repeat;}
+.firealarm-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/firealarm/firealarm-serius-big.gif) 0 0px no-repeat;}
+.firealarm-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/firealarm/firealarm-fatal-big.gif) 0 0px no-repeat;}
+
+.mpls-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/mpls/mpls-normal-big.gif) 0 0px no-repeat;}
+.mpls-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/mpls/mpls-serius-big.gif) 0 0px no-repeat;}
+.mpls-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/mpls/mpls-fatal-big.gif) 0 0px no-repeat;}
+
+.cctv-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/cctv/cctv-normal-big.gif) 0 0px no-repeat;}
+.cctv-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/cctv/cctv-serius-big.gif) 0 0px no-repeat;}
+.cctv-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/cctv/cctv-fatal-big.gif) 0 0px no-repeat;}
+
+.modulerectifier-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/modulerectifier/modulerectifier-normal-big.gif) 0 0px no-repeat;}
+.modulerectifier-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/modulerectifier/modulerectifier-serius-big.gif) 0 0px no-repeat;}
+.modulerectifier-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/modulerectifier/modulerectifier-fatal-big.gif) 0 0px no-repeat;}
+
+.ats-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/ats/ats-normal-big.gif) 0 0px no-repeat;}
+.ats-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/ats/ats-serius-big.gif) 0 0px no-repeat;}
+.ats-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/ats/ats-fatal-big.gif) 0 0px no-repeat;}
+
+.batbank-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/batbank/batbank-normal-big.gif) 0 0px no-repeat;}
+.batbank-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/batbank/batbank-serius-big.gif) 0 0px no-repeat;}
+.batbank-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/batbank/batbank-fatal-big.gif) 0 0px no-repeat;}
+
+.batcell-normal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/batcell/batcell-normal-big.gif) 0 0px no-repeat;}
+.batcell-serius {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/batcell/batcell-serius-big.gif) 0 0px no-repeat;}
+.batcell-fatal {cursor: move;position: absolute;overflow:visible;display:block; width:34px; height: 34px; padding-left:34px;background: transparent url(../images/icon/batcell/batcell-fatal-big.gif) 0 0px no-repeat;}
+
+.param-normal { cursor: move;position: absolute;overflow:visible;display:block; height: 34px; padding-left: 34px; background: transparent url(../images/icon/param/param-normal-big.gif) 0 0px no-repeat;}
+.param-serius { cursor: move;position: absolute;overflow:visible;display:block; height: 34px; padding-left: 34px; background: transparent url(../images/icon/param/param-serius-big.gif) 0 0px no-repeat;}
+.param-fatal { cursor: move;position: absolute;overflow:visible;display:block; height: 34px; padding-left: 34px; background: transparent url(../images/icon/param/param-fatal-big.gif) 0 0px no-repeat;}
+
+.event-normal { cursor: move;position: absolute;overflow:visible;display:block; height: 34px; padding-left: 34px; background: transparent url(../images/icon/event/event-normal-big.gif) 0 0px no-repeat;}
+.event-serius { cursor: move;position: absolute;overflow:visible;display:block; height: 34px; padding-left: 34px; background: transparent url(../images/icon/event/event-serius-big.gif) 0 0px no-repeat;}
+.event-fatal { cursor: move;position: absolute;overflow:visible;display:block; height: 34px; padding-left: 34px; background: transparent url(../images/icon/event/event-fatal-big.gif) 0 0px no-repeat;}
+
+.sentor-normal { cursor: move;position: absolute;overflow:visible;display:block; height: 34px; padding-left: 34px; background: transparent url(../images/icon/sentor/sentor-normal-big.gif) 0 0px no-repeat;}
+.sentor-serius { cursor: move;position: absolute;overflow:visible;display:block; height: 34px; padding-left: 34px; background: transparent url(../images/icon/sentor/sentor-serius-big.gif) 0 0px no-repeat;}
+.sentor-fatal { cursor: move;position: absolute;overflow:visible;display:block; height: 34px; padding-left: 34px; background: transparent url(../images/icon/sentor/sentor-fatal-big.gif) 0 0px no-repeat;}

@@ -1,0 +1,54 @@
+<SCRIPT LANGUAGE="JavaScript">
+
+function cari(jenis_user)
+{
+// alert(jenis_user);
+if (jenis_user != '') {
+	http.open('get', 'index2.php?get_item_detail=1&jenis_user='+jenis_user);
+	http.onreadystatechange = handlechoice3; 
+	http.send(null);
+	} 
+}
+
+function handlechoice3(){
+if(http.readyState == 4)
+	{ 
+		var response = http.responseText;
+		var a = response.split('^/&');
+ 
+		document.getElementById('ajax_instansi').innerHTML = a[0];
+		document.getElementById('ajax_propinsi').innerHTML = a[1];
+ 
+ 
+		 
+		
+     }
+}
+
+ 
+function cari_satker(id_propinsi)
+{
+ 
+if (id_propinsi != '') {
+	http.open('get', 'index2.php?get_propinsi=1&id_propinsi='+id_propinsi);
+	http.onreadystatechange = handlechoice4; 
+	http.send(null);
+	} 
+}
+
+function handlechoice4(){
+if(http.readyState == 4)
+	{ 
+		var response = http.responseText;
+		var a = response.split('^/&');
+ 		document.getElementById('ajax_instansi').innerHTML = a[0];
+  
+ 
+		 
+		
+     }
+}
+
+
+</SCRIPT>
+

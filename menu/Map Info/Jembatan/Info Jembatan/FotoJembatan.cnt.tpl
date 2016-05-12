@@ -1,0 +1,1 @@
+<img height="{$height}" width="{$width}" id="dd-demo-canvas1" src="{$foto}" />  

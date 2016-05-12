@@ -1,0 +1,136 @@
+<?php
+
+# Including Main Configuration
+# including file for Main Configurations
+require_once('../../../includes/config.conf.php');	 	
+
+
+# Create a session to store global config path
+session_save_path($DIR_SESS);
+//$expiry = 60*120;
+session_set_cookie_params($expiry);
+session_start();
+
+if ((!isset($_SESSION['UID'])) || (empty($_SESSION['UID']))){
+		require_once('../../../includes/header.redirect.inc');
+}else{
+
+//yang harus dibuat session
+$THEME = base64_encode("default");
+$LANG = base64_encode("indonesia");
+$_SESSION['THEME']	= $THEME;
+$_SESSION['LANG']   = $LANG;
+
+# including Header file for Content Expiring
+require_once($DIR_INC.'/header.exp.inc');
+# including Header file for Database Configuration
+require_once($DIR_INC.'/db.conf.php');
+require_once($DIR_ADODB.'/adodb.inc.php');
+require_once($DIR_INC.'/class.locker.php');
+
+$db = &ADONewConnection($DB_TYPE);
+//$db->debug = true;
+$db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
+//------------------------------------LOCAL CONFIG--------------------------------------//
+
+#IMAGES
+$DIR_IMAGES = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images');
+
+#SETTING FOR TEMPLATE 
+$TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/administrasi_sistem/daftar_user';
+
+
+#SETTING FILE JS INCLUDE
+$JS_MODUL = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts/modules/administrasi_sistem');
+$FILE_JS  = $JS_MODUL.'/daftar_user';
+
+
+#Initiate TABLE
+$tbl_name	= "tbl_sys_master_user";
+//$field_name	= "USER";
+
+
+//-----------------------------------END OF LOCAL CONFIG-------------------------------//
+
+function delete_($id){
+global $db;
+global $tbl_name;
+global $field_name;
+$sql  ="DELETE ";
+$sql .="FROM ".$tbl_name." ";
+$sql .="WHERE user_id = '$id' ";
+$sqlresult = $db->Execute($sql);
+
+
+ $ip_now = $_SERVER['REMOTE_ADDR'];
+ $user_id = base64_decode($_SESSION['UID']);
+ $sql2="INSERT INTO tbl_log (url, waktu, module, user_id )  VALUES ('$ip_now',now(),'Hapus data >> User','$user_id') ";
+ $db->Execute($sql2);
+
+
+}
+
+function edit_($first_name, $last_name, $address, $telp, $gender, $email, $id, $password, $status, $level, $no_propinsi, $no_kabupaten){
+global $db;
+global $tbl_name;
+global $field_name;
+
+
+$sql  ="UPDATE ".$tbl_name." ";
+$sql .="SET user_first_name='".strip_tags(strtoupper($first_name))."',user_last_name='".strip_tags(strtoupper($last_name))."',user_address='".strip_tags($address)."',user_telp='".strip_tags($telp)."',user_gender='".strip_tags($gender)."', user_email='".$email."', user_password='".strip_tags(base64_encode($password))."', user_active_status='".strip_tags($status)."', ";
+$sql .="level= '$_POST[jenis_user]', no_propinsi='".$no_propinsi."', no_kabupaten='".$no_kabupaten."', kode_perwakilan='$_POST[kode_perwakilan]'  WHERE user_id = '".strip_tags($id)."' ";
+$sqlresult = $db->Execute($sql);
+
+
+ $ip_now = $_SERVER['REMOTE_ADDR'];
+ $user_id = base64_decode($_SESSION['UID']);
+ $sql2="INSERT INTO tbl_log (url, waktu, module, user_id )  VALUES ('$ip_now',now(),'Ubah data >> User','$user_id') ";
+ $db->Execute($sql2);
+
+
+
+}
+
+function create_($first_name, $last_name, $address, $telp, $gender, $email, $id, $password, $status, $level, $no_propinsi, $no_kabupaten){
+global $db;
+global $tbl_name;
+global $field_name;
+
+$sql	 = "INSERT INTO ".$tbl_name." ";
+$sql	.= "(user_id, user_password, user_first_name, user_last_name, user_date_join, user_address, user_telp, user_gender, user_email, user_active_status, level, no_propinsi, no_kabupaten,kode_perwakilan) ";
+$sql	.= "VALUES ('".strip_tags($id)."','".strip_tags(base64_encode($password))."', '".strip_tags(strtoupper($first_name))."','".strip_tags(strtoupper($last_name))."', now(), '".strip_tags($address)."', '".strip_tags($telp)."', '".strip_tags($gender)."','".$email."', '".$status."', '$_POST[jenis_user]', '".$no_propinsi."', '".$no_kabupaten."','$_POST[kode_perwakilan]')";
+$sqlresult = $db->Execute($sql);
+
+ $ip_now = $_SERVER['REMOTE_ADDR'];
+ $user_id = base64_decode($_SESSION['UID']);
+ $sql2="INSERT INTO tbl_log (url, waktu, module, user_id )  VALUES ('$ip_now',now(),'Hapus data >> User','$user_id') ";
+ $db->Execute($sql2);
+
+
+
+}
+
+
+if($_POST[op]) $op = $_POST[op]; else $op = $_GET[op];
+
+lockTables($tbl_name);
+
+switch ($op){
+
+case 0:
+	create_($_POST['user_first_name'], $_POST['user_last_name'], $_POST['user_address'], $_POST['user_telp'], $_POST['user_gender'], $_POST['user_email'], $_POST['user_id'], $_POST['user_password'], $_POST['user_status'], $_POST['jns_jln'], $_POST['no_propinsi'], $_POST['no_kabupaten']);
+
+break;
+case 1:
+	edit_($_POST['user_first_name'], $_POST['user_last_name'], $_POST['user_address'], $_POST['user_telp'], $_POST['user_gender'], $_POST['user_email'], $_POST['user_id'], $_POST['user_password'], $_POST['user_status'], $_POST['jns_jln'], $_POST['no_propinsi'], $_POST['no_kabupaten']);
+break;
+case 2:
+	delete_($_GET['user_id']);
+break;
+}
+
+unlockTables($tbl_name);
+	Header("Location:index.php?limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]."&jns_jln=".$_POST[jns_jln]."&no_propinsi=".$_POST['no_propinsi']."&no_kabupaten=".$_POST['no_kabupaten']);
+
+}
+?>

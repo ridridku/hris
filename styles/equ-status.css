@@ -1,0 +1,87 @@
+#treewrapper {background: #fff; position:relative;}
+#treediv {position:relative; width:250px; background: #fff; padding:1em;}
+.htmlnodelabel { margin-left: 20px; }
+
+.indo-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/indo/indo-normal.bmp) 0 0px no-repeat;}
+.indo-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/indo/indo-serius.bmp) 0 0px no-repeat;}
+.indo-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/indo/indo-fatal.gif) 0 0px no-repeat;}
+
+.site-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/site/site-normal.gif) 0 0px no-repeat;}
+.site-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/site/site-serius.gif) 0 0px no-repeat;}
+.site-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/site/site-fatal.gif) 0 0px no-repeat;}
+
+.ac-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ac/ac-normal.gif) 0 0px no-repeat;}
+.ac-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ac/ac-serius.gif) 0 0px no-repeat;}
+.ac-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ac/ac-fatal.gif) 0 0px no-repeat;}
+
+.battery-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/battery/battery-normal.gif) 0 0px no-repeat;}
+.battery-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/battery/battery-serius.gif) 0 0px no-repeat;}
+.battery-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/battery/battery-fatal.gif) 0 0px no-repeat;}
+
+.gedung-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/gedung/gedung-normal.gif) 0 0px no-repeat;}
+.gedung-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/gedung/gedung-serius.gif) 0 0px no-repeat;}
+.gedung-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/gedung/gedung-fatal.gif) 0 0px no-repeat;}
+
+.genset-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/genset/genset-normal.gif) 0 0px no-repeat;}
+.genset-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/genset/genset-serius.gif) 0 0px no-repeat;}
+.genset-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/genset/genset-fatal.gif) 0 0px no-repeat;}
+
+.lantai-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/lantai/lantai-normal.gif) 0 0px no-repeat;}
+.lantai-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/lantai/lantai-serius.gif) 0 0px no-repeat;}
+.lantai-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/lantai/lantai-fatal.gif) 0 0px no-repeat;}
+
+.rectifier-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/rectifier/rectifier-normal.gif) 0 0px no-repeat;}
+.rectifier-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/rectifier/rectifier-serius.gif) 0 0px no-repeat;}
+.rectifier-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/rectifier/rectifier-fatal.gif) 0 0px no-repeat;}
+
+.ruangan-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ruangan/ruangan-normal.gif) 0 0px no-repeat;}
+.ruangan-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ruangan/ruangan-serius.gif) 0 0px no-repeat;}
+.ruangan-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ruangan/ruangan-fatal.gif) 0 0px no-repeat;}
+
+.ups-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ups/ups-normal.gif) 0 0px no-repeat;}
+.ups-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ups/ups-serius.gif) 0 0px no-repeat;}
+.ups-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ups/ups-fatal.gif) 0 0px no-repeat;}
+
+.firealarm-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/firealarm/firealarm-normal.gif) 0 0px no-repeat;}
+.firealarm-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/firealarm/firealarm-serius.gif) 0 0px no-repeat;}
+.firealarm-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/firealarm/firealarm-fatal.gif) 0 0px no-repeat;}
+
+.pac-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/pac/pac-normal.gif) 0 0px no-repeat;}
+.pac-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/pac/pac-serius.gif) 0 0px no-repeat;}
+.pac-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/pac/pac-fatal.gif) 0 0px no-repeat;}
+
+.mpls-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/mpls/mpls-normal.gif) 0 0px no-repeat;}
+.mpls-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/mpls/mpls-serius.gif) 0 0px no-repeat;}
+.mpls-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/mpls/mpls-fatal.gif) 0 0px no-repeat;}
+
+.cctv-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/cctv/cctv-normal.gif) 0 0px no-repeat;}
+.cctv-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/cctv/cctv-serius.gif) 0 0px no-repeat;}
+.cctv-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/cctv/cctv-fatal.gif) 0 0px no-repeat;}
+
+.modulerectifier-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/modulerectifier/modulerectifier-normal.gif) 0 0px no-repeat;}
+.modulerectifier-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/modulerectifier/modulerectifier-serius.gif) 0 0px no-repeat;}
+.modulerectifier-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/modulerectifier/modulerectifier-fatal.gif) 0 0px no-repeat;}
+
+.ats-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ats/ats-normal.gif) 0 0px no-repeat;}
+.ats-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ats/ats-serius.gif) 0 0px no-repeat;}
+.ats-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/ats/ats-fatal.gif) 0 0px no-repeat;}
+
+.batbank-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/battery/battery-normal.bmp) 0 0px no-repeat;}
+.batbank-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/battery/battery-serius.bmp) 0 0px no-repeat;}
+.batbank-putus { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/battery/battery-fatal.bmp) 0 0px no-repeat;}
+
+.batcell-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/battery/battery-normal.bmp) 0 0px no-repeat;}
+.batcell-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/battery/battery-serius.bmp) 0 0px no-repeat;}
+.batcell-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/battery/battery-fatal.bmp) 0 0px no-repeat;}
+
+.param-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/param/param-normal.gif) 0 0px no-repeat;}
+.param-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/param/param-serius.gif) 0 0px no-repeat;}
+.param-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/param/param-fatal.gif) 0 0px no-repeat;}
+
+.event-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/event/event-normal.gif) 0 0px no-repeat;}
+.event-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/event/event-serius.gif) 0 0px no-repeat;}
+.event-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/event/event-fatal.gif) 0 0px no-repeat;}
+
+.sentor-normal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/sentor/sentor-normal.gif) 0 0px no-repeat;}
+.sentor-serius { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/sentor/sentor-serius.gif) 0 0px no-repeat;}
+.sentor-fatal { display:block; height: 15px; padding-left: 30px; background: transparent url(../images/icon/sentor/sentor-fatal.gif) 0 0px no-repeat;}

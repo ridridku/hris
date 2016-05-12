@@ -1,0 +1,632 @@
+BODY	{
+		margin-left:4px; margin-right:1px;
+		background: url('../images/top_shaddow.gif') repeat-x;margin-top:10px;
+		background-attachment: fixed;
+		font: 11px/22px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		}
+.text-regular
+		{
+		font: 11px/22px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		}		
+.text-paging	
+		{
+		font: 10px/22px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		margin:0px; padding: 0px;
+		}	
+BODY.login	{
+		background:url(../images/bg.gif);
+		background-repeat:repeat-x;
+		margin:0;
+		}
+table.list
+        {
+        width: 100%;       
+        border-collapse:collapse;    
+        margin-top:0px;
+        padding-top:0px;    
+        }
+.tbheader
+	{
+	background:#fff;
+	font: 12px/22px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	width:100%;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+	}       
+ 
+table.normal
+        {
+        width: auto;        
+        padding: 1;
+        margin: 5 auto 0.5em auto;
+        border: 1px solid #f5e9db;
+        border-collapse:collapse;
+        }
+table.form
+		{
+		padding: 10px 10px 0 0;
+		margin-top: 10px;
+		}        
+td.normal
+		{
+		padding: 5px 10 0 20;
+		font: 12px/22px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		color: #666;
+		}  
+td.cols1{
+		width: 175px;
+		padding: 5px 10 0 20;
+		font: 12px/22px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		color: #666;
+		}		
+td.sublist
+		{
+		padding: 2px 0 0 5;
+		font: 11px/20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		color: #666;
+		} 		
+td.pagging
+		{
+		padding: 0px;
+		font: 11px/22px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		color: #666;
+		} 		              
+.cs1
+        {
+        width:30em;
+        }
+.cs2
+        {
+        width:20em;
+        }
+.cs1 td,
+.cs2 td,
+#scientificNotation
+        {
+        text-align:right;
+        }
+caption
+        {
+        padding: 0 0 5px 0;
+        margin:0 auto;
+        width:auto;
+        font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+        text-align: right;
+        }
+/*
+th
+        {
+	margin-top:0px; margin-left:0px; margin-right:0px;
+	padding-left:2px;
+	padding-top:6px;
+	padding-bottom:6px;
+	background: transparent #fcfcfc url(../images/layout/grid3-hrow.gif) repeat-x 1 bottom;
+	font:normal 12px arial,tahoma,helvetica,sans-serif;       
+	border-right: 1px solid #fff; 
+        }
+        */
+td.total
+        {
+        border-top: 0;
+        border-left: 0;
+        border-right: 1px solid #f5e9db;
+        background: none;
+        text-align:right;
+        font-weight:bold;
+        text-transform:uppercase;
+        letter-spacing:1px;
+        }
+th.sortable,
+th.sortable-text,
+th.sortable-date,
+th.sortable-keep,
+th.sortable-date-dmy,
+th.sortable-numeric,
+th.sortable-currency,
+th.sortable-sortByTwelveHourTimestamp,
+th.sortable-sortIPAddress,
+th.sortable-sortEnglishLonghandDateFormat,
+th.sortable-sortScientificNotation,
+th.sortable-sortImage,
+th.sortable-sortFileSize
+
+        {
+        cursor:pointer;
+        background: #CAE8EA url(../images/tables/bg_headf.jpg) no-repeat;
+        padding: 8px 12px 4px 16px;
+        }
+th.forwardSort
+        {
+        background:#CAE8EA url(../images/tables/bg_headg.jpg) no-repeat 0 0;
+        }
+th.reverseSort
+        {
+        background:#CAE8EA url(../images/tables/bg_headh.jpg) no-repeat 0 0;
+        }
+th.forwardSort a,
+th.reverseSort a
+        {
+        color:#000;
+        outline:0 none;
+        }
+/*
+These styles should be added when very long tables are expected
+th.sort-active
+        {
+        background:#CAE8EA url(../images/tables/bg_header_sorting.jpg) no-repeat 0 0;
+        cursor:wait;
+        }
+th.sort-active a
+        {
+        color:#a80000 !important;
+        cursor:wait;
+        }
+*/
+th a
+        {
+        text-decoration:none;
+        color: #4f6b72;
+        }
+/*
+td a
+        {
+        text-decoration:none;
+        color:#239;
+        }
+td
+        {
+        margin:0 auto;
+        border:0px solid #ddd;
+        }
+
+
+td a:hover
+        {
+        color:#a84444;
+        border-bottom:1px dotted #a80000;
+        }
+*/
+
+td.list
+        {        
+        font: normal 10px  sans-serif, "Trebuchet MS", Verdana, Arial, Helvetica;
+        border-right: 0px solid #f5e9db;
+        border-bottom: 1px solid #d0d0d0;
+        padding: 2px 6px 2px 6px;
+        font-weight:normal;
+        }
+.first-cols       
+        {
+        background: transparent url(../images/layout/grid3-special-col-bg.gif) repeat-y right;
+        font: normal 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+        border-right: 0px solid #f5e9db;
+        border-bottom: 1px solid #d0d0d0;
+        padding: 2px 6px 2px 6px;
+
+        font-weight:normal;  
+        text-align:right;      
+        }
+td.lft
+        {
+        text-align:left;
+        }
+tr.alt
+        {        
+		background: #FDFDFD;
+        }
+/* Poor old Internet Explorer has a bug that means we can't use background images for the table rows
+   as it trys to download the image each and every time that it is used... */
+tr[class="alt"] td
+        {
+        background: #F5FAFA url(../images/tables/td_alt00.jpg) no-repeat;
+        }
+td[class~="alt"]
+        {
+        background: #fff url(../images/tables/col_alt0.jpg) no-repeat !important;
+        }
+/* Poor old Internet Explorer won't see the next two rules either */
+tbody tr.alt td:first-child
+        {
+        font-weight:bold;
+        }
+tbody tr td:first-child
+        {
+        font-weight:bold;
+        }
+fieldset
+		{
+	    border:1px solid #B5B8C8;
+	    padding:10px;
+	    margin-bottom:10px;
+	    padding-top: 0;
+	    padding-bottom:5px;	
+		}
+fieldset legend {
+    font:bold 11px tahoma, arial, helvetica, sans-serif;
+    color:#15428b;
+    margin-bottom:10px;
+}		
+fieldset legend.login {
+    font:bold 14px sans-serif, tahoma, arial, helvetica;
+    color:#15428b;
+    margin-top:40px;
+    margin-bottom:20px;
+    padding-bottom:5px;
+}	
+table td.login
+			{
+			font:normal 12px/20px sans-serif, tahoma, arial, helvetica;
+			text-align: right;
+			padding-right:10px;
+			}
+form   	{
+		margin: 0px;
+		padding: 0px;
+		}	
+input, textarea, select
+		{
+	    padding: 0px 3px;
+	    background:#fff url(../images/form/text-bg.gif) repeat-x 0 0;
+	    border: 1px solid #B5B8C8;		
+	    margin-top:-1px; /* ie bogus margin bug */
+   		margin-bottom:-1px;
+	    vertical-align:middle;
+	    font: 11px/20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	    line-height: 1.4;
+		}	
+.input2
+		{
+	    padding: 0px 3px;
+	    background:#fff url(../images/form/text-bg2.gif) repeat-x 0 0;
+	    border: 1px solid #CAC7C7;		
+	    margin-top:-1px; /* ie bogus margin bug */
+   		margin-bottom:-1px;
+	    vertical-align:middle;
+	    font: 11px/20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	    line-height: 1.4;
+		}		
+input.radio, input.checkbox
+		{
+		border:0px;
+		background:none;
+		vertical-align:middle;
+	    font: 11px/20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		}			
+.pager
+		{
+		font: bold 10px/20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		text-align: center;
+		vertical-align: middle;
+		margin: 0px;
+		padding: 0px;
+		line-height: 17px;
+		border: 1px solid #f5e9db;
+		}	
+		
+/*
+
+Nice Button CSS
+
+*/
+
+.clear {
+	overflow: hidden;
+	width: 100%;
+}
+
+a.button {
+    background: transparent url('../images/button/bg_butto2.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 13px arial, sans-serif;
+    height: 24px;
+    margin-right: 3px;
+    padding-right: 3px;
+    text-decoration: none;
+}
+
+a.button span {
+    background: transparent url('../images/button/bg_buttp2.gif') no-repeat;
+    display: block;
+    line-height: 14px;  
+    padding: 5px 10 3px 10px;   
+}
+
+a.button:hover {
+    background-position: bottom right;
+    color: #000;
+    outline: none;
+}
+a.button:hover span{
+    background-position: bottom left;
+    padding: 5px 10 3px 10px;  
+}
+
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none;
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 5px 10 3px 10px;   
+}		
+
+img		{
+			border: 0;
+			}
+
+.imgLink{
+	CURSOR: pointer;
+}			
+
+/* PANEL BOX */
+
+#panel-box
+	{
+	left: 34%;
+	right: 35%;
+	top: 200;
+	text-align: left;	
+	border: 1px solid #000;
+	padding-left:1px;
+	padding-right:0px;
+	background:#FFF;
+	position:absolute;
+ 	width:400px;
+ 	z-index:100;
+	}
+#title-box-close
+	{
+	position:absolute;
+	right:5px;
+	top:5px;	
+	}	
+#title-box
+	{
+	border-top:1px solid #9bbde9;
+	border-left:1px solid #9bbde9;
+	border-right:1px solid #9bbde9;
+	margin-top:2px; margin-left:2px; margin-right:0px;
+	padding-left:4px; padding-right:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background: #FFF url(../images/layout/grid-hro.gif) repeat-x ;
+	font: 12px arial,tahoma,helvetica,sans-serif;
+	color: #083772;
+	}
+#title-box2
+	{
+	margin-top:1px; 
+	margin-left:1px; 
+	margin-right:1px;
+	padding-left:4px; padding-right:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-top:1px solid #E9E9E9;
+	background-color:#FFFFB3;
+	font:normal 11px arial,tahoma,helvetica,sans-serif;
+	}	
+#panel-footer
+	{
+	margin-top:0px; margin-left:0px; margin-right:0px;
+	padding-left:0px; padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	border-top:1px solid #ebf3fd;
+	background: transparent #F5F5F5 url(../images/layout/grid3-hrow.gif) repeat-x 0 bottom;
+	font:normal 11px arial,tahoma,helvetica,sans-serif;
+	}	
+#panel-content
+	{
+	margin:1px;
+	background:#FFFFFF;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:5px;
+	padding-right:5px;
+	}	
+a.menu-tree
+	{
+	text-decoration:none;
+	color:#333;	
+	}	
+#add-search-box	
+	{	
+	position:relative; width:330; top:45; right:2px; z-index:1;	
+	float:right;
+	}		
+#add_item_data
+	{
+	position:relative; top:-25; right:2; z-index:1;		
+	float:right;
+	}
+.div-add-box
+	{	
+ 	position:absolute;  	
+ 	margin:0 auto;
+ 	width:300px;
+ 	z-index:100;
+	}
+#table-add-box
+	{
+	margin-left:15px;
+	top:15px;
+	bottom:10px;
+	padding:10px;	
+	font:normal 11px arial,tahoma,helvetica,sans-serif;
+	}
+#table-search-box
+	{	
+	font:normal 11px arial,tahoma,helvetica,sans-serif;
+	}
+
+/*
+
+
+COBA AJA .... SMOGA BETE-NYA ILANG
+
+
+*/	
+
+.tborder
+{
+	background: #ffffff;
+	color: #000000;
+	border: 1px solid #9bbde9;
+}
+.tcat
+{
+	background: #c3daf9 url(../images/layout/grid-hro.gif) repeat-x;
+	color: #083772;
+	font-size: 12px;
+	font-weight:bold;
+	padding:3px;
+	line-height:30px;
+}
+.tcat a:link, .tcat_alink
+{
+	color: #083772;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	color: #083772;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	color: #083772;
+	text-decoration: underline;
+}
+.thead
+{
+	background: #c3daf9 url(../images/layout/bg000000.gif) repeat-x;
+	color: #083772;
+	font-size: 11px;
+}
+.thead a:link, .thead_alink
+{
+	color: #083772;
+}
+.thead a:visited, .thead_avisited
+{
+	color: #083772;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+	color: #083772;
+}
+.tdatahead
+	{
+	font-size: 11px;
+	border-left:1px solid #fff;
+	border-bottom:1px solid #fff;
+	}
+.tdatacontent
+	{
+	font-size: 11px;
+	background:#fff;
+	border-collapse:collapse;
+	padding-left:4px;
+	padding-right:4px;
+	vertical-align:top;
+	}	
+.tdatacontentsum
+	{
+	font-size: 11px;
+	background:#FBFBFB;
+	border-collapse:collapse;
+	border-bottom:1px solid #fff;
+	border-left:1px solid #fff;
+	padding-left:4px;
+	padding-right:4px;
+	}	
+.tdatacontentsum2
+	{
+	font-size: 11px;
+	background:#F7F7F7;
+	border-collapse:collapse;
+	border-bottom:1px solid #fff;
+	border-left:1px solid #fff;
+	padding-left:4px;
+	padding-right:4px;
+	}	
+.tdatacontent-first-col
+	{
+	font-size: 11px;
+	background: #f3f6fa; //#eef2f8;
+	padding-right:4px;
+	text-align:right;
+	border-top:1px solid #fff;
+	}	
+.tfoot
+{
+	background: #c3daf9 url(../images/layout/bg000000.gif) repeat-x;
+	color: #083772;
+	font-size: 11px;
+	padding:3px;
+}
+.tfoot a:link, .tfoot_alink
+{
+	color: #083772;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+	color: #083772;
+}
+
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+	color: #083772;
+}
+
+.alt1, .alt1Active
+{
+	background: #ffffff;
+	color: #000000;
+}
+
+.alt2, .alt2Active
+{
+	background: #eef2f8;
+	color: #000000;
+}
+
+/* COBA TRANSPARANT BG */
+
+#div-bg-note-trans
+	{
+	display:none;
+	position:relative; bottom:200; right:50; z-index:100;	
+	float:right;
+	}
+
+.table_note 
+{
+	border:1 solid #ccc;
+	margin:0 0;
+	padding:0px;	
+	}
+	
+.td_note_cols_1 
+{
+	padding-left:4px;
+	background:#f3f6fa;
+	width:30px;
+	border-left:1 dash #ccc;
+	border-right:1 dash $ccc;
+	font:11px/21px;
+	text-align:center;
+	}
+	
+.td_note_cols_2
+	{
+	padding-left:4px;
+	background:#ffffff;
+	border-right:1 dash $ccc;
+	font:11px/21px;
+}
+	

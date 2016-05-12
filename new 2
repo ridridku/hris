@@ -1,0 +1,13 @@
+//}
+		$z++;
+		Header("Location:index.php?mod_id=$mod_id&no_propinsi=".$_POST[no_propinsi]."&no_kabupaten=".$_POST[no_kabupaten]."&Search_Year=".$_POST[Search_Year]."&search=1&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]."&jns_jln=".$_POST[jns_jln]);
+		} //end if2
+		
+		}//end while1
+		}else {
+		   echo "Tidak ada data yang akan di eksport";
+	
+		}//end if 2
+		
+	}	//end else
+}//end func

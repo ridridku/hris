@@ -1,0 +1,46 @@
+<?php 
+require_once FW_DIR . '/constant/RowModifier.cst.php';
+
+class GridDataReferencePointRowModifier implements RowModifierInterface
+{
+  public function Modify(&$aRow, MenuInterface $modified){
+  	$db = $modified->MakeDatabase();
+	
+	$aRow[RowModifierConstant::AddLink] = array();
+	
+	$Edit = new EditDataReferencePointMenu();
+	$Edit->IdRoad = $aRow['id loc road _HIDE_'];
+	$Edit->TimeSurvey = $aRow['svy time stamp _HIDE_'];
+	$Edit->Post = $aRow['Post'];
+	$Edit->Offset = $aRow['Offset'];
+	if(!is_null($aRow['svy time stamp _HIDE_'])){
+		$TimeStamp = $aRow['svy time stamp _HIDE_'];
+		$TimeStampTemp = explode(' ', $TimeStamp);
+		$TimeFormat1 = explode('-', $TimeStampTemp[0]);
+		$TimeFormat2 = explode(':', $TimeStampTemp[1]);
+		$TimeFormatResult = $TimeFormat1[0].$TimeFormat1[1].$TimeFormat1[2].$TimeFormat2[0].$TimeFormat2[1].$TimeFormat2[2];
+	}
+	//$Edit->UnixTimeSurvey = $aRow['svy unix time stamp _HIDE_'];
+	$Edit->UnixTimeSurvey = $TimeFormatResult;
+	$Edit->AddTail(clone($modified));
+	$aRow[RowModifierConstant::AddLink][0][RowModifierConstant::RefName] = 'Edit';
+	$aRow[RowModifierConstant::AddLink][0][RowModifierConstant::RefLink] = $Edit->Ref();
+	$aRow[RowModifierConstant::AddLink][0][RowModifierConstant::LinkIsImage] = TRUE;
+	$aRow[RowModifierConstant::AddLink][0][RowModifierConstant::ImageSource] = AppDescriptionQuery::Instance($modified->MakeApplication())->FwRelatifPath() . 'framework/images/b_edit.png';
+	
+	$Delete = new DeleteDataReferencePointHandlerMenu();
+	$Delete->IdRoad = $aRow['id loc road _HIDE_'];
+	$Delete->TimeSurvey = $aRow['svy time stamp _HIDE_'];
+	$Delete->Post = $aRow['Post'];
+	$Delete->Offset = $aRow['Offset'];
+	$Delete->Next = clone($modified);
+	$aRow[RowModifierConstant::AddLink][1][RowModifierConstant::RefName] = 'Delete';
+	$aRow[RowModifierConstant::AddLink][1][RowModifierConstant::RefLink] = $Delete->Ref();
+	$aRow[RowModifierConstant::AddLink][1][RowModifierConstant::LinkIsImage] = TRUE;
+	$aRow[RowModifierConstant::AddLink][1][RowModifierConstant::ImageSource] = AppDescriptionQuery::Instance($modified->MakeApplication())->FwRelatifPath() . 'framework/images/b_drop.png';
+  }
+  public function Selected(&$aRow, MenuInterface $modified){
+	return false;
+  }
+}
+?>
