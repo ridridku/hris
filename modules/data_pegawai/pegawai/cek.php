@@ -1,4 +1,4 @@
-<? 
+<?PHP 
 require_once('../../../includes/config.conf.php');	 
 require_once($DIR_INC.'/db.conf.php');
 require_once($DIR_ADODB.'/adodb.inc.php');
@@ -8,21 +8,21 @@ $db = &ADONewConnection($DB_TYPE);
  //$db->debug = true;
 $db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
  
- $HREF_HOME_PATH_AJAX = $HREF_HOME."/modules/data_wni/wni";
+ $HREF_HOME_PATH_AJAX = $HREF_HOME."/modules/data_pegawai/pegawai";
  
- $kode_wni = trim($_GET['kode_wni']);
+ $r_pegawai__ktp = trim($_GET['r_pegawai__ktp']);
  $id = $_GET['id'];
    
- $sql_cek="select * from tbl_wni where trim(kode_wni)='$kode_wni' and id!='$id' ";
+ $sql_cek="select * from r_pegawai where trim(r_pegawai__ktp)='$r_pegawai__ktp' ";
  $rs_val = $db->Execute($sql_cek);
- $kode_wni_cek = $rs_val->fields['kode_wni'];
+ $kode_wni_cek = $rs_val->fields['r_pegawai__ktp'];
 
  if ($kode_wni_cek!='') {		 
 		// no pasport sudah ada
-		$ket="<font color=\"#ff0000\">No. Paspor Sudah Ada</font>";
+		$ket="<font color=\"#ff0000\">No. KTP Sudah Ada</font>";
  } else {
 		// no pasport belum ada
-		$ket="<font color=\"#330099\">No. Paspor Belum Ada</font>";
+		$ket="<font color=\"#330099\">No. KTP Belum Ada</font>";
 		
  }
  
@@ -31,8 +31,8 @@ $db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
 ?>
   
 <div id="ajax_cek_id">
-<INPUT TYPE="text" NAME="kode_wni" value="<?=$kode_wni?>" 
-size="35" OnChange="JavaScript:Ajax('ajax_cek_id','<?=$HREF_HOME_PATH_AJAX?>/cek.php?kode_wni='+frmCreate.kode_wni.value+'&id='+frmCreate.id.value)"> 		
+<INPUT TYPE="text" NAME="r_pegawai__ktp" value="<?=$r_pegawai__ktp?>" 
+size="35" OnChange="JavaScript:Ajax('ajax_cek_id','<?=$HREF_HOME_PATH_AJAX?>/cek.php?r_pegawai__ktp='+frmCreate.r_pegawai__ktp.value)"> 		
  <?=$ket?>			
  </div>
  

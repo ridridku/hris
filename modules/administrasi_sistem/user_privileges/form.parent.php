@@ -121,6 +121,7 @@ $smarty->assign ("MENU_ID", $menu_id);
 
 
 $sql ="SELECT a.*, b.* FROM tbl_sys_master_privileges as a INNER JOIN tbl_sys_master_menu as b ON a.priv_menu_id = b.menu_id WHERE b.menu_level = '0' AND b.menu_active = '1' AND priv_user_id = '$user_id'   ";
+//var_dump($sql)or die();
 $rs_cek_list_parent = $db->execute($sql);
 
 $arr_cek_list = array();
@@ -132,7 +133,7 @@ while($arr = $rs_cek_list_parent->FetchRow()){
 	$daftar_parent_menu[] = $arr['menu_id'];
 
 }
-
+//var_dump($daftar_parent_menu)or die();
 //masih dogol...
 /*** Debug
 End Debug ***/

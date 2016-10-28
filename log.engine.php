@@ -59,27 +59,23 @@ $smarty->assign ("DIR_JS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']
 
 //=================================== END OF FILE CONFIGURATION====================================
 
-$usr_name = $_POST['txt_username'];
-$usr_password = base64_encode($_POST['txt_password']);
-$jenis_jl = $_POST['jns_jln'];
-//$jenis_jl = '1';
+$usr_name       = $_POST['txt_username'];
+$usr_password   = base64_encode($_POST['txt_password']);
+$jenis_user     = $_POST['jns_user'];
+$th             = $_POST['txt_tahun'];
+$bln            = $_POST['txt_bl'];
+$kode_cabang    = $_POST['kode_cabang'];
 
-$th = $_POST['txt_tahun'];
-$kode_cabang = $_POST['kode_cabang'];
-//var_dump($kode_cabang)or die();
-if($jenis_jl==1):
-$sql  = "SELECT * FROM tbl_sys_master_user WHERE (user_id = '$usr_name' AND user_password = '$usr_password' AND user_active_status = '1') AND level='".$jenis_jl."' ";
+
+if($jenis_user==1):
+$sql  = "SELECT * FROM tbl_sys_master_user WHERE (user_id = '$usr_name' AND user_password = '$usr_password' AND user_active_status = '1') AND level='".$jenis_user."' ";
 else:
-$sql  = "SELECT * FROM tbl_sys_master_user WHERE user_id = '$usr_name' AND user_password = '$usr_password' AND user_active_status = '1' AND level='".$jenis_jl."' AND kode_perwakilan='".$kode_cabang."' ";
+$sql  = "SELECT * FROM tbl_sys_master_user WHERE user_id = '$usr_name' AND user_password = '$usr_password' AND user_active_status = '1' AND level='".$jenis_user."' AND kode_cabang='".$kode_cabang."' ";
 endif;
 
-//$sql  = "SELECT * FROM tbl_sys_master_user WHERE user_id = '$usr_name' AND user_password = '$usr_password' AND user_active_status = '1' ";
 
-
-//print $sql;
+//var_dump($sql)or die;
 $recordSet = $db->Execute($sql);
-
-
 $cek_rows = $recordSet->RecordCount();
 
  if ($cek_rows <= 0) {
@@ -97,7 +93,7 @@ $cek_rows = $recordSet->RecordCount();
 }
 else
 {
-			if($jenis_jl==""){
+			if($jenis_user==""){
 				$smarty->assign ("SUCCEED", "0");
 				$smarty->assign ("ACTION", $HREF_HOME);
 				$smarty->assign ("METHOD", "GET");
@@ -109,26 +105,41 @@ else
 				$smarty->assign ("PRIV2", _PRIV2NO);
 				$smarty->assign ("PRESSOK", _PRESSOK);			
 			} else {
+                            
+                            
+                            $sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_bulan,r_periode__payroll_tahun,r_periode__payroll_status
+                                  FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
+                  
+                                $rs_val = $db->Execute($sql_cek_periode);
+                                $periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
+                                $periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];
+                                
+                                
 				$smarty->assign ("SUCCEED", "1");
-				$_SESSION['UID']	= base64_encode($recordSet->fields['user_id']);
+				$_SESSION['UID']                        = base64_encode($recordSet->fields['user_id']);
+                                
 				$date_now = strtotime('now');
 				$ip_now = $_SERVER['REMOTE_ADDR'];
 				$user_id = $recordSet->fields['user_id'];
-				$_SESSION['SESSION_TAHUN']			= $th;
-				$_SESSION['SESSION_JNS_USER']		= $jenis_jl;
-				$_SESSION['SESSION_KODE_PERWAKILAN'] = $recordSet->fields['kode_perwakilan'];
-				 
-				$tahun	= $_SESSION['SESSION_TAHUN'];				
-				//print $tahun;
-		 
-				
+                                $id_pegawai = $recordSet->fields['$id_pegawai'];
+                                
+                                $_SESSION['SESSION_BULAN']		= $bln;
+				$_SESSION['SESSION_TAHUN']		= $th;
+                         	$_SESSION['SESSION_JNS_USER']		= $jenis_user;
+				$_SESSION['SESSION_KODE_CABANG']        = $recordSet->fields['kode_cabang'];
+                                $_SESSION['SESSION_ID_PEG']             = $recordSet->fields['id_pegawai'];
+                                $_SESSION['SESSION_NAMA']               = $recordSet->fields['user_id'];
+				$_SESSION['SESSION_TAHUN_AKTIF']        = $periode_tahun;
+                                $_SESSION['SESSION_BULAN_AKTIF']        = $periode_bulan;   
+                                
+                                
+                             
+                               	
 				$sql="UPDATE tbl_sys_master_user SET user_current_login_date = '$date_now', user_current_login_host = '$ip_now' WHERE user_id = '".$recordSet->fields['user_id']."'" ;
 				$db->Execute($sql);
 	
 				$sql="INSERT INTO tbl_sys_history_log_user (log_user_id, log_login_date, log_login_host)  VALUES ('$user_id','$date_now','$ip_now') ";
 				$db->Execute($sql);
-
-				//$smarty->assign ("TEST", $th);
 					
 				$smarty->assign ("ACTION", $HREF_HOME.'/modules/');
 				$smarty->assign ("CHECKER", '1');

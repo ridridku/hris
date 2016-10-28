@@ -25,15 +25,24 @@ var err_ = 0;
 
 function checkFrm(theForm){
 with (theForm){
+    
+    
 	 if (kode_cabang.value == "") 
 		{ 
 			alert ("Silahkan Pilih Cabang !"); 
 			kode_cabang.focus();
 			return false; 
 		}
-    
-        
+            //cek xls 2003    
+         function hasExtension(inputID, exts) {
+            var fileName = document.getElementById(inputID).value;
+            return (new RegExp('(' + exts.join('|').replace(/\./g, '\\.') + ')$')).test(fileName);
+             }
 
+         if(!hasExtension('file_xls', ['.xls'])){
+                    alert("Hanya file XLS (Excel 2003) yang diijinkan.");
+                    return false;
+        }
 		
 	else
 		{
@@ -42,10 +51,27 @@ with (theForm){
 		}
 }
 	
-	
-}
-// --------------------
 
+
+
+
+
+
+}
+// --------------------CLOSE VALIDASI----//
+// function validateForm()
+//    {
+//        alert(aaaaaaa);
+//        function hasExtension(inputID, exts) {
+//            var fileName = document.getElementById(inputID).value;
+//            return (new RegExp('(' + exts.join('|').replace(/\./g, '\\.') + ')$')).test(fileName);
+//        }
+//
+//        if(!hasExtension('file_xls', ['.xls'])){
+//            alert("Hanya file XLS (Excel 2003) yang diijinkan.");
+//            return false;
+//        }
+//    }
 
 function checkSubmit(){
 

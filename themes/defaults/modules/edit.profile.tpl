@@ -49,38 +49,37 @@ function hideIt(){
 		<TABLE id="table-search-box">
 				<TR>
 					<TD width="200">Nama Depan</TD>
-					<TD><INPUT TYPE="text" NAME="user_first_name" value="<!--{$EDIT_USER_FIRST_NAME|upper}-->" size="35" maxlength="50"></TD>
+					<TD><INPUT TYPE="text" NAME="user_first_name" readonly=""  value="<!--{$EDIT_USER_FIRST_NAME|upper}-->" size="35" maxlength="50"></TD>
 				</TR>
 				<TR>
 					<TD>Nama Belakang</TD>
-					<TD><INPUT TYPE="text" NAME="user_last_name" value="<!--{$EDIT_USER_LAST_NAME|upper}-->" size="35" maxlength="50"></TD>
+					<TD><INPUT TYPE="text" NAME="user_last_name" readonly="" value="<!--{$EDIT_USER_LAST_NAME|upper}-->" size="35" maxlength="50"></TD>
 				</TR>
 				<TR>
 					<TD>Alamat</TD>
-					<TD><INPUT TYPE="text" NAME="user_address" value="<!--{$EDIT_USER_ADDRESS}-->" size="35"></TD>
+					<TD><INPUT TYPE="text" NAME="user_address" readonly="" value="<!--{$EDIT_USER_ADDRESS}-->" size="35"></TD>
 				</TR>
 				<TR>
 					<TD>Telepon</TD>
-					<TD><INPUT TYPE="text" NAME="user_telp" value="<!--{$EDIT_USER_TELP}-->" size="35"></TD>
+					<TD><INPUT TYPE="text" NAME="user_telp" readonly="" value="<!--{$EDIT_USER_TELP}-->" size="35"></TD>
 				</TR>
-	
-				<TR>
+			<!--	<TR>
 					<TD>Jenis Kelamin</TD>
 					<TD>
 					<SELECT name="user_gender">
 					<OPTION value="">[PILIH]</OPTION>
-					<OPTION value="L" <!--{if $EDIT_USER_GENDER == 'L'}--> selected <!--{/if}--> >Laki-laki</OPTION>
-					<OPTION value="P" <!--{if $EDIT_USER_GENDER == 'P'}--> selected <!--{/if}-->>Perempuan</OPTION>
+					<OPTION value="L"  $EDIT_USER_GENDER == 'L'} selected /if>Laki-laki</OPTION>
+					<OPTION value="P"  $EDIT_USER_GENDER == 'P'} selected >Perempuan</OPTION>
 					</TD>
-				</TR>
+				</TR>-->
 				<TR>
 					<TD>Email</TD>
-					<TD><INPUT TYPE="text" NAME="user_email" value="<!--{$EDIT_USER_EMAIL}-->" size="35"></TD>
+                                        <TD><INPUT TYPE="text" readonly="" NAME="user_email" value="<!--{$EDIT_USER_EMAIL}-->" size="35"></TD>
 				</TR>
 
 				<TR>
 					<TD>Sandi</TD>
-					<TD><INPUT TYPE="text" NAME="password" value="<!--{$EDIT_USER_PASSWORD}-->" size="35"></TD>
+                                        <TD><INPUT TYPE="password" NAME="password" value="<!--{$EDIT_USER_PASSWORD}-->" size="35"></TD>
 				</TR>
 
 				<TR>

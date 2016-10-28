@@ -40,7 +40,7 @@ require_once($DIR_INC."/libs.inc.php");
 //$smarty->debugging = true;
 # Start Parsing the Template
 
-$tbl_name_jenis_jln = "tbl_mast_jln";
+
 
  /*** End 0f MASTER JENIS JALAN ***/
 
@@ -58,7 +58,7 @@ if ($_GET[get_item_detail] == 1)
 		if($jenis_user=='1'){ //bina marga semua disabled
 		
 				 
-				$data_usulan = "<select id=\"kode_perwakilan\"   disabled name=\"kode_perwakilan\"  >";
+				$data_usulan = "<select id=\"kode_cabang\"   disabled name=\"kode_perwakilan\"  >";
 				$data_usulan .= "<option value=\"\"> [Pilih Cabang] </option >";
 			    $data_usulan .="</select>";
  
@@ -68,14 +68,15 @@ if ($_GET[get_item_detail] == 1)
 
 		} else {
 		
-				$sql_data_usulan = "SELECT * FROM tbl_mast_cabang order by kode_cabang";
+				$sql_data_usulan = "SELECT r_cabang__id,r_cabang__akronim,r_cabang__nama,r_cabang__kelas 
+                                                    FROM  r_cabang order by r_cabang__id";
 				$result_data_usulan = $db->execute($sql_data_usulan);
 				$total_data_usulan = $result_data_usulan->numrows();
 				
 				$data_usulan = "<select id=\"kode_cabang\" name=\"kode_cabang\"  >";
 				$data_usulan .= "<option value=\"\"> [Pilih Cabang] </option >";
 				while(!$result_data_usulan ->EOF):
-				 $data_usulan .= "<option value=".$result_data_usulan->fields['kode_cabang'].">".$result_data_usulan->fields['nama_cabang']."</option>";
+				 $data_usulan .= "<option value=".$result_data_usulan->fields['r_cabang__id'].">".$result_data_usulan->fields['r_cabang__nama']."</option>";
 					$result_data_usulan->MoveNext();
 				endwhile; 	
 
@@ -106,7 +107,7 @@ $smarty->assign ("DIR_HOME_PATH", $DIR_HOME);
 $smarty->assign ("DIR_IMG_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images'));
 $smarty->assign ("DIR_CSS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/css'));
 $smarty->assign ("DIR_JS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts'));
-$smarty->assign ("PID_JENIS_JLN2", $jns_jln);
+//$smarty->assign ("PID_JENIS_JLN2", $jns_jln);
 $smarty->assign ("SUBMIT2", _SUBMIT2);
 $smarty->assign ("RESET", "RESET");
 

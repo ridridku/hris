@@ -108,7 +108,7 @@ function hideIt(){
 					</TR>
 					<!--{/section}-->
 					<TR><TD></td><TD></td><TD colspan="2" width="140">
-					<INPUT TYPE="hidden" name="super_parent" value="1">
+                                        <INPUT TYPE="hidden" name="super_parent" value="1">
 					<INPUT TYPE="hidden" name="user_id" value="<!--{$USER_ID}-->">
 					<INPUT TYPE="hidden" name="implode_daftar_menu_id" value="<!--{$IMPLODE_DAFTAR_PARENT_ID}-->">
 					<INPUT TYPE="hidden" name="jum_super_parent" value="<!--{$JUM_SUPER_PARENT}-->">

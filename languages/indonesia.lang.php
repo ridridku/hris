@@ -3,7 +3,7 @@
 //INDONESIA//
 //default character set, that will be used
 
-define('_TITLE', 'HRIS PT.Tritunggal Wisessa');
+define('_TITLE', 'HRIS PT.Tritunggal Wisesa');
 define("_TITLE", "Login Menu");
 define("_AUTHCOMPLETE", "Logging You In, Please Standby ..");
 define("_RESULTS", "Scan Results :");
@@ -25,6 +25,7 @@ define("_FORM", "Form Tambah/Ubah Data");
 
 #SYSTEM BUTTON
 define("_SUBMIT", "Simpan");
+define("_APPROVE","Approve");
 define("_RESET", "Batal");
 define("_LIST_ME", "Tampilkan");
 define("_RECORD_PER_PAGE", "Baris per Halaman");
@@ -38,6 +39,7 @@ define("_EDIT", "Edit");
 define("_DELETE", "Hapus");
 define("_PRINT", "Cetak");
 define("_BTN_NEW", "Data Baru");
+define("_BTN_KIRIM_REKAP_HRD", "Kirim Rekap");
 define("_BTN_PROSES", "PROSES");
 
 # CAPTION DATA IMPORT

@@ -48,40 +48,10 @@ function hideIt(){
 		<tr><td class="alt2" style="padding:0px;">
 		
 					<FORM NAME="frmCreate" METHOD="POST" ACTION="engine.php">
-					<TABLE id="table-add-box">
-				
-				<TR>
-					<TD width="100">Nama Depan</TD>
-					<TD><INPUT TYPE="text" NAME="user_first_name" value="<!--{$EDIT_USER_FIRST_NAME|upper}-->" size="27" maxlength="50"></TD>
-				</TR>
-				<TR>
-					<TD>Nama Belakang</TD>
-					<TD><INPUT TYPE="text" NAME="user_last_name" value="<!--{$EDIT_USER_LAST_NAME|upper}-->" size="27" maxlength="50"></TD>
-				</TR>
-				<TR>
-					<TD>Alamat</TD>
-					<TD><INPUT TYPE="text" NAME="user_address" value="<!--{$EDIT_USER_ADDRESS}-->" size="27"></TD>
-				</TR>
-				<TR>
-					<TD>Telepon</TD>
-					<TD><INPUT TYPE="text" NAME="user_telp" value="<!--{$EDIT_USER_TELP}-->" size="27"></TD>
-				</TR>
-	
-				<TR>
-					<TD>Jenis Kelamin</TD>
-					<TD>
-					<SELECT name="user_gender" style="width:210px">
-					<OPTION value="">[PILIH]</OPTION>
-					<OPTION value="L" <!--{if $EDIT_USER_GENDER == 'L'}--> selected <!--{/if}--> >Laki-laki</OPTION>
-					<OPTION value="P" <!--{if $EDIT_USER_GENDER == 'P'}--> selected <!--{/if}-->>Perempuan</OPTION>
-					</TD>
-				</TR>
-				<TR>
-					<TD>Email</TD>
-					<TD><INPUT TYPE="text" NAME="user_email" value="<!--{$EDIT_USER_EMAIL}-->" size="27"></TD>
-				</TR></table>
-				<hr size="1" style="color:#FFF;" width="100%">
-				<TABLE id="table-add-box">	
+                                            
+                                            
+                <TABLE id="table-add-box" width="100%" >	
+                     
 				<TR>
 					<TD width="100"><!--{$TB_CODE}--></TD>
 					<TD><!--{if $EDIT_VAL==0}-->
@@ -95,6 +65,53 @@ function hideIt(){
 					<TD>Sandi</TD>
 					<TD><INPUT TYPE="password" NAME="user_password" value="<!--{$EDIT_USER_PASSWORD}-->" size="27" maxlength="10"></TD>
 				</TR>
+                                <TR>
+                                        <TD>Level</TD>
+                                        <TD><select name="jns_user"  onChange="cari(this.value);">
+                                        <option value="">[Pilih Level Pengguna]</option>
+                                        <option value="1" <!--{if $EDIT_LEVEL== '1'}--> selected <!--{/if}-->>Pusat</option>
+                                        <option value="2" <!--{if $EDIT_LEVEL== '2'}--> selected <!--{/if}-->>Cabang</option> 
+                                        </select>
+                                            
+                                         
+                                        </TD>
+                                </TR>
+
+                                <TR><TD class="login_txt" align="left"> Cabang</TD>
+                                <TD> 
+                                 <div id="ajax_instansi"> 
+                                         <select name="kode_cabang"> 
+                                         <option value="">[Pilih Cabang]</option> 
+                                         <!--{section name=x loop=$DATA_CABANG}-->
+                                
+
+									<!--{if trim($DATA_CABANG[x].r_cabang__id) == $EDIT_KODE_CABANG}-->
+									<option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+									<!--{else}-->
+									<option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  disabled> <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+									<!--{/if}-->
+                                                                        <!--{/section}-->
+								</SELECT>
+                                         
+                                 </div>
+                                 </TD>
+                                 </TR>
+                                     <TR>
+                                <TD>Cari Pegawai<font color="#ff0000">*</font> </TD> 
+                                <TD><INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goPemberikerja()" value=" ... " /></TD>
+                        </TR> 
+                                <TR>
+                                        <TD>Nama <font color="#ff0000">*</font> </TD>
+                                         <TD>
+                                         <INPUT TYPE="text" NAME="user_first_name" readonly  id="r_pegawai__nama"  size="35" value="<!--{$EDIT_USER_FIRST_NAME|upper}-->" size="27" maxlength="50">
+                                         <INPUT TYPE="hidden" NAME="user_last_name" readonly  id="r_pegawai__nama2"  size="35" value="<!--{$EDIT_USER_LAST_NAME|upper}-->" size="27" maxlength="50">
+                                        </TD> 
+                               </TR>
+                        
+                                <TR>
+                                        <TD>NIP <font color="#ff0000">*</font> </TD>
+                                        <TD><INPUT TYPE="text" NAME="id_pegawai" readonly id="r_pnpt__nip" size="35" value="<!--{$EDIT_ID_PEGAWAI}-->" ></TD>
+                                         <TD>
 				<TR>
 					<TD>Status Pengguna</TD>
 					<TD><SELECT name="user_status">
@@ -105,41 +122,67 @@ function hideIt(){
 					</TD>
 				</TR>
  
-				<tr>
-				<td>Level Pengguna </td>
+				
+				
+                                
+                                <tr>
+				<td>Group</td>
 				<td>
-					<select name="jenis_user"  onChange="cari(this.value);" >
-					<option value="">[Pilih Level Pengguna]</option>
-					<option value="1"  <!--{if $EDIT_LEVEL == 1}--> selected <!--{/if}-->>PWNI</option>
-					<option value="2" <!--{if $EDIT_LEVEL == 2}--> selected <!--{/if}-->>Perwakilan </option>				 
+					<select name="group_user" >
+					<option value="">[Pilih Group Pengguna]</option>
+					<option value="1"  <!--{if $EDIT_LEVEL == 1}--> selected <!--{/if}-->>HR STAFF</option>
+					<option value="2" <!--{if $EDIT_LEVEL == 2}--> selected <!--{/if}-->>HR SVP CABANG</option>
+                                        <option value="2" <!--{if $EDIT_LEVEL == 3}--> selected <!--{/if}-->>BOM</option>
+                                        <option value="2" <!--{if $EDIT_LEVEL == 4}--> selected <!--{/if}-->>HR STAFF PUSAT</option>
+                                        <option value="2" <!--{if $EDIT_LEVEL == 5}--> selected <!--{/if}-->>HR SPV PUSAT</option>
+                                        <option value="2" <!--{if $EDIT_LEVEL == 6}--> selected <!--{/if}-->>HR MGR PUSAT</option>
 					</select>
-				</td>
-				</tr>
- 
-				<tr>
-				<td>Perwakilan</td>
-				<td>
-					<div id="ajax_instansi"> 
-						 <select name="kode_perwakilan"> 
-							 <option value="">[Pilih Perwakilan]</option> 
-							 <!--{section name=x loop=$DATA_INSTANSI2}-->
-								<!--{if ($OPT==1)}-->
-									<!--{if ($DATA_INSTANSI2[x].kode_perwakilan) == $EDIT_KODE_PERWAKILAN}-->
-									<option value="<!--{$DATA_INSTANSI2[x].kode_perwakilan}-->" selected   > <!--{$DATA_INSTANSI2[x].nm_perwakilan}--> </option>
-									<!--{else}-->
-									<option value="<!--{$DATA_INSTANSI2[x].kode_perwakilan}-->"   > <!--{$DATA_INSTANSI2[x].nm_perwakilan}--> </option>
-									<!--{/if}-->							 
-								<!--{/if}-->
-							 <!--{/section}-->
-						 </select>
-					 </div>	
-				</td>
-				</tr>
+				</TD>
+				</TR>
 
 			
 
-				<TR><TD>&nbsp</TD></TR>	
 				<TR>
+					<TD>Alamat</TD>
+                                        <TD><textarea rows="5" cols="20" NAME="user_address" id="r_pegawai__nama_jalan" value="<!--{$EDIT_USER_ADDRESS}-->">
+                                                
+                                        </textarea>
+                                        </TD>
+				</TR>
+				<TR>
+					<TD>Telepon</TD>
+					<TD><INPUT TYPE="text" NAME="user_telp" id="r_pegawai__tlp_kantor" value="<!--{$EDIT_USER_TELP}-->" size="27"></TD>
+				</TR>
+	
+				<TR>
+					<TD>Jenis Kelamin</TD>
+					<TD>
+                                            <INPUT TYPE="text" NAME="user_gender" id="r_pegawai__jk" value="<!--{$EDIT_USER_GENDER}-->" size="27">
+					</TD>
+				</TR>
+				<TR>
+					<TD>Email</TD>
+					<TD><INPUT TYPE="text" NAME="user_email" id="r_pegawai__tlp_rumah" value="<!--{$EDIT_USER_EMAIL}-->" size="27"></TD>
+				</TR>
+                             
+				
+			</TABLE>
+			<TABLE id="table-add-box" width="100%" >
+                        
+				 
+                        
+                        
+                        
+                         </TR>
+                         
+                        
+                       
+                            
+                                
+                        </TR>
+				
+				
+                                <TR>
 					<TD COLSPAN="2" ALIGN="left">
 					<INPUT TYPE="hidden" name="user_id_foo" value="<!--{$EDIT_USER_ID}-->">
 					<INPUT TYPE="hidden" name="limit" value="<!--{$LIMIT}-->">
@@ -150,7 +193,10 @@ function hideIt(){
 					<a class="button" href="#" onclick="this.blur();document.frmCreate.reset(); resetFrm(frmCreate); "><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$RESET}--></span></a>					
 					</TD>
 				</TR>
-			</TABLE>
+                                        </table>
+                                
+				<hr size="1" style="color:#FFF;" width="100%">
+				
 		</FORM>
 		
 		</td></tr>

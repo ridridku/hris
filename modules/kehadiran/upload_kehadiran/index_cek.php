@@ -66,12 +66,13 @@ $smarty->assign ("SELF", $_SERVER['PHP_SELF']);
 
 //------------------------------------LOCAL CONFIG--------------------------------------//
 #SETTING FOR TEMPLATE 
-$TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/data_wni/wni';
+$TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/kehadiran/upload_kehadiran';
+
 
 
 #SETTING FILE JS INCLUDE
-$JS_MODUL = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts/modules/data_wni');
-$FILE_JS  = $JS_MODUL.'/wni';
+$JS_MODUL = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts/modules/kehadiran');
+$FILE_JS  = $JS_MODUL.'/upoload_kehadiran';
 
 $JS_MODUL2 = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts');
   
@@ -113,25 +114,20 @@ if ($_GET['kode_proyek']) $KODE_PROYEK = $_GET['kode_proyek'];
 else if ($_POST['kode_proyek']) $KODE_PROYEK = $_POST['kode_proyek'];
 else $KODE_PROYEK="";
 
- 
- 
-
 $str_completer = "mod_id=".$mod_id."&limit=".$LIMIT."&SORT=".$SORT."&kode_proyek=".$KODE_PROYEK."&kode_ruas=".$KODE_RUAS."&kode_instansi=".$KODE_INSTANSI."&kode_jadwal=".$KODE_JADWAL."&tgl=".$TGL;
 $str_completer_ = "limit=".$LIMIT."&SORT=".$SORT."&page=".$page;
 
 $SES_TAHUN		    = $_SESSION['TAHUN'];
-$SES_INSTANSI		= $_SESSION['KODE_INSTANSI'];
-$SES_JENIS_USER		= $_SESSION['JENIS_USER'];
+$SES_INSTANSI               = $_SESSION['KODE_INSTANSI'];
+$SES_JENIS_USER             = $_SESSION['JENIS_USER'];
  
 
  IF ($_GET['ERR'] =='5') {
-	 $label_error = "No.PASPOR WNI SUDAH ADA";
+	 $label_error = "Upload Berhasil";
  } else {
-	 $label_error = "KODE PENJADWALAN SUDAH ADA";	
+	 $label_error = "Upload Gagal";	
  }
 $smarty->assign ("LABEL_ERROR", $label_error);
-
-  
 $smarty->assign ("TABLE_CAPTION", _CAPTION_TABLE_KAT);
 $smarty->assign ("TB_NO", _NO);
 $smarty->assign ("TABLE_NAME", _NAMA_TABLE_INSTANSI);

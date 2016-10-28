@@ -1,0 +1,775 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=14 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->REKAP PEGAWAI </td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=14 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=14 height=21 class=xl36 style='height:15.75pt'>CABANG  : PUSAT</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td colspan=14 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>NIP</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=82 style='width:25pt'>JABATAN</td>
+    <td class=xl27 width=82 style='width:25pt'>LEVEL JABATAN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS PEGAWAI</td>
+    <td class=xl27 width=98 style='width:50pt'>AWAL KONTRAK</td> 
+    <td class=xl27 width=57 style='width:25pt'>AKHIR KONTRAK</td>
+     <td class=xl27 width=57 style='width:25pt'>NO REK</td>
+      <td class=xl27 width=57 style='width:25pt'>SHIFT</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>100120005</td>
+  <td class=xl29 align=right x:num>004002</td>
+  <td class=xl29 align=right x:num>Agustin Imellda</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >CFO / Deputy CEO</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>100120008</td>
+  <td class=xl29 align=right x:num>004999</td>
+  <td class=xl29 align=right x:num>Aldy Risqia Septiar </td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control West Java</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701866629500</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>160120011</td>
+  <td class=xl29 align=right x:num>001035</td>
+  <td class=xl29 align=right x:num>Anggoro Budi Wirawan</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Staf Business Development & Management Improvement</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703155856800</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>130120015</td>
+  <td class=xl29 align=right x:num>004012</td>
+  <td class=xl29 align=right x:num>Asep Budiman</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Staff GA</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701867423200</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>120120020</td>
+  <td class=xl29 align=right x:num>004003</td>
+  <td class=xl29 align=right x:num>Cecep Yosep</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >HGL Manager</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701875565800</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>080120021</td>
+  <td class=xl29 align=right x:num>285001</td>
+  <td class=xl29 align=right x:num>Child Hitra</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control Central Java</td>
+  <td class=xl29 align=right >Manager	</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701811203500</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>100120022</td>
+  <td class=xl29 align=right x:num>004001</td>
+  <td class=xl29 align=right x:num>Chris Simeon Budhisetiawan</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >CEO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>150120023</td>
+  <td class=xl29 align=right x:num>001033</td>
+  <td class=xl29 align=right x:num>Damian Rahmadi Djonoputro</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Business Development & Management Improvement</td>
+  <td class=xl29 align=right >Director</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >702800637800</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>140120030</td>
+  <td class=xl29 align=right x:num>003004</td>
+  <td class=xl29 align=right x:num>Desti Retno Yulianti</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control West Java</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >702337315700</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>080120032</td>
+  <td class=xl29 align=right x:num>262023</td>
+  <td class=xl29 align=right x:num>Dhyah Palupi</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control Central Java</td>
+  <td class=xl29 align=right >Manager	</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>120120033</td>
+  <td class=xl29 align=right x:num>302077</td>
+  <td class=xl29 align=right x:num>Dian Pardiana</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control West Java</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701867172400</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>130120038</td>
+  <td class=xl29 align=right x:num>301277</td>
+  <td class=xl29 align=right x:num>Ecin Waryati</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Staff HR</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701859482500</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>150120039</td>
+  <td class=xl29 align=right x:num>004022</td>
+  <td class=xl29 align=right x:num>Edi Haryadi Kartadisastra</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control Manager</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >760793588000</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>100120045</td>
+  <td class=xl29 align=right x:num>004005</td>
+  <td class=xl29 align=right x:num>Fajar satria dwi cahya</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Staff GA</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701866627100</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>150120052</td>
+  <td class=xl29 align=right x:num>004021</td>
+  <td class=xl29 align=right x:num>Hanafie Muliana</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control Director</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>130120062</td>
+  <td class=xl29 align=right x:num>004010</td>
+  <td class=xl29 align=right x:num>Iqbal Abdurrohman</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control West Java</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >702508510900</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>120120065</td>
+  <td class=xl29 align=right x:num>271059</td>
+  <td class=xl29 align=right x:num>Jaka Sulistya</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control Central Java</td>
+  <td class=xl29 align=right >Manager	</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >760168064500</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>120120070</td>
+  <td class=xl29 align=right x:num>004009</td>
+  <td class=xl29 align=right x:num>Lucky suhendi</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Koordinator HR</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701861860600</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>100120074</td>
+  <td class=xl29 align=right x:num>004008</td>
+  <td class=xl29 align=right x:num>Misbahul Anwar</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Boy</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701866689500</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>130120076</td>
+  <td class=xl29 align=right x:num>284002</td>
+  <td class=xl29 align=right x:num>Muhamad Krishna Yulianto</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control Central Java</td>
+  <td class=xl29 align=right >Manager	</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703041887800</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>110120081</td>
+  <td class=xl29 align=right x:num>314001</td>
+  <td class=xl29 align=right x:num>Pringadhie Billy Hardja</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >ROM WJ</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >700499864900</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>160120082</td>
+  <td class=xl29 align=right x:num>001034</td>
+  <td class=xl29 align=right x:num>Renaldi</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Staf Business Development & Management Improvement</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703113435800</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>100120087</td>
+  <td class=xl29 align=right x:num>004006</td>
+  <td class=xl29 align=right x:num>Rusdi</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701105379200</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>100120101</td>
+  <td class=xl29 align=right x:num>001016</td>
+  <td class=xl29 align=right x:num>Sutarno</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >ROM CJ</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >702508221500</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>150120103</td>
+  <td class=xl29 align=right x:num>004014</td>
+  <td class=xl29 align=right x:num>Toni Haryadi</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Staff GA</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701867502700</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>150120106</td>
+  <td class=xl29 align=right x:num>004019</td>
+  <td class=xl29 align=right x:num>Wahyu Hidayat</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Staff HR</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701867848000</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>100120107</td>
+  <td class=xl29 align=right x:num>004007</td>
+  <td class=xl29 align=right x:num>wahyu kurniadi santoso</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Supervisor GA</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701866675200</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>080120111</td>
+  <td class=xl29 align=right x:num>004004</td>
+  <td class=xl29 align=right x:num>Yuni Yuningsih</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Sekretaris Direksi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701865682800</td>
+  <td class=xl29 align=right >Pusat Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'></td>
+  <td class=xl29></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >JML KARYAWAN : 28</td>
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=14 width=80 clospan= style='width:41pt'></td></tr>
+ <![endif]>
+</table>
+
+
+</body>			
+</html>
+
+

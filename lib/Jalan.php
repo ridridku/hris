@@ -6,7 +6,6 @@ require_once 'constant/JenisBahu.cst.php';
 require_once 'constant/Perkerasan.cst.php';
 class Jalan{
 
-
 public static function gambar_km_meter(DatabaseInterface $db, $IdRuasJalan, $Waktu, $lbl, $panjang_image){
 		$sql = "SELECT abs(panjang) AS Panjang FROM mst_ruas_jalan WHERE id ='".$IdRuasJalan."'";		
 		$rs  = $db->Execute($sql);

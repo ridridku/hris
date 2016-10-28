@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-05-17 09:39:46
+<?php /* Smarty version 2.6.18, created on 2016-10-19 08:47:53
          compiled from defaults/modules/main.frame.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'upper', 'defaults/modules/main.frame.tpl', 175, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'upper', 'defaults/modules/main.frame.tpl', 111, false),)), $this); ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 
@@ -116,103 +116,7 @@ img.link { behavior: url("<?php echo $this->_tpl_vars['HREF_CSS_PATH']; ?>
 <?php if ($this->_tpl_vars['USER_ID'] == 'BABEL'): ?>
     <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /common/propinsi/BABEL.PNG">
-<?php elseif ($this->_tpl_vars['USER_ID'] == 'BALI'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/BALI.PNG">
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'BANTEN'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/BANTEN.JPG">
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'BENGKULU'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/BENGKULU.JPG">
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'DIY'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/DIY.JPG">
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'DKI'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/DKI.JPG">
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'GTO'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/GTO.JPG">
-   
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'JABAR'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/JABAR.JPG">
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'JAMBI'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/JAMBI.PNG">
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'JATENG'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/JATENG.JPG">
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'JATIM'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/JATIM.PNG">
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'KALBAR'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/KALBAR.PNG">
- <?php elseif ($this->_tpl_vars['USER_ID'] == 'KALSEL'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/KALSEL.GIF">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'KALTENG'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/KALTENG.JPG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'KALTIM'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/KALTIM.PNG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'KEPRI'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/KEPRI.JPG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'LAMPUNG'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/LAMPUNG.JPG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'MALUKU'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/MALUKU.PNG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'MALUT'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/MALUT.PNG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'NAD'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/NAD.JPG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'NTB'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/NTB.JPG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'NTT'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/NTT.JPG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'PAPUA BARAT'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/PAPUA BARAT.JPG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'PAPUA'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/PAPUA.JPG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'RIAU'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/RIAU.JPG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'SULBAR'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/SULBAR.JPG">
-     <?php elseif ($this->_tpl_vars['USER_ID'] == 'SULSEL'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/SULSEL.JPG">
-     <?php elseif ($this->_tpl_vars['USER_ID'] == 'SULTRA'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/SULTRA.JPG">
-     <?php elseif ($this->_tpl_vars['USER_ID'] == 'SULUT'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/SULUT.PNG">
-     <?php elseif ($this->_tpl_vars['USER_ID'] == 'SUMBAR'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/SUMBAR.PNG">
-     <?php elseif ($this->_tpl_vars['USER_ID'] == 'SUMSEL'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/SUMSEL.PNG">
-    <?php elseif ($this->_tpl_vars['USER_ID'] == 'SUMUT'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/propinsi/SUMUT.JPG"> 
-   <?php elseif ($this->_tpl_vars['USER_ID'] == 'admin'): ?>
-   <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/common/image_user/admin.png"> 
+ 
       <?php else: ?>
     <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /common/kabupaten/pwni1.gif">
@@ -233,22 +137,7 @@ img.link { behavior: url("<?php echo $this->_tpl_vars['HREF_CSS_PATH']; ?>
 		  <td class="text-regular" align="right"><B><?php echo ((is_array($_tmp=$this->_tpl_vars['LEVEL'])) ? $this->_run_mod_handler('upper', true, $_tmp) : smarty_modifier_upper($_tmp)); ?>
 </B></td>
 		  </tr>
-        <tr>
-	<!--
-	<tr>
-	  <td class="text-regular">Tahun</td>
-	  <td class="text-regular">:</td>
-          <td class="text-regular"><?php echo $this->_tpl_vars['TAHUN']; ?>
-</td>
-	</tr>
-	-->
-        <!-- <tr> 
-          <td class="text-regular" width="120px">Ruas Jalan</td>
-          <td class="text-regular">:</td>
-		  <td class="text-regular" align="right"><B><?php echo ((is_array($_tmp=$this->_tpl_vars['JENIS_RUAS_JALAN'])) ? $this->_run_mod_handler('upper', true, $_tmp) : smarty_modifier_upper($_tmp)); ?>
-</B></td>
-		  </tr> 
-		  -->
+     
         <tr> 
           <td class="text-regular" width="120px">Nama Lengkap</td>
           <td class="text-regular">:</td>
@@ -261,12 +150,11 @@ img.link { behavior: url("<?php echo $this->_tpl_vars['HREF_CSS_PATH']; ?>
 		  <td class="text-regular" align="right"><?php echo ((is_array($_tmp=$this->_tpl_vars['USER_NICK'])) ? $this->_run_mod_handler('upper', true, $_tmp) : smarty_modifier_upper($_tmp)); ?>
 </td>
         </tr>
- 		<tr> 
-          <td class="text-regular">Tanggal Bergabung</td>
+ 	<!--	<tr> 
+          <td class="text-regular">Tanggal Aktif User</td>
           <td class="text-regular">:</td>
-		  <td class="text-regular" align="right"><?php echo $this->_tpl_vars['USER_DATE_JOIN']; ?>
-</td>
-        </tr>
+		  <td class="text-regular" align="right">$USER_DATE_JOIN</td>
+        </tr> -->
 		<tr> 
           <td class="text-regular">Alamat</td>
           <td class="text-regular">:</td>
@@ -284,21 +172,6 @@ img.link { behavior: url("<?php echo $this->_tpl_vars['HREF_CSS_PATH']; ?>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right"><?php echo $this->_tpl_vars['USER_EMAIL']; ?>
 </td>
-        </tr>
-		<tr> 
-          <td class="text-regular">Terakhir Masuk Aplikasi <i>(Waktu)</i></td>
-          <td class="text-regular">:</td>
-		  <td class="text-regular" align="right"><?php echo $this->_tpl_vars['USER_CURRENT_LOGIN_DATE']; ?>
-</td>
-        </tr>
-        <tr> 
-          <td class="text-regular">IP Terakhir Masuk Aplikasi <i>(Host)</i></td>
-          <td class="text-regular">:</td>
-		  <td class="text-regular" align="right"><?php echo $this->_tpl_vars['USER_CURRENT_LOGIN_IP']; ?>
-</td>
-        </tr>
-        <tr> 
-          <td colspan="3"><hr size="1" color="#FFFFFF"></td>
         </tr>
         <tr> 
           <td class="text-regular">Terakhir Masuk<i>(Waktu)</i></td>

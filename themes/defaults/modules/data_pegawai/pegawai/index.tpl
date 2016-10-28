@@ -2,8 +2,7 @@
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
 <title><!--{$TITLE}--></title>
-<STYLE>
-    {
+<STYLE>   {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -60,7 +59,6 @@ label.tab-menu {
 }
     </STYLE>
     
-
 <link rel="stylesheet" href="<!--{$HREF_CSS_PATH}-->/preload.css" type="text/css">
 <script language="JavaScript" type="text/javascript">
 
@@ -81,16 +79,16 @@ function hideIt(){
 <div id="divLoadCont">
 	<table width="100%" height="95%" align="center" valign="middle">
 		<tr><td width="100%" height="100%" align="center" valign="middle">
-			<img src="<!--{$HREF_IMG_PATH}-->/ajax-lob.gif" align="absmiddle"> Sedang Memuat....
+		<img src="<!--{$HREF_IMG_PATH}-->/ajax-lob.gif" align="absmiddle"> Sedang Memuat....
 		</td></tr>
 	</table>
 </div>
+
 
 <link rel="stylesheet" href="<!--{$HREF_CSS_PATH}-->/default.css" type="text/css">
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/global.js"></SCRIPT>
 <link rel="stylesheet" href="<!--{$HREF_CSS_PATH}-->/dhtmlgoodies_calendar.css" type="text/css">
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/calendar/dhtmlgoodies_calendar.js"></SCRIPT>
-
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/tw-ajax.js"></SCRIPT>
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/tw-sack.js"></SCRIPT>
 
@@ -114,435 +112,787 @@ function hideIt(){
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
 		<tr><td class="tcat"> Data Pegawai</td></tr>
 		</table>
-		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/form.gif" align="absmiddle" border="0"> Form Tambah/Ubah Data</td></tr>
 		<tr><td class="alt2" style="padding:0px;">
 
-		<FORM NAME="frmCreate" METHOD="POST" ACTION="engine.php">
-		<TABLE id="table-add-box">
+		<FORM NAME="frmCreate" METHOD="POST" ACTION="engine.php" enctype="multipart/form-data">
+              <!--  </FORM>
+                <FORM METHOD=POST ACTION="" NAME="frmList"> -->
+		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+		<tr><td class="tcat">
+		<div id="tcat">
+		[ <a href="#" onClick="document.getElementById('table-search-box1').style.display='block';document.getElementById('table-search-box2').style.display='none';document.getElementById('table-search-box3').style.display='none'; document.getElementById('table-search-box4').style.display='none';document.getElementById('table-search-box5').style.display='none';document.getElementById('table-search-box6').style.display='none';document.getElementById('table-search-box7').style.display='none';document.getElementById('table-search-box8').style.display='none';document.getElementById('table-search-box9').style.display='none';document.getElementById('table-search-box10').style.display='none';">Pribadi</a> |
+		<a href="#" onClick="document.getElementById('table-search-box1').style.display='none';document.getElementById('table-search-box2').style.display='block';document.getElementById('table-search-box3').style.display='none';document.getElementById('table-search-box4').style.display='none';document.getElementById('table-search-box5').style.display='none';document.getElementById('table-search-box6').style.display='none';document.getElementById('table-search-box7').style.display='none';document.getElementById('table-search-box8').style.display='none';document.getElementById('table-search-box9').style.display='none';document.getElementById('table-search-box10').style.display='none'; ">Data Orang Tua</a> |
+		<a href="#" onClick="document.getElementById('table-search-box1').style.display='none';document.getElementById('table-search-box2').style.display='none';document.getElementById('table-search-box3').style.display='block';document.getElementById('table-search-box4').style.display='none';document.getElementById('table-search-box5').style.display='none';document.getElementById('table-search-box6').style.display='none';document.getElementById('table-search-box7').style.display='none';document.getElementById('table-search-box8').style.display='none';document.getElementById('table-search-box9').style.display='none';document.getElementById('table-search-box10').style.display='none';">Data Menikah</a> |
+		<a href="#" onClick="document.getElementById('table-search-box1').style.display='none';document.getElementById('table-search-box2').style.display='none';document.getElementById('table-search-box3').style.display='none';document.getElementById('table-search-box4').style.display='block';document.getElementById('table-search-box5').style.display='none';document.getElementById('table-search-box6').style.display='none';document.getElementById('table-search-box7').style.display='none';document.getElementById('table-search-box8').style.display='none';document.getElementById('table-search-box9').style.display='none';document.getElementById('table-search-box10').style.display='none';">Asuransi & NPWP</a> |
+		<a href="#" onClick="document.getElementById('table-search-box1').style.display='none';document.getElementById('table-search-box2').style.display='none';document.getElementById('table-search-box3').style.display='none';document.getElementById('table-search-box4').style.display='none';document.getElementById('table-search-box5').style.display='block';document.getElementById('table-search-box6').style.display='none';document.getElementById('table-search-box7').style.display='none';document.getElementById('table-search-box8').style.display='none';document.getElementById('table-search-box9').style.display='none';document.getElementById('table-search-box10').style.display='none';">Data Bank</a> |
+		<a href="#" onClick="document.getElementById('table-search-box1').style.display='none';document.getElementById('table-search-box2').style.display='none';document.getElementById('table-search-box3').style.display='none';document.getElementById('table-search-box4').style.display='none';document.getElementById('table-search-box5').style.display='none';document.getElementById('table-search-box6').style.display='block';document.getElementById('table-search-box7').style.display='none';document.getElementById('table-search-box8').style.display='none';document.getElementById('table-search-box9').style.display='none';document.getElementById('table-search-box10').style.display='none';">Pendidikan</a> ]</div>		
+		</td></tr>
+		
+		</table>
+		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+		<tr><td class="alt2" style="padding:0px;">
+		<div id="table-search-box1">
+		
 
+		<table width="100%">
+                    <input type="hidden" name="r_pegawai__id"> 
+                     <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Tgl Mulai Masuk Di PT.TMW <font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td width="622" class="tdatacontent">
+                                <!--{if $EDIT_VAL==0}-->
 
-					<!--{if $EDIT_VAL==0}-->
-                                            <INPUT TYPE="hidden" NAME="id" value="(OTOMATIS OLEH SISTEM)" size="35" readOnly class="text_disabled">
+                                <input type="text" NAME="r_pegawai__tgl_masuk"  readonly="" value="<!--{$TODAY}-->">
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.r_pegawai__tgl_masuk,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{else}-->
-                                        <INPUT TYPE="hidden" NAME="id" value="<!--{$EDIT_ID}-->" size="35" readOnly class="text_disabled">
-					<!--{/if}-->
+								 <input type="text" readonly="" name="r_pegawai__tgl_masuk" value="<!--{$EDIT_R_PEGAWAI__TGL_MASUK}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.r_pegawai__tgl_masuk,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{/if}-->                                </td>
+			                    <td width="177" colspan="2" rowspan="7" class="tdatacontent">
+                                               <!--{if $EDIT_VAL==1&&$ADA_IMAGE==1}-->
+                                              <img src="<!--{$HREF_FOTO}-->/<!--{$FOTO_NAME}-->" width=105 height=134 >
+                                             <!--{/if}-->
+                                              <!--{if $EDIT_VAL==1&&$ADA_IMAGE==0}-->
+                                              <img src="<!--{$HREF_FOTO}-->/<!--{$FOTO_NAME}-->" width=105 height=134 >
+                                             <!--{/if}-->
+                                             
+                                            </td>
+                  </tr>
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Nama Pegawai  <font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__nama" value="<!--{$EDIT_R_PEGAWAI__NAMA}-->" ></td>
+                  </tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Tempat Lahir<font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__tmpt_lahir" value="<!--{$EDIT_R_PEGAWAI__TMPT_LAHIR}-->" ></td>
+                  </tr>
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Tgl Lahir<font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td class="tdatacontent">
+                                    <!--{if $EDIT_VAL==0}-->
 
-
-
-				<TR>
-					<TD>Cabang <font color="#ff0000">*</font></TD>
-					<TD>
-
-
-
-					<!--{if ($JENIS_USER_SES==1)}-->
-
-								<select name="kode_cabang" >
-								<option value=""> Pilih Cabang </option>
-								<!--{section name=x loop=$DATA_PWK}-->
-
-								<!--{if ($OPT==1)}-->
-
-									<!--{if trim($DATA_PWK[x].kode_cabang) == $EDIT_KODE_CABANG}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->" selected > <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{else}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->"  > <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{/if}-->
-
-								<!--{else}-->
-
-									<!--{if  ($DATA_PWK[x].kode_cabang) == $KODE_PW_SES}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->" selected > <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{else}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->"  > <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{/if}-->
-								<!--{/if}-->
-
-								<!--{/section}-->
-								</SELECT>
-
-						<!--{else}-->
-
-					<select name="kode_cabang" >
-						<option value=""> Pilih Cabang </option>
-								<!--{section name=x loop=$DATA_PWK}-->
-
-								<!--{if ($OPT==1)}-->
-
-									<!--{if trim($DATA_PWK[x].kode_cabang) == $EDIT_KODE_CABANG}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->" selected > <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{else}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->"  disabled> <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{/if}-->
-
-								<!--{else}-->
-
-									<!--{if  trim($DATA_PWK[x].kode_cabang) == trim($KODE_PW_SES)}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->" selected > <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{else}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->"  disabled> <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{/if}-->
-
-								<!--{/if}-->
-
-								<!--{/section}-->
-								</SELECT>
-
-						<!--{/if}-->
-
-
-					</TD>
-				</TR>
-
-
-                               <TR>
-					<TD>Departemen</TD>
-					<TD>
-						<select name="kode_departemen">
-						<option value=""> Pilih Departemen </option>
-						<!--{section name=x loop=$DATA_DEP}-->
-						<!--{if trim($DATA_DEP[x].kode_departemen) == $EDIT_KODE_DEPARTEMEN}-->
-						<option value="<!--{$DATA_DEP[x].kode_departemen}-->" selected > <!--{$DATA_DEP[x].departemen}--> </option>
-						<!--{else}-->
-						<option value="<!--{$DATA_DEP[x].kode_departemen}-->"  > <!--{$DATA_DEP[x].departemen}--> </option>
-						<!--{/if}-->
-						<!--{/section}-->
-						</select>
-
-					</TD>
-				</TR>
-                                <TR>
-					<TD>Jabatan</TD>
-					<TD>
-						<select name="kode_jabatan"  >
-						<option value=""> Pilih Jabatan </option>
-						<!--{section name=x loop=$DATA_JABATAN}-->
-						<!--{if trim($DATA_JABATAN[x].kode_jabatan) == $EDIT_KODE_JABATAN}-->
-						<option value="<!--{$DATA_JABATAN[x].kode_jabatan}-->" selected > <!--{$DATA_JABATAN[x].jabatan}--> </option>
-						<!--{else}-->
-						<option value="<!--{$DATA_JABATAN[x].kode_jabatan}-->"  > <!--{$DATA_JABATAN[x].jabatan}--> </option>
-						<!--{/if}-->
-						<!--{/section}-->
-						</select>
-					</TD>
-				</TR>
-
-                                <TR>
-					<TD>Level Jabatan</TD>
-					<TD>
-						<select name="kode_level"  >
-						<option value=""> Pilih Level </option>
-						<!--{section name=x loop=$DATA_LEVEL}-->
-						<!--{if trim($DATA_LEVEL[x].kode_level) == $EDIT_KODE_LEVEL}-->
-						<option value="<!--{$DATA_LEVEL[x].kode_level}-->" selected > <!--{$DATA_LEVEL[x].nama_level}--> </option>
-						<!--{else}-->
-						<option value="<!--{$DATA_LEVEL[x].kode_level}-->"  > <!--{$DATA_LEVEL[x].nama_level}--> </option>
-						<!--{/if}-->
-						<!--{/section}-->
-						</select>
-					</TD>
-				</TR>
-
-                                <TR>
-					<TD>Kode Absensi</TD>
-					<TD><INPUT TYPE="text" NAME="kode_absensi" value="<!--{$EDIT_KODE_ABSENSI}-->" size="35"></TD>
-				</TR>
-
-                                <TR>
-					<TD>Nama Lengkap</TD>
-					<TD><INPUT TYPE="text" NAME="nama" value="<!--{$EDIT_NAMA}-->" size="35"></TD>
-				</TR>
-
-                                 <TR>
-					<TD>Pendidikan Terakhir</TD>
-					<TD><INPUT TYPE="text" NAME="pendidikan_akhir" value="<!--{$EDIT_NAMA}-->" size="35"></TD>
-				</TR>
-
-				<TR>
-					<TD>Tempat Lahir</TD>
-					<TD><INPUT TYPE="text" NAME="tempat_lahir" value="<!--{$EDIT_TEMPAT_LAHIR}-->" size="35"></TD>
-				</TR>
-
-				<TR>
-					<TD>Tanggal Lahir</TD>
-					<TD>
-					<!--{if $EDIT_VAL==0}-->
-
-							 <input type="text" NAME="tgl_lahir"   >
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_lahir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+                                    <input type="text" NAME="r_pegawai__tgl_lahir"  readonly="" value="<!--{$TODAY}-->">
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.r_pegawai__tgl_lahir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{else}-->
-								 <input type="text" name="tgl_lahir" value="<!--{$EDIT_TGL_LAHIR}-->" >
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_lahir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
-					<!--{/if}-->
-					</TD>
-				</TR>
-
-<TR>
-					<TD>Jenis Kelamin <font color="#ff0000">*</font></TD>
-					<TD>
-
-					<select name="jk"  >
-						<option value="">[Pilih Jenis Kelamin]</option>
-
-						<option value="1"   <!--{if  ($EDIT_JK  == 1)}--> selected <!--{/if}--> > Perempuan </option>
-						<option value="2"   <!--{if  ($EDIT_JK  == 2)}--> selected <!--{/if}-->   > Laki-Laki </option>
-
-						</select>
-					 </TD>
-				</TR>
-                                <TR>
-					<TD>Agama</TD>
-					<TD>
-						<select Name="kode_agama"  >
-						<option value=""> Pilih Agama </option>
-						<!--{section name=x loop=$DATA_AGAMA}-->
-						<!--{if trim($DATA_AGAMA[x].kode_agama) == $EDIT_KODE_AGAMA}-->
-						<option value="<!--{$DATA_AGAMA[x].kode_agama}-->" selected > <!--{$DATA_AGAMA[x].nama_agama}--> </option>
-						<!--{else}-->
-						<option value="<!--{$DATA_AGAMA[x].kode_agama}-->"  > <!--{$DATA_AGAMA[x].nama_agama}--> </option>
-						<!--{/if}-->
-						<!--{/section}-->
-						</select>
-					</TD>
-				</TR>
-
-
-					<TR>
-					<TD colspan="2"><u>Alamat KTP</u></TD>
-				</TR>
-
-
-
-
-
-                                  <TR>
-					<TD>No KTP /SIM</TD>
-					<TD><INPUT TYPE="text" NAME="no_ktp_sim" value="<!--{$EDIT_TLP}-->" size="35"></TD>
-				</TR>
-				<TR>
-					<TD>Alamat KTP</TD>
-					<TD><INPUT TYPE="text" NAME="alamat_ktp" value="<!--{$EDIT_ALAMAT}-->" size="35"></TD>
-				</TR>
-
-                                <TR>
-					<TD>Kode Pos KTP</TD>
-					<TD><INPUT TYPE="text" NAME="kode_pos_ktp" value="<!--{$EDIT_ALAMAT}-->" size="35"></TD>
-				</TR>
-
-                                 <TR>
-					<TD>RT/RW KTP</TD>
-					<TD><INPUT TYPE="text" NAME="alamat" value="<!--{$EDIT_ALAMAT}-->" size="35"></TD>
-				</TR>
-                                <TR>
-					<TD>Propinsi</TD>
-					<TD>
-						<select name="no_propinsi" onchange="cari_kab(this.value);">
+								 <input readonly="" type="text" name="r_pegawai__tgl_lahir" value="<!--{$EDIT_R_PEGAWAI__TGL_LAHIR}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.r_pegawai__tgl_lahir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{/if}-->                                </td>
+                  </tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Jenis Kelamin<font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td class="tdatacontent">
+                                        <select name="r_pegawai__jk" >
+                                        <option value="">[Pilih Status]</option>
+                                       <OPTION value="LAKI-LAKI" <!--{if $EDIT_R_PEGAWAI__JK == 'LAKI-LAKI'}--> selected <!--{/if}--> >Laki-laki</OPTION>
+					<OPTION value="PEREMPUAN" <!--{if $EDIT_R_PEGAWAI__JK == 'PEREMPUAN'}--> selected <!--{/if}-->>Perempuan</OPTION>
+                                        </select>                                </td>
+                  </tr>
+                      
+                                                
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">NIK KTP<font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td class="tdatacontent">
+                                    <div id="ajax_cek_id">
+                                    <INPUT type="text" name="r_pegawai__ktp" maxlenght="16" onkeyup="angka(this)" value="<!--{$EDIT_R_PEGAWAI__KTP}-->" OnChange="JavaScript:Ajax('ajax_cek_id','<!--{$HREF_HOME_PATH_AJAX}-->/cek.php?r_pegawai__ktp='+frmCreate.r_pegawai__ktp.value)">
+                                    </DIV>
+                                    </td>
+                  </tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">No SIM</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__sim" value="<!--{$EDIT_R_PEGAWAI__SIM}-->" ></td>
+                  </tr>
+                         
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Agama<font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent">
+                                        <select name="r_pegawai__agama">
+                                        <OPTION value="">[Pilih Status]</option>
+                                        <OPTION value="1" <!--{if $EDIT_R_PEGAWAI__AGAMA== '1'}--> selected <!--{/if}--> >Islam</OPTION>
+					<OPTION value="2" <!--{if $EDIT_R_PEGAWAI__AGAMA== '2'}--> selected <!--{/if}-->>Katolik</OPTION>
+					<OPTION value="3" <!--{if $EDIT_R_PEGAWAI__AGAMA== '3'}--> selected <!--{/if}--> >Budha</OPTION>
+					<OPTION value="4" <!--{if $EDIT_R_PEGAWAI__AGAMA== '4'}--> selected <!--{/if}-->>Protestan</OPTION>
+                                        <OPTION value="5" <!--{if $EDIT_R_PEGAWAI__AGAMA== '5'}--> selected <!--{/if}-->>Hindu</OPTION>
+                                        </select>                                </td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Propinsi KTP<font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+				<td colspan="3" class="tdatacontent"><select name="r_pegawai__ktp_prov" onChange="cari_kab_ktp(this.value);">
 						<option value=""> Pilih Provinsi </option>
-						<!--{section name=x loop=$DATA_PROPINSI}-->
-						<!--{if trim($DATA_PROPINSI[x].no_propinsi) == $EDIT_NO_PROP}-->
-						<option value="<!--{$DATA_PROPINSI[x].no_propinsi}-->" selected > <!--{$DATA_PROPINSI[x].nama_propinsi}--> </option>
+						<!--{section name=x loop=$DATA_PROPINSI_KTP}-->
+						<!--{if trim($DATA_PROPINSI_KTP[x].r_provinsi__id) == $EDIT_R_PEGAWAI__KTP_PROV}-->
+						<option value="<!--{$DATA_PROPINSI_KTP[x].r_provinsi__id}-->" selected > <!--{$DATA_PROPINSI_KTP[x].r_provinsi__nama}--> </option>
 						<!--{else}-->
-						<option value="<!--{$DATA_PROPINSI[x].no_propinsi}-->"  > <!--{$DATA_PROPINSI[x].nama_propinsi}--> </option>
+						<option value="<!--{$DATA_PROPINSI_KTP[x].r_provinsi__id}-->"  > <!--{$DATA_PROPINSI_KTP[x].r_provinsi__nama}--> </option>
 						<!--{/if}-->
 						<!--{/section}-->
-						</select>
-					</TD>
-				</TR>
-                                <TR>
-					<TD>kota / Kabupaten </TD>
-					<TD>
-					<div id="ajax_kabupaten">
-					<select name="id_kab" >
+						</select></td>
+			</tr>
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Kabupaten / Kota KTP<font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent">
+                                    <div id="ajax_kabupaten_ktp">
+                                     <select name="r_pegawai__ktp_kab" onChange="cari_kec(this.value);">
 						<option value="">[Pilih Kabupaten]</option>
-						<!--{section name=x loop=$DATA_KABUPATEN}-->
-						<!--{if trim($DATA_KABUPATEN[x].id_kabupaten) == $EDIT_ID_KAB}-->
-						<option value="<!--{$DATA_KABUPATEN[x].id_kabupaten}-->" selected > <!--{$DATA_KABUPATEN[x].nama_kabupaten}--> </option>
+						<!--{section name=x loop=$DATA_KABUPATEN_KTP}-->
+						<!--{if trim($DATA_KABUPATEN_KTP[x].r_kabupaten__id) == $EDIT_R_PEGAWAI__KTP_KAB}-->
+						<option value="<!--{$DATA_KABUPATEN_KTP[x].r_kabupaten__id}-->" selected > <!--{$DATA_KABUPATEN_KTP[x].r_kabupaten__nama}--> </option>
 						<!--{else}-->
-						<option value="<!--{$DATA_KABUPATEN[x].id_kabupaten}-->"  > <!--{$DATA_KABUPATEN[x].nama_kabupaten}--> </option>
+						<option value="<!--{$DATA_KABUPATEN_KTP[x].r_kabupaten__id}-->"  > <!--{$DATA_KABUPATEN_KTP[x].r_kabupaten__nama}--> </option>
 						<!--{/if}-->
 						<!--{/section}-->
-						</select>
-					</div></TD>
-				</TR>
-                                <TR>
-					<TD colspan="2"><u>Alamat Domisili</u></TD>
-				</TR>
-                                <TR>
-					<TD>Alamat Domisili</TD>
-					<TD><INPUT TYPE="text" NAME="alamat_domisil" value="<!--{$EDIT_ALAMAT}-->" size="35"></TD>
-				</TR>
-
-                                <TR>
-					<TD>Kode Pos Domisili</TD>
-					<TD><INPUT TYPE="text" NAME="kode_pos_domisil" value="<!--{$EDIT_KODEPOS_DOM}-->" size="35"></TD>
-				</TR>
-
-                                 <TR>
-					<TD>RT/RW Domisili</TD>
-					<TD><INPUT TYPE="text" NAME="rt_rw_domisil" value="<!--{$EDIT_RTRW_DOM}-->" size="35"></TD>
-				</TR>
-
-                                <TR>
-					<TD>Kota/Kabupaten</TD>
-					<TD><INPUT TYPE="text" NAME="kota_domisil" value="<!--{$EDIT_RTRW_DOM}-->" size="35"></TD>
-				</TR>
-                                 <TR>
-					<TD>Golongan Darah</TD>
-					<TD><INPUT TYPE="text" NAME="kode_gol_darah" value="<!--{$EDIT_GOL_DARAH}-->" size="35"></TD>
-				</TR>
-
-			<TR>
-					<TD>No Telp</TD>
-					<TD><INPUT TYPE="text" NAME="telp_rmh" value="<!--{$EDIT_TLP}-->" size="35"></TD>
-				</TR>
-
-                                <TR>
-					<TD>No Hp</TD>
-					<TD><INPUT TYPE="text" NAME="hp" value="<!--{$EDIT_HP}-->" size="35"></TD>
-				</TR>
-
-                                <TR>
-					<TD>No Hp Inventaris</TD>
-					<TD><INPUT TYPE="text" NAME="telp_inventaris" value="<!--{$EDIT_HP_INVENTARIS}-->" size="35"></TD>
-				</TR>
-
-                               <TR>
-					<TD>Tanggal Masuk</TD>
-					<TD>
-					<!--{if $EDIT_VAL==0}-->
-
-							 <input type="text" name="tgl_masuk"   >
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_masuk,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
-					<!--{else}-->
-								 <input type="text" name="tgl_masuk" value="<!--{$EDIT_TGL_LAHIR}-->" >
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_masuk,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
-					<!--{/if}-->
-					</TD>
-				</TR>
-
-
-
-                                 <TR>
-					<TD>Tanggal Kontrak Awal</TD>
-					<TD>
-					<!--{if $EDIT_VAL==0}-->
-
-							 <input type="text" name="tgl_kontrak_awal"   >
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_kontrak_awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
-					<!--{else}-->
-								 <input type="text" name="tgl_kontrak_awal" value="<!--{$EDIT_TGL_LAHIR}-->" >
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_kontrak_awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
-					<!--{/if}-->
-					</TD>
-				</TR>
-
-                                <TR>
-					<TD>Tanggal Kontrak Akhir</TD>
-					<TD>
-					<!--{if $EDIT_VAL==0}-->
-
-							 <input type="text" name="tgl_kontrak_akhir"   >
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_kontrak_akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
-					<!--{else}-->
-								 <input type="text" name="tgl_kontrak_akhir" value="<!--{$EDIT_TGL_LAHIR}-->" >
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_kontrak_akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
-					<!--{/if}-->
-					</TD>
-				</TR>
-                                 <TR>
-					<TD>Kontrak Ke</TD>
-					<TD><INPUT TYPE="text" NAME="kontrak_ke" value="<!--{$EDIT_KONTRAK_KE}-->" size="35"></TD>
-				</TR>
-                                 <TR>
-					<TD>Status karyawan</TD>
-					<TD>
-						<select name="kode_status"  >
-						<option value=""> Pilih  </option>
-						<!--{section name=x loop=$DATA_STATUS}-->
-						<!--{if trim($DATA_STATUS[x].kode_status) == $EDIT_KODE_STATUS}-->
-						<option value="<!--{$DATA_STATUS[x].kode_status}-->" selected > <!--{$DATA_STATUS[x].nama_status}--> </option>
+						</select> 
+                                  </div>                                </td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Kecamatan KTP<font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+				<td colspan="3" class="tdatacontent">
+                                <div id="ajax_kecamatan_ktp">
+					<select name="r_pegawai__ktp_kec" > 
+						<option value="">[Pilih Kecamatan]</option>
+						<!--{section name=x loop=$DATA_KECAMATAN_KTP}-->
+						<!--{if trim($DATA_KECAMATAN_KTP[x].r_kecamatan__id) == $EDIT_R_PEGAWAI__KTP_KEC}-->
+						<option value="<!--{$DATA_KECAMATAN_KTP[x].r_kecamatan__id}-->" selected > <!--{$DATA_KECAMATAN_KTP[x].r_kecamatan__nama}--> </option>
 						<!--{else}-->
-						<option value="<!--{$DATA_STATUS[x].kode_status}-->"  > <!--{$DATA_STATUS[x].nama_status}--> </option>
+						<option value="<!--{$DATA_KECAMATAN_KTP[x].r_kecamatan__id}-->"<!--{$DATA_KECAMATAN_KTP[x].r_kecamatan__nama}--> </option>
 						<!--{/if}-->
 						<!--{/section}-->
-						</select>
-					</TD>
-				</TR>
-                                <TR>
-					<TD>NO NPWP</TD>
-					<TD><INPUT TYPE="text" NAME="no_npwp" value="<!--{$EDIT_NO_NPWP}-->" size="35"></TD>
-				</TR>
-                                <TR>
-					<TD>No BPJS Ketenagakerjaan</TD>
-					<TD><INPUT TYPE="text" NAME="no_bpjs_kt" value="<!--{$EDIT_NO_BPJS_KT}-->" size="35"></TD>
-				</TR>
-                                <TR>
-					<TD>No BPJS Kesehatan</TD>
-					<TD><INPUT TYPE="text" NAME="no_bpjs_kt" value="<!--{$EDIT_NO_BPJS_KES}-->" size="35"></TD>
-				</TR>
-                                <TR>
-					<TD>No Inhealth</TD>
-					<TD><INPUT TYPE="text" NAME="no_inhealth" value="<!--{$EDIT_INHEALTH}-->" size="35"></TD>
-				</TR>
-                                <TR>
-					<TD>Kode Bank</TD>
-					<TD>
-						<select name="kode_bank"  >
-						<option value=""> Pilih Nama Bank </option>
-						<!--{section name=x loop=$DATA_BANK}-->
-						<!--{if trim($DATA_BANK[x].kode_bank) == $EDIT_KODE_BANK}-->
-						<option value="<!--{$DATA_BANK[x].kode_bank}-->" selected > <!--{$DATA_BANK[x].nama_bank}--> </option>
+						</select>										
+					</div>                           </td>
+			</tr>   
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Desa / Kelurahan KTP<font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="20">:</td>
+				<td colspan="3" class="tdatacontent">
+                                    <div id="ajax_kecamatan2_ktp">
+                                       <select name="r_pegawai__ktp_desa"> 
+						<option value="">[Pilih Desa]</option>
+					<!--{section name=x loop=$DATA_DESA_KTP}-->
+						<!--{if trim($DATA_DESA_KTP[x].r_desa__id) == $EDIT_R_PEGAWAI__KTP_DESA}-->
+						<option value="<!--{$DATA_DESA_KTP[x].r_desa__id}-->" selected > <!--{$DATA_DESA_KTP[x].r_desa__nama}--> </option>
 						<!--{else}-->
-						<option value="<!--{$DATA_BANK[x].kode_bank}-->"  > <!--{$DATA_BANK[x].nama_bank}--> </option>
+						<option value="<!--{$DATA_DESA_KTP[x].r_desa__id}-->"<!--{$DATA_DESA_KTP[x].r_desa__nama}--> </option>
 						<!--{/if}-->
 						<!--{/section}-->
-						</select>
-					</TD>
-				</TR>
-				<TR>
-					<TD>Alamat Buka Bank</TD>
-					<TD><INPUT TYPE="text" NAME="alamat_buka_bank" value="<!--{$EDIT_ALAMAT_BK_BANK}-->" size="35"></TD>
-				</TR>
-                                <TR>
-					<TD>No Rek Bank</TD>
-					<TD><INPUT TYPE="text" NAME="rek_bank_baru" value="<!--{$EDIT_NO_REK_BANK}-->" size="35"></TD>
-				</TR>
+                                       </SELECT>
+                                    </div>                          </td>
+			</tr>
+                        
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">RT/RW KTP</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent">
+                                    RT<INPUT type="text" name="r_pegawai__ktp_rt" value="<!--{$EDIT_R_PEGAWAI__KTP_RT}-->" size="5" >
+                                    RW<INPUT type="text" name="r_pegawai__ktp_rw"  value="<!--{$EDIT_R_PEGAWAI__KTP_RW}-->" size="5" >                                </td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Kode Pos KTP</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__ktp_kodepos" value="<!--{$EDIT_R_PEGAWAI__KTP_KODEPOS}-->" ></td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Alamat KTP </td>
+				<td class="tdatacontent" width="20">:</td>
+                             
+                               
+			
+                                <TD colspan="3"><textarea rows="5" cols="20" NAME="r_pegawai__nama_jalan"  size="12" ><!--{$EDIT_R_PEGAWAI__ALAMAT}--></textarea></TD>
+			</tr>
+                        
+                        
+                        
+                        <tr class='<!--{cycle values="alt,alt3"}-->' >
+                            <td class="tdatacontent" width="249"><u><B> ALAMAT DOMISILI</U></B></td>
+				<td class="tdatacontent" width="20"></td>
+				<td colspan="3" class="tdatacontent"></td>
+			</tr>      
+			
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Propinsi Domisili</td>
+				<td class="tdatacontent" width="20">:</td>
+				<td colspan="3" class="tdatacontent"><select name="r_pegawai__alm_prov" onChange="cari_kab_alm(this.value);">
+						<option value=""> Pilih Provinsi </option>
+						<!--{section name=x loop=$DATA_PROPINSI_ALM}-->
+						<!--{if trim($DATA_PROPINSI_ALM[x].r_provinsi__id) == $EDIT_R_PEGAWAI__ALM_PROV}-->
+						<option value="<!--{$DATA_PROPINSI_ALM[x].r_provinsi__id}-->" selected > <!--{$DATA_PROPINSI_ALM[x].r_provinsi__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_PROPINSI_ALM[x].r_provinsi__id}-->"  > <!--{$DATA_PROPINSI_ALM[x].r_provinsi__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+						</select></td>
+			</tr>
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Kabupaten / Kota Domisili</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent">
+                                    <div id="ajax_kabupaten_alm">
+                                     <select name="r_pegawai__alm_kab" onChange="cari_kec(this.value);">
+						<option value="">[Pilih Kabupaten]</option>
+						<!--{section name=x loop=$DATA_KABUPATEN_ALM}-->
+						<!--{if trim($DATA_KABUPATEN_ALM[x].r_kabupaten__id) == $EDIT_R_PEGAWAI__ALM_KAB}-->
+						<option value="<!--{$DATA_KABUPATEN_ALM[x].r_kabupaten__id}-->" selected > <!--{$DATA_KABUPATEN_ALM[x].r_kabupaten__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_KABUPATEN_ALM[x].r_kabupaten__id}-->"  > <!--{$DATA_KABUPATEN_ALM[x].r_kabupaten__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+						</select> 
+                                  </div>                                </td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Kecamatan Domisili</td>
+				<td class="tdatacontent" width="20">:</td>
+				<td colspan="3" class="tdatacontent">
+                                <div id="ajax_kecamatan_alm">
+					<select name="r_pegawai__alm_kec" > 
+						<option value="">[Pilih Kecamatan]</option>
+						<!--{section name=x loop=$DATA_KECAMATAN_ALM}-->
+						<!--{if trim($DATA_KECAMATAN_ALM[x].r_kecamatan__id) == $EDIT_R_PEGAWAI__ALM_KEC}-->
+						<option value="<!--{$DATA_KECAMATAN_ALM[x].r_kecamatan__id}-->" selected > <!--{$DATA_KECAMATAN_ALM[x].r_kecamatan__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_KECAMATAN_ALM[x].r_kecamatan__id}-->"<!--{$DATA_KECAMATAN_ALM[x].r_kecamatan__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+						</select>										
+					</div>                           </td>
+			</tr>   
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Desa / Kelurahan Domisili</td>
+				<td class="tdatacontent" width="20">:</td>
+				<td colspan="3" class="tdatacontent">
+                                    <div id="ajax_kecamatan2_alm">
+                                       <select name="r_pegawai__alm_desa" > 
+						<option value="">[Pilih Desa]</option>
+					<!--{section name=x loop=$DATA_DESA_ALM}-->
+						<!--{if trim($DATA_DESA_ALM[x].r_desa__id) == $EDIT_R_PEGAWAI__ALM_DESA}-->
+						<option value="<!--{$DATA_DESA_ALM[x].r_desa__id}-->" selected > <!--{$DATA_DESA_ALM[x].r_desa__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_DESA_ALM[x].r_desa__id}-->"<!--{$DATA_DESA_ALM[x].r_desa__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+                                       </SELECT>
+                                    </div>                          </td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">RT/RW Domisili</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent">
+                                    RT<INPUT type="text" name="r_pegawai__alm_rt" value="<!--{$EDIT_R_PEGAWAI__ALM_RT}-->" size="5" >
+                                    RW<INPUT type="text" name="r_pegawai__alm_rw"  value="<!--{$EDIT_R_PEGAWAI__ALM_RW}-->" size="5" >                                </td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Kode Pos Domisili</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__alm_kodepos" value="<!--{$EDIT_R_PEGAWAI__ALM_KODEPOS}-->"  ></td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Telepon Rumah</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__tlp_rumah" value="<!--{$EDIT_R_PEGAWAI__TLP_RUMAH}-->"  ></td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Telepon Pribadi</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__tlp_pribadi" value="<!--{$EDIT_R_PEGAWAI__TLP_PRIBADI}-->" ></td>
+			</tr>
+                        
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Telepon Kantor / Inventaris</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__tlp_kantor" value="<!--{$EDIT_R_PEGAWAI__TLP_KANTOR}-->" ></td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Gol Darah</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__gol_darah"  value="<!--{$EDIT_R_PEGAWAI__GOL_DARAH}-->"></td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Tinggi</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__tinggi" value="<!--{$EDIT_R_PEGAWAI__TINGGI}-->" ></td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Berat</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__berat" value="<!--{$EDIT_R_PEGAWAI__BERAT}-->" ></td>
+			</tr>
+                        <TR  class='<!--{cycle values="alt,alt3"}-->'>
+                                <TD class="tdatacontent">Cek Jika Akan Upload Foto</TD> 
+				<TD class="tdatacontent">     
+                                    <!-- <input type="text" disabled size="10" name="file_xls">-->
+                                    <input type="checkbox" onClick="codename()" name="checkboxname" value="1">                          </TD>
+                     </TR> 
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Foto</td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent">
+                                  <INPUT TYPE="file" disabled NAME="file_foto" size="35"  value="<!--{$FOTO_NO}-->_<!--{$FOTO_NAME}-->" >   
+                                  <INPUT TYPE ="hidden"  name="foto2"  value="<!--{$FOTO_NO}-->_<!--{$FOTO_NAME}-->">                                </td>
+			</tr>
+		</table>
+		</div>
 
-                                 <TR>
-					<TD>Nama Pemilik Rekening Bank</TD>
-					<TD><INPUT TYPE="text" NAME="nama_rek_bank" value="<!--{$EDIT_NO_REK_BANK}-->" size="35"></TD>
-				</TR>
+<!-- #ORANGTUA -->		
+		<div id="table-search-box2" style="font:12/22px arial;display:none;">
+		<table width="100%">
+                   
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Ayah   </td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__ayah" value="<!--{$EDIT_R_PEGAWAI__AYAH}-->" ></td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Ibu</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__ibu" value="<!--{$EDIT_R_PEGAWAI__IBU}-->"></td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Propinsi Orang Tua</td>
+				<td class="tdatacontent" width="5">:</td>
+				<td class="tdatacontent"><select name="r_pegawai__ortu_prov" onChange="cari_kab_ortu(this.value);"> 
+						<option value=""> Pilih Provinsi </option>
+						<!--{section name=x loop=$DATA_PROPINSI_KTP}-->
+						<!--{if trim($DATA_PROPINSI_KTP[x].r_provinsi__id) == $EDIT_R_PEGAWAI__ORTU_PROV}-->
+						<option value="<!--{$DATA_PROPINSI_KTP[x].r_provinsi__id}-->" selected > <!--{$DATA_PROPINSI_KTP[x].r_provinsi__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_PROPINSI_KTP[x].r_provinsi__id}-->"  > <!--{$DATA_PROPINSI_KTP[x].r_provinsi__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+						</select></td>
+			</tr>
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Kabupaten Orang Tua</td>
+				<td class="tdatacontent" width="5">:</td>
+				<td class="tdatacontent">
+                                    <div id="ajax_kabupaten_ortu">
+                                    <select name="r_pegawai__ortu_kab" onChange="cari_kec_ortu(this.value);">
+						<option value=""> Pilih Provinsi Orang Tua </option>
+						<!--{section name=x loop=$DATA_KABUPATEN_ORTU}-->
+						<!--{if trim($DATA_KABUPATEN_ORTU[x].r_kabupaten__id) == $EDIT_R_PEGAWAI__ORTU_KAB}-->
+						<option value="<!--{$DATA_KABUPATEN_ORTU[x].r_kabupaten__id}-->" selected > <!--{$DATA_KABUPATEN_ORTU[x].r_kabupaten__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_KABUPATEN_ORTU[x].r_kabupaten__id}-->"  > <!--{$DATA_KABUPATEN_ORTU[x].r_kabupaten__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+                                    </select>
+                    </DIV>
+                  </td>
+			</tr>
+                          <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Kecamatan Orang Tua </td>
+				<td class="tdatacontent" width="5">:</td>
+				<td class="tdatacontent">
+                                <div id="ajax_kecamatan_ortu">
+					<select name="r_pegawai__ortu_kec" > 
+						<option value="">[Pilih Kecamatan]</option>
+						<!--{section name=x loop=$DATA_KECAMATAN_ORTU}-->
+						<!--{if trim($DATA_KECAMATAN_ORTU[x].r_kecamatan__id) ==$EDIT_R_PEGAWAI__ORTU_KEC}-->
+						<option value="<!--{$DATA_KECAMATAN_ORTU[x].r_kecamatan__id}-->" selected > <!--{$DATA_KECAMATAN_ORTU[x].r_kecamatan__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_KECAMATAN_ORTU[x].r_kecamatan__id}-->"<!--{$DATA_KECAMATAN_ORTU[x].r_kecamatan__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+						</select>										
+					</div>
+                            </td>
+			</tr>  
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Desa / Kelurahan Orang Tua</td>
+				<td class="tdatacontent" width="5">:</td>
+				<td class="tdatacontent">
+                                     <div id="ajax_kecamatan2_ortu">
+                                       <select name="r_pegawai__ortu_desa" > 
+                                            <option value="">[Pilih Desa]</option>
+					<!--{section name=x loop=$DATA_DESA_ORTU}-->
+						<!--{if trim($DATA_DESA_ORTU[x].r_desa__id) == $EDIT_R_PEGAWAI__ORTU_DESA}-->
+						<option value="<!--{$DATA_DESA_ORTU[x].r_desa__id}-->" selected > <!--{$DATA_DESA_ORTU[x].r_desa__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_DESA_ORTU[x].r_desa__id}-->"<!--{$DATA_DESA_ORTU[x].r_desa__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+                                       </SELECT>
+                                    </div>                                
+                          </td>
+			</tr>
+                        
+                                        
+                     
+                          
+                        
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">RT/RW Orangtua</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent">
+                                    RT<INPUT type="text" name="r_pegawai__ortu_rt" size="5" value="<!--{$EDIT_R_PEGAWAI__ORTU_RT}-->" >
+                                    RW<INPUT type="text" name="r_pegawai__ortu_rw"  size="5" value="<!--{$EDIT_R_PEGAWAI__ORTU_RW}-->">
+                                </td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Kode Pos KTP</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__ortu_kodepos"  value="<!--{$EDIT_R_PEGAWAI__ORTU_KODEPOS}-->"></td>
+			</tr>
+                     	
+		</table>
+		
+		</div>
+		
+<!-- #MENIKAH -->		
+		<div id="table-search-box3" style="font:12/22px arial;display:none;">
+		
+		<table width="100%" >
+                 
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Status Menikah </td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent">       
+                                <select name="r_pegawai__status_kawin" >
+                                    <OPTION value="">[Pilih Status]</option>
+                                    <OPTION value="K/0" <!--{if $EDIT_R_PEGAWAI__STATUS_KAWIN == 'K/0'}--> selected <!--{/if}--> >Menikah Tidak Ada Anak</OPTION>
+                                    <OPTION value="K/1" <!--{if $EDIT_R_PEGAWAI__STATUS_KAWIN == 'K/1'}--> selected <!--{/if}--> >Menikah Anak 1</OPTION>
+                                    <OPTION value="K/2" <!--{if $EDIT_R_PEGAWAI__STATUS_KAWIN == 'K/2'}--> selected <!--{/if}--> >Menikah Anak 2</OPTION>
+                                    <OPTION value="K/2" <!--{if $EDIT_R_PEGAWAI__STATUS_KAWIN == 'K/3'}--> selected <!--{/if}--> >Menikah Anak 3</OPTION>
+                                    <OPTION value="TK" <!--{if $EDIT_R_PEGAWAI__STATUS_KAWIN == 'TK'}--> selected <!--{/if}--> >Tidak Menikah</OPTION>
+                                   <OPTION value="TK/1" <!--{if $EDIT_R_PEGAWAI__STATUS_KAWIN == 'TK/1'}--> selected <!--{/if}-->>Tidak Menikah Anak 1</OPTION>
+                                   <OPTION value="TK/2" <!--{if $EDIT_R_PEGAWAI__STATUS_KAWIN == 'TK/2'}--> selected <!--{/if}-->>Tidak Menikah Anak 2</OPTION>
+                                   <OPTION value="TK/3" <!--{if $EDIT_R_PEGAWAI__STATUS_KAWIN == 'TK/3'}--> selected <!--{/if}-->>Tidak Menikah Anak 3</OPTION>
+                                   
+                                </select>  
+                                    
+                                </td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Pasangan Suami / Istri</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pasangan" value="<!--{$EDIT_R_PEGAWAI__PASANGAN}-->"></td>
+			</tr>   
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Tempat Lahir Suami / Istri</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pas_tmptlahir" value="<!--{$EDIT_R_PEGAWAI__PAS_TMPTLAHIR}-->"></td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Tgl Lahir Suami / Istri</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent">
+                                
+                                <!--{if $EDIT_VAL==0}-->
 
-                                <TR>
-					<TD>Kota Bank</TD>
-					<TD><INPUT TYPE="text" NAME="kota_bank" value="<!--{$EDIT_NO_REK_BANK}-->" size="35"></TD>
-				</TR>
+                                <input type="text" NAME="r_pegawai__pas_tgllahir" readonly="" value="<!--{$TODAY}-->">
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.r_pegawai__pas_tgllahir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{else}-->
+								 <input type="text" name="r_pegawai__pas_tgllahir" readonly="" value="<!--{$EDIT_R_PEGAWAI__PAS_TGLLAHIR}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.r_pegawai__pas_tgllahir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{/if}-->
+                                
+                                </td>
+			</tr> 
+                       
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Propinsi Pasangan</td>
+				<td class="tdatacontent" width="5">:</td>
+				<td class="tdatacontent"><select name="r_pegawai__pas_prov" onChange="cari_kab_pas(this.value);">
+						<option value=""> Pilih Provinsi </option>
+						<!--{section name=x loop=$DATA_PROPINSI_KTP}-->
+						<!--{if trim($DATA_PROPINSI_KTP[x].r_provinsi__id) == $EDIT_R_PEGAWAI__PAS_PROV}-->
+						<option value="<!--{$DATA_PROPINSI[x].r_provinsi__id}-->" selected > <!--{$DATA_PROPINSI_KTP[x].r_provinsi__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_PROPINSI_KTP[x].r_provinsi__id}-->"  > <!--{$DATA_PROPINSI_KTP[x].r_provinsi__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+						</select></td>
+			</tr>
+                          
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Kabupaten Pasangan </td>
+				<td class="tdatacontent" width="5">:</td>
+				<td class="tdatacontent">
+                                        <div id="ajax_kabupaten_pas">
+                                        <select name="r_pegawai__pas_kab" onChange="cari_kec_pas(this.value);">
+                                                    <option value=""> Pilih Kabupaten  </option>
+                                                    <!--{section name=x loop=$DATA_KABUPATEN_PAS}-->
+                                                    <!--{if trim($DATA_KABUPATEN_PAS[x].r_kabupaten__id) == $EDIT_R_PEGAWAI__PAS_KAB}-->
+                                                    <option value="<!--{$DATA_KABUPATEN_PAS[x].r_kabupaten__id}-->" selected > <!--{$DATA_KABUPATEN_PAS[x].r_kabupaten__nama}--> </option>
+                                                    <!--{else}-->
+                                                    <option value="<!--{$DATA_KABUPATEN_PAS[x].r_kabupaten__id}-->"  > <!--{$DATA_KABUPATEN_PAS[x].r_kabupaten__nama}--> </option>
+                                                    <!--{/if}-->
+                                                    <!--{/section}-->
+                                        </select> 
+															
+					</div>
+                          </td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Kecamatan Pasangan </td>
+				<td class="tdatacontent" width="5">:</td>
+				<td class="tdatacontent">
+                                    <div id="ajax_kecamatan_pas">
+                                      <select name="r_pegawai__pas_kec" > 
+						<option value="">[Pilih Kecamatan]</option>
+						<!--{section name=x loop=$DATA_KECAMATAN_PAS}-->
+						<!--{if trim($DATA_KECAMATAN_PAS[x].r_kecamatan__id) == $EDIT_R_PEGAWAI__PAS_KEC}-->
+						<option value="<!--{$DATA_KECAMATAN_PAS[x].r_kecamatan__id}-->" selected > <!--{$DATA_KECAMATAN_PAS[x].r_kecamatan__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_KECAMATAN_PAS[x].r_kecamatan__id}-->"<!--{$DATA_KECAMATAN_PAS[x].r_kecamatan__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+						</select>	              
+                                        
+                                    </div>                               
+                          </td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Desa / Kelurahan Pasangan</td>
+				<td class="tdatacontent" width="5">:</td>
+				<td class="tdatacontent">
+                                    <div id="ajax_desa_pas">
+                                       <select name="r_pegawai__pas_desa" > 
+					<!--{section name=x loop=$DATA_DESA_PAS}-->
+						<!--{if trim($DATA_DESA_PAS[x].r_desa__id) == $EDIT_R_PEGAWAI__PAS_DESA}-->
+						<option value="<!--{$DATA_DESA_PAS[x].r_desa__id}-->" selected > <!--{$DATA_DESA_PAS[x].r_desa__nama}--> </option>
+						<!--{else}-->
+						<option value="<!--{$DATA_DESA_PAS[x].r_desa__id}-->"<!--{$DATA_DESA_PAS[x].r_desa__nama}--> </option>
+						<!--{/if}-->
+						<!--{/section}-->
+                                       </SELECT>
+                                    </div>                               
+                          </td>
+			</tr>
+                        
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">RT/RW Suami / Istri</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent">
+                                    RT<INPUT type="text" name="r_pegawai__pas_rt" size="5" value="<!--{$EDIT_R_PEGAWAI__PAS_RT}-->" >
+                                    RW<INPUT type="text" name="r_pegawai__pas_rw"  size="5" value="<!--{$EDIT_R_PEGAWAI__PAS_RW}-->">
+                                </td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Kode Pos Suami / Istri</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pas_kodepos" value="<!--{$EDIT_R_PEGAWAI__PAS_KODEPOS}-->" ></td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">No Telepon/Hp Suami/Istri </td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pas_tlp"  value="<!--{$EDIT_R_PEGAWAI__PAS_TLP}-->"></td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Jumlah Anak</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pas_jml_anak"  value="<!--{$EDIT_R_PEGAWAI__PAS_JML_ANAK}-->"></td>
+			</tr>
+                          <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Anak k-1</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pas_anak1"  value="<!--{$EDIT_R_PEGAWAI__PAS_ANAK1}-->"></td>
+			</tr>
+                          <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Anak k-2</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pas_anak2"  value="<!--{$EDIT_R_PEGAWAI__PAS_ANAK2}-->"></td>
+			</tr>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Anak k-3</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pas_anak3" value="<!--{$EDIT_R_PEGAWAI__PAS_ANAK3}-->" ></td>
+			</tr>
+                        
+                       
+                     	
+		</table>
+		
+		</div>
+<!-- #ASURANSI&NPWP -->		
+		<div id="table-search-box4" style="font:12/22px arial;display:none;">
+		<table width="100%">
+                    <input type="hidden" name="r_pegawai__id"> 
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">No NPWP  </td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__npwp"  value="<!--{$EDIT_R_PEGAWAI__NPWP}-->"></td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">No BPJS</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__no_bpjs" value="<!--{$EDIT_R_PEGAWAI__NO_BPJS}-->"></td>
+			</tr>   
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">No Inhealth</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__no_askes" value="<!--{$EDIT_R_PEGAWAI__NO_ASKES}-->"></td>
+			</tr>
+              </table>
+		
+		</div>
+		
+<!-- #Bank -->
+                <div id="table-search-box5" style="font:12/22px arial;display:none;">
+                            
+                        <table width="100%">
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Bank ke 1</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent">
+                                        <select name="r_pegawai__bank1" >
+                                        <option value="">[Pilih Status]</option>
+                                        <OPTION value="1" <!--{if $EDIT_R_PEGAWAI__BANK1== '1'}--> selected <!--{/if}--> >BANK CIMB NIAGA</OPTION>
+					<OPTION value="2" <!--{if $EDIT_R_PEGAWAI__BANK1 == '2'}--> selected <!--{/if}-->>BANK BCA</OPTION>
+					<OPTION value="3" <!--{if $EDIT_R_PEGAWAI__BANK1== '3'}--> selected <!--{/if}--> >BANK BRI</OPTION>
+					
+                                        </select>  
+                                    
+                                </td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Pemilik Rekening Bank ke 1</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__bank1_rek" value="<!--{$EDIT_R_PEGAWAI__BANK1_REK}-->"></td>
+			</tr>   
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">No Rekening Bank ke 1</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__bank1_norek" value="<!--{$EDIT_R_PEGAWAI__BANK1_NOREK}-->"></td>
+			</tr>
+                        
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Alamat  Bank ke 1</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__bank1_alm" value="<!--{$EDIT_R_PEGAWAI__BANK1_ALM}-->"></td>
+			</tr>
+                        
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250"><-----------------------></td>
+				<td class="tdatacontent" width="5"></td>
+                                <td class="tdatacontent"></td>
+			</tr>
+                        
+                       
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Bank ke 2</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent">
+                                        <select name="r_pegawai__bank2" >
+                                        <option value="">[Pilih Status]</option>
+                                        <OPTION value="1" <!--{if $EDIT_R_PEGAWAI__BANK2== '1'}--> selected <!--{/if}--> >BANK CIMB NIAGA</OPTION>
+					<OPTION value="0" <!--{if $EDIT_R_PEGAWAI__BANK2 == '2'}--> selected <!--{/if}-->>BANK BCA</OPTION>
+					<OPTION value="1" <!--{if $EDIT_R_PEGAWAI__BANK2== '3'}--> selected <!--{/if}--> >BANK BRI</OPTION>
+					
+                                        </select>  
+                                    
+                                </td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Pemilik Rekening Bank ke 2</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__bank2_rek" value="<!--{$EDIT_R_PEGAWAI__BANK2_REK}-->"></td>
+			</tr>   
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">No Rekening Bank ke 2</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__bank2_norek" value="<!--{$EDIT_R_PEGAWAI__BANK2_NOREK}-->"s></td>
+			</tr>
+                        
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Alamat  Bank ke 2</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__bank2_alm" value="<!--{$EDIT_R_PEGAWAI__BANK2_ALM}-->"></td>
+			</tr>
+                        
+                        
+                  </table>
+
+                </div>
+<!-- #Pendidikan -->
+<div id="table-search-box6" style="font:12/22px arial;display:none;">
+     <table width="100%">
+                  <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Tgl lulus <font color="#ff0000">*</font></td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent">
+                                <!--{if $EDIT_VAL==0}-->
+
+                                <input type="text" NAME="r_pegawai__pend_tgl_lulus" readonly="" value="<!--{$TODAY}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.r_pegawai__pend_tgl_lulus,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{else}-->
+								 <input type="text" name="r_pegawai__pend_tgl_lulus" value="<!--{$EDIT_R_PEGAWAI__TGL_LULUS}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.r_pegawai__pend_tgl_lulus,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{/if}-->
+                                
+                                
+                                </td>
+			</tr>
+                    
+			<tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Pendidikan Terakhir </td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pend_akhir" value="<!--{$EDIT_R_PEGAWAI__PEND_AKHIR}-->" ></td>
+			</tr>
+                        <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Nama Sekolah / Universitas</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pend_sekolah" value="<!--{$EDIT_R_PEGAWAI__PEND_SEKOLAH}-->"></td>
+			</tr>   
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">Jurusan </td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pend_jurusan" value="<!--{$EDIT_R_PEGAWAI__PEND_JURUSAN}-->"></td>
+			</tr>
+                        
+                       
+                        
+                       <INPUT TYPE="hidden" name="r_pegawai__id" value="<!--{$EDIT_R_PEGAWAI__ID}-->">                       
+                        
+              </table>
+		
+</div>
 
 
+<!-- #WARNING -->		
 
+<!-- #CATATAN SDM -->		
 
-				<TR><td height="40"></td>
-					<TD>
+<!-- #CATATAN SDM -->		
 
-
-					<INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
+<div id="panel-footer">
+<table width="100%">
+<tr class="text-regular" align='center'>
+	<td>&nbsp;
+        <INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
 					<INPUT TYPE="hidden" name="limit" value="<!--{$LIMIT}-->">
 					<INPUT TYPE="hidden" name="SORT" value="<!--{$SORT}-->">
 					<INPUT TYPE="hidden" name="page" value="<!--{$page}-->">
 					<INPUT TYPE="hidden" name="op" value="0">
-					<a class="button" href="#" onclick="this.blur();return checkFrm(frmCreate);"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$SUBMIT}--></span></a>
-					<a class="button" href="#" onclick="this.blur();document.frmCreate.reset(); resetFrm(frmCreate); "><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$RESET}--></span></a>
-					</TD>
-				</TR>
+					<a class="button" href="#" onClick="this.blur();return checkFrm(frmCreate);"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$SUBMIT}--></span></a>
+					<a class="button" href="#" onClick="this.blur();document.frmCreate.reset(); resetFrm(frmCreate); "><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$RESET}--></span></a>
+					
+        
+        </td>
+        
+</tr>
 
-
-					<TR><td  colspan="2"> <font color="#ff0000"> Keterangan * Wajib Diisi</font></td>
-
-					</tr>
-
-			</TABLE>
-		</FORM>
+<tr class="text-regular">
+	<td>&nbsp;
+        <font color="#ff0000"> Keterangan * Wajib Diisi</font>
+        
+        </td>
+        
+</tr>
+</table>
+</div>				
+		</td></tr>
+          </table>
+		</form>
 		</td></tr>
 		</table>
 		</DIV>
@@ -563,49 +913,116 @@ function hideIt(){
 		<div id="panel-content">
 
 		<FORM METHOD=GET ACTION="" NAME="frmList1">
-		<TABLE id="table-search-box">
+		<TABLE id="table-search-box" >
+                    <TR>
+                    <TD>Cabang <font color="#ff0000">*</font>
+                            </TD> 
+                                                           <TD><!--{if ($JENIS_USER_SES==1)}-->
 
-					<!--{if ($JENIS_USER_SES=='1')}-->
-							<TR>
-								<TD>Pilih Cabang</TD>
-								<TD><select name="kode_perwakilan_cari" >
-									<option value=""> [Pilih Perwakilan] </option>
-									<!--{section name=x loop=$DATA_PWK}-->
-									<!--{if trim($DATA_PWK[x].kode_cabang) == $EDIT_KODE_CABANG}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->" selected > <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{else}-->
-									<option value="<!--{$DATA_PWK[x].kode_cabang}-->"  > <!--{$DATA_PWK[x].nama_cabang}--> </option>
-									<!--{/if}-->
-									<!--{/section}-->
-									</select>		</TD>
+                                                                                           <select name="kode_cabang_cari" onchange="cari_subcab2(this.value);"> 
+                                                                                           <option value=""> Pilih Cabang </option>
+                                                                                           <!--{section name=x loop=$DATA_CABANG}-->
+
+                                                                                           <!--{if ($OPT==1)}-->
+
+                                                                                                   <!--{if trim($DATA_CABANG[x].r_cabang__id) == $EDIT_R_CABANG__ID}-->
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <!--{else}-->
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <!--{/if}-->
+
+                                                                                           <!--{else}-->
+
+                                                                                                   <!--{if  ($DATA_CABANG[x].kode_cabang) == $KODE_PW_SES}-->
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <!--{else}-->
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <!--{/if}-->
+                                                                                           <!--{/if}-->
+
+                                                                                           <!--{/section}-->
+                                                                                           </SELECT>
+
+                                                                           <!--{else}-->
+
+                                                                   <select name="kode_cabang_cari" >
+                                                                           <option value=""> Pilih Cabang </option>
+                                                                                           <!--{section name=x loop=$DATA_CABANG}-->
+
+                                                                                           <!--{if ($OPT==1)}-->
+
+                                                                                                   <!--{if trim($DATA_CABANG[x].r_cabang__id) == $EDIT_R_CABANG__ID}-->
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <!--{else}-->
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  disabled> <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <!--{/if}-->
+
+                                                                                           <!--{else}-->
+
+                                                                                                   <!--{if  trim($DATA_CABANG[x].r_cabang__id) == trim($KODE_PW_SES)}-->
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <!--{else}-->
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  disabled> <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <!--{/if}-->
+
+                                                                                           <!--{/if}-->
+
+                                                                                           <!--{/section}-->
+                                                                                           </SELECT>
+
+                                                                           <!--{/if}-->
+                                                           </TD>
+                                                   </TR>
+                                                   <TR>
+                                                        <TD>Pilih Sub Cabang</TD>
+								<TD>
+                                                                    <DIV id="ajax_subcabang2">
+                                                                       <select name="kode_subcab_cari">
+                                                                            <option value="">[Pilih Sub Cabang]</option>
+                                                                            <!--{section name=x loop=$DATA_SUBCABANG}-->
+                                                                            <!--{if trim($DATA_SUBCABANG[x].r_subcab__id)==0}-->
+                                                                            <option value="<!--{$DATA_SUBCABANG[x].r_subcab__id}-->" selected > <!--{$DATA_SUBCABANG[x].r_subcab__nama}--> </option>
+                                                                            <!--{else}-->
+                                                                            <option value="<!--{$DATA_SUBCABANG[x].r_subcab__id}-->"  > <!--{$DATA_SUBCABANG[x].r_subcab__nama}--> </option>
+                                                                            <!--{/if}-->
+                                                                            <!--{/section}-->
+                                                                       </select> 
+                                                                          
+                                                                    </DIV>
+                                                                </TD>
 							</TR>
-					<!--{/if}-->
-
-							<TR>
-								<TD>Nama Karyawan </TD>
-								<TD><INPUT TYPE="text" NAME="nama_pegawai_cari" size="30"></TD>
-							</TR>
-                                                        <TR>
-					<TD>Jabatan</TD>
-					<TD>
-						<select name="jabatan_pegawai_cari"  >
-						<option value=""> Pilih Jabatan </option>
-						<!--{section name=x loop=$DATA_JABATAN}-->
-						<!--{if trim($DATA_JABATAN[x].kode_jabatan) == $EDIT_KODE_JABATAN}-->
-						<option value="<!--{$DATA_JABATAN[x].kode_jabatan}-->" selected > <!--{$DATA_JABATAN[x].jabatan}--> </option>
-						<!--{else}-->
-						<option value="<!--{$DATA_JABATAN[x].kode_jabatan}-->"  > <!--{$DATA_JABATAN[x].jabatan}--> </option>
-						<!--{/if}-->
-						<!--{/section}-->
-						</select>
-					</TD>
-				</TR>
-
-
-
-
-
-			<TR><TD></TD>
+                                                        
+                                                        
+                                                      <TR>
+								<TD>Departemen</TD>
+								<TD>
+                                                                            <select name="departemen_cari" >
+                                                                            <option value="">[Pilih Departemen]</option>
+                                                                            <!--{section name=x loop=$DATA_DEPARTEMEN}-->
+                                                                            <!--{if trim($DATA_DEPARTEMEN[x].r_dept__id)==0}-->
+                                                                            <option value="<!--{$DATA_DEPARTEMEN[x].r_dept__id}-->" selected > <!--{$DATA_DEPARTEMEN[x].r_dept__ket}--> </option>
+                                                                            <!--{else}-->
+                                                                            <option value="<!--{$DATA_DEPARTEMEN[x].r_dept__id}-->"  > <!--{$DATA_DEPARTEMEN[x].r_dept__ket}--> </option>
+                                                                            <!--{/if}-->
+                                                                            <!--{/section}-->
+                                                                            </select> 
+                                                                            
+                                                   
+                                                                    
+                                                                </TD>
+                                                     </TR>   
+                            <TR>
+                                    <TD>Nama Karyawan </TD><TD><INPUT TYPE="text" NAME="nama_pegawai_cari" ></TD>
+                            </TR>
+                            
+                            <TR>
+                                    <TD>ID Finger Print </TD><TD><INPUT TYPE="text" NAME="finger_pegawai_cari" ></TD>
+                            </TR>
+                            
+                                <TR>
+                            <TD>KTP</TD><TD><INPUT TYPE="text" NAME="ktp_cari" ></TD>
+                            </TR>
+			   <TR><TD></TD>
 				<TD>
 				<INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
 				<INPUT TYPE="hidden" name="limit" value="<!--{$LIMIT}-->">
@@ -613,6 +1030,7 @@ function hideIt(){
 				<INPUT TYPE="hidden" name="SORT" value="<!--{$SORT}-->">
 				<INPUT TYPE="hidden" name="page" value="<!--{$page}-->">
 				<INPUT TYPE="hidden" name="op" value="0">
+                               
 				<CENTER>
 				<a class="button" href="#" onclick="this.blur(); document.frmList1.submit(); document.frmCreate.page.value='1';" onSubmit="frmCreate.page.value='1'; return false;"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle">Cari</span></a>
 				<a class="button" href="#" onclick="this.blur();document.frmList1.reset(); document.frmList1.nama_propinsi.focus();"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$RESET}--></span></a>
@@ -627,7 +1045,6 @@ function hideIt(){
 
 <!--form_cari-->
 		</DIV>
-
 		<FORM METHOD=GET ACTION="" NAME="frmList">
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
 		<tr><td class="tcat"> Daftar Pegawai</td></tr>
@@ -638,14 +1055,17 @@ function hideIt(){
 		<table width="100%">
 		<tr>
 											<th class="tdatahead" align="left">NO</TH>
-											<th class="tdatahead" align="left" width="10%">NAMA</TH>
+                                                                                        <th class="tdatahead" align="left" width="10%">NAMA</TH>
+                                                                                        <th class="tdatahead" align="left" width="10%">NIP</TH>
+                                                                                        <th class="tdatahead" align="left" width="10%">ID FINGER</TH>
 											<th class="tdatahead" align="left">DEPARTEMEN</TH>
 											<th class="tdatahead" align="left" >JABATAN</TH>
                                                                                         <th class="tdatahead" align="left" >CABANG</TH>
+                                                                                        <th class="tdatahead" align="left" >SUB CABANG</TH>
 											<th class="tdatahead" align="left">STATUS KARYAWAN</TH>
                                                                                         <th class="tdatahead" align="left">MULAI MASUK</TH>
-											<th class="tdatahead" align="left" >AWAL KONTRAK</TH>
-											<th class="tdatahead" align="left">AKHIR KONTRAK</TH>
+											
+                                                                                        <th class="tdatahead" align="left">NO REK</TH>
 											<th class="tdatahead" COLSPAN="2"><!--{$ACTION}--></th>
 			</tr>
 			</thead>
@@ -653,27 +1073,18 @@ function hideIt(){
 			<!--{section name=x loop=$DATA_TB}-->
 			<tr class='<!--{cycle values="alt,alt3"}-->'>
 											<td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
-											<TD class="tdatacontent"  > <!--{$DATA_TB[x].nama}--> </TD>
-											<TD class="tdatacontent"  > <!--{$DATA_TB[x].departemen}-->  </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].jabatan}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].nama_cabang}--> </TD>
-											<TD class="tdatacontent"  > <!--{$DATA_TB[x].nama_status}--> </TD>
-											<TD class="tdatacontent"  >  <!--{$DATA_TB[x].tgl_masuk}--></TD>
-											<TD class="tdatacontent"  > <!--{$DATA_TB[x].tgl_kontrak_awal}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].tgl_kontrak_akhir}--> </TD>
-
-											<TD class="tdatacontent"  >
-
-
-
-
-											</TD>
-
-
-
-
-											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].id}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
-											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/delete.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$DELETE}-->" onclick="return checkDelete('engine.php?op=2&id=<!--{$DATA_TB[x].id}--> &mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
+											<TD class="tdatacontent"><!--{$DATA_TB[x].r_dept__ket}-->  </TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_jabatan__ket}--> </TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_cabang__nama}--> </TD>
+											<TD class="tdatacontent"><!--{$DATA_TB[x].r_subcab__nama}-->   </TD>
+											<TD class="tdatacontent"><!--{$DATA_TB[x].r_stp__nama}--></TD>
+											<TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__tgl_masuk|date_format:"%d-%m-%Y"}--> </TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__bank1_norek}-->  </TD>
+                                                                                        <TD colspan="2" width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].r_pegawai__id}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
+											
 										</TR>
 										<!--{sectionelse}-->
 										<TR>
@@ -684,7 +1095,23 @@ function hideIt(){
 		</table>
 <div id="panel-footer">
     <!--halaman -->
-
+                    <table width="100%">
+                    <tr class="text-regular">
+                    <td width="20">Tampilkan</td>
+                    <td width="35"><INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
+                    <INPUT TYPE="hidden" name="kode_perwakilan_cari" value="<!--{$KODE_PERWAKILAN_CARI}-->">
+                    <INPUT TYPE="hidden" name="no_paspor_cari" value="<!--{$NO_PASPOR_CARI}-->">
+                    <INPUT TYPE="hidden" name="nama_wni_cari" value="<!--{$NAMA_WNI_CARI}-->">
+                 
+                                    <SELECT NAME="limit" onchange="this.form.page.value='1'; this.form.submit();" class="text-paging">
+                                    <!--{section name=x loop=$LISTVAL}-->
+                                    <OPTION VALUE = "<!--{$LISTVAL[x]}-->" <!--{if $LISTVAL[x]==$LIMIT}--> SELECTED <!--{/if}-->> <!--{$LISTVAL[x]}--> </OPTION>
+                                    <!--{/section}-->
+                                    </SELECT></td>
+                    <td>Baris : <!--{$COUNT_VIEW}--> - <!--{$COUNT_ALL}--> Dari <!--{$COUNT}--></td>
+                    <td align="right"><!--{$NEXT_PREV}--></td>
+                    </tr>
+                    </table>
     <!--halaman -->
 </div>
 		</td></tr>

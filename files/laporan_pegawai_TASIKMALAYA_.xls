@@ -1,0 +1,3250 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=12 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->LAPORAN PEGAWAI </td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=12 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=12 height=21 class=xl36 style='height:15.75pt'>CABANG  : TASIKMALAYA</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>NIP</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=82 style='width:25pt'>JABATAN</td>
+    <td class=xl27 width=82 style='width:25pt'>LEVEL JABATAN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS PEGAWAI</td>
+    <td class=xl27 width=98 style='width:50pt'>AWAL MASUK</td> 
+    <td class=xl27 width=57 style='width:25pt'>AKHIR KONTRAK</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>150650957</td>
+  <td class=xl29 align=right x:num>321388</td>
+  <td class=xl29 align=right x:num>A. Riyan Septian</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>150610958</td>
+  <td class=xl29 align=right x:num>322062</td>
+  <td class=xl29 align=right x:num>Aang Septedi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>150620959</td>
+  <td class=xl29 align=right x:num>324028</td>
+  <td class=xl29 align=right x:num>Aceng Somantri</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>130640960</td>
+  <td class=xl29 align=right x:num>323080</td>
+  <td class=xl29 align=right x:num>Ade Mardiana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>130640961</td>
+  <td class=xl29 align=right x:num>323029</td>
+  <td class=xl29 align=right x:num>Ade Priatna</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>100640962</td>
+  <td class=xl29 align=right x:num>323055</td>
+  <td class=xl29 align=right x:num>Ade Uus Rusmana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>160610963</td>
+  <td class=xl29 align=right x:num>322068</td>
+  <td class=xl29 align=right x:num>Adi Ahmad Husaeni</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>130650964</td>
+  <td class=xl29 align=right x:num>324004</td>
+  <td class=xl29 align=right x:num>Aep Saepudin</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>140650965</td>
+  <td class=xl29 align=right x:num>321286</td>
+  <td class=xl29 align=right x:num>Aep Syaepurrohman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>100620966</td>
+  <td class=xl29 align=right x:num>324007</td>
+  <td class=xl29 align=right x:num>Aes Sugara</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>140650967</td>
+  <td class=xl29 align=right x:num>321294</td>
+  <td class=xl29 align=right x:num>Agus Deni Nurdiansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>150652632</td>
+  <td class=xl29 align=right x:num>321358</td>
+  <td class=xl29 align=right x:num>Agus Nugraha</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>110650969</td>
+  <td class=xl29 align=right x:num>321019</td>
+  <td class=xl29 align=right x:num>Agus Sopyan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>110642634</td>
+  <td class=xl29 align=right x:num>323047</td>
+  <td class=xl29 align=right x:num>Agus Tarliana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>110650971</td>
+  <td class=xl29 align=right x:num>321035</td>
+  <td class=xl29 align=right x:num>Agustia</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>160650972</td>
+  <td class=xl29 align=right x:num>321411</td>
+  <td class=xl29 align=right x:num>Ahmad Kasiron</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>160630973</td>
+  <td class=xl29 align=right x:num>325002</td>
+  <td class=xl29 align=right x:num>Alanda Fauzi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >IT Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>140642636</td>
+  <td class=xl29 align=right x:num>323125</td>
+  <td class=xl29 align=right x:num>Ali Ibnu Hakim</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>090640975</td>
+  <td class=xl29 align=right x:num>323083</td>
+  <td class=xl29 align=right x:num>Ali Musadad</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>140640976</td>
+  <td class=xl29 align=right x:num>323114</td>
+  <td class=xl29 align=right x:num>Amin Nurdin</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>080640977</td>
+  <td class=xl29 align=right x:num>323044</td>
+  <td class=xl29 align=right x:num>Anang Mulyana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>120640978</td>
+  <td class=xl29 align=right x:num>323004</td>
+  <td class=xl29 align=right x:num>Andi Lesmana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>160610979</td>
+  <td class=xl29 align=right x:num>322066</td>
+  <td class=xl29 align=right x:num>Andri Andriyana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>120650980</td>
+  <td class=xl29 align=right x:num>321150</td>
+  <td class=xl29 align=right x:num>Andry Santana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>150640981</td>
+  <td class=xl29 align=right x:num>323131</td>
+  <td class=xl29 align=right x:num>Angga Fajar Riswana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>130652637</td>
+  <td class=xl29 align=right x:num>321070</td>
+  <td class=xl29 align=right x:num>Anwar Anwari</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>130642639</td>
+  <td class=xl29 align=right x:num>323065</td>
+  <td class=xl29 align=right x:num>Apep Rahmat</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>100650984</td>
+  <td class=xl29 align=right x:num>321033</td>
+  <td class=xl29 align=right x:num>Aprillian Nicco Pratama</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>110640985</td>
+  <td class=xl29 align=right x:num>323068</td>
+  <td class=xl29 align=right x:num>Ardi Supriatna</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>140640986</td>
+  <td class=xl29 align=right x:num>323117</td>
+  <td class=xl29 align=right x:num>Ari Guntara</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>140650987</td>
+  <td class=xl29 align=right x:num>321214</td>
+  <td class=xl29 align=right x:num>Ari Setiawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>120640988</td>
+  <td class=xl29 align=right x:num>323048</td>
+  <td class=xl29 align=right x:num>Ari Susanto</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>080650989</td>
+  <td class=xl29 align=right x:num>321002</td>
+  <td class=xl29 align=right x:num>Arie Edward Sukendar</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>130652640</td>
+  <td class=xl29 align=right x:num>321117</td>
+  <td class=xl29 align=right x:num>Ariep Rendi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>140610991</td>
+  <td class=xl29 align=right x:num>322053</td>
+  <td class=xl29 align=right x:num>Arif Hidayatullah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>150650992</td>
+  <td class=xl29 align=right x:num>321318</td>
+  <td class=xl29 align=right x:num>Aringgi Yanuar Putri</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>130640993</td>
+  <td class=xl29 align=right x:num>323025</td>
+  <td class=xl29 align=right x:num>Asep Ahmad Kurniawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>140652641</td>
+  <td class=xl29 align=right x:num>323091</td>
+  <td class=xl29 align=right x:num>Asep Beni</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>120640995</td>
+  <td class=xl29 align=right x:num>323015</td>
+  <td class=xl29 align=right x:num>Asep Dindin Msp</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>150640996</td>
+  <td class=xl29 align=right x:num>321390</td>
+  <td class=xl29 align=right x:num>Asep Wendi Nugraha</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>140610997</td>
+  <td class=xl29 align=right x:num>322057</td>
+  <td class=xl29 align=right x:num>Atep Maulana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>130650998</td>
+  <td class=xl29 align=right x:num>321162</td>
+  <td class=xl29 align=right x:num>Cecep Yogi Permana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>120650999</td>
+  <td class=xl29 align=right x:num>321051</td>
+  <td class=xl29 align=right x:num>Cepi Hardianto</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>160651000</td>
+  <td class=xl29 align=right x:num>321405</td>
+  <td class=xl29 align=right x:num>Cucu Cunarwan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>110651001</td>
+  <td class=xl29 align=right x:num>321179</td>
+  <td class=xl29 align=right x:num>Dadan Darusman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>130641002</td>
+  <td class=xl29 align=right x:num>323085</td>
+  <td class=xl29 align=right x:num>Dadi Hendriyana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>140611003</td>
+  <td class=xl29 align=right x:num>322039</td>
+  <td class=xl29 align=right x:num>Dani Iskandar</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>140651004</td>
+  <td class=xl29 align=right x:num>321207</td>
+  <td class=xl29 align=right x:num>Dani Komara</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>150651005</td>
+  <td class=xl29 align=right x:num>321359</td>
+  <td class=xl29 align=right x:num>Dani Ramdani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>130641006</td>
+  <td class=xl29 align=right x:num>323094</td>
+  <td class=xl29 align=right x:num>Dani Ramdani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>150651007</td>
+  <td class=xl29 align=right x:num>321366</td>
+  <td class=xl29 align=right x:num>Dani Rosdiansah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>130641008</td>
+  <td class=xl29 align=right x:num>323024</td>
+  <td class=xl29 align=right x:num>Dani Yuliandani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>53</td>
+  <td class=xl29>110611009</td>
+  <td class=xl29 align=right x:num>322006</td>
+  <td class=xl29 align=right x:num>Danny Nugraha</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>54</td>
+  <td class=xl29>160651010</td>
+  <td class=xl29 align=right x:num>321426</td>
+  <td class=xl29 align=right x:num>David Nurjaman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>55</td>
+  <td class=xl29>140651011</td>
+  <td class=xl29 align=right x:num>321289</td>
+  <td class=xl29 align=right x:num>Dede Ferdiansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>56</td>
+  <td class=xl29>090611012</td>
+  <td class=xl29 align=right x:num>323049</td>
+  <td class=xl29 align=right x:num>Dede Muhammad Subhan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>57</td>
+  <td class=xl29>080651013</td>
+  <td class=xl29 align=right x:num>321001</td>
+  <td class=xl29 align=right x:num>Dede Yamin</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>58</td>
+  <td class=xl29>160651014</td>
+  <td class=xl29 align=right x:num>321410</td>
+  <td class=xl29 align=right x:num>Deden Hasan Sumbara</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>59</td>
+  <td class=xl29>130641015</td>
+  <td class=xl29 align=right x:num>323095</td>
+  <td class=xl29 align=right x:num>Denden Dirmansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>60</td>
+  <td class=xl29>130642642</td>
+  <td class=xl29 align=right x:num>323028</td>
+  <td class=xl29 align=right x:num>Deni Farid</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>61</td>
+  <td class=xl29>110651017</td>
+  <td class=xl29 align=right x:num>321172</td>
+  <td class=xl29 align=right x:num>Deni Kurnia</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>62</td>
+  <td class=xl29>150651018</td>
+  <td class=xl29 align=right x:num>321099</td>
+  <td class=xl29 align=right x:num>Deni Sudarman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>63</td>
+  <td class=xl29>100611019</td>
+  <td class=xl29 align=right x:num>322025</td>
+  <td class=xl29 align=right x:num>Devi Purnamasari</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Kecil</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>64</td>
+  <td class=xl29>120641020</td>
+  <td class=xl29 align=right x:num>323096</td>
+  <td class=xl29 align=right x:num>Dian Herdianto</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>65</td>
+  <td class=xl29>160651021</td>
+  <td class=xl29 align=right x:num>321420</td>
+  <td class=xl29 align=right x:num>Dicky Mohamad Darmawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>66</td>
+  <td class=xl29>130611022</td>
+  <td class=xl29 align=right x:num>322026</td>
+  <td class=xl29 align=right x:num>Dita Oktaviani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>67</td>
+  <td class=xl29>160651023</td>
+  <td class=xl29 align=right x:num>321429</td>
+  <td class=xl29 align=right x:num>Edi Supriadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>68</td>
+  <td class=xl29>160651024</td>
+  <td class=xl29 align=right x:num>321425</td>
+  <td class=xl29 align=right x:num>Eka Kurnia</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>69</td>
+  <td class=xl29>160611025</td>
+  <td class=xl29 align=right x:num>322067</td>
+  <td class=xl29 align=right x:num>Elis Muslimah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>70</td>
+  <td class=xl29>130611026</td>
+  <td class=xl29 align=right x:num>322036</td>
+  <td class=xl29 align=right x:num>Elma Nurtriyani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>71</td>
+  <td class=xl29>130641027</td>
+  <td class=xl29 align=right x:num>323066</td>
+  <td class=xl29 align=right x:num>Enceng Ruhli</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Crossdock</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>72</td>
+  <td class=xl29>140651028</td>
+  <td class=xl29 align=right x:num>321245</td>
+  <td class=xl29 align=right x:num>Endri Supriadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>73</td>
+  <td class=xl29>130651029</td>
+  <td class=xl29 align=right x:num>321108</td>
+  <td class=xl29 align=right x:num>Enjas Apriadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>74</td>
+  <td class=xl29>140651030</td>
+  <td class=xl29 align=right x:num>321164</td>
+  <td class=xl29 align=right x:num>Erik Gunari</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>75</td>
+  <td class=xl29>140652643</td>
+  <td class=xl29 align=right x:num>321269</td>
+  <td class=xl29 align=right x:num>Eris Riswanto</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>76</td>
+  <td class=xl29>150651032</td>
+  <td class=xl29 align=right x:num>321347</td>
+  <td class=xl29 align=right x:num>Erry Moch Yusup</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>77</td>
+  <td class=xl29>160651033</td>
+  <td class=xl29 align=right x:num>321413</td>
+  <td class=xl29 align=right x:num>Erwin Firmansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>78</td>
+  <td class=xl29>130651034</td>
+  <td class=xl29 align=right x:num>321063</td>
+  <td class=xl29 align=right x:num>Ferdly Ferdiansyah T</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>79</td>
+  <td class=xl29>140651035</td>
+  <td class=xl29 align=right x:num>321242</td>
+  <td class=xl29 align=right x:num>Firli Ardli Nugraha</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>80</td>
+  <td class=xl29>100651036</td>
+  <td class=xl29 align=right x:num>321133</td>
+  <td class=xl29 align=right x:num>Firman Taufik</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>81</td>
+  <td class=xl29>140651037</td>
+  <td class=xl29 align=right x:num>321204</td>
+  <td class=xl29 align=right x:num>Fitri Tanjung</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>82</td>
+  <td class=xl29>150651038</td>
+  <td class=xl29 align=right x:num>321336</td>
+  <td class=xl29 align=right x:num>Geladeni</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>83</td>
+  <td class=xl29>130651039</td>
+  <td class=xl29 align=right x:num>321192</td>
+  <td class=xl29 align=right x:num>Gitgit Gunawijaya</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>84</td>
+  <td class=xl29>100651040</td>
+  <td class=xl29 align=right x:num>321201</td>
+  <td class=xl29 align=right x:num>Gugun Gunawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>85</td>
+  <td class=xl29>140641041</td>
+  <td class=xl29 align=right x:num>323111</td>
+  <td class=xl29 align=right x:num>Gugun Kurniawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>86</td>
+  <td class=xl29>090651042</td>
+  <td class=xl29 align=right x:num>321200</td>
+  <td class=xl29 align=right x:num>Gun Gun Gunawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>87</td>
+  <td class=xl29>120651043</td>
+  <td class=xl29 align=right x:num>321050</td>
+  <td class=xl29 align=right x:num>Hamid Faozi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>88</td>
+  <td class=xl29>110651044</td>
+  <td class=xl29 align=right x:num>321031</td>
+  <td class=xl29 align=right x:num>Handi Kuswandi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>89</td>
+  <td class=xl29>120651045</td>
+  <td class=xl29 align=right x:num>321044</td>
+  <td class=xl29 align=right x:num>Hari Jamiat</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>90</td>
+  <td class=xl29>160651046</td>
+  <td class=xl29 align=right x:num>321416</td>
+  <td class=xl29 align=right x:num>Hari Muhamad Salawudin</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>91</td>
+  <td class=xl29>130651047</td>
+  <td class=xl29 align=right x:num>321114</td>
+  <td class=xl29 align=right x:num>Hari Sandi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>92</td>
+  <td class=xl29>130641048</td>
+  <td class=xl29 align=right x:num>323062</td>
+  <td class=xl29 align=right x:num>Hedi Rahman Abdul Barokah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>93</td>
+  <td class=xl29>100651049</td>
+  <td class=xl29 align=right x:num>321017</td>
+  <td class=xl29 align=right x:num>Hendarsyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>94</td>
+  <td class=xl29>160651050</td>
+  <td class=xl29 align=right x:num>321399</td>
+  <td class=xl29 align=right x:num>Hendi Rustendi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>95</td>
+  <td class=xl29>130651051</td>
+  <td class=xl29 align=right x:num>321166</td>
+  <td class=xl29 align=right x:num>Hendi Setiadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>96</td>
+  <td class=xl29>120651052</td>
+  <td class=xl29 align=right x:num>321151</td>
+  <td class=xl29 align=right x:num>Hendra</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>97</td>
+  <td class=xl29>130611053</td>
+  <td class=xl29 align=right x:num>322028</td>
+  <td class=xl29 align=right x:num>Hendra Razy</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>98</td>
+  <td class=xl29>120641054</td>
+  <td class=xl29 align=right x:num>323073</td>
+  <td class=xl29 align=right x:num>Herdi Herdiyana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>99</td>
+  <td class=xl29>130651055</td>
+  <td class=xl29 align=right x:num>323074</td>
+  <td class=xl29 align=right x:num>Herdis Sudrajat</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>100</td>
+  <td class=xl29>140651056</td>
+  <td class=xl29 align=right x:num>321285</td>
+  <td class=xl29 align=right x:num>Heri Susanto</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>101</td>
+  <td class=xl29>140651057</td>
+  <td class=xl29 align=right x:num>321167</td>
+  <td class=xl29 align=right x:num>Hermansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>102</td>
+  <td class=xl29>140611058</td>
+  <td class=xl29 align=right x:num>322038</td>
+  <td class=xl29 align=right x:num>Herry Herdiyana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>103</td>
+  <td class=xl29>080651059</td>
+  <td class=xl29 align=right x:num>321003</td>
+  <td class=xl29 align=right x:num>Heru Gunawan Faizal</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >MD Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>104</td>
+  <td class=xl29>150651060</td>
+  <td class=xl29 align=right x:num>321343</td>
+  <td class=xl29 align=right x:num>Indra Aprianto Setiawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>105</td>
+  <td class=xl29>120651061</td>
+  <td class=xl29 align=right x:num>321183</td>
+  <td class=xl29 align=right x:num>Indra Gunawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>106</td>
+  <td class=xl29>120641062</td>
+  <td class=xl29 align=right x:num>323002</td>
+  <td class=xl29 align=right x:num>Indra Mubarok</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>107</td>
+  <td class=xl29>130651063</td>
+  <td class=xl29 align=right x:num>321168</td>
+  <td class=xl29 align=right x:num>Indriani Agustin Rosnawati</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>108</td>
+  <td class=xl29>110611064</td>
+  <td class=xl29 align=right x:num>322018</td>
+  <td class=xl29 align=right x:num>Intan Dewindasari</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>109</td>
+  <td class=xl29>110611065</td>
+  <td class=xl29 align=right x:num>322023</td>
+  <td class=xl29 align=right x:num>Intan Permatasari</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin Claim</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>110</td>
+  <td class=xl29>150651066</td>
+  <td class=xl29 align=right x:num>321305</td>
+  <td class=xl29 align=right x:num>Intan Putri</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>111</td>
+  <td class=xl29>080651067</td>
+  <td class=xl29 align=right x:num>321142</td>
+  <td class=xl29 align=right x:num>Irman Firmansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>112</td>
+  <td class=xl29>140651068</td>
+  <td class=xl29 align=right x:num>321239</td>
+  <td class=xl29 align=right x:num>Irpan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>113</td>
+  <td class=xl29>150651069</td>
+  <td class=xl29 align=right x:num>321363</td>
+  <td class=xl29 align=right x:num>Isma Nuraminah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>114</td>
+  <td class=xl29>120641070</td>
+  <td class=xl29 align=right x:num>323043</td>
+  <td class=xl29 align=right x:num>Iwan Kartiwan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>115</td>
+  <td class=xl29>150651071</td>
+  <td class=xl29 align=right x:num>321327</td>
+  <td class=xl29 align=right x:num>Iwan Sopyandi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>116</td>
+  <td class=xl29>080651072</td>
+  <td class=xl29 align=right x:num>321144</td>
+  <td class=xl29 align=right x:num>Iwan Sugiawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>117</td>
+  <td class=xl29>160651073</td>
+  <td class=xl29 align=right x:num>321419</td>
+  <td class=xl29 align=right x:num>Iwan Sutiawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>118</td>
+  <td class=xl29>120652647</td>
+  <td class=xl29 align=right x:num>323020</td>
+  <td class=xl29 align=right x:num>Jafar Usman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>119</td>
+  <td class=xl29>160651075</td>
+  <td class=xl29 align=right x:num>321394</td>
+  <td class=xl29 align=right x:num>Jajang Burhanudin</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>120</td>
+  <td class=xl29>110651076</td>
+  <td class=xl29 align=right x:num>321038</td>
+  <td class=xl29 align=right x:num>Jajat Sudrajat</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>121</td>
+  <td class=xl29>110611077</td>
+  <td class=xl29 align=right x:num>322014</td>
+  <td class=xl29 align=right x:num>Kiki Rizkiyani Sutisna</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>122</td>
+  <td class=xl29>130651078</td>
+  <td class=xl29 align=right x:num>321140</td>
+  <td class=xl29 align=right x:num>Kiki Tisna Permana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >MD Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>123</td>
+  <td class=xl29>130651079</td>
+  <td class=xl29 align=right x:num>323063</td>
+  <td class=xl29 align=right x:num>Kresna Nopa Ariansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>124</td>
+  <td class=xl29>150651080</td>
+  <td class=xl29 align=right x:num>321313</td>
+  <td class=xl29 align=right x:num>Kusmawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>125</td>
+  <td class=xl29>110651081</td>
+  <td class=xl29 align=right x:num>321039</td>
+  <td class=xl29 align=right x:num>Kusnadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>126</td>
+  <td class=xl29>120651082</td>
+  <td class=xl29 align=right x:num>321215</td>
+  <td class=xl29 align=right x:num>Linda Paulina Sinay</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>127</td>
+  <td class=xl29>130641083</td>
+  <td class=xl29 align=right x:num>323101</td>
+  <td class=xl29 align=right x:num>Lukman Nur Hakim</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>128</td>
+  <td class=xl29>110641084</td>
+  <td class=xl29 align=right x:num>323057</td>
+  <td class=xl29 align=right x:num>M. Fu'Ad Mi'Raj</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>129</td>
+  <td class=xl29>130651085</td>
+  <td class=xl29 align=right x:num>321103</td>
+  <td class=xl29 align=right x:num>M. Yudhi Abdurahman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>130</td>
+  <td class=xl29>150651086</td>
+  <td class=xl29 align=right x:num>321381</td>
+  <td class=xl29 align=right x:num>Majid Kusnawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>131</td>
+  <td class=xl29>150651087</td>
+  <td class=xl29 align=right x:num>321385</td>
+  <td class=xl29 align=right x:num>Mega Liberia</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>132</td>
+  <td class=xl29>140611088</td>
+  <td class=xl29 align=right x:num>322044</td>
+  <td class=xl29 align=right x:num>Merlyantina Dewi Rahayu</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>133</td>
+  <td class=xl29>120611089</td>
+  <td class=xl29 align=right x:num>322022</td>
+  <td class=xl29 align=right x:num>Miftah Shofarin</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>134</td>
+  <td class=xl29>160621090</td>
+  <td class=xl29 align=right x:num>324029</td>
+  <td class=xl29 align=right x:num>Mika Jayantika</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >PGA Staff</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>135</td>
+  <td class=xl29>080651091</td>
+  <td class=xl29 align=right x:num>321145</td>
+  <td class=xl29 align=right x:num>Moc. Ridwan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>136</td>
+  <td class=xl29>130641092</td>
+  <td class=xl29 align=right x:num>323076</td>
+  <td class=xl29 align=right x:num>Muhamad Aldi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>137</td>
+  <td class=xl29>110611093</td>
+  <td class=xl29 align=right x:num>323040</td>
+  <td class=xl29 align=right x:num>Muhamad Iqbal Yanuar</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>138</td>
+  <td class=xl29>160611094</td>
+  <td class=xl29 align=right x:num>322064</td>
+  <td class=xl29 align=right x:num>Muhamad Irman Firmansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>139</td>
+  <td class=xl29>160651095</td>
+  <td class=xl29 align=right x:num>321424</td>
+  <td class=xl29 align=right x:num>Muhamad Rizki Sukrilah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>140</td>
+  <td class=xl29>120651096</td>
+  <td class=xl29 align=right x:num>321173</td>
+  <td class=xl29 align=right x:num>Muhammad Munir Budiawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>141</td>
+  <td class=xl29>130611097</td>
+  <td class=xl29 align=right x:num>322034</td>
+  <td class=xl29 align=right x:num>N. Astri Luxi Ramliyani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>142</td>
+  <td class=xl29>160651098</td>
+  <td class=xl29 align=right x:num>321009</td>
+  <td class=xl29 align=right x:num>Nana Rusdiana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>143</td>
+  <td class=xl29>160651099</td>
+  <td class=xl29 align=right x:num>321404</td>
+  <td class=xl29 align=right x:num>Nanang Rusmana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>144</td>
+  <td class=xl29>150651100</td>
+  <td class=xl29 align=right x:num>321337</td>
+  <td class=xl29 align=right x:num>Nandi Pratama</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>145</td>
+  <td class=xl29>110641101</td>
+  <td class=xl29 align=right x:num>323097</td>
+  <td class=xl29 align=right x:num>Nendi Ahmad Wandira</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>146</td>
+  <td class=xl29>120611102</td>
+  <td class=xl29 align=right x:num>322007</td>
+  <td class=xl29 align=right x:num>Nendi Mulyadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>147</td>
+  <td class=xl29>150641103</td>
+  <td class=xl29 align=right x:num>323126</td>
+  <td class=xl29 align=right x:num>Noviyandi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>148</td>
+  <td class=xl29>130641104</td>
+  <td class=xl29 align=right x:num>323098</td>
+  <td class=xl29 align=right x:num>Nurdin Rosdiansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>149</td>
+  <td class=xl29>150641105</td>
+  <td class=xl29 align=right x:num>323129</td>
+  <td class=xl29 align=right x:num>Nuril Rhamadan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>150</td>
+  <td class=xl29>140641106</td>
+  <td class=xl29 align=right x:num>323119</td>
+  <td class=xl29 align=right x:num>Olih</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>151</td>
+  <td class=xl29>160651107</td>
+  <td class=xl29 align=right x:num>321401</td>
+  <td class=xl29 align=right x:num>Pany Saptaruna</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>152</td>
+  <td class=xl29>160651108</td>
+  <td class=xl29 align=right x:num>321430</td>
+  <td class=xl29 align=right x:num>Qies Maula</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>153</td>
+  <td class=xl29>160651109</td>
+  <td class=xl29 align=right x:num>321418</td>
+  <td class=xl29 align=right x:num>R.Muh Daud Darda</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>154</td>
+  <td class=xl29>150651110</td>
+  <td class=xl29 align=right x:num>321324</td>
+  <td class=xl29 align=right x:num>Rades Zulfikar</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>155</td>
+  <td class=xl29>150642648</td>
+  <td class=xl29 align=right x:num>321106</td>
+  <td class=xl29 align=right x:num>Rahmat Hidayat</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>156</td>
+  <td class=xl29>130641112</td>
+  <td class=xl29 align=right x:num>323019</td>
+  <td class=xl29 align=right x:num>Rahmat Hidayat</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>157</td>
+  <td class=xl29>110651113</td>
+  <td class=xl29 align=right x:num>321027</td>
+  <td class=xl29 align=right x:num>Rahmat Jaelani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>158</td>
+  <td class=xl29>140651114</td>
+  <td class=xl29 align=right x:num>321251</td>
+  <td class=xl29 align=right x:num>Randi Suhendi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>159</td>
+  <td class=xl29>140631115</td>
+  <td class=xl29 align=right x:num>321240</td>
+  <td class=xl29 align=right x:num>Rani Khaerani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Data Reporting</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>160</td>
+  <td class=xl29>140651116</td>
+  <td class=xl29 align=right x:num>321206</td>
+  <td class=xl29 align=right x:num>Ratno</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>161</td>
+  <td class=xl29>100651117</td>
+  <td class=xl29 align=right x:num>321132</td>
+  <td class=xl29 align=right x:num>Rd. Moch. Gilang Al Farissy</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>162</td>
+  <td class=xl29>120641118</td>
+  <td class=xl29 align=right x:num>323005</td>
+  <td class=xl29 align=right x:num>Reko Ristandi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>163</td>
+  <td class=xl29>150621119</td>
+  <td class=xl29 align=right x:num>324023</td>
+  <td class=xl29 align=right x:num>Resi Ikhwan Nugraha</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>164</td>
+  <td class=xl29>160651120</td>
+  <td class=xl29 align=right x:num>321417</td>
+  <td class=xl29 align=right x:num>Reson Sontani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>165</td>
+  <td class=xl29>160611121</td>
+  <td class=xl29 align=right x:num>322063</td>
+  <td class=xl29 align=right x:num>Resti Rizki Yuliasari</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>166</td>
+  <td class=xl29>150641122</td>
+  <td class=xl29 align=right x:num>323133</td>
+  <td class=xl29 align=right x:num>Rian Cahaya Putra</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>167</td>
+  <td class=xl29>160651123</td>
+  <td class=xl29 align=right x:num>321428</td>
+  <td class=xl29 align=right x:num>Rian Saparullah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>168</td>
+  <td class=xl29>120641124</td>
+  <td class=xl29 align=right x:num>323042</td>
+  <td class=xl29 align=right x:num>Rijal</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>169</td>
+  <td class=xl29>110611125</td>
+  <td class=xl29 align=right x:num>322035</td>
+  <td class=xl29 align=right x:num>Rina Andriani Supriatna</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>170</td>
+  <td class=xl29>140612649</td>
+  <td class=xl29 align=right x:num>322058</td>
+  <td class=xl29 align=right x:num>Rina Fetriyana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>171</td>
+  <td class=xl29>140651127</td>
+  <td class=xl29 align=right x:num>321273</td>
+  <td class=xl29 align=right x:num>Rio Aditya Warman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>172</td>
+  <td class=xl29>160651128</td>
+  <td class=xl29 align=right x:num>321292</td>
+  <td class=xl29 align=right x:num>Rizal Fauzi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>173</td>
+  <td class=xl29>110641129</td>
+  <td class=xl29 align=right x:num>323100</td>
+  <td class=xl29 align=right x:num>Rizal Maulana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >MR Control</td>
+  <td class=xl29 align=right >Junior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>174</td>
+  <td class=xl29>080621130</td>
+  <td class=xl29 align=right x:num>324001</td>
+  <td class=xl29 align=right x:num>Rokhman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Kepala Cabang</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>175</td>
+  <td class=xl29>080651131</td>
+  <td class=xl29 align=right x:num>321130</td>
+  <td class=xl29 align=right x:num>Roni Permana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>176</td>
+  <td class=xl29>120651132</td>
+  <td class=xl29 align=right x:num>321152</td>
+  <td class=xl29 align=right x:num>Roni Purnomo</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>177</td>
+  <td class=xl29>120651133</td>
+  <td class=xl29 align=right x:num>321100</td>
+  <td class=xl29 align=right x:num>Rudi Haryanto</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>178</td>
+  <td class=xl29>160641134</td>
+  <td class=xl29 align=right x:num>323138</td>
+  <td class=xl29 align=right x:num>Rudiansyah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>179</td>
+  <td class=xl29>120651135</td>
+  <td class=xl29 align=right x:num>321057</td>
+  <td class=xl29 align=right x:num>Rusmana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>180</td>
+  <td class=xl29>150641136</td>
+  <td class=xl29 align=right x:num>323134</td>
+  <td class=xl29 align=right x:num>Sahrul H</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>181</td>
+  <td class=xl29>130621137</td>
+  <td class=xl29 align=right x:num>324002</td>
+  <td class=xl29 align=right x:num>Sandi Riswandi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >PGA Staff</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>182</td>
+  <td class=xl29>130651138</td>
+  <td class=xl29 align=right x:num>321193</td>
+  <td class=xl29 align=right x:num>Sandy Ginanjar</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>183</td>
+  <td class=xl29>080611139</td>
+  <td class=xl29 align=right x:num>322004</td>
+  <td class=xl29 align=right x:num>Santi Kartika Dewi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>184</td>
+  <td class=xl29>150651140</td>
+  <td class=xl29 align=right x:num>321275</td>
+  <td class=xl29 align=right x:num>Sarip Permana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>185</td>
+  <td class=xl29>140641141</td>
+  <td class=xl29 align=right x:num>323088</td>
+  <td class=xl29 align=right x:num>Septian Haryadi Cahyana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>186</td>
+  <td class=xl29>150652650</td>
+  <td class=xl29 align=right x:num>321357</td>
+  <td class=xl29 align=right x:num>Siti Nurjanah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>187</td>
+  <td class=xl29>130651143</td>
+  <td class=xl29 align=right x:num>321118</td>
+  <td class=xl29 align=right x:num>Solih Septiana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>188</td>
+  <td class=xl29>130641144</td>
+  <td class=xl29 align=right x:num>323058</td>
+  <td class=xl29 align=right x:num>Soni Dartison</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>189</td>
+  <td class=xl29>090651145</td>
+  <td class=xl29 align=right x:num>321131</td>
+  <td class=xl29 align=right x:num>Suherman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>190</td>
+  <td class=xl29>080651146</td>
+  <td class=xl29 align=right x:num>321148</td>
+  <td class=xl29 align=right x:num>Sulaiman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>191</td>
+  <td class=xl29>110651147</td>
+  <td class=xl29 align=right x:num>321171</td>
+  <td class=xl29 align=right x:num>Suprianto</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>192</td>
+  <td class=xl29>130651148</td>
+  <td class=xl29 align=right x:num>321123</td>
+  <td class=xl29 align=right x:num>Surachman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>193</td>
+  <td class=xl29>140631149</td>
+  <td class=xl29 align=right x:num>321343</td>
+  <td class=xl29 align=right x:num>Susan Resfiany</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Data Reporting</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>194</td>
+  <td class=xl29>160651150</td>
+  <td class=xl29 align=right x:num>321397</td>
+  <td class=xl29 align=right x:num>Taopik Hidayatul Nasir</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>195</td>
+  <td class=xl29>120651151</td>
+  <td class=xl29 align=right x:num>321013</td>
+  <td class=xl29 align=right x:num>Tatang Ruhiat</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>196</td>
+  <td class=xl29>120651152</td>
+  <td class=xl29 align=right x:num>321211</td>
+  <td class=xl29 align=right x:num>Taufiq Hidayattulloh</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>197</td>
+  <td class=xl29>160651153</td>
+  <td class=xl29 align=right x:num>321396</td>
+  <td class=xl29 align=right x:num>Tedi Sukmana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>198</td>
+  <td class=xl29>140651154</td>
+  <td class=xl29 align=right x:num>321249</td>
+  <td class=xl29 align=right x:num>Tedy Permana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>199</td>
+  <td class=xl29>150611155</td>
+  <td class=xl29 align=right x:num>322001</td>
+  <td class=xl29 align=right x:num>Teguh Hermawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>200</td>
+  <td class=xl29>150621156</td>
+  <td class=xl29 align=right x:num>324024</td>
+  <td class=xl29 align=right x:num>Teguh Imam Santosa</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>201</td>
+  <td class=xl29>140651157</td>
+  <td class=xl29 align=right x:num>321295</td>
+  <td class=xl29 align=right x:num>Tiar Rahmatiar</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>202</td>
+  <td class=xl29>150651158</td>
+  <td class=xl29 align=right x:num>321321</td>
+  <td class=xl29 align=right x:num>Titim Hotimah</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>203</td>
+  <td class=xl29>090651159</td>
+  <td class=xl29 align=right x:num>321007</td>
+  <td class=xl29 align=right x:num>Tri Widodo</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>204</td>
+  <td class=xl29>080641160</td>
+  <td class=xl29 align=right x:num>323046</td>
+  <td class=xl29 align=right x:num>Uus Husnul Hayat</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>205</td>
+  <td class=xl29>090651161</td>
+  <td class=xl29 align=right x:num>321006</td>
+  <td class=xl29 align=right x:num>Wahyu</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>206</td>
+  <td class=xl29>140641162</td>
+  <td class=xl29 align=right x:num>321006</td>
+  <td class=xl29 align=right x:num>Wahyu Indrawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>207</td>
+  <td class=xl29>100651163</td>
+  <td class=xl29 align=right x:num>321170</td>
+  <td class=xl29 align=right x:num>Wandi Hermawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>208</td>
+  <td class=xl29>120641164</td>
+  <td class=xl29 align=right x:num>324003</td>
+  <td class=xl29 align=right x:num>Wawan Irawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>209</td>
+  <td class=xl29>160611165</td>
+  <td class=xl29 align=right x:num>322065</td>
+  <td class=xl29 align=right x:num>Wawan Setiawan</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>210</td>
+  <td class=xl29>080651166</td>
+  <td class=xl29 align=right x:num>321147</td>
+  <td class=xl29 align=right x:num>Weddy Cahyadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>211</td>
+  <td class=xl29>140611167</td>
+  <td class=xl29 align=right x:num>322055</td>
+  <td class=xl29 align=right x:num>Wiga Basten</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >AR Control</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>212</td>
+  <td class=xl29>130651168</td>
+  <td class=xl29 align=right x:num>321190</td>
+  <td class=xl29 align=right x:num>Yadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>213</td>
+  <td class=xl29>080641169</td>
+  <td class=xl29 align=right x:num>323045</td>
+  <td class=xl29 align=right x:num>Yadi Carliyadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Ekspedisi</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>214</td>
+  <td class=xl29>120641170</td>
+  <td class=xl29 align=right x:num>323059</td>
+  <td class=xl29 align=right x:num>Yadi Purnama</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Crossdock</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>215</td>
+  <td class=xl29>140641171</td>
+  <td class=xl29 align=right x:num>323123</td>
+  <td class=xl29 align=right x:num>Yana Mulyana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>216</td>
+  <td class=xl29>080611172</td>
+  <td class=xl29 align=right x:num>322020</td>
+  <td class=xl29 align=right x:num>Yanti Kurniati</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >FAS</td>
+  <td class=xl29 align=right >Manager	</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>217</td>
+  <td class=xl29>140651173</td>
+  <td class=xl29 align=right x:num>321213</td>
+  <td class=xl29 align=right x:num>Yanto Gustiana</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>218</td>
+  <td class=xl29>130641174</td>
+  <td class=xl29 align=right x:num>323064</td>
+  <td class=xl29 align=right x:num>Yogi Agustian</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>219</td>
+  <td class=xl29>150651175</td>
+  <td class=xl29 align=right x:num>321383</td>
+  <td class=xl29 align=right x:num>Yogi Firmansyah Iskandar</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>220</td>
+  <td class=xl29>130621176</td>
+  <td class=xl29 align=right x:num>324009</td>
+  <td class=xl29 align=right x:num>Yudi Mulyadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>221</td>
+  <td class=xl29>150651177</td>
+  <td class=xl29 align=right x:num>321344</td>
+  <td class=xl29 align=right x:num>Yuni Nurtresnawati</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>222</td>
+  <td class=xl29>100651178</td>
+  <td class=xl29 align=right x:num>321075</td>
+  <td class=xl29 align=right x:num>Yusup Supriadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Cibalong</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>223</td>
+  <td class=xl29>120651179</td>
+  <td class=xl29 align=right x:num>321021</td>
+  <td class=xl29 align=right x:num>Yusup Supriadi</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK MR Garut</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=12 width=80 clospan= style='width:41pt'></td>
+ 
+ </tr>
+ <![endif]>
+</table>
+
+
+</body>
+			
+</html>
+
+

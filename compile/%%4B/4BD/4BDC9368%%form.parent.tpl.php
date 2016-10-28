@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2016-05-17 11:41:44
+<?php /* Smarty version 2.6.18, created on 2016-10-21 11:38:39
          compiled from defaults/modules/administrasi_sistem/user_privileges/form.parent.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'upper', 'defaults/modules/administrasi_sistem/user_privileges/form.parent.tpl', 54, false),array('function', 'cycle', 'defaults/modules/administrasi_sistem/user_privileges/form.parent.tpl', 99, false),)), $this); ?>
@@ -184,7 +184,7 @@ $this->_sections['y']['last']       = ($this->_sections['y']['iteration'] == $th
 					</TR>
 					<?php endfor; endif; ?>
 					<TR><TD></td><TD></td><TD colspan="2" width="140">
-					<INPUT TYPE="hidden" name="super_parent" value="1">
+                                        <INPUT TYPE="hidden" name="super_parent" value="1">
 					<INPUT TYPE="hidden" name="user_id" value="<?php echo $this->_tpl_vars['USER_ID']; ?>
 ">
 					<INPUT TYPE="hidden" name="implode_daftar_menu_id" value="<?php echo $this->_tpl_vars['IMPLODE_DAFTAR_PARENT_ID']; ?>

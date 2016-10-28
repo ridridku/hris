@@ -68,7 +68,6 @@ global $field_name;
 
 $password = base64_encode($_POST['password']);
 
-
 $sql  ="UPDATE ".$tbl_name." ";
 $sql .="SET ".$field_name."_first_name='".strip_tags(strtoupper($first_name))."',".$field_name."_last_name='".strip_tags(strtoupper($last_name))."',".$field_name."_address='".strip_tags($address)."',".$field_name."_telp='".strip_tags($telp)."',".$field_name."_gender='".strip_tags($gender)."', ".$field_name."_email='".$email."',user_password='$password' ";
 $sql .="WHERE ".$field_name."_id = '".strip_tags($id)."' ";
@@ -86,6 +85,7 @@ $sql	 = "INSERT INTO ".$tbl_name." ";
 $sql	.= "(user_id, user_password, user_first_name, user_last_name, user_date_join, user_address, user_telp, user_gender, user_email, user_active_status) ";
 $sql	.= "VALUES ('".strip_tags($id)."','".strip_tags(base64_encode($password))."', '".strip_tags(strtoupper($first_name))."','".strip_tags(strtoupper($last_name))."', '".strip_tags($date_join)."', '".strip_tags($address)."', '".strip_tags($telp)."', '".strip_tags($gender)."','".$email."', '".$status."')";
 $sqlresult = $db->Execute($sql);
+
 
 }
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2016-05-17 09:39:46
+<?php /* Smarty version 2.6.18, created on 2016-10-19 12:06:43
          compiled from defaults/modules/menu.frame.tpl */ ?>
 <html>
 <head>
@@ -233,7 +233,7 @@ $this->_sections['z']['last']       = ($this->_sections['z']['iteration'] == $th
 /icon/home.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Halaman Utama</A></li>
 	<li><a class="menu-tree" href="edit.profile.php?user_id=<?php echo $this->_tpl_vars['USER_ID']; ?>
 " target="mainFrame" title="Edit Your Profile"><IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/icon/edit.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Ubah Profil Anda</A></li>				
+/icon/edit.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Ubah Password</A></li>				
 </ul>
 
 <ul id="theMenu">

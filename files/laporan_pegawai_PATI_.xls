@@ -1,0 +1,2938 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=12 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->LAPORAN PEGAWAI </td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=12 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=12 height=21 class=xl36 style='height:15.75pt'>CABANG  : PATI</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>NIP</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=82 style='width:25pt'>JABATAN</td>
+    <td class=xl27 width=82 style='width:25pt'>LEVEL JABATAN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS PEGAWAI</td>
+    <td class=xl27 width=98 style='width:50pt'>AWAL MASUK</td> 
+    <td class=xl27 width=57 style='width:25pt'>AKHIR KONTRAK</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>130850983</td>
+  <td class=xl29 align=right x:num>251148</td>
+  <td class=xl29 align=right x:num>Abdur Rochman</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>130852520</td>
+  <td class=xl29 align=right x:num>251129</td>
+  <td class=xl29 align=right x:num>Adhi Nurcahya</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>120850990</td>
+  <td class=xl29 align=right x:num>251057</td>
+  <td class=xl29 align=right x:num>Adi Wahyu Setiawan </td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>150842522</td>
+  <td class=xl29 align=right x:num>253075</td>
+  <td class=xl29 align=right x:num>Adib Nur Andoni</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>130810994</td>
+  <td class=xl29 align=right x:num>252014</td>
+  <td class=xl29 align=right x:num>Aditya Darmadi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>140852524</td>
+  <td class=xl29 align=right x:num>251194</td>
+  <td class=xl29 align=right x:num>Afit Zaenuri</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>160851016</td>
+  <td class=xl29 align=right x:num>251274</td>
+  <td class=xl29 align=right x:num>Agung Cahyo Atmojo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>140851031</td>
+  <td class=xl29 align=right x:num>253072</td>
+  <td class=xl29 align=right x:num>Agung Pujo Asmoro</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>110821074</td>
+  <td class=xl29 align=right x:num>254012</td>
+  <td class=xl29 align=right x:num>Agung Purnomo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>120851111</td>
+  <td class=xl29 align=right x:num>251045</td>
+  <td class=xl29 align=right x:num>Agung Wahyudi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>140841126</td>
+  <td class=xl29 align=right x:num>253057</td>
+  <td class=xl29 align=right x:num>Agus Kunarso</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>140841142</td>
+  <td class=xl29 align=right x:num>253062</td>
+  <td class=xl29 align=right x:num>Agus Puryanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>080842531</td>
+  <td class=xl29 align=right x:num>253004</td>
+  <td class=xl29 align=right x:num>Agus Riyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>140841339</td>
+  <td class=xl29 align=right x:num>253007</td>
+  <td class=xl29 align=right x:num>Agus Setya Mardika</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>150851340</td>
+  <td class=xl29 align=right x:num>251222</td>
+  <td class=xl29 align=right x:num>Agus Setyawan</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>160851363</td>
+  <td class=xl29 align=right x:num>251252</td>
+  <td class=xl29 align=right x:num>Agus Setyiyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>140821367</td>
+  <td class=xl29 align=right x:num>251015</td>
+  <td class=xl29 align=right x:num>Agus Supriyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>150851378</td>
+  <td class=xl29 align=right x:num>251241</td>
+  <td class=xl29 align=right x:num>Agus Winarto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>130852537</td>
+  <td class=xl29 align=right x:num>251141</td>
+  <td class=xl29 align=right x:num>Agustinus Eko Putranto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>140852538</td>
+  <td class=xl29 align=right x:num>251139</td>
+  <td class=xl29 align=right x:num>Ahmad Abdul Wakhid</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >MD Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>080852539</td>
+  <td class=xl29 align=right x:num>251116</td>
+  <td class=xl29 align=right x:num>Ahmad Hanif Wardhani</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>120812540</td>
+  <td class=xl29 align=right x:num>274020</td>
+  <td class=xl29 align=right x:num>Ahmad Khusen Asyari</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >FAS</td>
+  <td class=xl29 align=right >Manager	</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>150851384</td>
+  <td class=xl29 align=right x:num>251234</td>
+  <td class=xl29 align=right x:num>Ahmad Rifa’i</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>110851391</td>
+  <td class=xl29 align=right x:num>251026</td>
+  <td class=xl29 align=right x:num>Ahmad Saifur Rozaq</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>120851437</td>
+  <td class=xl29 align=right x:num>251046</td>
+  <td class=xl29 align=right x:num>Ahmad Shochibul Anwar</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>130851467</td>
+  <td class=xl29 align=right x:num>251133</td>
+  <td class=xl29 align=right x:num>Ahmad Zainal Abidin</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>150851471</td>
+  <td class=xl29 align=right x:num>251225</td>
+  <td class=xl29 align=right x:num>Ahmad Zamroji </td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>160851520</td>
+  <td class=xl29 align=right x:num>251284</td>
+  <td class=xl29 align=right x:num>Aji Satria Damaika</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>140851554</td>
+  <td class=xl29 align=right x:num>251158</td>
+  <td class=xl29 align=right x:num>Akhmad Nahid</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>140841564</td>
+  <td class=xl29 align=right x:num>251182</td>
+  <td class=xl29 align=right x:num>Akhmat Ulil Huda</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>160851565</td>
+  <td class=xl29 align=right x:num>251259</td>
+  <td class=xl29 align=right x:num>Anang Ardiansyah</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>150851566</td>
+  <td class=xl29 align=right x:num>251239</td>
+  <td class=xl29 align=right x:num>Andy Kurniawan</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>130842551</td>
+  <td class=xl29 align=right x:num>253005</td>
+  <td class=xl29 align=right x:num>Anggry Retyan Wicaksana</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>130852552</td>
+  <td class=xl29 align=right x:num>251123</td>
+  <td class=xl29 align=right x:num>Ani Puji Astuti</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Admin Data Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>130851570</td>
+  <td class=xl29 align=right x:num>251080</td>
+  <td class=xl29 align=right x:num>Anif Dwi Jayanti</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>140821575</td>
+  <td class=xl29 align=right x:num>222055</td>
+  <td class=xl29 align=right x:num>Anisah</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >PGA Staff</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>120812555</td>
+  <td class=xl29 align=right x:num>252004</td>
+  <td class=xl29 align=right x:num>Anita Wahyu Widyaningrum</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin Claim</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>130842556</td>
+  <td class=xl29 align=right x:num>253003</td>
+  <td class=xl29 align=right x:num>Annas Musttaqin</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>140842557</td>
+  <td class=xl29 align=right x:num>253054</td>
+  <td class=xl29 align=right x:num>Antoni Gusman</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>150852558</td>
+  <td class=xl29 align=right x:num>251204</td>
+  <td class=xl29 align=right x:num>Arga Prasetya</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>160851576</td>
+  <td class=xl29 align=right x:num>251276</td>
+  <td class=xl29 align=right x:num>Arif Yulianto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>120851577</td>
+  <td class=xl29 align=right x:num>251131</td>
+  <td class=xl29 align=right x:num>Arif Zaenal Muharam </td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>130852561</td>
+  <td class=xl29 align=right x:num>251155</td>
+  <td class=xl29 align=right x:num>Ati Suciati</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>090811578</td>
+  <td class=xl29 align=right x:num>252017</td>
+  <td class=xl29 align=right x:num>Atin Cahyani</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>160851586</td>
+  <td class=xl29 align=right x:num>251281</td>
+  <td class=xl29 align=right x:num>Ayuk Ernawati</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>130851593</td>
+  <td class=xl29 align=right x:num>251144</td>
+  <td class=xl29 align=right x:num>Bayu Retmawan</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>140851601</td>
+  <td class=xl29 align=right x:num>251126</td>
+  <td class=xl29 align=right x:num>Beni Pujiani</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>150852566</td>
+  <td class=xl29 align=right x:num>251227</td>
+  <td class=xl29 align=right x:num>Brillian Shindu Pratama</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>130811604</td>
+  <td class=xl29 align=right x:num>253007</td>
+  <td class=xl29 align=right x:num>Budi Irmanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>140851611</td>
+  <td class=xl29 align=right x:num>253050</td>
+  <td class=xl29 align=right x:num>Budi Santoso</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>110851631</td>
+  <td class=xl29 align=right x:num>251016</td>
+  <td class=xl29 align=right x:num>Budi yanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>140842570</td>
+  <td class=xl29 align=right x:num>253064</td>
+  <td class=xl29 align=right x:num>Bukhori</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>53</td>
+  <td class=xl29>130812571</td>
+  <td class=xl29 align=right x:num>252012</td>
+  <td class=xl29 align=right x:num>Bunga Fitria Sari</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>54</td>
+  <td class=xl29>120851632</td>
+  <td class=xl29 align=right x:num>251053</td>
+  <td class=xl29 align=right x:num>Buntal Juiring</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>55</td>
+  <td class=xl29>150812573</td>
+  <td class=xl29 align=right x:num>252033</td>
+  <td class=xl29 align=right x:num>Catur Prasetyo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>56</td>
+  <td class=xl29>090851633</td>
+  <td class=xl29 align=right x:num>251117</td>
+  <td class=xl29 align=right x:num>Danang Fahrurroji</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>57</td>
+  <td class=xl29>150852575</td>
+  <td class=xl29 align=right x:num>251221</td>
+  <td class=xl29 align=right x:num>Dedy Apris Sanjaya</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>58</td>
+  <td class=xl29>160852576</td>
+  <td class=xl29 align=right x:num>251254</td>
+  <td class=xl29 align=right x:num>Dedy Prawono</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>59</td>
+  <td class=xl29>090852577</td>
+  <td class=xl29 align=right x:num>251142</td>
+  <td class=xl29 align=right x:num>Dewi Indriyati</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>60</td>
+  <td class=xl29>150811634</td>
+  <td class=xl29 align=right x:num>252031</td>
+  <td class=xl29 align=right x:num>Dhaca Nur Hangga</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>61</td>
+  <td class=xl29>130851635</td>
+  <td class=xl29 align=right x:num>251106</td>
+  <td class=xl29 align=right x:num>Didik Kurniawan</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>62</td>
+  <td class=xl29>010852580</td>
+  <td class=xl29 align=right x:num>250000</td>
+  <td class=xl29 align=right x:num>Drajat Tamtana</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>63</td>
+  <td class=xl29>150851659</td>
+  <td class=xl29 align=right x:num>251217</td>
+  <td class=xl29 align=right x:num>Dwi Andi Ariyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>64</td>
+  <td class=xl29>120821660</td>
+  <td class=xl29 align=right x:num>254009</td>
+  <td class=xl29 align=right x:num>Dwi Hananto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>65</td>
+  <td class=xl29>160851661</td>
+  <td class=xl29 align=right x:num>251286</td>
+  <td class=xl29 align=right x:num>Dwi Prastiyo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>66</td>
+  <td class=xl29>070832584</td>
+  <td class=xl29 align=right x:num>255001</td>
+  <td class=xl29 align=right x:num>Dwi Retno Utari</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >IT Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>67</td>
+  <td class=xl29>110812585</td>
+  <td class=xl29 align=right x:num>252003</td>
+  <td class=xl29 align=right x:num>Dwi Riana Widhyastuti</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >AR Control</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>68</td>
+  <td class=xl29>120821672</td>
+  <td class=xl29 align=right x:num>254011</td>
+  <td class=xl29 align=right x:num>Dwi Windiarto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>69</td>
+  <td class=xl29>130851680</td>
+  <td class=xl29 align=right x:num>251081</td>
+  <td class=xl29 align=right x:num>Edhi Istrianto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>70</td>
+  <td class=xl29>150852588</td>
+  <td class=xl29 align=right x:num>251170</td>
+  <td class=xl29 align=right x:num>Edy Sudarwanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>71</td>
+  <td class=xl29>140841681</td>
+  <td class=xl29 align=right x:num>253059</td>
+  <td class=xl29 align=right x:num>Eka Pramudya Ari Wibawa</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>72</td>
+  <td class=xl29>130812590</td>
+  <td class=xl29 align=right x:num>252002</td>
+  <td class=xl29 align=right x:num>Eko Budiawan Hendratno </td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>73</td>
+  <td class=xl29>100841741</td>
+  <td class=xl29 align=right x:num>253010</td>
+  <td class=xl29 align=right x:num>Eko Puji Indarto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>74</td>
+  <td class=xl29>140842592</td>
+  <td class=xl29 align=right x:num>253070</td>
+  <td class=xl29 align=right x:num>Eko Widodo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Ekspedisi</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>75</td>
+  <td class=xl29>160812593</td>
+  <td class=xl29 align=right x:num>252034</td>
+  <td class=xl29 align=right x:num>Ekwin Ambarwati</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Kecil</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>76</td>
+  <td class=xl29>140811780</td>
+  <td class=xl29 align=right x:num>252026</td>
+  <td class=xl29 align=right x:num>Endri Wiriyanti</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>77</td>
+  <td class=xl29>110851808</td>
+  <td class=xl29 align=right x:num>251021</td>
+  <td class=xl29 align=right x:num>Erik Sumarda</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>78</td>
+  <td class=xl29>140842596</td>
+  <td class=xl29 align=right x:num>253069</td>
+  <td class=xl29 align=right x:num>Erizal</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>79</td>
+  <td class=xl29>090811834</td>
+  <td class=xl29 align=right x:num>252018</td>
+  <td class=xl29 align=right x:num>Erna Muayana</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>80</td>
+  <td class=xl29>130841853</td>
+  <td class=xl29 align=right x:num>253009</td>
+  <td class=xl29 align=right x:num>Erwan Hendrayana</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>81</td>
+  <td class=xl29>080851860</td>
+  <td class=xl29 align=right x:num>251111</td>
+  <td class=xl29 align=right x:num>Fahrudin Nugroho</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>82</td>
+  <td class=xl29>120842600</td>
+  <td class=xl29 align=right x:num>253065</td>
+  <td class=xl29 align=right x:num>Fip Egoesti Maulana</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>83</td>
+  <td class=xl29>150851862</td>
+  <td class=xl29 align=right x:num>251240</td>
+  <td class=xl29 align=right x:num>Fityan Khunafa</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>84</td>
+  <td class=xl29>140851864</td>
+  <td class=xl29 align=right x:num>251130</td>
+  <td class=xl29 align=right x:num>Heri Sukasno</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>85</td>
+  <td class=xl29>100851867</td>
+  <td class=xl29 align=right x:num>251017</td>
+  <td class=xl29 align=right x:num>Heru dwi santoso</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>86</td>
+  <td class=xl29>140842604</td>
+  <td class=xl29 align=right x:num>252021</td>
+  <td class=xl29 align=right x:num>Hery Septiawan</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>87</td>
+  <td class=xl29>120812605</td>
+  <td class=xl29 align=right x:num>252006</td>
+  <td class=xl29 align=right x:num>Ima Fatimah</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>88</td>
+  <td class=xl29>110851873</td>
+  <td class=xl29 align=right x:num>251119</td>
+  <td class=xl29 align=right x:num>Is Aryawan</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>89</td>
+  <td class=xl29>150851880</td>
+  <td class=xl29 align=right x:num>251231</td>
+  <td class=xl29 align=right x:num>Istikharoh</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>90</td>
+  <td class=xl29>130852608</td>
+  <td class=xl29 align=right x:num>251091</td>
+  <td class=xl29 align=right x:num>Joko Supriyadi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>91</td>
+  <td class=xl29>100822609</td>
+  <td class=xl29 align=right x:num>254002</td>
+  <td class=xl29 align=right x:num>Jumadi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >HRD Supervisor</td>
+  <td class=xl29 align=right >Director</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>92</td>
+  <td class=xl29>120811883</td>
+  <td class=xl29 align=right x:num>252019</td>
+  <td class=xl29 align=right x:num>Karmiati</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>93</td>
+  <td class=xl29>160851884</td>
+  <td class=xl29 align=right x:num>251266</td>
+  <td class=xl29 align=right x:num>Kukuh Ariyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>94</td>
+  <td class=xl29>080852612</td>
+  <td class=xl29 align=right x:num>251007</td>
+  <td class=xl29 align=right x:num>Kuswanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>95</td>
+  <td class=xl29>140811894</td>
+  <td class=xl29 align=right x:num>253052</td>
+  <td class=xl29 align=right x:num>Lasimin</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>96</td>
+  <td class=xl29>120851956</td>
+  <td class=xl29 align=right x:num>251043</td>
+  <td class=xl29 align=right x:num>Lilik Eko Yulianto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>97</td>
+  <td class=xl29>130841957</td>
+  <td class=xl29 align=right x:num>253014</td>
+  <td class=xl29 align=right x:num>Lilik Setyo Bhudi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>98</td>
+  <td class=xl29>160851965</td>
+  <td class=xl29 align=right x:num>251279</td>
+  <td class=xl29 align=right x:num>Lilik Wahyudi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>99</td>
+  <td class=xl29>140852015</td>
+  <td class=xl29 align=right x:num>251012</td>
+  <td class=xl29 align=right x:num>Lina Handayani</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>100</td>
+  <td class=xl29>130852019</td>
+  <td class=xl29 align=right x:num>251062</td>
+  <td class=xl29 align=right x:num>M. FathurRohman</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>101</td>
+  <td class=xl29>090852025</td>
+  <td class=xl29 align=right x:num>251019</td>
+  <td class=xl29 align=right x:num>M. Zaenuri</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>102</td>
+  <td class=xl29>140852036</td>
+  <td class=xl29 align=right x:num>251152</td>
+  <td class=xl29 align=right x:num>Makrus</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>103</td>
+  <td class=xl29>080852040</td>
+  <td class=xl29 align=right x:num>251114</td>
+  <td class=xl29 align=right x:num>Mangguntur Siswonugroho</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>104</td>
+  <td class=xl29>160852043</td>
+  <td class=xl29 align=right x:num>251275</td>
+  <td class=xl29 align=right x:num>Maratus Solekah</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>105</td>
+  <td class=xl29>010822623</td>
+  <td class=xl29 align=right x:num>274003</td>
+  <td class=xl29 align=right x:num>Maria MD Kartika</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Kepala Cabang</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>106</td>
+  <td class=xl29>100842044</td>
+  <td class=xl29 align=right x:num>253016</td>
+  <td class=xl29 align=right x:num>Mei yanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>107</td>
+  <td class=xl29>140812047</td>
+  <td class=xl29 align=right x:num>252029</td>
+  <td class=xl29 align=right x:num>Mochammad Amin</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>108</td>
+  <td class=xl29>100852626</td>
+  <td class=xl29 align=right x:num>251003</td>
+  <td class=xl29 align=right x:num>Mohamad Ulin Nuha</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>109</td>
+  <td class=xl29>100812054</td>
+  <td class=xl29 align=right x:num>253038</td>
+  <td class=xl29 align=right x:num>Mohammad Arwani</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>110</td>
+  <td class=xl29>160852061</td>
+  <td class=xl29 align=right x:num>251272</td>
+  <td class=xl29 align=right x:num>Mu'arif Ahmad Imron</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>111</td>
+  <td class=xl29>160852062</td>
+  <td class=xl29 align=right x:num>251271</td>
+  <td class=xl29 align=right x:num>Muchlisin</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>112</td>
+  <td class=xl29>130842063</td>
+  <td class=xl29 align=right x:num>253015</td>
+  <td class=xl29 align=right x:num>Muh. Choiruddin</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>113</td>
+  <td class=xl29>130852631</td>
+  <td class=xl29 align=right x:num>251063</td>
+  <td class=xl29 align=right x:num>Muhamad Anwar</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>114</td>
+  <td class=xl29>150852064</td>
+  <td class=xl29 align=right x:num>251207</td>
+  <td class=xl29 align=right x:num>Muhamad Jamilun</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>115</td>
+  <td class=xl29>140852633</td>
+  <td class=xl29 align=right x:num>251054</td>
+  <td class=xl29 align=right x:num>Muhamad Khoerudin Restu Wijaya</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>116</td>
+  <td class=xl29>090852065</td>
+  <td class=xl29 align=right x:num>251121</td>
+  <td class=xl29 align=right x:num>Muhammad Afifurohim</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>117</td>
+  <td class=xl29>160852635</td>
+  <td class=xl29 align=right x:num>251270</td>
+  <td class=xl29 align=right x:num>Muhammad Alwi Fahrudin</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>118</td>
+  <td class=xl29>160852067</td>
+  <td class=xl29 align=right x:num>251249</td>
+  <td class=xl29 align=right x:num>Muhammad Fathoni</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>119</td>
+  <td class=xl29>130852068</td>
+  <td class=xl29 align=right x:num>251145</td>
+  <td class=xl29 align=right x:num>Muhammad Ghufron</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>120</td>
+  <td class=xl29>140852638</td>
+  <td class=xl29 align=right x:num>251195</td>
+  <td class=xl29 align=right x:num>Muhammad Hidayatullah</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>121</td>
+  <td class=xl29>140852073</td>
+  <td class=xl29 align=right x:num>251136</td>
+  <td class=xl29 align=right x:num>Muhammad Mujib</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>122</td>
+  <td class=xl29>130852074</td>
+  <td class=xl29 align=right x:num>251005</td>
+  <td class=xl29 align=right x:num>Muhammad Nur Hidayat</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>123</td>
+  <td class=xl29>150822076</td>
+  <td class=xl29 align=right x:num>254013</td>
+  <td class=xl29 align=right x:num>Muhammad Puryadi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>124</td>
+  <td class=xl29>100852081</td>
+  <td class=xl29 align=right x:num>251064</td>
+  <td class=xl29 align=right x:num>Muhammad Rumadi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>125</td>
+  <td class=xl29>130812085</td>
+  <td class=xl29 align=right x:num>252013</td>
+  <td class=xl29 align=right x:num>Muhammad Saifuddin</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>126</td>
+  <td class=xl29>130852644</td>
+  <td class=xl29 align=right x:num>251089</td>
+  <td class=xl29 align=right x:num>Muhammad Saifullah</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>127</td>
+  <td class=xl29>120852645</td>
+  <td class=xl29 align=right x:num>251072</td>
+  <td class=xl29 align=right x:num>Muhammad Santosa</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>128</td>
+  <td class=xl29>120852646</td>
+  <td class=xl29 align=right x:num>251140</td>
+  <td class=xl29 align=right x:num>Muhammad Sokhibul Mubarok</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>129</td>
+  <td class=xl29>160852089</td>
+  <td class=xl29 align=right x:num>251267</td>
+  <td class=xl29 align=right x:num>Muhammad Sururi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>130</td>
+  <td class=xl29>120852090</td>
+  <td class=xl29 align=right x:num>251055</td>
+  <td class=xl29 align=right x:num>Muhammad Syafii Rokhim</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>131</td>
+  <td class=xl29>110852093</td>
+  <td class=xl29 align=right x:num>251024</td>
+  <td class=xl29 align=right x:num>Muhammad Wahyudi Utomo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>132</td>
+  <td class=xl29>130852101</td>
+  <td class=xl29 align=right x:num>251070</td>
+  <td class=xl29 align=right x:num>Muhammad Yusuf </td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>133</td>
+  <td class=xl29>090812102</td>
+  <td class=xl29 align=right x:num>253019</td>
+  <td class=xl29 align=right x:num>Mulyono</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>134</td>
+  <td class=xl29>130842652</td>
+  <td class=xl29 align=right x:num>253017</td>
+  <td class=xl29 align=right x:num>Munaji</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>135</td>
+  <td class=xl29>160852105</td>
+  <td class=xl29 align=right x:num>251262</td>
+  <td class=xl29 align=right x:num>Mundakir </td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>136</td>
+  <td class=xl29>110852110</td>
+  <td class=xl29 align=right x:num>251015</td>
+  <td class=xl29 align=right x:num>Mustaqim Iswahyudi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>137</td>
+  <td class=xl29>160852113</td>
+  <td class=xl29 align=right x:num>251278</td>
+  <td class=xl29 align=right x:num>Nanang Hidayat</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>138</td>
+  <td class=xl29>120812656</td>
+  <td class=xl29 align=right x:num>252008</td>
+  <td class=xl29 align=right x:num>Nerry Kusyuliantiningsih</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>139</td>
+  <td class=xl29>160852115</td>
+  <td class=xl29 align=right x:num>251255</td>
+  <td class=xl29 align=right x:num>Niti Brilian Apriyogo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>140</td>
+  <td class=xl29>140842658</td>
+  <td class=xl29 align=right x:num>253058</td>
+  <td class=xl29 align=right x:num>Noor Faiz</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>141</td>
+  <td class=xl29>120852659</td>
+  <td class=xl29 align=right x:num>251044</td>
+  <td class=xl29 align=right x:num>Nur Akhmad Yakud</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>142</td>
+  <td class=xl29>160852117</td>
+  <td class=xl29 align=right x:num>251288</td>
+  <td class=xl29 align=right x:num>Nur Fauzan</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>143</td>
+  <td class=xl29>140842661</td>
+  <td class=xl29 align=right x:num>253076</td>
+  <td class=xl29 align=right x:num>Nur Hidayat Rozaqi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>144</td>
+  <td class=xl29>150852119</td>
+  <td class=xl29 align=right x:num>251220</td>
+  <td class=xl29 align=right x:num>Nur Kholis</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>145</td>
+  <td class=xl29>090852122</td>
+  <td class=xl29 align=right x:num>251004</td>
+  <td class=xl29 align=right x:num>Nur rohmat</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>146</td>
+  <td class=xl29>130852126</td>
+  <td class=xl29 align=right x:num>251004</td>
+  <td class=xl29 align=right x:num>Nur Rohmat</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>147</td>
+  <td class=xl29>150852127</td>
+  <td class=xl29 align=right x:num>251008</td>
+  <td class=xl29 align=right x:num>Nur Syafi'i</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>148</td>
+  <td class=xl29>160852129</td>
+  <td class=xl29 align=right x:num>251287</td>
+  <td class=xl29 align=right x:num>Nurul Arif Priyono</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>149</td>
+  <td class=xl29>150842667</td>
+  <td class=xl29 align=right x:num>253074</td>
+  <td class=xl29 align=right x:num>Okki Rizqi Amellianto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>150</td>
+  <td class=xl29>110842668</td>
+  <td class=xl29 align=right x:num>253021</td>
+  <td class=xl29 align=right x:num>Poncho Noor Hartanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>151</td>
+  <td class=xl29>140842669</td>
+  <td class=xl29 align=right x:num>253068</td>
+  <td class=xl29 align=right x:num>Purwanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>152</td>
+  <td class=xl29>130812670</td>
+  <td class=xl29 align=right x:num>252022</td>
+  <td class=xl29 align=right x:num>Rachma Luthfiana</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>153</td>
+  <td class=xl29>110842671</td>
+  <td class=xl29 align=right x:num>253011</td>
+  <td class=xl29 align=right x:num>Raden Fajar Sulistyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>154</td>
+  <td class=xl29>160852134</td>
+  <td class=xl29 align=right x:num>251251</td>
+  <td class=xl29 align=right x:num>Rafzi Arfinansyah</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>155</td>
+  <td class=xl29>160852137</td>
+  <td class=xl29 align=right x:num>251260</td>
+  <td class=xl29 align=right x:num>Recovery Belarosa</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>156</td>
+  <td class=xl29>160852138</td>
+  <td class=xl29 align=right x:num>251278</td>
+  <td class=xl29 align=right x:num>Rian Ariyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>157</td>
+  <td class=xl29>150852140</td>
+  <td class=xl29 align=right x:num>251246</td>
+  <td class=xl29 align=right x:num>Ribut Angga Pradhita</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>158</td>
+  <td class=xl29>150852141</td>
+  <td class=xl29 align=right x:num>251212</td>
+  <td class=xl29 align=right x:num>Riesky Nurseha</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>159</td>
+  <td class=xl29>100852145</td>
+  <td class=xl29 align=right x:num>251049</td>
+  <td class=xl29 align=right x:num>Rikza Daniel</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>160</td>
+  <td class=xl29>160812146</td>
+  <td class=xl29 align=right x:num>252035</td>
+  <td class=xl29 align=right x:num>Rinta Wahyuni</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>161</td>
+  <td class=xl29>150852679</td>
+  <td class=xl29 align=right x:num>251242</td>
+  <td class=xl29 align=right x:num>Rio Isnugroho</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>162</td>
+  <td class=xl29>140842680</td>
+  <td class=xl29 align=right x:num>253049</td>
+  <td class=xl29 align=right x:num>Risdiono</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>163</td>
+  <td class=xl29>130852148</td>
+  <td class=xl29 align=right x:num>251123</td>
+  <td class=xl29 align=right x:num>Ristiyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>164</td>
+  <td class=xl29>090842682</td>
+  <td class=xl29 align=right x:num>253023</td>
+  <td class=xl29 align=right x:num>Romi Novianto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>165</td>
+  <td class=xl29>120852683</td>
+  <td class=xl29 align=right x:num>251056</td>
+  <td class=xl29 align=right x:num>Ryan Ragil Saputra</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>166</td>
+  <td class=xl29>130852684</td>
+  <td class=xl29 align=right x:num>253024</td>
+  <td class=xl29 align=right x:num>Sapta Ari Rosyad</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>167</td>
+  <td class=xl29>110842685</td>
+  <td class=xl29 align=right x:num>253031</td>
+  <td class=xl29 align=right x:num>Sasmito Widi Nuryanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>168</td>
+  <td class=xl29>130852154</td>
+  <td class=xl29 align=right x:num>253029</td>
+  <td class=xl29 align=right x:num>Selamet Priyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>169</td>
+  <td class=xl29>090812155</td>
+  <td class=xl29 align=right x:num>253026</td>
+  <td class=xl29 align=right x:num>Septa junaedi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>170</td>
+  <td class=xl29>130852167</td>
+  <td class=xl29 align=right x:num>251066</td>
+  <td class=xl29 align=right x:num>Septa Rendra</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Rembang </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>171</td>
+  <td class=xl29>150852689</td>
+  <td class=xl29 align=right x:num>251235</td>
+  <td class=xl29 align=right x:num>Shita Devi Nurbaiti</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>172</td>
+  <td class=xl29>130852172</td>
+  <td class=xl29 align=right x:num>251002</td>
+  <td class=xl29 align=right x:num>Slamet Riyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>173</td>
+  <td class=xl29>090842691</td>
+  <td class=xl29 align=right x:num>253030</td>
+  <td class=xl29 align=right x:num>Slamet Santoso</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>174</td>
+  <td class=xl29>140852692</td>
+  <td class=xl29 align=right x:num>251010</td>
+  <td class=xl29 align=right x:num>Sri Purwati</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>175</td>
+  <td class=xl29>080812693</td>
+  <td class=xl29 align=right x:num>252005</td>
+  <td class=xl29 align=right x:num>Sulawi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>176</td>
+  <td class=xl29>160852177</td>
+  <td class=xl29 align=right x:num>251248</td>
+  <td class=xl29 align=right x:num>Sumardi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>177</td>
+  <td class=xl29>130852178</td>
+  <td class=xl29 align=right x:num>251029</td>
+  <td class=xl29 align=right x:num>Supriyono</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>178</td>
+  <td class=xl29>090852180</td>
+  <td class=xl29 align=right x:num>251118</td>
+  <td class=xl29 align=right x:num>Suratno</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>179</td>
+  <td class=xl29>160852182</td>
+  <td class=xl29 align=right x:num>251253</td>
+  <td class=xl29 align=right x:num>Suwadi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>180</td>
+  <td class=xl29>140842189</td>
+  <td class=xl29 align=right x:num>253046</td>
+  <td class=xl29 align=right x:num>Suwandi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>181</td>
+  <td class=xl29>160852192</td>
+  <td class=xl29 align=right x:num>251268</td>
+  <td class=xl29 align=right x:num>Syarifatur Roosita</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>182</td>
+  <td class=xl29>110852194</td>
+  <td class=xl29 align=right x:num>251020</td>
+  <td class=xl29 align=right x:num>Taufiq Chafidlul Ulum</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>183</td>
+  <td class=xl29>140842701</td>
+  <td class=xl29 align=right x:num>253060</td>
+  <td class=xl29 align=right x:num>Teguh Suprapto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>184</td>
+  <td class=xl29>140852196</td>
+  <td class=xl29 align=right x:num>251125</td>
+  <td class=xl29 align=right x:num>Tiflatul Mahmudah</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>185</td>
+  <td class=xl29>130852703</td>
+  <td class=xl29 align=right x:num>251175</td>
+  <td class=xl29 align=right x:num>Tomi Dwi Saputra</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>186</td>
+  <td class=xl29>110842197</td>
+  <td class=xl29 align=right x:num>253033</td>
+  <td class=xl29 align=right x:num>Tri Suryo Supeno</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>187</td>
+  <td class=xl29>090842705</td>
+  <td class=xl29 align=right x:num>253034</td>
+  <td class=xl29 align=right x:num>Triyono</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>188</td>
+  <td class=xl29>100842201</td>
+  <td class=xl29 align=right x:num>253032</td>
+  <td class=xl29 align=right x:num>Tulus Susilo </td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>189</td>
+  <td class=xl29>150842208</td>
+  <td class=xl29 align=right x:num>253073</td>
+  <td class=xl29 align=right x:num>Untung Suwondo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>190</td>
+  <td class=xl29>130812214</td>
+  <td class=xl29 align=right x:num>252016</td>
+  <td class=xl29 align=right x:num>Upik Sulistyandi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>191</td>
+  <td class=xl29>140852220</td>
+  <td class=xl29 align=right x:num>251200</td>
+  <td class=xl29 align=right x:num>Wahyu Ardian Erwansah</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>192</td>
+  <td class=xl29>140852222</td>
+  <td class=xl29 align=right x:num>251169</td>
+  <td class=xl29 align=right x:num>Wahyu Okta Prasetyo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>193</td>
+  <td class=xl29>100852223</td>
+  <td class=xl29 align=right x:num>251052</td>
+  <td class=xl29 align=right x:num>Wahyu Setiawan</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>194</td>
+  <td class=xl29>150852712</td>
+  <td class=xl29 align=right x:num>251237</td>
+  <td class=xl29 align=right x:num>Wijanarko</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>195</td>
+  <td class=xl29>130842232</td>
+  <td class=xl29 align=right x:num>253036</td>
+  <td class=xl29 align=right x:num>Winarno</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>196</td>
+  <td class=xl29>120812234</td>
+  <td class=xl29 align=right x:num>252020</td>
+  <td class=xl29 align=right x:num>Yanti Fika Sari</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>197</td>
+  <td class=xl29>110842715</td>
+  <td class=xl29 align=right x:num>253037</td>
+  <td class=xl29 align=right x:num>Yanuri Tri Wibowo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>198</td>
+  <td class=xl29>130852235</td>
+  <td class=xl29 align=right x:num>251084</td>
+  <td class=xl29 align=right x:num>Zaenal Arifin</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Jepara </td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>199</td>
+  <td class=xl29>100852241</td>
+  <td class=xl29 align=right x:num>251009</td>
+  <td class=xl29 align=right x:num>Zunaedi</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=12 width=80 clospan= style='width:41pt'></td>
+ 
+ </tr>
+ <![endif]>
+</table>
+
+
+</body>
+			
+</html>
+
+

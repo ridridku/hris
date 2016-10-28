@@ -82,7 +82,7 @@ function hideIt(){
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0"> <!--{$TABLE_NAME}--></td></tr>
 		<tr><td class="alt2" style="padding:0px;">
-		<table width="100%">
+		<table width="30%">
 		<TR>
 			<th class="tdatahead" align="left">No Urut</th>
 			<TH class="tdatahead" align="left">ID Pengguna</TH>
@@ -93,7 +93,7 @@ function hideIt(){
 		<tr class='<!--{cycle values="alt,alt3"}-->'>
 		<td width="40" class="tdatacontent-first-col"><!--{$smarty.section.x.index+$COUNT_VIEW}--></td>
 			<TD class="tdatacontent"><!--{$DATA_TB[x].user_id|upper}--></TD>
-			<TD class="tdatacontent"><!--{$DATA_TB[x].user_full_name|upper}--></TD>
+			<TD class="tdatacontent"><!--{$DATA_TB[x].user_first_name|upper}--></TD>
 			<td width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER="0" ALT="<!--{$EDIT}-->" onClick="return checkEdit('form.parent.php?user_id=<!--{$DATA_TB[x].user_id}-->');" class="imgLink"></TD>
 		</TR>
 		<!--{sectionelse}-->

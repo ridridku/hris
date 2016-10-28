@@ -1,4 +1,4 @@
- <?php
+ <?PHP
  require_once('../includes/db.conf.php');
  require_once('../adodb/adodb.inc.php');
 require_once('../includes/config.conf.php');
@@ -11,9 +11,9 @@ $db = &ADONewConnection($DB_TYPE);
 $db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
 
 
- if($_POST['kode_perwakilan'])
-{ $kode_perwakilan = $_POST['kode_perwakilan'];
-}else{ $kode_perwakilan = $_GET['kode_perwakilan'];}
+ if($_POST['kode_cabang'])
+{ $kode_cabang = $_POST['kode_cabang'];
+}else{ $kode_cabang = $_GET['kode_cabang'];}
 
  if($_POST['pil'])
 { $pil = $_POST['pil'];
@@ -39,241 +39,75 @@ $hal_ke_ = $n_limit*($hal_ke-1);
 // TAMBAHAN UNTUK AJAX WNI */
 
 if ($_GET[get_prop] == 1)
-{
-	$no_propinsi = $_GET[no_prop];
-			if($no_propinsi!=''){	
-					$sql_kabupaten = "SELECT id_kabupaten,no_kabupaten,nama_kabupaten FROM tbl_mast_wil_kabupaten WHERE no_propinsi='".$no_propinsi."' ORDER BY id_kabupaten ASC";
+{  
+	$no_propinsi = $_GET[no_prop_ktp];   
+        
+       
+      
+			if($no_propinsi!=''){
+					$sql_kabupaten = "SELECT A.r_provinsi__id,A.r_provinsi__nama,B.r_kabupaten__id,B.r_kabupaten__nama,B.r_kabupaten__sts FROM r_provinsi A
+                                                            LEFT JOIN r_kabupaten B on A.r_provinsi__id = B.r_kabupaten__provinsi_id
+                                                            WHERE A.r_provinsi__id='".$no_propinsi."' ORDER BY A.r_provinsi__id ASC";
 					$recordSet_kabupaten = $db->Execute($sql_kabupaten);
-					//print $sql_kabupaten;
-					$input_kab="<select name=id_kab >";
-					$input_kab.="<option value=>[Pilih Kabupaten] ";
+					
+					$input_kab="<select name=r_pegawai__ktp_kab  onchange=\"cari_kec_ktp(this.value)\">";
+					$input_kab.="<option value=[Pilih Kabupaten]> ";
 					$input_kab.="</option> ";
-					while(!$recordSet_kabupaten->EOF): 
+					while(!$recordSet_kabupaten->EOF):
 						$input_kab.="<option value=";
-						$input_kab.= $recordSet_kabupaten->fields['id_kabupaten'].">".$recordSet_kabupaten->fields['nama_kabupaten'];   
+						$input_kab.= $recordSet_kabupaten->fields['r_kabupaten__id'].">".$recordSet_kabupaten->fields['r_kabupaten__sts'].'-'.$recordSet_kabupaten->fields['r_kabupaten__nama'];
 						$input_kab.="</option>";
 					$recordSet_kabupaten->MoveNext();
-					endwhile; 
+					endwhile;
 					$input_kab.="</select> ";
 					//
 					$delimeter   = "-";
-					$option_choice = $input_kab."^/&".$delimeter;	
+                                      
+					$option_choice = $input_kab."^/&".$delimeter;
 					echo $option_choice;
+                                        
+                                        
 			}
 }
 
 if ($_GET[get_kec] == 1)
 {
-	$no_propinsi = $_GET[no_prop];
-	$no_kabupaten = $_GET[no_kab];
-	//$kecamatan_id = $_GET[kecamatan_id];
-	//print $no_kabupaten;
-
-			if($no_propinsi!=''){	
-					$sql_kecamatan = "SELECT id_kecamatan,no_kecamatan,nama_kecamatan FROM tbl_mast_wil_kecamatan WHERE no_kabupaten='".$no_kabupaten."' AND no_propinsi='".$no_propinsi."' ORDER BY id_kecamatan ASC";
-					$recordSet_kecamatan = $db->Execute($sql_kecamatan); 
-					//print $sql_kecamatan;
-					$input_kec="<select name=no_kecamatan onchange=\"cari_kec2($no_propinsi,$no_kabupaten,this.value)\">";
+	$kab_id = $_GET[kab_id];
+    
+			if($kab_id!=''){
+					$sql_kecamatan = "SELECT A.r_kecamatan__id as kec_id,
+                                                        A.r_kecamatan__kabupaten_id,
+                                                        A.r_kecamatan__nama,
+                                                        B.r_kabupaten__nama,
+                                                        B.r_kabupaten__provinsi_id
+                                                        FROM r_kecamatan A
+                                                          LEFT JOIN r_kabupaten B on A.r_kecamatan__kabupaten_id= B.r_kabupaten__id
+                                                           WHERE r_kabupaten__id='".$kab_id."' ORDER BY r_kecamatan__id ASC";
+					$recordSet_kecamatan = $db->Execute($sql_kecamatan);
+					
+					//$input_kec="<select name=r_kecamatan__id onchange=\"cari_kec2($r_kecamatan__id,this.value)\">";
+                                        $input_kec="<select name=r_pegawai__ktp_kec  onchange=\"cari_kec2_ktp(this.value)\">";
 					$input_kec.="<option value=[Pilih Kecamatan]> ";
 					$input_kec.="</option> ";
-					while(!$recordSet_kecamatan->EOF): 
+                                        
+					while(!$recordSet_kecamatan->EOF):
 						$input_kec.="<option value=";
-						$input_kec.= $recordSet_kecamatan->fields['no_kecamatan'].">".$recordSet_kecamatan->fields['nama_kecamatan'];   
+						$input_kec.= $recordSet_kecamatan->fields[kec_id].">".$recordSet_kecamatan->fields['r_kecamatan__nama'];
+                                            
 						$input_kec.="</option>";
+                                               
 					$recordSet_kecamatan->MoveNext();
-					endwhile; 
+					endwhile;
 					$input_kec.="</select> ";
-					//
+					
 					$delimeter   = "-";
-					$option_choice = $input_kec."^/&".$delimeter;	
+					$option_choice = $input_kec."^/&".$delimeter;
 					echo $option_choice;
 			}
 }
 
- 
 		
-				
- if ($_GET[get_jenis] == 1)
-{
-			$kode_sumber = $_GET[no_prop];
 
-			if($kode_sumber=='1'){ // NON TKI
-				 
-				 
-				 
-					$input_kab="<select name=kode_sektor disabled>";
-					$input_kab.="<option value=>[Pilih Sektor Pekerjaan] ";
-					$input_kab.="</option> ";					 
-					$input_kab.="</select> ";
-					 
-
-					$sql_kecamatan = "SELECT * from tbl_mast_jenis_wni ORDER BY nama_jenis_wni ASC";
-					$recordSet_kecamatan = $db->Execute($sql_kecamatan); 
-					//print $sql_kecamatan;
-					$input_kec="<select name=kode_jenis >";
-					$input_kec.="<option value=>[Pilih Jenis WNI Non TKI] ";
-					$input_kec.="</option> ";
-					while(!$recordSet_kecamatan->EOF): 
-						$input_kec.="<option value=";
-						$input_kec.= $recordSet_kecamatan->fields['kode_jenis_wni'].">".$recordSet_kecamatan->fields['nama_jenis_wni'];   
-						$input_kec.="</option>";
-					$recordSet_kecamatan->MoveNext();
-					endwhile; 
-					$input_kec.="</select> ";
-
-
-
-					$delimeter   = "-";
-					$option_choice = $input_kab."^/&".$input_kec."^/&".$delimeter;	
-					echo $option_choice;
-
-
-			}
-
-
-			if($kode_sumber=='4'){ //INFORMAL
-				 
-				 
-				 
-					$input_kab="<select name=kode_sektor disabled>";
-					$input_kab.="<option value=>[Pilih Sektor Pekerjaan] ";
-					$input_kab.="</option> ";					 
-					$input_kab.="</select> ";
-					 
-
-					 $sql_kecamatan = "SELECT * from tbl_mast_jenis_informal ORDER BY nama_informal  ASC";
-					$recordSet_kecamatan = $db->Execute($sql_kecamatan); 
-					//print $sql_kecamatan;
-					$input_kec="<select name=kode_jenis >";
-					$input_kec.="<option value=>[Pilih Jenis TKI Informal] ";
-					$input_kec.="</option> ";
-					while(!$recordSet_kecamatan->EOF): 
-						$input_kec.="<option value=";
-						$input_kec.= $recordSet_kecamatan->fields['kode_jenis_informal'].">".$recordSet_kecamatan->fields['nama_informal'];   
-						$input_kec.="</option>";
-					$recordSet_kecamatan->MoveNext();
-					endwhile; 
-					$input_kec.="</select> ";
-
-
-
-					$delimeter   = "-";
-					$option_choice = $input_kab."^/&".$input_kec."^/&".$delimeter;	
-					echo $option_choice;
-
-
-			}
-
-
-			if($kode_sumber=='6'){ //ABK
-				 
-				 
-				 
-					$input_kab="<select name=kode_sektor disabled>";
-					$input_kab.="<option value=>[Pilih Sektor Pekerjaan] ";
-					$input_kab.="</option> ";					 
-					$input_kab.="</select> ";
-					 
-
-					 $sql_kecamatan = "SELECT * from tbl_mast_jenis_abk ORDER BY nama_abk  ASC";
-					$recordSet_kecamatan = $db->Execute($sql_kecamatan); 
-					//print $sql_kecamatan;
-					$input_kec="<select name=kode_jenis >";
-					$input_kec.="<option value=>[Pilih Jenis TKI ABK] ";
-					$input_kec.="</option> ";
-					while(!$recordSet_kecamatan->EOF): 
-						$input_kec.="<option value=";
-						$input_kec.= $recordSet_kecamatan->fields['kode_jenis_abk'].">".$recordSet_kecamatan->fields['nama_abk'];   
-						$input_kec.="</option>";
-					$recordSet_kecamatan->MoveNext();
-					endwhile; 
-					$input_kec.="</select> ";
-
-
-
-					$delimeter   = "-";
-					$option_choice = $input_kab."^/&".$input_kec."^/&".$delimeter;	
-					echo $option_choice;
-
-
-			}
-
-
-
-			if($kode_sumber=='3'){ //TKI FORMAL
-				 
-			 
-
-					$sql_kecamatan2 = "SELECT * from tbl_mast_sektor ORDER BY nama_sektor ASC";
-					$recordSet_kecamatan2 = $db->Execute($sql_kecamatan2); 
-					//print $sql_kecamatan;
-					$input_kab="<select name=kode_sektor onchange=\"cari_jenis2(this.value);\"  >";
-					$input_kab.="<option value=>[Pilih Sektor Pekerjaan] ";
-					$input_kab.="</option> ";
-					while(!$recordSet_kecamatan2->EOF): 
-						$input_kab.="<option value=";
-						$input_kab.= $recordSet_kecamatan2->fields['kode_sektor'].">".$recordSet_kecamatan2->fields['nama_sektor'];   
-						$input_kab.="</option>";
-					$recordSet_kecamatan2->MoveNext();
-					endwhile; 
-					$input_kab.="</select> ";
-
-
-
-
-					$sql_kecamatan = "SELECT * from tbl_mast_jenis_formal ORDER BY nama_formal  ASC";
-					$recordSet_kecamatan = $db->Execute($sql_kecamatan); 
-					//print $sql_kecamatan;
-					$input_kec="<select name=kode_jenis>";
-					$input_kec.="<option value=>[Pilih Jenis TKI Formal] ";
-					$input_kec.="</option> ";
-					while(!$recordSet_kecamatan->EOF): 
-						$input_kec.="<option value=";
-						$input_kec.= $recordSet_kecamatan->fields['kode_jenis_formal'].">".$recordSet_kecamatan->fields['nama_formal'];   
-						$input_kec.="</option>";
-					$recordSet_kecamatan->MoveNext();
-					endwhile; 
-					$input_kec.="</select> ";
-
-
-
-					$delimeter   = "-";
-					$option_choice = $input_kab."^/&".$input_kec."^/&".$delimeter;	
-					echo $option_choice;
-
-
-			}
-
-
-
-
-
-}
-
-if ($_GET[get_jenis_sektor] == 1)
-{
-			$no_propinsi = $_GET[no_prop];
-
-			if($no_propinsi!=''){	
-					$sql_kabupaten = "SELECT * from tbl_mast_jenis_formal  WHERE kode_sektor='".$no_propinsi."' ORDER BY nama_formal ASC";
-					$recordSet_kabupaten = $db->Execute($sql_kabupaten);
-					//print $sql_kabupaten;
-					$input_kab="<select name=kode_jenis >";
-					$input_kab.="<option value=>[Pilih Jenis TKI Formal] ";
-					$input_kab.="</option> ";
-					while(!$recordSet_kabupaten->EOF): 
-						$input_kab.="<option value=";
-						$input_kab.= $recordSet_kabupaten->fields['kode_jenis_formal'].">".$recordSet_kabupaten->fields['nama_formal'];   
-						$input_kab.="</option>";
-					$recordSet_kabupaten->MoveNext();
-					endwhile; 
-					$input_kab.="</select> ";
-					//
-					$delimeter   = "-";
-					$option_choice = $input_kab."^/&".$delimeter;	
-					echo $option_choice;
-			}
-}
  
 // END TAMBAHAN UNTUK AJAX WNI */
 // END TAMBAHAN UNTUK AJAX WNI */
@@ -283,42 +117,94 @@ if ($_GET[get_jenis_sektor] == 1)
 
 
 
-$sql="select * , nm_perwakilan , nama_jenis_wni as nama_jenis ,tbl_wni.nama as nama , tbl_wni.alamat as alamat_ind from
-						tbl_wni
-						inner join  tbl_mast_perwakilan on tbl_mast_perwakilan.kode_perwakilan = tbl_wni.kode_perwakilan
-						left join  tbl_mast_agama on tbl_mast_agama.kode_agama  = tbl_wni.kode_agama
-						left join   tbl_mast_jenis_wni on tbl_mast_jenis_wni.kode_jenis_wni = tbl_wni.kode_jenis
-						left  join tbl_mast_wil_kabupaten on tbl_mast_wil_kabupaten.id_kabupaten = tbl_wni.id_kabupaten where tbl_wni.kode_perwakilan='$kode_perwakilan' ";
+$sql="SELECT
+  A.r_pnpt__nip,
+  A.r_pnpt__finger_print,
+  A.r_pnpt__shift,
+  B.r_pegawai__nama,
+  C.r_jabatan__ket,
+  D.r_level__ket,
+  E.*,
+  CC.r_subdept__id,
+  CC.r_subdept__ket,
+  CC.r_dept__akronim,
+  CC.r_dept__ket,
+  DD.jenis_kelamin,
+  x.r_stp__nama AS status
+FROM
+  r_penempatan A
+  LEFT JOIN r_pegawai B
+    ON B.r_pegawai__id = A.r_pnpt__id_pegawai
+  LEFT JOIN r_jabatan C
+    ON A.r_pnpt__jabatan = C.r_jabatan__id
+  LEFT JOIN r_level D
+    ON C.r_jabatan__level = r_level__id
+  LEFT JOIN
+  (SELECT DISTINCT
+    BB.r_subcab__id AS subcab_id,
+    BB.r_subcab__cabang AS subcabang,
+    BB.r_subcab__nama AS subcabangnama,
+    AA.r_cabang__nama AS cabang
+  FROM
+    r_cabang AA
+    LEFT JOIN r_subcabang BB
+      ON AA.r_cabang__id = BB.r_subcab__cabang) AS E
+    ON A.r_pnpt__subcab = E.subcab_id
+  
+  LEFT JOIN
+  (SELECT
+    SUBDEP.r_subdept__id,
+    SUBDEP.r_subdept__ket,
+    SUBDEP.r_subdept__dept,
+    DEP.r_dept__id,
+    DEP.r_dept__akronim,
+    DEP.r_dept__ket
+  FROM
+    r_departement DEP
+    LEFT JOIN r_subdepartement SUBDEP
+      ON SUBDEP.r_subdept__dept = DEP.r_dept__id) AS CC
+    ON CC.r_subdept__id = A.r_pnpt__subdept
+  LEFT JOIN
+  (SELECT
+    CASE PEG.r_pegawai__jk WHEN '1' THEN 'LAKI-LAKI' WHEN '0' THEN 'PEREMPUAN' END jenis_kelamin,
+    PEG.r_pegawai__id
+  FROM
+    r_pegawai PEG
+    LEFT JOIN r_penempatan PEN
+      ON PEG.r_pegawai__id = PEN.r_pnpt__id_pegawai) AS DD
+    ON DD.r_pegawai__id = A.r_pnpt__id_pegawai
+  LEFT JOIN r_status_pegawai X
+    ON X.r_stp__id = A.r_pnpt__status
+  LEFT JOIN r_shift Y ON A.r_pnpt__shift=Y.r_shift__id where A.r_pnpt__subcab ='$kode_cabang' ";
 
 
-if ($pil !="") {
-	
-		if ($pil==1) {
-			$sql.=" and tbl_wni.nama LIKE '%".addslashes($cari)."%' ";
-		} 
-		if ($pil==2) {
-			$sql .= "AND kode_form_pengaduan = '".$cari."' ";
-		}
-		if ($pil==3) { //ktp
+//if ($pil !="") {
+//	
+//		if ($pil==1) {
+//			$sql.=" and tbl_wni.nama LIKE '%".addslashes($cari)."%' ";
+//		} 
+//		if ($pil==2) {
+//			$sql .= "AND kode_form_pengaduan = '".$cari."' ";
+//		}
+//		if ($pil==3) { //ktp
+//
+//			$sql .= "AND tbl_wni.no_paspor = '".addslashes($cari)."' ";
+// 
+//		}
+//
+//		if ($pil==4) { //paspor
+//			$sql .= "AND tbl_wni.finger_print = '".addslashes(trim($cari))."' ";
+//		}
+// 
+//		if ($pil==6) { // tahun
+//			$sql.=" and nama_kabupaten LIKE '%".addslashes($cari)."%' ";
+//		}
+// 
+//
+//}
 
-			$sql .= "AND tbl_wni.no_paspor = '".addslashes($cari)."' ";
- 
-		}
 
-		if ($pil==4) { //paspor
-			$sql .= "AND tbl_wni.kode_wni = '".addslashes(trim($cari))."' ";
-		}
- 
-		if ($pil==6) { // tahun
-			$sql.=" and nama_kabupaten LIKE '%".addslashes($cari)."%' ";
-		}
- 
-
-}
-
-
-$sql.=" order by nama "; 
-
+$sql.=" order by r_pegawai__nama "; 
 $rs_paging	= $db->execute($sql);
 $n_rec = $rs_paging->recordCount();
 $sql .= "limit $hal_ke_,$n_limit ";
@@ -342,12 +228,10 @@ while($arr=$rs2->FetchRow()){
 
 $jum = count($list_arr_satuan);
 
-$sql_pw="select upper(nm_perwakilan) as nm_perwakilan  from tbl_mast_perwakilan where kode_perwakilan='$kode_perwakilan'";
+//$sql_pw="select upper(nm_perwakilan) as nm_perwakilan  from tbl_mast_perwakilan where kode_perwakilan='$kode_perwakilan'";
+$sql_pw="SELECT r_cabang__id,r_cabang__nama FROM r_cabang where r_cabang__id='$kode_cabang'";
 $rs_pw	= $db->execute($sql_pw);
-$nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
-
-//echo "PILIHANNNNNNNNNN".$pil;
-
+$nm_cabang=$rs_pw->fields['r_cabang__nama'];
 ?>
 
 
@@ -372,7 +256,7 @@ $nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
 <table width="500" border="0" cellpadding="0" cellspacing="0">
  <tr><td colspan="5" align="center" class="judul"><strong>&nbsp;</strong></td></tr>
 
-<tr><td colspan="5" align="center" class="judul"><strong>DAFTAR  WNI  UNTUK PERWAKILAN <?=$nm_perwakilan?> </strong></td></tr>
+<tr><td colspan="5" align="center" class="judul"><strong>DAFTAR  KARYAWAN  UNTUK CABANG <?=$nm_cabang?> </strong></td></tr>
 <tr><td colspan="5" align="center"><hr width="100%"></td></tr> 
 </table>
 
@@ -385,11 +269,11 @@ $nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
 <td width="30">
 <select name='pil' class="text">
 <option value=0></option>
-<option value='1' <? if ($pil==1) { echo "selected"; } ?>>Nama  WNI</option>
-<option value='3' <? if ($pil==3) { echo "selected"; } ?>>No KTP</option>
-<option value='4' <? if ($pil==4) { echo "selected"; } ?>>No Pasport</option>
+<option value='1' <?PHP if ($pil==1) { echo "selected"; } ?>>Nama  </option>
+<option value='3' <?PHP if ($pil==3) { echo "selected"; } ?>>Cabang</option>
+<option value='4' <?PHP if ($pil==4) { echo "selected"; } ?>>Jabatan</option>
  
-<option value='6' <? if ($pil==6) { echo "selected"; } ?>>Daerah Asal</option>
+<option value='6' <?PHP if ($pil==6) { echo "selected"; } ?>>Level</option>
 
  </select>
 
@@ -402,7 +286,7 @@ $nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
 <a href="#" onclick="submit();">
 <img src="icon_find.gif" border="0">&nbsp;cari
 </a>
- <a href="#" OnClick="JavaScript:Ajax('ajax_input','penampungan/form.php?kode_perwakilan=<?=$kode_perwakilan?>')">
+ <a href="#" OnClick="JavaScript:Ajax('ajax_input','penampungan/form.php?kode_cabang=<?=$kode_cabang?>')">
 <img src="disk.png" border="0">&nbsp;Tambah Data
 </a> 
 
@@ -426,17 +310,17 @@ $nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
 
 			<table width="500" border="0" cellpadding="0" cellspacing="0" class="ewTable">
 			<tr> 
-			<td  align="left" valign="top" class="ewTableHeader">NAMA WNI/TKI</td>
-			<td  align="left" valign="top" class="ewTableHeader">JENIS KELAMIN</td>
-			<td  align="left" valign="top" class="ewTableHeader">NO KTP</td>
-			<td  align="left" valign="top" class="ewTableHeader">NO PASPORT</td>
-			<td  align="left" valign="top" class="ewTableHeader">ALAMAT</td>
-			<td  align="left" valign="top" class="ewTableHeader">DAERAH ASAL</td>
-			<td  align="left" valign="top" class="ewTableHeader">KATEGORI</td>
+			<td  align="left" valign="top" class="ewTableHeader">NAMA KARYAWAN</td>
+                        <td  align="left" valign="top" class="ewTableHeader">ID FINGERPRINT</td>
+			<td  align="left" valign="top" class="ewTableHeader">CABANG</td>
+			<td  align="left" valign="top" class="ewTableHeader">JABATAN</td>
+			<td  align="left" valign="top" class="ewTableHeader">LEVEL</td>
+
+			
  
 			</tr>
 		 
-		      <? if ($jum <= 0) { ?>
+		      <?PHP if ($jum <= 0) { ?>
 				<tr> 
 					<td colspan="9" bgcolor="pink" align="center">Data Tidak Ditemukan... </td>
 				</tr>
@@ -444,16 +328,19 @@ $nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
 
 				<? for ($i=0;$i<count($list_arr_satuan);$i++) { 
 				   $j = $i+1;	
-
-				   	 $nama=str_replace("'","",$list_arr_satuan[$i]['nama']);
-				$alamat_ind=str_replace("'","",$list_arr_satuan[$i]['alamat_ind']);
-				$tlp=str_replace("'","",$list_arr_satuan[$i]['tlp']);
-				$alamat_ln=str_replace("'","",$list_arr_satuan[$i]['alamat_ln']);
-				$tlp_ln=str_replace("'","",$list_arr_satuan[$i]['tlp_ln']);
-
+				   	$nama=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__nama']);
+                                        $finger=str_replace("'","",$list_arr_satuan[$i]['r_pnpt__finger_print']);
+                                        $cabang=str_replace("'","",$list_arr_satuan[$i]['cabang']);
+                                        $jabatan=str_replace("'","",$list_arr_satuan[$i]['r_jabatan__ket']);
+                                        $level=str_replace("'","",$list_arr_satuan[$i]['r_level__ket']);    
+                                        $shift=str_replace("'","",$list_arr_satuan[$i]['r_pnpt__shift']);  
 				?>
 				
-				<tr align="center" onclick="GetPengaduan('<?=$list_arr_satuan[$i]['kode_wni'];?>', '<?=$nama;?>', '<?=$alamat_ind;?>', '<?=$tlp;?>', '<?=$alamat_ln;?>', '<?=$tlp_ln;?>');"  onMouseOver="setPointer(this, <?=$initSet[$i];?>, 'over', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" onMouseOut="setPointer(this, <?=$initSet[$i];?>, 'out', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" onMouseDown="setPointer(this, <?=$initSet[$i];?>, 'click', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');"> 
+				<tr align="center" 
+                                    onclick="GetPengaduan('<?=$list_arr_satuan[$i]['r_pegawai__nama'];?>','<?=$list_arr_satuan[$i]['r_pnpt__finger_print'];?>','<?=$list_arr_satuan[$i]['r_pnpt__shift'];?>');"  
+                                    onMouseOver="setPointer(this, <?=$initSet[$i];?>, 'over', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
+                                    onMouseOut="setPointer(this, <?=$initSet[$i];?>, 'out', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
+                                    onMouseDown="setPointer(this, <?=$initSet[$i];?>, 'click', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');"> 
 				 
 				<? 
 				$no = ($n_limit *($hal_ke-1)) + $j; 
@@ -461,25 +348,13 @@ $nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
 				$a=$list_arr_satuan[$i]['id'];
 				?>
 				
-			 
-					 <td align="left" class="tdatacontent"> <?=strtoupper($list_arr_satuan[$i]['nama']);?> </td>
-					<td align="left" class="tdatacontent"> 
-					<? if ($list_arr_satuan[$i]['jk']==1){ echo "Perempuan"; } ?>
-					<? if ($list_arr_satuan[$i]['jk']==2){ echo "Laki-Laki"; } ?>			 
-					</td>
-					<td align="left" class="tdatacontent"><?=$list_arr_satuan[$i]['no_paspor'];?></td>
-					<td align="left" class="tdatacontent"> <?=strtoupper($list_arr_satuan[$i]['kode_wni']);?> </td>
-					
-					<td align="left" class="tdatacontent"><?=$list_arr_satuan[$i]['alamat_ind'];?></td>
-					 <td align="left" class="tdatacontent"><?=$list_arr_satuan[$i]['nama_kabupaten'];?></td>
-					 <td align="left" class="tdatacontent"> 
-								<? if ($list_arr_satuan[$i]['kode_sumber']==1 or $list_arr_satuan[$i]['kode_sumber']==2){ echo "WNI NON TKI"; } ?>
-								<? if ($list_arr_satuan[$i]['kode_sumber']==3 or $list_arr_satuan[$i]['kode_sumber']==4 or $list_arr_satuan[$i]['kode_sumber']==5 or $list_arr_satuan[$i]['kode_sumber']==6){ echo "TKI"; } ?>
-					 
-					
-					</td>
-
-					 
+			
+					 <td align="left" class="tdatacontent"> <?=strtoupper($list_arr_satuan[$i]['r_pegawai__nama']);?> </td>
+                                          <td align="left" class="tdatacontent"> <?=strtoupper($list_arr_satuan[$i]['r_pnpt__finger_print']);?> </td>
+					 <td align="left" class="tdatacontent"><?=strtoupper($list_arr_satuan[$i]['cabang']);?> </td>
+                                         <td align="left" class="tdatacontent"><?=strtoupper($list_arr_satuan[$i]['r_jabatan__ket']);?></td>
+					 <td align="left" class="tdatacontent"> <?=strtoupper($list_arr_satuan[$i]['r_level__ket']);?> </td>
+                                         
 				</tr>
 				<? }?>
 
@@ -500,7 +375,7 @@ $nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
 <td>
 
 			 
-			<INPUT TYPE="hidden" name="kode_perwakilan" value="<?=$kode_perwakilan?>">		 
+			<INPUT TYPE="hidden" name="kode_cabang" value="<?=$kode_cabang?>">		 
  
 
 
@@ -512,12 +387,7 @@ $nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
 					   <? }?>
 					  </select>
                     &nbsp; &nbsp; 
-                    
-                    
-        
-        
-        
-			</td>
+                	</td>
 			<td align="right">Jumlah data : <strong> <?=$n_rec;?> records </strong> </td>
 			<td align="right"> </td>
 </tr>
@@ -526,12 +396,12 @@ $nm_perwakilan=$rs_pw->fields['nm_perwakilan'];
 </div>
 
 <script>
-function GetPengaduan(kode_wni,nama ) {
-    
-    window.opener.document.getElementById('kode_wni').value=kode_wni;
-	 window.opener.document.getElementById('nama').value=nama;
- 
-    window.close();
+function GetPengaduan(r_pegawai__nama,r_pnpt__finger_print,r_pnpt__shift) {
+         
+         window.opener.document.getElementById('r_pegawai__nama').value=r_pegawai__nama;
+         window.opener.document.getElementById('r_pnpt__finger_print').value=r_pnpt__finger_print;
+         window.opener.document.getElementById('r_pnpt__shift').value=r_pnpt__shift;
+         window.close();
     //    alert(KodeDepartemen);
 }
 
@@ -667,10 +537,10 @@ with (theForm){
 			kode_perwakilan.focus();
 			return false; 
 		}
-	else if (kode_wni.value == "") 
+	else if (finger_print.value == "") 
 		{ 
 			alert ("Silahkan isi No.Paspor WNI !"); 
-			kode_wni.focus();
+			finger_print.focus();
 			return false; 
 		}
  
@@ -718,6 +588,4 @@ with (theForm){
 // CEK FORM
 // CEK FORM
  
-
-
 </script>

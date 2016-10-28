@@ -1,0 +1,1033 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Rekap Terlambat</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=9 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->LAPORAN REKAP KARYAWAN YANG KELUAR</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=11 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=11 height=21 class=xl36 style='height:15.75pt'>CABANG  : </td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=11 height=21 class=xl36 style='height:15.75pt'>Periode : Tahun: 2016 Bulan :08</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td colspan=11 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>NIP</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td> 
+    <td class=xl27 width=15 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=15 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=20 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=20 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=20 style='width:50pt'>SUB DEPARTEMEN</td>
+    <td class=xl27 width=20 style='width:50pt'>TGL RESIGN</td> 
+    <td class=xl27 width=20 style='width:25pt'>STATUS</td>
+      <td class=xl27 width=120 style='width:25pt'>ALASAN</td>
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>091251718</td>
+  <td class=xl29 align=right x:num>291069</td>
+  <td class=xl29 align=right x:num>Ady Surahman</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MGL SB WONOSOBO</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>130441185</td>
+  <td class=xl29 align=right x:num>333030</td>
+  <td class=xl29 align=right x:num>Agum Wirzawan</td>
+  <td class=xl29 align=right >SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>120240144</td>
+  <td class=xl29 align=right x:num>302118</td>
+  <td class=xl29 align=right x:num>Ahmad Alatif</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >MR Control</td>
+  <td class=xl29 align=right >31 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Mendapatkan Pekerjaan Baru</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>080852539</td>
+  <td class=xl29 align=right x:num>251116</td>
+  <td class=xl29 align=right x:num>Ahmad Hanif Wardhani</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >30 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >usaha sendiri</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>100742055</td>
+  <td class=xl29 align=right x:num>243053</td>
+  <td class=xl29 align=right x:num>Ahmad Miftakhul Ulum</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >31 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Mendapatkan pekerjaan di tempat lain</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>160851520</td>
+  <td class=xl29 align=right x:num>251284</td>
+  <td class=xl29 align=right x:num>Aji Satria Damaika</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >16 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >karyawan bermasalah</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>091251728</td>
+  <td class=xl29 align=right x:num>291002</td>
+  <td class=xl29 align=right x:num>Akhmad Fatkhul Anwar</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MAGELANG Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >MD Supervisor Junior</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>101241732</td>
+  <td class=xl29 align=right x:num>293004</td>
+  <td class=xl29 align=right x:num>Andi Kristiono</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MAGELANG Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>141142328</td>
+  <td class=xl29 align=right x:num>283049</td>
+  <td class=xl29 align=right x:num>Anjar Rianto</td>
+  <td class=xl29 align=right >SOLO</td>
+  <td class=xl29 align=right >SLO MR Solo</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>101241740</td>
+  <td class=xl29 align=right x:num>293006</td>
+  <td class=xl29 align=right x:num>Arif Samsudin</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MAGELANG Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Ekspedisi</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>160752083</td>
+  <td class=xl29 align=right x:num>241302</td>
+  <td class=xl29 align=right x:num>Arna Khoirul Dhufa</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >22 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Kontrak habis (kontrak 3 bulan pengganti cuti melahirkan)</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>130811604</td>
+  <td class=xl29 align=right x:num>253007</td>
+  <td class=xl29 align=right x:num>Budi Irmanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Blora </td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >12 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>160250214</td>
+  <td class=xl29 align=right x:num>301437</td>
+  <td class=xl29 align=right x:num>Budi Saripudin</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MR Sariwangi</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Motoris</td>
+  <td class=xl29 align=right >31 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak 
+( Unperform )</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>140540777</td>
+  <td class=xl29 align=right x:num>313105</td>
+  <td class=xl29 align=right x:num>Dede Haryandi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>160952657</td>
+  <td class=xl29 align=right x:num>231217</td>
+  <td class=xl29 align=right x:num>Dede Tri Restiyana</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>120451218</td>
+  <td class=xl29 align=right x:num>331087</td>
+  <td class=xl29 align=right x:num>Dedi Iskandar</td>
+  <td class=xl29 align=right >SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >13 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >MENDAPAT PEKERJAAN LAIN</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>140550785</td>
+  <td class=xl29 align=right x:num>311158</td>
+  <td class=xl29 align=right x:num>Dedi Setiadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>130941571</td>
+  <td class=xl29 align=right x:num>233031</td>
+  <td class=xl29 align=right x:num>Dedi Supriyono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>160451219</td>
+  <td class=xl29 align=right x:num>331122</td>
+  <td class=xl29 align=right x:num>Deni Iskandar</td>
+  <td class=xl29 align=right >SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >15 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >INDISIPLINER, TIDAK MASUK KERJA TANPA KABAR</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>010340637</td>
+  <td class=xl29 align=right x:num>343029</td>
+  <td class=xl29 align=right x:num>Deni Supriyatna</td>
+  <td class=xl29 align=right >SUBANG</td>
+  <td class=xl29 align=right >SBG SB Purwakarta</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>140952662</td>
+  <td class=xl29 align=right x:num>231181</td>
+  <td class=xl29 align=right x:num>Dimas Ade Pamungkas</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>130611026</td>
+  <td class=xl29 align=right x:num>322036</td>
+  <td class=xl29 align=right x:num>Elma Nurtriyani</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>140451234</td>
+  <td class=xl29 align=right x:num>331158</td>
+  <td class=xl29 align=right x:num>Erni Rahmawati</td>
+  <td class=xl29 align=right >SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >30 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >TIDAK PERFORM</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>120842600</td>
+  <td class=xl29 align=right x:num>253065</td>
+  <td class=xl29 align=right x:num>Fip Egoesti Maulana</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >13 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >cari kerja lain</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>141251782</td>
+  <td class=xl29 align=right x:num>291087</td>
+  <td class=xl29 align=right x:num>Intan Desi Arum</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MGL SB WONOSOBO</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>120411261</td>
+  <td class=xl29 align=right x:num>332006</td>
+  <td class=xl29 align=right x:num>Lia Setiawati</td>
+  <td class=xl29 align=right >SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >01 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >MENDAPAT PEKERJAAN LAIN</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>090852025</td>
+  <td class=xl29 align=right x:num>251019</td>
+  <td class=xl29 align=right x:num>M. Zaenuri</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >30 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >ingin usaha sendiri</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>091251791</td>
+  <td class=xl29 align=right x:num>291140</td>
+  <td class=xl29 align=right x:num>Mohammad Aditya Pangestu Putra</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MGL SB TEMANGGUNG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>160852067</td>
+  <td class=xl29 align=right x:num>251249</td>
+  <td class=xl29 align=right x:num>Muhammad Fathoni</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >30 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >cari kerja lain</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>120852645</td>
+  <td class=xl29 align=right x:num>251072</td>
+  <td class=xl29 align=right x:num>Muhammad Santosa</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >01 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >tidak performance</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>140540867</td>
+  <td class=xl29 align=right x:num>313080</td>
+  <td class=xl29 align=right x:num>Muhammad Yusup</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>091221799</td>
+  <td class=xl29 align=right x:num>294002</td>
+  <td class=xl29 align=right x:num>Mustofa Afifi Subiyadi</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MGL SB WONOSOBO</td>
+  <td class=xl29 align=right>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>140250412</td>
+  <td class=xl29 align=right x:num>301397</td>
+  <td class=xl29 align=right x:num>Nenden Hamidah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Admin Data Sales</td>
+  <td class=xl29 align=right >18 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Menjadi Ibu Rumah Tangga</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>121251800</td>
+  <td class=xl29 align=right x:num>292001</td>
+  <td class=xl29 align=right x:num>Nidaul Maghfiroh</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MAGELANG Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>140842658</td>
+  <td class=xl29 align=right x:num>253058</td>
+  <td class=xl29 align=right x:num>Noor Faiz</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >20 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >kontrak habis</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>140752224</td>
+  <td class=xl29 align=right x:num>241207</td>
+  <td class=xl29 align=right x:num>Nur Cholis</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >31 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Orangtua sakit dan tidak ada yang meneruskan usaha orangtua</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>160250427</td>
+  <td class=xl29 align=right x:num>301469</td>
+  <td class=xl29 align=right x:num>Nurwidzan Hanifah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >10 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Mendapatkan Pekerjaan Baru</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>130250436</td>
+  <td class=xl29 align=right x:num>301149</td>
+  <td class=xl29 align=right x:num>Pujo Basuki</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MR Cililin</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Motoris</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>160852138</td>
+  <td class=xl29 align=right x:num>251278</td>
+  <td class=xl29 align=right x:num>Rian Ariyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales LS</td>
+  <td class=xl29 align=right >01 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >tidak performance</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>150852140</td>
+  <td class=xl29 align=right x:num>251246</td>
+  <td class=xl29 align=right x:num>Ribut Angga Pradhita</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >30 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >kerja keluar kota</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>150852679</td>
+  <td class=xl29 align=right x:num>251242</td>
+  <td class=xl29 align=right x:num>Rio Isnugroho</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >30 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >keluar kota bersama keluarga</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>100250491</td>
+  <td class=xl29 align=right x:num>301288</td>
+  <td class=xl29 align=right x:num>Ruslandi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG SB Kopo</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Koordinator Lapangan MDS</td>
+  <td class=xl29 align=right >18 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Menjadi Wiraswasta</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>160441291</td>
+  <td class=xl29 align=right x:num>333087</td>
+  <td class=xl29 align=right x:num>Saepul Muharom</td>
+  <td class=xl29 align=right >SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >03 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >TIDAK LOLOS MASA PERIFIKASI</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>111211817</td>
+  <td class=xl29 align=right x:num>292005</td>
+  <td class=xl29 align=right x:num>Septiana Maulidhatul Akhadiyah</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MAGELANG Cabang</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >AR Control</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>080651146</td>
+  <td class=xl29 align=right x:num>321148</td>
+  <td class=xl29 align=right x:num>Sulaiman</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Pangandaran</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>150120103</td>
+  <td class=xl29 align=right x:num>004014</td>
+  <td class=xl29 align=right x:num>Toni Haryadi</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right>UMUM</td>
+  <td class=xl29 align=right >Staff GA</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>161241825</td>
+  <td class=xl29 align=right x:num>293065</td>
+  <td class=xl29 align=right x:num>Totok Suwanto</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MAGELANG Cabang</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >16 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Mendapat pekerjaan lain</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>090651161</td>
+  <td class=xl29 align=right x:num>321006</td>
+  <td class=xl29 align=right x:num>Wahyu</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >23 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Habis Kontrak</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>140852222</td>
+  <td class=xl29 align=right x:num>251169</td>
+  <td class=xl29 align=right x:num>Wahyu Okta Prasetyo</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Purwodadi </td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >30 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >bekerja di tempat lain</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>080210553</td>
+  <td class=xl29 align=right x:num>302076</td>
+  <td class=xl29 align=right x:num>Wawan Setiawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MR Baleendah</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator MR</td>
+  <td class=xl29 align=right >01 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Mendapatkan Pekerjaan Baru</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>980712299</td>
+  <td class=xl29 align=right x:num>242001</td>
+  <td class=xl29 align=right x:num>Winarning</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator SB</td>
+  <td class=xl29 align=right >31 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Tidak performance</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>110250559</td>
+  <td class=xl29 align=right x:num>301486</td>
+  <td class=xl29 align=right x:num>Wing Andhi Kusuma</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MR Moch. Toha</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >31 Aug 2016</td>
+  <td class=xl29 align=right >Disetujui</td>
+  <td class=xl29 align=right >Mendapatkan Pekerjaan Baru (Unregrated)</td>
+ 
+  </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'></td>
+  <td class=xl29></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >JML KARYAWAN : 52</td>
+ 
+  </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td colspan=11 width=74 style='width:34pt'></td>
+ 
+ </tr>
+ <![endif]>
+</table>
+
+
+</body>
+			
+</html>
+
+

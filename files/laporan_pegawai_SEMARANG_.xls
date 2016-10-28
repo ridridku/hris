@@ -1,0 +1,3926 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=12 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->LAPORAN PEGAWAI </td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=12 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=12 height=21 class=xl36 style='height:15.75pt'>CABANG  : SEMARANG</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>NIP</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=82 style='width:25pt'>JABATAN</td>
+    <td class=xl27 width=82 style='width:25pt'>LEVEL JABATAN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS PEGAWAI</td>
+    <td class=xl27 width=98 style='width:50pt'>AWAL MASUK</td> 
+    <td class=xl27 width=57 style='width:25pt'>AKHIR KONTRAK</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>130742038</td>
+  <td class=xl29 align=right x:num>243037</td>
+  <td class=xl29 align=right x:num>Abdul Kholik</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>140742039</td>
+  <td class=xl29 align=right x:num>243107</td>
+  <td class=xl29 align=right x:num>Abdul Majid</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>100752281</td>
+  <td class=xl29 align=right x:num>241052</td>
+  <td class=xl29 align=right x:num>Adhi Dwi Nugraha</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>130752041</td>
+  <td class=xl29 align=right x:num>241126</td>
+  <td class=xl29 align=right x:num>Afifah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>160752042</td>
+  <td class=xl29 align=right x:num>241295</td>
+  <td class=xl29 align=right x:num>Afriani</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>150742286</td>
+  <td class=xl29 align=right x:num>243153</td>
+  <td class=xl29 align=right x:num>Agung Listyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>140732287</td>
+  <td class=xl29 align=right x:num>245003</td>
+  <td class=xl29 align=right x:num>Agung Praditya</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >IT Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>130742045</td>
+  <td class=xl29 align=right x:num>243068</td>
+  <td class=xl29 align=right x:num>Agung Suprianto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>110752046</td>
+  <td class=xl29 align=right x:num>241139</td>
+  <td class=xl29 align=right x:num>Agung Wibowo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>110752290</td>
+  <td class=xl29 align=right x:num>241060</td>
+  <td class=xl29 align=right x:num>Agus Ariyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>100752048</td>
+  <td class=xl29 align=right x:num>241055</td>
+  <td class=xl29 align=right x:num>Agus Aryanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>120742049</td>
+  <td class=xl29 align=right x:num>243024</td>
+  <td class=xl29 align=right x:num>Agus Kistiawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>140712050</td>
+  <td class=xl29 align=right x:num>242059</td>
+  <td class=xl29 align=right x:num>Agus Muktiono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>080752051</td>
+  <td class=xl29 align=right x:num>251110</td>
+  <td class=xl29 align=right x:num>Agus Sumarso</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>100752052</td>
+  <td class=xl29 align=right x:num>241085</td>
+  <td class=xl29 align=right x:num>Agus Susanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>150742053</td>
+  <td class=xl29 align=right x:num>243154</td>
+  <td class=xl29 align=right x:num>Agyaksa Perdana Putra</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Inventory Control</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>130742295</td>
+  <td class=xl29 align=right x:num>243076</td>
+  <td class=xl29 align=right x:num>Ahmad Jazuli</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>100742055</td>
+  <td class=xl29 align=right x:num>243053</td>
+  <td class=xl29 align=right x:num>Ahmad Miftakhul Ulum</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>130752056</td>
+  <td class=xl29 align=right x:num>241168</td>
+  <td class=xl29 align=right x:num>Ahmad Mujahidin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>150742057</td>
+  <td class=xl29 align=right x:num>243156</td>
+  <td class=xl29 align=right x:num>Ahmad Rozikin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>120752058</td>
+  <td class=xl29 align=right x:num>241077</td>
+  <td class=xl29 align=right x:num>Ahmad Sochi Lutfi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>110752059</td>
+  <td class=xl29 align=right x:num>241171</td>
+  <td class=xl29 align=right x:num>Allan Puji Adhi Saputra</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>150752060</td>
+  <td class=xl29 align=right x:num>243142</td>
+  <td class=xl29 align=right x:num>Amin Mubarokal Iman</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>130752298</td>
+  <td class=xl29 align=right x:num>242016</td>
+  <td class=xl29 align=right x:num>Amin Rahayu Widodo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>140752301</td>
+  <td class=xl29 align=right x:num>241236</td>
+  <td class=xl29 align=right x:num>Andang Trilaksono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>110742302</td>
+  <td class=xl29 align=right x:num>243015</td>
+  <td class=xl29 align=right x:num>Andi Aris Susanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>090752315</td>
+  <td class=xl29 align=right x:num>241025</td>
+  <td class=xl29 align=right x:num>Andi Teguh Santoso</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>130752316</td>
+  <td class=xl29 align=right x:num>241124</td>
+  <td class=xl29 align=right x:num>Andi Zuhri Wahyudi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>160742066</td>
+  <td class=xl29 align=right x:num>243169</td>
+  <td class=xl29 align=right x:num>Andre Wibowo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>140752317</td>
+  <td class=xl29 align=right x:num>241221</td>
+  <td class=xl29 align=right x:num>Andri Prasetyo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>120752323</td>
+  <td class=xl29 align=right x:num>241078</td>
+  <td class=xl29 align=right x:num>Andri Yuliyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>120742069</td>
+  <td class=xl29 align=right x:num>243055</td>
+  <td class=xl29 align=right x:num>Andriansyah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>130752070</td>
+  <td class=xl29 align=right x:num>241177</td>
+  <td class=xl29 align=right x:num>Andy Kurniawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>160752071</td>
+  <td class=xl29 align=right x:num>241298</td>
+  <td class=xl29 align=right x:num>Ane Rika  Roselina</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>100712072</td>
+  <td class=xl29 align=right x:num>242031</td>
+  <td class=xl29 align=right x:num>Ani Fitriana</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>140712331</td>
+  <td class=xl29 align=right x:num>242056</td>
+  <td class=xl29 align=right x:num>Anisah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>110752336</td>
+  <td class=xl29 align=right x:num>241042</td>
+  <td class=xl29 align=right x:num>Anton Prasetyo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>130752075</td>
+  <td class=xl29 align=right x:num>241072</td>
+  <td class=xl29 align=right x:num>Antonius Yulianto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>100752337</td>
+  <td class=xl29 align=right x:num>241152</td>
+  <td class=xl29 align=right x:num>Ari Kurniawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>150752077</td>
+  <td class=xl29 align=right x:num>241276</td>
+  <td class=xl29 align=right x:num>Ari Nurcahya</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>080752078</td>
+  <td class=xl29 align=right x:num>241227</td>
+  <td class=xl29 align=right x:num>Arif Wahyu Hidayat</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>160722079</td>
+  <td class=xl29 align=right x:num>244034</td>
+  <td class=xl29 align=right x:num>Arif Yunanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >PGA Staff</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>140742080</td>
+  <td class=xl29 align=right x:num>243113</td>
+  <td class=xl29 align=right x:num>Arifin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>040742338</td>
+  <td class=xl29 align=right x:num>273066</td>
+  <td class=xl29 align=right x:num>Aris Kustanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Koordinator DC</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>120742082</td>
+  <td class=xl29 align=right x:num>243090</td>
+  <td class=xl29 align=right x:num>Aris Suprayitno</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>160752083</td>
+  <td class=xl29 align=right x:num>241302</td>
+  <td class=xl29 align=right x:num>Arna Khoirul Dhufa</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>150752084</td>
+  <td class=xl29 align=right x:num>241275</td>
+  <td class=xl29 align=right x:num>Arry Wibowo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>120752340</td>
+  <td class=xl29 align=right x:num>241071</td>
+  <td class=xl29 align=right x:num>Aryandriyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>130752086</td>
+  <td class=xl29 align=right x:num>241178</td>
+  <td class=xl29 align=right x:num>Asep Nanang Jamaludin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>150752087</td>
+  <td class=xl29 align=right x:num>241278</td>
+  <td class=xl29 align=right x:num>Ayu Hartiningtyas</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>110712088</td>
+  <td class=xl29 align=right x:num>242032</td>
+  <td class=xl29 align=right x:num>Ayu Puspita</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>150752341</td>
+  <td class=xl29 align=right x:num>241265</td>
+  <td class=xl29 align=right x:num>Bambang Sujarwo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>53</td>
+  <td class=xl29>100742342</td>
+  <td class=xl29 align=right x:num>243004</td>
+  <td class=xl29 align=right x:num>Banu Krusdiarto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>54</td>
+  <td class=xl29>110752091</td>
+  <td class=xl29 align=right x:num>242019</td>
+  <td class=xl29 align=right x:num>Bayu Abbas Widhiantoro</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>55</td>
+  <td class=xl29>130752092</td>
+  <td class=xl29 align=right x:num>241180</td>
+  <td class=xl29 align=right x:num>Bayu Gusmawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>56</td>
+  <td class=xl29>150742343</td>
+  <td class=xl29 align=right x:num>243157</td>
+  <td class=xl29 align=right x:num>Bayu Yudha Dwi Tama</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>57</td>
+  <td class=xl29>130752094</td>
+  <td class=xl29 align=right x:num>241169</td>
+  <td class=xl29 align=right x:num>Benny Leonardus</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>58</td>
+  <td class=xl29>160742095</td>
+  <td class=xl29 align=right x:num>243171</td>
+  <td class=xl29 align=right x:num>Biyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>59</td>
+  <td class=xl29>100752096</td>
+  <td class=xl29 align=right x:num>241035</td>
+  <td class=xl29 align=right x:num>Budi Utomo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>60</td>
+  <td class=xl29>090742097</td>
+  <td class=xl29 align=right x:num>243061</td>
+  <td class=xl29 align=right x:num>Budiyono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>61</td>
+  <td class=xl29>140752098</td>
+  <td class=xl29 align=right x:num>241146</td>
+  <td class=xl29 align=right x:num>Bunga Heil Tampubolon</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>62</td>
+  <td class=xl29>120742099</td>
+  <td class=xl29 align=right x:num>243039</td>
+  <td class=xl29 align=right x:num>Cahyo Sumali</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Crossdock</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>63</td>
+  <td class=xl29>090752100</td>
+  <td class=xl29 align=right x:num>241026</td>
+  <td class=xl29 align=right x:num>Catur Ari Setiawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>64</td>
+  <td class=xl29>140742346</td>
+  <td class=xl29 align=right x:num>243114</td>
+  <td class=xl29 align=right x:num>Chris Yulianto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>65</td>
+  <td class=xl29>110712353</td>
+  <td class=xl29 align=right x:num>241193</td>
+  <td class=xl29 align=right x:num>Dadang Damanhuri</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>66</td>
+  <td class=xl29>120742103</td>
+  <td class=xl29 align=right x:num>243020</td>
+  <td class=xl29 align=right x:num>Danang Wicaksono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>67</td>
+  <td class=xl29>110752104</td>
+  <td class=xl29 align=right x:num>241016</td>
+  <td class=xl29 align=right x:num>Darwanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>68</td>
+  <td class=xl29>140752356</td>
+  <td class=xl29 align=right x:num>241232</td>
+  <td class=xl29 align=right x:num>Darwanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>69</td>
+  <td class=xl29>130752106</td>
+  <td class=xl29 align=right x:num>241110</td>
+  <td class=xl29 align=right x:num>Daryanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>70</td>
+  <td class=xl29>150752107</td>
+  <td class=xl29 align=right x:num>241272</td>
+  <td class=xl29 align=right x:num>Deddy Ari Setiawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>71</td>
+  <td class=xl29>100712108</td>
+  <td class=xl29 align=right x:num>242002</td>
+  <td class=xl29 align=right x:num>Deny Marita Nilamsari</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator AR</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>72</td>
+  <td class=xl29>140742109</td>
+  <td class=xl29 align=right x:num>243125</td>
+  <td class=xl29 align=right x:num>Desi Arisanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>73</td>
+  <td class=xl29>140752358</td>
+  <td class=xl29 align=right x:num>241203</td>
+  <td class=xl29 align=right x:num>Desy Arisanti</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>74</td>
+  <td class=xl29>090712111</td>
+  <td class=xl29 align=right x:num>242036</td>
+  <td class=xl29 align=right x:num>Devy Agustina Safitri</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator SB</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>75</td>
+  <td class=xl29>110752112</td>
+  <td class=xl29 align=right x:num>241162</td>
+  <td class=xl29 align=right x:num>Diah Aprilia</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>76</td>
+  <td class=xl29>080752364</td>
+  <td class=xl29 align=right x:num>241010</td>
+  <td class=xl29 align=right x:num>Didiek Achmadi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>77</td>
+  <td class=xl29>140752365</td>
+  <td class=xl29 align=right x:num>241189</td>
+  <td class=xl29 align=right x:num>Didik Agus Sudarmanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>78</td>
+  <td class=xl29>130752114</td>
+  <td class=xl29 align=right x:num>241116</td>
+  <td class=xl29 align=right x:num>Didik Agus Sudarmanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>79</td>
+  <td class=xl29>140752116</td>
+  <td class=xl29 align=right x:num>241145</td>
+  <td class=xl29 align=right x:num>Didik Lutfi Hakim</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>80</td>
+  <td class=xl29>130742367</td>
+  <td class=xl29 align=right x:num>243027</td>
+  <td class=xl29 align=right x:num>Dika Dwi Saputra</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>81</td>
+  <td class=xl29>150742118</td>
+  <td class=xl29 align=right x:num>243138</td>
+  <td class=xl29 align=right x:num>Dimas Bagus Satrio</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>82</td>
+  <td class=xl29>110752374</td>
+  <td class=xl29 align=right x:num>241011</td>
+  <td class=xl29 align=right x:num>Dony Iriyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>83</td>
+  <td class=xl29>160752120</td>
+  <td class=xl29 align=right x:num>241297</td>
+  <td class=xl29 align=right x:num>Dwi Ariyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>84</td>
+  <td class=xl29>130752121</td>
+  <td class=xl29 align=right x:num>241172</td>
+  <td class=xl29 align=right x:num>Dwi Nugroho Imam Santoso</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>85</td>
+  <td class=xl29>160752375</td>
+  <td class=xl29 align=right x:num>241291</td>
+  <td class=xl29 align=right x:num>Dwi Prasetyo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>86</td>
+  <td class=xl29>150742123</td>
+  <td class=xl29 align=right x:num>243147</td>
+  <td class=xl29 align=right x:num>Dwi Priana Atmajaya</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>87</td>
+  <td class=xl29>120722124</td>
+  <td class=xl29 align=right x:num>244012</td>
+  <td class=xl29 align=right x:num>Dwi Wahyu Riyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>88</td>
+  <td class=xl29>140752125</td>
+  <td class=xl29 align=right x:num>241222</td>
+  <td class=xl29 align=right x:num>Dwi Wahyu Widodo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>89</td>
+  <td class=xl29>150742377</td>
+  <td class=xl29 align=right x:num>243155</td>
+  <td class=xl29 align=right x:num>Edwin Abiresta Eri</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>90</td>
+  <td class=xl29>120742379</td>
+  <td class=xl29 align=right x:num>242052</td>
+  <td class=xl29 align=right x:num>Eko Hadi Prasetya</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >MR Control</td>
+  <td class=xl29 align=right >Junior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>91</td>
+  <td class=xl29>100752128</td>
+  <td class=xl29 align=right x:num>241041</td>
+  <td class=xl29 align=right x:num>Eko Prastiyo K.</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>92</td>
+  <td class=xl29>150742384</td>
+  <td class=xl29 align=right x:num>243145</td>
+  <td class=xl29 align=right x:num>Eko Purnomo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Crossdock</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>93</td>
+  <td class=xl29>130742130</td>
+  <td class=xl29 align=right x:num>243031</td>
+  <td class=xl29 align=right x:num>Eko Supriyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>94</td>
+  <td class=xl29>160752131</td>
+  <td class=xl29 align=right x:num>241290</td>
+  <td class=xl29 align=right x:num>Eko Wartoyo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>95</td>
+  <td class=xl29>110752132</td>
+  <td class=xl29 align=right x:num>241069</td>
+  <td class=xl29 align=right x:num>Eko Widiyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >MD Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>96</td>
+  <td class=xl29>150752133</td>
+  <td class=xl29 align=right x:num>241257</td>
+  <td class=xl29 align=right x:num>Evinda Intan Deviana</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>97</td>
+  <td class=xl29>090752387</td>
+  <td class=xl29 align=right x:num>241093</td>
+  <td class=xl29 align=right x:num>Fariza Ardianto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>98</td>
+  <td class=xl29>160712135</td>
+  <td class=xl29 align=right x:num>242063</td>
+  <td class=xl29 align=right x:num>Febri Nur Cahya</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>99</td>
+  <td class=xl29>140752136</td>
+  <td class=xl29 align=right x:num>241197</td>
+  <td class=xl29 align=right x:num>Ferlinda Erlin Ernita</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Admin Data Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>100</td>
+  <td class=xl29>130752388</td>
+  <td class=xl29 align=right x:num>241118</td>
+  <td class=xl29 align=right x:num>Fery Budiantoro</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>101</td>
+  <td class=xl29>110752389</td>
+  <td class=xl29 align=right x:num>241138</td>
+  <td class=xl29 align=right x:num>Fitriyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>102</td>
+  <td class=xl29>120752139</td>
+  <td class=xl29 align=right x:num>241081</td>
+  <td class=xl29 align=right x:num>Galih Putra Yohana</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>103</td>
+  <td class=xl29>140752394</td>
+  <td class=xl29 align=right x:num>241240</td>
+  <td class=xl29 align=right x:num>Galih Sandra Kusuma</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>104</td>
+  <td class=xl29>130742396</td>
+  <td class=xl29 align=right x:num>243065</td>
+  <td class=xl29 align=right x:num>Gatot Suseno</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>105</td>
+  <td class=xl29>140752142</td>
+  <td class=xl29 align=right x:num>241195</td>
+  <td class=xl29 align=right x:num>Gilang Dwi Laksono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>106</td>
+  <td class=xl29>140752143</td>
+  <td class=xl29 align=right x:num>243102</td>
+  <td class=xl29 align=right x:num>Ginanjar Raharjo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>107</td>
+  <td class=xl29>160752144</td>
+  <td class=xl29 align=right x:num>241294</td>
+  <td class=xl29 align=right x:num>Habib Luthfil Hakim</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>108</td>
+  <td class=xl29>090752398</td>
+  <td class=xl29 align=right x:num>241039</td>
+  <td class=xl29 align=right x:num>Hafidz Jatiwinarka</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>109</td>
+  <td class=xl29>150752401</td>
+  <td class=xl29 align=right x:num>241264</td>
+  <td class=xl29 align=right x:num>Hanada Budi Hartono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>110</td>
+  <td class=xl29>150742147</td>
+  <td class=xl29 align=right x:num>243160</td>
+  <td class=xl29 align=right x:num>Hardyan Waluya</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>111</td>
+  <td class=xl29>120742404</td>
+  <td class=xl29 align=right x:num>243014</td>
+  <td class=xl29 align=right x:num>Hartadi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>112</td>
+  <td class=xl29>150742149</td>
+  <td class=xl29 align=right x:num>243166</td>
+  <td class=xl29 align=right x:num>Haryanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>113</td>
+  <td class=xl29>110742150</td>
+  <td class=xl29 align=right x:num>244018</td>
+  <td class=xl29 align=right x:num>Hendro Budhyono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>114</td>
+  <td class=xl29>130752151</td>
+  <td class=xl29 align=right x:num>241170</td>
+  <td class=xl29 align=right x:num>Heny Nur Rohmat Aji</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>115</td>
+  <td class=xl29>150752152</td>
+  <td class=xl29 align=right x:num>241246</td>
+  <td class=xl29 align=right x:num>Herera Fery W</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>116</td>
+  <td class=xl29>130722153</td>
+  <td class=xl29 align=right x:num>244017</td>
+  <td class=xl29 align=right x:num>Heri Agus Nur Harmindra</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>117</td>
+  <td class=xl29>110752406</td>
+  <td class=xl29 align=right x:num>241153</td>
+  <td class=xl29 align=right x:num>Heru Setyawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>118</td>
+  <td class=xl29>150752408</td>
+  <td class=xl29 align=right x:num>241252</td>
+  <td class=xl29 align=right x:num>Herwan Jaya Nugraha</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>119</td>
+  <td class=xl29>130752156</td>
+  <td class=xl29 align=right x:num>241092</td>
+  <td class=xl29 align=right x:num>Hesti Maryati Simanjuntak</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>120</td>
+  <td class=xl29>150742157</td>
+  <td class=xl29 align=right x:num>243149</td>
+  <td class=xl29 align=right x:num>Ichsan Zazira</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Intercity</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>121</td>
+  <td class=xl29>140752158</td>
+  <td class=xl29 align=right x:num>241194</td>
+  <td class=xl29 align=right x:num>Ika Styowati</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>122</td>
+  <td class=xl29>150742159</td>
+  <td class=xl29 align=right x:num>243161</td>
+  <td class=xl29 align=right x:num>Imam Setiawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>123</td>
+  <td class=xl29>130742160</td>
+  <td class=xl29 align=right x:num>243097</td>
+  <td class=xl29 align=right x:num>Irfan Murdiat</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>124</td>
+  <td class=xl29>150742161</td>
+  <td class=xl29 align=right x:num>243151</td>
+  <td class=xl29 align=right x:num>Irsat</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>125</td>
+  <td class=xl29>120752162</td>
+  <td class=xl29 align=right x:num>241185</td>
+  <td class=xl29 align=right x:num>Irvan Rudianto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>126</td>
+  <td class=xl29>080712163</td>
+  <td class=xl29 align=right x:num>242020</td>
+  <td class=xl29 align=right x:num>Isnaeni Safitri</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator SB</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>127</td>
+  <td class=xl29>150742164</td>
+  <td class=xl29 align=right x:num>243143</td>
+  <td class=xl29 align=right x:num>Iswandi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>128</td>
+  <td class=xl29>130742165</td>
+  <td class=xl29 align=right x:num>243075</td>
+  <td class=xl29 align=right x:num>Jarwata</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>129</td>
+  <td class=xl29>150752166</td>
+  <td class=xl29 align=right x:num>241279</td>
+  <td class=xl29 align=right x:num>Joice Ratna Dewi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>130</td>
+  <td class=xl29>100752409</td>
+  <td class=xl29 align=right x:num>241048</td>
+  <td class=xl29 align=right x:num>Joko Sarwono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>131</td>
+  <td class=xl29>110742168</td>
+  <td class=xl29 align=right x:num>243009</td>
+  <td class=xl29 align=right x:num>Joni Ristanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Ekspedisi</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>132</td>
+  <td class=xl29>150712169</td>
+  <td class=xl29 align=right x:num>242060</td>
+  <td class=xl29 align=right x:num>Kanastren Larasati</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>133</td>
+  <td class=xl29>160752170</td>
+  <td class=xl29 align=right x:num>241286</td>
+  <td class=xl29 align=right x:num>Khairul Walid</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>134</td>
+  <td class=xl29>070722171</td>
+  <td class=xl29 align=right x:num>364001</td>
+  <td class=xl29 align=right x:num>Khoeroni</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Kepala Cabang</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>135</td>
+  <td class=xl29>140742414</td>
+  <td class=xl29 align=right x:num>243122</td>
+  <td class=xl29 align=right x:num>Kristono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>136</td>
+  <td class=xl29>120742173</td>
+  <td class=xl29 align=right x:num>243011</td>
+  <td class=xl29 align=right x:num>Kurniawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>137</td>
+  <td class=xl29>130742174</td>
+  <td class=xl29 align=right x:num>243100</td>
+  <td class=xl29 align=right x:num>Kusnaeni</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>138</td>
+  <td class=xl29>090752175</td>
+  <td class=xl29 align=right x:num>241058</td>
+  <td class=xl29 align=right x:num>Kusrini</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>139</td>
+  <td class=xl29>130752176</td>
+  <td class=xl29 align=right x:num>241107</td>
+  <td class=xl29 align=right x:num>Kuswiharto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>140</td>
+  <td class=xl29>110752416</td>
+  <td class=xl29 align=right x:num>241061</td>
+  <td class=xl29 align=right x:num>Lia Yunita</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO TL</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>141</td>
+  <td class=xl29>130752419</td>
+  <td class=xl29 align=right x:num>241105</td>
+  <td class=xl29 align=right x:num>Lilik Yulianto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>142</td>
+  <td class=xl29>160712179</td>
+  <td class=xl29 align=right x:num>242065</td>
+  <td class=xl29 align=right x:num>Lina Maulida Chusna</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>143</td>
+  <td class=xl29>120712420</td>
+  <td class=xl29 align=right x:num>242030</td>
+  <td class=xl29 align=right x:num>Lintang Desta Arny</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>144</td>
+  <td class=xl29>090712181</td>
+  <td class=xl29 align=right x:num>342003</td>
+  <td class=xl29 align=right x:num>Lukman Abdilah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >BFAM</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>145</td>
+  <td class=xl29>160742424</td>
+  <td class=xl29 align=right x:num>243174</td>
+  <td class=xl29 align=right x:num>Lutfi Hakim</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>146</td>
+  <td class=xl29>150752183</td>
+  <td class=xl29 align=right x:num>241259</td>
+  <td class=xl29 align=right x:num>M Eddy Susanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>147</td>
+  <td class=xl29>100752184</td>
+  <td class=xl29 align=right x:num>251006</td>
+  <td class=xl29 align=right x:num>M Rochmat Nisfullayli</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>148</td>
+  <td class=xl29>150742185</td>
+  <td class=xl29 align=right x:num>243164</td>
+  <td class=xl29 align=right x:num>M Wahyu Pradani</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Gudang</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>149</td>
+  <td class=xl29>140752186</td>
+  <td class=xl29 align=right x:num>241237</td>
+  <td class=xl29 align=right x:num>M. Nurudin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>150</td>
+  <td class=xl29>130752187</td>
+  <td class=xl29 align=right x:num>241125</td>
+  <td class=xl29 align=right x:num>Madkan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>151</td>
+  <td class=xl29>130742188</td>
+  <td class=xl29 align=right x:num>243056</td>
+  <td class=xl29 align=right x:num>Mansur Hidayat</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>152</td>
+  <td class=xl29>140722429</td>
+  <td class=xl29 align=right x:num>244023</td>
+  <td class=xl29 align=right x:num>Margono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>153</td>
+  <td class=xl29>090752190</td>
+  <td class=xl29 align=right x:num>241003</td>
+  <td class=xl29 align=right x:num>Marimin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>154</td>
+  <td class=xl29>020722191</td>
+  <td class=xl29 align=right x:num>244016</td>
+  <td class=xl29 align=right x:num>Marsudi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>155</td>
+  <td class=xl29>140742438</td>
+  <td class=xl29 align=right x:num>243131</td>
+  <td class=xl29 align=right x:num>Maulana Zulfikar Alfaristy</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>156</td>
+  <td class=xl29>100712193</td>
+  <td class=xl29 align=right x:num>242018</td>
+  <td class=xl29 align=right x:num>Mb. Melani Andri Astuti</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator SB</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>157</td>
+  <td class=xl29>110742439</td>
+  <td class=xl29 align=right x:num>243007</td>
+  <td class=xl29 align=right x:num>Miftachul Huda</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>158</td>
+  <td class=xl29>080742195</td>
+  <td class=xl29 align=right x:num>243060</td>
+  <td class=xl29 align=right x:num>Moch Ibrahim</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>159</td>
+  <td class=xl29>090712444</td>
+  <td class=xl29 align=right x:num>242023</td>
+  <td class=xl29 align=right x:num>Mochamad Chidir</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>160</td>
+  <td class=xl29>120752447</td>
+  <td class=xl29 align=right x:num>241075</td>
+  <td class=xl29 align=right x:num>Moeljono Hery Prasetyo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>161</td>
+  <td class=xl29>130752198</td>
+  <td class=xl29 align=right x:num>241103</td>
+  <td class=xl29 align=right x:num>Moh Imdadin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>162</td>
+  <td class=xl29>130742199</td>
+  <td class=xl29 align=right x:num>243103</td>
+  <td class=xl29 align=right x:num>Mohamad Arifin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>163</td>
+  <td class=xl29>140742200</td>
+  <td class=xl29 align=right x:num>243106</td>
+  <td class=xl29 align=right x:num>Mohamad Rochman</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>164</td>
+  <td class=xl29>100712448</td>
+  <td class=xl29 align=right x:num>242013</td>
+  <td class=xl29 align=right x:num>Muchamadi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >FAS</td>
+  <td class=xl29 align=right >Manager	</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>165</td>
+  <td class=xl29>130742202</td>
+  <td class=xl29 align=right x:num>241181</td>
+  <td class=xl29 align=right x:num>Mufid Maksum</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>166</td>
+  <td class=xl29>160752203</td>
+  <td class=xl29 align=right x:num>241287</td>
+  <td class=xl29 align=right x:num>Muh Bagus Hendratmoko</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>167</td>
+  <td class=xl29>160752204</td>
+  <td class=xl29 align=right x:num>241282</td>
+  <td class=xl29 align=right x:num>Muh Khusnul Alimin Khakim</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>168</td>
+  <td class=xl29>130742205</td>
+  <td class=xl29 align=right x:num>243095</td>
+  <td class=xl29 align=right x:num>Muh Riyadi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Inventory Control</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>169</td>
+  <td class=xl29>160752206</td>
+  <td class=xl29 align=right x:num>241293</td>
+  <td class=xl29 align=right x:num>Muhamad Dzikron</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>170</td>
+  <td class=xl29>150742207</td>
+  <td class=xl29 align=right x:num>243165</td>
+  <td class=xl29 align=right x:num>Muhamad Mahfud</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>171</td>
+  <td class=xl29>130752450</td>
+  <td class=xl29 align=right x:num>241167</td>
+  <td class=xl29 align=right x:num>Muhamad Rosyid Ridlo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>172</td>
+  <td class=xl29>110742209</td>
+  <td class=xl29 align=right x:num>243018</td>
+  <td class=xl29 align=right x:num>Muhamad Sukri</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>173</td>
+  <td class=xl29>140752210</td>
+  <td class=xl29 align=right x:num>241234</td>
+  <td class=xl29 align=right x:num>Muhammad Abudi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>174</td>
+  <td class=xl29>090752211</td>
+  <td class=xl29 align=right x:num>241006</td>
+  <td class=xl29 align=right x:num>Muhammad Yahya Mustofa</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>175</td>
+  <td class=xl29>120752212</td>
+  <td class=xl29 align=right x:num>241091</td>
+  <td class=xl29 align=right x:num>Mukhammad Ibnu Said</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>176</td>
+  <td class=xl29>100752213</td>
+  <td class=xl29 align=right x:num>241005</td>
+  <td class=xl29 align=right x:num>Muksin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>177</td>
+  <td class=xl29>110752451</td>
+  <td class=xl29 align=right x:num>241046</td>
+  <td class=xl29 align=right x:num>Mulyono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>178</td>
+  <td class=xl29>130752215</td>
+  <td class=xl29 align=right x:num>241217</td>
+  <td class=xl29 align=right x:num>Mustakim Ariyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>179</td>
+  <td class=xl29>100752216</td>
+  <td class=xl29 align=right x:num>241049</td>
+  <td class=xl29 align=right x:num>Nasikin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>180</td>
+  <td class=xl29>160752217</td>
+  <td class=xl29 align=right x:num>241283</td>
+  <td class=xl29 align=right x:num>Netty Sintya Devi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>181</td>
+  <td class=xl29>130712218</td>
+  <td class=xl29 align=right x:num>242038</td>
+  <td class=xl29 align=right x:num>Niken Triyani Prananingtyas</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>182</td>
+  <td class=xl29>080712219</td>
+  <td class=xl29 align=right x:num>242003</td>
+  <td class=xl29 align=right x:num>Nindya Ayu M</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >FAS</td>
+  <td class=xl29 align=right >Manager	</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>183</td>
+  <td class=xl29>140742455</td>
+  <td class=xl29 align=right x:num>243109</td>
+  <td class=xl29 align=right x:num>Novan Catur Listiono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>184</td>
+  <td class=xl29>160752221</td>
+  <td class=xl29 align=right x:num>241289</td>
+  <td class=xl29 align=right x:num>Nur Aini</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>185</td>
+  <td class=xl29>150742458</td>
+  <td class=xl29 align=right x:num>243162</td>
+  <td class=xl29 align=right x:num>Nur Cahyo Mulyo Luhur</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>186</td>
+  <td class=xl29>080752461</td>
+  <td class=xl29 align=right x:num>241014</td>
+  <td class=xl29 align=right x:num>Nur Chamim</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >MD Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>187</td>
+  <td class=xl29>140752225</td>
+  <td class=xl29 align=right x:num>241230</td>
+  <td class=xl29 align=right x:num>Nur Cholis</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>188</td>
+  <td class=xl29>140752224</td>
+  <td class=xl29 align=right x:num>241207</td>
+  <td class=xl29 align=right x:num>Nur Cholis</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>189</td>
+  <td class=xl29>090752226</td>
+  <td class=xl29 align=right x:num>241083</td>
+  <td class=xl29 align=right x:num>Nur Hidayat</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>190</td>
+  <td class=xl29>150752227</td>
+  <td class=xl29 align=right x:num>241244</td>
+  <td class=xl29 align=right x:num>Nur Salim</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>191</td>
+  <td class=xl29>080752228</td>
+  <td class=xl29 align=right x:num>241019</td>
+  <td class=xl29 align=right x:num>Nur Soleh</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>192</td>
+  <td class=xl29>120752229</td>
+  <td class=xl29 align=right x:num>243021</td>
+  <td class=xl29 align=right x:num>Nurbowo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>193</td>
+  <td class=xl29>160752230</td>
+  <td class=xl29 align=right x:num>241299</td>
+  <td class=xl29 align=right x:num>Nurul Komariyah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>194</td>
+  <td class=xl29>120752231</td>
+  <td class=xl29 align=right x:num>241108</td>
+  <td class=xl29 align=right x:num>Nuswanto Setiadi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>195</td>
+  <td class=xl29>140752465</td>
+  <td class=xl29 align=right x:num>241191</td>
+  <td class=xl29 align=right x:num>Pandu Kurniawan Angga Perdana</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>196</td>
+  <td class=xl29>110752233</td>
+  <td class=xl29 align=right x:num>241082</td>
+  <td class=xl29 align=right x:num>Pipit Sugiarto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>197</td>
+  <td class=xl29>150752470</td>
+  <td class=xl29 align=right x:num>241239</td>
+  <td class=xl29 align=right x:num>Prabandaru Taufan Tri Anggoro</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>198</td>
+  <td class=xl29>120742473</td>
+  <td class=xl29 align=right x:num>243016</td>
+  <td class=xl29 align=right x:num>Prantono Eko Kusfianto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>199</td>
+  <td class=xl29>140712236</td>
+  <td class=xl29 align=right x:num>242045</td>
+  <td class=xl29 align=right x:num>Rachmad Poenggoh Widodo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator SB</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>200</td>
+  <td class=xl29>160742237</td>
+  <td class=xl29 align=right x:num>243168</td>
+  <td class=xl29 align=right x:num>Ragil Ngateno</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>201</td>
+  <td class=xl29>130752238</td>
+  <td class=xl29 align=right x:num>241136</td>
+  <td class=xl29 align=right x:num>Ragil Widi Nugroho</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>202</td>
+  <td class=xl29>150742239</td>
+  <td class=xl29 align=right x:num>243167</td>
+  <td class=xl29 align=right x:num>Ranto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>203</td>
+  <td class=xl29>140752240</td>
+  <td class=xl29 align=right x:num>241157</td>
+  <td class=xl29 align=right x:num>Ratna Prima Yulita</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>204</td>
+  <td class=xl29>160752478</td>
+  <td class=xl29 align=right x:num>241301</td>
+  <td class=xl29 align=right x:num>Ratna Yuliana</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>205</td>
+  <td class=xl29>120752481</td>
+  <td class=xl29 align=right x:num>241084</td>
+  <td class=xl29 align=right x:num>Rianto Setiawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>206</td>
+  <td class=xl29>140712243</td>
+  <td class=xl29 align=right x:num>242058</td>
+  <td class=xl29 align=right x:num>Riska Diyah Saputri</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin Claim</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>207</td>
+  <td class=xl29>150752482</td>
+  <td class=xl29 align=right x:num>241267</td>
+  <td class=xl29 align=right x:num>Riza Charisma Bayu Aji</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Admin MD</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>208</td>
+  <td class=xl29>140722245</td>
+  <td class=xl29 align=right x:num>244019</td>
+  <td class=xl29 align=right x:num>Riza Dwi Yanuar Kristanti</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >HRD Supervisor</td>
+  <td class=xl29 align=right >Director</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>209</td>
+  <td class=xl29>120752246</td>
+  <td class=xl29 align=right x:num>241202</td>
+  <td class=xl29 align=right x:num>Robiyani</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>210</td>
+  <td class=xl29>130742247</td>
+  <td class=xl29 align=right x:num>243098</td>
+  <td class=xl29 align=right x:num>Rofiq Effendi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Gudang</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>211</td>
+  <td class=xl29>160742248</td>
+  <td class=xl29 align=right x:num>243172</td>
+  <td class=xl29 align=right x:num>Romi Budianto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>212</td>
+  <td class=xl29>160742249</td>
+  <td class=xl29 align=right x:num>243173</td>
+  <td class=xl29 align=right x:num>Rony Cahyono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>213</td>
+  <td class=xl29>130752250</td>
+  <td class=xl29 align=right x:num>241147</td>
+  <td class=xl29 align=right x:num>Rully Andhika Kurniawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>214</td>
+  <td class=xl29>080742487</td>
+  <td class=xl29 align=right x:num>243041</td>
+  <td class=xl29 align=right x:num>Ruslan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>215</td>
+  <td class=xl29>120752252</td>
+  <td class=xl29 align=right x:num>241079</td>
+  <td class=xl29 align=right x:num>Saifudin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>216</td>
+  <td class=xl29>150752491</td>
+  <td class=xl29 align=right x:num>241268</td>
+  <td class=xl29 align=right x:num>Satya Bakti Arayaken Bustani</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>217</td>
+  <td class=xl29>110752254</td>
+  <td class=xl29 align=right x:num>241062</td>
+  <td class=xl29 align=right x:num>Sela Purnama Sari</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>218</td>
+  <td class=xl29>120712255</td>
+  <td class=xl29 align=right x:num>242041</td>
+  <td class=xl29 align=right x:num>Seny Komsatun</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>219</td>
+  <td class=xl29>120742256</td>
+  <td class=xl29 align=right x:num>243093</td>
+  <td class=xl29 align=right x:num>Setiawan</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>220</td>
+  <td class=xl29>160722257</td>
+  <td class=xl29 align=right x:num>244033</td>
+  <td class=xl29 align=right x:num>Setiyono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>221</td>
+  <td class=xl29>110752258</td>
+  <td class=xl29 align=right x:num>241095</td>
+  <td class=xl29 align=right x:num>Setyowati Ratna Yoesmeinar</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>222</td>
+  <td class=xl29>140742493</td>
+  <td class=xl29 align=right x:num>243116</td>
+  <td class=xl29 align=right x:num>Shobatul Adib</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>223</td>
+  <td class=xl29>150752260</td>
+  <td class=xl29 align=right x:num>241258</td>
+  <td class=xl29 align=right x:num>Siti Lilik Hidayah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>224</td>
+  <td class=xl29>160752261</td>
+  <td class=xl29 align=right x:num>241296</td>
+  <td class=xl29 align=right x:num>Siti Patimah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>225</td>
+  <td class=xl29>130752262</td>
+  <td class=xl29 align=right x:num>241163</td>
+  <td class=xl29 align=right x:num>Siyana Anggreani</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>226</td>
+  <td class=xl29>100752495</td>
+  <td class=xl29 align=right x:num>241038</td>
+  <td class=xl29 align=right x:num>Slamet</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>227</td>
+  <td class=xl29>110742264</td>
+  <td class=xl29 align=right x:num>243005</td>
+  <td class=xl29 align=right x:num>Solichin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>228</td>
+  <td class=xl29>110752498</td>
+  <td class=xl29 align=right x:num>241017</td>
+  <td class=xl29 align=right x:num>Sri Mulyaningsih</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>229</td>
+  <td class=xl29>120752266</td>
+  <td class=xl29 align=right x:num>241086</td>
+  <td class=xl29 align=right x:num>Subagiyo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>230</td>
+  <td class=xl29>100722267</td>
+  <td class=xl29 align=right x:num>244004</td>
+  <td class=xl29 align=right x:num>Subagyo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Boy</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>231</td>
+  <td class=xl29>130712268</td>
+  <td class=xl29 align=right x:num>242010</td>
+  <td class=xl29 align=right x:num>Suci Nuariningsih</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>232</td>
+  <td class=xl29>130742269</td>
+  <td class=xl29 align=right x:num>243044</td>
+  <td class=xl29 align=right x:num>Sudarsono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>233</td>
+  <td class=xl29>130752270</td>
+  <td class=xl29 align=right x:num>241135</td>
+  <td class=xl29 align=right x:num>Sudartono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>234</td>
+  <td class=xl29>140752271</td>
+  <td class=xl29 align=right x:num>241156</td>
+  <td class=xl29 align=right x:num>Sugesti Sedyaning Tyas</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>235</td>
+  <td class=xl29>080752499</td>
+  <td class=xl29 align=right x:num>291012</td>
+  <td class=xl29 align=right x:num>Sukoco</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>236</td>
+  <td class=xl29>080752503</td>
+  <td class=xl29 align=right x:num>241015</td>
+  <td class=xl29 align=right x:num>Sulistiono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>237</td>
+  <td class=xl29>110752274</td>
+  <td class=xl29 align=right x:num>241067</td>
+  <td class=xl29 align=right x:num>Sumartono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>238</td>
+  <td class=xl29>140712275</td>
+  <td class=xl29 align=right x:num>242049</td>
+  <td class=xl29 align=right x:num>Sumewo Wahyu Handoko</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator SB</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>239</td>
+  <td class=xl29>100742276</td>
+  <td class=xl29 align=right x:num>243062</td>
+  <td class=xl29 align=right x:num>Supriyadi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>240</td>
+  <td class=xl29>140752504</td>
+  <td class=xl29 align=right x:num>243105</td>
+  <td class=xl29 align=right x:num>Supriyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>241</td>
+  <td class=xl29>090742277</td>
+  <td class=xl29 align=right x:num>243031</td>
+  <td class=xl29 align=right x:num>Supriyanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>242</td>
+  <td class=xl29>120742506</td>
+  <td class=xl29 align=right x:num>243067</td>
+  <td class=xl29 align=right x:num>Suraji</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Crossdock</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>243</td>
+  <td class=xl29>100752280</td>
+  <td class=xl29 align=right x:num>241056</td>
+  <td class=xl29 align=right x:num>Susanita</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>244</td>
+  <td class=xl29>120742508</td>
+  <td class=xl29 align=right x:num>243023</td>
+  <td class=xl29 align=right x:num>Susilo Dwi Winarno</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>245</td>
+  <td class=xl29>160752282</td>
+  <td class=xl29 align=right x:num>241280</td>
+  <td class=xl29 align=right x:num>Suwarno</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>246</td>
+  <td class=xl29>150752283</td>
+  <td class=xl29 align=right x:num>241261</td>
+  <td class=xl29 align=right x:num>Suwito</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>247</td>
+  <td class=xl29>100752284</td>
+  <td class=xl29 align=right x:num>241040</td>
+  <td class=xl29 align=right x:num>Taufiq Nur Huda</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>248</td>
+  <td class=xl29>140742285</td>
+  <td class=xl29 align=right x:num>243127</td>
+  <td class=xl29 align=right x:num>Taufiq Qurrohman</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>249</td>
+  <td class=xl29>140742509</td>
+  <td class=xl29 align=right x:num>243119</td>
+  <td class=xl29 align=right x:num>Tri Bowo Mukti</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>250</td>
+  <td class=xl29>130752512</td>
+  <td class=xl29 align=right x:num>243050</td>
+  <td class=xl29 align=right x:num>Tri Budi Utomo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>251</td>
+  <td class=xl29>120752288</td>
+  <td class=xl29 align=right x:num>241099</td>
+  <td class=xl29 align=right x:num>Tri Yuwono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>252</td>
+  <td class=xl29>150742289</td>
+  <td class=xl29 align=right x:num>243159</td>
+  <td class=xl29 align=right x:num>Tridadi Sampurno</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>253</td>
+  <td class=xl29>120752517</td>
+  <td class=xl29 align=right x:num>241155</td>
+  <td class=xl29 align=right x:num>Trijanto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>254</td>
+  <td class=xl29>110712291</td>
+  <td class=xl29 align=right x:num>242012</td>
+  <td class=xl29 align=right x:num>Umi Farichah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Kecil</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>255</td>
+  <td class=xl29>110752292</td>
+  <td class=xl29 align=right x:num>241036</td>
+  <td class=xl29 align=right x:num>Umi Wachidah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>256</td>
+  <td class=xl29>130742293</td>
+  <td class=xl29 align=right x:num>243140</td>
+  <td class=xl29 align=right x:num>Untung</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>257</td>
+  <td class=xl29>140742294</td>
+  <td class=xl29 align=right x:num>243082</td>
+  <td class=xl29 align=right x:num>Urip Mualim</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>258</td>
+  <td class=xl29>130752518</td>
+  <td class=xl29 align=right x:num>241090</td>
+  <td class=xl29 align=right x:num>Viko Yudha Prasetya</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>259</td>
+  <td class=xl29>130742296</td>
+  <td class=xl29 align=right x:num>243030</td>
+  <td class=xl29 align=right x:num>Wahyu Sugiarto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>260</td>
+  <td class=xl29>130752297</td>
+  <td class=xl29 align=right x:num>241192</td>
+  <td class=xl29 align=right x:num>Wahyu Tri Mulyono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>261</td>
+  <td class=xl29>160752519</td>
+  <td class=xl29 align=right x:num>241285</td>
+  <td class=xl29 align=right x:num>Wahyudi</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>262</td>
+  <td class=xl29>980712299</td>
+  <td class=xl29 align=right x:num>242001</td>
+  <td class=xl29 align=right x:num>Winarning</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator SB</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>263</td>
+  <td class=xl29>130752300</td>
+  <td class=xl29 align=right x:num>241133</td>
+  <td class=xl29 align=right x:num>Woko Septiyono</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>264</td>
+  <td class=xl29>130752521</td>
+  <td class=xl29 align=right x:num>241123</td>
+  <td class=xl29 align=right x:num>Yanti Raharjo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>265</td>
+  <td class=xl29>090752523</td>
+  <td class=xl29 align=right x:num>241144</td>
+  <td class=xl29 align=right x:num>Yoana Dwi Artanti</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Admin Data Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>266</td>
+  <td class=xl29>130752303</td>
+  <td class=xl29 align=right x:num>241112</td>
+  <td class=xl29 align=right x:num>Yohanes Ervin Suharno</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Pudakpayung</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>267</td>
+  <td class=xl29>980712304</td>
+  <td class=xl29 align=right x:num>242024</td>
+  <td class=xl29 align=right x:num>Yudi Purnomo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>268</td>
+  <td class=xl29>080752305</td>
+  <td class=xl29 align=right x:num>241013</td>
+  <td class=xl29 align=right x:num>Yudi Susisnyo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Majapahit</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>269</td>
+  <td class=xl29>100752306</td>
+  <td class=xl29 align=right x:num>241057</td>
+  <td class=xl29 align=right x:num>Yulia Fitri Kristianti</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>270</td>
+  <td class=xl29>110752307</td>
+  <td class=xl29 align=right x:num>241028</td>
+  <td class=xl29 align=right x:num>Yulianto</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Salatiga</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>271</td>
+  <td class=xl29>130752308</td>
+  <td class=xl29 align=right x:num>241179</td>
+  <td class=xl29 align=right x:num>Yulianto Wibowo</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>272</td>
+  <td class=xl29>160752309</td>
+  <td class=xl29 align=right x:num>241300</td>
+  <td class=xl29 align=right x:num>Yusvi Cahyaningrum</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>273</td>
+  <td class=xl29>090752310</td>
+  <td class=xl29 align=right x:num>241027</td>
+  <td class=xl29 align=right x:num>Zaenal Abidin</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Kendal</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>274</td>
+  <td class=xl29>110752311</td>
+  <td class=xl29 align=right x:num>241064</td>
+  <td class=xl29 align=right x:num>Zaenal Rohmat</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SEMARANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>275</td>
+  <td class=xl29>160712312</td>
+  <td class=xl29 align=right x:num>242062</td>
+  <td class=xl29 align=right x:num>Zuliatul Ma'Rifah</td>
+  <td class=xl29 align=right >SEMARANG</td>
+  <td class=xl29 align=right >SMG SB Demak</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=12 width=80 clospan= style='width:41pt'></td>
+ 
+ </tr>
+ <![endif]>
+</table>
+
+
+</body>
+			
+</html>
+
+

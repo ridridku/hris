@@ -40,7 +40,6 @@ $HREF_ADODB	=$HREF_HOME."/adodb";
 $HREF_JPGRAPH	=$HREF_HOME."/jpgraph";
 $HREF_UPLOADS	=$HREF_HOME."/uploads";
 
-//var_dump ($HREF_UPLOADS) or die();
 
 $DOC_SELF_NAME	=$_SERVER['PHP_SELF'];
 $DOC_PARSE_URL = parse_url($DOC_SELF_NAME);
@@ -82,15 +81,24 @@ $stat_fungsi = array(
 	"L"=>"Lokal"
 	);
 
-$stat_status_primer = array(
-	"Provinsi"=>"Provinsi",
-	"Kabupaten"=>"Kabupaten"
-	);
+$stat_cabang = array(
+	    "1"=>"Pusat",
+            "2"=>"Bandung",
+            "3"=>"Cirebon",
+            "4"=>"Subang",
+            "5"=>"Sukabumi",
+            "6"=>"Tasik",
+            "7"=>"Magelang",
+            "8"=>"Pati",
+            "9"=>"Purwokerto",
+            "10"=>"Semarang",
+            "11"=>"Solo",
+            "12"=>"Tegal",
+            "1"=>"Yogya"
+    );
 
-$stat_status_sekunder = array(
-	"Kabupaten"=>"Kabupaten",
-	"Kota"=>"Kota"
-	);
+
+
 
 $daftar_bulan	= array(
     "00"=>"[Pilih Bulan]",
@@ -147,5 +155,83 @@ $daftar_tanggal = array(
 	"29"=>"29",
 	"30"=>"30",
 	"31"=>"31" );
+
+        function TanggalIndo($date){
+	$BulanIndo = array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+ 
+	$tahun = substr($date, 0, 4);
+	$bulan = substr($date, 5, 2);
+	$tgl   = substr($date, 8, 2);
+ 
+	$result = $tgl . " " . $BulanIndo[(int)$bulan-1] . " ". $tahun;		
+	return($result);
+}
+
+//function Dibaca($x) {
+//                $angkaBaca = array("", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas");
+//                switch ($x) {
+//                    case ($x < 12):
+//                        echo " (" . $angkaBaca[$x].")";
+//                        break;
+//                    case ($x < 20):
+//                        echo $result = Dibaca($x - 10) . " belas";
+//                        break;
+//                    case ($x < 100):
+//                        echo Dibaca($x / 10);
+//                        echo " puluh ";
+//                        echo Dibaca($x % 10);
+//                        break;
+//                    case ($x < 200):
+//                        echo " seratus ";
+//                        echo Dibaca($x - 100);
+//                        break;
+//                    case ($x < 1000):
+//                        echo Dibaca($x / 100);
+//                        echo " ratus";
+//                        echo Dibaca($x % 100);
+//                        break;
+//                    case ($x < 2000):
+//                        echo " seribu ";
+//                        echo Dibaca($x - 1000);
+//                        break;
+//                    case ($x < 1000000):
+//                        echo Dibaca($x / 1000);
+//                        echo " ribu ";
+//                        echo Dibaca($x % 1000);
+//                        break;
+//                    case ($x < 1000000000):
+//                        echo Dibaca($x / 1000000);
+//                        echo " juta ";
+//                        echo Dibaca($x % 1000000);
+//                        break;
+//                }
+//            }
+function tampil_bulan ($x) {
+    if ($x == 1 ) {
+        $bulan = "Januari"; }
+    if ($x == 2 ) {
+        $bulan = "Februari"; }
+    if ($x == 3 ) {
+        $bulan = "Maret"; }
+    if ($x == 4 ) {
+        $bulan = "April"; }
+    if ($x == 5 ) {
+        $bulan = "Mei"; }
+    if ($x == 6 ) {
+        $bulan = "Juni"; }
+    if ($x == 7 ) {
+        $bulan = "Juli"; }
+    if ($x == 8 ) {
+        $bulan = "Agustus"; }
+    if ($x == 9 ) {
+        $bulan = "September"; }
+    if ($x == 10) {
+        $bulan = "Oktober"; }
+    if ($x == 11) {
+        $bulan = "November"; }
+    if ($x == 12) {
+        $bulan = "Desember"; }
+    return $bulan;
+}
 /*** End 0f Array***/
 ?>

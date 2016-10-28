@@ -1,0 +1,2142 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Rekap Absensi</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=12 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->LAPORAN REKAP ABSENSI KARYAWAN</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=9 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=12 height=21 class=xl36 style='height:15.75pt'>CABANG  : SUKABUMI</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=109 style='width:50pt'>HADIR</td>
+    <td class=xl27 width=98 style='width:50pt'>SAKIT</td> 
+    <td class=xl27 width=57 style='width:25pt'>IZIN</td>
+    <td class=xl27 width=57 style='width:25pt'>CUTI</td>
+    <td class=xl27 width=57 style='width:25pt'>DINAS LUAR</td>
+     <td class=xl27 width=57 style='width:25pt'>ALFA</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>332001</td>
+  <td class=xl29 align=right x:num>Tanto Muhamad N</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>331003</td>
+  <td class=xl29 align=right x:num>Ekas Setia</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>331014</td>
+  <td class=xl29 align=right x:num>Elly Aprilyanti</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>333019</td>
+  <td class=xl29 align=right x:num>Saepudin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>331010</td>
+  <td class=xl29 align=right x:num>Deri Ilham M</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>331092</td>
+  <td class=xl29 align=right x:num>Suryatman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>18</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>331011</td>
+  <td class=xl29 align=right x:num>Yudi Setiawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>333026</td>
+  <td class=xl29 align=right x:num>Ferni Irawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>333028</td>
+  <td class=xl29 align=right x:num>Ichsan Syaiful Ramadhan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>331002</td>
+  <td class=xl29 align=right x:num>Amin Abdullah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>331017</td>
+  <td class=xl29 align=right x:num>Asep Deni</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>331006</td>
+  <td class=xl29 align=right x:num>Candra Hadiyanto</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>331007</td>
+  <td class=xl29 align=right x:num>Deden Sukmawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>331025</td>
+  <td class=xl29 align=right x:num>Fajar Muharrom</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>331005</td>
+  <td class=xl29 align=right x:num>Jejen Sujana</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>332013</td>
+  <td class=xl29 align=right x:num>Herlan Sumantri</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>332010</td>
+  <td class=xl29 align=right x:num>Sahrudin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>332029</td>
+  <td class=xl29 align=right x:num>Asep Abdurohman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>331040</td>
+  <td class=xl29 align=right x:num>Aseng Supatman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>331034</td>
+  <td class=xl29 align=right x:num>Gogo Gopurrullah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>331018</td>
+  <td class=xl29 align=right x:num>Helmi Hermawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>331015</td>
+  <td class=xl29 align=right x:num>Melda Maulani</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>331021</td>
+  <td class=xl29 align=right x:num>Ruslan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>331086</td>
+  <td class=xl29 align=right x:num>Yudistira Dirgantara Putra</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>333015</td>
+  <td class=xl29 align=right x:num>Abdul Rahman Alpadil</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>331085</td>
+  <td class=xl29 align=right x:num>Burhanudin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>332019</td>
+  <td class=xl29 align=right x:num>Guruh Supriatna</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>332009</td>
+  <td class=xl29 align=right x:num>Laela Almaidah Jumiati</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>332006</td>
+  <td class=xl29 align=right x:num>Lia Setiawati</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>332015</td>
+  <td class=xl29 align=right x:num>Resti Lestari</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>332020</td>
+  <td class=xl29 align=right x:num>Mulya Nanzar</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>332025</td>
+  <td class=xl29 align=right x:num>Yoga Pratama Supriadi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>331029</td>
+  <td class=xl29 align=right x:num>Atan Rustandi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>331088</td>
+  <td class=xl29 align=right x:num>Budi Setiawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>331031</td>
+  <td class=xl29 align=right x:num>Dandi Ariyandi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>331087</td>
+  <td class=xl29 align=right x:num>Dedi Iskandar</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>332011</td>
+  <td class=xl29 align=right x:num>Feni Dwi Cahyani</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>331039</td>
+  <td class=xl29 align=right x:num>Tb Abdul Jalal</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>331027</td>
+  <td class=xl29 align=right x:num>Uyu Maulidah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>331084</td>
+  <td class=xl29 align=right x:num>Herlan Saeful Rohman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>332014</td>
+  <td class=xl29 align=right x:num>Shintawati</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>332018</td>
+  <td class=xl29 align=right x:num>Taufik Darmawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>333018</td>
+  <td class=xl29 align=right x:num>Isa Faisal</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>334003</td>
+  <td class=xl29 align=right x:num>Rahmat Budiman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>333031</td>
+  <td class=xl29 align=right x:num>Tatep Nurkomarudin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>333009</td>
+  <td class=xl29 align=right x:num>Wirdan Regiyandi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>331053</td>
+  <td class=xl29 align=right x:num>Agus Rahmanudin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>331096</td>
+  <td class=xl29 align=right x:num>Arya Rajab Munggaran</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>331064</td>
+  <td class=xl29 align=right x:num>Asep Firmansyah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>331048</td>
+  <td class=xl29 align=right x:num>Asep Muhamad Sehabudin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>331080</td>
+  <td class=xl29 align=right x:num>Badrun Anwari</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>331045</td>
+  <td class=xl29 align=right x:num>Edwin Rosandi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>53</td>
+  <td class=xl29>331052</td>
+  <td class=xl29 align=right x:num>Feri Andriawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>18</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>54</td>
+  <td class=xl29>331072</td>
+  <td class=xl29 align=right x:num>Gugi Gustaman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>55</td>
+  <td class=xl29>331059</td>
+  <td class=xl29 align=right x:num>Mohamad Tohir</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Parung Kuda</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>56</td>
+  <td class=xl29>331046</td>
+  <td class=xl29 align=right x:num>Nandang</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>57</td>
+  <td class=xl29>333035</td>
+  <td class=xl29 align=right x:num>Nendi Sutandi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>58</td>
+  <td class=xl29>333011</td>
+  <td class=xl29 align=right x:num>Solihin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>59</td>
+  <td class=xl29>331108</td>
+  <td class=xl29 align=right x:num>Sri Meiyana</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>60</td>
+  <td class=xl29>333007</td>
+  <td class=xl29 align=right x:num>Teguh Anggun Permana</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>61</td>
+  <td class=xl29>331082</td>
+  <td class=xl29 align=right x:num>Upin </td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>62</td>
+  <td class=xl29>331076</td>
+  <td class=xl29 align=right x:num>Yadi Aryadi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>63</td>
+  <td class=xl29>331077</td>
+  <td class=xl29 align=right x:num>Yusep Suhendar</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Parung Kuda</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>64</td>
+  <td class=xl29>335002</td>
+  <td class=xl29 align=right x:num>Dwi Anggara Tanjung</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >IT</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>65</td>
+  <td class=xl29>333049</td>
+  <td class=xl29 align=right x:num>Agus Muslim</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>18</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>66</td>
+  <td class=xl29>333061</td>
+  <td class=xl29 align=right x:num>Hermansyah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>18</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>67</td>
+  <td class=xl29>333046</td>
+  <td class=xl29 align=right x:num>M. Galuh Pamungkas</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>68</td>
+  <td class=xl29>333047</td>
+  <td class=xl29 align=right x:num>Pitra Apriliandi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>69</td>
+  <td class=xl29>333042</td>
+  <td class=xl29 align=right x:num>Sulaeman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>70</td>
+  <td class=xl29>333059</td>
+  <td class=xl29 align=right x:num>Taqufick Khurohman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>71</td>
+  <td class=xl29>333052</td>
+  <td class=xl29 align=right x:num>Uus Juanda</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>72</td>
+  <td class=xl29>333055</td>
+  <td class=xl29 align=right x:num>Wahyu Purnama</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>73</td>
+  <td class=xl29>331170</td>
+  <td class=xl29 align=right x:num>Aden Nurdiansyah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>74</td>
+  <td class=xl29>331157</td>
+  <td class=xl29 align=right x:num>Ahmad Solehudin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>75</td>
+  <td class=xl29>333053</td>
+  <td class=xl29 align=right x:num>Ayi Supriadi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>76</td>
+  <td class=xl29>331169</td>
+  <td class=xl29 align=right x:num>Dede Sobari</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>77</td>
+  <td class=xl29>331164</td>
+  <td class=xl29 align=right x:num>Dwi Haryono</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Parung Kuda</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>78</td>
+  <td class=xl29>334014</td>
+  <td class=xl29 align=right x:num>Elis Sri Rahayu</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>79</td>
+  <td class=xl29>331158</td>
+  <td class=xl29 align=right x:num>Erni Rahmawati</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>80</td>
+  <td class=xl29>331156</td>
+  <td class=xl29 align=right x:num>Fahruli Munar</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>81</td>
+  <td class=xl29>331133</td>
+  <td class=xl29 align=right x:num>Githa Destianawati</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>82</td>
+  <td class=xl29>331149</td>
+  <td class=xl29 align=right x:num>Husen Sanjaya</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>83</td>
+  <td class=xl29>331161</td>
+  <td class=xl29 align=right x:num>Irpan Andriansah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>84</td>
+  <td class=xl29>333067</td>
+  <td class=xl29 align=right x:num>Kun Kun Kurnia</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>85</td>
+  <td class=xl29>331118</td>
+  <td class=xl29 align=right x:num>Neng Intan Lestari</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>86</td>
+  <td class=xl29>331163</td>
+  <td class=xl29 align=right x:num>Oman Suparman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Parung Kuda</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>87</td>
+  <td class=xl29>331154</td>
+  <td class=xl29 align=right x:num>Risa Trisnawati</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>88</td>
+  <td class=xl29>333054</td>
+  <td class=xl29 align=right x:num>San San Habibi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>89</td>
+  <td class=xl29>331148</td>
+  <td class=xl29 align=right x:num>Siti Yuliz Azzahra</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>90</td>
+  <td class=xl29>334025</td>
+  <td class=xl29 align=right x:num>Nasrun Subakti</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>91</td>
+  <td class=xl29>334026</td>
+  <td class=xl29 align=right x:num>Yogi Pratama</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>92</td>
+  <td class=xl29>334019</td>
+  <td class=xl29 align=right x:num>Desti Candra Dewi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>93</td>
+  <td class=xl29>334028</td>
+  <td class=xl29 align=right x:num>Ega Prayoga</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>94</td>
+  <td class=xl29>333072</td>
+  <td class=xl29 align=right x:num>Iyus Rusmana</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>95</td>
+  <td class=xl29>332022</td>
+  <td class=xl29 align=right x:num>Widi Mulyadi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>96</td>
+  <td class=xl29>331187</td>
+  <td class=xl29 align=right x:num>Alda Sinabela Pakpahan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>97</td>
+  <td class=xl29>331195</td>
+  <td class=xl29 align=right x:num>Arief Rahman Hakim</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>98</td>
+  <td class=xl29>331199</td>
+  <td class=xl29 align=right x:num>Asep Mustopa</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>99</td>
+  <td class=xl29>331198</td>
+  <td class=xl29 align=right x:num>Ayu Agita Sari</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>100</td>
+  <td class=xl29>331183</td>
+  <td class=xl29 align=right x:num>Budi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>101</td>
+  <td class=xl29>331208</td>
+  <td class=xl29 align=right x:num>Dadam Ramdani</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>102</td>
+  <td class=xl29>331179</td>
+  <td class=xl29 align=right x:num>Devi Firmansyah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>103</td>
+  <td class=xl29>331204</td>
+  <td class=xl29 align=right x:num>Elin Herlina</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>104</td>
+  <td class=xl29>331219</td>
+  <td class=xl29 align=right x:num>Erma Yunita</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>105</td>
+  <td class=xl29>331202</td>
+  <td class=xl29 align=right x:num>Iman Gunawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>106</td>
+  <td class=xl29>331186</td>
+  <td class=xl29 align=right x:num>Januar Pribadi Yusuf</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>107</td>
+  <td class=xl29>331215</td>
+  <td class=xl29 align=right x:num>Juhendi Mulyadi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>108</td>
+  <td class=xl29>331210</td>
+  <td class=xl29 align=right x:num>Mario Sapandi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>109</td>
+  <td class=xl29>331190</td>
+  <td class=xl29 align=right x:num>Mira Harini</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>110</td>
+  <td class=xl29>331213</td>
+  <td class=xl29 align=right x:num>Restu Kurnia Putra</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>111</td>
+  <td class=xl29>331194</td>
+  <td class=xl29 align=right x:num>Ridwan Nurfallah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Parung Kuda</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>112</td>
+  <td class=xl29>331196</td>
+  <td class=xl29 align=right x:num>Rojudin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Parung Kuda</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>113</td>
+  <td class=xl29>331205</td>
+  <td class=xl29 align=right x:num>Suhaipullah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>114</td>
+  <td class=xl29>331209</td>
+  <td class=xl29 align=right x:num>Totoh Abdul Fatah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>115</td>
+  <td class=xl29>331192</td>
+  <td class=xl29 align=right x:num>Ujang Wahyudin</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>116</td>
+  <td class=xl29>331203</td>
+  <td class=xl29 align=right x:num>Use Romansyah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Parung Kuda</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>117</td>
+  <td class=xl29>331216</td>
+  <td class=xl29 align=right x:num>Yogi Mulgiansyah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>118</td>
+  <td class=xl29>331222</td>
+  <td class=xl29 align=right x:num>Yudi Juliansah</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>119</td>
+  <td class=xl29>333080</td>
+  <td class=xl29 align=right x:num>Adi Rohandi</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>18</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>120</td>
+  <td class=xl29>333085</td>
+  <td class=xl29 align=right x:num>Cece Iskandar</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>121</td>
+  <td class=xl29>333077</td>
+  <td class=xl29 align=right x:num>Muhamad Ridwan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>122</td>
+  <td class=xl29>333076</td>
+  <td class=xl29 align=right x:num>Nanang Permana</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>123</td>
+  <td class=xl29>333079</td>
+  <td class=xl29 align=right x:num>Rusly Setiawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>124</td>
+  <td class=xl29>333087</td>
+  <td class=xl29 align=right x:num>Saepul Muharom</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>125</td>
+  <td class=xl29>333086</td>
+  <td class=xl29 align=right x:num>Yogi Priatna</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>126</td>
+  <td class=xl29>331233</td>
+  <td class=xl29 align=right x:num>Agus Mulyana</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>127</td>
+  <td class=xl29>331235</td>
+  <td class=xl29 align=right x:num>Ahsan Faturohman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>128</td>
+  <td class=xl29>331226</td>
+  <td class=xl29 align=right x:num>Bayu Anggara</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>129</td>
+  <td class=xl29>331234</td>
+  <td class=xl29 align=right x:num>Dede Yusup</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Tanggeung</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>130</td>
+  <td class=xl29>331122</td>
+  <td class=xl29 align=right x:num>Deni Iskandar</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>131</td>
+  <td class=xl29>331225</td>
+  <td class=xl29 align=right x:num>Irwan Hermawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>132</td>
+  <td class=xl29>331240</td>
+  <td class=xl29 align=right x:num>Moch Rizky Ali</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>133</td>
+  <td class=xl29>331239</td>
+  <td class=xl29 align=right x:num>Odikman Pane</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Pelabuhan Ratu</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>134</td>
+  <td class=xl29>333074</td>
+  <td class=xl29 align=right x:num>Rivaldi Rahman</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>135</td>
+  <td class=xl29>331223</td>
+  <td class=xl29 align=right x:num>Saepul Aj</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>136</td>
+  <td class=xl29>331238</td>
+  <td class=xl29 align=right x:num>Yana Sofyana</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SMI SB Cianjur</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>137</td>
+  <td class=xl29>331227</td>
+  <td class=xl29 align=right x:num>Yudi Rusmawan</td>
+  <td class=xl29 align=right x:num>SUKABUMI</td>
+  <td class=xl29 align=right >SUKABUMI Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=74 style='width:34pt'></td>
+  <td width=74 style='width:290pt'></td>
+  <td width=74 style='width:41pt'></td>
+  <td width=74 style='width:41pt'></td>
+  <td width=74 style='width:41pt'></td>
+  <td width=74 style='width:41pt'></td>
+  <td width=74 style='width:41pt'></td>
+  <td width=74 style='width:41pt'></td>
+    <td width=74 style='width:41pt'></td>
+<td width=74 style='width:41pt'></td>
+<td width=74 style='width:41pt'></td>
+<td width=74 style='width:41pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+
+</body>
+			
+</html>
+
+

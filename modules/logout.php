@@ -64,12 +64,10 @@ $smarty->assign ("DIR_JS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']
 
 			$sql="INSERT INTO tbl_sys_history_log_user (log_user_id, log_logout_date, log_logout_host)  VALUES ('$user_id','$date_now','$ip_now') ";
 			$db->Execute($sql);
-
-
-				$sql2="INSERT INTO tbl_log (url, waktu,   module, user_id )  VALUES ('$ip_now',now(),'Keluar Aplikasi','$user_id') ";
-				$db->Execute($sql2);
+			$sql2="INSERT INTO tbl_log (url, waktu,   module, user_id )  VALUES ('$ip_now',now(),'Keluar Aplikasi','$user_id') ";
+			$db->Execute($sql2);
 			
-		$TARGET	= $HREF_HOME."/index2.php";
+		$TARGET	= $HREF_HOME."/index.php";
 
 		$_SESSION['UID']='';
 		unset($_SESSION['LANG']);
@@ -77,10 +75,13 @@ $smarty->assign ("DIR_JS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']
 		unset($_SESSION['UID']);
 		unset($_SESSION['SESSION_TAHUN']);
 		unset($_SESSION['SESSION_JNS_JLN']);
-		unset($_SESSION['SESSION_NO_PROPINSI']);
-		unset($_SESSION['SESSION_NO_KABUPATEN']);
-
-		session_unset();
+                unset($_SESSION['SESSION_BULAN']);
+                unset($_SESSION['SESSION_JNS_USER']);
+                unset($_SESSION['SESSION_KODE_CABANG']);
+                unset($_SESSION['SESSION_ID_PEG']);
+                unset($_SESSION['SESSION_NAMA']);
+ 
+                session_unset();
 		session_destroy();
 ?>
 

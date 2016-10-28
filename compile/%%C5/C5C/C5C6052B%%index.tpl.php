@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2016-05-17 11:41:42
+<?php /* Smarty version 2.6.18, created on 2016-10-20 04:34:32
          compiled from defaults/modules/administrasi_sistem/user_privileges/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'defaults/modules/administrasi_sistem/user_privileges/index.tpl', 93, false),array('modifier', 'upper', 'defaults/modules/administrasi_sistem/user_privileges/index.tpl', 95, false),)), $this); ?>
@@ -104,7 +104,7 @@ function hideIt(){
 /layout/columns.gif" align="absmiddle" border="0"> <?php echo $this->_tpl_vars['TABLE_NAME']; ?>
 </td></tr>
 		<tr><td class="alt2" style="padding:0px;">
-		<table width="100%">
+		<table width="30%">
 		<TR>
 			<th class="tdatahead" align="left">No Urut</th>
 			<TH class="tdatahead" align="left">ID Pengguna</TH>
@@ -142,7 +142,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 </td>
 			<TD class="tdatacontent"><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['user_id'])) ? $this->_run_mod_handler('upper', true, $_tmp) : smarty_modifier_upper($_tmp)); ?>
 </TD>
-			<TD class="tdatacontent"><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['user_full_name'])) ? $this->_run_mod_handler('upper', true, $_tmp) : smarty_modifier_upper($_tmp)); ?>
+			<TD class="tdatacontent"><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['user_first_name'])) ? $this->_run_mod_handler('upper', true, $_tmp) : smarty_modifier_upper($_tmp)); ?>
 </TD>
 			<td width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER="0" ALT="<?php echo $this->_tpl_vars['EDIT']; ?>

@@ -1,0 +1,790 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=14 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->REKAP PEGAWAI </td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=14 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=14 height=21 class=xl36 style='height:15.75pt'>CABANG  : </td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td colspan=14 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>NIP</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=82 style='width:25pt'>JABATAN</td>
+    <td class=xl27 width=82 style='width:25pt'>LEVEL JABATAN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS PEGAWAI</td>
+    <td class=xl27 width=98 style='width:50pt'>AWAL KONTRAK</td> 
+    <td class=xl27 width=57 style='width:25pt'>AKHIR KONTRAK</td>
+     <td class=xl27 width=57 style='width:25pt'>NO REK</td>
+      <td class=xl27 width=57 style='width:25pt'>SHIFT</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>010941531</td>
+  <td class=xl29 align=right x:num>233061</td>
+  <td class=xl29 align=right x:num>Achmad Muchlisin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-05-26</td>
+  <td class=xl29 align=right >2017-10-24</td>
+  <td class=xl29 align=right >701258241200</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>130951533</td>
+  <td class=xl29 align=right x:num>231020</td>
+  <td class=xl29 align=right x:num>Ade Kurniawan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-04-13</td>
+  <td class=xl29 align=right >2016-10-13</td>
+  <td class=xl29 align=right >700495616200</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>160650972</td>
+  <td class=xl29 align=right x:num>321411</td>
+  <td class=xl29 align=right x:num>Ahmad Kasiron</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TSK SB Ciamis</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-10</td>
+  <td class=xl29 align=right >2016-10-09</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>111241731</td>
+  <td class=xl29 align=right x:num>293013</td>
+  <td class=xl29 align=right x:num>Andi Fauzi</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MAGELANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-10-15</td>
+  <td class=xl29 align=right >2016-10-16</td>
+  <td class=xl29 align=right >519 01 13615 11 2</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>130951549</td>
+  <td class=xl29 align=right x:num>231013</td>
+  <td class=xl29 align=right x:num>Andika Kusuma Perdana</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2016-10-05</td>
+  <td class=xl29 align=right >701259731500</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>150650992</td>
+  <td class=xl29 align=right x:num>321318</td>
+  <td class=xl29 align=right x:num>Aringgi Yanuar Putri</td>
+  <td class=xl29 align=right >TASIKMALAYA</td>
+  <td class=xl29 align=right >TASIK CABANG</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2015-04-24</td>
+  <td class=xl29 align=right >2016-10-27</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>16100103222222</td>
+  <td class=xl29 align=right x:num>222222</td>
+  <td class=xl29 align=right x:num>demo</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Web Developer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >VERIFIKASI</td>
+  <td class=xl29 align=right >2016-10-05</td>
+  <td class=xl29 align=right >2016-10-31</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Pusat Reguler===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>16100102111111</td>
+  <td class=xl29 align=right x:num>111111</td>
+  <td class=xl29 align=right x:num>DEMO2</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Capability & Training Manager</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >TETAP</td>
+  <td class=xl29 align=right >2016-10-05</td>
+  <td class=xl29 align=right >2016-10-19</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Pusat Reguler===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>16100101123123</td>
+  <td class=xl29 align=right x:num>123123</td>
+  <td class=xl29 align=right x:num>DEMO3</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >HGL Manager</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-10-17</td>
+  <td class=xl29 align=right >2016-10-20</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Pusat Reguler===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>120120033</td>
+  <td class=xl29 align=right x:num>302077</td>
+  <td class=xl29 align=right x:num>Dian Pardiana</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Internal Control</td>
+  <td class=xl29 align=right >Chief Department Senior</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2015-04-03</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right >701867172400</td>
+  <td class=xl29 align=right >Pusat Reguler===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>130951574</td>
+  <td class=xl29 align=right x:num>231171</td>
+  <td class=xl29 align=right x:num>Didy Susanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-10-23</td>
+  <td class=xl29 align=right >2017-10-23</td>
+  <td class=xl29 align=right >760850340100</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>130952664</td>
+  <td class=xl29 align=right x:num>231009</td>
+  <td class=xl29 align=right x:num>Edi Gunawan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-10-13</td>
+  <td class=xl29 align=right >2017-10-13</td>
+  <td class=xl29 align=right >760851062700</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>160808040001</td>
+  <td class=xl29 align=right x:num>253083</td>
+  <td class=xl29 align=right x:num>Eko Indriyanto</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PATI Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >VERIFIKASI</td>
+  <td class=xl29 align=right >2016-08-23</td>
+  <td class=xl29 align=right >2016-10-31</td>
+  <td class=xl29 align=right >703525866600</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>141221767</td>
+  <td class=xl29 align=right x:num>294011</td>
+  <td class=xl29 align=right x:num>Franto Suratman</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MGL SB PURWOREJO</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-10-10</td>
+  <td class=xl29 align=right >2016-10-10</td>
+  <td class=xl29 align=right >983 01 01729 16 1</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>160903052738</td>
+  <td class=xl29 align=right x:num>341157</td>
+  <td class=xl29 align=right x:num>GM KOESMANADHINATA</td>
+  <td class=xl29 align=right >SUBANG</td>
+  <td class=xl29 align=right >SBG SB Purwakarta</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >MD Supervisor Junior</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>130110053</td>
+  <td class=xl29 align=right x:num>002021</td>
+  <td class=xl29 align=right x:num>Hargianto</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Accounting Manager</td>
+  <td class=xl29 align=right >Junior Manager</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-04-23</td>
+  <td class=xl29 align=right >2016-10-23</td>
+  <td class=xl29 align=right >701866647100</td>
+  <td class=xl29 align=right >Pusat Reguler===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>110250328</td>
+  <td class=xl29 align=right x:num>301315</td>
+  <td class=xl29 align=right x:num>Harmono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Team Leader Sales</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-04-13</td>
+  <td class=xl29 align=right >2016-10-13</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>160808050001</td>
+  <td class=xl29 align=right x:num>251292</td>
+  <td class=xl29 align=right x:num>Nahrul Ulum</td>
+  <td class=xl29 align=right >PATI</td>
+  <td class=xl29 align=right >PTI SB Kudus</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >VERIFIKASI</td>
+  <td class=xl29 align=right >2016-08-22</td>
+  <td class=xl29 align=right >2016-10-31</td>
+  <td class=xl29 align=right >703534005600</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>160910032744</td>
+  <td class=xl29 align=right x:num>272060</td>
+  <td class=xl29 align=right x:num>Nur Siti Robiah</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Admin Data Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >VERIFIKASI</td>
+  <td class=xl29 align=right >2016-09-10</td>
+  <td class=xl29 align=right >2016-10-22</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>160910052749</td>
+  <td class=xl29 align=right x:num>271216</td>
+  <td class=xl29 align=right x:num>Nyarwanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >VERIFIKASI</td>
+  <td class=xl29 align=right >2016-09-15</td>
+  <td class=xl29 align=right >2016-10-27</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>160122718</td>
+  <td class=xl29 align=right x:num>004023</td>
+  <td class=xl29 align=right x:num>Rachmat</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Staff GA</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >VERIFIKASI</td>
+  <td class=xl29 align=right >2016-08-08</td>
+  <td class=xl29 align=right >2016-10-04</td>
+  <td class=xl29 align=right >703481377800</td>
+  <td class=xl29 align=right >Pusat Reguler===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>000003052736</td>
+  <td class=xl29 align=right x:num>341158</td>
+  <td class=xl29 align=right x:num>riky julianto</td>
+  <td class=xl29 align=right >SUBANG</td>
+  <td class=xl29 align=right >SBG SB Purwakarta</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Motoris</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right >0550855330</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>130110089</td>
+  <td class=xl29 align=right x:num>002018</td>
+  <td class=xl29 align=right x:num>Sarwoko</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Accounting Coordinator</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-07-23</td>
+  <td class=xl29 align=right >2016-10-23</td>
+  <td class=xl29 align=right >701867308500</td>
+  <td class=xl29 align=right >Pusat Reguler===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>101241820</td>
+  <td class=xl29 align=right x:num>293008</td>
+  <td class=xl29 align=right x:num>Sudirman</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MAGELANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2015-10-03</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right >519 01 00777 11 1</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>000003042740</td>
+  <td class=xl29 align=right x:num>341390</td>
+  <td class=xl29 align=right x:num>supandi</td>
+  <td class=xl29 align=right >SUBANG</td>
+  <td class=xl29 align=right >SUBANG Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Crossdock</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right >0550855330</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>000003052738</td>
+  <td class=xl29 align=right x:num>341156</td>
+  <td class=xl29 align=right x:num>trias ramdhani</td>
+  <td class=xl29 align=right >SUBANG</td>
+  <td class=xl29 align=right >SUBANG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right >2016-10-03</td>
+  <td class=xl29 align=right >0550855330</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>131251828</td>
+  <td class=xl29 align=right x:num>291029</td>
+  <td class=xl29 align=right x:num>Untoro Dwi Asmoro</td>
+  <td class=xl29 align=right >MAGELANG</td>
+  <td class=xl29 align=right >MGL SB PURWOREJO</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-04-20</td>
+  <td class=xl29 align=right >2016-10-20</td>
+  <td class=xl29 align=right >983 01 01043 16 7</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>160252724</td>
+  <td class=xl29 align=right x:num>301536</td>
+  <td class=xl29 align=right x:num>Vicky Rizki Nanjar</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MR Ciparay</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >VERIFIKASI</td>
+  <td class=xl29 align=right >2016-09-08</td>
+  <td class=xl29 align=right >2016-10-26</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>160910052751</td>
+  <td class=xl29 align=right x:num>271217</td>
+  <td class=xl29 align=right x:num>Vita Pamungkasari</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >VERIFIKASI</td>
+  <td class=xl29 align=right >2016-09-17</td>
+  <td class=xl29 align=right >2016-10-29</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'></td>
+  <td class=xl29></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >JML KARYAWAN : 29</td>
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=14 width=80 clospan= style='width:41pt'></td></tr>
+ <![endif]>
+</table>
+
+
+</body>			
+</html>
+
+

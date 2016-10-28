@@ -174,7 +174,7 @@ jQuery().ready(function(){
 <!--<span id="countdown" style="color:red;">TimeOut # <b class=countdown secs="300">00:00:00</b></span>-->
 <ul>
 	<li><a class="menu-tree" href="main.frame.php" target="mainFrame" title="Home"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/home.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Halaman Utama</A></li>
-	<li><a class="menu-tree" href="edit.profile.php?user_id=<!--{$USER_ID}-->" target="mainFrame" title="Edit Your Profile"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Ubah Profil Anda</A></li>				
+	<li><a class="menu-tree" href="edit.profile.php?user_id=<!--{$USER_ID}-->" target="mainFrame" title="Edit Your Profile"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Ubah Password</A></li>				
 </ul>
 
 <ul id="theMenu">

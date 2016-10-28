@@ -62,43 +62,78 @@ $sql .="WHERE user_id = '$id' ";
 $sqlresult = $db->Execute($sql);
 
 
- $ip_now = $_SERVER['REMOTE_ADDR'];
- $user_id = base64_decode($_SESSION['UID']);
- $sql2="INSERT INTO tbl_log (url, waktu, module, user_id )  VALUES ('$ip_now',now(),'Hapus data >> User','$user_id') ";
- $db->Execute($sql2);
 
 
 }
 
-function edit_($first_name, $last_name, $address, $telp, $gender, $email, $id, $password, $status, $level, $no_propinsi, $no_kabupaten){
+//function edit_($first_name, $last_name, $address, $telp, $gender, $email, $id, $password, $status, $level, $no_propinsi, $no_kabupaten){
+function edit_($user_id,$first_name, $last_name,$id_pegawai, $address, $telp, $gender, $email, $id, $password, $user_status, $jns_user,$kode_cabang,$group_user){
+
 global $db;
 global $tbl_name;
 global $field_name;
 
-
+$nama =$_POST[user_first_name];
+ $nama_ = explode(' ', $nama);
+                                $nama1 = $nama_[0];
+                                $nama2= $nama_[1];
+                                $nama3= $nama_[2];
 $sql  ="UPDATE ".$tbl_name." ";
-$sql .="SET user_first_name='".strip_tags(strtoupper($first_name))."',user_last_name='".strip_tags(strtoupper($last_name))."',user_address='".strip_tags($address)."',user_telp='".strip_tags($telp)."',user_gender='".strip_tags($gender)."', user_email='".$email."', user_password='".strip_tags(base64_encode($password))."', user_active_status='".strip_tags($status)."', ";
-$sql .="level= '$_POST[jenis_user]', no_propinsi='".$no_propinsi."', no_kabupaten='".$no_kabupaten."', kode_perwakilan='$_POST[kode_perwakilan]'  WHERE user_id = '".strip_tags($id)."' ";
+$sql .="SET user_first_name='".strip_tags(strtoupper($nama1))."',"
+        . "user_last_name='".strip_tags(strtoupper($nama2))."',"
+        . "id_pegawai='$_POST[id_pegawai]',"
+        . "user_date_join=now(),"
+        . "user_address='".strip_tags($_POST[user_address])."',"
+        . "user_telp='$_POST[user_telp]',"
+        . "user_gender='".strip_tags($_POST[user_gender])."', "
+        . "user_email='$_POST[user_email]',"
+        . "user_password='".strip_tags(base64_encode($_POST[user_password]))."',"
+        . "user_active_status='$_POST[user_status]',"
+        . "level ='$_POST[jns_user]',"
+        . "kode_cabang ='$_POST[kode_cabang]',"
+        . "group_user ='$_POST[group_user]'";
+$sql .=" WHERE user_id = '$_POST[user_id]' ";
+
 $sqlresult = $db->Execute($sql);
 
 
- $ip_now = $_SERVER['REMOTE_ADDR'];
- $user_id = base64_decode($_SESSION['UID']);
- $sql2="INSERT INTO tbl_log (url, waktu, module, user_id )  VALUES ('$ip_now',now(),'Ubah data >> User','$user_id') ";
- $db->Execute($sql2);
-
-
 
 }
 
-function create_($first_name, $last_name, $address, $telp, $gender, $email, $id, $password, $status, $level, $no_propinsi, $no_kabupaten){
+//function create_($first_name, $last_name, $address, $telp, $gender, $email, $id, $password, $status, $level )
+function create_($user_id,$first_name, $last_name,$id_pegawai, $address, $telp, $gender, $email, $id, $password, $user_status, $jns_user,$kode_cabang,$group_user )
+ {
 global $db;
 global $tbl_name;
 global $field_name;
 
+$nama =$_POST[user_first_name];
+ $nama_ = explode(' ', $nama);
+                                $nama1 = $nama_[0];
+                                $nama2= $nama_[1];
+                                $nama3= $nama_[2];
+
+
 $sql	 = "INSERT INTO ".$tbl_name." ";
-$sql	.= "(user_id, user_password, user_first_name, user_last_name, user_date_join, user_address, user_telp, user_gender, user_email, user_active_status, level, no_propinsi, no_kabupaten,kode_perwakilan) ";
-$sql	.= "VALUES ('".strip_tags($id)."','".strip_tags(base64_encode($password))."', '".strip_tags(strtoupper($first_name))."','".strip_tags(strtoupper($last_name))."', now(), '".strip_tags($address)."', '".strip_tags($telp)."', '".strip_tags($gender)."','".$email."', '".$status."', '$_POST[jenis_user]', '".$no_propinsi."', '".$no_kabupaten."','$_POST[kode_perwakilan]')";
+$sql	.= "(user_id, user_password, user_first_name, user_last_name, id_pegawai,user_date_join, user_address, user_telp, user_gender, user_email, user_active_status, level,user_current_login_date,user_current_login_host,kode_cabang,group_user) ";
+$sql	.= "VALUES ('$_POST[user_id]',"
+        . "'".strip_tags(base64_encode($_POST[user_password]))."',"
+        . " '".strip_tags(strtoupper($nama1))."',"
+        . "'".strip_tags(strtoupper($nama2))."',"
+        . "'$_POST[id_pegawai]', "
+        . "now(), "
+        . "'$_POST[user_address]',"
+        . " '$_POST[user_telp]', "
+        . "'$_POST[user_gender]',"
+        . "'$_POST[user_email]', "
+        . "'$_POST[user_status]',"
+        . "'$_POST[jns_user]',"
+        . " now(),"
+         . " now(),"
+        . "'$_POST[kode_cabang]',"
+        . "'$_POST[group_user]')";
+
+//var_dump($sql)or die();
 $sqlresult = $db->Execute($sql);
 
  $ip_now = $_SERVER['REMOTE_ADDR'];

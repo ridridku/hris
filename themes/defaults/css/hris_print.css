@@ -1,0 +1,47 @@
+BODY {
+    FONT-SIZE: 9pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana, Helvetica, Times New Roman;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-ALIGN: justify;
+}
+
+TD {
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+}
+
+.bdr {
+	border-bottom: #330000 1px solid;
+	border-right: #330000 1px solid;
+	border-top: #ffffff 1px solid;
+	border-left: #ffffff 1px solid;
+}
+
+H1 {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+}
+
+.head2 {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana, Helvetica, Times New Roman;
+}
+
+H3 {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana, Helvetica, Times New Roman;
+}
+
+OL {
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana, Helvetica, Times New Roman;
+}

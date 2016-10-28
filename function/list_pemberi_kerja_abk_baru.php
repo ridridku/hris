@@ -292,8 +292,8 @@ $sql="select * , nm_perwakilan , nama_jenis_wni as nama_jenis ,tbl_wni.nama as n
 
 if ($pil !="") {
 	
-				if ($pil==1) {
-			$sql.=" and tbl_wni.nama LIKE '%".addslashes($cari)."%' ";
+		if ($pil==1) {
+                $sql.=" and tbl_wni.nama LIKE '%".addslashes($cari)."%' ";
 		} 
 		if ($pil==2) {
 			$sql .= "AND kode_form_pengaduan = '".$cari."' ";
@@ -303,7 +303,6 @@ if ($pil !="") {
 			$sql .= "AND tbl_wni.no_paspor = '".addslashes($cari)."' ";
  
 		}
-
 		if ($pil==4) { //paspor
 			$sql .= "AND tbl_wni.kode_wni = '".addslashes(trim($cari))."' ";
 		}

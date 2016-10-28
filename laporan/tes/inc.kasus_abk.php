@@ -1,4 +1,4 @@
-<?
+<?PHP
 
 function print_header($nm_perwakilan,$tahun) {
 

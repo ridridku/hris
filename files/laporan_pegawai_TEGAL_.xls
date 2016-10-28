@@ -1,0 +1,3175 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=14 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->REKAP PEGAWAI </td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=14 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=14 height=21 class=xl36 style='height:15.75pt'>CABANG  : TEGAL</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td colspan=14 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>NIP</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=82 style='width:25pt'>JABATAN</td>
+    <td class=xl27 width=82 style='width:25pt'>LEVEL JABATAN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS PEGAWAI</td>
+    <td class=xl27 width=98 style='width:50pt'>AWAL KONTRAK</td> 
+    <td class=xl27 width=57 style='width:25pt'>AKHIR KONTRAK</td>
+     <td class=xl27 width=57 style='width:25pt'>NO REK</td>
+      <td class=xl27 width=57 style='width:25pt'>SHIFT</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>130921527</td>
+  <td class=xl29 align=right x:num>234010</td>
+  <td class=xl29 align=right x:num>Aan Gunadi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350146468118</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>150951528</td>
+  <td class=xl29 align=right x:num>231168</td>
+  <td class=xl29 align=right x:num>Abdul Khakim</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310105405182</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>130951529</td>
+  <td class=xl29 align=right x:num>231027</td>
+  <td class=xl29 align=right x:num>Abdul matin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350155116114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>130911530</td>
+  <td class=xl29 align=right x:num>233019</td>
+  <td class=xl29 align=right x:num>Achmad Chumaedi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350146166114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>010941531</td>
+  <td class=xl29 align=right x:num>233061</td>
+  <td class=xl29 align=right x:num>Achmad Muchlisin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310102918160</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>160951532</td>
+  <td class=xl29 align=right x:num>231225</td>
+  <td class=xl29 align=right x:num>Adam Wibowo</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703245438700</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>130951533</td>
+  <td class=xl29 align=right x:num>231020</td>
+  <td class=xl29 align=right x:num>Ade Kurniawan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0420100792163</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>120951534</td>
+  <td class=xl29 align=right x:num>233059</td>
+  <td class=xl29 align=right x:num>Aenur Mahdin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104447181</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>010951535</td>
+  <td class=xl29 align=right x:num>231193</td>
+  <td class=xl29 align=right x:num>Agus Haryanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350178954119</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>100951536</td>
+  <td class=xl29 align=right x:num>231088</td>
+  <td class=xl29 align=right x:num>Agus Riyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350109394112</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>130941537</td>
+  <td class=xl29 align=right x:num>233025</td>
+  <td class=xl29 align=right x:num>Agus Soleh Hendro</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350151185111</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>140951538</td>
+  <td class=xl29 align=right x:num>231025</td>
+  <td class=xl29 align=right x:num>Agus Wildan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350164428118</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>080951539</td>
+  <td class=xl29 align=right x:num>231097</td>
+  <td class=xl29 align=right x:num>Agus Windono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420102484182</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>100941540</td>
+  <td class=xl29 align=right x:num>233008</td>
+  <td class=xl29 align=right x:num>Ahmad Husen</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350107501111</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>140951541</td>
+  <td class=xl29 align=right x:num>231107</td>
+  <td class=xl29 align=right x:num>Ahmad Muzani</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350166141110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>100951542</td>
+  <td class=xl29 align=right x:num>231086</td>
+  <td class=xl29 align=right x:num>Ahmad Riyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310103949180</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>140951543</td>
+  <td class=xl29 align=right x:num>231104</td>
+  <td class=xl29 align=right x:num>Akhmad Wildan Khasani</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2290110961187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>090951544</td>
+  <td class=xl29 align=right x:num>231080</td>
+  <td class=xl29 align=right x:num>Akhmad Zaenudin </td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105301117</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>100951545</td>
+  <td class=xl29 align=right x:num>231085</td>
+  <td class=xl29 align=right x:num>Ali Faizin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350106694115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>160951546</td>
+  <td class=xl29 align=right x:num>231226</td>
+  <td class=xl29 align=right x:num>Ali Khumaedi Abidin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>090951547</td>
+  <td class=xl29 align=right x:num>231078</td>
+  <td class=xl29 align=right x:num>Ali Mufti</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420104000188</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>130941548</td>
+  <td class=xl29 align=right x:num>233039</td>
+  <td class=xl29 align=right x:num>Amin Marzuki</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9940100419160</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>130951549</td>
+  <td class=xl29 align=right x:num>231013</td>
+  <td class=xl29 align=right x:num>Andika Kusuma Perdana</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104662189</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>140951550</td>
+  <td class=xl29 align=right x:num>231152</td>
+  <td class=xl29 align=right x:num>Andy Hartadi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310105130185</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>010951551</td>
+  <td class=xl29 align=right x:num>231192</td>
+  <td class=xl29 align=right x:num>Angga Sudarmoko</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350178955115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>100951552</td>
+  <td class=xl29 align=right x:num>231081</td>
+  <td class=xl29 align=right x:num>Arfin Noval</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105164117</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>140941553</td>
+  <td class=xl29 align=right x:num>233062</td>
+  <td class=xl29 align=right x:num>Ari Purnomo Aji</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9940100635164</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>090942651</td>
+  <td class=xl29 align=right x:num>233005</td>
+  <td class=xl29 align=right x:num>Ari Widodo</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310103807184</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>130951555</td>
+  <td class=xl29 align=right x:num>231127</td>
+  <td class=xl29 align=right x:num>Arie Yodi Hufroni</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350168166116</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>120951556</td>
+  <td class=xl29 align=right x:num>231057</td>
+  <td class=xl29 align=right x:num>Arifin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350145902119</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>110951557</td>
+  <td class=xl29 align=right x:num>231092</td>
+  <td class=xl29 align=right x:num>Astri Yanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350115186117</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>140951558</td>
+  <td class=xl29 align=right x:num>231144</td>
+  <td class=xl29 align=right x:num>Azis Hidayat</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350169735112</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>120941559</td>
+  <td class=xl29 align=right x:num>233014</td>
+  <td class=xl29 align=right x:num>Bagus Prayogi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350140043114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>130921560</td>
+  <td class=xl29 align=right x:num>234009</td>
+  <td class=xl29 align=right x:num>Bambang Sutrisno</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350151048115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>160951561</td>
+  <td class=xl29 align=right x:num>231229</td>
+  <td class=xl29 align=right x:num>Bayu saputra</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>010951562</td>
+  <td class=xl29 align=right x:num>231205</td>
+  <td class=xl29 align=right x:num>Bhastian Melaz</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350184544114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>130941563</td>
+  <td class=xl29 align=right x:num>233030</td>
+  <td class=xl29 align=right x:num>Budi Ariyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310100986167</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>120952653</td>
+  <td class=xl29 align=right x:num>231046</td>
+  <td class=xl29 align=right x:num>Cariyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104364189</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>140942654</td>
+  <td class=xl29 align=right x:num>233027</td>
+  <td class=xl29 align=right x:num>Chaerudin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350170246114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>090912655</td>
+  <td class=xl29 align=right x:num>232005</td>
+  <td class=xl29 align=right x:num>Cici Cahyaningsih</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >FAS</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420103989185</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>140951567</td>
+  <td class=xl29 align=right x:num>231173</td>
+  <td class=xl29 align=right x:num>Ciptadi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310105121186</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>140941568</td>
+  <td class=xl29 align=right x:num>233053</td>
+  <td class=xl29 align=right x:num>Dani Fealgie</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350170311113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>130951569</td>
+  <td class=xl29 align=right x:num>231058</td>
+  <td class=xl29 align=right x:num>Daniar Sulaiman</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Kopasus</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104552180</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>160952657</td>
+  <td class=xl29 align=right x:num>231217</td>
+  <td class=xl29 align=right x:num>Dede Tri Restiyana</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703149315200</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>130941571</td>
+  <td class=xl29 align=right x:num>233031</td>
+  <td class=xl29 align=right x:num>Dedi Supriyono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350153057110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>150911572</td>
+  <td class=xl29 align=right x:num>232034</td>
+  <td class=xl29 align=right x:num>Devianti Kusumawardhani</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890103941160</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>160951573</td>
+  <td class=xl29 align=right x:num>231231</td>
+  <td class=xl29 align=right x:num>Dian Nailoufar</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >760869483200</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>130951574</td>
+  <td class=xl29 align=right x:num>231171</td>
+  <td class=xl29 align=right x:num>Didy Susanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350155877118</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>010942660</td>
+  <td class=xl29 align=right x:num>233069</td>
+  <td class=xl29 align=right x:num>Diky Setiadi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350179972110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>140952662</td>
+  <td class=xl29 align=right x:num>231181</td>
+  <td class=xl29 align=right x:num>Dimas Ade Pamungkas</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350171623115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>160952663</td>
+  <td class=xl29 align=right x:num>231219</td>
+  <td class=xl29 align=right x:num>Dwi Apriliyani</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703149378800</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>130952664</td>
+  <td class=xl29 align=right x:num>231009</td>
+  <td class=xl29 align=right x:num>Edi Gunawan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350156817111</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>53</td>
+  <td class=xl29>160951579</td>
+  <td class=xl29 align=right x:num>231218</td>
+  <td class=xl29 align=right x:num>Edi Yusandi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703155405300</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>54</td>
+  <td class=xl29>090911580</td>
+  <td class=xl29 align=right x:num>232026</td>
+  <td class=xl29 align=right x:num>Eka Setiawan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310100454186</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>55</td>
+  <td class=xl29>120941581</td>
+  <td class=xl29 align=right x:num>233013</td>
+  <td class=xl29 align=right x:num>Eko Ardiansyah</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350138851115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>56</td>
+  <td class=xl29>090951582</td>
+  <td class=xl29 align=right x:num>231075</td>
+  <td class=xl29 align=right x:num>Eko Ariyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310100465187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>57</td>
+  <td class=xl29>150921583</td>
+  <td class=xl29 align=right x:num>231180</td>
+  <td class=xl29 align=right x:num>Eko Prastyo</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >PGA Staff</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9930100546166</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>58</td>
+  <td class=xl29>130941584</td>
+  <td class=xl29 align=right x:num>233040</td>
+  <td class=xl29 align=right x:num>Eko Wibowo</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Gudang SENIOR</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350155873114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>59</td>
+  <td class=xl29>110951585</td>
+  <td class=xl29 align=right x:num>231049</td>
+  <td class=xl29 align=right x:num>Eko Yusriyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350118739113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>60</td>
+  <td class=xl29>110952665</td>
+  <td class=xl29 align=right x:num>231093</td>
+  <td class=xl29 align=right x:num>Eling Budi Prasetyo</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104085183</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>61</td>
+  <td class=xl29>130951587</td>
+  <td class=xl29 align=right x:num>231175</td>
+  <td class=xl29 align=right x:num>Elly lisiani</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9980100903185</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>62</td>
+  <td class=xl29>130951588</td>
+  <td class=xl29 align=right x:num>231184</td>
+  <td class=xl29 align=right x:num>Erna Setiowati</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350157255118</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>63</td>
+  <td class=xl29>080951589</td>
+  <td class=xl29 align=right x:num>261094</td>
+  <td class=xl29 align=right x:num>Esa Mishbahudin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >MD Supervisor JUNIOR</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4070102627187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>64</td>
+  <td class=xl29>150941590</td>
+  <td class=xl29 align=right x:num>233070</td>
+  <td class=xl29 align=right x:num>Eza Ismail Malik</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Internal Control</td>
+  <td class=xl29 align=right >Chief Department Junior</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890103888168</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>65</td>
+  <td class=xl29>160951591</td>
+  <td class=xl29 align=right x:num>231223</td>
+  <td class=xl29 align=right x:num>Faesal Roziq</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703215750900</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>66</td>
+  <td class=xl29>140951592</td>
+  <td class=xl29 align=right x:num>231129</td>
+  <td class=xl29 align=right x:num>Ferri Haryanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310105042188</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>67</td>
+  <td class=xl29>110942666</td>
+  <td class=xl29 align=right x:num>233020</td>
+  <td class=xl29 align=right x:num>Gandung Sarwono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350117198110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>68</td>
+  <td class=xl29>130951594</td>
+  <td class=xl29 align=right x:num>231004</td>
+  <td class=xl29 align=right x:num>Hasanudin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890101028160</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>69</td>
+  <td class=xl29>100941595</td>
+  <td class=xl29 align=right x:num>233037</td>
+  <td class=xl29 align=right x:num>Hendri Gunawan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105181119</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>70</td>
+  <td class=xl29>140951596</td>
+  <td class=xl29 align=right x:num>231140</td>
+  <td class=xl29 align=right x:num>Hernanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350169238110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>71</td>
+  <td class=xl29>130941597</td>
+  <td class=xl29 align=right x:num>233045</td>
+  <td class=xl29 align=right x:num>Husni Mubarok</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350157719112</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>72</td>
+  <td class=xl29>130911598</td>
+  <td class=xl29 align=right x:num>232011</td>
+  <td class=xl29 align=right x:num>Ida Nursanti</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin SB</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104584187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>73</td>
+  <td class=xl29>130941599</td>
+  <td class=xl29 align=right x:num>233023</td>
+  <td class=xl29 align=right x:num>Ifonda Putra  Bahrul Shodiq</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104553186</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>74</td>
+  <td class=xl29>150951600</td>
+  <td class=xl29 align=right x:num>231178</td>
+  <td class=xl29 align=right x:num>Ika Sulistiowati</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9940100677166</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>75</td>
+  <td class=xl29>110942672</td>
+  <td class=xl29 align=right x:num>233011</td>
+  <td class=xl29 align=right x:num>Imam Sugiarto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350131871114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>76</td>
+  <td class=xl29>090951602</td>
+  <td class=xl29 align=right x:num>231053</td>
+  <td class=xl29 align=right x:num>Iman Budiono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420100209188</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>77</td>
+  <td class=xl29>110951603</td>
+  <td class=xl29 align=right x:num>231035</td>
+  <td class=xl29 align=right x:num>Iman Sakbani</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104128185</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>78</td>
+  <td class=xl29>140952673</td>
+  <td class=xl29 align=right x:num>231147</td>
+  <td class=xl29 align=right x:num>Imron Rosyadi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350166191115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>79</td>
+  <td class=xl29>150951605</td>
+  <td class=xl29 align=right x:num>231189</td>
+  <td class=xl29 align=right x:num>Indri Iriyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9930100545160</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>80</td>
+  <td class=xl29>120911606</td>
+  <td class=xl29 align=right x:num>232002</td>
+  <td class=xl29 align=right x:num>Indriyawati</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104545183</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>81</td>
+  <td class=xl29>100941607</td>
+  <td class=xl29 align=right x:num>233009</td>
+  <td class=xl29 align=right x:num>Iskandar Muda</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310102348161</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>82</td>
+  <td class=xl29>100911608</td>
+  <td class=xl29 align=right x:num>232014</td>
+  <td class=xl29 align=right x:num>Ismail</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350114464114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>83</td>
+  <td class=xl29>130941609</td>
+  <td class=xl29 align=right x:num>233035</td>
+  <td class=xl29 align=right x:num>Ismail</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104628185</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>84</td>
+  <td class=xl29>130951610</td>
+  <td class=xl29 align=right x:num>231064</td>
+  <td class=xl29 align=right x:num>Iwan Setyadi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >6810100133164</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>85</td>
+  <td class=xl29>140942674</td>
+  <td class=xl29 align=right x:num>233063</td>
+  <td class=xl29 align=right x:num>Jefry Ardian</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350174859113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>86</td>
+  <td class=xl29>010951612</td>
+  <td class=xl29 align=right x:num>231194</td>
+  <td class=xl29 align=right x:num>Joko Dwi Hadiyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890102833160</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>87</td>
+  <td class=xl29>100941613</td>
+  <td class=xl29 align=right x:num>232025</td>
+  <td class=xl29 align=right x:num>Joko Indratno</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Ekspedisi</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105180113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>88</td>
+  <td class=xl29>120941614</td>
+  <td class=xl29 align=right x:num>233012</td>
+  <td class=xl29 align=right x:num>Joko Wahyu Widodo</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350138075117</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>89</td>
+  <td class=xl29>140951615</td>
+  <td class=xl29 align=right x:num>231021</td>
+  <td class=xl29 align=right x:num>Kiswanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890101433161</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>90</td>
+  <td class=xl29>090951616</td>
+  <td class=xl29 align=right x:num>231084</td>
+  <td class=xl29 align=right x:num>Lukman Angga Pria Ardanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310103778181</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>91</td>
+  <td class=xl29>130951617</td>
+  <td class=xl29 align=right x:num>231060</td>
+  <td class=xl29 align=right x:num>Lukman Hakim</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0420100410169</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>92</td>
+  <td class=xl29>110951618</td>
+  <td class=xl29 align=right x:num>231037</td>
+  <td class=xl29 align=right x:num>M Lukman Hidayat</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350117277118</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>93</td>
+  <td class=xl29>130951619</td>
+  <td class=xl29 align=right x:num>231160</td>
+  <td class=xl29 align=right x:num>M Zaki Musthofa</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350157111110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>94</td>
+  <td class=xl29>130951620</td>
+  <td class=xl29 align=right x:num>231073</td>
+  <td class=xl29 align=right x:num>M. Agung Romandila</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104606183</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>95</td>
+  <td class=xl29>150951621</td>
+  <td class=xl29 align=right x:num>231187</td>
+  <td class=xl29 align=right x:num>M. Miftakhul Ikhsan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890101440184</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>96</td>
+  <td class=xl29>110911622</td>
+  <td class=xl29 align=right x:num>232001</td>
+  <td class=xl29 align=right x:num>Maftukhati</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350128924114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>97</td>
+  <td class=xl29>140911623</td>
+  <td class=xl29 align=right x:num>232004</td>
+  <td class=xl29 align=right x:num>Maisya Afni</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Kecil</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350165506113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>98</td>
+  <td class=xl29>130941624</td>
+  <td class=xl29 align=right x:num>233033</td>
+  <td class=xl29 align=right x:num>Maulana</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9940100388165</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>99</td>
+  <td class=xl29>160951625</td>
+  <td class=xl29 align=right x:num>231224</td>
+  <td class=xl29 align=right x:num>Meta Nurul Savina</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703215906000</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>100</td>
+  <td class=xl29>110951626</td>
+  <td class=xl29 align=right x:num>231091</td>
+  <td class=xl29 align=right x:num>Miftakhul</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104062185</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>101</td>
+  <td class=xl29>160941627</td>
+  <td class=xl29 align=right x:num>233071</td>
+  <td class=xl29 align=right x:num>Miftakhul Huda</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703112576400</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>102</td>
+  <td class=xl29>080951628</td>
+  <td class=xl29 align=right x:num>231096</td>
+  <td class=xl29 align=right x:num>Moch. Ustadi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420102483186</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>103</td>
+  <td class=xl29>110951629</td>
+  <td class=xl29 align=right x:num>231038</td>
+  <td class=xl29 align=right x:num>Moh Ircham</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350118761110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>104</td>
+  <td class=xl29>140951630</td>
+  <td class=xl29 align=right x:num>231155</td>
+  <td class=xl29 align=right x:num>Moh Ridwan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350146162110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>105</td>
+  <td class=xl29>080952675</td>
+  <td class=xl29 align=right x:num>231045</td>
+  <td class=xl29 align=right x:num>Moh Yusuf</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420102505182</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>106</td>
+  <td class=xl29>150942676</td>
+  <td class=xl29 align=right x:num>233064</td>
+  <td class=xl29 align=right x:num>Moh. Arief Riesky </td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350176555113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>107</td>
+  <td class=xl29>130942677</td>
+  <td class=xl29 align=right x:num>233024</td>
+  <td class=xl29 align=right x:num>Moh. Bachrul Ulum</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350149022115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>108</td>
+  <td class=xl29>150952678</td>
+  <td class=xl29 align=right x:num>233058</td>
+  <td class=xl29 align=right x:num>Moh. Fatkhul Adam</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350176431115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>109</td>
+  <td class=xl29>150942681</td>
+  <td class=xl29 align=right x:num>233065</td>
+  <td class=xl29 align=right x:num>Moh. Taufik</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350177155110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>110</td>
+  <td class=xl29>140911636</td>
+  <td class=xl29 align=right x:num>233051</td>
+  <td class=xl29 align=right x:num>Mohamad Tohid</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9940100544169</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>111</td>
+  <td class=xl29>160941637</td>
+  <td class=xl29 align=right x:num>233072</td>
+  <td class=xl29 align=right x:num>Mohammad Waluyo</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703377190300</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>112</td>
+  <td class=xl29>130951638</td>
+  <td class=xl29 align=right x:num>231072</td>
+  <td class=xl29 align=right x:num>Muhamad Nurul Rival</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104607189</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>113</td>
+  <td class=xl29>120951639</td>
+  <td class=xl29 align=right x:num>231063</td>
+  <td class=xl29 align=right x:num>Muhammad Bakhul</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104485189</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>114</td>
+  <td class=xl29>150951640</td>
+  <td class=xl29 align=right x:num>231200</td>
+  <td class=xl29 align=right x:num>Muhammad Futoni</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350183583115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>115</td>
+  <td class=xl29>010951641</td>
+  <td class=xl29 align=right x:num>231197</td>
+  <td class=xl29 align=right x:num>Muhammad Junali</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350179129115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>116</td>
+  <td class=xl29>150951642</td>
+  <td class=xl29 align=right x:num>231206</td>
+  <td class=xl29 align=right x:num>Muhammad Yusron Mukhtarom</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105299116</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>117</td>
+  <td class=xl29>120951643</td>
+  <td class=xl29 align=right x:num>231056</td>
+  <td class=xl29 align=right x:num>Muhsin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9940100255168</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>118</td>
+  <td class=xl29>100951644</td>
+  <td class=xl29 align=right x:num>231087</td>
+  <td class=xl29 align=right x:num>Mujiyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310103977183</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>119</td>
+  <td class=xl29>080951645</td>
+  <td class=xl29 align=right x:num>231098</td>
+  <td class=xl29 align=right x:num>Muslich</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420102487180</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>120</td>
+  <td class=xl29>140951646</td>
+  <td class=xl29 align=right x:num>231128</td>
+  <td class=xl29 align=right x:num>Mustaqim</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350157064119</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>121</td>
+  <td class=xl29>160911647</td>
+  <td class=xl29 align=right x:num>232035</td>
+  <td class=xl29 align=right x:num>Niken Diah Kusumawati</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703147882000</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>122</td>
+  <td class=xl29>120941648</td>
+  <td class=xl29 align=right x:num>233018</td>
+  <td class=xl29 align=right x:num>Niko Sutama</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350145915112</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>123</td>
+  <td class=xl29>010911649</td>
+  <td class=xl29 align=right x:num>232031</td>
+  <td class=xl29 align=right x:num>Nur Hajar Noviana</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin SB</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350178973113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>124</td>
+  <td class=xl29>140951650</td>
+  <td class=xl29 align=right x:num>231149</td>
+  <td class=xl29 align=right x:num>Nur Hasan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0420100012181</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>125</td>
+  <td class=xl29>130951651</td>
+  <td class=xl29 align=right x:num>231061</td>
+  <td class=xl29 align=right x:num>Nur Iman</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350146076115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>126</td>
+  <td class=xl29>100951652</td>
+  <td class=xl29 align=right x:num>231100</td>
+  <td class=xl29 align=right x:num>Nurhadiman</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350107392114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>127</td>
+  <td class=xl29>130951653</td>
+  <td class=xl29 align=right x:num>231003</td>
+  <td class=xl29 align=right x:num>Oky Satya Nugroho</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104634186</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>128</td>
+  <td class=xl29>130951654</td>
+  <td class=xl29 align=right x:num>231065</td>
+  <td class=xl29 align=right x:num>Patoni</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890101085162</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>129</td>
+  <td class=xl29>140951655</td>
+  <td class=xl29 align=right x:num>231138</td>
+  <td class=xl29 align=right x:num>Prih Miranto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350127641111</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>130</td>
+  <td class=xl29>140951656</td>
+  <td class=xl29 align=right x:num>231146</td>
+  <td class=xl29 align=right x:num>Puji Mualim</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104955184</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>131</td>
+  <td class=xl29>130951657</td>
+  <td class=xl29 align=right x:num>231059</td>
+  <td class=xl29 align=right x:num>Purwanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104529187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>132</td>
+  <td class=xl29>090911658</td>
+  <td class=xl29 align=right x:num>232015</td>
+  <td class=xl29 align=right x:num>Rasdiono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105175118</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>133</td>
+  <td class=xl29>140912686</td>
+  <td class=xl29 align=right x:num>232029</td>
+  <td class=xl29 align=right x:num>Rena Murakami</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >AR Control</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350174838117</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>134</td>
+  <td class=xl29>140912687</td>
+  <td class=xl29 align=right x:num>232027</td>
+  <td class=xl29 align=right x:num>Resti Tri Wahyuni</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin Claim</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9960100588163</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>135</td>
+  <td class=xl29>110952688</td>
+  <td class=xl29 align=right x:num>231039</td>
+  <td class=xl29 align=right x:num>Ridwan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Kopasus</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350123989119</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>136</td>
+  <td class=xl29>130941662</td>
+  <td class=xl29 align=right x:num>233043</td>
+  <td class=xl29 align=right x:num>Ridwan Arief Williansyah</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350155946111</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>137</td>
+  <td class=xl29>120951663</td>
+  <td class=xl29 align=right x:num>231050</td>
+  <td class=xl29 align=right x:num>Rifan Muzayyin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350140409116</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>138</td>
+  <td class=xl29>160951664</td>
+  <td class=xl29 align=right x:num>231212</td>
+  <td class=xl29 align=right x:num>Rivan Gari Pantomi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703140317900</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>139</td>
+  <td class=xl29>160951665</td>
+  <td class=xl29 align=right x:num>231227</td>
+  <td class=xl29 align=right x:num>Rizqi Prasetyo</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>140</td>
+  <td class=xl29>120941666</td>
+  <td class=xl29 align=right x:num>233001</td>
+  <td class=xl29 align=right x:num>Rokhmatulloh</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350144218119</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>141</td>
+  <td class=xl29>090951667</td>
+  <td class=xl29 align=right x:num>231076</td>
+  <td class=xl29 align=right x:num>Romi Awal Ariyadi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420100041116</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>142</td>
+  <td class=xl29>150941668</td>
+  <td class=xl29 align=right x:num>233067</td>
+  <td class=xl29 align=right x:num>Rouf Hidayat</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>143</td>
+  <td class=xl29>110951669</td>
+  <td class=xl29 align=right x:num>231042</td>
+  <td class=xl29 align=right x:num>Rusiman</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350123594118</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>144</td>
+  <td class=xl29>080941670</td>
+  <td class=xl29 align=right x:num>233003</td>
+  <td class=xl29 align=right x:num>Sabar Santoso</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420102504186</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>145</td>
+  <td class=xl29>110951671</td>
+  <td class=xl29 align=right x:num>231101</td>
+  <td class=xl29 align=right x:num>Sadali</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350115108119</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>146</td>
+  <td class=xl29>140952690</td>
+  <td class=xl29 align=right x:num>231151</td>
+  <td class=xl29 align=right x:num>Sahaf Zufroni</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350170232115</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>147</td>
+  <td class=xl29>130951673</td>
+  <td class=xl29 align=right x:num>231172</td>
+  <td class=xl29 align=right x:num>Saiful Anam</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104664181</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>148</td>
+  <td class=xl29>130941674</td>
+  <td class=xl29 align=right x:num>233038</td>
+  <td class=xl29 align=right x:num>Santoso</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>149</td>
+  <td class=xl29>010941675</td>
+  <td class=xl29 align=right x:num>233068</td>
+  <td class=xl29 align=right x:num>Sardi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890101458187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>150</td>
+  <td class=xl29>160931676</td>
+  <td class=xl29 align=right x:num>235004</td>
+  <td class=xl29 align=right x:num>Septian Raju Saputra</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >IT Supervisor SENIOR</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703215757300</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>151</td>
+  <td class=xl29>130951677</td>
+  <td class=xl29 align=right x:num>231016</td>
+  <td class=xl29 align=right x:num>Septiani Indri Astuti</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104660187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>152</td>
+  <td class=xl29>090911678</td>
+  <td class=xl29 align=right x:num>232020</td>
+  <td class=xl29 align=right x:num>Shofiyullah</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310102350168</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>153</td>
+  <td class=xl29>130911679</td>
+  <td class=xl29 align=right x:num>232019</td>
+  <td class=xl29 align=right x:num>Siri Zakiyatul Fakhiroh</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350155336112</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>154</td>
+  <td class=xl29>150952694</td>
+  <td class=xl29 align=right x:num>231204</td>
+  <td class=xl29 align=right x:num>Siti Marifatun</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350184195119</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>155</td>
+  <td class=xl29>120952695</td>
+  <td class=xl29 align=right x:num>231099</td>
+  <td class=xl29 align=right x:num>Siti Rizkilah</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420102501188</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>156</td>
+  <td class=xl29>120921682</td>
+  <td class=xl29 align=right x:num>233999</td>
+  <td class=xl29 align=right x:num>Slamet Farochi </td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104395180</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>157</td>
+  <td class=xl29>130941683</td>
+  <td class=xl29 align=right x:num>233029</td>
+  <td class=xl29 align=right x:num>Slamet Muttaqin </td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104631188</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>158</td>
+  <td class=xl29>130951684</td>
+  <td class=xl29 align=right x:num>231019</td>
+  <td class=xl29 align=right x:num>Slamet Wiranto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350162203114</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>159</td>
+  <td class=xl29>090951685</td>
+  <td class=xl29 align=right x:num>231077</td>
+  <td class=xl29 align=right x:num>Sugeng Tri Mulyono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420104005188</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>160</td>
+  <td class=xl29>100921686</td>
+  <td class=xl29 align=right x:num>234001</td>
+  <td class=xl29 align=right x:num>Sugiarno</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Kepala Cabang SENIOR</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105173116</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>161</td>
+  <td class=xl29>090911687</td>
+  <td class=xl29 align=right x:num>232013</td>
+  <td class=xl29 align=right x:num>Sugih Makmuri</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105154112</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>162</td>
+  <td class=xl29>100951688</td>
+  <td class=xl29 align=right x:num>231083</td>
+  <td class=xl29 align=right x:num>Surono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105158116</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>163</td>
+  <td class=xl29>080951689</td>
+  <td class=xl29 align=right x:num>231095</td>
+  <td class=xl29 align=right x:num>Teguh Eriyadi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420102496189</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>164</td>
+  <td class=xl29>130941690</td>
+  <td class=xl29 align=right x:num>233028</td>
+  <td class=xl29 align=right x:num>Teguh Wahyu Hidayat</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310100987163</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>165</td>
+  <td class=xl29>140951691</td>
+  <td class=xl29 align=right x:num>231159</td>
+  <td class=xl29 align=right x:num>Tomi Aryogi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890101377187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>166</td>
+  <td class=xl29>130951692</td>
+  <td class=xl29 align=right x:num>231010</td>
+  <td class=xl29 align=right x:num>Tri Sutrisno</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9980100905187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>167</td>
+  <td class=xl29>160951693</td>
+  <td class=xl29 align=right x:num>231220</td>
+  <td class=xl29 align=right x:num>Tuti Afini</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>168</td>
+  <td class=xl29>120951694</td>
+  <td class=xl29 align=right x:num>232017</td>
+  <td class=xl29 align=right x:num>Tuti Amaliyah</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Data Reporting</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350118517113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>169</td>
+  <td class=xl29>110951695</td>
+  <td class=xl29 align=right x:num>231033</td>
+  <td class=xl29 align=right x:num>Untung Apri Dani</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104084187</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>170</td>
+  <td class=xl29>130951696</td>
+  <td class=xl29 align=right x:num>233026</td>
+  <td class=xl29 align=right x:num>Wahyu Susetya</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350151203113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>171</td>
+  <td class=xl29>140941697</td>
+  <td class=xl29 align=right x:num>231186</td>
+  <td class=xl29 align=right x:num>Waridin</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350176527110</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>172</td>
+  <td class=xl29>160951698</td>
+  <td class=xl29 align=right x:num>231222</td>
+  <td class=xl29 align=right x:num>Warkomariyah</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9940100394166</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>173</td>
+  <td class=xl29>130951699</td>
+  <td class=xl29 align=right x:num>231018</td>
+  <td class=xl29 align=right x:num>Widi Asandi</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0420100779165</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>174</td>
+  <td class=xl29>140951700</td>
+  <td class=xl29 align=right x:num>231139</td>
+  <td class=xl29 align=right x:num>Widi Hantoro</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >6810100385169</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>175</td>
+  <td class=xl29>110911701</td>
+  <td class=xl29 align=right x:num>232032</td>
+  <td class=xl29 align=right x:num>Wija Aditya</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9330100374183</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>176</td>
+  <td class=xl29>080951702</td>
+  <td class=xl29 align=right x:num>231032</td>
+  <td class=xl29 align=right x:num>Winarsih</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4420102500182</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>177</td>
+  <td class=xl29>160911703</td>
+  <td class=xl29 align=right x:num>232036</td>
+  <td class=xl29 align=right x:num>Wiwik Kartika</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin SB</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703183875300</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>178</td>
+  <td class=xl29>100951704</td>
+  <td class=xl29 align=right x:num>231048</td>
+  <td class=xl29 align=right x:num>Yasir Khafid</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350105159112</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>179</td>
+  <td class=xl29>010951705</td>
+  <td class=xl29 align=right x:num>231196</td>
+  <td class=xl29 align=right x:num>Yazid</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890102978164</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>180</td>
+  <td class=xl29>140951706</td>
+  <td class=xl29 align=right x:num>231157</td>
+  <td class=xl29 align=right x:num>Yogi Febriyanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pemalang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350171630112</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>181</td>
+  <td class=xl29>110951707</td>
+  <td class=xl29 align=right x:num>231041</td>
+  <td class=xl29 align=right x:num>Yogi Setiawan</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Brebes</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350123593112</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>182</td>
+  <td class=xl29>150911708</td>
+  <td class=xl29 align=right x:num>232030</td>
+  <td class=xl29 align=right x:num>Yogo Arif Widodo</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >0890102540165</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>183</td>
+  <td class=xl29>110951709</td>
+  <td class=xl29 align=right x:num>231040</td>
+  <td class=xl29 align=right x:num>Yoko Mujiono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >2310104172184</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>184</td>
+  <td class=xl29>110951710</td>
+  <td class=xl29 align=right x:num>231001</td>
+  <td class=xl29 align=right x:num>Yosi Enggal Laksono</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TGL SB Pekalongan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >9980100819182</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>185</td>
+  <td class=xl29>160951711</td>
+  <td class=xl29 align=right x:num>231209</td>
+  <td class=xl29 align=right x:num>Yoyok Aryanto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703140303600</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>186</td>
+  <td class=xl29>130941712</td>
+  <td class=xl29 align=right x:num>233022</td>
+  <td class=xl29 align=right x:num>Yudha pradanta</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350149121113</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>187</td>
+  <td class=xl29>110951713</td>
+  <td class=xl29 align=right x:num>231036</td>
+  <td class=xl29 align=right x:num>Yudhi Furzand</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO WS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350117266117</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>188</td>
+  <td class=xl29>140951714</td>
+  <td class=xl29 align=right x:num>231126</td>
+  <td class=xl29 align=right x:num>Yulianto</td>
+  <td class=xl29 align=right >TEGAL</td>
+  <td class=xl29 align=right >TEGAL Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >5350168151111</td>
+  <td class=xl29 align=right >Cabang Reguler</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'></td>
+  <td class=xl29></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >JML KARYAWAN : 188</td>
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=14 width=80 clospan= style='width:41pt'></td></tr>
+ <![endif]>
+</table>
+
+
+</body>			
+</html>
+
+

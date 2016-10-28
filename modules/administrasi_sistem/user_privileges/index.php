@@ -144,7 +144,7 @@ $smarty->assign ("EDIT_USER_USER_NAME", $edit_user_user_name);
 $smarty->assign ("EDIT_USER_STATUS", $edit_user_status);
 $smarty->assign ("EDIT_VAL", $edit);
 			
-$sql  = "SELECT DISTINCT a.*, CONCAT(a.user_first_name, ' ', a.user_last_name) as user_full_name ";
+$sql  = "SELECT DISTINCT a.*, CONCAT(a.user_first_name,' ', a.user_last_name) as full_name ";
 $sql .= "FROM ".$tbl_name." as a ";
 $sql .= "LEFT JOIN tbl_sys_master_privileges as b ON a.user_id = b.priv_user_id ";
 $sql .= "WHERE a.user_active_status = '1' ";
@@ -154,7 +154,7 @@ if($CODE!=''){
 }
 
 if($NAME!=''){
-	$sql .= "AND a.user_first_name LIKE '%".$NAME."%' ";
+	$sql .= "AND a.user_first_name LIKE '%".$NAME."%' OR a.user_last_name LIKE '%".$NAME."%' ";
 }
 
 $sql .= "ORDER BY ".$ORDER." ".$SORT." ";

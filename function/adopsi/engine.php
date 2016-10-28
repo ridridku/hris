@@ -1,5 +1,5 @@
  <?php
-  require_once('../../includes/config.conf.php');
+ require_once('../../includes/config.conf.php');
  require_once('../../includes/db.conf.php');
  require_once('../../adodb/adodb.inc.php');
  

@@ -1,0 +1,307 @@
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+<?php if($_GET[opt]=="1") { ?> 
+document.frmCreate.op.value = '1';
+<?php } ?>
+
+function checkPages(cond_1,cond_2){
+if ((document.frmList.page.value > cond_1 )||(document.frmList.page.value <= '0' )) {
+	document.frmList.page.value = cond_2;
+	}
+}
+
+function check(str_msg, str_location){
+	if(str_location == ''){
+	if (confirm(str_msg)) return true; else return false;
+	}else{
+	if (confirm(str_msg)) return doNavigateContentOver(str_location,'mainFrame'); else return false;
+	}
+ }
+
+
+var err = 0;
+var err_ = 0;
+
+function checkFrm(theForm){
+with (theForm){
+	 
+		  if (kode_wni.value == "") 
+		{ 
+			alert ("Silahkan pilih Nama BHI !"); 
+			kode_wni.focus();
+			return false; 
+		}
+
+
+ else if (kode_form_pengaduan.value == "") 
+		{ 
+			alert ("Silahkan isi kode pengaduan !"); 
+			kode_form_pengaduan.focus();
+			return false; 
+		}
+
+
+	 else if (jum_rows.value == "") 
+		{ 
+			alert ("Silahkan isi jenis kasus !"); 
+			jum_rows.focus();
+			return false; 
+		}
+
+	else if (sumber_informasi.value == "") 
+		{ 
+			alert ("Silahkan isi sumber informasi !"); 
+			sumber_informasi.focus();
+			return false; 
+		}				
+	else if (kode_via.value == "") 
+		{ 
+			alert ("Silahkan pilih via pengaduan !"); 
+			kode_via.focus();
+			return false; 
+		}
+
+	 else if (kode_perwakilan.value == "") 
+		{ 
+			alert ("Silahkan pilih perwakilan !"); 
+			kode_perwakilan.focus();
+			return false;
+			
+		} 
+
+
+	 else if (kode_wni.value == "") 
+		{ 
+			alert ("Silahkan pilih WNI/NON TKI !"); 
+			kode_wni.focus();
+			return false;
+			
+		} 
+
+
+	 else if (kronologis_permasalahan.value == "") 
+		{ 
+			alert ("Silahkan isi kronologis permasalahan!"); 
+			kronologis_permasalahan.focus();
+			return false;
+			
+		} 
+
+
+	 else if (bantuan.value == "") 
+		{ 
+			alert ("Silahkan isi bantuan !"); 
+			bantuan.focus();
+			return false;
+			
+		} 
+	 
+	else
+		{
+			submit();
+			return true;
+		}
+}
+	
+	
+}
+// --------------------
+
+
+function checkSubmit(){
+
+<?php
+if (substr($result->fields[idmod], 2,1)!="1"){
+?>
+	alert("<?php echo _ERR_NOT_AUTH_ENTRY ; ?>");
+	doNavigateContentOver('index.php?mod_id=<?=$_GET[mod_id];?>','mainFrame');
+	err_ = 1;
+
+<?php } else { ?>
+	err_ = 0;
+<?php } ?>
+}
+
+function checkEdit(str_location){
+
+	doNavigateContentOver(str_location,'mainFrame');
+
+}
+
+function checkDelete(str_location){
+
+	return check('<?php echo _CONF_DELETE; ?>', str_location);
+
+}
+// --------------------
+
+function resetFrm(theForm){
+with(theForm){
+
+	op.value = "0";
+	}
+	doNavigateContentOver('index.php?mod_id=<?=$_GET[mod_id];?>','mainFrame');
+}
+
+function cari_kab(prop_id)
+{
+//alert(prop_id);
+if (prop_id != '') {
+	http.open('get', 'index.php?get_prop=1&no_prop='+prop_id);
+	http.onreadystatechange = handlechoice_kab; 
+	http.send(null);
+	} 
+}
+
+function handlechoice_kab(){
+if(http.readyState == 4)
+	{ 
+		var response = http.responseText;
+		 var a = response.split('^/&');
+		document.getElementById('ajax_kabupaten').innerHTML = a[0];
+		//frmCreate.nama_lengkap.focus();
+    }
+}
+
+function cari_kec(prop_id,kab_id)
+{
+//alert(prop_id+'  -- '+kab_id);
+if (prop_id != '') {
+	http.open('get', 'index.php?get_kec=1&no_prop='+prop_id+'&no_kab='+kab_id);
+	http.onreadystatechange = handlechoice_kec; 
+	http.send(null);
+	} 
+}
+
+function handlechoice_kec(){
+if(http.readyState == 4)
+	{ 
+		var response = http.responseText;
+		 var a = response.split('^/&');
+		document.getElementById('ajax_kecamatan').innerHTML = a[0];
+		//frmCreate.nama_lengkap.focus();
+    }
+}
+
+function cari_kec2(prop_id,kab_id,kec_id)
+{
+//alert(prop_id+'  -- '+kab_id);
+if (prop_id != '') {
+	http.open('get', 'index.php?get_kec=1&no_prop='+prop_id+'&no_kab='+kab_id+'&no_kec='+kec_id);
+	http.onreadystatechange = handlechoice_kec2; 
+	http.send(null);
+	} 
+}
+
+function handlechoice_kec2(){
+if(http.readyState == 4)
+	{ 
+		var response = http.responseText;
+		 var a = response.split('^/&');
+		document.getElementById('ajax_kecamatan2').innerHTML = a[0];
+		//frmCreate.nama_lengkap.focus();
+    }
+}
+
+//-->
+ 
+ function goPengaduan() {
+			//document.frm.KodeEselon1.value='';
+			//document.frm.NamaEselon1.value='';
+			 kode_perwakilan= document.frmCreate.kode_perwakilan.value;
+			window.open('../../../../function/list_bhi2.php?kode_perwakilan='+kode_perwakilan+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0') 
+ 			}
+ 
+
+function getRow() 
+	{
+	var tbl = document.getElementById('tblItem');
+	var lastRow = tbl.rows.length;
+	frmCreate.jum_rows.value = lastRow ;
+	}
+	
+function addRowToTable()
+{
+	var tbl = document.getElementById('tblItem');
+	var lastRow = tbl.rows.length;
+	var iteration = lastRow;
+	var row = tbl.insertRow(lastRow);
+	frmCreate.jum_rows.value = iteration + 1 ;
+	if(iteration%2==0){
+		var bgColorValue = '#FFFFFF';
+	}else{
+		var bgColorValue = '#FFFFFF';
+	}
+	row.bgColor = bgColorValue;
+ 
+	 
+	 // alert (iteration);
+	var cell1 = row.insertCell(0);
+ 	 cell1.innerHTML = "<? $sql_kasus="SELECT * FROM tbl_mast_kasus"; ?>" +
+	"<? $result_kasus = $db->Execute($sql_kasus); ?> "+
+	"<select ID=\"anggota_nik_"+iteration+"\" class=\"inputtext\" NAME=\"kode_kasus_"+iteration+"\" onchange=\"cari_nama(this.value,'"+iteration+"');\" >" +
+	"<OPTION value=\"\"></OPTION> "+
+	"<?  while(!$result_kasus->EOF): ?> " +
+	"<OPTION value=<? echo $result_kasus->fields['kode_kasus']; ?> >"  +
+	"<? echo $result_kasus->fields['nama_kasus']; ?>" +
+	"</OPTION>" +
+	"<? $result_kasus->MoveNext(); ?> " +
+	"<? endwhile;  ?> " +
+	"</select> ";
+
+	var cell2 = row.insertCell(1);
+	cell2.innerHTML = "<DIV ID=\"ajax_cari_dina_"+iteration+"\"> <input type=\"text\" class=\"inputtext\" name=\"jenis_kasus_" +iteration+ "\" > </DIV>";
+
+	var cell2 = row.insertCell(2);
+	cell2.innerHTML = "<DIV ID=\"ajax_cari_kategori_"+iteration+"\"> <input type=\"text\" class=\"inputtext\" name=\"kategori_kasus_" +iteration+ "\" > </DIV>";
+
+	 
+}
+
+function removeRowFromTable() 
+	{
+	var tbl = document.getElementById('tblItem');
+	var lastRow2 = tbl.rows.length;	
+	if (lastRow2 > 0) {
+		tbl.deleteRow(lastRow2 - 1);	
+		frmCreate.jum_rows.value = (lastRow2 - 1);
+	}
+   }
+   
+function removeRowAllFromTable() 
+	{
+	var tbl = document.getElementById('tblItem');
+	var lastRow2 = tbl.rows.length;	
+	for (i=1;i<=lastRow2;i++) {
+		tbl.deleteRow(lastRow2 - i);	
+		frmCreate.jum_rows.value = (lastRow2 - i);
+	}
+   }
+
+
+
+
+function cari_nama(kode_kasus,ke)
+{
+if (kode_kasus != '') {
+	http.open('get', 'index.php?get_nama=1&kode_kasus='+kode_kasus+'&ke='+ke);
+	http.onreadystatechange = handlechoice_cari_nik; 
+	http.send(null);
+	} 
+}
+
+function handlechoice_cari_nik(){
+if(http.readyState == 4)
+	{ 
+		var response2 = http.responseText;
+		var b = response2.split('dina');
+		x = eval(b[0]);
+		document.getElementById('ajax_cari_dina_'+x).innerHTML = b[1];	
+
+		 document.getElementById('ajax_cari_kategori_'+x).innerHTML = b[2];
+	
+	}
+}
+ 
+</SCRIPT>

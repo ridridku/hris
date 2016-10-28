@@ -1,0 +1,3625 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=14 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->REKAP PEGAWAI </td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=14 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=14 height=21 class=xl36 style='height:15.75pt'>CABANG  : CIREBON</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td colspan=14 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>NIP</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=82 style='width:25pt'>JABATAN</td>
+    <td class=xl27 width=82 style='width:25pt'>LEVEL JABATAN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS PEGAWAI</td>
+    <td class=xl27 width=98 style='width:50pt'>AWAL KONTRAK</td> 
+    <td class=xl27 width=57 style='width:25pt'>AKHIR KONTRAK</td>
+     <td class=xl27 width=57 style='width:25pt'>NO REK</td>
+      <td class=xl27 width=57 style='width:25pt'>SHIFT</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>090550720</td>
+  <td class=xl29 align=right x:num>311004</td>
+  <td class=xl29 align=right x:num>Abdul Rahman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>110550721</td>
+  <td class=xl29 align=right x:num>311065</td>
+  <td class=xl29 align=right x:num>Aceng Abdul Muin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>160550722</td>
+  <td class=xl29 align=right x:num>311292</td>
+  <td class=xl29 align=right x:num>Achmad Arsyal Nurrohman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>160550723</td>
+  <td class=xl29 align=right x:num>311290</td>
+  <td class=xl29 align=right x:num>Achmad Fauzi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>160552724</td>
+  <td class=xl29 align=right x:num>311301</td>
+  <td class=xl29 align=right x:num>Adam Fauzi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-20</td>
+  <td class=xl29 align=right >2017-03-20</td>
+  <td class=xl29 align=right >703442969800</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>130540724</td>
+  <td class=xl29 align=right x:num>313094</td>
+  <td class=xl29 align=right x:num>Ade Fiky Siregar</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>160550725</td>
+  <td class=xl29 align=right x:num>311286</td>
+  <td class=xl29 align=right x:num>Ade Hasan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>140510726</td>
+  <td class=xl29 align=right x:num>312071</td>
+  <td class=xl29 align=right x:num>Ade Pangestu</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>110550727</td>
+  <td class=xl29 align=right x:num>311145</td>
+  <td class=xl29 align=right x:num>Ade Purwandi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>150540728</td>
+  <td class=xl29 align=right x:num>313116</td>
+  <td class=xl29 align=right x:num>Ade Riandani</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>140540729</td>
+  <td class=xl29 align=right x:num>313079</td>
+  <td class=xl29 align=right x:num>Ade Royana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>120520730</td>
+  <td class=xl29 align=right x:num>314009</td>
+  <td class=xl29 align=right x:num>Ade Supriyadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Boy</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>120550732</td>
+  <td class=xl29 align=right x:num>311003</td>
+  <td class=xl29 align=right x:num>Adi Sopian</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Data Reporting</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>150550733</td>
+  <td class=xl29 align=right x:num>311229</td>
+  <td class=xl29 align=right x:num>Adityana Nurkholik</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>150550734</td>
+  <td class=xl29 align=right x:num>311255</td>
+  <td class=xl29 align=right x:num>Agita Maradhika</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>110520736</td>
+  <td class=xl29 align=right x:num>314010</td>
+  <td class=xl29 align=right x:num>Agus Rohmana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>110550737</td>
+  <td class=xl29 align=right x:num>311057</td>
+  <td class=xl29 align=right x:num>Agus Santoso</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>140550738</td>
+  <td class=xl29 align=right x:num>311214</td>
+  <td class=xl29 align=right x:num>Agus Setiawan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>130540739</td>
+  <td class=xl29 align=right x:num>313017</td>
+  <td class=xl29 align=right x:num>Ahmad Jaenuri</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>160550740</td>
+  <td class=xl29 align=right x:num>311276</td>
+  <td class=xl29 align=right x:num>Ahmad Joharudin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>130540742</td>
+  <td class=xl29 align=right x:num>313058</td>
+  <td class=xl29 align=right x:num>Ake Priyadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>150510743</td>
+  <td class=xl29 align=right x:num>312077</td>
+  <td class=xl29 align=right x:num>Akhmad Jojo</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Staff AR Control</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>130550744</td>
+  <td class=xl29 align=right x:num>313065</td>
+  <td class=xl29 align=right x:num>Akhmad Mujahidin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>140540745</td>
+  <td class=xl29 align=right x:num>313090</td>
+  <td class=xl29 align=right x:num>Akhmad Sakiman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>150550746</td>
+  <td class=xl29 align=right x:num>311268</td>
+  <td class=xl29 align=right x:num>Aldhi Miftahul Falah</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>150510747</td>
+  <td class=xl29 align=right x:num>312075</td>
+  <td class=xl29 align=right x:num>Alfin Tiara Anugrah</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>080550748</td>
+  <td class=xl29 align=right x:num>311006</td>
+  <td class=xl29 align=right x:num>Amin Asim</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>120550749</td>
+  <td class=xl29 align=right x:num>311151</td>
+  <td class=xl29 align=right x:num>Anang Supriatna</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>140510750</td>
+  <td class=xl29 align=right x:num>312041</td>
+  <td class=xl29 align=right x:num>Andi Artono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>130550751</td>
+  <td class=xl29 align=right x:num>311095</td>
+  <td class=xl29 align=right x:num>Andri Andriyana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>110540752</td>
+  <td class=xl29 align=right x:num>313019</td>
+  <td class=xl29 align=right x:num>Andri Iskandar</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>130540753</td>
+  <td class=xl29 align=right x:num>313071</td>
+  <td class=xl29 align=right x:num>Andri Subardi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>150540754</td>
+  <td class=xl29 align=right x:num>313110</td>
+  <td class=xl29 align=right x:num>Apin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>110540755</td>
+  <td class=xl29 align=right x:num>313021</td>
+  <td class=xl29 align=right x:num>Ari Mulyadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>130540756</td>
+  <td class=xl29 align=right x:num>313063</td>
+  <td class=xl29 align=right x:num>Arya Jaka Suhana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>150540757</td>
+  <td class=xl29 align=right x:num>313133</td>
+  <td class=xl29 align=right x:num>Asep Andika</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>150540758</td>
+  <td class=xl29 align=right x:num>313130</td>
+  <td class=xl29 align=right x:num>Asep Aprianto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>100550759</td>
+  <td class=xl29 align=right x:num>311015</td>
+  <td class=xl29 align=right x:num>Asep Heriyana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>120550760</td>
+  <td class=xl29 align=right x:num>311112</td>
+  <td class=xl29 align=right x:num>Asep Nuraiman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>160550761</td>
+  <td class=xl29 align=right x:num>311294</td>
+  <td class=xl29 align=right x:num>Ayuningsih</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>130540762</td>
+  <td class=xl29 align=right x:num>313022</td>
+  <td class=xl29 align=right x:num>Bambang Santoso</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>110550763</td>
+  <td class=xl29 align=right x:num>311053</td>
+  <td class=xl29 align=right x:num>Bambang Triono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Team Leader Sales</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>130550764</td>
+  <td class=xl29 align=right x:num>311105</td>
+  <td class=xl29 align=right x:num>Bambang Tubagus</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>110550765</td>
+  <td class=xl29 align=right x:num>311058</td>
+  <td class=xl29 align=right x:num>Bisri</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>120550766</td>
+  <td class=xl29 align=right x:num>311076</td>
+  <td class=xl29 align=right x:num>Budi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>140550767</td>
+  <td class=xl29 align=right x:num>313092</td>
+  <td class=xl29 align=right x:num>Budi Setiawan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>150540768</td>
+  <td class=xl29 align=right x:num>313108</td>
+  <td class=xl29 align=right x:num>Budi Yusup Suhardi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>100550769</td>
+  <td class=xl29 align=right x:num>311017</td>
+  <td class=xl29 align=right x:num>Carnoto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>140520770</td>
+  <td class=xl29 align=right x:num>312066</td>
+  <td class=xl29 align=right x:num>Carolina Praessa</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >PGA Staff</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>130540771</td>
+  <td class=xl29 align=right x:num>311099</td>
+  <td class=xl29 align=right x:num>Casyudin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>140510772</td>
+  <td class=xl29 align=right x:num>312062</td>
+  <td class=xl29 align=right x:num>Cety Audia</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>150550774</td>
+  <td class=xl29 align=right x:num>311259</td>
+  <td class=xl29 align=right x:num>Dadan Pujiyono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>53</td>
+  <td class=xl29>130550775</td>
+  <td class=xl29 align=right x:num>313025</td>
+  <td class=xl29 align=right x:num>Dede Aprian</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>54</td>
+  <td class=xl29>160510776</td>
+  <td class=xl29 align=right x:num>312085</td>
+  <td class=xl29 align=right x:num>Dede Chandra Setiabudi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>55</td>
+  <td class=xl29>120550778</td>
+  <td class=xl29 align=right x:num>311079</td>
+  <td class=xl29 align=right x:num>Dede Hendara</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>56</td>
+  <td class=xl29>140550779</td>
+  <td class=xl29 align=right x:num>311167</td>
+  <td class=xl29 align=right x:num>Dede Ikin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>57</td>
+  <td class=xl29>150550780</td>
+  <td class=xl29 align=right x:num>311263</td>
+  <td class=xl29 align=right x:num>Dede Komarudin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>58</td>
+  <td class=xl29>160540781</td>
+  <td class=xl29 align=right x:num>313134</td>
+  <td class=xl29 align=right x:num>Dede Sofyan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>59</td>
+  <td class=xl29>150540782</td>
+  <td class=xl29 align=right x:num>313124</td>
+  <td class=xl29 align=right x:num>Dede Suarno</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>60</td>
+  <td class=xl29>140550783</td>
+  <td class=xl29 align=right x:num>311188</td>
+  <td class=xl29 align=right x:num>Dedeh Jubaedah</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>61</td>
+  <td class=xl29>110550784</td>
+  <td class=xl29 align=right x:num>311046</td>
+  <td class=xl29 align=right x:num>Dedi Nurhadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>62</td>
+  <td class=xl29>160510787</td>
+  <td class=xl29 align=right x:num>312081</td>
+  <td class=xl29 align=right x:num>Diana Kurnia Sari Sudirman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>63</td>
+  <td class=xl29>130550788</td>
+  <td class=xl29 align=right x:num>311194</td>
+  <td class=xl29 align=right x:num>Didi Supardi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>64</td>
+  <td class=xl29>130540789</td>
+  <td class=xl29 align=right x:num>314003</td>
+  <td class=xl29 align=right x:num>Didin Sukardi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>65</td>
+  <td class=xl29>110550790</td>
+  <td class=xl29 align=right x:num>311135</td>
+  <td class=xl29 align=right x:num>Diding Heriyana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>66</td>
+  <td class=xl29>120510791</td>
+  <td class=xl29 align=right x:num>312019</td>
+  <td class=xl29 align=right x:num>Dimas Adipradana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>67</td>
+  <td class=xl29>150540792</td>
+  <td class=xl29 align=right x:num>313115</td>
+  <td class=xl29 align=right x:num>Doni Susanto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>68</td>
+  <td class=xl29>150540793</td>
+  <td class=xl29 align=right x:num>313109</td>
+  <td class=xl29 align=right x:num>Dudi Chaerul Hidayat</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>69</td>
+  <td class=xl29>120550794</td>
+  <td class=xl29 align=right x:num>311067</td>
+  <td class=xl29 align=right x:num>Dul Muid</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>70</td>
+  <td class=xl29>100550795</td>
+  <td class=xl29 align=right x:num>311023</td>
+  <td class=xl29 align=right x:num>Dumiri Bn Dukri</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>71</td>
+  <td class=xl29>130510796</td>
+  <td class=xl29 align=right x:num>312046</td>
+  <td class=xl29 align=right x:num>Dwi Wulansari</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Kecil</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>72</td>
+  <td class=xl29>140550797</td>
+  <td class=xl29 align=right x:num>311206</td>
+  <td class=xl29 align=right x:num>Eka Hermawan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>73</td>
+  <td class=xl29>050540798</td>
+  <td class=xl29 align=right x:num>313002</td>
+  <td class=xl29 align=right x:num>Eka Sopyan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Gudang Senior</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>74</td>
+  <td class=xl29>080540799</td>
+  <td class=xl29 align=right x:num>313007</td>
+  <td class=xl29 align=right x:num>Eko Purwantoro</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Ekspedisi</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>75</td>
+  <td class=xl29>150550800</td>
+  <td class=xl29 align=right x:num>311235</td>
+  <td class=xl29 align=right x:num>Elies Cahyani</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>76</td>
+  <td class=xl29>150550801</td>
+  <td class=xl29 align=right x:num>311226</td>
+  <td class=xl29 align=right x:num>Eman Suaman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>77</td>
+  <td class=xl29>140510802</td>
+  <td class=xl29 align=right x:num>312069</td>
+  <td class=xl29 align=right x:num>Endah Dwi Putri Diah</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>78</td>
+  <td class=xl29>130540803</td>
+  <td class=xl29 align=right x:num>313030</td>
+  <td class=xl29 align=right x:num>Endang Wahyudin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>79</td>
+  <td class=xl29>120550805</td>
+  <td class=xl29 align=right x:num>311166</td>
+  <td class=xl29 align=right x:num>Faisal Hariana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>80</td>
+  <td class=xl29>100540806</td>
+  <td class=xl29 align=right x:num>313001</td>
+  <td class=xl29 align=right x:num>Feri Firman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Gudang Senior</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>81</td>
+  <td class=xl29>100510808</td>
+  <td class=xl29 align=right x:num>313057</td>
+  <td class=xl29 align=right x:num>Giant Permadon</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator MR</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>82</td>
+  <td class=xl29>060540809</td>
+  <td class=xl29 align=right x:num>313011</td>
+  <td class=xl29 align=right x:num>Gufron</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>83</td>
+  <td class=xl29>080540810</td>
+  <td class=xl29 align=right x:num>313023</td>
+  <td class=xl29 align=right x:num>Hadi Bintoro</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>84</td>
+  <td class=xl29>100540812</td>
+  <td class=xl29 align=right x:num>313032</td>
+  <td class=xl29 align=right x:num>Hadis Susanto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>85</td>
+  <td class=xl29>110550813</td>
+  <td class=xl29 align=right x:num>311038</td>
+  <td class=xl29 align=right x:num>Harman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>86</td>
+  <td class=xl29>110250328</td>
+  <td class=xl29 align=right x:num>301315</td>
+  <td class=xl29 align=right x:num>Harmono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Team Leader Sales</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-04-13</td>
+  <td class=xl29 align=right >2016-10-13</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>87</td>
+  <td class=xl29>130550814</td>
+  <td class=xl29 align=right x:num>311142</td>
+  <td class=xl29 align=right x:num>Harri Setiarso</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>88</td>
+  <td class=xl29>110550815</td>
+  <td class=xl29 align=right x:num>311039</td>
+  <td class=xl29 align=right x:num>Haryono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>89</td>
+  <td class=xl29>150550816</td>
+  <td class=xl29 align=right x:num>311219</td>
+  <td class=xl29 align=right x:num>Hasanudin </td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>90</td>
+  <td class=xl29>110550817</td>
+  <td class=xl29 align=right x:num>311055</td>
+  <td class=xl29 align=right x:num>Hasanudin Ahmadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>91</td>
+  <td class=xl29>110550818</td>
+  <td class=xl29 align=right x:num>311031</td>
+  <td class=xl29 align=right x:num>Hendra Agustiandi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>92</td>
+  <td class=xl29>120550819</td>
+  <td class=xl29 align=right x:num>311071</td>
+  <td class=xl29 align=right x:num>Heri Panca Suhaeri</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>93</td>
+  <td class=xl29>150540820</td>
+  <td class=xl29 align=right x:num>313119</td>
+  <td class=xl29 align=right x:num>Heri Sukmayadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Intercity</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>94</td>
+  <td class=xl29>110550821</td>
+  <td class=xl29 align=right x:num>311036</td>
+  <td class=xl29 align=right x:num>Heru Pristianto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Team Leader Sales</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>95</td>
+  <td class=xl29>130550822</td>
+  <td class=xl29 align=right x:num>313061</td>
+  <td class=xl29 align=right x:num>Hidayat</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>96</td>
+  <td class=xl29>160550823</td>
+  <td class=xl29 align=right x:num>311291</td>
+  <td class=xl29 align=right x:num>Ibon Diana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>97</td>
+  <td class=xl29>130550825</td>
+  <td class=xl29 align=right x:num>311116</td>
+  <td class=xl29 align=right x:num>Iis Wiyanti</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>98</td>
+  <td class=xl29>110550826</td>
+  <td class=xl29 align=right x:num>311066</td>
+  <td class=xl29 align=right x:num>Iji Saptaji</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>99</td>
+  <td class=xl29>140550827</td>
+  <td class=xl29 align=right x:num>313088</td>
+  <td class=xl29 align=right x:num>Imam Firmansyah</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>100</td>
+  <td class=xl29>110510828</td>
+  <td class=xl29 align=right x:num>311143</td>
+  <td class=xl29 align=right x:num>Imam Taufik</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator Depo</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>101</td>
+  <td class=xl29>120550829</td>
+  <td class=xl29 align=right x:num>311084</td>
+  <td class=xl29 align=right x:num>Iman Rohiman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>102</td>
+  <td class=xl29>110550830</td>
+  <td class=xl29 align=right x:num>311051</td>
+  <td class=xl29 align=right x:num>Indra Kusuma Supriadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>103</td>
+  <td class=xl29>990540831</td>
+  <td class=xl29 align=right x:num>313036</td>
+  <td class=xl29 align=right x:num>Irawan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>104</td>
+  <td class=xl29>150510832</td>
+  <td class=xl29 align=right x:num>312078</td>
+  <td class=xl29 align=right x:num>Irna Purwaningsih</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>105</td>
+  <td class=xl29>140550833</td>
+  <td class=xl29 align=right x:num>313081</td>
+  <td class=xl29 align=right x:num>Iskandar</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>106</td>
+  <td class=xl29>100540834</td>
+  <td class=xl29 align=right x:num>313013</td>
+  <td class=xl29 align=right x:num>Isyanto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>107</td>
+  <td class=xl29>090550835</td>
+  <td class=xl29 align=right x:num>311018</td>
+  <td class=xl29 align=right x:num>Ivan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>108</td>
+  <td class=xl29>160550836</td>
+  <td class=xl29 align=right x:num>311288</td>
+  <td class=xl29 align=right x:num>Iyus Rudiansyah</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>109</td>
+  <td class=xl29>150540837</td>
+  <td class=xl29 align=right x:num>313120</td>
+  <td class=xl29 align=right x:num>Jaenal Mustopa</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Intercity</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>110</td>
+  <td class=xl29>130540838</td>
+  <td class=xl29 align=right x:num>313038</td>
+  <td class=xl29 align=right x:num>Jaenudin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>111</td>
+  <td class=xl29>130550839</td>
+  <td class=xl29 align=right x:num>313056</td>
+  <td class=xl29 align=right x:num>Jajang Irianto </td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>112</td>
+  <td class=xl29>150540840</td>
+  <td class=xl29 align=right x:num>313122</td>
+  <td class=xl29 align=right x:num>Jajang Suharjo</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>113</td>
+  <td class=xl29>140520841</td>
+  <td class=xl29 align=right x:num>314002</td>
+  <td class=xl29 align=right x:num>Jepri Purwanto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >HRD Supervisor</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>114</td>
+  <td class=xl29>130550842</td>
+  <td class=xl29 align=right x:num>313040</td>
+  <td class=xl29 align=right x:num>Karnoto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>115</td>
+  <td class=xl29>130550843</td>
+  <td class=xl29 align=right x:num>313053</td>
+  <td class=xl29 align=right x:num>Karyono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>116</td>
+  <td class=xl29>150550844</td>
+  <td class=xl29 align=right x:num>311222</td>
+  <td class=xl29 align=right x:num>Kasdina</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>117</td>
+  <td class=xl29>150510845</td>
+  <td class=xl29 align=right x:num>312080</td>
+  <td class=xl29 align=right x:num>Khasan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>118</td>
+  <td class=xl29>100520847</td>
+  <td class=xl29 align=right x:num>314011</td>
+  <td class=xl29 align=right x:num>Kuslan Bin Kasiman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>119</td>
+  <td class=xl29>130550848</td>
+  <td class=xl29 align=right x:num>311113</td>
+  <td class=xl29 align=right x:num>Kusmiadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>120</td>
+  <td class=xl29>140540849</td>
+  <td class=xl29 align=right x:num>313073</td>
+  <td class=xl29 align=right x:num>Kuswa</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Crossdock</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>121</td>
+  <td class=xl29>120550850</td>
+  <td class=xl29 align=right x:num>311089</td>
+  <td class=xl29 align=right x:num>Kuswoyo</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>122</td>
+  <td class=xl29>110510851</td>
+  <td class=xl29 align=right x:num>312040</td>
+  <td class=xl29 align=right x:num>Lusiyana Novianty</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>123</td>
+  <td class=xl29>150550852</td>
+  <td class=xl29 align=right x:num>311242</td>
+  <td class=xl29 align=right x:num>M. Abdul Karim</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>124</td>
+  <td class=xl29>030540853</td>
+  <td class=xl29 align=right x:num>313009</td>
+  <td class=xl29 align=right x:num>Maman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>125</td>
+  <td class=xl29>110550855</td>
+  <td class=xl29 align=right x:num>311032</td>
+  <td class=xl29 align=right x:num>Maurih</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>126</td>
+  <td class=xl29>120550856</td>
+  <td class=xl29 align=right x:num>311012</td>
+  <td class=xl29 align=right x:num>Melia Suzana Cintia Dewi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>127</td>
+  <td class=xl29>130550857</td>
+  <td class=xl29 align=right x:num>311140</td>
+  <td class=xl29 align=right x:num>Moch Misna</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>128</td>
+  <td class=xl29>080550858</td>
+  <td class=xl29 align=right x:num>311005</td>
+  <td class=xl29 align=right x:num>Moch. Zaenal Arifin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>129</td>
+  <td class=xl29>130550860</td>
+  <td class=xl29 align=right x:num>311191</td>
+  <td class=xl29 align=right x:num>Mohammad Rifani</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>130</td>
+  <td class=xl29>150540862</td>
+  <td class=xl29 align=right x:num>313128</td>
+  <td class=xl29 align=right x:num>Muhamad Shobirin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loader</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>131</td>
+  <td class=xl29>150540863</td>
+  <td class=xl29 align=right x:num>313107</td>
+  <td class=xl29 align=right x:num>Muhamad Zaidin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>132</td>
+  <td class=xl29>090540864</td>
+  <td class=xl29 align=right x:num>313006</td>
+  <td class=xl29 align=right x:num>Muhammad  Sholeh</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>133</td>
+  <td class=xl29>160550865</td>
+  <td class=xl29 align=right x:num>311295</td>
+  <td class=xl29 align=right x:num>Muhammad Dedi Surya Permana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>134</td>
+  <td class=xl29>100540866</td>
+  <td class=xl29 align=right x:num>313059</td>
+  <td class=xl29 align=right x:num>Muhammad Yusuf</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>135</td>
+  <td class=xl29>100520868</td>
+  <td class=xl29 align=right x:num>314012</td>
+  <td class=xl29 align=right x:num>Mumuh Muhzizat</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>136</td>
+  <td class=xl29>110550869</td>
+  <td class=xl29 align=right x:num>311045</td>
+  <td class=xl29 align=right x:num>Nana Priatna</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>137</td>
+  <td class=xl29>160550871</td>
+  <td class=xl29 align=right x:num>311296</td>
+  <td class=xl29 align=right x:num>Nandi Sudrajat</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>138</td>
+  <td class=xl29>160550872</td>
+  <td class=xl29 align=right x:num>311275</td>
+  <td class=xl29 align=right x:num>Nani Nur Anggraeni</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>139</td>
+  <td class=xl29>150540873</td>
+  <td class=xl29 align=right x:num>313131</td>
+  <td class=xl29 align=right x:num>Nasrudin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>140</td>
+  <td class=xl29>120550874</td>
+  <td class=xl29 align=right x:num>311081</td>
+  <td class=xl29 align=right x:num>Noer Baeti </td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>141</td>
+  <td class=xl29>110550875</td>
+  <td class=xl29 align=right x:num>311033</td>
+  <td class=xl29 align=right x:num>Nono Sutono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>142</td>
+  <td class=xl29>120550876</td>
+  <td class=xl29 align=right x:num>311073</td>
+  <td class=xl29 align=right x:num>Novan Saeful</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>143</td>
+  <td class=xl29>130510877</td>
+  <td class=xl29 align=right x:num>312054</td>
+  <td class=xl29 align=right x:num>Novita Amanah Fitri</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>144</td>
+  <td class=xl29>140540878</td>
+  <td class=xl29 align=right x:num>313106</td>
+  <td class=xl29 align=right x:num>Nurdin Kumara</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>145</td>
+  <td class=xl29>110550879</td>
+  <td class=xl29 align=right x:num>311037</td>
+  <td class=xl29 align=right x:num>Nurhayat</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Team Leader Sales</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>146</td>
+  <td class=xl29>070510880</td>
+  <td class=xl29 align=right x:num>312009</td>
+  <td class=xl29 align=right x:num>Nurlaela</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >FAS</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>147</td>
+  <td class=xl29>140540882</td>
+  <td class=xl29 align=right x:num>313101</td>
+  <td class=xl29 align=right x:num>Ogi Permana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>148</td>
+  <td class=xl29>130540883</td>
+  <td class=xl29 align=right x:num>313060</td>
+  <td class=xl29 align=right x:num>Raden Deni Andriyana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>149</td>
+  <td class=xl29>150550884</td>
+  <td class=xl29 align=right x:num>311232</td>
+  <td class=xl29 align=right x:num>Rahmat Wijaya</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>150</td>
+  <td class=xl29>130540885</td>
+  <td class=xl29 align=right x:num>313095</td>
+  <td class=xl29 align=right x:num>Raja Basa</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>151</td>
+  <td class=xl29>110550887</td>
+  <td class=xl29 align=right x:num>311043</td>
+  <td class=xl29 align=right x:num>Reni Suryani</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>152</td>
+  <td class=xl29>150550888</td>
+  <td class=xl29 align=right x:num>311231</td>
+  <td class=xl29 align=right x:num>Ridwan Setiawan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>153</td>
+  <td class=xl29>160510889</td>
+  <td class=xl29 align=right x:num>312083</td>
+  <td class=xl29 align=right x:num>Rina Rindiana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>154</td>
+  <td class=xl29>160550890</td>
+  <td class=xl29 align=right x:num>311109</td>
+  <td class=xl29 align=right x:num>Rinta Tarianita</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>155</td>
+  <td class=xl29>150540891</td>
+  <td class=xl29 align=right x:num>313126</td>
+  <td class=xl29 align=right x:num>Riskandi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Intercity</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>156</td>
+  <td class=xl29>120550892</td>
+  <td class=xl29 align=right x:num>311083</td>
+  <td class=xl29 align=right x:num>Roby Cahyadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>157</td>
+  <td class=xl29>110540893</td>
+  <td class=xl29 align=right x:num>313042</td>
+  <td class=xl29 align=right x:num>Romi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>158</td>
+  <td class=xl29>130550894</td>
+  <td class=xl29 align=right x:num>311111</td>
+  <td class=xl29 align=right x:num>Rubby Ciptadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>159</td>
+  <td class=xl29>110540895</td>
+  <td class=xl29 align=right x:num>313097</td>
+  <td class=xl29 align=right x:num>Runadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>160</td>
+  <td class=xl29>130540896</td>
+  <td class=xl29 align=right x:num>313055</td>
+  <td class=xl29 align=right x:num>Saeful Bahri</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>161</td>
+  <td class=xl29>120550897</td>
+  <td class=xl29 align=right x:num>311138</td>
+  <td class=xl29 align=right x:num>Saeful Mu'Min</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>162</td>
+  <td class=xl29>150550898</td>
+  <td class=xl29 align=right x:num>311272</td>
+  <td class=xl29 align=right x:num>Saidin Bin Sabid</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>163</td>
+  <td class=xl29>150550899</td>
+  <td class=xl29 align=right x:num>311267</td>
+  <td class=xl29 align=right x:num>Samsul Mu'Arif</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>164</td>
+  <td class=xl29>140540900</td>
+  <td class=xl29 align=right x:num>313096</td>
+  <td class=xl29 align=right x:num>Sayidina</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>165</td>
+  <td class=xl29>110530901</td>
+  <td class=xl29 align=right x:num>315001</td>
+  <td class=xl29 align=right x:num>Selamet Effendi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >IT Supervisor Senior</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>166</td>
+  <td class=xl29>150550902</td>
+  <td class=xl29 align=right x:num>311270</td>
+  <td class=xl29 align=right x:num>Selamet Triyadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>167</td>
+  <td class=xl29>150550903</td>
+  <td class=xl29 align=right x:num>311264</td>
+  <td class=xl29 align=right x:num>Sherly Hana Waninghiun</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>168</td>
+  <td class=xl29>110550904</td>
+  <td class=xl29 align=right x:num>311030</td>
+  <td class=xl29 align=right x:num>Sidik</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>169</td>
+  <td class=xl29>100540905</td>
+  <td class=xl29 align=right x:num>313014</td>
+  <td class=xl29 align=right x:num>Sigit Lesmana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>170</td>
+  <td class=xl29>140510906</td>
+  <td class=xl29 align=right x:num>312072</td>
+  <td class=xl29 align=right x:num>Silviadewi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>171</td>
+  <td class=xl29>130550907</td>
+  <td class=xl29 align=right x:num>311120</td>
+  <td class=xl29 align=right x:num>Sin Hau (Dede)</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>172</td>
+  <td class=xl29>100540908</td>
+  <td class=xl29 align=right x:num>313098</td>
+  <td class=xl29 align=right x:num>Siswanto Yudi Andika</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Gudang Senior</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>173</td>
+  <td class=xl29>120550909</td>
+  <td class=xl29 align=right x:num>311090</td>
+  <td class=xl29 align=right x:num>Sopyan Hadi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>174</td>
+  <td class=xl29>130550911</td>
+  <td class=xl29 align=right x:num>313043</td>
+  <td class=xl29 align=right x:num>Sumardi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>175</td>
+  <td class=xl29>150550912</td>
+  <td class=xl29 align=right x:num>311228</td>
+  <td class=xl29 align=right x:num>Supriatna Ma'Arif</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>176</td>
+  <td class=xl29>130550913</td>
+  <td class=xl29 align=right x:num>311170</td>
+  <td class=xl29 align=right x:num>Suresh Kumar</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>177</td>
+  <td class=xl29>160550914</td>
+  <td class=xl29 align=right x:num>311282</td>
+  <td class=xl29 align=right x:num>Suwandi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>178</td>
+  <td class=xl29>150540916</td>
+  <td class=xl29 align=right x:num>313132</td>
+  <td class=xl29 align=right x:num>Tarsiman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>179</td>
+  <td class=xl29>120540917</td>
+  <td class=xl29 align=right x:num>313048</td>
+  <td class=xl29 align=right x:num>Taufik Ardiansyah</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>180</td>
+  <td class=xl29>150540918</td>
+  <td class=xl29 align=right x:num>313112</td>
+  <td class=xl29 align=right x:num>Taufik Rohman</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>181</td>
+  <td class=xl29>070520919</td>
+  <td class=xl29 align=right x:num>334001</td>
+  <td class=xl29 align=right x:num>Teddy Herdianto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Kepala Cabang Senior</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>182</td>
+  <td class=xl29>140540920</td>
+  <td class=xl29 align=right x:num>313100</td>
+  <td class=xl29 align=right x:num>Tedi Gunawan</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>183</td>
+  <td class=xl29>160510921</td>
+  <td class=xl29 align=right x:num>312084</td>
+  <td class=xl29 align=right x:num>Tegar Aji Ginanjar</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>184</td>
+  <td class=xl29>110550922</td>
+  <td class=xl29 align=right x:num>311061</td>
+  <td class=xl29 align=right x:num>Teti Rusyani</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>185</td>
+  <td class=xl29>140550923</td>
+  <td class=xl29 align=right x:num>311195</td>
+  <td class=xl29 align=right x:num>Tiswadi Idris</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Data Reporting</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>186</td>
+  <td class=xl29>150550924</td>
+  <td class=xl29 align=right x:num>311217</td>
+  <td class=xl29 align=right x:num>Tohirin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Cirebon</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>187</td>
+  <td class=xl29>130550925</td>
+  <td class=xl29 align=right x:num>313047</td>
+  <td class=xl29 align=right x:num>Tonita</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>188</td>
+  <td class=xl29>110550926</td>
+  <td class=xl29 align=right x:num>311027</td>
+  <td class=xl29 align=right x:num>Tosin Riyanto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>189</td>
+  <td class=xl29>130510927</td>
+  <td class=xl29 align=right x:num>312057</td>
+  <td class=xl29 align=right x:num>Tri Sutrisna</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>190</td>
+  <td class=xl29>150540928</td>
+  <td class=xl29 align=right x:num>313129</td>
+  <td class=xl29 align=right x:num>Triyana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>191</td>
+  <td class=xl29>110550929</td>
+  <td class=xl29 align=right x:num>311062</td>
+  <td class=xl29 align=right x:num>Uhi Nasuhi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>192</td>
+  <td class=xl29>150550930</td>
+  <td class=xl29 align=right x:num>311234</td>
+  <td class=xl29 align=right x:num>Ulun Masulun Khotmi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>193</td>
+  <td class=xl29>090510931</td>
+  <td class=xl29 align=right x:num>312013</td>
+  <td class=xl29 align=right x:num>Uung Muhtarom</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >FAS</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>194</td>
+  <td class=xl29>120550932</td>
+  <td class=xl29 align=right x:num>311078</td>
+  <td class=xl29 align=right x:num>Uus Supendi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>195</td>
+  <td class=xl29>120550933</td>
+  <td class=xl29 align=right x:num>311094</td>
+  <td class=xl29 align=right x:num>Uus Uswandi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>196</td>
+  <td class=xl29>130510934</td>
+  <td class=xl29 align=right x:num>312058</td>
+  <td class=xl29 align=right x:num>Veni Novitasari</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>197</td>
+  <td class=xl29>130540935</td>
+  <td class=xl29 align=right x:num>311208</td>
+  <td class=xl29 align=right x:num>Wahidin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>198</td>
+  <td class=xl29>090550936</td>
+  <td class=xl29 align=right x:num>311016</td>
+  <td class=xl29 align=right x:num>Wahono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>199</td>
+  <td class=xl29>090550937</td>
+  <td class=xl29 align=right x:num>311011</td>
+  <td class=xl29 align=right x:num>Wahyudi</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>200</td>
+  <td class=xl29>110550938</td>
+  <td class=xl29 align=right x:num>311050</td>
+  <td class=xl29 align=right x:num>Wartono</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>201</td>
+  <td class=xl29>130540939</td>
+  <td class=xl29 align=right x:num>313050</td>
+  <td class=xl29 align=right x:num>Wawan Anwar Qomaruddin</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>202</td>
+  <td class=xl29>160550940</td>
+  <td class=xl29 align=right x:num>311281</td>
+  <td class=xl29 align=right x:num>Widya Rini</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>203</td>
+  <td class=xl29>110550941</td>
+  <td class=xl29 align=right x:num>311029</td>
+  <td class=xl29 align=right x:num>Wiki Erlana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>204</td>
+  <td class=xl29>160905052752</td>
+  <td class=xl29 align=right x:num>311313</td>
+  <td class=xl29 align=right x:num>Winarto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >VERIFIKASI</td>
+  <td class=xl29 align=right >2016-09-26</td>
+  <td class=xl29 align=right >2016-11-05</td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>205</td>
+  <td class=xl29>120510942</td>
+  <td class=xl29 align=right x:num>312060</td>
+  <td class=xl29 align=right x:num>Windi Haryani</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Indramayu</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>206</td>
+  <td class=xl29>130550943</td>
+  <td class=xl29 align=right x:num>311193</td>
+  <td class=xl29 align=right x:num>Wisnu Purwasena</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>207</td>
+  <td class=xl29>140550944</td>
+  <td class=xl29 align=right x:num>311211</td>
+  <td class=xl29 align=right x:num>Wiwi Rosmawati</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Admin MD</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>208</td>
+  <td class=xl29>120550945</td>
+  <td class=xl29 align=right x:num>311069</td>
+  <td class=xl29 align=right x:num>Yanti Maryanti</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>209</td>
+  <td class=xl29>110520946</td>
+  <td class=xl29 align=right x:num>314013</td>
+  <td class=xl29 align=right x:num>Yanto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>210</td>
+  <td class=xl29>960540947</td>
+  <td class=xl29 align=right x:num>313012</td>
+  <td class=xl29 align=right x:num>Yaya Sunarya</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>211</td>
+  <td class=xl29>110550948</td>
+  <td class=xl29 align=right x:num>311059</td>
+  <td class=xl29 align=right x:num>Yaya Suryana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>212</td>
+  <td class=xl29>110550949</td>
+  <td class=xl29 align=right x:num>311060</td>
+  <td class=xl29 align=right x:num>Yayan Haryanto</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>213</td>
+  <td class=xl29>110550950</td>
+  <td class=xl29 align=right x:num>311063</td>
+  <td class=xl29 align=right x:num>Yayan Suryana</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Kuningan</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>214</td>
+  <td class=xl29>090540951</td>
+  <td class=xl29 align=right x:num>313051</td>
+  <td class=xl29 align=right x:num>Yayat Supriyatno</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>215</td>
+  <td class=xl29>140510952</td>
+  <td class=xl29 align=right x:num>312070</td>
+  <td class=xl29 align=right x:num>Yessy Dwi Fitria</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>216</td>
+  <td class=xl29>130510953</td>
+  <td class=xl29 align=right x:num>312029</td>
+  <td class=xl29 align=right x:num>Yeyen Anggraeni</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB MR Losari</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>217</td>
+  <td class=xl29>130550955</td>
+  <td class=xl29 align=right x:num>311134</td>
+  <td class=xl29 align=right x:num>Yudi Supriatna</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CRB SB Majalengka</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales RSU Jober 50 jt</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>218</td>
+  <td class=xl29>130550956</td>
+  <td class=xl29 align=right x:num>311098</td>
+  <td class=xl29 align=right x:num>Yudi Wijaya</td>
+  <td class=xl29 align=right >CIREBON</td>
+  <td class=xl29 align=right >CIREBON Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales TO HFS</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >-</td>
+  <td class=xl29 align=right >Cabang Reguler ===>08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'></td>
+  <td class=xl29></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >JML KARYAWAN : 218</td>
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=14 width=80 clospan= style='width:41pt'></td></tr>
+ <![endif]>
+</table>
+
+
+</body>			
+</html>
+
+

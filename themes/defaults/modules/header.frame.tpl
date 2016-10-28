@@ -13,14 +13,28 @@ body {
 	margin-bottom: 0px;
 	padding:0px;
 }
+tbody tr td:first-child {
+    font-weight: bold;
+}
+.text-regular {
+    font: 11px/22px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+}
+}
 </style>
-<body>
-<div style="background-image:url(<!--{$HREF_IMG_PATH}-->/common/header_btm_sip_pjp.jpg); background-repeat:repeat-x; height:25px" align="center"><A HREF="javascript:checkFrame('FrameImg');" TITLE="Show/Hide Header"><img ID="FrameImg" NAME="FrameImg" src="<!--{$HREF_IMG_PATH}-->/common/top_arrow_sip_pjp_2.jpg" BORDER="0"></A></div>
+     
+<body> 
+
+<div style="background-image:url(<!--{$HREF_IMG_PATH}-->/common/header_btm_sip_pjp.jpg); background-repeat:repeat-x; height:25px" align="center">
+    <A HREF="javascript:checkFrame('FrameImg');" TITLE="Show/Hide Header">
+        <img ID="FrameImg" NAME="FrameImg" src="<!--{$HREF_IMG_PATH}-->/common/top_arrow_sip_pjp_2.jpg" BORDER="0">
+    
+    </A>
+
+</div>
 </body>
 </html>
 <SCRIPT LANGUAGE="JavaScript">
 <!--
-
 var openImg = new Image();
         openImg.src = "<!--{$HREF_IMG_PATH}-->/common/top_arrow_sip_pjp_1.jpg"
 var closeImg = new Image();

@@ -76,10 +76,7 @@ $FILE_JS  = $JS_MODUL.'/daftar_user';
 
 #Initiate TABLE
 $tbl_name	= "tbl_sys_master_user";
-$tbl_name_jenis_jln = "tbl_mast_jln";
-$tbl_name_propinsi = "tbl_mast_wil_propinsi";
-$tbl_name_kabupaten = "tbl_mast_wil_kabupaten";
-$tbl_name_kecamatan = "tbl_mast_wil_kecamatan";
+
 
 //-----------------------------------END OF LOCAL CONFIG-------------------------------//
 
@@ -110,49 +107,48 @@ else $NAME="";
 
 $jns_jln	= $_POST[jns_jln]?$_POST[jns_jln]:$_GET[jns_jln];
 
+
 $str_completer = "limit=".$LIMIT."&SORT=".$SORT."&user_id=".$CODE."&user_first_name=".$NAME."&jns_jln=".$jns_jln;
 $str_completer_ = "limit=".$LIMIT."&SORT=".$SORT."&page=".$page."&jns_jln=".$jns_jln;
-
-//-------------MASTER WILAYAH PROPINSI---------------------------
-$sql_propinsi = "SELECT no_propinsi,nama_propinsi FROM ".$tbl_name_propinsi." ORDER BY no_propinsi ASC";
-$recordSet_propinsi = $db->Execute($sql_propinsi);
-$initSet = array();
-$data_propinsi = array();
-$z=0;
-while ($arr=$recordSet_propinsi->FetchRow()) {
-	array_push($data_propinsi, $arr);
-	array_push($initSet, $z);
-	$z++;
-}
-$smarty->assign ("DATA_PROPINSI", $data_propinsi);
-$smarty->assign ("ID_PROPINSI",$MAIN_PROP);
- 
-
 
 
 
 if ($_GET[get_propinsi] == 1)
 {
 			 $jenis_user = $_GET[jenis_user];
+                         //var_dump($jenis_user)or die();
 
 			if ($jenis_user==2) { 
-				$sql_data_usulan = "SELECT * FROM tbl_mast_perwakilan";
+				$sql_data_usulan = "SELECT cab.r_cabang__id,cab.r_cabang__nama
+                                                          FROM  r_cabang cab order by r_cabang__id";
 				$result_data_usulan = $db->execute($sql_data_usulan);
 				$total_data_usulan = $result_data_usulan->numrows();
 				
-				$data_usulan = "<select id=\"kode_perwakilan\" name=\"kode_perwakilan\"  style=\width:250px\" >";
+				$data_usulan = "<select id=\"r_cabang__id\" name=\"kode_cabang\"  style=\width:250px\" >";
 				$data_usulan .= "<option value=\"\"> [Pilih Perwakilan] </option >";
 				while(!$result_data_usulan ->EOF):
-				 $data_usulan .= "<option value=".$result_data_usulan->fields['kode_perwakilan'].">".$result_data_usulan->fields['nm_perwakilan']."</option>";
+				 $data_usulan .= "<option value=".$result_data_usulan->fields['r_cabang__id'].">".$result_data_usulan->fields['r_cabang__nama']."</option>";
 					$result_data_usulan->MoveNext();
 				endwhile;
 				$data_usulan .="</select>";
 
 			} else {
+                            
+                            
+                            
 				
-					$data_usulan = "<select id=\"kode_perwakilan\" name=\"kode_perwakilan\" disabled  style=\width:250px\" >";
-				 	$data_usulan .= "<option value=\"\"> [Pilih Perwakilan] </option >";			 
-				 $data_usulan .="</select>";
+					$sql_data_usulan = "SELECT cab.r_cabang__id,cab.r_cabang__nama
+                                                          FROM  r_cabang cab where cab.r_cabang__id=1 order by r_cabang__id";
+				$result_data_usulan = $db->execute($sql_data_usulan);
+				$total_data_usulan = $result_data_usulan->numrows();
+				
+				$data_usulan = "<select id=\"r_cabang__id\" name=\"kode_cabang\"  style=\width:250px\" >";
+				$data_usulan .= "<option value=\"\"> [Pilih Perwakilan] </option >";
+				while(!$result_data_usulan ->EOF):
+				 $data_usulan .= "<option value=".$result_data_usulan->fields['r_cabang__id'].">".$result_data_usulan->fields['r_cabang__nama']."</option>";
+					$result_data_usulan->MoveNext();
+				endwhile;
+				$data_usulan .="</select>";
 
 
 			}
@@ -163,7 +159,18 @@ if ($_GET[get_propinsi] == 1)
 	 
 }
 
-
+//-------------------DATA CABANG------------------//
+$sql_cab = "SELECT  *  FROM r_cabang ";
+$result_cab = $db->Execute($sql_cab);
+$initSet = array();
+$data_cab = array();
+$z=0;
+while ($arr=$result_cab->FetchRow()) {
+	array_push($data_cab, $arr);
+	array_push($initSet, $z);
+	$z++;
+}
+$smarty->assign ("DATA_CABANG", $data_cab);
 
  
 
@@ -175,9 +182,13 @@ if($opt=="1"){
 	$sql_	 = "SELECT * FROM ".$tbl_name." ";
 	$sql_	.= "WHERE user_id ='".$_GET['user_id']."' ";
 	$resultSet = $db->Execute($sql_);
+        
+        
 	$edit_user_id = $resultSet->fields['user_id'];
+        $edit_user_password = $resultSet->fields['user_password'];
 	$edit_user_first_name = $resultSet->fields['user_first_name'];
 	$edit_user_last_name = $resultSet->fields['user_last_name'];
+        $edit_id_pegawai = $resultSet->fields['id_pegawai'];
 	$edit_user_date_join = $resultSet->fields['user_date_join'];
 	$edit_user_address = $resultSet->fields['user_address'];
 	$edit_user_telp = $resultSet->fields['user_telp'];
@@ -185,15 +196,21 @@ if($opt=="1"){
 	$edit_user_email = $resultSet->fields['user_email'];
 	$edit_user_active_status = $resultSet->fields['user_active_status'];
 	$edit_level_user = $resultSet->fields['level'];
-		$edit_kode_perwakilan = $resultSet->fields['kode_perwakilan'];
-	$edit_user_password = $resultSet->fields['user_password'];
+        $edit_user_current_login_date = $resultSet->fields['user_current_login_date'];
+        $edit_user_current_login_host= $resultSet->fields['user_current_login_host'];
+        $edit_kode_cabang = $resultSet->fields['kode_cabang'];
+        $edit_group_user = $resultSet->fields['group_user'];
+        
+        
+	
 		
 	$edit = 1;
 
 	if ($edit_level_user ==2) {
 	
 //-------------------------------------
-$sql_pwk = "SELECT  *  FROM tbl_mast_perwakilan ";
+$sql_pwk = "SELECT  *  FROM r_cabang ";
+//
 $result_pwk = $db->Execute($sql_pwk);
 $initSet = array();
 $data_pwk = array();
@@ -214,7 +231,7 @@ $smarty->assign ("DATA_INSTANSI2", $data_pwk);
 }
 
 $smarty->assign ("OPT", $opt);
-$smarty->assign ("EDIT_KODE_PERWAKILAN", $edit_kode_perwakilan);
+$smarty->assign ("EDIT_KODE_CABANG", $edit_kode_cabang);
 $smarty->assign ("EDIT_USER_ID", $edit_user_id);
 $smarty->assign ("EDIT_USER_PASSWORD", base64_decode($edit_user_password));
 $smarty->assign ("EDIT_USER_FIRST_NAME", $edit_user_first_name);
@@ -226,8 +243,8 @@ $smarty->assign ("EDIT_USER_GENDER", $edit_user_gender);
 $smarty->assign ("EDIT_USER_EMAIL", $edit_user_email);
 $smarty->assign ("EDIT_USER_STATUS", $edit_user_active_status);
 $smarty->assign ("EDIT_LEVEL", $edit_level_user);
-$smarty->assign ("NO_PROPINSI", $resultSet->fields['no_propinsi']);
-$smarty->assign ("NO_KABUPATEN", $resultSet->fields['no_kabupaten']);
+$smarty->assign ("EDIT_ID_PEGAWAI", $edit_id_pegawai);
+
 
 $smarty->assign ("EDIT_VAL", $edit);
 

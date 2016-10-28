@@ -1,0 +1,2860 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=12 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->LAPORAN PEGAWAI </td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=12 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=12 height=21 class=xl36 style='height:15.75pt'>CABANG  : YOGYAKARTA</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+  <td width="4" class=xl25>&nbsp;</td>
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>NIP</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=82 style='width:25pt'>JABATAN</td>
+    <td class=xl27 width=82 style='width:25pt'>LEVEL JABATAN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS PEGAWAI</td>
+    <td class=xl27 width=98 style='width:50pt'>AWAL MASUK</td> 
+    <td class=xl27 width=57 style='width:25pt'>AKHIR KONTRAK</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>131041845</td>
+  <td class=xl29 align=right x:num>273062</td>
+  <td class=xl29 align=right x:num>Aan Sudarmanta</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>141011846</td>
+  <td class=xl29 align=right x:num>272042</td>
+  <td class=xl29 align=right x:num>Abbidin Fathoni</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>101051847</td>
+  <td class=xl29 align=right x:num>271025</td>
+  <td class=xl29 align=right x:num>Abu Sidik Rukmono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>131051848</td>
+  <td class=xl29 align=right x:num>271021</td>
+  <td class=xl29 align=right x:num>Achmad Choirudin</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>131041849</td>
+  <td class=xl29 align=right x:num>273037</td>
+  <td class=xl29 align=right x:num>Adi Wahyu Widodo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Intercity</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>141051850</td>
+  <td class=xl29 align=right x:num>271142</td>
+  <td class=xl29 align=right x:num>Agung Kristanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>161051851</td>
+  <td class=xl29 align=right x:num>271186</td>
+  <td class=xl29 align=right x:num>Agung Praseno</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>101041852</td>
+  <td class=xl29 align=right x:num>273003</td>
+  <td class=xl29 align=right x:num>Agung Suwartana</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>131052696</td>
+  <td class=xl29 align=right x:num>271128</td>
+  <td class=xl29 align=right x:num>Agus Ari Wibowo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>131041854</td>
+  <td class=xl29 align=right x:num>273033</td>
+  <td class=xl29 align=right x:num>Agus Bambang Santoso</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>131041855</td>
+  <td class=xl29 align=right x:num>273060</td>
+  <td class=xl29 align=right x:num>Agus Gunawan</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>121051856</td>
+  <td class=xl29 align=right x:num>271018</td>
+  <td class=xl29 align=right x:num>Agus Suharno</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>151051857</td>
+  <td class=xl29 align=right x:num>271173</td>
+  <td class=xl29 align=right x:num>Agus Sujarwo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>111051858</td>
+  <td class=xl29 align=right x:num>271017</td>
+  <td class=xl29 align=right x:num>Agus Surwanto </td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY MR Bantul</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>131041859</td>
+  <td class=xl29 align=right x:num>273032</td>
+  <td class=xl29 align=right x:num>Agus Suwarno</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>091042697</td>
+  <td class=xl29 align=right x:num>273034</td>
+  <td class=xl29 align=right x:num>Agus Triyono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>121051861</td>
+  <td class=xl29 align=right x:num>271020</td>
+  <td class=xl29 align=right x:num>Agus Witarto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>151052698</td>
+  <td class=xl29 align=right x:num>271176</td>
+  <td class=xl29 align=right x:num>Ahmad Heriyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>161051863</td>
+  <td class=xl29 align=right x:num>271191</td>
+  <td class=xl29 align=right x:num>Ahmad Panji Zakaria</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>101022699</td>
+  <td class=xl29 align=right x:num>274010</td>
+  <td class=xl29 align=right x:num>Ali Abidin</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>091041865</td>
+  <td class=xl29 align=right x:num>273002</td>
+  <td class=xl29 align=right x:num>Andreas Iskarnadi Hermawan</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>131041866</td>
+  <td class=xl29 align=right x:num>273059</td>
+  <td class=xl29 align=right x:num>Andri Harsono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>111042700</td>
+  <td class=xl29 align=right x:num>273036</td>
+  <td class=xl29 align=right x:num>Andri Setiawan</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>141011868</td>
+  <td class=xl29 align=right x:num>272037</td>
+  <td class=xl29 align=right x:num>Anggun Wijayanti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>131041869</td>
+  <td class=xl29 align=right x:num>273056</td>
+  <td class=xl29 align=right x:num>Anjar Prastowo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>161051870</td>
+  <td class=xl29 align=right x:num>271187</td>
+  <td class=xl29 align=right x:num>Aprilia Sugiyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>121051871</td>
+  <td class=xl29 align=right x:num>273040</td>
+  <td class=xl29 align=right x:num>Ari Prasetya</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>091051872</td>
+  <td class=xl29 align=right x:num>271024</td>
+  <td class=xl29 align=right x:num>Arif Suyono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>111012702</td>
+  <td class=xl29 align=right x:num>272010</td>
+  <td class=xl29 align=right x:num>Arum Nur Hidayah</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin Claim</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>161051874</td>
+  <td class=xl29 align=right x:num>271195</td>
+  <td class=xl29 align=right x:num>Azis Nurhuda</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>131041875</td>
+  <td class=xl29 align=right x:num>273064</td>
+  <td class=xl29 align=right x:num>Bagus Nurjayadi</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>121011876</td>
+  <td class=xl29 align=right x:num>272024</td>
+  <td class=xl29 align=right x:num>Basuki Rahmat</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>131041877</td>
+  <td class=xl29 align=right x:num>273057</td>
+  <td class=xl29 align=right x:num>Bendi Sugiyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>141041878</td>
+  <td class=xl29 align=right x:num>274018</td>
+  <td class=xl29 align=right x:num>Benny Yusuf</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>131051879</td>
+  <td class=xl29 align=right x:num>271027</td>
+  <td class=xl29 align=right x:num>Bobbi Yuliantoko</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>151052704</td>
+  <td class=xl29 align=right x:num>271169</td>
+  <td class=xl29 align=right x:num>Budi Hartati</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>131051881</td>
+  <td class=xl29 align=right x:num>271205</td>
+  <td class=xl29 align=right x:num>Budi Hartono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>081041882</td>
+  <td class=xl29 align=right x:num>273001</td>
+  <td class=xl29 align=right x:num>Candra Sukma Jaya</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Inventory Control</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>141052706</td>
+  <td class=xl29 align=right x:num>271149</td>
+  <td class=xl29 align=right x:num>Catur Hesmu Broto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>151042707</td>
+  <td class=xl29 align=right x:num>273067</td>
+  <td class=xl29 align=right x:num>Catur Nurullah</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>161051885</td>
+  <td class=xl29 align=right x:num>271199</td>
+  <td class=xl29 align=right x:num>Danang Nur Sahid </td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>091051886</td>
+  <td class=xl29 align=right x:num>271030</td>
+  <td class=xl29 align=right x:num>Dani Saputra</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>121051887</td>
+  <td class=xl29 align=right x:num>271121</td>
+  <td class=xl29 align=right x:num>Davit Sumarvin</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>111051888</td>
+  <td class=xl29 align=right x:num>271035</td>
+  <td class=xl29 align=right x:num>Dedi Wahyu Setiawan</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>161051889</td>
+  <td class=xl29 align=right x:num>271185</td>
+  <td class=xl29 align=right x:num>Desti Purbawati</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>151051890</td>
+  <td class=xl29 align=right x:num>271178</td>
+  <td class=xl29 align=right x:num>Devi Yuliani</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Beauty Advisor</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>161011891</td>
+  <td class=xl29 align=right x:num>272057</td>
+  <td class=xl29 align=right x:num>Dias Karika Sari</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY MR Bantul</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin SB</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>121041892</td>
+  <td class=xl29 align=right x:num>273050</td>
+  <td class=xl29 align=right x:num>Didik Santosa</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>151011893</td>
+  <td class=xl29 align=right x:num>272052</td>
+  <td class=xl29 align=right x:num>Dina Wati</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>141052708</td>
+  <td class=xl29 align=right x:num>271133</td>
+  <td class=xl29 align=right x:num>Diyah Puspitaningrum</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>121051895</td>
+  <td class=xl29 align=right x:num>273052</td>
+  <td class=xl29 align=right x:num>Dona Kunjari</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>151051896</td>
+  <td class=xl29 align=right x:num>271179</td>
+  <td class=xl29 align=right x:num>Dwi Asri Siswanti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>53</td>
+  <td class=xl29>161051897</td>
+  <td class=xl29 align=right x:num>271184</td>
+  <td class=xl29 align=right x:num>Dwi Febrina Untari </td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>54</td>
+  <td class=xl29>131021898</td>
+  <td class=xl29 align=right x:num>271129</td>
+  <td class=xl29 align=right x:num>Dwi Kriswanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>55</td>
+  <td class=xl29>081051899</td>
+  <td class=xl29 align=right x:num>271034</td>
+  <td class=xl29 align=right x:num>Dwi Susanto Atmojo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>56</td>
+  <td class=xl29>161051900</td>
+  <td class=xl29 align=right x:num>271196</td>
+  <td class=xl29 align=right x:num>Edi Purwo Laksono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>57</td>
+  <td class=xl29>121041901</td>
+  <td class=xl29 align=right x:num>273026</td>
+  <td class=xl29 align=right x:num>Edy Setyono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>58</td>
+  <td class=xl29>131041902</td>
+  <td class=xl29 align=right x:num>273027</td>
+  <td class=xl29 align=right x:num>Eka Wizaksana</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>59</td>
+  <td class=xl29>121041903</td>
+  <td class=xl29 align=right x:num>274016</td>
+  <td class=xl29 align=right x:num>Eko Ari Wibowo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>60</td>
+  <td class=xl29>131051904</td>
+  <td class=xl29 align=right x:num>271137</td>
+  <td class=xl29 align=right x:num>Endah Purnami</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>61</td>
+  <td class=xl29>161051905</td>
+  <td class=xl29 align=right x:num>271180</td>
+  <td class=xl29 align=right x:num>Endro Pamungkas</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>62</td>
+  <td class=xl29>101051906</td>
+  <td class=xl29 align=right x:num>271038</td>
+  <td class=xl29 align=right x:num>Eni Astuti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>63</td>
+  <td class=xl29>161051907</td>
+  <td class=xl29 align=right x:num>271200</td>
+  <td class=xl29 align=right x:num>Enik Purwanti </td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>64</td>
+  <td class=xl29>101051908</td>
+  <td class=xl29 align=right x:num>271105</td>
+  <td class=xl29 align=right x:num>Erma Yulianti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales MAS R</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>65</td>
+  <td class=xl29>101041909</td>
+  <td class=xl29 align=right x:num>273047</td>
+  <td class=xl29 align=right x:num>Erwin Windarto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Gudang</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>66</td>
+  <td class=xl29>141011910</td>
+  <td class=xl29 align=right x:num>272041</td>
+  <td class=xl29 align=right x:num>Estetika Kumala Sari</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>67</td>
+  <td class=xl29>141011911</td>
+  <td class=xl29 align=right x:num>272036</td>
+  <td class=xl29 align=right x:num>Euis Purwati</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Kecil</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>68</td>
+  <td class=xl29>151051912</td>
+  <td class=xl29 align=right x:num>271164</td>
+  <td class=xl29 align=right x:num>Fepti Yani</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>69</td>
+  <td class=xl29>161041913</td>
+  <td class=xl29 align=right x:num>273094</td>
+  <td class=xl29 align=right x:num>Firman Fauzi</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>70</td>
+  <td class=xl29>011041914</td>
+  <td class=xl29 align=right x:num>273069</td>
+  <td class=xl29 align=right x:num>Fransisca Rusita Yuliana</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>71</td>
+  <td class=xl29>091051915</td>
+  <td class=xl29 align=right x:num>271049</td>
+  <td class=xl29 align=right x:num>Giyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>72</td>
+  <td class=xl29>161021916</td>
+  <td class=xl29 align=right x:num>274021</td>
+  <td class=xl29 align=right x:num>Hana Mustika Sang Nugraha</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Staff GA</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>73</td>
+  <td class=xl29>121041917</td>
+  <td class=xl29 align=right x:num>273004</td>
+  <td class=xl29 align=right x:num>Hangga Wijaya</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>74</td>
+  <td class=xl29>141011918</td>
+  <td class=xl29 align=right x:num>271050</td>
+  <td class=xl29 align=right x:num>Harti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator SB</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>75</td>
+  <td class=xl29>131051919</td>
+  <td class=xl29 align=right x:num>271110</td>
+  <td class=xl29 align=right x:num>Haryanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>76</td>
+  <td class=xl29>151051920</td>
+  <td class=xl29 align=right x:num>271159</td>
+  <td class=xl29 align=right x:num>Hendrik</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>77</td>
+  <td class=xl29>161041921</td>
+  <td class=xl29 align=right x:num>273092</td>
+  <td class=xl29 align=right x:num>Hendriyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>78</td>
+  <td class=xl29>101051922</td>
+  <td class=xl29 align=right x:num>271053</td>
+  <td class=xl29 align=right x:num>Henri Prananto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>79</td>
+  <td class=xl29>151011923</td>
+  <td class=xl29 align=right x:num>272047</td>
+  <td class=xl29 align=right x:num>Heri Purnomo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>80</td>
+  <td class=xl29>141051924</td>
+  <td class=xl29 align=right x:num>271147</td>
+  <td class=xl29 align=right x:num>Hermin Amriyati</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>81</td>
+  <td class=xl29>151021925</td>
+  <td class=xl29 align=right x:num>272045</td>
+  <td class=xl29 align=right x:num>Ichsan Taufiq Fajar Nugroho</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >HRD Supervisor</td>
+  <td class=xl29 align=right >Director</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>82</td>
+  <td class=xl29>161051926</td>
+  <td class=xl29 align=right x:num>271197</td>
+  <td class=xl29 align=right x:num>Ifanri Andriyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>83</td>
+  <td class=xl29>081011927</td>
+  <td class=xl29 align=right x:num>272001</td>
+  <td class=xl29 align=right x:num>Iman Patrawijaya</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>84</td>
+  <td class=xl29>131051928</td>
+  <td class=xl29 align=right x:num>271119</td>
+  <td class=xl29 align=right x:num>Indri Wahyu Saputro</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>85</td>
+  <td class=xl29>131041929</td>
+  <td class=xl29 align=right x:num>273061</td>
+  <td class=xl29 align=right x:num>Irjanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>86</td>
+  <td class=xl29>111041930</td>
+  <td class=xl29 align=right x:num>273048</td>
+  <td class=xl29 align=right x:num>Iswanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Inventory Control</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>87</td>
+  <td class=xl29>121051931</td>
+  <td class=xl29 align=right x:num>271007</td>
+  <td class=xl29 align=right x:num>Iswondo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>88</td>
+  <td class=xl29>151051932</td>
+  <td class=xl29 align=right x:num>271154</td>
+  <td class=xl29 align=right x:num>Jati Kusumo Nugroho</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>89</td>
+  <td class=xl29>141051933</td>
+  <td class=xl29 align=right x:num>271132</td>
+  <td class=xl29 align=right x:num>Johan Riyono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>90</td>
+  <td class=xl29>081051934</td>
+  <td class=xl29 align=right x:num>271202</td>
+  <td class=xl29 align=right x:num>Joko Ruwanto </td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>91</td>
+  <td class=xl29>161051935</td>
+  <td class=xl29 align=right x:num>271182</td>
+  <td class=xl29 align=right x:num>Joko Sukono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>92</td>
+  <td class=xl29>161041936</td>
+  <td class=xl29 align=right x:num>273091</td>
+  <td class=xl29 align=right x:num>Junarto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>93</td>
+  <td class=xl29>151051937</td>
+  <td class=xl29 align=right x:num>271177</td>
+  <td class=xl29 align=right x:num>Kelik Nugroho</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>94</td>
+  <td class=xl29>141051938</td>
+  <td class=xl29 align=right x:num>271143</td>
+  <td class=xl29 align=right x:num>Kisworo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>95</td>
+  <td class=xl29>131041939</td>
+  <td class=xl29 align=right x:num>273053</td>
+  <td class=xl29 align=right x:num>Kunto Kunarto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>96</td>
+  <td class=xl29>151051940</td>
+  <td class=xl29 align=right x:num>271161</td>
+  <td class=xl29 align=right x:num>Lucky Indah Ningrum</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>97</td>
+  <td class=xl29>151051941</td>
+  <td class=xl29 align=right x:num>271174</td>
+  <td class=xl29 align=right x:num>M Zuhdan</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>98</td>
+  <td class=xl29>101041942</td>
+  <td class=xl29 align=right x:num>273020</td>
+  <td class=xl29 align=right x:num>M. Fadli Afthon</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Ekspedisi</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>99</td>
+  <td class=xl29>141041943</td>
+  <td class=xl29 align=right x:num>273039</td>
+  <td class=xl29 align=right x:num>M. Syaifudin Ats Tsani</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>100</td>
+  <td class=xl29>131051944</td>
+  <td class=xl29 align=right x:num>271076</td>
+  <td class=xl29 align=right x:num>M.M Nenny Anggraeni</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>101</td>
+  <td class=xl29>121051945</td>
+  <td class=xl29 align=right x:num>273035</td>
+  <td class=xl29 align=right x:num>Maryanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>102</td>
+  <td class=xl29>131041946</td>
+  <td class=xl29 align=right x:num>271130</td>
+  <td class=xl29 align=right x:num>Maryanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>103</td>
+  <td class=xl29>161011947</td>
+  <td class=xl29 align=right x:num>272056</td>
+  <td class=xl29 align=right x:num>Maya Fitria Anas</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>104</td>
+  <td class=xl29>101051948</td>
+  <td class=xl29 align=right x:num>271070</td>
+  <td class=xl29 align=right x:num>Mei Anjar Wintolo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>105</td>
+  <td class=xl29>161051949</td>
+  <td class=xl29 align=right x:num>271203</td>
+  <td class=xl29 align=right x:num>Meri Kristiyani Ginting</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>106</td>
+  <td class=xl29>151011950</td>
+  <td class=xl29 align=right x:num>272048</td>
+  <td class=xl29 align=right x:num>Meylani Arumsari</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin SB</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>107</td>
+  <td class=xl29>101041951</td>
+  <td class=xl29 align=right x:num>273022</td>
+  <td class=xl29 align=right x:num>Much Sofyan Rifai</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Ekspedisi</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>108</td>
+  <td class=xl29>101041952</td>
+  <td class=xl29 align=right x:num>273010</td>
+  <td class=xl29 align=right x:num>Muhammad Syamsul Hadi</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Intercity</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>109</td>
+  <td class=xl29>121051953</td>
+  <td class=xl29 align=right x:num>271071</td>
+  <td class=xl29 align=right x:num>Muhlis Arifin</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>110</td>
+  <td class=xl29>131051954</td>
+  <td class=xl29 align=right x:num>271074</td>
+  <td class=xl29 align=right x:num>Muhtar Mu'Amin</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>111</td>
+  <td class=xl29>121041955</td>
+  <td class=xl29 align=right x:num>273051</td>
+  <td class=xl29 align=right x:num>Muji Nur Salim</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>112</td>
+  <td class=xl29>161052709</td>
+  <td class=xl29 align=right x:num>272058</td>
+  <td class=xl29 align=right x:num>Niken Yulianti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Admin Data Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>113</td>
+  <td class=xl29>151052710</td>
+  <td class=xl29 align=right x:num>271170</td>
+  <td class=xl29 align=right x:num>Ninik Hariyanti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>114</td>
+  <td class=xl29>161051958</td>
+  <td class=xl29 align=right x:num>271189</td>
+  <td class=xl29 align=right x:num>Nita Uriana</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>115</td>
+  <td class=xl29>111051959</td>
+  <td class=xl29 align=right x:num>271006</td>
+  <td class=xl29 align=right x:num>Nolik  Jaka Winarna</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>116</td>
+  <td class=xl29>131051960</td>
+  <td class=xl29 align=right x:num>271013</td>
+  <td class=xl29 align=right x:num>Nur Roda Paksi</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>117</td>
+  <td class=xl29>161051961</td>
+  <td class=xl29 align=right x:num>271198</td>
+  <td class=xl29 align=right x:num>Nur Rohim </td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>118</td>
+  <td class=xl29>081041962</td>
+  <td class=xl29 align=right x:num>273008</td>
+  <td class=xl29 align=right x:num>Nur Saleh</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>119</td>
+  <td class=xl29>131051963</td>
+  <td class=xl29 align=right x:num>271079</td>
+  <td class=xl29 align=right x:num>Nur Yulianto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>120</td>
+  <td class=xl29>151011964</td>
+  <td class=xl29 align=right x:num>272046</td>
+  <td class=xl29 align=right x:num>Oka Sigit Wicaksono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >AR Control</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>121</td>
+  <td class=xl29>161042711</td>
+  <td class=xl29 align=right x:num>273089</td>
+  <td class=xl29 align=right x:num>Pamungkas Sudaryono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>122</td>
+  <td class=xl29>101051966</td>
+  <td class=xl29 align=right x:num>271037</td>
+  <td class=xl29 align=right x:num>Poly Endramawan  Tri Octavianto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>123</td>
+  <td class=xl29>131051967</td>
+  <td class=xl29 align=right x:num>271029</td>
+  <td class=xl29 align=right x:num>Pradana Yuliantono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>124</td>
+  <td class=xl29>141051968</td>
+  <td class=xl29 align=right x:num>271148</td>
+  <td class=xl29 align=right x:num>Prastiwi</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>125</td>
+  <td class=xl29>141011969</td>
+  <td class=xl29 align=right x:num>272040</td>
+  <td class=xl29 align=right x:num>Pratiwi Widyastuti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>126</td>
+  <td class=xl29>151011970</td>
+  <td class=xl29 align=right x:num>272053</td>
+  <td class=xl29 align=right x:num>Puji Ardianto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Operator Komputer</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>127</td>
+  <td class=xl29>081021971</td>
+  <td class=xl29 align=right x:num>274001</td>
+  <td class=xl29 align=right x:num>Purbowo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Kepala Cabang</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>128</td>
+  <td class=xl29>121011972</td>
+  <td class=xl29 align=right x:num>272019</td>
+  <td class=xl29 align=right x:num>Rahmat Nugroho</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY MR Bantul</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator MR</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>129</td>
+  <td class=xl29>111051973</td>
+  <td class=xl29 align=right x:num>271083</td>
+  <td class=xl29 align=right x:num>Ramelan</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>130</td>
+  <td class=xl29>151051974</td>
+  <td class=xl29 align=right x:num>271157</td>
+  <td class=xl29 align=right x:num>Ratri Wigati</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>131</td>
+  <td class=xl29>121051975</td>
+  <td class=xl29 align=right x:num>271114</td>
+  <td class=xl29 align=right x:num>Reni Puspita</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO TL</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>132</td>
+  <td class=xl29>161051976</td>
+  <td class=xl29 align=right x:num>271204</td>
+  <td class=xl29 align=right x:num>Restika Destari Mukti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>133</td>
+  <td class=xl29>081051977</td>
+  <td class=xl29 align=right x:num>271084</td>
+  <td class=xl29 align=right x:num>Retno Astuti Widyaningsih</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>134</td>
+  <td class=xl29>131051978</td>
+  <td class=xl29 align=right x:num>271031</td>
+  <td class=xl29 align=right x:num>Ridho Andika Wajantra</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>135</td>
+  <td class=xl29>131051979</td>
+  <td class=xl29 align=right x:num>271082</td>
+  <td class=xl29 align=right x:num>Rika Hartika Sari</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>136</td>
+  <td class=xl29>121051980</td>
+  <td class=xl29 align=right x:num>271117</td>
+  <td class=xl29 align=right x:num>Riyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>137</td>
+  <td class=xl29>161051981</td>
+  <td class=xl29 align=right x:num>271201</td>
+  <td class=xl29 align=right x:num>Roliein</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY MR Bantul</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>138</td>
+  <td class=xl29>141011982</td>
+  <td class=xl29 align=right x:num>272033</td>
+  <td class=xl29 align=right x:num>Ronny Kustanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>139</td>
+  <td class=xl29>131051983</td>
+  <td class=xl29 align=right x:num>273042</td>
+  <td class=xl29 align=right x:num>Rudi Prasetya</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>140</td>
+  <td class=xl29>131051984</td>
+  <td class=xl29 align=right x:num>271081</td>
+  <td class=xl29 align=right x:num>Rujiman</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>141</td>
+  <td class=xl29>091011985</td>
+  <td class=xl29 align=right x:num>272008</td>
+  <td class=xl29 align=right x:num>Rustrianto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kolektor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>142</td>
+  <td class=xl29>151011986</td>
+  <td class=xl29 align=right x:num>272049</td>
+  <td class=xl29 align=right x:num>Safitri Kuncorowati</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Kasir Kas Besar</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>143</td>
+  <td class=xl29>141031987</td>
+  <td class=xl29 align=right x:num>275003</td>
+  <td class=xl29 align=right x:num>San Gus Nugroho Saputro</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >IT Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>144</td>
+  <td class=xl29>131041988</td>
+  <td class=xl29 align=right x:num>273043</td>
+  <td class=xl29 align=right x:num>Santoso</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Ekspedisi</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>145</td>
+  <td class=xl29>141051989</td>
+  <td class=xl29 align=right x:num>271138</td>
+  <td class=xl29 align=right x:num>Sekar Widi Nugrahaning Jati</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>146</td>
+  <td class=xl29>121051990</td>
+  <td class=xl29 align=right x:num>271118</td>
+  <td class=xl29 align=right x:num>Setiyo Nugroho</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>147</td>
+  <td class=xl29>131041991</td>
+  <td class=xl29 align=right x:num>273058</td>
+  <td class=xl29 align=right x:num>Shidiq Panji Raras</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Helper Gudang</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>148</td>
+  <td class=xl29>131051992</td>
+  <td class=xl29 align=right x:num>271014</td>
+  <td class=xl29 align=right x:num>Siti Rochmah</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales IM2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>149</td>
+  <td class=xl29>131021993</td>
+  <td class=xl29 align=right x:num>274011</td>
+  <td class=xl29 align=right x:num>Slamet Sutrisno</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>UMUM</td>
+  <td class=xl29 align=right >Office Safety</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>150</td>
+  <td class=xl29>151051994</td>
+  <td class=xl29 align=right x:num>271171</td>
+  <td class=xl29 align=right x:num>Sri Lestari</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>151</td>
+  <td class=xl29>091051995</td>
+  <td class=xl29 align=right x:num>271090</td>
+  <td class=xl29 align=right x:num>Sri Suryono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>152</td>
+  <td class=xl29>141051996</td>
+  <td class=xl29 align=right x:num>271140</td>
+  <td class=xl29 align=right x:num>Sri Wahyuni</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>153</td>
+  <td class=xl29>131011997</td>
+  <td class=xl29 align=right x:num>272027</td>
+  <td class=xl29 align=right x:num>Sugiyarti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Koordinator SB</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>154</td>
+  <td class=xl29>091051998</td>
+  <td class=xl29 align=right x:num>271087</td>
+  <td class=xl29 align=right x:num>Suharjono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>155</td>
+  <td class=xl29>131051999</td>
+  <td class=xl29 align=right x:num>271088</td>
+  <td class=xl29 align=right x:num>Suharyono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>156</td>
+  <td class=xl29>081052000</td>
+  <td class=xl29 align=right x:num>271089</td>
+  <td class=xl29 align=right x:num>Sukaryanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>157</td>
+  <td class=xl29>131042001</td>
+  <td class=xl29 align=right x:num>273038</td>
+  <td class=xl29 align=right x:num>Sumadi</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>158</td>
+  <td class=xl29>141052002</td>
+  <td class=xl29 align=right x:num>274015</td>
+  <td class=xl29 align=right x:num>Sunaryoko</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>159</td>
+  <td class=xl29>081042003</td>
+  <td class=xl29 align=right x:num>273013</td>
+  <td class=xl29 align=right x:num>Suparman</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>160</td>
+  <td class=xl29>081052004</td>
+  <td class=xl29 align=right x:num>271003</td>
+  <td class=xl29 align=right x:num>Supriyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>161</td>
+  <td class=xl29>151052005</td>
+  <td class=xl29 align=right x:num>271160</td>
+  <td class=xl29 align=right x:num>Sylvi Dwi Kusumawardani</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Admin Data Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>162</td>
+  <td class=xl29>081052006</td>
+  <td class=xl29 align=right x:num>271060</td>
+  <td class=xl29 align=right x:num>Tati Sri Rahayu</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Admin Score Card</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>163</td>
+  <td class=xl29>111012007</td>
+  <td class=xl29 align=right x:num>272015</td>
+  <td class=xl29 align=right x:num>Titik Ariyanti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >FAS</td>
+  <td class=xl29 align=right >Manager	</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>164</td>
+  <td class=xl29>131052008</td>
+  <td class=xl29 align=right x:num>271115</td>
+  <td class=xl29 align=right x:num>Titin Nurjanti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >KAE</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>165</td>
+  <td class=xl29>111052009</td>
+  <td class=xl29 align=right x:num>271094</td>
+  <td class=xl29 align=right x:num>Tiyas Subiyantara</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>166</td>
+  <td class=xl29>081052010</td>
+  <td class=xl29 align=right x:num>271096</td>
+  <td class=xl29 align=right x:num>Toyip Nugraha</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>167</td>
+  <td class=xl29>161042011</td>
+  <td class=xl29 align=right x:num>273093</td>
+  <td class=xl29 align=right x:num>Tri Prasetyo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>168</td>
+  <td class=xl29>081052012</td>
+  <td class=xl29 align=right x:num>271095</td>
+  <td class=xl29 align=right x:num>Tri Susi Hadiyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>169</td>
+  <td class=xl29>131052013</td>
+  <td class=xl29 align=right x:num>271093</td>
+  <td class=xl29 align=right x:num>Tri Wahono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>170</td>
+  <td class=xl29>151012014</td>
+  <td class=xl29 align=right x:num>272050</td>
+  <td class=xl29 align=right x:num>Triani Nur Khasanah</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Admin SB</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>171</td>
+  <td class=xl29>091012713</td>
+  <td class=xl29 align=right x:num>272011</td>
+  <td class=xl29 align=right x:num>Tutik Mei Indrawati</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Debitur</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>172</td>
+  <td class=xl29>131052016</td>
+  <td class=xl29 align=right x:num>271098</td>
+  <td class=xl29 align=right x:num>Wahyu Dwi Atmojo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>173</td>
+  <td class=xl29>061012017</td>
+  <td class=xl29 align=right x:num>272021</td>
+  <td class=xl29 align=right x:num>Wahyu Utami</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Office Manager</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>174</td>
+  <td class=xl29>081042018</td>
+  <td class=xl29 align=right x:num>273018</td>
+  <td class=xl29 align=right x:num>Wawan Sugiyanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Intercity</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>175</td>
+  <td class=xl29>131042714</td>
+  <td class=xl29 align=right x:num>273014</td>
+  <td class=xl29 align=right x:num>Wawan Sulaksono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>176</td>
+  <td class=xl29>081052020</td>
+  <td class=xl29 align=right x:num>271001</td>
+  <td class=xl29 align=right x:num>Widi Purnomo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY MR Bantul</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales Supervisor</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>177</td>
+  <td class=xl29>101042021</td>
+  <td class=xl29 align=right x:num>273065</td>
+  <td class=xl29 align=right x:num>Widiatmo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Gudang</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>178</td>
+  <td class=xl29>101042022</td>
+  <td class=xl29 align=right x:num>273015</td>
+  <td class=xl29 align=right x:num>Widodo</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>179</td>
+  <td class=xl29>131052023</td>
+  <td class=xl29 align=right x:num>272028</td>
+  <td class=xl29 align=right x:num>Winarko</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales SUB D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>180</td>
+  <td class=xl29>081042024</td>
+  <td class=xl29 align=right x:num>273016</td>
+  <td class=xl29 align=right x:num>Winarto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>181</td>
+  <td class=xl29>121042716</td>
+  <td class=xl29 align=right x:num>273021</td>
+  <td class=xl29 align=right x:num>Windika Prasetyanigrum</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>182</td>
+  <td class=xl29>091052026</td>
+  <td class=xl29 align=right x:num>271102</td>
+  <td class=xl29 align=right x:num>Wisnu Adi Hartanto</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>183</td>
+  <td class=xl29>131042027</td>
+  <td class=xl29 align=right x:num>273031</td>
+  <td class=xl29 align=right x:num>Wiwied Harjuwito</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Driver Dropping</td>
+  <td class=xl29 align=right >Senior Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>184</td>
+  <td class=xl29>151052028</td>
+  <td class=xl29 align=right x:num>271167</td>
+  <td class=xl29 align=right x:num>Wiwin Susanti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>185</td>
+  <td class=xl29>151042029</td>
+  <td class=xl29 align=right x:num>273081</td>
+  <td class=xl29 align=right x:num>Yarkoni</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Delivery Motor Box</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>186</td>
+  <td class=xl29>141012030</td>
+  <td class=xl29 align=right x:num>272032</td>
+  <td class=xl29 align=right x:num>Yeni Anggraeni</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right >Checker</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>187</td>
+  <td class=xl29>121052031</td>
+  <td class=xl29 align=right x:num>271008</td>
+  <td class=xl29 align=right x:num>Yeni Tri Iswanti</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Retail Officer</td>
+  <td class=xl29 align=right >Chief Department</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>188</td>
+  <td class=xl29>081042032</td>
+  <td class=xl29 align=right x:num>273023</td>
+  <td class=xl29 align=right x:num>Yudhi Ariyanta</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Kepala Gudang</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>189</td>
+  <td class=xl29>131042033</td>
+  <td class=xl29 align=right x:num>272006</td>
+  <td class=xl29 align=right x:num>Yudi Aji Santosa</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Admin Gudang</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>190</td>
+  <td class=xl29>151042034</td>
+  <td class=xl29 align=right x:num>273077</td>
+  <td class=xl29 align=right x:num>Yulius Kristiyono</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>LOGISTIK</td>
+  <td class=xl29 align=right >Loper</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>191</td>
+  <td class=xl29>121052035</td>
+  <td class=xl29 align=right x:num>271108</td>
+  <td class=xl29 align=right x:num>Yuly Ariyadi</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Klaten</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Sales</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>192</td>
+  <td class=xl29>161052717</td>
+  <td class=xl29 align=right x:num>272059</td>
+  <td class=xl29 align=right x:num>Yuri Yulfiani</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YOGYA Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Admin MD</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>193</td>
+  <td class=xl29>151052037</td>
+  <td class=xl29 align=right x:num>272043</td>
+  <td class=xl29 align=right x:num>Zuhdan Haris Prasetiya</td>
+  <td class=xl29 align=right >YOGYAKARTA</td>
+  <td class=xl29 align=right >YGY SB Wonosari</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=12 width=80 clospan= style='width:41pt'></td>
+ 
+ </tr>
+ <![endif]>
+</table>
+
+
+</body>
+			
+</html>
+
+
