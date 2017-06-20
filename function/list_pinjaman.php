@@ -1,10 +1,8 @@
- <?PHP
- require_once('../includes/db.conf.php');
- require_once('../adodb/adodb.inc.php');
+<?PHP
+require_once('../includes/db.conf.php');
+require_once('../adodb/adodb.inc.php');
 require_once('../includes/config.conf.php');
 
- 
- 
 //$p = new Pager; 
 $db = &ADONewConnection($DB_TYPE);
 // $db->debug = true;
@@ -118,6 +116,7 @@ if ($_GET[get_kec] == 1)
 $sql="SELECT
   A.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
   A.r_pnpt__nip AS r_pnpt__nip,
+  B.r_pegawai__id AS r_pegawai__id,
   B.r_pegawai__nama AS r_pegawai__nama,
   C.r_cabang__nama AS r_cabang__nama,
   C.r_cabang__id AS r_cabang__id,
@@ -142,7 +141,7 @@ WHERE
   AND
   A.r_pnpt__subdept=F.r_subdept__id AND F.r_subdept__dept=E.r_dept__id
   AND
-  G.r_jabatan__id=A.r_pnpt__jabatan AND  A.r_pnpt__aktif = 1 AND r_cabang__id ='$kode_cabang' ";
+  G.r_jabatan__id=A.r_pnpt__jabatan AND r_cabang__id ='$kode_cabang' ";
 
 
 if ($pil !="") {
@@ -220,7 +219,7 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 <td width="10">:</td>
 <td width="30">
 <select name='pil' class="text">
-<option value=''> Pilih berdasarkan</option>
+
 <option value='1' <?PHP if ($pil==1) { echo "selected"; } ?>>Nama  </option>
 <option value='2' <?PHP if ($pil==2) { echo "selected"; } ?>>NIP</option>
 
@@ -276,7 +275,7 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 				<? for ($i=0;$i<count($list_arr_satuan);$i++) { 
 				   $j = $i+1;	
 				   	$nama=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__nama']);
-                                        $finger=str_replace("'","",$list_arr_satuan[$i]['r_pnpt__nip']);
+                                        $id_karyawan=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__id']);
                                         $cabang=str_replace("'","",$list_arr_satuan[$i]['r_cabang__nama']);
                                         $jabatan=str_replace("'","",$list_arr_satuan[$i]['r_jabatan__ket']);
                                         $level=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__ktp']);    
@@ -287,7 +286,9 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 				
 				<tr align="center" 
                                     onclick="GetPengaduan('<?=$list_arr_satuan[$i]['r_pegawai__nama'];?>',
-                                                '<?=$list_arr_satuan[$i]['r_pnpt__nip'];?>','<?=$list_arr_satuan[$i]['r_jabatan__ket'];?>','<?=$mutasi;?>');"  
+                                                '<?=$list_arr_satuan[$i]['r_pnpt__nip'];?>',
+                                                '<?=$list_arr_satuan[$i]['r_jabatan__ket'];?>',
+                                                '<?=$mutasi;?>','<?=$id_karyawan;?>');"  
                                     onMouseOver="setPointer(this, <?=$initSet[$i];?>, 'over', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
                                     onMouseOut="setPointer(this, <?=$initSet[$i];?>, 'out', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
                                     onMouseDown="setPointer(this, <?=$initSet[$i];?>, 'click', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');"> 
@@ -344,10 +345,11 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 </div>
 
 <script>
-function GetPengaduan(r_pegawai__nama,r_pnpt__nip,r_jabatan__ket,r_pnpt__no_mutasi) {
+function GetPengaduan(r_pegawai__nama,r_pnpt__nip,r_jabatan__ket,r_pnpt__no_mutasi,id_karyawan) {
          
          window.opener.document.getElementById('r_pegawai__nama').value=r_pegawai__nama;
          window.opener.document.getElementById('r_pnpt__nip').value=r_pnpt__nip;
+          window.opener.document.getElementById('id_karyawan').value=id_karyawan;
          window.opener.document.getElementById('r_jabatan__ket').value=r_jabatan__ket;
           window.opener.document.getElementById('r_pnpt__no_mutasi').value=r_pnpt__no_mutasi;
          

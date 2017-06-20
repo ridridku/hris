@@ -2,9 +2,7 @@
 
 # Including Main Configuration
 # including file for Main Configurations
-require_once('../../../includes/config.conf.php');	 	
-
-
+require_once('../../../includes/config.conf.php');
 # Create a session to store global config path
 session_save_path($DIR_SESS);
 session_set_cookie_params($expiry);
@@ -31,7 +29,7 @@ $db = &ADONewConnection($DB_TYPE);
 // $db->debug = true;
 $db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
 //------------------------------------LOCAL CONFIG--------------------------------------//
-#SETTING FOR TEMPLATE 
+#SETTING FOR TEMPLATE
 $TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/data_pegawai/pegawai';
 
 
@@ -78,8 +76,6 @@ $user_id = base64_decode($_SESSION['UID']);
 $id_peg = $_SESSION['SESSION_ID_PEG'];
 $tgl_now = date("Y-m-d h:i:s");
 
-      
-
 
             $r_pegawai__id = addslashes($_POST[r_pegawai__id]);
             $r_pegawai__nama = addslashes($_POST[r_pegawai__nama]);
@@ -122,7 +118,7 @@ $tgl_now = date("Y-m-d h:i:s");
             $r_pegawai__ortu_kodepos = addslashes($_POST[r_pegawai__ortu_kodepos]);
             $r_pegawai__npwp = addslashes($_POST[r_pegawai__npwp]);
             $r_pegawai__no_bpjs = addslashes($_POST[r_pegawai__no_bpjs]);
-           
+
             $r_pegawai__no_askes = addslashes($_POST[r_pegawai__no_askes]);
             $r_pegawai__bank1 = addslashes($_POST[r_pegawai__bank1]);
             $r_pegawai__bank1_rek = addslashes($_POST[r_pegawai__bank1_rek]);
@@ -151,7 +147,7 @@ $tgl_now = date("Y-m-d h:i:s");
             $r_pegawai__status_kawin = addslashes($_POST[r_pegawai__status_kawin]);
             $r_pegawai__tgl_masuk = addslashes($_POST[r_pegawai__tgl_masuk]);
             $r_pegawai__id_subcab = addslashes($_POST[r_pegawai__id_subcab]);
-            $r_pegawai__subdept = addslashes($_POST[r_pegawai__subdept]);
+           
             $r_pegawai__jabatan = addslashes($_POST[r_pegawai__jabatan]);
             $r_pegawai__st_pegawai = addslashes($_POST[r_pegawai__st_pegawai]);
             $r_pegawai__tgl_pengangkatan = addslashes($_POST[r_pegawai__tgl_pengangkatan]);
@@ -160,12 +156,13 @@ $tgl_now = date("Y-m-d h:i:s");
             $r_pegawai__pend_jurusan = addslashes($_POST[r_pegawai__pend_jurusan]);
             $r_pegawai__date_updated = addslashes($_POST[r_pegawai__date_updated]);
             $r_pegawai__user_updated = addslashes($_POST[r_pegawai__user_updated]);
-            
+            $r_pegawai__bpjs_kesehatan=$_POST[bpjs_kesehatan];
+
             $foto=$_FILES['file_foto']['name'] ;
             $foto2=$_POST[foto2];
             $cek_foto=$_POST[checkboxname];
 
-          
+
             IF($cek_foto==1)
             {
                 $nama_foto=$_POST[foto2];
@@ -180,55 +177,64 @@ $tgl_now = date("Y-m-d h:i:s");
 
         if ($r_pegawai__id=='' AND $r_pegawai__ktp_prov=='' AND $r_pegawai__ktp_kab=='' AND $r_pegawai__ktp_kec=='' AND $r_pegawai__ktp_desa=='' )
             {
-		 
+
 				Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
             }else{
-            
+
             if ($foto!="")
             {
-            $target_dir ='./uploads/';
-            $target_file = $target_dir.basename($_FILES["file_foto"]["name"],$target_dir);
-            $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-            $check = getimagesize($_FILES["file_foto"]["tmp_name"]); 
-            if($check !== false) {
-                                $uploadMessageError = "File is an image - " . $check["mime"] . ".";
-                                $uploadOk = 1;
-                        } else {
-                                $uploadMessageError = "File is not an image.";
-                                $uploadOk = 0;
-                        }        
-                // Check file size
-                if ($_FILES["file_foto"]["size"] > 2000000) {
-                        $uploadMessageError = "Sorry, your file is too large.";
-                        $uploadOk = 0;
-                }
-                // Allow certain file formats
-                if($imageFileType != "jpg" && $imageFileType != "GIF") {
-                        $uploadMessageError = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-                        $uploadOk = 0;
-                }
 
 
-                    if (move_uploaded_file($_FILES["file_foto"]["tmp_name"], $target_file)) {
-                          chmod("$target_file",0775);
-                            $uploadMessageError = "The file ". basename($_FILES["file_foto"]["name"]). " has been uploaded.";
-                            $uploadOk=1;
-                            $image_name=$_FILES['file_foto']['name'];
-                            $nama_foto = round(microtime(true)).'_'.$image_name;
-                            
-                       
-                            
-              } else {
-                                        $uploadMessageError = "Sorry, there was an error uploading your file.";
-                                        $uploadOk=0;
-                                }
+$foto=$_FILES['file_foto']['name'] ;
+$foto2=$_POST[foto2];
+$cek_foto=$_POST[checkboxname];
 
+
+IF($cek_foto==1)
+{
+    $image_name=$_FILES['file_foto']['name'];
+    error_reporting(E_ALL ^ E_NOTICE);
+    error_reporting(0);
+    ini_set("display_errors",1);
+    ini_set("memory_limit","1024M");
+    $foto=$_FILES['file_foto']['name'] ;
+    IF ($_FILES['file_foto']['name'] !="")
+        { //JIKA ADA YANG DIUPLOAD
+
+                if ($_FILES['file_foto']['type'] == "image/jpeg" || $_FILES['file_foto']['type']=="image/png" || $_FILES['file_foto']['type']=="image/gif")
+                    {
+                        $target_dir ='./uploads/';
+                        $temp = explode(".",$_FILES["file_foto"]["name"]);
+                        $newfilename = substr(microtime(), 2, 7) . '.' .end($temp);
+                        $ori_src="uploads/".$_FILES['file_foto']['name'];
+                        if(move_uploaded_file($_FILES["file_foto"]["tmp_name"],$target_dir.$newfilename))
+                                         {
+                                                 chmod("$ori_src",0777);
+                                         }else{
+                                                 echo "Gagal melakukan proses upload file.";
+                                                 exit;
+                                         }
+                     }
+
+                $nama_foto = $newfilename;
+                ini_set("memory_limit","1024M");
+
+          }
+
+
+}
+else
+{
+     $nama_foto=$_POST[foto2];
+
+
+}
 
 
      }
 
-            
-            
+
+
 			$sql_edit  ="  UPDATE r_pegawai SET ";
                         $sql_edit .=" r_pegawai__nama = '$_POST[r_pegawai__nama]', ";
                         $sql_edit .=" r_pegawai__tgl_lahir = '$_POST[r_pegawai__tgl_lahir]', ";
@@ -297,7 +303,7 @@ $tgl_now = date("Y-m-d h:i:s");
                         $sql_edit .=" r_pegawai__status_kawin = '$_POST[r_pegawai__status_kawin]', ";
                         $sql_edit .=" r_pegawai__tgl_masuk = '$_POST[r_pegawai__tgl_masuk]' , ";
                         $sql_edit .=" r_pegawai__id_subcab = '$_POST[r_pegawai__id_subcab]', ";
-                        $sql_edit .=" r_pegawai__subdept = '$_POST[r_pegawai__subdept]', ";
+                        $sql_edit .=" r_pegawai__bpjs_kesehatan = '$_POST[bpjs_kesehatan]', ";
                         $sql_edit .=" r_pegawai__jabatan = '$_POST[r_pegawai__jabatan]', ";
                         $sql_edit .=" r_pegawai__st_pegawai = '$_POST[r_pegawai__st_pegawai]', ";
                         $sql_edit .=" r_pegawai__pend_tgl_lulus = '$_POST[r_pegawai__pend_tgl_lulus]' , ";
@@ -307,19 +313,20 @@ $tgl_now = date("Y-m-d h:i:s");
                         $sql_edit .=" r_pegawai__date_updated = now(),";
                         $sql_edit .=" r_pegawai__user_updated = '$id_peg' ";
 			$sql_edit .="  WHERE r_pegawai__id='$_POST[r_pegawai__id]' ";
-                      //  var_dump($sql_edit)or die();
+                    // var_dump($sql_edit)or die();
 			$sqlresult = $db->Execute($sql_edit);
 			Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]."&nama_pegawai_cari=".$_POST[r_pegawai__nama]);//."&r_pnpt__nip_cari=".$_POST[r_pnpt__nip]
         }
 }
 
 function create_(){
-    
-global $mod_id;	
+
+global $mod_id;
 global $db;
 global $tbl_name;
 global $field_name;
 
+$kode_pw_ses  = $_SESSION['SESSION_KODE_CABANG'];
 $user_id = base64_decode($_SESSION['UID']);
 $id_peg = $_SESSION['SESSION_ID_PEG'];
 $tgl_now = date("Y-m-d h:i:s");
@@ -389,7 +396,7 @@ $r_pegawai__photo= addslashes($_POST[r_pegawai__photo]);
 $r_pegawai__status_kawin= addslashes($_POST[r_pegawai__status_kawin]);
 $r_pegawai__tgl_masuk= addslashes($_POST[r_pegawai__tgl_masuk]);
 $r_pegawai__id_subcab= addslashes($_POST[r_pegawai__id_subcab]);
-$r_pegawai__subdept= addslashes($_POST[r_pegawai__subdept]);
+
 $r_pegawai__jabatan= addslashes($_POST[r_pegawai__jabatan]);
 $r_pegawai__st_pegawai= addslashes($_POST[r_pegawai__st_pegawai]);
 $r_pegawai__pend_tgl_lulus= addslashes($_POST[r_pegawai__pend_tgl_lulus]);
@@ -400,9 +407,11 @@ $r_pegawai__date_created= addslashes($_POST[r_pegawai__date_created]);
 $r_pegawai__date_updated= addslashes($_POST[r_pegawai__date_updated]);
 $r_pegawai__user_created = addslashes($_POST[r_pegawai__user_created]);
 $r_pegawai__user_updated = addslashes($_POST[r_pegawai__user_updated]);
+$r_pegawai__bpjs_kesehatan= addslashes($_POST[bpjs_kesehatan]);
+                      
 
 if($r_pegawai__pas_tgllahir=='')
-{    
+{
     $pas_tgllahir='1990-01-01';
 
 }
@@ -413,55 +422,32 @@ else
 
 error_reporting(E_ALL ^ E_NOTICE);
 error_reporting(0);
-//  ini_set("display_errors",1);
+ini_set("display_errors",1);
 ini_set("memory_limit","1024M");
 $foto=$_FILES['file_foto']['name'] ;
+IF ($_FILES['file_foto']['name'] !=""){ //JIKA ADA YANG DIUPLOAD
 
-if($foto!="")
- {
-         $target_dir ='./uploads/';
-                    $target_file = $target_dir.basename($_FILES["file_foto"]["name"],$target_dir);  
-                 //   chmod("$target_file",0777);
-                    $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-                    // Check if image file is a actual image or fake image
-                    $check = getimagesize($_FILES["file_foto"]["tmp_name"]); 
-                    if($check !== false) {
-                                        $uploadMessageError = "File is an image - " . $check["mime"] . ".";
-                                        $uploadOk = 1;
-                                } else {
-                                        $uploadMessageError = "File is not an image.";
-                                        $uploadOk = 0;
-                                }        
-			// Check file size
-			if ($_FILES["file_foto"]["size"] > 2000000) {
-				$uploadMessageError = "Sorry, your file is too large.";
-				$uploadOk = 0;
-			}
-			// Allow certain file formats
-			if($imageFileType != "jpg" && $imageFileType != "GIF") {
-				$uploadMessageError = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-				$uploadOk = 0;
-			}
-                         
-                        
-                            if (move_uploaded_file($_FILES["file_foto"]["tmp_name"], $target_file)) {
-                                  chmod("$target_file",0775);
-                                    $uploadMessageError = "The file ". basename($_FILES["file_foto"]["name"]). " has been uploaded.";
-                                    $uploadOk=1;
-                                  $image_name=$_FILES['file_foto']['name'];
-                                    $nama_foto = round(microtime(true)).'_'.$image_name;
-                                  
-                                     
-                      } else {
-                                    $uploadMessageError = "Sorry, there was an error uploading your file.";
-                                    $uploadOk=0;
+    if ($_FILES['file_foto']['type'] == "image/jpeg" || $_FILES['file_foto']['type']=="image/png" || $_FILES['file_foto']['type']=="image/gif"){
+
+            $target_dir ='./uploads/';
+            $temp = explode(".",$_FILES["file_foto"]["name"]);
+            $newfilename = substr(microtime(), 2, 7) . '.' .end($temp);
+            $ori_src="uploads/".$_FILES['file_foto']['name'];
+
+
+           if(move_uploaded_file($_FILES["file_foto"]["tmp_name"],$target_dir.$newfilename))
+                            {
+                                    chmod("$ori_src",0777);
+                            }else{
+                                    echo "Gagal melakukan proses upload file.";
+                                    exit;
                             }
-                            
-                          
-                        
-                                   
-                         
- }
+                    }
+
+            $nama_foto = $newfilename;
+            ini_set("memory_limit","1024M");
+
+}
 
  if ($r_pegawai__ktp_prov=='' AND $r_pegawai__ktp_kab=='' AND $r_pegawai__ktp_kec=='' AND $r_pegawai__ktp_desa=='' ) {
 			Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
@@ -528,14 +514,17 @@ $sql	 = "INSERT INTO r_pegawai (r_pegawai__nama,
         r_pegawai__photo,
         r_pegawai__status_kawin,
         r_pegawai__tgl_masuk,
+        r_pegawai__id_subcab,
         r_pegawai__st_pegawai,
         r_pegawai__pend_tgl_lulus,
         r_pegawai__pend_akhir,
         r_pegawai__pend_sekolah,
         r_pegawai__pend_jurusan,
         r_pegawai__date_created,
-        r_pegawai__user_created
-       )";
+        r_pegawai__date_updated,
+        r_pegawai__user_created,
+        r_pegawai__user_updated,
+        r_pegawai__bpjs_kesehatan)";
 $sql	.= " VALUES ('".strip_tags($r_pegawai__nama)."',"
         . "'".strip_tags($r_pegawai__tgl_lahir)."',"
         . "'".strip_tags($r_pegawai__tmpt_lahir)."',"
@@ -595,20 +584,24 @@ $sql	.= " VALUES ('".strip_tags($r_pegawai__nama)."',"
         . "'".strip_tags($r_pegawai__pas_rw)."',"
         . "'".strip_tags($r_pegawai__pas_kodepos)."',"
         . "'".strip_tags($nama_foto)."',"
-        . "'".strip_tags($r_pegawai__status_kawin)."',"      
+        . "'".strip_tags($r_pegawai__status_kawin)."',"
         . "'".strip_tags($r_pegawai__tgl_masuk)."',"
+        . "'".strip_tags($kode_pw_ses)."',"
         . "'".strip_tags($r_pegawai__st_pegawai)."',"
         . "'".strip_tags($r_pegawai__pend_tgl_lulus)."',"
         . "'".strip_tags($r_pegawai__pend_akhir)."',"
         . "'".strip_tags($r_pegawai__pend_sekolah)."',"
         . "'".strip_tags($r_pegawai__pend_jurusan)."',"
         . " now(),"
-        . "'".strip_tags($id_peg)."')";
+        . " now(),"
+        . "'".strip_tags($id_peg)."',"
+        . "'".strip_tags($id_peg)."',"
+        . "'".strip_tags($r_pegawai__bpjs_kesehatan)."')";
 
         $sqlresult = $db->Execute($sql);
 
     Header("Location:index_hasil.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]."&nama_pegawai_cari=".$_POST[r_pegawai__nama]);
-    
+
 }
 
   }
@@ -624,7 +617,7 @@ case 0:
 		create_($r_pegawai__id);
 		//unlockTables($tbl_name);
             //    Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
-		
+
 	}
 break;
 case 1:
@@ -632,7 +625,7 @@ case 1:
 	{
 		//lockTables($tbl_name);
 		edit_($r_pegawai__id);
-		//unlockTables($tbl_name);		
+		//unlockTables($tbl_name);
 		//Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 	}
 break;
@@ -641,7 +634,7 @@ case 2:
 	{
 		//lockTables($tbl_name);
 		delete_($r_pegawai__id);
-		//unlockTables($tbl_name);		
+		//unlockTables($tbl_name);
 		//Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 	}
 break;

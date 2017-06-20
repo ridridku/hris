@@ -171,7 +171,7 @@ var err_ = 0;
                          <TD >NIP<font color="#ff0000" >*</font> </TD>
                             <TD><INPUT TYPE="text" NAME="nip_karyawan_cari" readonly id="r_pnpt__nip" size="35" value="<!--{$EDIT_T_LEMBUR__NIP}-->" >
                               
-                               <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan()" value=" ... " />  
+                                <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan()" value=" ... " />  
                                
                             </TD>
 
@@ -397,17 +397,24 @@ var err_ = 0;
             <td class=bdr><div align="center"><b>NO</b></div></td>
             <td class=bdr><div align="center"><b>KONTRAK AWAL</b></div></td>
             <td class=bdr><div align="center"><b>KONTRAK AKHIR</b></div></td>
+             <td class=bdr><div align="center"><b>STATUS</b></div></td>
             <td class=bdr><div align="center"><b>JABATAN</b></div></td>
             <td class=bdr><div align="center"><b>DEPARTEMEN</b></div></td>
           </tr>
 
 <!--{section name=x loop=$CV_JABATAN}-->					
           <tr> 
-              <td class=bdr align=right width=10 valign=top><!--{$smarty.section.x.index+1}-->.&nbsp;</td>
-               <td class=bdr align=center width=80 valign=top><!--{$CV_JABATAN[x].r_pnpt__kon_awal}--></td>
-                <td class=bdr align=center width=80 valign=top><!--{$CV_JABATAN[x].r_pnpt__kon_akhir}--></td>
-            <td class=bdr align=center width=80 valign=top><!--{$CV_JABATAN[x].r_jabatan__ket}--></td>
-            <td class=bdr align=center width=80 valign=top><!--{$CV_JABATAN[x].r_dept__ket}--></td>
+              <TD class=bdr align=right width=10 valign=top><!--{$smarty.section.x.index+1}-->.&nbsp;</td>
+               <TD class=bdr align=center width=80 valign=top>
+                   <!--{if ($CV_JABATAN[x].r_stp__id)<4}-->
+                  <!--{$CV_JABATAN[x].r_pnpt__kon_awal|date_format:"%d-%m-%Y"}--> 
+                <!--{else}-->Tetap<!--{/if}--></TD>
+                <TD class=bdr align=center width=80 valign=top> <!--{if ($CV_JABATAN[x].r_stp__id)<4}-->
+                  <!--{$CV_JABATAN[x].r_pnpt__kon_akhir|date_format:"%d-%m-%Y"}--> 
+                <!--{else}-->Tetap<!--{/if}--></td>
+                  <TD class=bdr align=center width=80 valign=top><!--{$CV_JABATAN[x].r_stp__nama}--></td>
+            <TD class=bdr align=center width=80 valign=top><!--{$CV_JABATAN[x].r_jabatan__ket}--></td>
+            <TD class=bdr align=center width=80 valign=top><!--{$CV_JABATAN[x].r_dept__ket}--></td>
            
           </tr>
 <!--{/section}-->	
@@ -472,8 +479,7 @@ var err_ = 0;
              <td class=bdr align=center width=80 valign=top><!--{$CV_PELATIHAN[x].r_pel__nilai}--></td>
           </tr>
 		<!--{/section}-->	
-         
-	
+
         </table>
       </td>
     </tr>
@@ -488,13 +494,11 @@ var err_ = 0;
 
 </center>
 <div align=right>
-<hr width=300><font size="1"><i><!--{$SHOW_NAMA_KARYAWAN}--> - <!--{$SHOW_NPK}--></i></font>&nbsp;&nbsp;</div>
-
-                    
-                <div style="position:relative;float:right;margin-top:20;"><INPUT TYPE="text" NAME="print_desc" class="text_transparent" style="background:transparant;border:0;">
-                <IMG SRC="<!--{$HREF_IMG_PATH}-->/print.png" style="cursor:pointer" align="absmiddle" onMouseOver="document.frmList.print_desc.value='Print';" onMouseOut="document.frmList.print_desc.value='';" 
-                onClick = "window.open('<!--{$FILES}-->');">							
-                </div>
+<hr width=300><font size="1"><i><!--{$SHOW_NAMA_KARYAWAN}--> - <!--{$SHOW_NPK}--></i></font>&nbsp;&nbsp;</div>                   
+<div style="position:relative;float:right;margin-top:20;"><INPUT TYPE="text" NAME="print_desc" class="text_transparent" style="background:transparant;border:0;">
+<IMG SRC="<!--{$HREF_IMG_PATH}-->/print.png" style="cursor:pointer" align="absmiddle" onMouseOver="document.frmList.print_desc.value='Print';" onMouseOut="document.frmList.print_desc.value='';" 
+onClick = "window.open('<!--{$FILES}-->');">							
+</div>
                 </FORM>
            <!--CLOSE_VIEW_INDEX-->
 

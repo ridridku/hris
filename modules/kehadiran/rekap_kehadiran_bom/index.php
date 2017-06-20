@@ -52,16 +52,17 @@ require_once($DIR_INC."/libs.inc.php");
 
 # Start Parsing the Template
 
-$jenis_user  = $_SESSION['SESSION_JNS_USER'];
-$kode_pw_ses  = $_SESSION['SESSION_KODE_CABANG'];
-$tahun_session	= $_SESSION['SESSION_TAHUN'];
-$bulan_session	= $_SESSION['SESSION_BULAN'];  
+$jenis_user     = $_SESSION['SESSION_JNS_USER'];$smarty->assign ("JENIS_USER_SES", $jenis_user);
+$kode_pw_ses    = $_SESSION['SESSION_KODE_CABANG'];$smarty->assign ("KODE_PW_SES", $kode_pw_ses);
+$periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF'];$smarty->assign ("PERIODE_AKHIR", $periode_akhir);  
+IF ($kode_pw_ses==1){$nama_priv='COORDINATOR';}else{$nama_priv='BOM';}
+$smarty->assign ("NAMA_PRIV", $nama_priv);
 
-$smarty->assign ("JENIS_USER_SES", $jenis_user);
-$smarty->assign ("KODE_PW_SES", $kode_pw_ses);
 
-$smarty->assign ("TAHUN_SESSION", $tahun_session);
-$smarty->assign ("BULAN_SESSION", $bulan_session);
+
+
+
 
 #HREF
 $smarty->assign ("HREF_HOME_PATH", $HREF_HOME);
@@ -101,7 +102,7 @@ $user_id = base64_decode($_SESSION['UID']);
 $smarty->assign ("MOD_ID", $mod_id);
 
 #Initiate TABLE
-$tbl_name	= "t_absensi";
+$tbl_name	= "t_rekap_absensi";
 
 //-----------------------------------END OF LOCAL CONFIG-------------------------------//
 
@@ -131,10 +132,8 @@ if ($_GET['nama_karyawan_cari']) $nama_karyawan_cari = $_GET['nama_karyawan_cari
 else if ($_POST['nama_karyawan_cari']) $nama_karyawan_cari = $_POST['nama_karyawan_cari'];
 else $nama_karyawan_cari="";
  
-$tahun_ses_aktif		=	$_SESSION['SESSION_TAHUN_AKTIF'];
-$bulan_ses_aktif		=	$_SESSION['SESSION_BULAN_AKTIF'];
-$smarty->assign ("TAHUN_SES", $tahun_ses_aktif);
-$smarty->assign ("BULAN_SES", $bulan_ses_aktif);
+$periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF']; $smarty->assign ("PERIODE_AKHIR", $periode_akhir); 
 
 
 $smarty->assign ("KODE_PERWAKILAN_CARI", $kode_perwakilan_cari);
@@ -245,52 +244,87 @@ if ($_GET['search'] == '1')
 	{
  
 		  if($jenis_user=='2'){
-                                                  $sql  = "SELECT peg.r_pegawai__nama,peg.r_pnpt__finger_print,
-                                                            peg.r_cabang__nama,
-                                                            peg.r_cabang__id,
-                                                            peg.r_subcab__id,
-                                                            peg.r_subcab__nama,
-                                                            peg.r_dept__id,
-                                                            peg.r_dept__ket,
-                                                            ra.t_rkp__no_mutasi,
-                                                            ra.t_rkp__bln,
-                                                            ra.t_rkp__thn,
-                                                            ra.t_rkp__approval,
-                                                            ra.t_rkp__hadir,
-                                                            ra.t_rkp__sakit,
-                                                            ra.t_rkp__izin,
-                                                            ra.t_rkp__cuti,
-                                                            ra.t_rkp__dinas,
-                                                            ra.t_rkp__alpa,
-                                                            ra. t_rkp__keterangan
-                                                            FROM
-                                                            t_rekap_absensi ra 
-                                                                    LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi WHERE 1=1"  
-                                                        . "AND  peg.r_cabang__id= '".$kode_pw_ses."'";
+                            $sql  = "SELECT C.* FROM (SELECT 
+                                 (B.JML_HARI-B.JML_LBR)+1 as mx_day,
+                                  IF((SELECT  r_resign__mutasi FROM r_resign WHERE r_resign.r_resign__mutasi=B.mutasi AND r_resign.r_resign__approval=1)is null,'0','1')as ket_keluar,
+                                IF((rkp.t_rkp__awal)is null,'0',rkp.t_rkp__awal)as t_rkp__awal,
+                                IF((rkp.t_rkp__akhir)is null,'0',rkp.t_rkp__akhir)as t_rkp__akhir,
+                                IF((rkp.t_rkp__approval)is null,'0',rkp.t_rkp__approval)as t_rkp__approval,
+                                IF((rkp.t_rkp__hadir)is null,'0',rkp.t_rkp__hadir)as t_rkp__hadir,
+                                IF((rkp.t_rkp__sakit)is null,'0',rkp.t_rkp__sakit)as t_rkp__sakit,
+                                IF((rkp.t_rkp__izin)is null,'0',rkp.t_rkp__izin)as t_rkp__izin,
+                                IF((rkp.t_rkp__alpa)is null,'0',rkp.t_rkp__alpa)as t_rkp__alpa,
+                                IF((rkp.t_rkp__dinas)is null,'0',rkp.t_rkp__dinas)as t_rkp__dinas,
+                                IF((rkp.t_rkp__cuti)is null,'0',rkp.t_rkp__cuti)as t_rkp__cuti,
+                                IF((rkp.t_rkp__keterangan)is null,'',rkp.t_rkp__keterangan)as t_rkp__keterangan, B.*
+                                FROM (SELECT A.* FROM 
+                                (SELECT v_peg.*  FROM (
+                                SELECT  datediff('$periode_akhir','$periode_awal')AS JML_HARI ,COUNT(*) AS JML_LBR,show_peg.*
+                                FROM (SELECT 
+                                r_penempatan.r_pnpt__no_mutasi,r_penempatan.r_pnpt__finger_print,
+                                peg.mutasi ,peg.r_pnpt__id_pegawai,peg.r_pegawai__nama,
+                                r_cabang.r_cabang__id,r_cabang.r_cabang__nama,
+                                r_jabatan.r_jabatan__id,r_jabatan.r_jabatan__ket,
+                                r_subcabang.r_subcab__id,r_subcabang.r_subcab__nama,
+                                r_penempatan.r_pnpt__shift,r_departement.r_dept__id,r_dept__ket,r_subdepartement.r_subdept__id,r_subdepartement.r_subdept__ket
+                                FROM (SELECT mutasi.r_pnpt__id_pegawai,mutasi.r_pnpt__no_mutasi as mutasi,r_pegawai.r_pegawai__nama FROM 
+                                (SELECT r_penempatan.r_pnpt__id_pegawai,r_penempatan.r_pnpt__no_mutasi FROM r_penempatan ORDER BY r_penempatan.r_pnpt__no_mutasi DESC)mutasi
+                                INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id=mutasi.r_pnpt__id_pegawai GROUP BY r_pegawai.r_pegawai__id)peg
+                                INNER JOIN r_penempatan ON r_penempatan.r_pnpt__no_mutasi=peg.mutasi
+                                INNER JOIN r_subcabang ON r_subcabang.r_subcab__id=r_penempatan.r_pnpt__subcab
+                                INNER JOIN r_cabang ON r_cabang.r_cabang__id=r_subcabang.r_subcab__cabang
+                                INNER JOIN r_jabatan ON r_jabatan__id=r_penempatan.r_pnpt__jabatan
+                                INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept=r_subdepartement.r_subdept__id
+                                INNER JOIN r_departement ON r_departement.r_dept__id=r_subdepartement.r_subdept__dept
+                                where peg.mutasi NOT IN (select DISTINCT r_resign__mutasi FROM r_resign 
+                                WHERE r_resign.r_resign__tgl <= '$periode_akhir'- INTERVAL DATEDIFF('$periode_akhir','$periode_awal') DAY and r_resign.r_resign__approval=1))show_peg
+                                inner JOIN t_libur ON t_libur.r_libur__shift=show_peg.r_pnpt__shift
+                                where t_libur.r_libur__tgl>='$periode_awal' and t_libur.r_libur__tgl<='$periode_akhir' AND show_peg.r_cabang__id='$kode_pw_ses'
+                                GROUP BY show_peg.r_pnpt__id_pegawai )v_peg)A
+                                )B LEFT JOIN t_rekap_absensi  rkp ON rkp.t_rkp__no_mutasi=B.mutasi and 
+                                rkp.t_rkp__awal>='$periode_awal' and rkp.t_rkp__akhir<='$periode_akhir')C WHERE 1=1 ";
                       
 
 			} else {
-						$sql  = "SELECT peg.r_pegawai__nama,peg.r_pnpt__finger_print,
-                                                            peg.r_cabang__nama,
-                                                            peg.r_cabang__id,
-                                                            peg.r_subcab__id,
-                                                            peg.r_subcab__nama,
-                                                            peg.r_dept__id,
-                                                            peg.r_dept__ket,
-                                                            ra.t_rkp__no_mutasi,
-                                                            ra.t_rkp__bln,
-                                                            ra.t_rkp__thn,
-                                                            ra.t_rkp__approval,
-                                                            ra.t_rkp__hadir,
-                                                            ra.t_rkp__sakit,
-                                                            ra.t_rkp__izin,
-                                                            ra.t_rkp__cuti,
-                                                            ra.t_rkp__dinas,
-                                                            ra.t_rkp__alpa,
-                                                            ra.t_rkp__keterangan
-                                                             FROM
-                                                            t_rekap_absensi ra 
-                                                            LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi WHERE 1=1 ";	
+                            $sql  = "SELECT C.* FROM (SELECT 
+                                 (B.JML_HARI-B.JML_LBR)+1 as mx_day,
+                                  IF((SELECT  r_resign__mutasi FROM r_resign WHERE r_resign.r_resign__mutasi=B.mutasi AND r_resign.r_resign__approval=1)is null,'0','1')as ket_keluar,
+                                IF((rkp.t_rkp__awal)is null,'0',rkp.t_rkp__awal)as t_rkp__awal,
+                                IF((rkp.t_rkp__akhir)is null,'0',rkp.t_rkp__akhir)as t_rkp__akhir,
+                                IF((rkp.t_rkp__approval)is null,'0',rkp.t_rkp__approval)as t_rkp__approval,
+                                IF((rkp.t_rkp__hadir)is null,'0',rkp.t_rkp__hadir)as t_rkp__hadir,
+                                IF((rkp.t_rkp__sakit)is null,'0',rkp.t_rkp__sakit)as t_rkp__sakit,
+                                IF((rkp.t_rkp__izin)is null,'0',rkp.t_rkp__izin)as t_rkp__izin,
+                                IF((rkp.t_rkp__alpa)is null,'0',rkp.t_rkp__alpa)as t_rkp__alpa,
+                                IF((rkp.t_rkp__dinas)is null,'0',rkp.t_rkp__dinas)as t_rkp__dinas,
+                                IF((rkp.t_rkp__cuti)is null,'0',rkp.t_rkp__cuti)as t_rkp__cuti,
+                                IF((rkp.t_rkp__keterangan)is null,'',rkp.t_rkp__keterangan)as t_rkp__keterangan, B.*
+                                FROM (SELECT A.* FROM 
+                                (SELECT v_peg.*  FROM (
+                                SELECT  datediff('$periode_akhir','$periode_awal')AS JML_HARI ,COUNT(*) AS JML_LBR,show_peg.*
+                                FROM (SELECT 
+                                r_penempatan.r_pnpt__no_mutasi,r_penempatan.r_pnpt__finger_print,
+                                peg.mutasi ,peg.r_pnpt__id_pegawai,peg.r_pegawai__nama,
+                                r_cabang.r_cabang__id,r_cabang.r_cabang__nama,
+                                r_jabatan.r_jabatan__id,r_jabatan.r_jabatan__ket,
+                                r_subcabang.r_subcab__id,r_subcabang.r_subcab__nama,
+                                r_penempatan.r_pnpt__shift,r_departement.r_dept__id,r_dept__ket,r_subdepartement.r_subdept__id,r_subdepartement.r_subdept__ket
+                                FROM (SELECT mutasi.r_pnpt__id_pegawai,mutasi.r_pnpt__no_mutasi as mutasi,r_pegawai.r_pegawai__nama FROM 
+                                (SELECT r_penempatan.r_pnpt__id_pegawai,r_penempatan.r_pnpt__no_mutasi FROM r_penempatan ORDER BY r_penempatan.r_pnpt__no_mutasi DESC)mutasi
+                                INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id=mutasi.r_pnpt__id_pegawai GROUP BY r_pegawai.r_pegawai__id)peg
+                                INNER JOIN r_penempatan ON r_penempatan.r_pnpt__no_mutasi=peg.mutasi
+                                INNER JOIN r_subcabang ON r_subcabang.r_subcab__id=r_penempatan.r_pnpt__subcab
+                                INNER JOIN r_cabang ON r_cabang.r_cabang__id=r_subcabang.r_subcab__cabang
+                                INNER JOIN r_jabatan ON r_jabatan__id=r_penempatan.r_pnpt__jabatan
+                                INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept=r_subdepartement.r_subdept__id
+                                INNER JOIN r_departement ON r_departement.r_dept__id=r_subdepartement.r_subdept__dept
+                                where peg.mutasi NOT IN (select DISTINCT r_resign__mutasi FROM r_resign 
+                                WHERE r_resign.r_resign__tgl <= '$periode_akhir'- INTERVAL DATEDIFF('$periode_akhir','$periode_awal') DAY and r_resign.r_resign__approval=1))show_peg
+                                inner JOIN t_libur ON t_libur.r_libur__shift=show_peg.r_pnpt__shift
+                                where t_libur.r_libur__tgl>='$periode_awal' and t_libur.r_libur__tgl<='$periode_akhir' AND 1=1
+                                GROUP BY show_peg.r_pnpt__id_pegawai )v_peg)A
+                                )B LEFT JOIN t_rekap_absensi  rkp ON rkp.t_rkp__no_mutasi=B.mutasi and 
+                                rkp.t_rkp__awal>='$periode_awal' and rkp.t_rkp__akhir<='$periode_akhir')C WHERE 1=1 ";	
 
 			}
  
@@ -313,8 +347,8 @@ if ($_GET['search'] == '1')
 					$sql .= "AND  tbl_wni.kode_sumber = '$kode_sumber' ";
 				} */
 
- 
-			 	// $sql .= " GROUP BY A.t_abs__fingerprint,A.t_abs__tgl,C.r_pegawai__nama ORDER BY  trim(C.r_pegawai__nama) asc ";
+                                   $sql .= "ORDER BY  trim(C.r_pegawai__nama) asc ";   
+			 	
 
                                  if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
                                
@@ -322,8 +356,8 @@ if ($_GET['search'] == '1')
 				$numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
 
-				$pages = $p->findPages($count,$LIMIT); 
-				$sql  .= "LIMIT ".$start.", ".$LIMIT;
+				//$pages = $p->findPages($count,$LIMIT); 
+				//$sql  .= "LIMIT ".$start.", ".$LIMIT;
                                 
 				$recordSet = $db->Execute($sql);
 				
@@ -345,8 +379,8 @@ if ($_GET['search'] == '1')
 				}
 
 				$count_view = $start+1;
-				$count_all  = $start+$end;
-				$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
+				//$count_all  = $start+$end;
+				//$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
 }
 
 }
@@ -357,60 +391,119 @@ else
 
 			if($jenis_user=='2'){
           
-                                                $sql  = "SELECT peg.r_pegawai__nama,peg.r_pnpt__finger_print,
-                                                            peg.r_cabang__nama,
-                                                            peg.r_cabang__id,
-                                                            peg.r_subcab__id,
-                                                            peg.r_subcab__nama,
-                                                            peg.r_dept__id,
-                                                            peg.r_dept__ket,
-                                                            ra.t_rkp__no_mutasi,
-                                                            ra.t_rkp__bln,
-                                                            ra.t_rkp__thn,
-                                                            ra.t_rkp__approval,
-                                                            ra.t_rkp__hadir,
-                                                            ra.t_rkp__sakit,
-                                                            ra.t_rkp__izin,
-                                                            ra.t_rkp__cuti,
-                                                            ra.t_rkp__dinas,
-                                                            ra.t_rkp__alpa,
-                                                            ra. t_rkp__keterangan  FROM t_rekap_absensi ra 
-                                                            LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi WHERE 1=1 AND  peg.r_cabang__id= '".$kode_pw_ses."'";
+                            $sql  = "SELECT C.* FROM (SELECT 
+                                 (B.JML_HARI-B.JML_LBR)+1 as mx_day,
+                                 IF((SELECT  r_resign__mutasi FROM r_resign WHERE r_resign.r_resign__mutasi=B.mutasi AND r_resign.r_resign__approval=1)is null,'0','1')as ket_keluar,
+                                IF((rkp.t_rkp__awal)is null,'0',rkp.t_rkp__awal)as t_rkp__awal,
+                                IF((rkp.t_rkp__akhir)is null,'0',rkp.t_rkp__akhir)as t_rkp__akhir,
+                                IF((rkp.t_rkp__approval)is null,'0',rkp.t_rkp__approval)as t_rkp__approval,
+                                IF((rkp.t_rkp__hadir)is null,'0',rkp.t_rkp__hadir)as t_rkp__hadir,
+                                IF((rkp.t_rkp__sakit)is null,'0',rkp.t_rkp__sakit)as t_rkp__sakit,
+                                IF((rkp.t_rkp__izin)is null,'0',rkp.t_rkp__izin)as t_rkp__izin,
+                                IF((rkp.t_rkp__alpa)is null,'0',rkp.t_rkp__alpa)as t_rkp__alpa,
+                                IF((rkp.t_rkp__dinas)is null,'0',rkp.t_rkp__dinas)as t_rkp__dinas,
+                                IF((rkp.t_rkp__cuti)is null,'0',rkp.t_rkp__cuti)as t_rkp__cuti,
+                                IF((rkp.t_rkp__keterangan)is null,'',rkp.t_rkp__keterangan)as t_rkp__keterangan, B.*
+                                FROM (SELECT A.* FROM 
+                                (SELECT v_peg.*  FROM (
+                                SELECT  datediff('$periode_akhir','$periode_awal')AS JML_HARI ,COUNT(*) AS JML_LBR,show_peg.*
+                                FROM (SELECT 
+                                r_penempatan.r_pnpt__no_mutasi,r_penempatan.r_pnpt__finger_print,
+                                peg.mutasi ,peg.r_pnpt__id_pegawai,peg.r_pegawai__nama,
+                                r_cabang.r_cabang__id,r_cabang.r_cabang__nama,
+                                r_jabatan.r_jabatan__id,r_jabatan.r_jabatan__ket,
+                                r_subcabang.r_subcab__id,r_subcabang.r_subcab__nama,
+                                r_penempatan.r_pnpt__shift,r_departement.r_dept__id,r_dept__ket,r_subdepartement.r_subdept__id,r_subdepartement.r_subdept__ket
+                                FROM (SELECT mutasi.r_pnpt__id_pegawai,mutasi.r_pnpt__no_mutasi as mutasi,r_pegawai.r_pegawai__nama FROM 
+                                (SELECT r_penempatan.r_pnpt__id_pegawai,r_penempatan.r_pnpt__no_mutasi FROM r_penempatan ORDER BY r_penempatan.r_pnpt__no_mutasi DESC)mutasi
+                                INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id=mutasi.r_pnpt__id_pegawai GROUP BY r_pegawai.r_pegawai__id)peg
+                                INNER JOIN r_penempatan ON r_penempatan.r_pnpt__no_mutasi=peg.mutasi
+                                INNER JOIN r_subcabang ON r_subcabang.r_subcab__id=r_penempatan.r_pnpt__subcab
+                                INNER JOIN r_cabang ON r_cabang.r_cabang__id=r_subcabang.r_subcab__cabang
+                                INNER JOIN r_jabatan ON r_jabatan__id=r_penempatan.r_pnpt__jabatan
+                                INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept=r_subdepartement.r_subdept__id
+                                INNER JOIN r_departement ON r_departement.r_dept__id=r_subdepartement.r_subdept__dept
+                                where peg.mutasi NOT IN (select DISTINCT r_resign__mutasi FROM r_resign 
+                                WHERE r_resign.r_resign__tgl <= '$periode_akhir'- INTERVAL DATEDIFF('$periode_akhir','$periode_awal') DAY and r_resign.r_resign__approval=1))show_peg
+                                inner JOIN t_libur ON t_libur.r_libur__shift=show_peg.r_pnpt__shift
+                                where t_libur.r_libur__tgl>='$periode_awal' and t_libur.r_libur__tgl<='$periode_akhir' AND show_peg.r_cabang__id='$kode_pw_ses'
+                                GROUP BY show_peg.r_pnpt__id_pegawai )v_peg)A
+                                )B LEFT JOIN t_rekap_absensi  rkp ON rkp.t_rkp__no_mutasi=B.mutasi and 
+                                rkp.t_rkp__awal>='$periode_awal' and rkp.t_rkp__akhir<='$periode_akhir')C WHERE 1=1 ";
                                             
 
 			} else {
-						$sql  = "SELECT peg.r_pegawai__nama,peg.r_pnpt__finger_print,
-                                                            peg.r_cabang__nama,
-                                                            peg.r_cabang__id,
-                                                            peg.r_subcab__id,
-                                                            peg.r_subcab__nama,
-                                                            peg.r_dept__id,
-                                                            peg.r_dept__ket,
-                                                            ra.t_rkp__no_mutasi,
-                                                            ra.t_rkp__bln,
-                                                            ra.t_rkp__thn,
-                                                            ra.t_rkp__approval,
-                                                            ra.t_rkp__hadir,
-                                                            ra.t_rkp__sakit,
-                                                            ra.t_rkp__izin,
-                                                            ra.t_rkp__cuti,
-                                                            ra.t_rkp__dinas,
-                                                            ra.t_rkp__alpa,
-                                                            ra. t_rkp__keterangan
-                                                                  FROM
-                                                                  t_rekap_absensi ra 
-                                                                    LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi WHERE 1=1   ";	
+			$sql  = "SELECT C.* FROM (SELECT 
+                                 (B.JML_HARI-B.JML_LBR)+1 as mx_day,
+                                 IF((SELECT  r_resign__mutasi FROM r_resign WHERE r_resign.r_resign__mutasi=B.mutasi AND r_resign.r_resign__approval=1)is null,'0','1')as ket_keluar,
+                                IF((rkp.t_rkp__awal)is null,'0',rkp.t_rkp__awal)as t_rkp__awal,
+                                IF((rkp.t_rkp__akhir)is null,'0',rkp.t_rkp__akhir)as t_rkp__akhir,
+                                IF((rkp.t_rkp__approval)is null,'0',rkp.t_rkp__approval)as t_rkp__approval,
+                                IF((rkp.t_rkp__hadir)is null,'0',rkp.t_rkp__hadir)as t_rkp__hadir,
+                                IF((rkp.t_rkp__sakit)is null,'0',rkp.t_rkp__sakit)as t_rkp__sakit,
+                                IF((rkp.t_rkp__izin)is null,'0',rkp.t_rkp__izin)as t_rkp__izin,
+                                IF((rkp.t_rkp__alpa)is null,'0',rkp.t_rkp__alpa)as t_rkp__alpa,
+                                IF((rkp.t_rkp__dinas)is null,'0',rkp.t_rkp__dinas)as t_rkp__dinas,
+                                IF((rkp.t_rkp__cuti)is null,'0',rkp.t_rkp__cuti)as t_rkp__cuti,
+                                IF((rkp.t_rkp__keterangan)is null,'',rkp.t_rkp__keterangan)as t_rkp__keterangan, B.*
+                                FROM (SELECT A.* FROM 
+                                (SELECT v_peg.*  FROM (
+                                SELECT  datediff('$periode_akhir','$periode_awal')AS JML_HARI ,COUNT(*) AS JML_LBR,show_peg.*
+                                FROM (SELECT 
+                                r_penempatan.r_pnpt__no_mutasi,r_penempatan.r_pnpt__finger_print,
+                                peg.mutasi ,peg.r_pnpt__id_pegawai,peg.r_pegawai__nama,
+                                r_cabang.r_cabang__id,r_cabang.r_cabang__nama,
+                                r_jabatan.r_jabatan__id,r_jabatan.r_jabatan__ket,
+                                r_subcabang.r_subcab__id,r_subcabang.r_subcab__nama,
+                                r_penempatan.r_pnpt__shift,r_departement.r_dept__id,r_dept__ket,r_subdepartement.r_subdept__id,r_subdepartement.r_subdept__ket
+                                FROM (SELECT mutasi.r_pnpt__id_pegawai,mutasi.r_pnpt__no_mutasi as mutasi,r_pegawai.r_pegawai__nama FROM 
+                                (SELECT r_penempatan.r_pnpt__id_pegawai,r_penempatan.r_pnpt__no_mutasi FROM r_penempatan ORDER BY r_penempatan.r_pnpt__no_mutasi DESC)mutasi
+                                INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id=mutasi.r_pnpt__id_pegawai GROUP BY r_pegawai.r_pegawai__id)peg
+                                INNER JOIN r_penempatan ON r_penempatan.r_pnpt__no_mutasi=peg.mutasi
+                                INNER JOIN r_subcabang ON r_subcabang.r_subcab__id=r_penempatan.r_pnpt__subcab
+                                INNER JOIN r_cabang ON r_cabang.r_cabang__id=r_subcabang.r_subcab__cabang
+                                INNER JOIN r_jabatan ON r_jabatan__id=r_penempatan.r_pnpt__jabatan
+                                INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept=r_subdepartement.r_subdept__id
+                                INNER JOIN r_departement ON r_departement.r_dept__id=r_subdepartement.r_subdept__dept
+                                where peg.mutasi NOT IN (select DISTINCT r_resign__mutasi FROM r_resign 
+                                WHERE r_resign.r_resign__tgl <= '$periode_akhir'- INTERVAL DATEDIFF('$periode_akhir','$periode_awal') DAY and r_resign.r_resign__approval=1))show_peg
+                                inner JOIN t_libur ON t_libur.r_libur__shift=show_peg.r_pnpt__shift
+                                where t_libur.r_libur__tgl>='$periode_awal' and t_libur.r_libur__tgl<='$periode_akhir' AND 1=1
+                                GROUP BY show_peg.r_pnpt__id_pegawai )v_peg)A
+                                )B LEFT JOIN t_rekap_absensi  rkp ON rkp.t_rkp__no_mutasi=B.mutasi and 
+                                rkp.t_rkp__awal>='$periode_awal' and rkp.t_rkp__akhir<='$periode_akhir')C WHERE 1=1 ";	
 
 			}
-                               
-                        
- 
+                               if($kode_perwakilan_cari !=''){
+					$sql .= " AND  C.r_cabang__id= '".$kode_perwakilan_cari."' ";
+				}
+				if($nama_karyawan_cari !=''){
+					$sql .= "    AND C.r_pegawai__nama LIKE '%".addslashes($nama_karyawan_cari)."%' "; 
+				}
+
+				if($kode_subcab_cari!=''){
+					$sql .= "    AND C.r_subcab__id  = '".$kode_subcab_cari."' ";
+				} 
+                                
+                                if($id_finger_cari!=''){
+					$sql .= "    AND C.r_pnpt__finger_print  = '".$id_finger_cari."' ";
+				} 
+                                if ($bulan !='') {
+                                       $sql.=" and C.t_rkp__awal='$bulan'  ";
+                                }
+
+                                 if ($tahun !='') {
+                                       $sql.=" AND C.t_rkp__akhir='$tahun'  ";
+                                }
+
+                             $sql .= "ORDER BY  trim(C.r_pegawai__nama) asc ";   
+                       
 			  if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
 
                                 $numresults=$db->Execute($sql);
                                 $count = $numresults->RecordCount();
-				$pages = $p->findPages($count,$LIMIT); 
-				$sql  .= "LIMIT ".$start.", ".$LIMIT;
+				//$pages = $p->findPages($count,$LIMIT); 
+				//$sql  .= "LIMIT ".$start.", ".$LIMIT;
 				
 				$recordSet = $db->Execute($sql);
 				$end = $recordSet->RecordCount();
@@ -435,8 +528,8 @@ else
                                     
                                     
 				$count_view = $start+1;
-				$count_all  = $start+$end;
-				$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
+				//$count_all  = $start+$end;
+				//$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
 }
 //---------------------------------CLOSE VIEW INDEX---------------------------------------------------------------------//
 

@@ -58,27 +58,9 @@ global $field_name;
 
 $sql  ="DELETE ";
 $sql .="FROM $tbl_name ";
-$sql .="WHERE  r_inventaris= '$_GET[r_inventaris__id]' ";
+$sql .="WHERE  r_inventaris__id= '$_GET[id]' ";
 $sqlresult = $db->Execute($sql);
 
-//r_inventaris__id
-//r_inventaris__mutasi
-//r_inventaris__tgl_pinjam
-//r_inventaris__tgl_kembali
-//r_inventaris__jenis
-//r_inventaris__alat
-//r_inventaris__kode
-//r_inventaris__qty
-//r_inventaris__kondisi
-//r_inventaris__kepemilikan
-//r_inventaris__gambar
-//r_inventaris__lokasi
-//r_inventaris__keterangan
-//r_inventaris__status
-//r_inventaris__date_created
-//r_inventaris__date_updated
-//r_inventaris__user_created
-//r_inventaris__user_updated
 
 }
 
@@ -93,133 +75,96 @@ global $field_name;
     $id_peg = $_SESSION['SESSION_ID_PEG'];
     $tgl_now = date("Y-m-d h:i:s");
 
-//$r_inventaris__id = $_POST[inv_id];
-//$r_inventaris__mutasi = $_POST[mutasi];
-//$r_inventaris__tgl_pinjam = $_POST[tgl];
-//
-//$r_inventaris__jenis = $_POST[id_pel];
-//$r_inventaris__alat = $_POST[id_pel];
-//$r_inventaris__kode = $_POST[id_pel];
-//$r_inventaris__qty = $_POST[id_pel];
-//$r_inventaris__kondisi = $_POST[id_pel];
-//$r_inventaris__kepemilikan = $_POST[id_pel];
-//$r_inventaris__gambar = $_POST[id_pel];
-//$r_inventaris__lokasi = $_POST[id_pel];
-//$r_inventaris__keterangan = $_POST[id_pel];
-//$r_inventaris__status = $_POST[id_pel];
-//$r_inventaris__date_created
-//$r_inventaris__date_updated
-//$r_inventaris__user_created
-//$r_inventaris__user_updated
-//    
-//    
-//
-//
-//
-//nama_alat
-//qty_alat
-//pemilik_alat
-//lokasi_alat
-//kondisi_alat
-//keterangan_alat
-$r_pel__id              = $_POST[id_pel];
-$r_pel__mutasi          = $_POST[mutasi];
-$r_pel__master_pel      = $_POST[id];
-$r_pel__tema            = $_POST[tema];
-$r_pel__no_sertifikat   =$_POST[sertifikat];
-$r_pel__nilai           =$_POST[nilai];
-$r_pel__document       = $_POST[file__xls];
-$foto=$_FILES['file_xls']['name'] ;
+$r_inventaris__id = $_POST[inv_id]; 
+$r_inventaris__mutasi = $_POST[mutasi];
+$r_inventaris__tgl_pinjam = $_POST[tgl];
+$r_inventaris__tgl_kembali = $_POST[tgl_kembali];
+$r_inventaris__jenis = $_POST[jenis_alat];
+$r_inventaris__alat = $_POST[nama_alat];
+$r_inventaris__kode = $_POST[kode_alat];
+$r_inventaris__qty = $_POST[qty_alat];
+$r_inventaris__kepemilikan = $_POST[pemilik_alat];
+$r_inventaris__gambar = $_POST[file_gambar];
+$r_inventaris__lokasi = $_POST[lokasi_alat];
+$r_inventaris__keterangan = $_POST[keterangan_alat];
+$r_inventaris__status = $_POST[status];
+$r_inventaris__kondisi= $_POST[kondisi_alat];
+
+$foto=$_FILES['file_gambar']['name'] ;
+
 $foto2=$_POST[foto2];
 $cek_foto=$_POST[checkboxname];
 
 
 IF($cek_foto==1)
 {
-    $image_name=$_POST[foto2];
+    $image_name=$_FILES['file_gambar']['name'];
+    error_reporting(E_ALL ^ E_NOTICE);
+    error_reporting(0);
+    ini_set("display_errors",1);
+    ini_set("memory_limit","1024M");
+    $foto=$_FILES['file_gambar']['name'] ;
+    IF ($_FILES['file_gambar']['name'] !="")
+        { //JIKA ADA YANG DIUPLOAD
+
+                if ($_FILES['file_gambar']['type'] == "image/jpeg" || $_FILES['file_gambar']['type']=="image/png" || $_FILES['file_gambar']['type']=="image/gif")
+                    {
+                        $target_dir ='./uploads/';                             
+                        $temp = explode(".",$_FILES["file_gambar"]["name"]);
+                        $newfilename = substr(microtime(), 2, 7) . '.' .end($temp);
+                        $ori_src="uploads/".$_FILES['file_gambar']['name'];
+                        if(move_uploaded_file($_FILES["file_gambar"]["tmp_name"],$target_dir.$newfilename))        
+                                         {
+                                                 chmod("$ori_src",0777);
+                                         }else{
+                                                 echo "Gagal melakukan proses upload file.";
+                                                 exit;
+                                         }
+                     }		 
+
+                $image_name = $newfilename;        
+                ini_set("memory_limit","1024M");
+
+          }
+    
+
 }
 else
 {
      $image_name=$_POST[foto2];
+     
     
 }
 
+        
+
     
-    
-   $sql_cek_no="SELECT
-                r_pel__id,
-                r_pel__mutasi,
-                r_pel__master_pel,
-                r_pel__tema,
-                r_pel__no_sertifikat,
-                r_pel__nilai,
-                r_pel__document
-              FROM r_pelatihan where r_pel__master_pel='$r_pel__master_pel' ";
-  
-   $rs_val = $db->Execute($sql_cek_no);
-   $master_id =$rs_val->fields['r_pel__master_pel'];
-   $master_mutasi=$rs_val->fields['r_pel__mutasi'];
-    
- if ($r_pel__id=='' OR  $master_id==$r_pel__master_pel AND $master_mutasi==$r_pel__mutasi ) {
+ if ($r_inventaris__id=='' ) {
 			Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 		}else{
-                    
- if($foto!="")
- {
-         $target_dir ='./uploads/';
-                    $target_file = $target_dir.basename($_FILES["file_xls"]["name"],$target_dir);  
-                 //   chmod("$target_file",0777);
-                    $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-                    // Check if image file is a actual image or fake image
-                    $check = getimagesize($_FILES["file_xls"]["tmp_name"]); 
-                    if($check !== false) {
-                                        $uploadMessageError = "File is an image - " . $check["mime"] . ".";
-                                        $uploadOk = 1;
-                                } else {
-                                        $uploadMessageError = "File is not an image.";
-                                        $uploadOk = 0;
-                                }        
-			// Check file size
-			if ($_FILES["file_xls"]["size"] > 2000000) {
-				$uploadMessageError = "Sorry, your file is too large.";
-				$uploadOk = 0;
-			}
-			// Allow certain file formats
-			if($imageFileType != "jpg" && $imageFileType != "GIF") {
-				$uploadMessageError = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-				$uploadOk = 0;
-			}
-                         
-                        
-                            if (move_uploaded_file($_FILES["file_xls"]["tmp_name"], $target_file)) {
-                                  chmod("$target_file",0775);
-                                    $uploadMessageError = "The file ". basename($_FILES["file_xls"]["name"]). " has been uploaded.";
-                                    $uploadOk=1;
-                                  $image_name=$r_pel__id.'-'.$_FILES['file_xls']['name'];
-                                 
-                                     
-                      } else {
-                                    $uploadMessageError = "Sorry, there was an error uploading your file.";
-                                    $uploadOk=0;
-                            }
-                          
-                                   
-                         
- }
+              
 
-                     
+                  
                     $sql_edit  ="  UPDATE $tbl_name SET ";
-                    $sql_edit .=" r_pel__id='$r_pel__id',";
-                    $sql_edit .=" r_pel__mutasi='$r_pel__mutasi',";
-                    $sql_edit .=" r_pel__master_pel='$r_pel__master_pel',";
-                    $sql_edit .=" r_pel__tema ='$r_pel__tema',";
-                    $sql_edit .=" r_pel__no_sertifikat='$r_pel__no_sertifikat',";
-                    $sql_edit .=" r_pel__nilai='$r_pel__nilai',";
-                    $sql_edit .=" r_pel__document = '$image_name',";
-                    $sql_edit .=" r_pel__date_updated = now(),";
-                     $sql_edit .=" r_pel__user_updated = '$id_peg'";
-                    $sql_edit .="  WHERE r_pel__id='$r_pel__id' ";
+                    $sql_edit .=" r_inventaris__mutasi='$r_inventaris__mutasi',";
+                    $sql_edit .=" r_inventaris__tgl_pinjam='$r_inventaris__tgl_pinjam',";
+                    $sql_edit .=" r_inventaris__tgl_kembali='$r_inventaris__tgl_kembali',";
+                    $sql_edit .=" r_inventaris__jenis ='$r_inventaris__jenis',";
+                    $sql_edit .=" r_inventaris__alat='$r_inventaris__alat',";
+                    $sql_edit .=" r_inventaris__kode='$r_inventaris__kode',";
+                    $sql_edit .=" r_inventaris__qty = '$r_inventaris__qty',";
+                    $sql_edit .=" r_inventaris__kepemilikan = '$r_inventaris__kepemilikan',";
+                    $sql_edit .=" r_inventaris__gambar = '$image_name',";
+                    $sql_edit .=" r_inventaris__lokasi = '$r_inventaris__lokasi',";
+                    $sql_edit .=" r_inventaris__keterangan = '$r_inventaris__keterangan',"; 
+                    $sql_edit .=" r_inventaris__status = '$r_inventaris__status',";
+                    $sql_edit .=" r_inventaris__date_updated = now(),";
+                    $sql_edit .=" r_inventaris__user_updated = '$id_peg'";
+                    $sql_edit .="  WHERE r_inventaris__id='$r_inventaris__id' ";
+                  //  var_dump($sql_edit) or die();
                     $sqlresult = $db->Execute($sql_edit);
+                    
+                    
                      
 			Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 		
@@ -238,120 +183,134 @@ $user_id = base64_decode($_SESSION['UID']);
 $id_peg = $_SESSION['SESSION_ID_PEG'];
 $tgl_now = date("Y-m-d h:i:s");
 
-$r_pel__id              = $_POST[id_pel];
-$r_pel__mutasi          = $_POST[mutasi];
-$r_pel__master_pel      = $_POST[id];
-$r_pel__tema            = $_POST[tema];
-$r_pel__no_sertifikat   =$_POST[sertifikat];
-$r_pel__nilai           =$_POST[nilai];
-$r_pel__document       = $_POST[file__xls];
-$foto=$_FILES['file_xls']['name'] ;
+$r_inventaris__id =$_POST[inv_id]; 
+$r_inventaris__mutasi = $_POST[mutasi];
+$r_inventaris__tgl_pinjam = $_POST[tgl];
+$r_inventaris__tgl_kembali = $_POST[tgl_kembali];
+$r_inventaris__jenis = $_POST[jenis_alat];
+$r_inventaris__alat = $_POST[nama_alat];
+$r_inventaris__kode = $_POST[kode_alat];
+$r_inventaris__qty = $_POST[qty_alat];
+$r_inventaris__kepemilikan = $_POST[pemilik_alat];
+$r_inventaris__gambar = $_POST[file_gambar];
+$r_inventaris__lokasi = $_POST[lokasi_alat];
+$r_inventaris__keterangan = $_POST[keterangan_alat];
+$r_inventaris__status = $_POST[status];
+$r_inventaris__kondisi= $_POST[kondisi_alat];
 
 error_reporting(E_ALL ^ E_NOTICE);
 error_reporting(0);
-//  ini_set("display_errors",1);
+ini_set("display_errors",1);
 ini_set("memory_limit","1024M");
-
- if($foto!="")
- {
-         $target_dir ='./uploads/';
-                    $target_file = $target_dir.basename($_FILES["file_xls"]["name"],$target_dir);  
-                 //   chmod("$target_file",0777);
-                    $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-                    // Check if image file is a actual image or fake image
-                    $check = getimagesize($_FILES["file_xls"]["tmp_name"]); 
-                    if($check !== false) {
-                                        $uploadMessageError = "File is an image - " . $check["mime"] . ".";
-                                        $uploadOk = 1;
-                                } else {
-                                        $uploadMessageError = "File is not an image.";
-                                        $uploadOk = 0;
-                                }        
-			// Check file size
-			if ($_FILES["file_xls"]["size"] > 2000000) {
-				$uploadMessageError = "Sorry, your file is too large.";
-				$uploadOk = 0;
-			}
-			// Allow certain file formats
-			if($imageFileType != "jpg" && $imageFileType != "GIF") {
-				$uploadMessageError = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-				$uploadOk = 0;
-			}
-                         
-                        
-                            if (move_uploaded_file($_FILES["file_xls"]["tmp_name"], $target_file)) {
-                                  chmod("$target_file",0775);
-                                    $uploadMessageError = "The file ". basename($_FILES["file_xls"]["name"]). " has been uploaded.";
-                                    $uploadOk=1;
-                                  $image_name=$r_pel__id.'-'. $_FILES['file_xls']['name'];
-                                  //   $nama_asli = $_FILES['file_xls']['name'].'-'.$id_peg;  
-                                     
-                      } else {
-                                    $uploadMessageError = "Sorry, there was an error uploading your file.";
-                                    $uploadOk=0;
+$foto=$_FILES['file_gambar']['name'] ;
+IF ($_FILES['file_gambar']['name'] !=""){ //JIKA ADA YANG DIUPLOAD
+																
+    if ($_FILES['file_gambar']['type'] == "image/jpeg" || $_FILES['file_gambar']['type']=="image/png" || $_FILES['file_gambar']['type']=="image/gif"){
+           
+            $target_dir ='./uploads/';                             
+            $temp = explode(".",$_FILES["file_gambar"]["name"]);
+            $newfilename = substr(microtime(), 2, 7) . '.' .end($temp);
+            $ori_src="uploads/".$_FILES['file_gambar']['name'];
+            
+     
+           if(move_uploaded_file($_FILES["file_gambar"]["tmp_name"],$target_dir.$newfilename))        
+                            {
+                                    chmod("$ori_src",0777);
+                            }else{
+                                    echo "Gagal melakukan proses upload file.";
+                                    exit;
                             }
-                            //   var_dump($image_name)or die();
-                                   
-                         
- }
+                    }		 
 
-    
-   $sql_cek_no="SELECT
-                r_pel__id,
-                r_pel__mutasi,
-                r_pel__master_pel,
-                r_pel__tema,
-                r_pel__no_sertifikat,
-                r_pel__nilai,
-                r_pel__document
-              FROM r_pelatihan where r_pel__master_pel='$r_pel__master_pel' ";
-   
+            $nama_asli = $newfilename;        
+            ini_set("memory_limit","1024M");
 
-   $rs_val = $db->Execute($sql_cek_no);
-   $master_id =$rs_val->fields['r_pel__master_pel'];
-   $master_mutasi=$rs_val->fields['r_pel__mutasi'];
-   
- 
- if ($r_pel__id=='' OR $master_id==$r_pel__master_pel AND $master_mutasi== $r_pel__mutasi) {
-			Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
-		}else
-                {
-                    
-                                    $sql= "INSERT INTO $tbl_name ("
-                                            . "r_pel__id,"
-                                            . "r_pel__mutasi, "
-                                            . "r_pel__master_pel,"
-                                            . "r_pel__tema,"
-                                            . "r_pel__no_sertifikat, "
-                                            . "r_pel__nilai, "
-                                            . "r_pel__document,"
-                                            . "r_pel__date_created,"
-                                            . "r_pel__user_created)";
- 
-                                    $sql	.= " VALUES ("
-                                            . "'$r_pel__id',"
-                                            . "'$r_pel__mutasi',"
-                                            . "'$r_pel__master_pel',"
-                                            . "'$r_pel__tema',"
-                                            . "'$r_pel__no_sertifikat',"
-                                            . "'$r_pel__nilai',"
-                                            . "'$image_name',"
-                                            . "now(),"
-                                            . "'$id_peg')";   
-                                    
-                                    //   var_dump($sql)or die();
-$sqlresult = $db->Execute($sql);
-Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
-                }
 }
 
+   $sql_cek_no="SELECT
+                 r_inventaris__id,
+                r_inventaris__mutasi,
+                r_inventaris__tgl_pinjam,
+                r_inventaris__tgl_kembali,
+                r_inventaris__jenis,
+                r_inventaris__alat,
+                r_inventaris__kode,
+                r_inventaris__status
+              FROM r_inventaris where r_inventaris__kode='$r_inventaris__kode' AND r_inventaris__status=2 ";
+   
+                $rs_val = $db->Execute($sql_cek_no);
+                $inventaris_status =$rs_val->fields['r_inventaris__status'];
+                $inventaris_kode=$rs_val->fields['r_inventaris__kode'];
+             
+              $sql_cek_id="SELECT
+                    r_inventaris__id,
+                    r_inventaris__mutasi,
+                    r_inventaris__tgl_pinjam,
+                    r_inventaris__tgl_kembali,
+                    r_inventaris__jenis,
+                    r_inventaris__alat,
+                    r_inventaris__kode,
+                    r_inventaris__status
+                    FROM r_inventaris where r_inventaris__id='$r_inventaris__id'";
+   
+        
+                $rs_val = $db->Execute($sql_cek_id);
+                $cek_id =$rs_val->fields['r_inventaris__id'];
+                
+             
+            if (($inventaris_kode==$r_inventaris__kode AND $inventaris_status==2)) {
+			Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+		}
+                else
+                {
+                                $sql= "INSERT INTO $tbl_name ("
+                                            . "r_inventaris__id,"
+                                            . "r_inventaris__mutasi,"
+                                            . "r_inventaris__tgl_pinjam,"
+                                            . "r_inventaris__tgl_kembali,"
+                                            . "r_inventaris__jenis,"
+                                            . "r_inventaris__alat,"
+                                            . "r_inventaris__kode,"
+                                            . "r_inventaris__qty,"
+                                            . "r_inventaris__kondisi,"
+                                            . "r_inventaris__kepemilikan,"
+                                            . "r_inventaris__gambar,"
+                                            . "r_inventaris__lokasi,"
+                                            . "r_inventaris__keterangan,"
+                                            . "r_inventaris__status,"
+                                            . "r_inventaris__date_created,"
+                                            . "r_inventaris__date_updated,"
+                                            . "r_inventaris__user_created,"
+                                            . "r_inventaris__user_updated)";
+                                            
+                                    $sql	.= " VALUES ("
+                                            . "'$r_inventaris__id',"
+                                            . "'$r_inventaris__mutasi',"
+                                            . "'$r_inventaris__tgl_pinjam',"
+                                            . "'$r_inventaris__tgl_kembali',"
+                                            . "'$r_inventaris__jenis',"
+                                            . "'$r_inventaris__alat',"
+                                            . "'$r_inventaris__kode',"
+                                            . "'$r_inventaris__qty',"
+                                            . "'$r_inventaris__kondisi',"
+                                            . "'$r_inventaris__kepemilikan',"
+                                            . "'$nama_asli',"
+                                            . "'$r_inventaris__lokasi',"
+                                            . "'$r_inventaris__keterangan',"
+                                            . "'$r_inventaris__status',"
+                                            . "now(),"
+                                            . "now(),"
+                                            . "'$id_peg',"
+                                            . "'$id_peg')";
+            
+            $sqlresult = $db->Execute($sql);
+            Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+                }
+}
  
 // TUTUP CREATE
  
-
 if($_POST[op]) $op = $_POST[op]; else $op = $_GET[op];
-
-
 switch ($op){
 
 case 0:

@@ -116,32 +116,56 @@ if ($_GET[get_kec] == 1)
 
 
 $sql="SELECT
-  A.r_pnpt__nip AS r_pnpt__nip,
-  B.r_pegawai__nama AS r_pegawai__nama,
-  C.r_cabang__nama AS r_cabang__nama,
-  C.r_cabang__id AS r_cabang__id,
-  D.r_subcab__id AS r_subcab__id,
-  D.r_subcab__nama AS r_subcab__nama,
-  E.r_dept__id AS r_dept__id,
-  E.r_dept__ket AS r_dept__ket,
-  F.r_subdept__id AS r_subdept__id,
-  F.r_subdept__ket AS r_subdept__ket,
-  G.r_jabatan__id AS r_jabatan__id,
-  G.r_jabatan__ket AS r_jabatan__ket
-
+r_penempatan.r_pnpt__nip AS r_pnpt__nip,
+r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+r_penempatan.r_pnpt__jabatan AS r_pnpt__jabatan,
+r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
+r_penempatan.r_pnpt__status AS r_pnpt__status,
+r_penempatan.r_pnpt__tipe_salary AS r_pnpt__tipe_salary,
+r_penempatan.r_pnpt__subdept AS r_pnpt__subdept,
+r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
+r_penempatan.r_pnpt__gapok AS r_pnpt__gapok,
+r_penempatan.r_pnpt__subcab AS r_pnpt__subcab,
+r_penempatan.r_pnpt__shift AS r_pnpt__shift,
+r_penempatan.r_pnpt__kon_awal AS r_pnpt__kon_awal,
+r_penempatan.r_pnpt__kon_akhir AS r_pnpt__kon_akhir,
+r_penempatan.r_pnpt__aktif AS r_pnpt__aktif,
+r_penempatan.r_pnpt__pdrm AS r_pnpt__pdrm,
+r_jabatan.r_jabatan__id AS r_jabatan__id,
+r_jabatan.r_jabatan__ket AS r_jabatan__ket,
+r_subdepartement.r_subdept__id AS r_subdept__id,
+r_subdepartement.r_subdept__ket AS r_subdept__ket,
+r_departement.r_dept__akronim AS r_dept__akronim,
+r_departement.r_dept__id AS r_dept__id,
+r_departement.r_dept__ket AS r_dept__ket,
+r_subcabang.r_subcab__nama AS r_subcab__nama,
+r_cabang.r_cabang__nama AS r_cabang__nama,
+r_cabang.r_cabang__id AS r_cabang__id,
+r_subcabang.r_subcab__id AS r_subcab__id,
+r_subcabang.r_subcab__cabang AS r_subcab__cabang,
+r_pegawai.r_pegawai__id AS r_pegawai__id,
+r_pegawai.r_pegawai__nama AS r_pegawai__nama,
+r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
+r_pegawai.r_pegawai__ktp AS r_pegawai__ktp,
+r_status_pegawai.r_stp__id AS r_stp__id,
+r_status_pegawai.r_stp__nama AS r_stp__nama,
+r_level.r_level__id AS r_level__id,
+r_level.r_level__ket AS r_level__ket,
+r_level_lembur.r_level__ket AS r_level__ket,
+r_level_lembur.r_level__nominal AS r_level__nominal,
+r_level_lembur.r_level__makan AS r_level__makan,
+r_level_lembur.r_level__transport AS r_level__transport
 FROM
-  r_penempatan A, r_pegawai B, r_cabang C, r_subcabang D,r_departement E,r_subdepartement F ,r_jabatan G
-WHERE
-  A.r_pnpt__id_pegawai = B.r_pegawai__id
-  AND
-  A.r_pnpt__subcab = D.r_subcab__id
-  AND
-  D.r_subcab__cabang = C.r_cabang__id 
-  
-  AND
-  A.r_pnpt__subdept=F.r_subdept__id AND F.r_subdept__dept=E.r_dept__id
-  AND
-  G.r_jabatan__id=A.r_pnpt__jabatan AND  A.r_pnpt__aktif = 1 AND r_cabang__id ='$kode_cabang' ";
+	r_pegawai
+INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
+INNER JOIN r_jabatan ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
+INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
+INNER JOIN r_subcabang ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
+INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+INNER JOIN r_status_pegawai ON r_status_pegawai.r_stp__id = r_penempatan.r_pnpt__status
+INNER JOIN r_level ON r_level__id=r_jabatan__level
+INNER JOIN r_level_lembur ON r_level_lembur.r_level__id=r_level.r_level__id where r_cabang__id ='$kode_cabang' AND r_pnpt__aktif='1'  ";
 
 
 if ($pil !="") {
@@ -219,10 +243,9 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 <td width="10">:</td>
 <td width="30">
 <select name='pil' class="text">
-<option value=0></option>
 <option value='1' <?PHP if ($pil==1) { echo "selected"; } ?>>Nama  </option>
    <option value='2' <?PHP if ($pil==2) { echo "selected"; } ?>>NIP</option>
- <!--     <option value='4' <?PHP if ($pil==4) { echo "selected"; } ?>>Alamat</option>
+ <!--  <option value='4' <?PHP if ($pil==4) { echo "selected"; } ?>>Alamat</option>
    <option value='6' <?PHP if ($pil==6) { echo "selected"; } ?>>Level</option>-->
 </select>
 
@@ -276,17 +299,19 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 				<? for ($i=0;$i<count($list_arr_satuan);$i++) { 
 				   $j = $i+1;	
 				   	$nama=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__nama']);
-                                        $finger=str_replace("'","",$list_arr_satuan[$i]['r_pnpt__nip']);
+                                        $finger=str_replace("'","",$list_arr_satuan[$i]['r_pnpt__finger_print']);
                                         $cabang=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__tmpt_lahir']);
-                                        $jabatan=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__tgl_lahir']);
-                                        $level=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__ktp']);    
-                                        $shift=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__id']);  
+                                        $jabatan=str_replace("'","",$list_arr_satuan[$i]['r_jabatan__ket']);
+                                        $level_id=str_replace("'","",$list_arr_satuan[$i]['r_level__id']);    
+                                        $id_pegawai=str_replace("'","",$list_arr_satuan[$i]['r_pnpt__id_pegawai']);  
                                         $tgl_masuk=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__tgl_masuk']);  
+                                        
+                              
 				?>
 				
 				<tr align="center" 
                                     onclick="GetPengaduan('<?=$list_arr_satuan[$i]['r_pegawai__nama'];?>',
-                                                '<?=$list_arr_satuan[$i]['r_pnpt__nip'];?>');"  
+                                                '<?=$finger;?>','<?=$jabatan;?>','<?=$list_arr_satuan[$i]['r_level__id'];?>');"  
                                     onMouseOver="setPointer(this, <?=$initSet[$i];?>, 'over', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
                                     onMouseOut="setPointer(this, <?=$initSet[$i];?>, 'out', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
                                     onMouseDown="setPointer(this, <?=$initSet[$i];?>, 'click', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');"> 
@@ -343,10 +368,12 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 </div>
 
 <script>
-function GetPengaduan(r_pegawai__nama,r_pnpt__nip) {
+function GetPengaduan(r_pegawai__nama,finger,jabatan,level_id) {
          
-         window.opener.document.getElementById('r_pegawai__nama').value=r_pegawai__nama;
-         window.opener.document.getElementById('r_pnpt__nip').value=r_pnpt__nip;
+window.opener.document.getElementById('r_pegawai__nama').value=r_pegawai__nama;
+window.opener.document.getElementById('finger').value=finger;
+window.opener.document.getElementById('r_pnpt__jabatan').value=jabatan;
+window.opener.document.getElementById('level_id').value=level_id;
          window.close();
     //    alert(KodeDepartemen);
 }

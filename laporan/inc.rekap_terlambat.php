@@ -1,6 +1,6 @@
 <?PHP
 
-function print_header($nm_perwakilan,$bulan,$tahun) {
+function print_header($nm_perwakilan,$date_awal,$date_akhir) {
 
 $content = <<<EOH
 <html xmlns:v="urn:schemas-microsoft-com:vml"
@@ -313,11 +313,13 @@ td
  
 EOH;
 
+if($nm_perwakilan!='')
+{    $label_perwakilan=$nm_perwakilan;}  else {$label_perwakilan='ALL CABANG';}
 $content .= "<tr height=21 style='height:15.75pt'>
-  <td colspan=9 height=21 class=xl36 style='height:15.75pt'>CABANG  : ".$nm_perwakilan."</td>
+  <td colspan=9 height=21 class=xl36 style='height:15.75pt'>CABANG  : ".$label_perwakilan."</td>
  </tr>
  <tr height=21 style='height:15.75pt'>
-  <td colspan=9 height=21 class=xl36 style='height:15.75pt'>Periode : Tahun: ".$tahun." Bulan :".$bulan."</td>
+  <td colspan=9 height=21 class=xl36 style='height:15.75pt'>Periode : ".$date_awal." S/d :".$date_akhir."</td>
  </tr>";
 
 $content .= <<<EOH

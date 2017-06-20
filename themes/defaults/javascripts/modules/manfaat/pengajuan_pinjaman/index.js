@@ -34,7 +34,7 @@ with (theForm){
 		}
         else if (kode_cabang.value == "") 
                        { 
-                               alert ("Silahkan Pilih Sub Cabang !"); 
+                               alert ("Silahkan Pilih Cabang !"); 
                                kode_cabang.focus();
                                return false; 
                        }               
@@ -52,26 +52,60 @@ with (theForm){
                        }
                 
 
-            else if (t_pjm__tgl_disetujui.value == "") 
+            else if (t_pjm__tgl_pinjam.value == "") 
                    { 
                            alert ("Silahkan Isi Tanggal Disetujui!"); 
-                           t_pjm__tgl_disetujui.focus();
+                           t_pjm__tgl_pinjam.focus();
                            return false; 
                    }
+               else if (t_pjm__awal.value == "") 
+                   { 
+                           alert ("Silahkan Isi Tanggal Awal Pembayaran!"); 
+                           t_pjm__awal.focus();
+                           return false; 
+                   }
+                   
+             else if (t_pjm__akhir.value == "") 
+                   { 
+                           alert ("Silahkan Isi Tanggal Akhir Pembayaran!"); 
+                           t_pjm__akhir.focus();
+                           return false; 
+                   }
+                   
             else if (t_pjm__jenis.value == "") 
                 { 
                         alert ("Silahkan Pilih Jenis Pinjaman"); 
                         t_pjm__jenis.focus();
                         return false; 
                 }
-            else if (t_pjm__approval.value == "") 
-            { 
-                    alert ("Silahkan Isi Approval"); 
-                    t_pjm__approval.focus();
-                    return false; 
-            }
+         
+         
+           else if (plafond.value == "") 
+                { 
+                        alert ("SILAHKAN ISI TOTAL PINJAMAM"); 
+                        plafond.focus();
+                        return false; 
+                }
+             else if (tenor.value == "") 
+                { 
+                        alert ("SILAHKAN ISI TENOR "); 
+                        tenor.focus();
+                        return false; 
+                }
+//             else if (cicilan.value == "") 
+//                { 
+//                        alert ("SILAHKAN ISI CICILAN "); 
+//                        cicilan.focus();
+//                        return false; 
+//                }
+            
+            
+        //plafond
+//tenor
+//cicilan
+    
 
-                else if (t_pjm__keterangan.value == "") 
+                else if (t_pjm__keterangan.value == "")
                     { 
                             alert ("Silahkan Isi Keterangan"); 
                             t_pjm__keterangan.focus();
@@ -87,7 +121,24 @@ with (theForm){
 	
 	
 }
-// --------------------
+
+function bagi() {
+//cek();
+var plafond =frmCreate.plafond.value;
+var tenor =frmCreate.tenor.value;
+
+
+var a = plafond.replace(/[^\d]/g,'');
+var b = tenor.replace(/[^\d]/g, '');
+       
+if(b>c)
+{alert ("pembagi harus kecil ");} 
+ 
+var c = (a/b).toFixed();
+if(c==Infinity)
+{c=0;  frmCreate.cicilan.value = c;}else{frmCreate.cicilan.value = c;}
+    
+}
 
 
 function checkSubmit(){
@@ -234,5 +285,91 @@ function formatangka(objek) {
      }
    }
    objek.value = c;
+}
+
+
+
+function tandaPemisahTitik(b){
+var _minus = false;
+if (b<0) _minus = true;
+b = b.toString();
+b=b.replace(".","");
+b=b.replace("-","");
+c = "";
+panjang = b.length;
+j = 0;
+for (i = panjang; i > 0; i--){
+j = j + 1;
+if (((j % 3) == 1) && (j != 1)){
+c = b.substr(i-1,1) + "." + c;
+} else {
+c = b.substr(i-1,1) + c;
+}
+}
+if (_minus) c = "-" + c ;
+return c;
+}
+
+function numbersonly(ini, e){
+if (e.keyCode>=49){
+if(e.keyCode<=57){
+a = ini.value.toString().replace(".","");
+b = a.replace(/[^\d]/g,"");
+b = (b=="0")?String.fromCharCode(e.keyCode):b + String.fromCharCode(e.keyCode);
+ini.value = tandaPemisahTitik(b);
+return false;
+}
+else if(e.keyCode<=105){
+if(e.keyCode>=96){
+//e.keycode = e.keycode - 47;
+a = ini.value.toString().replace(".","");
+b = a.replace(/[^\d]/g,"");
+b = (b=="0")?String.fromCharCode(e.keyCode-48):b + String.fromCharCode(e.keyCode-48);
+ini.value = tandaPemisahTitik(b);
+//alert(e.keycode);
+return false;
+}
+else {return false;}
+}
+else {
+return false; }
+}else if (e.keyCode==48){
+a = ini.value.replace(".","") + String.fromCharCode(e.keyCode);
+b = a.replace(/[^\d]/g,"");
+if (parseFloat(b)!=0){
+ini.value = tandaPemisahTitik(b);
+return false;
+} else {
+return false;
+}
+}else if (e.keyCode==95){
+a = ini.value.replace(".","") + String.fromCharCode(e.keyCode-48);
+b = a.replace(/[^\d]/g,"");
+if (parseFloat(b)!=0){
+ini.value = tandaPemisahTitik(b);
+return false;
+} else {
+return false;
+}
+}else if (e.keyCode==8 || e.keycode==46){
+a = ini.value.replace(".","");
+b = a.replace(/[^\d]/g,"");
+b = b.substr(0,b.length -1);
+if (tandaPemisahTitik(b)!=""){
+ini.value = tandaPemisahTitik(b);
+} else {
+ini.value = "";
+}
+
+return false;
+} else if (e.keyCode==9){
+return true;
+} else if (e.keyCode==17){
+return true;
+} else {
+//alert (e.keyCode);
+return false;
+}
+
 }
 </SCRIPT>

@@ -117,6 +117,7 @@ if ($_GET[get_kec] == 1)
 
 $sql="SELECT
   A.r_pnpt__nip AS r_pnpt__nip,
+  A.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
   B.r_pegawai__nama AS r_pegawai__nama,
   C.r_cabang__nama AS r_cabang__nama,
   C.r_cabang__id AS r_cabang__id,
@@ -141,7 +142,7 @@ WHERE
   AND
   A.r_pnpt__subdept=F.r_subdept__id AND F.r_subdept__dept=E.r_dept__id
   AND
-  G.r_jabatan__id=A.r_pnpt__jabatan AND  A.r_pnpt__aktif = 1 AND r_cabang__id ='$kode_cabang' ";
+  G.r_jabatan__id=A.r_pnpt__jabatan AND  A.r_pnpt__aktif = 1 AND r_cabang__id ='$kode_cabang' AND r_pnpt__aktif='1' ";
 
 
 if ($pil !="") {
@@ -258,10 +259,10 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 			<table width="500" border="0" cellpadding="0" cellspacing="0" class="ewTable">
 			<tr> 
 			<td  align="left" valign="top" class="ewTableHeader">NAMA KARYAWAN</td>
-                        <td  align="left" valign="top" class="ewTableHeader">ALAMAT</td>
-			<td  align="left" valign="top" class="ewTableHeader">TEMPAT LAHIR</td>
-			<td  align="left" valign="top" class="ewTableHeader">TGL LAHIR</td>
-			<td  align="left" valign="top" class="ewTableHeader">NO KTP</td>
+                        <td  align="left" valign="top" class="ewTableHeader">NIP</td>
+			<td  align="left" valign="top" class="ewTableHeader">CABANG</td>
+			<td  align="left" valign="top" class="ewTableHeader">DEPARTEMEN</td>
+			<td  align="left" valign="top" class="ewTableHeader">JABATAN</td>
 
 			
  
@@ -280,13 +281,13 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
                                         $cabang=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__tmpt_lahir']);
                                         $jabatan=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__tgl_lahir']);
                                         $level=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__ktp']);    
-                                        $shift=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__id']);  
+                                        $id_peg=str_replace("'","",$list_arr_satuan[$i]['r_pnpt__id_pegawai']);  
                                         $tgl_masuk=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__tgl_masuk']);  
 				?>
 				
 				<tr align="center" 
                                     onclick="GetPengaduan('<?=$list_arr_satuan[$i]['r_pegawai__nama'];?>',
-                                                '<?=$list_arr_satuan[$i]['r_pnpt__nip'];?>');"  
+                                                '<?=$id_peg;?>');"  
                                     onMouseOver="setPointer(this, <?=$initSet[$i];?>, 'over', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
                                     onMouseOut="setPointer(this, <?=$initSet[$i];?>, 'out', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
                                     onMouseDown="setPointer(this, <?=$initSet[$i];?>, 'click', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');"> 
@@ -343,10 +344,10 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 </div>
 
 <script>
-function GetPengaduan(r_pegawai__nama,r_pnpt__nip) {
+function GetPengaduan(r_pegawai__nama,id_peg) {
          
-         window.opener.document.getElementById('r_pegawai__nama2').value=r_pegawai__nama;
-         window.opener.document.getElementById('r_pnpt__nip2').value=r_pnpt__nip;
+         window.opener.document.getElementById('atasan_nama').value=r_pegawai__nama;
+         window.opener.document.getElementById('atasan_id').value=id_peg;
          window.close();
     //    alert(KodeDepartemen);
 }

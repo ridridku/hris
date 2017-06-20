@@ -14,7 +14,7 @@ session_set_cookie_params($expiry);
 session_start();
 
 if ((!isset($_SESSION['UID'])) || (empty($_SESSION['UID']))){
-		require_once('../../../includes/                                ');
+		require_once('../../../includes/');
 }else{
 
 //yang harus dibuat session
@@ -70,320 +70,128 @@ $user_id = base64_decode($_SESSION['UID']);
 $id_peg = $_SESSION['SESSION_ID_PEG'];
 $today = date("Y-m-d h:i:s");
 
-$t_abs__id= addslashes($_POST[t_abs__id]);	
-$r_pegawai__nama= addslashes($_POST[r_pegawai__nama]);	
-$r_cabang__id= addslashes($_POST[r_cabang__id]);	
-
-$t_abs__fingerprint= addslashes($_POST[r_pnpt__finger_print]);
-$t_abs__tgl= addslashes($_POST[t_abs__tgl]);	
-$t_abs__id_shift= addslashes($_POST[r_pnpt__shift]);	
-$t_abs__jam_masuk= addslashes($_POST[t_abs__jam_masuk]);	
-$t_abs__jam_keluar= addslashes($_POST[t_abs__jam_keluar]);	
-$t_abs__early = addslashes($_POST[t_abs__early]);
-$t_abs__lately = addslashes($_POST[t_abs__jam_lately]);	
-$t_abs__approval= addslashes($_POST[t_abs__approval]);	
-$t_abs__lesstime= addslashes($_POST[t_abs__lesstime]);	
-$t_abs__overtime= addslashes($_POST[t_abs__overtime]);	
-$t_abs__worktime= addslashes($_POST[t_abs__worktime]);	
-$t_abs__status= addslashes($_POST[t_abs__status]);	
-$t_abs__catatan= addslashes($_POST[t_abs__catatan]);	
-$t_abs__date_created= addslashes($_POST[t_abs__date_created]);	
-$t_abs__date_updated= date("Y-m-d h:i:s");
-$t_abs__user_created= addslashes($_POST[t_abs__user_created]);	
-$t_abs__user_updated= $id_peg;	
-
-        $sql_cek_edit="SELECT * FROM t_absensi A where A.t_abs__fingerprint='$t_abs__fingerprint' AND A.t_abs__tgl='$t_abs__tgl'";
-        
-        $rs_val = $db->Execute($sql_cek_edit);
-        $fingerprint = $rs_val->fields['t_abs__fingerprint'];
-        $tgl_masuk = $rs_val->fields['t_abs__tgl'];
-        $absen_id = $rs_val->fields['t_abs__id'];
-      
-
-
-		if ($t_abs__fingerprint!=$fingerprint AND $t_abs__tgl !=$tgl_masuk) {
-		 
-				Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
-
-		} else { 
-
-                    
-			$sql_edit  ="  UPDATE t_absensi set ";
-                        $sql_edit .=" t_abs__fingerprint = '$_POST[r_pnpt__finger_print]', ";
-                        $sql_edit .=" t_abs__tgl = '$_POST[t_abs__tgl]', ";
-                        $sql_edit .=" t_abs__id_shift = '$_POST[r_pnpt__shift]', ";
-                        $sql_edit .=" t_abs__jam_masuk = '$_POST[t_abs__jam_masuk]', ";
-                        $sql_edit .=" t_abs__jam_keluar = '$_POST[t_abs__jam_keluar]', ";
-                        $sql_edit .=" t_abs__early = '$_POST[t_abs__early]', ";
-                        $sql_edit .=" t_abs__lately = '$_POST[t_abs__jam_lately]', ";
-                        $sql_edit .=" t_abs__approval = '$_POST[t_abs__approval]', ";
-                        $sql_edit .=" t_abs__lesstime = '$_POST[t_abs__lesstime]', ";
-                        $sql_edit .=" t_abs__overtime = '$_POST[t_abs__overtime]', ";
-                        $sql_edit .=" t_abs__worktime = '$_POST[t_abs__worktime]', ";
-                        $sql_edit .=" t_abs__status = '$_POST[t_abs__status]', ";
-                        $sql_edit .=" t_abs__catatan = '$_POST[t_abs__catatan]', ";
-                        $sql_edit .=" t_abs__date_updated =  'now()',";
-                        $sql_edit .=" t_abs__user_updated = '$id_peg'";
-                        $sql_edit .="  WHERE t_abs__id='$_POST[t_abs__id]' ";
-                    
-			$sqlresult4 = $db->Execute($sql_edit);
-                     
-   
-			Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
-		}
 }
 
 function create_(){
-    $id_peg = $_SESSION['SESSION_ID_PEG'];
-    $today = date("Y-m-d h:i:s");
+    
+   
         global $mod_id;	
         global $db;
         global $tbl_name;
         global $field_name;
-        
-        $today = date("Y-m-d");
+                
         $kode_cabang = addslashes($_POST[kode_cabang]);
-        $tahun = addslashes($_POST[tahun]);
-        $bulan = addslashes($_POST[bulan]);
-      
-        $sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_bulan,r_periode__payroll_tahun,r_periode__payroll_status
-                                  FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
-                  
-        $rs_val = $db->Execute($sql_cek_periode);
-        $periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
-        $periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];  
-
-        $sql_cek_approval="SELECT A.t_rkp__no_mutasi,A.t_rkp__approval,A.t_rkp__bln,A.t_rkp__thn
-        FROM  t_rekap_absensi A LEFT JOIN v_pegawai P ON P.r_pnpt__no_mutasi=A.t_rkp__no_mutasi
-        WHERE A.t_rkp__thn='$periode_tahun' AND A.t_rkp__bln='$periode_bulan' AND A.t_rkp__no_mutasi='$edit_t_rkp__no_mutasi' ";
-
-        $rs_val = $db->Execute($sql_cek_approval);
-        $cek__no_mutasi= $rs_val->fields['t_rkp__no_mutasi'];
-        $cek__approval= $rs_val->fields['t_rkp__approval'];
-
-          
+        $id_peg = $_SESSION['SESSION_ID_PEG'];
+        $awal_aktif	= $_SESSION['SESSION_AWAL_AKTIF'];
+        $akhir_aktif	= $_SESSION['SESSION_AKHIR_AKTIF'];
+       
+        $periode_awal = addslashes($_POST[periode_awal]);
+        $periode_akhir = addslashes($_POST[periode_akhir]);
     
-         $sql_cek=" SELECT A.t_rkp__bln AS t_rkp__bln, A.t_rkp__thn AS t_rkp__thn,A.t_rkp__no_mutasi t_rkp__no_mutasi,peg.r_cabang__id AS r_cabang__id
-                      FROM t_rekap_absensi A, r_penempatan B, v_pegawai peg
-                      WHERE A.t_rkp__bln = '$bulan' AND A.t_rkp__thn = '$tahun'  AND B.r_pnpt__no_mutasi = A.t_rkp__no_mutasi AND B.r_pnpt__no_mutasi = peg.r_pnpt__no_mutasi AND r_cabang__id='$kode_cabang' ";
-
-                    $rs_val = $db->Execute($sql_cek);
-                    $t_rekap__bulan_update = $rs_val->fields['t_rkp__bln'];
-                    $t_rekap__tahun_update = $rs_val->fields['t_rkp__thn'];
-                    $t_rekap__no_mutasi=$rs_val->fields['t_rkp__no_mutasi'];
         
-    
-          
-         $sql_cek_update_rekap="SELECT t_rekap_absensi.t_rkp__approval AS t_rkp__approval ,
-                                t_rekap_absensi.t_rkp__no_mutasi AS t_rkp__no_mutasi,
-                                t_rekap_absensi.t_rkp__bln AS t_rkp__bln,
-                                t_rekap_absensi.t_rkp__thn AS t_rkp__thn,
-                                t_absensi.t_abs__fingerprint t_abs__fingerprint,
-                                t_absensi.t_abs__tgl AS t_abs__tgl, 
-                                v_pegawai.r_cabang__id AS r_cabang__id
-                                FROM
-                                t_rekap_absensi
-                                INNER JOIN v_pegawai ON t_rekap_absensi.t_rkp__no_mutasi = v_pegawai.r_pnpt__no_mutasi
-                                INNER JOIN t_absensi ON t_absensi.t_abs__fingerprint = v_pegawai.r_pnpt__finger_print
-                                WHERE
-                                t_rekap_absensi.t_rkp__bln = '$bulan' AND
-                                t_rekap_absensi.t_rkp__thn = '$tahun' AND
-                                v_pegawai.r_cabang__id = '$kode_cabang'
+                            
+                    
+        
+//    $sql_cek_rekap="SELECT DISTINCT A.t_abs__fingerprint, 
+//                    A.t_abs__id_shift,B.r_pnpt__no_mutasi AS mutasi
+//                    FROM t_absensi A
+//             LEFT JOIN r_penempatan B ON A.t_abs__fingerprint=B.r_pnpt__finger_print
+//             LEFT JOIN (SELECT rc.r_cabang__id,rc.r_cabang__nama,rs.r_subcab__cabang,rs.r_subcab__nama,rs.r_subcab__id
+//                         FROM r_cabang rc,r_subcabang rs WHERE rc.r_cabang__id=rs.r_subcab__cabang )as cab ON cab.r_subcab__id=B.r_pnpt__subcab
+//             WHERE   A.t_abs__tgl>='$periode_awal' AND A.t_abs__tgl<='$periode_akhir'  AND cab.r_cabang__id='$kode_cabang'
+//              GROUP BY A.t_abs__fingerprint ORDER BY B.r_pnpt__no_mutasi DESC ";
+        
+        $sql_cek_rekap="SELECT DISTINCT
+            C.r_pnpt__finger_print,
+            C.r_pnpt__shift,
+            C.mutasi_ as mutasi,
+            C.r_pnpt__id_pegawai
+             FROM (SELECT B.*,
+            IF((SELECT r_penempatan.r_pnpt__no_mutasi FROM r_penempatan 
+            WHERE r_penempatan.r_pnpt__aktif=1 and r_penempatan.r_pnpt__no_mutasi=B.mutasi)is null,(SELECT r_resign__mutasi FROM r_resign
+            WHERE r_resign__mutasi=B.mutasi AND 
+            r_resign__mutasi NOT IN 
+            (select DISTINCT r_resign__mutasi FROM r_resign 
+            WHERE r_resign.r_resign__tgl <= '$periode_akhir'- INTERVAL DATEDIFF('$periode_akhir','$periode_awal') DAY and r_resign.r_resign__approval=1)
+            ),B.mutasi
+            )mutasi_
+            FROM 
+            (SELECT A.*, A.r_pnpt__no_mutasi as mutasi
+            FROm (SELECT DISTINCT
+            r_penempatan.r_pnpt__no_mutasi,
+            r_penempatan.r_pnpt__finger_print,r_penempatan.r_pnpt__id_pegawai,r_penempatan.r_pnpt__shift
+             FROM r_penempatan
+            INNER JOIN t_absensi ON t_absensi.t_abs__fingerprint=r_penempatan.r_pnpt__finger_print
+            INNER JOIN r_subcabang ON r_subcabang.r_subcab__id=r_penempatan.r_pnpt__subcab
+            INNER JOIN r_cabang ON r_cabang.r_cabang__id=r_subcabang.r_subcab__cabang
+            where  r_cabang__id='$kode_cabang' and t_abs__tgl >= '$periode_awal' AND t_abs__tgl <= '$periode_akhir'
+            )A)B)C
+            where C.mutasi_ > 0";
+        
 
-                                GROUP BY t_absensi.t_abs__fingerprint";          
-      
+             $sqlres = $db->Execute($sql_cek_rekap);
+             $tmp = array();
+             $z=0;
+             while ($data=$sqlres->FetchRow())
+                     {
+
+                         $rekap__finger=$data[0];
+                         $rekap__shift=$data[1];
+                         $mutasi=$data[2];
+                         array_push($tmp, $rekap__finger);
+                   $sql_cek_update_rekap="SELECT t_rekap_absensi.t_rkp__approval AS t_rkp__approval ,
+                   t_rekap_absensi.t_rkp__no_mutasi AS t_rkp__no_mutasi,
+                   t_rekap_absensi.t_rkp__awal AS t_rkp__awal,
+                   t_rekap_absensi.t_rkp__akhir AS t_rkp__akhir,
+                   t_absensi.t_abs__fingerprint AS t_abs__fingerprint,
+                   t_absensi.t_abs__tgl AS t_abs__tgl, 
+                   v_pegawai.r_cabang__id AS r_cabang__id
+                   FROM
+                   t_rekap_absensi
+                   INNER JOIN v_pegawai ON t_rekap_absensi.t_rkp__no_mutasi = v_pegawai.r_pnpt__no_mutasi
+                   INNER JOIN t_absensi ON t_absensi.t_abs__fingerprint = v_pegawai.r_pnpt__finger_print
+                   WHERE t_rkp__no_mutasi='$mutasi' AND
+                   t_rekap_absensi.t_rkp__awal <= '$periode_awal' AND
+                   t_rekap_absensi.t_rkp__akhir >= '$periode_akhir' AND
+                   v_pegawai.r_cabang__id = '$kode_cabang'
+
+                   GROUP BY t_absensi.t_abs__fingerprint";          
+                  
+             
                     $rs_val = $db->Execute($sql_cek_update_rekap);
                     
-                     $t_rekap__cek_approval = $rs_val->fields['t_rkp__approval'];
-                     $t_rekap__cek_no_mutasi= $rs_val->fields['t_rkp__no_mutasi'];
-                     $t_rekap__cek_bulan_update = $rs_val->fields['t_rkp__bln'];
-                     $t_rekap__cek_tahun_update = $rs_val->fields['t_rkp__thn'];
-                   
-            // var_dump($tahun!=$periode_tahun OR $bulan !=$periode_bulan)or die();       
+                     $cek_approval = $rs_val->fields['t_rkp__approval'];
+                     $cek_no_mutasi= $rs_val->fields['t_rkp__no_mutasi'];
+
+                     
                     
-                  // var_dump ($t_rekap__cek_approval<2 AND $t_rekap__cek_bulan_update==07 AND $t_rekap__cek_tahun_update==2016 ) or die();
-                     //AND $t_rekap__cek_no_mutasi==$t_rekap__no_mutasi AND  $t_rekap__bulan_update=$t_rekap__cek_bulan_update AND $t_rekap__tahun_update)
-  //AND $t_rekap__cek_approval=='2' OR $t_rekap__cek_approval=='3'
-    if ($bulan!=$periode_bulan OR $tahun!=$periode_tahun OR $t_rekap__cek_approval=='2' OR  $t_rekap__cek_approval=='3') {
+      if ($cek_approval=='1' OR $cek_no_mutasi !='' )
+      {
+         
+
+       $sql_del="DELETE t_rekap_absensi from t_rekap_absensi 
+                 INNER JOIN r_penempatan ON r_penempatan.r_pnpt__no_mutasi=t_rekap_absensi.t_rkp__no_mutasi
+                 INNER JOIN r_subcabang ON r_subcabang.r_subcab__id=r_penempatan.r_pnpt__subcab
+                 INNER JOIN r_cabang ON r_cabang.r_cabang__id=r_subcabang.r_subcab__cabang
+                 WHERE t_rekap_absensi.t_rkp__no_mutasi='$cek_no_mutasi' AND r_cabang.r_cabang__id='$kode_cabang' AND  t_rekap_absensi.t_rkp__awal>='$periode_awal' AND t_rekap_absensi.t_rkp__akhir<='$periode_akhir'";       
+       
+                 $sqlresult = $db->Execute($sql_del);      
+        } 
         
-   
-			Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
-                }
-              
-                else if( $t_rekap__cek_approval<2 AND $t_rekap__cek_bulan_update==$bulan AND $t_rekap__cek_tahun_update==$tahun)
-                    {
-                       
-                       $sql_cek_rekap="SELECT DISTINCT A.t_abs__fingerprint, A.t_abs__id_shift FROM t_absensi A
-                    LEFT JOIN r_penempatan B ON A.t_abs__fingerprint=B.r_pnpt__finger_print
-                    LEFT JOIN (SELECT rc.r_cabang__id,rc.r_cabang__nama,rs.r_subcab__cabang,rs.r_subcab__nama,rs.r_subcab__id
-                                FROM r_cabang rc,r_subcabang rs WHERE rc.r_cabang__id=rs.r_subcab__cabang )as cab ON cab.r_subcab__id=B.r_pnpt__subcab
-                    WHERE YEAR(A.t_abs__tgl)='$tahun'  AND MONTH(A.t_abs__tgl)='$bulan' AND cab.r_cabang__id='$kode_cabang'
-                    GROUP BY A.t_abs__fingerprint";
-                   // var_dump($sql_cek_rekap) or die();
-                   
-                    $sqlres = $db->Execute($sql_cek_rekap);
-                    $tmp = array();
-                    $z=0;
-                    while ($data=$sqlres->FetchRow())
-                            {
-                                
-                                $rekap__finger=$data[0];
-                                $rekap__shift=$data[1];
-                                array_push($tmp, $rekap__finger);
-                                
-			$sql_edit="UPDATE
-  t_rekap_absensi AS t1
-  INNER JOIN 
-
- (SELECT
-  (SELECT
-    r_pnpt__no_mutasi AS no_mutasi
-  FROM
-    r_penempatan pnpt
-  WHERE
-    pnpt.r_pnpt__finger_print = '$rekap__finger')
-  AS no_mutasi,
-  '$bulan' AS bln,
-  '$tahun' AS tahun,
-  '1' AS approval,
-  CASE WHEN jml_hari < min_masuk THEN 'KURANG' WHEN jml_hari = min_masuk THEN jml_hari END AS keterangan,
-  (SELECT
-    COUNT(*) AS jml_hari
-  FROM
-    t_absensi ab
-  WHERE
-     ab.t_abs__worktime >='04:00:00' AND ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 1 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun' AND ab.t_abs__tgl NOT IN
-    (SELECT
-      r_libur__tgl
-    FROM
-      t_libur
-    WHERE
-      r_libur__shift = $rekap__shift
-    ))
-  AS hadir,
-  (SELECT
-    COUNT(*) AS jml_sakit
-  FROM
-    t_absensi ab
-  WHERE
-    ab.t_abs__fingerprint = $rekap__finger AND ab.t_abs__status = 2 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
-  AS sakit,
-  (SELECT
-    COUNT(*) AS jml_izin
-  FROM
-    t_absensi ab
-  WHERE
-    ab.t_abs__fingerprint = $rekap__finger AND ab.t_abs__status = 3 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
-  AS izin,
-  (SELECT
-    COUNT(*) AS jml_alpa
-  FROM
-    t_absensi ab
-  WHERE
-    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 4 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
-  AS alpa,
-  (SELECT
-    COUNT(*) AS jml_dinas
-  FROM
-    t_absensi ab
-  WHERE
-    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 5 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
-  AS dinas,
-  (SELECT
-    COUNT(*) AS jml_cuti
-  FROM
-    t_absensi ab
-  WHERE
-    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 6 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
-  AS cuti,
-  NOW() AS date_created,
-  '1' AS user_created
-FROM
-  (SELECT
-    DAY(LAST_DAY(NOW())) -
-    (SELECT
-      COUNT(r_libur__shift) AS jml_libur
-    FROM
-      t_libur L, r_shift S
-    WHERE
-      L.r_libur__shift = S.r_shift__id AND
-      MONTH(r_libur__tgl) = '$bulan' AND
-      YEAR(r_libur__tgl) = '$tahun' AND
-      L.r_libur__shift = 1)
-    AS min_masuk) batas
-  ,
-  (SELECT
-    COUNT(*) AS jml_hari
-  FROM
-    t_absensi ab
-  WHERE
-    ab.t_abs__fingerprint = '$rekap__finger' AND
-    (ab.t_abs__status = 1 OR
-    ab.t_abs__status = 2) AND
-    MONTH(ab.t_abs__tgl) = '$bulan' AND
-    YEAR(ab.t_abs__tgl) = '$tahun' AND
-    ab.t_abs__tgl NOT IN
-    (SELECT
-      r_libur__tgl
-    FROM
-      t_libur
-    WHERE
-      r_libur__shift = $rekap__shift
-    )) hadir ) AS t2
-
-SET
-  t1.t_rkp__approval = '1',
-
-   t1.t_rkp__keterangan = t2.keterangan,
-   t1.t_rkp__hadir = t2.hadir,
-   t1.t_rkp__sakit = t2.sakit,
-   t1.t_rkp__izin = t2.izin,
-   t1.t_rkp__alpa = t2.alpa,
-   t1.t_rkp__dinas = t2.dinas,
-   t1.t_rkp__cuti = t2.cuti,
-   t1.t_rkp__date_updated = now(),
-   t1.t_rkp__user_updated = '$id_peg'
-WHERE
-  t1.t_rkp__no_mutasi = t2.no_mutasi 
-  AND t1.t_rkp__bln = t2.bln
-  AND t1.t_rkp__thn = t2.tahun";
-                    
-                    // var_dump($sql_edit) or die();
-                        
-                      $sqlresult5 = $db->Execute($sql_edit);
-                 
-                            }
-                     Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
-                    
-                }
-                
-                else { 
+//      if ($cek_approval>=2)
+//       {
+//               Header("Location:index_cek.php?ERR=5&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);           
+//          }  else {
+//             Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]); 
+//       }
+        
+       
                       
-                                   
-                    $sql_cek_rekap="SELECT DISTINCT A.t_abs__fingerprint, A.t_abs__id_shift FROM t_absensi A
-                    LEFT JOIN r_penempatan B ON A.t_abs__fingerprint=B.r_pnpt__finger_print
-                    LEFT JOIN (SELECT rc.r_cabang__id,rc.r_cabang__nama,rs.r_subcab__cabang,rs.r_subcab__nama,rs.r_subcab__id
-                                FROM r_cabang rc,r_subcabang rs WHERE rc.r_cabang__id=rs.r_subcab__cabang )as cab ON cab.r_subcab__id=B.r_pnpt__subcab
-                    WHERE YEAR(A.t_abs__tgl)='$tahun'  AND MONTH(A.t_abs__tgl)='$bulan' AND cab.r_cabang__id='$kode_cabang'
-                    GROUP BY A.t_abs__fingerprint";
-                  
-                   
-                    $sqlres = $db->Execute($sql_cek_rekap);
-                    $tmp = array();
-                    $z=0;
-                          
-      
-                    while ($data=$sqlres->FetchRow())
-                            {
-                                
-                                $rekap__finger=$data[0];
-                                $rekap__shift=$data[1];
-                                array_push($tmp, $rekap__finger);
-                                
 			$sql="INSERT INTO t_rekap_absensi (
      t_rkp__no_mutasi,
-     t_rkp__bln, 
-     t_rkp__thn, 
+     t_rkp__idpeg,
+     t_rkp__awal, 
+     t_rkp__akhir, 
      t_rkp__approval, 
      t_rkp__keterangan, 
      t_rkp__hadir, 
@@ -392,83 +200,90 @@ WHERE
      t_rkp__alpa, 
      t_rkp__dinas, 
      t_rkp__cuti,
-    t_rkp__date_created,t_rkp__user_created)
+    t_rkp__date_created,
+    t_rkp__user_created,
+    t_rkp__date_updated,
+    t_rkp__user_updated)
 SELECT
   (SELECT
     r_pnpt__no_mutasi AS no_mutasi
   FROM
     r_penempatan pnpt
   WHERE
-    pnpt.r_pnpt__finger_print = '$rekap__finger')
+    pnpt.r_pnpt__no_mutasi = '$mutasi' GROUP BY  pnpt.r_pnpt__finger_print)
   AS no_mutasi,
-  '$bulan' AS bln,
-  '$tahun' AS tahun,
+  (
+		SELECT
+			r_pnpt__id_pegawai AS id_pegawai
+		FROM
+			r_penempatan pnpt
+		WHERE
+			pnpt.r_pnpt__no_mutasi = '$mutasi'
+		GROUP BY
+			pnpt.r_pnpt__finger_print
+	) AS id_pegawai,
+  '$periode_awal' AS bln,
+  '$periode_akhir' AS tahun,
   '1' AS approval,
   CASE WHEN jml_hari < min_masuk THEN 'KURANG' WHEN jml_hari = min_masuk THEN jml_hari END AS keterangan,
-  (SELECT
-    COUNT(*) AS jml_hari
-  FROM
-    t_absensi ab
-  WHERE
-    ab.t_abs__worktime >='04:00:00' AND ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 1 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun' AND ab.t_abs__tgl NOT IN
-    (SELECT
-      r_libur__tgl
-    FROM
-      t_libur
-    WHERE
-      r_libur__shift = $rekap__shift
-    ))
-  AS hadir,
+   IF ((SELECT r_penempatan.r_pnpt__jabatan FROM r_penempatan WHERE	r_penempatan.r_pnpt__finger_print = '$rekap__finger'
+		AND r_penempatan.r_pnpt__aktif = '1' AND r_penempatan.r_pnpt__jabatan = '46' GROUP BY r_penempatan.r_pnpt__id_pegawai
+	) = '46',(SELECT COUNT(*) AS jml_hari FROM t_absensi ab	WHERE ab.t_abs__fingerprint = '$rekap__finger' AND (ab.t_abs__status = 1
+			OR ab.t_abs__status = 2)AND ab.t_abs__tgl >= '$periode_awal'AND ab.t_abs__tgl <= '$periode_akhir'),
+	(SELECT COUNT(*) AS jml_hari FROM t_absensi ab WHERE ab.t_abs__worktime >= '03:00:00' AND ab.t_abs__fingerprint = '$rekap__finger'
+		AND ab.t_abs__status = 1 AND ab.t_abs__tgl >= '$periode_awal' AND ab.t_abs__tgl <= '$periode_akhir' AND ab.t_abs__tgl NOT IN (
+		SELECT r_libur__tgl FROM t_libur WHERE r_libur__shift = $rekap__shift))) AS hadir,
   (SELECT
     COUNT(*) AS jml_sakit
   FROM
     t_absensi ab
   WHERE
-    ab.t_abs__fingerprint = $rekap__finger AND ab.t_abs__status = 2 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
+    ab.t_abs__fingerprint = $rekap__finger AND ab.t_abs__status = 2 AND ab.t_abs__tgl >= '$periode_awal' AND ab.t_abs__tgl <= '$periode_akhir')
   AS sakit,
   (SELECT
     COUNT(*) AS jml_izin
   FROM
     t_absensi ab
   WHERE
-    ab.t_abs__fingerprint = $rekap__finger AND ab.t_abs__status = 3 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
+    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 3 AND ab.t_abs__tgl >= '$periode_awal' AND ab.t_abs__tgl <= '$periode_akhir')
   AS izin,
   (SELECT
     COUNT(*) AS jml_alpa
   FROM
     t_absensi ab
   WHERE
-    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 4 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
+    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 4 AND ab.t_abs__tgl >= '$periode_awal' AND ab.t_abs__tgl <= '$periode_akhir')
   AS alpa,
   (SELECT
     COUNT(*) AS jml_dinas
   FROM
     t_absensi ab
   WHERE
-    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 5 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
+    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 5 AND ab.t_abs__tgl >= '$periode_awal' AND ab.t_abs__tgl <= '$periode_akhir')
   AS dinas,
   (SELECT
     COUNT(*) AS jml_cuti
   FROM
     t_absensi ab
   WHERE
-    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 6 AND MONTH(ab.t_abs__tgl) = '$bulan' AND YEAR(ab.t_abs__tgl) = '$tahun')
+    ab.t_abs__fingerprint = '$rekap__finger' AND ab.t_abs__status = 6 AND ab.t_abs__tgl >= '$periode_awal' AND ab.t_abs__tgl <= '$periode_akhir')
   AS cuti,
   NOW() AS date_created,
-  '1' AS user_created
+ '$id_peg' AS user_created,
+  NOW() AS date_updated,
+ '$id_peg' AS user_updated
+  
 FROM
-  (SELECT
-    DAY(LAST_DAY(NOW())) -
-    (SELECT
-      COUNT(r_libur__shift) AS jml_libur
-    FROM
-      t_libur L, r_shift S
-    WHERE
-      L.r_libur__shift = S.r_shift__id AND
-      MONTH(r_libur__tgl) = '$bulan' AND
-      YEAR(r_libur__tgl) = '$tahun' AND
-      L.r_libur__shift = 1)
-    AS min_masuk) batas
+   (SELECT* FROM (SELECT MIN_DAY.jml_hari-MIN_DAY.jml_libur AS min_masuk
+ FROM (SELECT
+(datediff('$periode_akhir','$periode_awal')) AS jml_hari ,
+(SELECT COUNT(r_libur__shift) 
+	FROM t_libur L,r_shift S
+	WHERE L.r_libur__shift = S.r_shift__id
+	AND r_libur__tgl >= '$periode_awal'
+	AND r_libur__tgl <= '$periode_akhir'
+	AND L.r_libur__shift = '$rekap__shift'
+)AS jml_libur) MIN_DAY) AS min_masuk) batas
   ,
   (SELECT
     COUNT(*) AS jml_hari
@@ -478,31 +293,34 @@ FROM
     ab.t_abs__fingerprint = '$rekap__finger' AND
     (ab.t_abs__status = 1 OR
     ab.t_abs__status = 2) AND
-    MONTH(ab.t_abs__tgl) = '$bulan' AND
-    YEAR(ab.t_abs__tgl) = '$tahun' AND
+    ab.t_abs__tgl >= '$periode_awal' AND ab.t_abs__tgl <= '$periode_akhir' AND
     ab.t_abs__tgl NOT IN
     (SELECT
       r_libur__tgl
     FROM
       t_libur
     WHERE
-      r_libur__shift = $rekap__shift
+      r_libur__shift = $rekap__shift AND r_libur__tgl>='$periode_awal' AND r_libur__tgl<='$periode_akhir'
     )) hadir ";
-                      
-                       
-                         $sqlresult = $db->Execute($sql);		 
-                        
-                            } 
-                        Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);   
-                }
-               
+           //     var_dump($sql)or die();
+$sqlresult = $db->Execute($sql);	
 
-         
+ $sql2="INSERT INTO tbl_log (log__module_name, log__date_created,log__date_updated,log__user_updated,log__user__created ) "
+        . " VALUES ('POSTING REKAP HRD ',now(),now(),'$id_peg','$id_peg') ";
+ $db->Execute($sql2);	
+                        
+ }
+if ($cek_approval>=2)
+    {
+               Header("Location:index_cek.php?ERR=5&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);           
+    }  else {
+             Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]); 
+    }
+    
 }
 
  
 // TUTUP CREATE
-  
 if($_POST[op]) $op = $_POST[op]; else $op = $_GET[op];
 
 

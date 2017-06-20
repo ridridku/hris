@@ -198,8 +198,9 @@ function hideIt(){
                    <TR>
                             <TD>Nama Karyawan<font color="#ff0000">*</font> </TD>
                             <TD><INPUT TYPE="text" NAME="nama" readonly  id="r_pegawai__nama"  size="35" value="<!--{$EDIT_NAMA}-->">
-                             NIP<INPUT TYPE="text" NAME="nip" readonly id="r_pnpt__nip" size="35" value="<!--{$EDIT_NIP}-->" >
-                             <INPUT TYPE="text" NAME="mutasi" readonly id="r_pnpt__no_mutasi" size="35" value="<!--{$EDIT_T_PJM__MUTASI}-->" > 
+                                <INPUT TYPE="hidden" NAME="nip" readonly id="r_pnpt__nip" size="35" value="<!--{$EDIT_NIP}-->" >
+                              <INPUT TYPE="hidden" NAME="id_karyawan" readonly id="id_karyawan" size="35" value="<!--{$EDIT_T_PJM__ID_KARYAWAN}-->" >
+                             <INPUT TYPE="hidden" NAME="mutasi" readonly id="r_pnpt__no_mutasi" size="35" value="<!--{$EDIT_T_PJM__MUTASI}-->" > 
                             <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan()" value=" ... " />
                             </TD>
 
@@ -209,61 +210,81 @@ function hideIt(){
                         <TD><INPUT TYPE="text" NAME="sp_jabatan" readonly id="r_jabatan__ket" size="35" value="<!--{$EDIT_JABATAN}-->" ></TD>                         
                     </TR>
                     <TR>
-				<TD>Tanggal Disetujui </TD>
+				<TD>Tgl Disetujui Pinjaman </TD>
+                                <TD>
+                                    <!--{if $EDIT_VAL==0}-->
+							 <input type="text" NAME="t_pjm__tgl_pinjam" value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.t_pjm__tgl_pinjam,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{else}-->
+                                                        <input type="text" name="t_pjm__tgl_pinjam"  value="<!--{$EDIT_TGl_PJM}-->">
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_pjm__tgl_pinjam,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{/if}-->  
+                                </TD>         
+                    </TR>
+                     <TR>
+				<TD>Tgl Awal Bayar </TD>
                                 <TD>
                                     <!--{if $EDIT_VAL==0}-->
 
-							 <input type="text" NAME="t_pjm__tgl_disetujui"  value="<!--{$EDIT_TGl_PJM}-->">
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.t_pjm__tgl_disetujui,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+							 <input type="text" NAME="t_pjm__awal"  value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.t_pjm__awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{else}-->
-                                                        <input type="text" name="t_pjm__tgl_disetujui" value="<!--{$EDIT_TGl_PJM}-->" >
-							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_pjm__tgl_disetujui,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+                                                        <input type="text" name="t_pjm__awal" value="<!--{$EDIT_TGl_AWAL}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_pjm__awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{/if}-->  
+                                </TD>         
+                    </TR>
+                    <TR>
+				<TD>Tgl Akhir Bayar </TD>
+                                <TD>
+                                    <!--{if $EDIT_VAL==0}-->
+
+							 <input type="text" NAME="t_pjm__akhir"  value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.t_pjm__akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{else}-->
+                                                        <input type="text" name="t_pjm__akhir" value="<!--{$EDIT_TGl_AKHIR}-->" >
+							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_pjm__akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{/if}-->  
                                 </TD>         
                     </TR>
                      
                     <TR>
                                 <TD>Jenis Pinjaman <font color="#ff0000">*</font></TD> 
-				<TD>    
-                                    <INPUT TYPE="hidden" NAME="t_pjm__jenis" readonly  id="angsuran_id"  size="35" value="<!--{$EDIT_ANG_ID}-->">
-                                       <INPUT TYPE="text" NAME="jenis" readonly  id="jenis"  size="35" value="<!--{$EDIT_ANG_JENIS}-->">
-                                       <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goPjm()" value=" ... " />
-                                     
-                                </TD>
+				<TD><SELECT name="t_pjm__jenis">
+							<OPTION value="">[JENIS PINJAMAN]</OPTION>
+							<OPTION value="1" <!--{if $EDIT_T_PJM__APPROVAL=='1'}-->selected<!--{/if}-->> COP </OPTION>
+							<OPTION value="2" <!--{if $EDIT_T_PJM__APPROVAL=='2'}-->selected<!--{/if}-->>PRIBADI </OPTION>
+						</SELECT>
+                                        </TD>
                      </TR>
                     <TR>
-                                <TD>Flapon <font color="#ff0000">*</font></TD> 
+                                <TD>Total Pinjaman <font color="#ff0000">*</font></TD> 
 				<TD>    
-                                    <INPUT TYPE="text" NAME="plafond" readonly id="plafond" size="35" value="Rp.<!--{$EDIT_ANG_PLAFON|number_format:2:".":","}-->" >   
+                                    <INPUT TYPE="text" NAME="plafond"  id="plafond" size="35" onkeyup="formatangka(this)" value="<!--{$EDIT_T_PJM__TOTAL|number_format:0:",":"."}-->" > 
+                                  
                                 </TD>
                      </TR>  
                      <TR>
-                                <TD>Tenor <font color="#ff0000">*</font></TD> 
+                                <TD>Tenor
+                                    <font color="#ff0000">*</font></TD> 
 				<TD>    
-                                    <INPUT TYPE="text" NAME="tenor" readonly id="tenor" size="35" value="<!--{$EDIT_ANG_TENOR}-->" >   
+                                    <INPUT TYPE="text" NAME="tenor" maxlength="2"  id="tenor" size="35" value="<!--{$EDIT_T_PJM__TENOR}-->" onkeyup="formatangka(this)" onkeydown="bagi()">   
+                               
                                 </TD>
                      </TR> 
-                     <TR>
+                     <TR >
                                 <TD>Cicilan <font color="#ff0000">*</font></TD> 
-				<TD>    
-                                    <INPUT TYPE="text" NAME="cicilan" readonly id="cicilan" size="35" value="Rp.<!--{$EDIT_ANG_CICILAN|number_format:2:".":","}-->" >   
+				<TD><INPUT type="button" value="hitung" onclick="bagi()">    
+                                    <INPUT TYPE="text" NAME="cicilan" readonly  size="30" value="<!--{$EDIT_T_PJM__CICILAN|number_format:0:",":"."}-->"  >   
                                 </TD>
                      </TR> 
-                     <TR>
-                                <TD>Approval<font color="#ff0000">*</font></TD> 
-			
-					<TD><SELECT name="t_pjm__approval">
-							<OPTION value="">[APPROVAL]</OPTION>
-							<OPTION value="1" <!--{if $EDIT_T_PJM__APPROVAL=='1'}-->selected<!--{/if}-->> Proses </OPTION>
-							<OPTION value="0" <!--{if $EDIT_T_PJM__APPROVAL=='0'}-->selected<!--{/if}-->>Lunas </OPTION>
-						</SELECT>
-                                        </TD>
-                     </TR>                                     
-               <TR>
+                                                    
+                    <TR >
                                 <TD>Keterangan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="t_pjm__keterangan"  size="12" ><!--{$EDIT_KET}--></textarea></TD>
+                                <TD><textarea  rows="5" cols="20" NAME="t_pjm__keterangan"  size="12" ><!--{$EDIT_KET}--></textarea></TD>
                     </TR>
+                    
                               
                     
                                 <TR><TD height="40"></TD>
@@ -433,16 +454,21 @@ function hideIt(){
 		<table width="100%">
                     <THEAD>
 											<TH class="tdatahead" align="left">NO</TH>
+                                                                                        <TH class="tdatahead" align="left">ID PJM</TH>
                                                                                         <TH class="tdatahead" align="left" width="10%">NIP </TH>
 											<TH class="tdatahead" align="left" width="10%">NAMA</TH>                                                                                       
                                                                                         <TH class="tdatahead" align="left" >CABANG</TH>
 											<TH class="tdatahead" align="left">DEPARTEMEN</TH>
 											<TH class="tdatahead" align="left" >JABATAN</TH>                                                                                       
 											<TH class="tdatahead" align="left">JENIS PINJAMAN</TH>
-                                                                                        <TH class="tdatahead" align="left">PLAFON</TH>
-                                                                                        <TH class="tdatahead" align="left">CICILAN</TH>                                                                                      
-                                                                                        <TH class="tdatahead" align="left">TENOR</TH>   
-                                                                                        <TH class="tdatahead" align="left">NO PINJAMAN</TH>
+                                                                                        
+                                                                                        
+                                                                                        <TH class="tdatahead" align="left">TOTAL PINJAM</TH>
+                                                                                        <TH class="tdatahead" align="left">PEMBAYARAN</TH>
+                                                                                        <TH class="tdatahead" align="left">JML CICILAN</TH>   
+                                                                                        <TH class="tdatahead" align="left">CICILAN/BULAN</TH>
+                                                                                        <TH class="tdatahead" align="left">SISA PINJAMAN</TH>                                                                                      
+                                                                                        <TH class="tdatahead" align="left">CICILAN SUDAH BAYAR</TH>   
                                                                                         <TH class="tdatahead" align="left">STATUS</TH>
 											<TH class="tdatahead" COLSPAN="2"><!--{$ACTION}--></TH>
 			
@@ -451,27 +477,31 @@ function hideIt(){
 			<!--{section name=x loop=$DATA_TB}-->
 			<tr class='<!--{cycle values="alt,alt3"}-->'>
 											<td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
+											<TD class="tdatacontent"><!--{$DATA_TB[x].t_pjm__no_pinjaman}--></TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
                                                                                         <TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
                                                                                         <TD class="tdatacontent"><!--{$DATA_TB[x].r_cabang__nama}--> </TD>
 											<TD class="tdatacontent"><!--{$DATA_TB[x].r_dept__ket}-->  </TD>
                                                                                         <TD class="tdatacontent"><!--{$DATA_TB[x].r_jabatan__ket}--> </TD>                                                                                        
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_ang__jenis}--></TD>
-                                                                                        <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].r_ang__platfond|number_format:2:".":","}--></TD>
-                                                                                        <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].r_ang__cicilan|number_format:2:".":","}--></TD>                                                                                           
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_ang__tenor_bulan}--> Bln</TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].t_pjm__no_pinjaman}--></TD>
-                                                                                        <TD class="tdatacontent">
+											<TD class="tdatacontent"><!--{$DATA_TB[x].r_ang__jenis}-->
                                                                                         
-                                                                                        <!--{if ($DATA_TB[x].t_pjm__approval)==0}-->
-                                                                                                         <font color="#FA0505">Lunas</font>              
-                                                                                                <!--{elseif ($DATA_TB[x].t_pjm__approval) ==1}-->  
-                                                                                                         <font color="#2BCC40">On Proses</font>     
-                                                                                                 <!--{else ($DATA_TB[x].t_pjm__approval) ==2}-->  
-                                                                                                           <font color="#2605FF">Lunas</font>     
+                                                                                             <!--{if ($DATA_TB[x].t_pjm__jenis)==1}-->
+                                                                                                         <font color="#1a842d">COP</font>              
+                                                                                                
+                                                                                                 <!--{else}-->  
+                                                                                                           <font color="#2785c4">PRIBADI</font>     
                                                                                                 <!--{/if}--> 
                                                                                         
+                                                                                        
+                                                                                        
                                                                                         </TD>
+                                                                                      <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].t_pjm__total_pinjam|number_format:2:".":","}--></TD>
+                                                                                      <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].jml_sudah_bayar|number_format:2:".":","}--></TD>
+                                                                                      <TD class="tdatacontent"><!--{$DATA_TB[x].t_pjm__tenor}--></TD>
+                                                                                      <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].t_pjm__cicilan_perbulan|number_format:2:".":","}--></TD>
+                                                                                      <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].sisa_pembayaran|number_format:2:".":","}--></TD>                                                                                           
+                                                                                      <TD class="tdatacontent"><!--{$DATA_TB[x].jml_tenor_bayar}--> Bln</TD>
+                                                                                      <TD class="tdatacontent"><!--{if ($DATA_TB[x].sisa_status)==0}--><font color="#2605FF">Lunas</font><!--{else}--><font color="#FA0505">Belum Lunas</font><!--{/if}--> </TD>
 											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].t_pjm__no_pinjaman}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
 											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/delete.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$DELETE}-->" onclick="return checkDelete('engine.php?op=2&id=<!--{$DATA_TB[x].t_pjm__no_pinjaman}--> &mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
 										</TR>

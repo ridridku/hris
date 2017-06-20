@@ -47,7 +47,7 @@ require_once($DIR_INC."/libs.inc.php");
 // echo "<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>";
 #HREF
 $smarty->assign ("HREF_HOME_PATH", $HREF_HOME);
-$smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/form_isian/form_peminjaman');
+$smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/kehadiran/rekap_kehadiran_hrd');
 $smarty->assign ("HREF_IMG_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images'));
 $smarty->assign ("HREF_CSS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/css'));
 $smarty->assign ("HREF_JS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts'));
@@ -60,10 +60,10 @@ $smarty->assign ("SELF", $_SERVER['PHP_SELF']);
 
 //------------------------------------LOCAL CONFIG--------------------------------------//
 #SETTING FOR TEMPLATE 
-$TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/kehadiran/verifikasi_kehadiran';
+$TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/kehadiran/rekap_kehadiran_hrd';
 #SETTING FILE JS INCLUDE
 $JS_MODUL = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts/modules/kehadiran');
-$FILE_JS  = $JS_MODUL.'/verifikasi_kehadiran';
+$FILE_JS  = $JS_MODUL.'/rekap_kehadiran_hrd';
 
 $JS_MODUL2 = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts');
   
@@ -113,9 +113,9 @@ $SES_JENIS_USER	= $_SESSION['JENIS_USER'];
  
 
  IF ($_GET['ERR'] =='5') {
-	 $label_error = "Data Tidak Sesuai".$cek__approval;
+	 $label_error = "Data Tidak Sesuai / Sudah Di validasi Level BOM".$cek__approval;
  } else {
-	 $label_error = "Data Tidak Sesuai".$cek__approval;	
+	 $label_error = "Data Tidak Sesuai / Sudah Di validasi Level BOM".$cek__approval;	
  }
 $smarty->assign ("LABEL_ERROR", $label_error);
 $smarty->assign ("TABLE_CAPTION", _CAPTION_TABLE_KAT);

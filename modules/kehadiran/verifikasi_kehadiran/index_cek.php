@@ -48,10 +48,10 @@ require_once($DIR_INC."/libs.inc.php");
 //$smarty->debugging = true;
 
 # Start Parsing the Template
-// echo "<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>";
+// echo "<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>";modules/kehadiran/upoload_kehadiran';
 #HREF
 $smarty->assign ("HREF_HOME_PATH", $HREF_HOME);
-$smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/form_isian/form_peminjaman');
+$smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/kehadiran/verifikasi_kehadiran');
 $smarty->assign ("HREF_IMG_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images'));
 $smarty->assign ("HREF_CSS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/css'));
 $smarty->assign ("HREF_JS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts'));
@@ -105,16 +105,10 @@ if ($_GET['page']) $page = $_GET['page'];
 else if ($_POST['page']) $page = $_POST['page'];
 else $page="1";
 
-if ($_GET['kode_jadwal']) $KODE_JADWAL = $_GET['kode_jadwal'];
-else if ($_POST['kode_jadwal']) $KODE_JADWAL = $_POST['kode_jadwal'];
-else $KODE_JADWAL="";
+if ($_GET['id_error']) $id_error= $_GET['id_error'];
+else if ($_POST['id_error']) $id_error = $_POST['id_error'];
+else $id_error="";
 
-if ($_GET['kode_proyek']) $KODE_PROYEK = $_GET['kode_proyek'];
-else if ($_POST['kode_proyek']) $KODE_PROYEK = $_POST['kode_proyek'];
-else $KODE_PROYEK="";
-
- 
- 
 
 $str_completer = "mod_id=".$mod_id."&limit=".$LIMIT."&SORT=".$SORT."&kode_proyek=".$KODE_PROYEK."&kode_ruas=".$KODE_RUAS."&kode_instansi=".$KODE_INSTANSI."&kode_jadwal=".$KODE_JADWAL."&tgl=".$TGL;
 $str_completer_ = "limit=".$LIMIT."&SORT=".$SORT."&page=".$page;
@@ -124,10 +118,13 @@ $SES_INSTANSI		= $_SESSION['KODE_INSTANSI'];
 $SES_JENIS_USER		= $_SESSION['JENIS_USER'];
  
 
- IF ($_GET['ERR'] =='5') {
-	 $label_error = "DATA ABSEN SUDAH ADA";
- } else {
-	 $label_error = "DATA ABSEN SUDAH ADA";	
+ IF ($_GET['ERR'] <1) {
+	 $label_error = "JAM KERJA HARUS LEBIH DARI 4 JAM";
+ }elseif ($_GET['ERR'] =='2') {
+	 $label_error = "TGL SALAH ATAU TGL SUDAH ADA";
+ }
+ else{
+      $label_error = "DATA ABSEN SUDAH ADA / ADA KESALAH PENULISAN";	
  }
 $smarty->assign ("LABEL_ERROR", $label_error);
 

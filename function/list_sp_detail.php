@@ -23,9 +23,14 @@ $db = &ADONewConnection($DB_TYPE);
 $db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
 
 
- if($_POST['kode_cabang_cari'])
-{ $kode_cabang_cari = $_POST['kode_cabang_cari'];
-}else{ $kode_cabang_cari = $_GET['kode_cabang_cari'];}
+ if($_POST['q'])
+{ $q = $_POST['q'];
+}else{ $q = $_GET['q'];}
+
+if($q!='')
+{
+    $kode_cabang_cari=  base64_decode($q);    
+}
 
  if($_POST['t_sp__no'])
 { $t_sp__no = $_POST['t_sp__no'];
@@ -34,8 +39,8 @@ $db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
 
 
  if($_POST['pil'])
-{ $pil = $_POST['pil'];
-}else{ $pil = $_GET['pil'];}
+{ $pil = encrypt_url($_POST['pil']);
+}else{ $pil = encrypt_url($_GET['pil']);}
 
 
  if($_POST['kode_subcab_cari'])
@@ -49,8 +54,12 @@ $db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
 
 
  if($_POST['cari'])
-{ $cari = $_POST['cari'];
-}else{ $cari = $_GET['cari'];}
+{
+     $cari = decrypt_url($_POST['cari']);
+}else{
+    $cari = decrypt_url($_GET['cari']);
+    
+}
 
 $n_limit=20;
 if (empty($_POST['paging']))
@@ -250,7 +259,6 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 <td width="10">:</td>
 <td width="30">
 <select name='pil' class="text">
-<option value=''> Pilih Berdasarkan</option>
 <option value='1' <?PHP if ($pil==1) { echo "selected"; } ?>>Nama  </option>
 <option value='2' <?PHP if ($pil==2) { echo "selected"; } ?>>NIP</option>
 </select>

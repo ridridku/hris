@@ -1,0 +1,2234 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Rekap Absensi</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=13 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->LAPORAN REKAP ABSENSI KARYAWAN</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=13 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=13 height=21 class=xl36 style='height:15.75pt'>CABANG  : BANDUNG</td>
+ </tr><tr height=21 style='height:15.75pt'>
+  <td colspan=13 height=21 class=xl36 style='height:15.75pt'>Periode  : 2017-02-21 S/D 2017-03-20</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td colspan=14 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS</td>
+     <td class=xl27 width=109 style='width:50pt'>HADIR</td>
+    <td class=xl27 width=98 style='width:50pt'>SAKIT</td> 
+    <td class=xl27 width=57 style='width:25pt'>IZIN</td>
+    <td class=xl27 width=57 style='width:25pt'>CUTI</td>
+    <td class=xl27 width=57 style='width:25pt'>DINAS LUAR</td>
+    <td class=xl27 width=57 style='width:25pt'>ALFA</td>
+    <td class=xl27 width=57 style='width:25pt'>KETERANGAN</td>
+     
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>303002</td>
+  <td class=xl29 align=right x:num>Aat Gunawan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >8</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>303004</td>
+  <td class=xl29 align=right x:num>Abdul Hakam</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >4</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>302135</td>
+  <td class=xl29 align=right x:num>Abdul Muji</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>304040</td>
+  <td class=xl29 align=right x:num>Abdul Mumin</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>301327</td>
+  <td class=xl29 align=right x:num>Abdul Rohman</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>303005</td>
+  <td class=xl29 align=right x:num>Aceng Saepuloh</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >16</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>301510</td>
+  <td class=xl29 align=right x:num>Achmad Permana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >11</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>303006</td>
+  <td class=xl29 align=right x:num>Adang Iwan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >24</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>301283</td>
+  <td class=xl29 align=right x:num>Adin Nurdin</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>303146</td>
+  <td class=xl29 align=right x:num>Agung Risbianto</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>301007</td>
+  <td class=xl29 align=right x:num>Agus Slamet</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >2</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>303067</td>
+  <td class=xl29 align=right x:num>Agus Supriadi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >22</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>304026</td>
+  <td class=xl29 align=right x:num>Ahmad Saefullah</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG MToha</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>302136</td>
+  <td class=xl29 align=right x:num>Anang Suryana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >13</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>301231</td>
+  <td class=xl29 align=right x:num>Andri Setiawan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>303083</td>
+  <td class=xl29 align=right x:num>Anto Dwi Hartanto</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >25</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>304041</td>
+  <td class=xl29 align=right x:num>Anwar Amarudin</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >22</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>301413</td>
+  <td class=xl29 align=right x:num>Asep Diana Sidik</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >5</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>303013</td>
+  <td class=xl29 align=right x:num>Asep Dodi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>303084</td>
+  <td class=xl29 align=right x:num>Asep Hermawan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>302019</td>
+  <td class=xl29 align=right x:num>Asih Surasih</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >17</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >17</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>303068</td>
+  <td class=xl29 align=right x:num>Atep B</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >24</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>303223</td>
+  <td class=xl29 align=right x:num>Budi Hidayat</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >22</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>303076</td>
+  <td class=xl29 align=right x:num>Budi Kiswanto</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>303077</td>
+  <td class=xl29 align=right x:num>Budi Senjaya</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >2</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>303016</td>
+  <td class=xl29 align=right x:num>Cecep Sumpena</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >22</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>302047</td>
+  <td class=xl29 align=right x:num>Christianus Purwono</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >9</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>301045</td>
+  <td class=xl29 align=right x:num>Dadan Juanda</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>301051</td>
+  <td class=xl29 align=right x:num>Dani Ishak Farid</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >7</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>301239</td>
+  <td class=xl29 align=right x:num>Dede Resmana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>303161</td>
+  <td class=xl29 align=right x:num>Deden Wawan Purnawan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >18</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>301057</td>
+  <td class=xl29 align=right x:num>Dedi Suhardi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>303256</td>
+  <td class=xl29 align=right x:num>Dedi Supriadi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >25</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>303021</td>
+  <td class=xl29 align=right x:num>Deni Ramdani</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >7</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>303081</td>
+  <td class=xl29 align=right x:num>Deryl Trisna Hidayat</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>303232</td>
+  <td class=xl29 align=right x:num>Dian Hadi Sopian</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>301432</td>
+  <td class=xl29 align=right x:num>Dian Ismulyana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>303025</td>
+  <td class=xl29 align=right x:num>Didin Nurdin</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >9</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>303231</td>
+  <td class=xl29 align=right x:num>Diki Agustin</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >2</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>301500</td>
+  <td class=xl29 align=right x:num>Elvin Ali Virdaus</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>303029</td>
+  <td class=xl29 align=right x:num>Enang Abdul Rachman</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >21</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>301073</td>
+  <td class=xl29 align=right x:num>Encep Umar Amarudin</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>302049</td>
+  <td class=xl29 align=right x:num>Enjang Kamaludin</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >22</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>301077</td>
+  <td class=xl29 align=right x:num>Erwan Mochamad Ramdhan F</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>303224</td>
+  <td class=xl29 align=right x:num>Fadhli Ramadhan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >17</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >17</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>303082</td>
+  <td class=xl29 align=right x:num>Faizal Ahmad Hardiansyah</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>303087</td>
+  <td class=xl29 align=right x:num>Fajar Ginanjar</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >11</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>303091</td>
+  <td class=xl29 align=right x:num>Fajar Taupik</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>301081</td>
+  <td class=xl29 align=right x:num>Fenny Erviana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>301257</td>
+  <td class=xl29 align=right x:num>Firman Firmansyah</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >2</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>302020</td>
+  <td class=xl29 align=right x:num>Fisda Kurnia Dewi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>303241</td>
+  <td class=xl29 align=right x:num>Gilang Agung Prasetia </td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >24</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>53</td>
+  <td class=xl29>303031</td>
+  <td class=xl29 align=right x:num>Gunarto</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >24</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>54</td>
+  <td class=xl29>303079</td>
+  <td class=xl29 align=right x:num>Hendi Piton</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >21</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>55</td>
+  <td class=xl29>301323</td>
+  <td class=xl29 align=right x:num>Hendy Karseno Kusvara</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>56</td>
+  <td class=xl29>301514</td>
+  <td class=xl29 align=right x:num>Hilman Nashrulloh</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>57</td>
+  <td class=xl29>301499</td>
+  <td class=xl29 align=right x:num>Ikin Sodikin</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>58</td>
+  <td class=xl29>301104</td>
+  <td class=xl29 align=right x:num>Indra Abdurahman</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >13</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>59</td>
+  <td class=xl29>301489</td>
+  <td class=xl29 align=right x:num>Indra Eka Permana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>60</td>
+  <td class=xl29>301108</td>
+  <td class=xl29 align=right x:num>Ipah Saripah</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>61</td>
+  <td class=xl29>303208</td>
+  <td class=xl29 align=right x:num>Irpan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >18</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>62</td>
+  <td class=xl29>303192</td>
+  <td class=xl29 align=right x:num>Ismail Hakim</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>63</td>
+  <td class=xl29>303073</td>
+  <td class=xl29 align=right x:num>Isnandar Supriatna</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >22</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>64</td>
+  <td class=xl29>301113</td>
+  <td class=xl29 align=right x:num>Iwa Agung Permana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>65</td>
+  <td class=xl29>302029</td>
+  <td class=xl29 align=right x:num>Iwan Hermawan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >21</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>66</td>
+  <td class=xl29>303034</td>
+  <td class=xl29 align=right x:num>Iwan Sofyan Somantri</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >25</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>67</td>
+  <td class=xl29>303183</td>
+  <td class=xl29 align=right x:num>Kun kun Paryangkun</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>68</td>
+  <td class=xl29>302112</td>
+  <td class=xl29 align=right x:num>Lina Marlina</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >13</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>69</td>
+  <td class=xl29>304009</td>
+  <td class=xl29 align=right x:num>Lucky Apriandi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >2</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>70</td>
+  <td class=xl29>302004</td>
+  <td class=xl29 align=right x:num>Muchtar</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>71</td>
+  <td class=xl29>302063</td>
+  <td class=xl29 align=right x:num>Mudian Ramdani</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>72</td>
+  <td class=xl29>303041</td>
+  <td class=xl29 align=right x:num>Mulyadi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >12</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>73</td>
+  <td class=xl29>301519</td>
+  <td class=xl29 align=right x:num>Nunki Syarief</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>74</td>
+  <td class=xl29>301321</td>
+  <td class=xl29 align=right x:num>Nur Rohman</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>75</td>
+  <td class=xl29>302110</td>
+  <td class=xl29 align=right x:num>Nurdin Jaya Riyadhie</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >17</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >17</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>76</td>
+  <td class=xl29>301148</td>
+  <td class=xl29 align=right x:num>Nurjanah</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >17</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >17</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>77</td>
+  <td class=xl29>302093</td>
+  <td class=xl29 align=right x:num>Opik Zuhana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>78</td>
+  <td class=xl29>303070</td>
+  <td class=xl29 align=right x:num>Pepen Rohadi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >22</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>79</td>
+  <td class=xl29>303046</td>
+  <td class=xl29 align=right x:num>Purwoko</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >11</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>80</td>
+  <td class=xl29>301423</td>
+  <td class=xl29 align=right x:num>R Gandi Firmansyah</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >25</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>81</td>
+  <td class=xl29>303226</td>
+  <td class=xl29 align=right x:num>Rahmat Hidayat</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >22</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>82</td>
+  <td class=xl29>303215</td>
+  <td class=xl29 align=right x:num>Ramon Dias</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>83</td>
+  <td class=xl29>303074</td>
+  <td class=xl29 align=right x:num>Rian Oktavian</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >19</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>84</td>
+  <td class=xl29>302132</td>
+  <td class=xl29 align=right x:num>Ricky Permady</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >25</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>85</td>
+  <td class=xl29>303051</td>
+  <td class=xl29 align=right x:num>Risal Maulana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>86</td>
+  <td class=xl29>303086</td>
+  <td class=xl29 align=right x:num>Rizki Agus Kurniawan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >6</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>87</td>
+  <td class=xl29>302011</td>
+  <td class=xl29 align=right x:num>Ruri Febrianti</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >6</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>88</td>
+  <td class=xl29>304011</td>
+  <td class=xl29 align=right x:num>Sambas Saputra</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >25</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>89</td>
+  <td class=xl29>302119</td>
+  <td class=xl29 align=right x:num>Sandi Nurhakim</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >20</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>90</td>
+  <td class=xl29>303090</td>
+  <td class=xl29 align=right x:num>Sandi Warsono</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >17</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>91</td>
+  <td class=xl29>302106</td>
+  <td class=xl29 align=right x:num>Sani Marantika</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>92</td>
+  <td class=xl29>303054</td>
+  <td class=xl29 align=right x:num>Slamet Harnadi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >24</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>93</td>
+  <td class=xl29>301170</td>
+  <td class=xl29 align=right x:num>Soni Zam Zam</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >4</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>94</td>
+  <td class=xl29>331108</td>
+  <td class=xl29 align=right x:num>Sri Maiyana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>95</td>
+  <td class=xl29>303202</td>
+  <td class=xl29 align=right x:num>Sulistiono</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >10</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>96</td>
+  <td class=xl29>301179</td>
+  <td class=xl29 align=right x:num>Sutisna</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>97</td>
+  <td class=xl29>303058</td>
+  <td class=xl29 align=right x:num>Tata Suharta</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >21</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>98</td>
+  <td class=xl29>303225</td>
+  <td class=xl29 align=right x:num>Taupik Hidayat</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >7</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>99</td>
+  <td class=xl29>302056</td>
+  <td class=xl29 align=right x:num>Teddy Natadisastra</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>100</td>
+  <td class=xl29>303227</td>
+  <td class=xl29 align=right x:num>Tito Ruchimat</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >4</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>101</td>
+  <td class=xl29>302127</td>
+  <td class=xl29 align=right x:num>Toni Antoni</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >18</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>102</td>
+  <td class=xl29>303060</td>
+  <td class=xl29 align=right x:num>Ujang Muslim</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >2</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>103</td>
+  <td class=xl29>303249</td>
+  <td class=xl29 align=right x:num>Ujang Supriatna</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >5</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>104</td>
+  <td class=xl29>304004</td>
+  <td class=xl29 align=right x:num>Verdix Junaedi Sudirman</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >5</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>105</td>
+  <td class=xl29>303093</td>
+  <td class=xl29 align=right x:num>Wawan Gunawan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >23</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>106</td>
+  <td class=xl29>303085</td>
+  <td class=xl29 align=right x:num>Wendi Darmawan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >18</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>107</td>
+  <td class=xl29>305002</td>
+  <td class=xl29 align=right x:num>Witra Nurbaya</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >IT</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>108</td>
+  <td class=xl29>303222</td>
+  <td class=xl29 align=right x:num>Wiwin Firmansyah</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >21</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>109</td>
+  <td class=xl29>304010</td>
+  <td class=xl29 align=right x:num>Wowo Wibowo</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>110</td>
+  <td class=xl29>303155</td>
+  <td class=xl29 align=right x:num>Yadi Kusnadi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cimahi</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >3</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>111</td>
+  <td class=xl29>303061</td>
+  <td class=xl29 align=right x:num>Yana Setiawan</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >17</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>112</td>
+  <td class=xl29>304005</td>
+  <td class=xl29 align=right x:num>Yani Cahyani</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >5</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>113</td>
+  <td class=xl29>301202</td>
+  <td class=xl29 align=right x:num>Yanti Kuraesin</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >2</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>114</td>
+  <td class=xl29>301206</td>
+  <td class=xl29 align=right x:num>Yaya Apriana</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >1</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>115</td>
+  <td class=xl29>303062</td>
+  <td class=xl29 align=right x:num>Yayat Nurdwiyatmo</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >25</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right ></td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>116</td>
+  <td class=xl29>303064</td>
+  <td class=xl29 align=right x:num>Yudha Ginanjar</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >11</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>117</td>
+  <td class=xl29>303065</td>
+  <td class=xl29 align=right x:num>Yusup Supyandi</td>
+  <td class=xl29 align=right x:num>BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right x:num>Closing</td>
+  <td class=xl29 align=right >13</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >0</td>
+  <td class=xl29 align=right >KURANG</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'></td>
+  <td class=xl29></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >JML KARYAWAN : 0</td>
+
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td colspan=14 width=74 style='width:34pt'></td>
+ 
+ </tr>
+ <![endif]>
+</table>
+
+
+</body>
+			
+</html>
+
+

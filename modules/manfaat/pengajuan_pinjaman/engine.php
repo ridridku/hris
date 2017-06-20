@@ -80,22 +80,22 @@ global $field_name;
     $t_pjm__no_pinjaman    = $_POST[t_pjm__no_pinjaman];
     $t_pjm__jenis          = $_POST[t_pjm__jenis];
     $t_pjm__mutasi          = $_POST[mutasi];
-    $t_pjm__tgl_disetujui     = $_POST[t_pjm__tgl_disetujui];
+     $t_pjm__idpeg        = $_POST[id_karyawan];
+     
+    $t_pjm__tgl_pinjam  = $_POST[t_pjm__tgl_pinjam];
+    $t_pjm__awal   = $_POST[t_pjm__awal];
+    $t_pjm__akhir   = $_POST[t_pjm__akhir];
+   
+    $t_pjm__total_pinjam    = str_replace(".","",$_POST[plafond]);
+    $t_pjm__tenor = $_POST[tenor];
+    $t_pjm__cicilan_perbulan = str_replace(".","",$_POST[cicilan]);
+    
+    $cicilan=  round($t_pjm__total_pinjam/$t_pjm__tenor);
+    
     $t_pjm__approval  = $_POST[t_pjm__approval];
     $t_pjm__keterangan   = $_POST[t_pjm__keterangan];
+   
 
-    $t_sp__user_created = $id_peg;
-
-
-    
-    
-    
-   $sql_cek_no="SELECT A.t_pjm__no_pinjaman,A.t_pjm__jenis,A.t_pjm__mutasi,A.t_pjm__tgl_disetujui,A.t_pjm__approval,A.t_pjm__keterangan 
-                FROM t_pinjaman A where A.t_pjm__approval='1' AND A.t_pjm__no_pinjaman='$t_pjm__no_pinjaman' ";
-
-   $rs_val = $db->Execute($sql_cek_no);
-   $id_pjm =$rs_val->fields['t_pjm__no_pinjaman'];
-   $no_pinjaman=$rs_val->fields['t_pjm__no_pinjaman'];
     
  if ($t_pjm__no_pinjaman=='' ) {
 			Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
@@ -104,15 +104,24 @@ global $field_name;
                  
                     $sql_edit .=" t_pjm__jenis='$t_pjm__jenis',";
                     $sql_edit .=" t_pjm__mutasi='$t_pjm__mutasi',";
-                    $sql_edit .=" t_pjm__tgl_disetujui='$t_pjm__tgl_disetujui',";
-                    $sql_edit .=" t_pjm__approval='$t_pjm__approval',";
+                    $sql_edit .=" t_pjm__idpeg='$t_pjm__idpeg',";
+                      
+                    $sql_edit .=" t_pjm__tgl_pinjam='$t_pjm__tgl_pinjam',";
+                    $sql_edit .=" t_pjm__awal='$t_pjm__awal',";
+                    $sql_edit .=" t_pjm__akhir='$t_pjm__akhir',";
+                   
+                    $sql_edit .=" t_pjm__total_pinjam='$t_pjm__total_pinjam',";
+                    $sql_edit .=" t_pjm__cicilan_perbulan='$cicilan',";
+                    $sql_edit .=" t_pjm__tenor='$t_pjm__tenor',";
+                    
                     $sql_edit .=" t_pjm__keterangan='$t_pjm__keterangan',";
+                    
                     $sql_edit .=" t_pjm__date_updated = now(), ";
                     $sql_edit .=" t_pjm__user_updated = '$id_peg'";
                     $sql_edit .="  WHERE t_pjm__no_pinjaman='$t_pjm__no_pinjaman' ";
-                   
+               
+                    
                     $sqlresult = $db->Execute($sql_edit);
-                     
 			Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 		
                 }
@@ -128,53 +137,72 @@ global $field_name;
 
 $user_id = base64_decode($_SESSION['UID']);
 $id_peg = $_SESSION['SESSION_ID_PEG'];
-$tgl_now = date("Y-m-d h:i:s");
+$t_pjm__no_pinjaman     = $_POST[t_pjm__no_pinjaman];
+$t_pjm__jenis           = $_POST[t_pjm__jenis];
+$t_pjm__mutasi          = $_POST[mutasi];
+$t_pjm__idpeg           = $_POST[id_karyawan];
+$t_pjm__tgl_pinjam      = $_POST[t_pjm__tgl_pinjam];
+$t_pjm__awal            = $_POST[t_pjm__awal];
+$t_pjm__akhir           = $_POST[t_pjm__akhir];
+$t_pjm__total_pinjam    = str_replace(".","",$_POST[plafond]);
 
-
-$t_pjm__no_pinjaman = $_POST[t_pjm__no_pinjaman];
-$t_pjm__jenis       = $_POST[t_pjm__jenis];
-$t_pjm__mutasi      = $_POST[mutasi];
-$t_pjm__tgl_disetujui= $_POST[t_pjm__tgl_disetujui];
-$t_pjm__approval = $_POST[t_pjm__approval];
+$t_pjm__tenor           = $_POST[tenor];
+$t_pjm__cicilan_perbulan= str_replace(".","",$_POST[cicilan]);
+$t_pjm__approval        = $_POST[t_pjm__approval];
 $t_pjm__keterangan      = $_POST[t_pjm__keterangan];
 
-$t_pjm__user_created = $id_peg;
+ $cicilan=  round($t_pjm__total_pinjam/$t_pjm__tenor);
 
     $sql_cek_no="SELECT A.t_pjm__mutasi,"
             . "A.t_pjm__no_pinjaman,"
             . "A.t_pjm__jenis,"
             . "A.t_pjm__approval,"
-            . "A.t_pjm__keterangan FROM t_pinjaman A where A.t_pjm__mutasi='$t_pjm__mutasi'  AND A.t_pjm__approval=1";
+            . "A.t_pjm__keterangan FROM t_pinjaman A ";
     
    $rs_val = $db->Execute($sql_cek_no);
-   
    $cek_no=  count($rs_val->fields['t_pjm__mutasi']);
 
- if ($t_pjm__no_pinjaman=='' or $cek_no==1 ) {
+ if ($t_pjm__no_pinjaman=='') {
 			Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 		}else
                 {
                                     $sql= "INSERT INTO $tbl_name ("
-                                            . "t_pjm__no_pinjaman,"
+                                          
                                             . "t_pjm__jenis, "
                                             . "t_pjm__mutasi,"
-                                            . "t_pjm__tgl_disetujui,"
-                                            . "t_pjm__approval, "
+                                            . "t_pjm__idpeg,"
+                                            . "t_pjm__tgl_pinjam, "
+                                            . "t_pjm__awal, "
+                                            . "t_pjm__akhir, "
+                                            . "t_pjm__total_pinjam, "
+                                            . "t_pjm__cicilan_perbulan, "
+                                            . "t_pjm__tenor, "
+                                            . "t_pjm__approval, "                                           
                                             . "t_pjm__keterangan,"
-                                            . "t_pjm__date_created, "
-                                            . "t_pjm__user_created)";
+                                            . "t_pjm__date_created,"
+                                            . "t_pjm__date_updated,"
+                                            . "t_pjm__user_created, "
+                                            . "t_pjm__user_updated)";
  
                                     $sql	.= " VALUES ("
-                                            . "'$t_pjm__no_pinjaman',"
+                                            
                                             . "'$t_pjm__jenis',"
                                             . "'$t_pjm__mutasi',"
-                                            . "'$t_pjm__tgl_disetujui',"
+                                            . "'$t_pjm__idpeg',"
+                                            . "'$t_pjm__tgl_pinjam',"
+                                            . "'$t_pjm__awal',"
+                                            . "'$t_pjm__akhir',"
+                                            . "'$t_pjm__total_pinjam',"
+                                            ."'$cicilan',"
+                                             . "'$t_pjm__tenor',"
                                             . "'$t_pjm__approval',"
                                             . "'$t_pjm__keterangan',"
                                             . "now(),"
+                                            . "now(),"
+                                            . "'$id_peg',"
                                             . "'$id_peg')";
                                    
-
+                               
 $sqlresult = $db->Execute($sql);
 Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
                 }

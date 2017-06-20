@@ -20,10 +20,10 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/hris/themes/defaults/modules/training/training_request/index.tpl</file>
-            <file>file:/D:/xampp/htdocs/hris/themes/defaults/javascripts/modules/inventaris/inventaris_kirim/index.js</file>
-            <file>file:/D:/xampp/htdocs/hris/themes/defaults/modules/inventaris/inventaris_kirim/index.tpl</file>
-            <file>file:/D:/xampp/htdocs/hris/modules/inventaris/inventaris_kirim/index.php</file>
+            <file>file:/D:/xampp/htdocs/hris/themes/defaults/javascripts/modules/kehadiran/verifikasi_kehadiran/index.js</file>
+            <file>file:/D:/xampp/htdocs/hris/themes/defaults/modules/kehadiran/verifikasi_kehadiran/index.tpl</file>
+            <file>file:/D:/xampp/htdocs/hris/modules/kehadiran/verifikasi_kehadiran/engine.php</file>
+            <file>file:/D:/xampp/htdocs/hris/modules/kehadiran/verifikasi_kehadiran/index.php</file>
         </group>
     </open-files>
 </project-private>

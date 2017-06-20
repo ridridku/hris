@@ -118,13 +118,45 @@ if ($_GET['departemen_cari']) $departemen_cari = $_GET['departemen_cari'];
 else if ($_POST['departemen_cari']) $departemen_cari = $_POST['departemen_cari'];
 else $departemen_cari="";
 
-if ($_GET['bulan']) $bulan = $_GET['bulan'];
-else if ($_POST['bulan']) $bulan = $_POST['bulan'];
-else $bulan="";
 
-if ($_GET['tahun']) $tahun = $_GET['tahun'];
-else if ($_POST['tahun']) $tahun = $_POST['tahun'];
-else $tahun="";
+if ($_GET['bulan1']) $bulan1 = $_GET['bulan1'];
+else if ($_POST['bulan1']) $bulan1 = $_POST['bulan1'];
+else $bulan1="";
+
+if ($_GET['bulan2']) $bulan2 = $_GET['bulan2'];
+else if ($_POST['bulan2']) $bulan2 = $_POST['bulan2'];
+else $bulan2="";
+
+if ($_GET['tahun1']) $tahun1 = $_GET['tahun1'];
+else if ($_POST['tahun1']) $tahun1 = $_POST['tahun1'];
+else $tahun1="";
+
+if ($_GET['tahun2']) $tahun2 = $_GET['tahun2'];
+else if ($_POST['tahun2']) $tahun2 = $_POST['tahun1'];
+else $tahun2="";
+
+if ($_GET['tgl1']) $tgl1 = $_GET['tgl1'];
+else if ($_POST['tgl1']) $tgl1 = $_POST['tgl1'];
+else $tgl1="";
+
+if ($_GET['tgl2']) $tgl2= $_GET['tgl2'];
+else if ($_POST['tgl2']) $tgl2 = $_POST['tgl2'];
+else $tgl2="";
+
+
+$arr = array($tahun1,$bulan1,$tgl1);                                 
+$date_awal= implode("-",$arr); 
+
+$arr = array($tahun2,$bulan2,$tgl2);                                 
+$date_akhir= implode("-",$arr); 
+$Search_Year='2016';
+
+$smarty->assign ("DATE_AWAL", $date_awal);
+$smarty->assign ("DATE_AKHIR", $date_akhir);
+
+$smarty->assign ("TAHUN1", $tahun1);
+$smarty->assign ("TAHUN2", $tahun2);
+
 
 
 if ($_GET['nama_karyawan_cari']) $nama_karyawan_cari = $_GET['nama_karyawan_cari'];
@@ -138,10 +170,22 @@ else $search="";
 
 
 $smarty->assign ("KODE_CABANG_CARI", $kode_cabang_cari);
-$tahun_ses_aktif		=	$_SESSION['SESSION_TAHUN_AKTIF'];
-$bulan_ses_aktif		=	$_SESSION['SESSION_BULAN_AKTIF'];
-$smarty->assign ("TAHUN_SES", $tahun_ses_aktif);
-$smarty->assign ("BULAN_SES", $bulan_ses_aktif);
+
+$periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF'];$smarty->assign ("PERIODE_AKHIR", $periode_akhir);
+
+
+$orderdate1 = explode('-',$periode_awal);
+$year1  = $orderdate1[0];$smarty->assign ("YEAR1", $year1);
+$month1 = $orderdate1[1];$smarty->assign ("MONTH1", $month1);
+$day1   = $orderdate1[2];$smarty->assign ("DAY1", $day1);
+
+
+$orderdate2 = explode('-',$periode_akhir);
+$year2  = $orderdate2[0];$smarty->assign ("YEAR2", $year2);
+$month2 = $orderdate2[1];$smarty->assign ("MONTH2", $month2);
+$day2   = $orderdate2[2];$smarty->assign ("DAY2", $day2);
+
 
 //$fields_find_jns_jln_	= $jns_jln!=""?$jns_jln:$jns_jln2;
 
@@ -158,25 +202,21 @@ $SES_JENIS_USER		= $_SESSION['JENIS_USER'];
 
 $jenis_user     = $_SESSION['SESSION_JNS_USER'];
 $kode_pw_ses    = $_SESSION['SESSION_KODE_CABANG'];
-$tahun_session	= $_SESSION['SESSION_TAHUN'];
-$bulan_session	= $_SESSION['SESSION_BULAN'];  
+
 
 $smarty->assign ("JENIS_USER_SES", $jenis_user);
 $smarty->assign ("KODE_PW_SES", $kode_pw_ses);
 
-$smarty->assign ("TAHUN_SESSION", $tahun_session);
-$smarty->assign ("BULAN_SESSION", $bulan_session);
+
 //--------------------------------------
 //SHOW DATA INSTANSI
 //---------------------------------------
 
-$smarty->assign ("SES_TAHUN", $SES_TAHUN);
+//$smarty->assign ("SES_TAHUN", $SES_TAHUN);
 $smarty->assign ("SES_INSTANSI", $SES_INSTANSI);
 $smarty->assign ("SES_JENIS_USER", $SES_JENIS_USER);
 
-$smarty->assign ("BULAN", $bulan);
-$smarty->assign ("TAHUN", $tahun);
-$smarty->assign ("KODE_KAT_KASUS", $kode_kat_kasus);
+
  //--------------------------------------
  
 
@@ -266,43 +306,6 @@ while ($arr=$result_departemen->FetchRow()) {
 $smarty->assign ("DATA_DEPARTEMEN", $data_departemen);
 //-----------CLOSE DATA DEPARTEMEN----//
 
-
-//-----------------BLN PERIODE AKTIF--------------------------------------------------------//
-$sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_bulan,r_periode__payroll_tahun,r_periode__payroll_status
-                                  FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
-                  
-        $rs_val = $db->Execute($sql_cek_periode);
-        $periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
-        $periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];
-
-        $smarty->assign ("PERIODE_BULAN",  $periode_bulan);
-        $smarty->assign ("PERIODE_TAHUN",  $periode_tahun);
-
-//--------------CLOSE BLN PERIODE AKTIF-----------------------------------//
-
-//if ($_GET[get_proyek] == 1)
-//{
-//	$kode_proyek = $_GET[kode_proyek];
-//			if($kode_proyek!=''){	
-//					$sql_ruas_combo 	  = " SELECT * FROM tbl_proyek_detail_ruas   WHERE kode_proyek ='$kode_proyek' ORDER BY nama_paket ";
-//					$result_data_usulan = $db->execute($sql_ruas_combo);
-//			 
-//					//echo $sql_data_usulan;
-//					$data_usulan = "<select id=\"kode_paket\"  name=\"kode_paket\" style=\"width:200px\" >";
-//					$data_usulan .= "<option value=\"\"> [Pilih  Paket] </option>";
-//
-//					while(!$result_data_usulan ->EOF):
-//						$data_usulan .= "<option value=".$result_data_usulan->fields['kode_paket'].">".$result_data_usulan->fields['nama_paket']."</option>";
-//						$result_data_usulan->MoveNext();
-//					endwhile; 	
-//					 $data_usulan .="</select>";
-//					$delimeter   = "-";
-//			 
-//					 $option_choice = $data_usulan."^/&".$delimeter;	
-//					echo $option_choice;	
-//			}
-//}
-
     
 //-----------------DATA SUBCABANG--------------------------------------------------------//
     
@@ -332,133 +335,96 @@ if ($_GET['search'] == '1')
             $rs__=$db->Execute($sql__);
             $nm_perwakilan = $rs__->fields['nm_perwakilan'];
             $smarty->assign ("NM_PERWAKILAN", $nm_perwakilan);
- 
+            
+          
+            
+            
 		  if($jenis_user=='2'){
                       
-                                                $sql  = "SELECT * from (SELECT
-                                                    r_shift__jam_masuk AS r_shift__jam_masuk,
-                                                    r_shift__jam_pulang AS r_shift__jam_pulang,
-                                                    r_penempatan.r_pnpt__nip AS r_pnpt__nip,
-                                                    r_penempatan.r_pnpt__no_mutasi  AS r_pnpt__no_mutasi,
-                                                    r_penempatan.r_pnpt__jabatan AS r_pnpt__jabatan,
-                                                    r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
-                                                    r_penempatan.r_pnpt__status AS r_pnpt__status,
-                                                    r_penempatan.r_pnpt__tipe_salary AS r_pnpt__tipe_salary,
-                                                    r_penempatan.r_pnpt__subdept AS r_pnpt__subdept,
-                                                    r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
-                                                    r_penempatan.r_pnpt__gapok AS r_pnpt__gapok,
-                                                    r_penempatan.r_pnpt__subcab AS r_pnpt__subcab,
-                                                    r_penempatan.r_pnpt__shift AS r_pnpt__shift,
-                                                    r_penempatan.r_pnpt__kon_awal AS r_pnpt__kon_awal,
-                                                    r_penempatan.r_pnpt__kon_akhir AS r_pnpt__kon_akhir,
-                                                    r_penempatan.r_pnpt__aktif AS r_pnpt__aktif,
-                                                    r_jabatan.r_jabatan__id AS r_jabatan__id,
-                                                    r_jabatan.r_jabatan__ket AS r_jabatan__ket,
-                                                    r_subdepartement.r_subdept__id AS r_subdept__id,
-                                                    r_subdepartement.r_subdept__ket AS r_subdept__ket,
-                                                    r_departement.r_dept__akronim AS r_dept__akronim,
-                                                    r_departement.r_dept__id AS r_dept__id,
-                                                    r_departement.r_dept__ket AS r_dept__ket,
-                                                    r_subcabang.r_subcab__nama AS r_subcab__nama,
-                                                    r_cabang.r_cabang__nama AS r_cabang__nama,
-                                                    r_cabang.r_cabang__id AS r_cabang__id,
-                                                    r_subcabang.r_subcab__id AS r_subcab__id,
-                                                    r_subcabang.r_subcab__cabang AS r_subcab__cabang,
-                                                    r_pegawai.r_pegawai__id AS r_pegawai__id,
-                                                    r_pegawai.r_pegawai__nama AS r_pegawai__nama,
-                                                    t_abs__id AS t_abs__id,
-                                                    t_abs__fingerprint AS t_abs__fingerprint,
-                                                    t_abs__tgl AS t_abs__tgl,
-                                                    t_abs__id_shift AS t_abs__id_shift,
-                                                    t_abs__jam_masuk AS t_abs__jam_masuk,
-                                                    t_abs__jam_keluar AS t_abs__jam_keluar,
-                                                    t_abs__early AS t_abs__early,
-                                                    t_abs__lately AS t_abs__lately,
-                                                    t_abs__approval AS t_abs__approval,
-                                                    t_abs__lesstime AS t_abs__lesstime,
-                                                    t_abs__overtime AS t_abs__overtime,
-                                                    t_abs__worktime AS t_abs__worktime,
-                                                    SEC_TO_TIME( SUM( TIME_TO_SEC(t_abs__lately ) ) ) AS timeSum 
-
-                                                    FROM
-                                                    r_pegawai
-                                                    INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-                                                    INNER JOIN r_jabatan ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-                                                    INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-                                                    INNER JOIN r_subcabang ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-                                                    INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-                                                    INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-                                                    INNER JOIN t_absensi ON t_absensi.t_abs__fingerprint=r_penempatan.r_pnpt__finger_print
-                                                    INNER JOIN r_shift ON r_shift.r_shift__id=t_absensi.t_abs__id_shift
-                                                    where 1=1 AND r_cabang__id = '".$kode_pw_ses."' ";
+                $sql  = "SELECT  SEC_TO_TIME(SUM(G.telat))as rkp_lambat,G.* FROM (SELECT 
+                                F.* FROM (
+                                SELECT  IF((E.telat)<0,'0','1') as status_telat,
+                                E.*
+                                FROM (SELECT(TIME_TO_SEC((t_absensi.t_abs__jam_masuk))-TIME_TO_SEC(D.r_shift__terlambat)) AS telat,t_absensi.*,
+                                D.* FROM (
+                                SELECT C.*
+                                FROM (SELECT B.*  FROM (
+                                SELECT A.*
+                                FROM (SELECT peg_view.*,r_shift.* FROM (SELECT 
+                                peg.r_pegawai__nama,
+                                r_penempatan.r_pnpt__no_mutasi,r_penempatan.r_pnpt__finger_print,r_penempatan.r_pnpt__id_pegawai,
+                                r_cabang.r_cabang__id,r_cabang.r_cabang__nama,r_cabang__kelas,
+                                r_jabatan.r_jabatan__id,r_jabatan.r_jabatan__ket,r_jabatan.r_jabatan__tunjangan,r_jabatan.r_jabatan__level,
+                                r_subcabang.r_subcab__id,r_subcabang.r_subcab__nama,r_subcabang.r_subcab__kemahalan,r_subcabang.r_subcab__dasarbpjs,
+                                r_penempatan.r_pnpt__shift,r_departement.r_dept__id,r_dept__ket,r_subdepartement.r_subdept__id,r_subdepartement.r_subdept__ket
+                                FROM (SELECT  mutasi.r_pnpt__shift,mutasi.r_pnpt__finger_print,mutasi.r_pnpt__aktif,mutasi.r_pnpt__id_pegawai,mutasi.r_pnpt__no_mutasi as mutasi,r_pegawai.r_pegawai__nama,r_pegawai.r_pegawai__tgl_masuk FROM 
+                                (SELECT r_penempatan.* FROM r_penempatan ORDER BY r_penempatan.r_pnpt__no_mutasi DESC)mutasi
+                                INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id=mutasi.r_pnpt__id_pegawai GROUP BY r_pegawai.r_pegawai__id)peg
+                                INNER JOIN r_penempatan ON r_penempatan.r_pnpt__no_mutasi=peg.mutasi
+                                INNER JOIN r_subcabang ON r_subcabang.r_subcab__id=r_penempatan.r_pnpt__subcab
+                                INNER JOIN r_cabang ON r_cabang.r_cabang__id=r_subcabang.r_subcab__cabang
+                                INNER JOIN r_jabatan ON r_jabatan__id=r_penempatan.r_pnpt__jabatan
+                                INNER JOIN r_level ON r_jabatan.r_jabatan__level = r_level.r_level__id
+                                INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept=r_subdepartement.r_subdept__id
+                                INNER JOIN r_departement ON r_departement.r_dept__id=r_subdepartement.r_subdept__dept
+                                where peg.mutasi NOT IN (select DISTINCT r_resign__mutasi FROM r_resign 
+                                WHERE r_resign.r_resign__tgl <= '$date_akhir'- INTERVAL DATEDIFF('$date_akhir','$date_awal') DAY and r_resign.r_resign__approval=1))peg_view
+                                inner join r_shift ON r_shift.r_shift__id=peg_view.r_pnpt__shift)A)B )C
+                                WHERE C.r_cabang__id='$kode_pw_ses' GROUP BY C.r_pnpt__id_pegawai)D
+                                LEFT JOIN t_absensi ON t_absensi.t_abs__fingerprint=D.r_pnpt__finger_print
+                                 )E)F
+                                WHERE   F.t_abs__tgl NOT IN ( SELECT t_libur.r_libur__tgl
+                                FROM t_libur,t_absensi WHERE t_libur.r_libur__tgl = t_absensi.t_abs__tgl AND t_libur.r_libur__shift = t_absensi.t_abs__id_shift)
+                                AND F.telat>0 GROUP BY F.t_abs__tgl,F.t_abs__fingerprint)G
+                                WHERE G.t_abs__status=1 AND G.t_abs__tgl>='$date_awal' and G.t_abs__tgl<='$date_akhir' ";
                                                 
                       
 
 			} else {
-						$sql  = "SELECT * from (SELECT
-                                                    r_shift__jam_masuk AS r_shift__jam_masuk,
-                                                    r_shift__jam_pulang AS r_shift__jam_pulang,
-                                                    r_penempatan.r_pnpt__nip AS r_pnpt__nip,
-                                                    r_penempatan.r_pnpt__no_mutasi  AS r_pnpt__no_mutasi,
-                                                    r_penempatan.r_pnpt__jabatan AS r_pnpt__jabatan,
-                                                    r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
-                                                    r_penempatan.r_pnpt__status AS r_pnpt__status,
-                                                    r_penempatan.r_pnpt__tipe_salary AS r_pnpt__tipe_salary,
-                                                    r_penempatan.r_pnpt__subdept AS r_pnpt__subdept,
-                                                    r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
-                                                    r_penempatan.r_pnpt__gapok AS r_pnpt__gapok,
-                                                    r_penempatan.r_pnpt__subcab AS r_pnpt__subcab,
-                                                    r_penempatan.r_pnpt__shift AS r_pnpt__shift,
-                                                    r_penempatan.r_pnpt__kon_awal AS r_pnpt__kon_awal,
-                                                    r_penempatan.r_pnpt__kon_akhir AS r_pnpt__kon_akhir,
-                                                    r_penempatan.r_pnpt__aktif AS r_pnpt__aktif,
-                                                    r_jabatan.r_jabatan__id AS r_jabatan__id,
-                                                    r_jabatan.r_jabatan__ket AS r_jabatan__ket,
-                                                    r_subdepartement.r_subdept__id AS r_subdept__id,
-                                                    r_subdepartement.r_subdept__ket AS r_subdept__ket,
-                                                    r_departement.r_dept__akronim AS r_dept__akronim,
-                                                    r_departement.r_dept__id AS r_dept__id,
-                                                    r_departement.r_dept__ket AS r_dept__ket,
-                                                    r_subcabang.r_subcab__nama AS r_subcab__nama,
-                                                    r_cabang.r_cabang__nama AS r_cabang__nama,
-                                                    r_cabang.r_cabang__id AS r_cabang__id,
-                                                    r_subcabang.r_subcab__id AS r_subcab__id,
-                                                    r_subcabang.r_subcab__cabang AS r_subcab__cabang,
-                                                    r_pegawai.r_pegawai__id AS r_pegawai__id,
-                                                    r_pegawai.r_pegawai__nama AS r_pegawai__nama,
-                                                    t_abs__id AS t_abs__id,
-                                                    t_abs__fingerprint AS t_abs__fingerprint,
-                                                    t_abs__tgl AS t_abs__tgl,
-                                                    t_abs__id_shift AS t_abs__id_shift,
-                                                    t_abs__jam_masuk AS t_abs__jam_masuk,
-                                                    t_abs__jam_keluar AS t_abs__jam_keluar,
-                                                    t_abs__early AS t_abs__early,
-                                                    t_abs__lately AS t_abs__lately,
-                                                    t_abs__approval AS t_abs__approval,
-                                                    t_abs__lesstime AS t_abs__lesstime,
-                                                    t_abs__overtime AS t_abs__overtime,
-                                                    t_abs__worktime AS t_abs__worktime,
-                                                    SEC_TO_TIME( SUM( TIME_TO_SEC(t_abs__lately ) ) ) AS timeSum 
-
-                                                    FROM
-                                                    r_pegawai
-                                                    INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-                                                    INNER JOIN r_jabatan ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-                                                    INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-                                                    INNER JOIN r_subcabang ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-                                                    INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-                                                    INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-                                                    INNER JOIN t_absensi ON t_absensi.t_abs__fingerprint=r_penempatan.r_pnpt__finger_print
-                                                    INNER JOIN r_shift ON r_shift.r_shift__id=t_absensi.t_abs__id_shift
-                                                     where 1=1     ";	
+			$sql  = "SELECT  SEC_TO_TIME(SUM(G.telat))as rkp_lambat,G.* FROM (SELECT 
+                                F.* FROM (
+                                SELECT  IF((E.telat)<0,'0','1') as status_telat,
+                                E.*
+                                FROM (SELECT(TIME_TO_SEC((t_absensi.t_abs__jam_masuk))-TIME_TO_SEC(D.r_shift__terlambat)) AS telat,t_absensi.*,
+                                D.* FROM (
+                                SELECT C.*
+                                FROM (SELECT B.*  FROM (
+                                SELECT A.*
+                                FROM (SELECT peg_view.*,r_shift.* FROM (SELECT 
+                                peg.r_pegawai__nama,
+                                r_penempatan.r_pnpt__no_mutasi,r_penempatan.r_pnpt__finger_print,r_penempatan.r_pnpt__id_pegawai,
+                                r_cabang.r_cabang__id,r_cabang.r_cabang__nama,r_cabang__kelas,
+                                r_jabatan.r_jabatan__id,r_jabatan.r_jabatan__ket,r_jabatan.r_jabatan__tunjangan,r_jabatan.r_jabatan__level,
+                                r_subcabang.r_subcab__id,r_subcabang.r_subcab__nama,r_subcabang.r_subcab__kemahalan,r_subcabang.r_subcab__dasarbpjs,
+                                r_penempatan.r_pnpt__shift,r_departement.r_dept__id,r_dept__ket,r_subdepartement.r_subdept__id,r_subdepartement.r_subdept__ket
+                                FROM (SELECT  mutasi.r_pnpt__shift,mutasi.r_pnpt__finger_print,mutasi.r_pnpt__aktif,mutasi.r_pnpt__id_pegawai,mutasi.r_pnpt__no_mutasi as mutasi,r_pegawai.r_pegawai__nama,r_pegawai.r_pegawai__tgl_masuk FROM 
+                                (SELECT r_penempatan.* FROM r_penempatan ORDER BY r_penempatan.r_pnpt__no_mutasi DESC)mutasi
+                                INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id=mutasi.r_pnpt__id_pegawai GROUP BY r_pegawai.r_pegawai__id)peg
+                                INNER JOIN r_penempatan ON r_penempatan.r_pnpt__no_mutasi=peg.mutasi
+                                INNER JOIN r_subcabang ON r_subcabang.r_subcab__id=r_penempatan.r_pnpt__subcab
+                                INNER JOIN r_cabang ON r_cabang.r_cabang__id=r_subcabang.r_subcab__cabang
+                                INNER JOIN r_jabatan ON r_jabatan__id=r_penempatan.r_pnpt__jabatan
+                                INNER JOIN r_level ON r_jabatan.r_jabatan__level = r_level.r_level__id
+                                INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept=r_subdepartement.r_subdept__id
+                                INNER JOIN r_departement ON r_departement.r_dept__id=r_subdepartement.r_subdept__dept
+                                where peg.mutasi NOT IN (select DISTINCT r_resign__mutasi FROM r_resign 
+                                WHERE r_resign.r_resign__tgl <= '$date_akhir'- INTERVAL DATEDIFF('$date_akhir','$date_awal') DAY and r_resign.r_resign__approval=1))peg_view
+                                inner join r_shift ON r_shift.r_shift__id=peg_view.r_pnpt__shift)A)B )C
+                                WHERE C.r_cabang__id='$kode_cabang_cari' GROUP BY C.r_pnpt__id_pegawai)D
+                                LEFT JOIN t_absensi ON t_absensi.t_abs__fingerprint=D.r_pnpt__finger_print
+                                 )E)F
+                                WHERE   F.t_abs__tgl NOT IN ( SELECT t_libur.r_libur__tgl
+                                FROM t_libur,t_absensi WHERE t_libur.r_libur__tgl = t_absensi.t_abs__tgl AND t_libur.r_libur__shift = t_absensi.t_abs__id_shift)
+                                AND F.telat>0 GROUP BY F.t_abs__tgl,F.t_abs__fingerprint)G
+                                WHERE G.t_abs__status=1 AND G.t_abs__tgl>='$date_awal' and G.t_abs__tgl<='$date_akhir'";	
 
 			}
  
 				//echo "<br><br><br><br><br><br><br><br><br><br>dddddddddkode_perwakilan_cari ===".$kode_perwakilan_cari;
 
-                                             if ($kode_cabang_cari !='') {
-						 	$sql.=" and  r_cabang__id =".$kode_cabang_cari."  ";
-						 }
+//                                             if ($kode_cabang_cari !='') {
+//						 	$sql.=" and  r_cabang__id =".$kode_cabang_cari."  ";
+//						 }
 
 						 if ($kode_subcab_cari !='') {
 						 	$sql.=" and  r_subcab__id ='$kode_subcab_cari' ";
@@ -469,13 +435,9 @@ if ($_GET['search'] == '1')
 						 } 
 
 						 
-                                                  if ($bulan !='') {
-						 	$sql.=" and MONTH(t_abs__tgl)='$bulan'  ";
-						 }
-                                                 
-                                                  if ($tahun !='') {
-						 	$sql.=" AND YEAR(t_abs__tgl)=$tahun  ";
-						 }
+                                                 if ($tahun1 !='' AND $tahun2 !='' ) {
+						 	$sql.="  AND t_abs__tgl>='$date_awal' AND t_abs__tgl<='$date_akhir'  ";
+						 } 
                                                  
                                                   if ($nama_karyawan_cari !='') {
 						 	$sql.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
@@ -483,11 +445,10 @@ if ($_GET['search'] == '1')
 
 		
 
-			 	 $sql.=" GROUP BY  r_pnpt__finger_print) as A1 where TIME_TO_SEC(A1.timeSum)>60";
+			 	 $sql.=" GROUP BY G.t_abs__fingerprint  ";
 
 			//    if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
-                       /// var_dump($sql)or die();
-                                 
+                       // var_dump($sql)or die();
 				$numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
 			//	$pages = $p->findPages($count,$LIMIT); 
@@ -509,8 +470,10 @@ if ($_GET['search'] == '1')
                                  $label_bln=$arr[label_bulan];
                                  $label_tahun=$arr[label_tahun];
 				
-					
-			   
+$timestamp =  $arr[timeSum];
+$sangsi= gmdate("H:i:s", $timestamp);
+//var_dump($sangsi)or die();
+	    
 			   $content_data .= print_content(
                                     $count_no,
                                     $arr[r_pnpt__finger_print],
@@ -520,7 +483,7 @@ if ($_GET['search'] == '1')
                                     $arr[r_dept__ket],
                                     $arr[r_shift__jam_masuk],
                                     $arr[r_shift__jam_pulang],
-                                    $arr[timeSum]);	
+                                    $timestamp);	
                            
                            //
                            
@@ -541,21 +504,21 @@ if ($_GET['search'] == '1')
                                 
                                  
                                 
-                                  $smarty->assign ("DATA_TB", $data_tb);
-				$file= $DIR_HOME."/files/rekap_terlambat_".$nm_perwakilan."_".$tahun.".xls";
+                                $smarty->assign ("DATA_TB", $data_tb);
+				$file= $DIR_HOME."/files/rekap_terlambat_".$nm_perwakilan."_".date('Y-m-d').".xls";
 				$fp=@fopen($file,"w");
 				if(!is_resource($fp))
 				return false;
 				//$content = str_replace("@@@@BREAKPAGE@@@@@",$content_break,$content);
 				stream_set_write_buffer($fp, 0);
                              
-				$content = print_header($nm_perwakilan,$bulan,$tahun);
+				$content = print_header($nm_perwakilan,$date_awal,$date_akhir);
 				$content .= $content_data;
 				
 				$content .= print_footer();
 				fwrite($fp,$content);
 				fclose($fp);
-				$file_2= $HREF_HOME."/files/rekap_terlambat_".$nm_perwakilan."_".$tahun.".xls";
+				$file_2= $HREF_HOME."/files/rekap_terlambat_".$nm_perwakilan."_".date('Y-m-d').".xls";
                                 
 }
 
@@ -704,14 +667,9 @@ else
 						 	$sql.="  and r_dept__id='$departemen_cari' ";
 						 } 
 
-						 
-                                                  if ($bulan !='') {
-						 	$sql.=" and MONTH(t_abs__tgl)='$bulan'  ";
-						 }
-                                                 
-                                                  if ($tahun !='') {
-						 	$sql.=" AND YEAR(t_abs__tgl)=$tahun  ";
-						 }
+						if ($tahun1 !='' AND $tahun2 !='' ) {
+						 	$sql.="  AND t_abs__tgl>='$date_awal' AND t_abs__tgl<='$date_akhir'  ";
+						 } 
                                                  
                                                   if ($nama_karyawan_cari !='') {
 						 	$sql.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
@@ -781,7 +739,7 @@ else
 				return false;
 				//$content = str_replace("@@@@BREAKPAGE@@@@@",$content_break,$content);
 				stream_set_write_buffer($fp, 0);
-				$content = print_header($nm_perwakilan,$bulan,$tahun);
+				$content = print_header($nm_perwakilan,$date_awal,$date_akhir);
 				$content .= $content_data;
 				
 				$content .= print_footer();

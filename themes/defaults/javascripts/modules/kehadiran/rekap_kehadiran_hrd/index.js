@@ -32,17 +32,17 @@ with (theForm){
 			return false; 
 		}
     
-        if (tahun.value == "") 
+        if (periode_awal.value == "") 
 		{ 
-			alert ("Silahkan Pilih tahun !"); 
-			r_pegawai__nama.focus();
+			alert ("Isi Periode Awal !"); 
+			periode_awal.focus();
 			return false; 
 		}
 
-	if (bulan.value == "") 
+	if (periode_akhir.value == "") 
 		{ 
-			alert ("Masukan Bulan !"); 
-			 bulan.focus();
+			alert ("Isi Periode Akhir !"); 
+			 periode_akhir.focus();
 			return false; 
 		}	
                                 
@@ -92,117 +92,7 @@ with(theForm){
 	doNavigateContentOver('index.php?mod_id=<?=$_GET[mod_id];?>','mainFrame');
 }
 
-function cari_kab(prop_id)
-{
-//alert(prop_id);
-if (prop_id != '') {
-	http.open('get', 'index.php?get_prop=1&no_prop='+prop_id);
-	http.onreadystatechange = handlechoice_kab; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_kab(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		 var a = response.split('^/&');
-		document.getElementById('ajax_kabupaten').innerHTML = a[0];
-		//frmCreate.nama_lengkap.focus();
-    }
-}
-
-function cari_kec(prop_id,kab_id)
-{
-//alert(prop_id+'  -- '+kab_id);
-if (prop_id != '') {
-	http.open('get', 'index.php?get_kec=1&no_prop='+prop_id+'&no_kab='+kab_id);
-	http.onreadystatechange = handlechoice_kec; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_kec(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		 var a = response.split('^/&');
-		document.getElementById('ajax_kecamatan').innerHTML = a[0];
-		//frmCreate.nama_lengkap.focus();
-    }
-}
-
-function cari_kec2(prop_id,kab_id,kec_id)
-{
-//alert(prop_id+'  -- '+kab_id);
-if (prop_id != '') {
-	http.open('get', 'index.php?get_kec=1&no_prop='+prop_id+'&no_kab='+kab_id+'&no_kec='+kec_id);
-	http.onreadystatechange = handlechoice_kec2; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_kec2(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		 var a = response.split('^/&');
-		document.getElementById('ajax_kecamatan2').innerHTML = a[0];
-		//frmCreate.nama_lengkap.focus();
-    }
-}
-
 //-->
-
-
-function cari_jenis(prop_id)
-{
-//alert(prop_id);
-if (prop_id != '') {
-	http.open('get', 'index.php?get_jenis=1&no_prop='+prop_id);
-	http.onreadystatechange = handlechoice_jenis; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_jenis(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		 var a = response.split('^/&');
-		document.getElementById('ajax_sektor').innerHTML = a[0];
-		document.getElementById('ajax_jenis_wni').innerHTML = a[1];
-		//frmCreate.nama_lengkap.focus();
-    }
-}
-function goPemberikerja() {
-    
-			//document.frm.KodeEselon1.value='';
-			//document.frm.NamaEselon1.value='';
-			kode_cabang= document.frmCreate.kode_cabang.value;
-			window.open('../../../function/list_tki_penampungan.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
- 			}
-
-//function cari_jenis2(prop_id)
-//{
-////alert(prop_id);
-//if (prop_id != '') {
-//	http.open('get', 'index.php?get_jenis_sektor=1&no_prop='+prop_id);
-//	http.onreadystatechange = handlechoice_jenis_sektor; 
-//	http.send(null);
-//	} 
-//}
-//
-//function handlechoice_jenis_sektor(){
-//if(http.readyState == 4)
-//	{ 
-//		var response = http.responseText;
-//		 var a = response.split('^/&');
-//	 
-//		document.getElementById('ajax_jenis_wni').innerHTML = a[0];
-//		//frmCreate.nama_lengkap.focus();
-//    }
-//}
 
 
 

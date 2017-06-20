@@ -6,7 +6,6 @@
 require_once('../../../includes/config.conf.php');
 require_once('../../../includes/func.inc.php');
 
-
 //require_once('../../../lib/excel_reader.php');
 # Create a session to store global config path
 session_save_path($DIR_SESS);
@@ -41,7 +40,7 @@ $TPL_PATH = base64_decode($_SESSION['UPLOAD']).'/uploads';
 $TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/kpi/upoload_kpi';
 
 $JS_MODUL = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts/modules/kpi');
-$FILE_JS  = $JS_MODUL.'/upoload_kpi';
+$FILE_JS  = $JS_MODUL.'/upload_kpi';
 if($_POST['mod_id'])
 {
 		$mod_id = $_POST['mod_id'];
@@ -55,9 +54,6 @@ $id_peg = $_SESSION['SESSION_ID_PEG'];
 $today = date("Y-m-d h:i:s");
 #Initiate TABLE
 $tbl_name	= "r_kpi";
-
-
-
 //-----------------------------------END OF LOCAL CONFIG-------------------------------//
 
 function delete_(){
@@ -151,8 +147,11 @@ for ($i=2; $i<=$hasildata; $i++)
     $r_kpi__bulan = $data->val($i, 3);
     $r_kpi__tahun = $data->val($i, 4);
     $r_kpi__nilai = $data->val($i, 5);
-    
-    
+
+    $subtgl=$r_kpi__tahun.''.sprintf('%02s',$r_kpi__bulan);
+
+     $tgl_kpi= substr($subtgl, 0, 4).'-'.substr($subtgl,4,2).'-10';
+   
  
     $sql_cek="SELECT  
                 r_kpi__finger AS mutasi,
@@ -179,7 +178,8 @@ for ($i=2; $i<=$hasildata; $i++)
                 . "(r_kpi__finger,"
                 . "r_kpi__bulan,"
                 . "r_kpi__tahun,"
-                . "r_kpi__nilai,"
+                . "r_kpi__tgl,"
+                . "r_kpi__nilai," 
                 . "r_kpi__date_created,"
                 . "r_kpi__date_updated,"
                 . "r_kpi__user_created,"
@@ -188,6 +188,7 @@ for ($i=2; $i<=$hasildata; $i++)
                 . "('$r_kpi__finger',"
                 . "'$r_kpi__bulan',"
                 . "'$r_kpi__tahun',"
+                 . "'$tgl_kpi',"
                 . "'$r_kpi__nilai',"
                 . "now(),"
                 . "now(),"
@@ -249,8 +250,6 @@ for ($i=2; $i<=$hasildata; $i++)
                                     $uploadMessageError = "Sorry, there was an error uploading your file.";
                                     $uploadOk=0;
                             }
-            
-                            
 				$sqlresult = $db->Execute($sql);
                              
                               
@@ -264,6 +263,7 @@ for ($i=2; $i<=$hasildata; $i++)
                              
                                  $sql_edit .= " r_kpi__bulan ='$r_kpi__bulan',";
                                  $sql_edit .= " r_kpi__tahun = '$r_kpi__tahun',";
+                                  $sql_edit .= " r_kpi__tgl = '$tgl_kpi',";
                                  $sql_edit .= " r_kpi__nilai = '$r_kpi__nilai',";
                                  $sql_edit .= " r_kpi__date_updated = now(),";
                                  $sql_edit .= " r_kpi__user_updated = '$id_peg'";

@@ -314,14 +314,14 @@ function hideIt(){
                         <TR>
 				<TD>Tanggal Terbit SP</TD>
                                 <TD>
-				<input type="text" NAME="sp_tgl"  value="<!--{$EDIT_T_SP__TGl}-->">
+                                    <input  type="text" NAME="sp_tgl"  readonly="" value="<!--{$EDIT_T_SP__TGl}-->">
 				<img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">	
                                 </TD>         
 			</TR> 
                         <TR>
 				<TD>Tanggal Berakhir SP</TD>
                                 <TD>
-                                <input type="text" NAME="sp_tgl_exp"  value="<!--{$EDIT_T_SP__TGl_EXP}-->">
+                                <input type="text" NAME="sp_tgl_exp"  readonly=""  value="<!--{$EDIT_T_SP__TGl_EXP}-->">
                                 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl_exp,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
                                 </TD>         
 			</TR>
@@ -331,14 +331,14 @@ function hideIt(){
                          <TR>
 				<TD>Tanggal Terbit SP</TD>
                                 <TD>
-				<input type="text" NAME="sp_tgl"  value="<!--{$EDIT_T_SP__TGl}-->">
+				<input type="text" NAME="sp_tgl"  readonly=""  value="<!--{$EDIT_T_SP__TGl}-->">
 				<img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">	
                                 </TD>         
 			</TR> 
                         <TR>
 				<TD>Tanggal Berakhir SP</TD>
                                 <TD>
-                                 <input type="text" NAME="sp_tgl_exp"  value="<!--{$EDIT_T_SP__TGl_EXP}-->">
+                                 <input type="text" NAME="sp_tgl_exp"  readonly=""  value="<!--{$EDIT_T_SP__TGl_EXP}-->">
                          <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl_exp,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
                                 </TD>         
 			</TR>
@@ -348,7 +348,7 @@ function hideIt(){
                          <TR>
 				<TD>Tanggal Terbit SP</TD>
                                 <TD>
-				<input type="text" NAME="sp_tgl"  value="<!--{$EDIT_T_SP__TGl}-->">
+				<input type="text" NAME="sp_tgl"  readonly=""  value="<!--{$EDIT_T_SP__TGl}-->">
 				<img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">	
                                 </TD>         
 			</TR> 
@@ -365,7 +365,7 @@ function hideIt(){
                        <TR>
 				<TD>Tanggal Terbit SP</TD>
                                 <TD>
-				<input type="text" NAME="sp_tgl"  value="<!--{$EDIT_T_SP__TGl}-->"  readonly="" >
+				<input type="text" NAME="sp_tgl"  readonly=""  value="<!--{$EDIT_T_SP__TGl}-->"  readonly="" >
 				</TD>         
 			</TR> 
                         <TR>
@@ -430,28 +430,28 @@ function hideIt(){
                     <TR>
                                 <TD>Pelanggaran<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_pelanggaran"  size="12" ><!--{$EDIT_T_SP__PELANGGARAN}--></textarea></TD>
+                                <TD><textarea rows="5" cols="60" NAME="sp_pelanggaran"  size="12" ><!--{$EDIT_T_SP__PELANGGARAN}--></textarea></TD>
                     </TR>
                        <!--2.PELANGGARAN CABANG TAMBAH -->  
                    <!--{elseif ($EDIT_VAL==0)AND($JENIS_USER_SES ==2)}-->   
                     <TR>
                                 <TD>Pelanggaran<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_pelanggaran"  size="12" ><!--{$EDIT_T_SP__PELANGGARAN}--></textarea></TD>
+                                <TD><textarea rows="5" cols="60" NAME="sp_pelanggaran"  size="12" ><!--{$EDIT_T_SP__PELANGGARAN}--></textarea></TD>
                     </TR>
                        <!--3.PELANGGARAN CABANG -->  
                      <!--{elseif ($EDIT_VAL==1)AND($JENIS_USER_SES ==2)AND($EDIT_T_SP__JENIS==1)}-->   
                       <TR>
                                 <TD>Pelanggaran<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_pelanggaran"  size="12" ><!--{$EDIT_T_SP__PELANGGARAN}--></textarea></TD>
+                                <TD><textarea rows="5" cols="60" NAME="sp_pelanggaran"  size="12" ><!--{$EDIT_T_SP__PELANGGARAN}--></textarea></TD>
                     </TR>
                      <!--4.PELANGGARAN CABANG -->  
                        <!--{else ($EDIT_VAL==1)AND($JENIS_USER_SES ==2)AND ($EDIT_T_SP__JENIS>1)}-->   
                      <TR>
                                 <TD>Pelanggaran<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_pelanggaran"  size="12" readonly=""><!--{$EDIT_T_SP__PELANGGARAN}--></textarea></TD>
+                                <TD><textarea rows="5" cols="60" NAME="sp_pelanggaran"  size="12" readonly=""><!--{$EDIT_T_SP__PELANGGARAN}--></textarea></TD>
                     </TR>
                          <!--{/if}-->  
                         
@@ -462,28 +462,28 @@ function hideIt(){
                     <TR>
                                 <TD>Alasan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_alasan"  size="12" ><!--{$EDIT_T_SP__ALASAN}--></textarea></TD>
+                                <TD><textarea rows="5" cols="60" NAME="sp_alasan"  size="12" ><!--{$EDIT_T_SP__ALASAN}--></textarea></TD>
                     </TR>
                        <!--2.PELANGGARAN CABANG TAMBAH -->  
                    <!--{elseif ($EDIT_VAL==0)AND($JENIS_USER_SES ==2)}-->
                     <TR>
                                 <TD>Alasan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_alasan"  size="12" ><!--{$EDIT_T_SP__ALASAN}--></textarea></TD>
+                                <TD><textarea rows="5" cols="60" NAME="sp_alasan"  size="12" ><!--{$EDIT_T_SP__ALASAN}--></textarea></TD>
                     </TR>
                       <!--3.PELANGGARAN CABANG -->  
                      <!--{elseif ($EDIT_VAL==1)AND($JENIS_USER_SES ==2)AND($EDIT_T_SP__JENIS==1)}-->   
                        <TR>
                                 <TD>Alasan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_alasan"  size="12" ><!--{$EDIT_T_SP__ALASAN}--></textarea></TD>
+                                <TD><textarea rows="5" cols="60" NAME="sp_alasan"  size="12" ><!--{$EDIT_T_SP__ALASAN}--></textarea></TD>
                     </TR>
                        <!--4.PELANGGARAN CABANG -->  
                        <!--{else ($EDIT_VAL==1)AND($JENIS_USER_SES ==2)AND ($EDIT_T_SP__JENIS>1)}-->   
                        <TR>
                                 <TD>Alasan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_alasan"  size="12" readonly="" ><!--{$EDIT_T_SP__ALASAN}--></textarea></TD>
+                                <TD><textarea rows="5" cols="60" NAME="sp_alasan"  size="12" readonly="" ><!--{$EDIT_T_SP__ALASAN}--></textarea></TD>
                     </TR> 
                      <!--{/if}-->
                      

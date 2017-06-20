@@ -159,13 +159,91 @@ function hideIt(){
                                        <TD>
                                             <select name="sts_pjm" >
                                                     <option value="">[Pilih Status Pinjaman]</option>
-                                                     <option value="1">Belum Lunas</option>
-                                                    <option value="2">Lunas</option>
+                                                     <option value="2">Belum Lunas</option>
+                                                    <option value="1">Lunas</option>
                                                      
                                                    
                                             </select> 
                                        </TD>
                             </TR>
+                            <TR>
+							<TD>Periode Awal</TD>
+							<TD>
+                                                        <SELECT NAME="tgl1" > 
+                                                        <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
+                                                        <!--{section name=foo start=1 loop=31 step=1}-->
+                                                                  <!--{if ($smarty.section.foo.index)==$DAY1}-->
+                                                                         <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+                                                                  <!--{else}-->
+                                                                                 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+                                                                 <!--{/if}--> 
+                                                        <!--{/section}-->
+                                                        </SELECT> 
+							<SELECT name="bulan1"> 
+								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
+                                                                <OPTION value="01"<!--{if $MONTH1==1}-->selected<!--{/if}-->>Januari</OPTION>
+								<OPTION VALUE="02"<!--{if $MONTH1==2}-->selected<!--{/if}-->  >Februari</OPTION>
+								<OPTION VALUE="03"<!--{if $MONTH1==3}-->selected<!--{/if}-->  >Maret</OPTION>
+								<OPTION VALUE="04"<!--{if $MONTH1==4}-->selected<!--{/if}-->  >April</OPTION>
+								<OPTION VALUE="05"<!--{if $MONTH1==5}-->selected<!--{/if}--> >Mei</OPTION>
+								<OPTION VALUE="06"<!--{if $MONTH1==6}-->selected<!--{/if}-->  >Juni</OPTION>
+								<OPTION VALUE="07"<!--{if $MONTH1==7}-->selected<!--{/if}-->  >Juli</OPTION>
+								<OPTION VALUE="08"<!--{if $MONTH1==8}-->selected<!--{/if}-->  >Agustus</OPTION>
+								<OPTION VALUE="09"<!--{if $MONTH1==9}-->selected<!--{/if}-->  >September</OPTION>
+								<OPTION VALUE="10"<!--{if $MONTH1==10}-->selected<!--{/if}-->  >Oktober</OPTION>
+								<OPTION VALUE="11"<!--{if $MONTH1==11}-->selected<!--{/if}-->  >November</OPTION>
+								<OPTION VALUE="12"<!--{if $MONTH1==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+                                                        </SELECT> 
+						<SELECT NAME="tahun1" > 
+						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
+						<!--{section name=foo start=2010 loop=2021 step=1}-->
+ 							  <!--{if ($smarty.section.foo.index)==$YEAR1}-->
+								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+							  <!--{else}-->
+									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+							 <!--{/if}--> 
+						<!--{/section}-->
+						</SELECT>                                                 
+						 </TD></TR>    
+                                         <TR>
+							<TD>Periode Akhir</TD>
+							<TD>
+                                                        <SELECT NAME="tgl2" > 
+                                                        <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
+                                                        <!--{section name=foo start=1 loop=31 step=1}-->
+                                                                  <!--{if ($smarty.section.foo.index)==$DAY2}-->
+                                                                         <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+                                                                  <!--{else}-->
+                                                                                 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+                                                                 <!--{/if}--> 
+                                                        <!--{/section}-->
+                                                        </SELECT> 
+							<SELECT name="bulan2"> 
+								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
+                                                                <OPTION value="01"<!--{if $MONTH2==1}-->selected<!--{/if}-->>Januari</OPTION>
+								<OPTION VALUE="02"<!--{if $MONTH2==2}-->selected<!--{/if}-->  >Februari</OPTION>
+								<OPTION VALUE="03"<!--{if $MONTH2==3}-->selected<!--{/if}-->  >Maret</OPTION>
+								<OPTION VALUE="04"<!--{if $MONTH2==4}-->selected<!--{/if}-->  >April</OPTION>
+								<OPTION VALUE="05"<!--{if $MONTH2==5}-->selected<!--{/if}--> >Mei</OPTION>
+								<OPTION VALUE="06"<!--{if $MONTH2==6}-->selected<!--{/if}-->  >Juni</OPTION>
+								<OPTION VALUE="07"<!--{if $MONTH2==7}-->selected<!--{/if}-->  >Juli</OPTION>
+								<OPTION VALUE="08"<!--{if $MONTH2==8}-->selected<!--{/if}-->  >Agustus</OPTION>
+								<OPTION VALUE="09"<!--{if $MONTH2==9}-->selected<!--{/if}-->  >September</OPTION>
+								<OPTION VALUE="10"<!--{if $MONTH2==10}-->selected<!--{/if}-->  >Oktober</OPTION>
+								<OPTION VALUE="11"<!--{if $MONTH2==11}-->selected<!--{/if}-->  >November</OPTION>
+								<OPTION VALUE="12"<!--{if $MONTH2==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+                                                        </SELECT> 
+						<SELECT NAME="tahun2" > 
+						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
+						<!--{section name=foo start=2010 loop=2021 step=1}-->
+ 							  <!--{if ($smarty.section.foo.index)==$YEAR2}-->
+								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+							  <!--{else}-->
+									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+							 <!--{/if}--> 
+						<!--{/section}-->
+						</SELECT>                                                 
+						 </TD></TR>
                                                         
 
 							<TR>
@@ -246,17 +324,23 @@ function hideIt(){
 										<TABLE ALIGN="CENTER" WIDTH="100%"  cellspacing="1" cellpadding="2">										
 										<thead>									 
 										<TR>
-                                                                                    <TH class="tdatahead" align="left">NO </TH>
-                                                                                        <TH class="tdatahead" align="left">NIP </TH>
-                                                                                        <TH class="tdatahead" align="left">ID FINGER </TH>
-											<TH class="tdatahead" align="left">NAMA PEGAWAI</TH>
-											<TH class="tdatahead" align="left">CABANG</TH>
-											<TH class="tdatahead" align="left">DEPARTEMEN</TH>
-                                                                                        <TH class="tdatahead" align="left">JENIS FLATFON</TH>
-                                                                                        <TH class="tdatahead" align="left">TENOR</TH>
-                                                                                        <TH class="tdatahead" align="left">TOTAL SUDAH DIBAYAR</TH>
-                                                                                        <TH class="tdatahead" align="left">TOTAL CICILAN </TH>
-                                                                                        <TH class="tdatahead" align="left">STATUS PINJAMAN</TH>
+                                                                                <TH class="tdatahead" align="left">NO</TH>
+                                                                                <TH class="tdatahead" align="left">ID PJM</TH>
+                                                                                <TH class="tdatahead" align="left" width="10%">NIP </TH>
+                                                                                <TH class="tdatahead" align="left" width="10%">NAMA</TH>                                                                                       
+                                                                                <TH class="tdatahead" align="left" >CABANG</TH>
+                                                                                <TH class="tdatahead" align="left">DEPARTEMEN</TH>
+                                                                                <TH class="tdatahead" align="left" >JABATAN</TH>                                                                                       
+                                                                                <TH class="tdatahead" align="left">JENIS PINJAMAN</TH>
+
+
+                                                                                <TH class="tdatahead" align="left">TOTAL PINJAM</TH>
+                                                                                <TH class="tdatahead" align="left">PEMBAYARAN</TH>
+                                                                                <TH class="tdatahead" align="left">JML CICILAN</TH>   
+                                                                                <TH class="tdatahead" align="left">CICILAN/BULAN</TH>
+                                                                                <TH class="tdatahead" align="left">SISA PINJAMAN</TH>                                                                                      
+                                                                                <TH class="tdatahead" align="left">CICILAN SUDAH BAYAR</TH>   
+                                                                                <TH class="tdatahead" align="left">STATUS</TH>
                                                                                       
                                                                                         
 											
@@ -267,44 +351,50 @@ function hideIt(){
 										<tbody>									
 										<!--{section name=x loop=$DATA_TB}-->
 										<TR onmouseover="setPointer(this, <!--{$INITSET[x]}-->, 'over', '<!--{$ROW_CLASSNAME[x]}-->', '#CCFFCC', '#FFCC99');" onmouseout="setPointer(this, <!--{$INITSET[x]}-->, 'out', '<!--{$ROW_CLASSNAME[x]}-->', '#CCFFCC', '#FFCC99');" onmousedown="setPointer(this, <!--{$INITSET[x]}-->, 'click', '<!--{$ROW_CLASSNAME[x]}-->', '#CCFFCC', '#FFCC99');">
-                                                                                      <td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>  
-                                                                                    <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
-                                                                                     <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_cabang__nama}--></TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_dept__ket}--></TD>
-                                                                                        <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].r_ang__platfond|number_format:2:".":","}--></TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_ang__tenor_bulan}--></TD>
-                                                                                        <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].t_ang__nilai_angsuran|number_format:2:".":","}--></TD>
-                                                                                        <TD class="tdatacontent"> Sudah <!--{$DATA_TB[x].t_ang__angsuran_ke}--> Kali Angsuran</TD>
-                                                                                       <TD class="tdatacontent">
-                                                                                               <!--{if ($DATA_TB[x].t_pjm__approval)==1}-->
-                                                                                                         <font color="#F24458">Belum Lunas</font>              
-                                                                                                <!--{elseif ($DATA_TB[x].t_pjm__approval) ==2}-->  
-                                                                                                         <font color="#2605FF">Lunas</font>     
-                                                                                                 <!--{else ($DATA_TB[x].t_pjm__approval) ==2}-->  
-                                                                                                           <font color="#2605FF">Lunas</font>     
-                                                                                                <!--{/if}--> 
-                                                                                       
-                                                                                       
-                                                                                       
-                                                                                       </TD>
+                                                                                <TD width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
+                                                                                <TD class="tdatacontent"><!--{$DATA_TB[x].t_pjm__no_pinjaman}--></TD>
+                                                                                <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
+                                                                                <TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
+                                                                                <TD class="tdatacontent"><!--{$DATA_TB[x].r_cabang__nama}--> </TD>
+                                                                                <TD class="tdatacontent"><!--{$DATA_TB[x].r_dept__ket}-->  </TD>
+                                                                                <TD class="tdatacontent"><!--{$DATA_TB[x].r_jabatan__ket}--> </TD>                                                                                        
+                                                                                <TD class="tdatacontent"><!--{if ($DATA_TB[x].t_pjm__jenis)==1}--><font color="#1a842d">COP</font><!--{else}--><font color="#2785c4">PRIBADI</font><!--{/if}--></TD>
+                                                                                <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].t_pjm__total_pinjam|number_format:2:".":","}--></TD>
+                                                                                <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].jml_sudah_bayar|number_format:2:".":","}--></TD>
+                                                                                <TD class="tdatacontent"><!--{$DATA_TB[x].t_pjm__tenor}--></TD>
+                                                                                <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].t_pjm__cicilan_perbulan|number_format:2:".":","}--></TD>
+                                                                                <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].sisa_pembayaran|number_format:2:".":","}--></TD>                                                                                           
+                                                                                <TD class="tdatacontent"><!--{$DATA_TB[x].jml_tenor_bayar}--> Bln</TD>
+                                                                                <TD class="tdatacontent"><!--{if ($DATA_TB[x].sisa_status)==1}--><font color="#2605FF">Lunas</font><!--{else}--><font color="#FA0505">Belum Lunas</font><!--{/if}--> </TD>
 										<!--{sectionelse}-->
 										<TR>
-											<TD class="tdatacontent" COLSPAN="10" align="center">Maaf, Data Masih Kosong</TD>
+											<TD class="tdatacontent" COLSPAN="15" align="center">Maaf, Data Masih Kosong</TD>
 										</TR>
 										<!--{/section}-->
 										</tbody>
                                                                                 <TR><!--{section name=y loop=$DATA_TB4}-->
-										<Td class="tdatahead" colspan="9" align="right" ><b>JML Karyawan : </b></td>	
-										<Td class="tdatahead"  colspan="2"  align=" right" > <!--{$DATA_TB4[y].total_orang}--> Orang </td>	
+										<TD class="tdatahead" colspan="2" align="center">Banyak karyawan</td>
+                                                                               
+                                                                                <TD class="tdatahead" colspan="1" align="right"><!--{$DATA_TB4[y].total_no_pjm}--></td>
+                                                                                <TD class="tdatahead" colspan="1" align="right"></td>
+                                                                                <TD class="tdatahead" colspan="1" align="right"></td>
+                                                                                <TD class="tdatahead" colspan="1" align="right"></td>
+                                                                                <TD class="tdatahead" colspan="1" align="right"></td>
+                                                                                <TD class="tdatahead" colspan="1" align="right"></td>
+                                                                                <TD class="tdatahead" colspan="1" align="right"><!--{$DATA_TB4[y].total_pjm|number_format:2:".":","}--></td><!-- total pembayran-->
+                                                                                <TD class="tdatahead" colspan="1" align="right"><!--{$DATA_TB4[y].total_pembayaran|number_format:2:".":","}--> </td><!-- total pembayran-->
+                                                                                <TD class="tdatahead" colspan="1" align="right"></td>
+                                                                                <TD class="tdatahead" colspan="1" align="right"></td>
+                                                                                <TD class="tdatahead" colspan="1" align="right"><!--{$DATA_TB4[y].total_sisa|number_format:2:".":","}--> </td><!--sisa pinjaman-->
+                                                                                <TD class="tdatahead" colspan="1" align="right"></td>
+                                                                                <TD class="tdatahead" colspan="1" align="right"></td>
                                                                                 <!--{/section}-->
 										</TR>
                                                                                                 
                                                                                                 
                                                                                                 
                                                                                                 
-									</TABLE></TD> 
+									</TABLE></TD>
 										  
 
 

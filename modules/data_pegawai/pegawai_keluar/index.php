@@ -50,21 +50,21 @@ require_once($DIR_INC."/libs.inc.php");
 
 $jenis_user   =  $_SESSION['SESSION_JNS_USER'];
 $kode_pw_ses  = $_SESSION['SESSION_KODE_CABANG'];
-$tahun_ses_aktif=$_SESSION['SESSION_TAHUN_AKTIF'];
-$bulan_ses_aktif=$_SESSION['SESSION_BULAN_AKTIF'];
-$smarty->assign ("TAHUN_SES", $tahun_ses_aktif);
-$smarty->assign ("BULAN_SES", $bulan_ses_aktif);
- 
+$group_session = $_SESSION['SESSION_GROUP'];
+$periode_awal= $_SESSION['SESSION_AWAL_AKTIF'];
+$periode_akhir= $_SESSION['SESSION_AKHIR_AKTIF'];
 
+$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$smarty->assign ("PERIODE_AKHIR", $periode_akhir);
 $smarty->assign ("JENIS_USER_SES", $jenis_user);
 $smarty->assign ("KODE_PW_SES", $kode_pw_ses);
+$smarty->assign ("GROUP_USER", $group_session);
 
 //echo "JENIS USER".$_SESSION['SESSION_JNS_USER'];
 //echo "<br>KODE PERWAKILAN".$_SESSION['SESSION_KODE_PERWAKILAN'];
 
 #HREF
 $smarty->assign ("HREF_HOME_PATH", $HREF_HOME);
-
 $smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/data_pegawai/pegawai_keluar');
 $smarty->assign ("HREF_IMG_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images'));
 $smarty->assign ("HREF_CSS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/css'));
@@ -136,13 +136,17 @@ if ($_GET['departemen_cari']) $departemen_cari = $_GET['departemen_cari'];
 else if ($_POST['departemen_cari']) $departemen_cari= $_POST['departemen_cari'];
 else $departemen_cari="";
 
-if ($_GET['bulan']) $bulan = $_GET['bulan'];
-else if ($_POST['bulan']) $bulan = $_POST['bulan'];
-else $bulan="";
+if ($_GET['awal']) $awal_cari= $_GET['awal'];
+else if ($_POST['awal']) $awal_cari = $_POST['awal'];
+else $awal_cari="";
 
-if ($_GET['tahun']) $tahun = $_GET['tahun'];
-else if ($_POST['tahun']) $tahun = $_POST['tahun'];
-else $tahun="";
+if ($_GET['akhir']) $akhir_cari= $_GET['akhir'];
+else if ($_POST['akhir']) $akhir_cari = $_POST['akhir'];
+else $akhir_cari="";
+
+if ($_GET['no_cari']) $no_cari = $_GET['no_cari'];
+else if ($_POST['no_cari']) $no_cari = $_POST['no_cari'];
+else $no_cari="";
 
 
 
@@ -423,6 +427,7 @@ if($opt=="1"){
                                             A.r_resign__ket AS r_resign__ket,
                                             A.r_resign__mutasi AS r_resign__mutasi,
                                             A.r_resign__tgl AS r_resign__tgl,
+                                            A.r_resign__regretted AS r_resign__regretted,
                                             peg.r_pnpt__nip AS r_pnpt__nip,
                                             peg.r_pnpt__aktif AS r_pnpt__aktif,
                                             peg.r_jabatan__id AS r_jabatan__id,
@@ -440,18 +445,18 @@ if($opt=="1"){
                                             peg.r_pegawai__id AS r_pegawai__id,
                                             peg.r_pegawai__nama AS r_pegawai__nama
                                             FROM
-                                                    r_resign A
+                                            r_resign A
                                             INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi= A.r_resign__mutasi
-                                                      WHERE r_resign__no='".$_GET['id']."' ";
+                                             WHERE r_resign__no='".$_GET['id']."' ";
         
-      //  var_dump($sql_)or die();
-                                $resultSet = $db->Execute($sql_);
+
+$resultSet = $db->Execute($sql_);
 $edit_r_resign__no = $resultSet->fields[r_resign__no];
 $edit_r_resign__tgl=$resultSet->fields[r_resign__tgl];
 $edit_r_resign__approval=$resultSet->fields[r_resign__approval];
 $edit_r_resign__ket = $resultSet->fields[r_resign__ket];
 $edit_r_resign__mutasi = $resultSet->fields[r_resign__mutasi];
-
+$edit_r_resign__regretted= $resultSet->fields[r_resign__regretted];
 
 $edit_r_resign__nip = $resultSet->fields[r_pnpt__nip];
 $edit_r_resign__nama= $resultSet->fields[r_pegawai__nama];
@@ -477,6 +482,8 @@ $smarty->assign ("EDIT_RSG_NAMA",$edit_r_resign__nama);
 $smarty->assign ("EDIT_RSG_CABANG_ID",$edit_r_resign__cabang__id);
 $smarty->assign ("EDIT_RSG_JABATAN",$edit_r_resign__jabatan);
 $smarty->assign ("EDIT_RSG_CABANG",$edit_r_resign__cabang);
+$smarty->assign ("EDIT_REGRETTED",$edit_r_resign__regretted);
+
 $smarty->assign ("EDIT_VAL", $edit);
 
 
@@ -487,7 +494,6 @@ if ($_GET['search'] == '1')
     {
 	if (Privi($mod_id, $user_id, 'search') != 'no')
 	{
- 
 		  if($jenis_user=='2'){
 
                                   $sql  = " SELECT
@@ -496,6 +502,7 @@ if ($_GET['search'] == '1')
                                             A.r_resign__ket AS r_resign__ket,
                                             A.r_resign__mutasi AS r_resign__mutasi,
                                             A.r_resign__tgl AS r_resign__tgl,
+                                            A.r_resign__regretted AS r_resign__regretted,
                                             peg.r_pnpt__nip AS r_pnpt__nip,
                                             peg.r_pnpt__aktif AS r_pnpt__aktif,
                                             peg.r_jabatan__id AS r_jabatan__id,
@@ -524,6 +531,7 @@ if ($_GET['search'] == '1')
                                             A.r_resign__ket AS r_resign__ket,
                                             A.r_resign__mutasi AS r_resign__mutasi,
                                             A.r_resign__tgl AS r_resign__tgl,
+                                             A.r_resign__regretted AS r_resign__regretted,
                                             peg.r_pnpt__nip AS r_pnpt__nip,
                                             peg.r_pnpt__aktif AS r_pnpt__aktif,
                                             peg.r_jabatan__id AS r_jabatan__id,
@@ -564,22 +572,26 @@ if ($_GET['search'] == '1')
                                 if($nama_pegawai_cari!=''){
                                         $sql .= " AND r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari)."%'";
 				} 
-                                if ($bulan !='') {
-                                       $sql.=" AND MONTH(r_resign__tgl)='$bulan'";
+                                if ($awal_cari !='') {
+                                       $sql.=" AND r_resign__tgl>='$awal_cari'";
+                                }
+                                   if ($akhir_cari !='') {
+                                       $sql.=" AND r_resign__tgl<='$akhir_cari'";
+                                }
+                                  if ($no_cari !='') {
+                                       $sql.=" AND r_resign__mutasi='$no_cari'";
                                 }
 
-                                 if ($tahun !='') {
-                                       $sql.=" AND YEAR(r_resign__tgl)='$tahun'";
-                                }
+                              
 		
-			 	$sql .= " ORDER BY  trim(r_pegawai__nama) asc ";
+			 	$sql .= " ORDER BY  trim(r_resign__tgl) Desc ";
 
 			 if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
-//var_dump($sql)or die();
+
                                 $numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
-				$pages = $p->findPages($count,$LIMIT); 
-				$sql  .= "LIMIT ".$start.", ".$LIMIT;
+				//$pages = $p->findPages($count,$LIMIT); 
+				//$sql  .= "LIMIT ".$start.", ".$LIMIT;
 				$recordSet = $db->Execute($sql);
 				
 				$end = $recordSet->RecordCount();
@@ -599,8 +611,8 @@ if ($_GET['search'] == '1')
 					$z++;
 				}
 				$count_view = $start+1;
-				$count_all  = $start+$end;
-				$next_prev = $p->nextPrevCustom($page,$pages,"ORDER=".$ORDER."&".$str_completer); 
+				//$count_all  = $start+$end;
+				//$next_prev = $p->nextPrevCustom($page,$pages,"ORDER=".$ORDER."&".$str_completer); 
 }
 
 }
@@ -618,6 +630,7 @@ else
                                             A.r_resign__ket AS r_resign__ket,
                                             A.r_resign__mutasi AS r_resign__mutasi,
                                             A.r_resign__tgl AS r_resign__tgl,
+                                             A.r_resign__regretted AS r_resign__regretted,
                                             peg.r_pnpt__nip AS r_pnpt__nip,
                                             peg.r_pnpt__aktif AS r_pnpt__aktif,
                                             peg.r_jabatan__id AS r_jabatan__id,
@@ -647,6 +660,7 @@ else
                                                         A.r_resign__ket AS r_resign__ket,
                                                         A.r_resign__mutasi AS r_resign__mutasi,
                                                         A.r_resign__tgl AS r_resign__tgl,
+                                                        A.r_resign__regretted AS r_resign__regretted,
                                                         peg.r_pnpt__nip AS r_pnpt__nip,
                                                         peg.r_pnpt__aktif AS r_pnpt__aktif,
                                                         peg.r_jabatan__id AS r_jabatan__id,
@@ -682,26 +696,26 @@ else
 					
                                            $sql .= "AND r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari)."%'";
 				} 
-                                if ($bulan !='') {
-                                       $sql.=" AND MONTH(r_resign__tgl)='$bulan'";
+                                 if ($awal_cari !='') {
+                                       $sql.=" AND r_resign__tgl>='$awal_cari'";
+                                }
+                                   if ($akhir_cari !='') {
+                                       $sql.=" AND r_resign__tgl<='$akhir_cari'";
+                                }
+                                 if ($no_cari !='') {
+                                       $sql.=" AND r_resign__mutasi='$no_cari'";
                                 }
 
-                                 if ($tahun !='') {
-                                       $sql.=" AND YEAR(r_resign__tgl)='$tahun'";
-                                }
-
-				$sql .= " ORDER BY  trim(r_pegawai__nama) asc ";
-                         
- 
+				$sql .= " ORDER BY  trim(r_resign__tgl) Desc "; 
 				if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
 
-//var_dump($sql)or die();
+
                                 $numresults=$db->Execute($sql);
                            
 				$count = $numresults->RecordCount();
 
-				$pages = $p->findPages($count,$LIMIT); 
-				$sql  .= "LIMIT ".$start.", ".$LIMIT;
+				//$pages = $p->findPages($count,$LIMIT); 
+				//$sql  .= "LIMIT ".$start.", ".$LIMIT;
 				
 				$recordSet = $db->Execute($sql);
 				$end = $recordSet->RecordCount();
@@ -722,8 +736,8 @@ else
 				}
 
 				$count_view = $start+1;
-				$count_all  = $start+$end;
-				$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
+				//$count_all  = $start+$end;
+				//$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
 }
 //---------------------------------CLOSE VIEW INDEX---------------------------------------------------------------------//
 

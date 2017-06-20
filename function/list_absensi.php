@@ -9,16 +9,22 @@ require_once('../includes/config.conf.php');
 $db = &ADONewConnection($DB_TYPE);
 // $db->debug = true;
 $db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
+ if($_POST['q'])
+{ $q= $_POST['q'];
+}else{ $q= $_GET['q'];}
 
+if($q!='')
+{
+    $kode_cabang=  base64_decode($q);
+}
 
- if($_POST['kode_cabang'])
-{ $kode_cabang = $_POST['kode_cabang'];
-}else{ $kode_cabang = $_GET['kode_cabang'];}
-
- if($_POST['pil'])
-{ $pil = $_POST['pil'];
-}else{ $pil = $_GET['pil'];}
-
+ if($_POST['p'])
+{ $p = $_POST['p'];
+}else{ $p= $_GET['p'];}
+if($p!='')
+{
+    $pil=  base64_decode($p);
+}
 
  if($_POST['cari'])
 { $cari = $_POST['cari'];
@@ -134,21 +140,25 @@ $sql="SELECT
   F.r_subdept__id AS r_subdept__id,
   F.r_subdept__ket AS r_subdept__ket,
   G.r_jabatan__id AS r_jabatan__id,
-  G.r_jabatan__ket AS r_jabatan__ket
-
+  G.r_jabatan__ket AS r_jabatan__ket,
+  H.r_shift__id AS r_shift__id,
+H.r_shift__ket AS r_shift__ket
 FROM
-  r_penempatan A, r_pegawai B, r_cabang C, r_subcabang D,r_departement E,r_subdepartement F ,r_jabatan G
+	r_penempatan A,
+	r_pegawai B,
+	r_cabang C,
+	r_subcabang D,
+	r_departement E,
+	r_subdepartement F,
+	r_jabatan G,r_shift H
 WHERE
-  A.r_pnpt__id_pegawai = B.r_pegawai__id
-  AND
-  A.r_pnpt__subcab = D.r_subcab__id
-  AND
-  D.r_subcab__cabang = C.r_cabang__id 
-  
-  AND
-  A.r_pnpt__subdept=F.r_subdept__id AND F.r_subdept__dept=E.r_dept__id
-  AND
-  G.r_jabatan__id=A.r_pnpt__jabatan AND  A.r_pnpt__aktif = 1 AND r_cabang__id ='$kode_cabang' ";
+	A.r_pnpt__id_pegawai = B.r_pegawai__id
+AND A.r_pnpt__subcab = D.r_subcab__id
+AND D.r_subcab__cabang = C.r_cabang__id
+AND A.r_pnpt__subdept = F.r_subdept__id
+AND F.r_subdept__dept = E.r_dept__id
+AND G.r_jabatan__id = A.r_pnpt__jabatan
+AND A.r_pnpt__aktif = 1 AND A.r_pnpt__shift=H.r_shift__id AND r_cabang__id ='$kode_cabang' ";
 
 
 if ($pil !="") {
@@ -164,7 +174,7 @@ if ($pil !="") {
 
 
 $sql.=" order by r_pegawai__nama "; 
-//echo ($sql);
+//echo $sql;
 $rs_paging	= $db->execute($sql);
 $n_rec = $rs_paging->recordCount();
 $sql .= "limit $hal_ke_,$n_limit ";
@@ -225,7 +235,6 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 <td width="10">:</td>
 <td width="30">
 <select name='pil' class="text">
-<option value=0></option>
 <option value='1' <?PHP if ($pil==1) { echo "selected"; } ?>>Nama  </option>
 <option value='2' <?PHP if ($pil==2) { echo "selected"; } ?>>NIP</option>
 <!-- <option value='4' <?PHP if ($pil==4) { echo "selected"; } ?>>Alamat</option>
@@ -278,12 +287,13 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
                                         $cabang=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__tmpt_lahir']);
                                         $jabatan=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__tgl_lahir']);
                                         $level=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__ktp']);    
-                                        $shift=str_replace("'","",$list_arr_satuan[$i]['r_pnpt__shift']);  
+                                        $shift=str_replace("'","",$list_arr_satuan[$i]['r_pnpt__shift']); 
+                                        $shift_ket=str_replace("'","",$list_arr_satuan[$i]['r_shift__ket']); 
                                         $tgl_masuk=str_replace("'","",$list_arr_satuan[$i]['r_pegawai__tgl_masuk']);  
 				?>
 				
 				<tr align="center" 
-                                    onclick="GetPengaduan('<?=$nama;?>','<?=$finger;?>','<?=$shift;?>');"  
+                                    onclick="GetPengaduan('<?=$nama;?>','<?=$finger;?>','<?=$shift;?>','<?=$shift_ket;?>');"  
                                     onMouseOver="setPointer(this, <?=$initSet[$i];?>, 'over', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
                                     onMouseOut="setPointer(this, <?=$initSet[$i];?>, 'out', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
                                     onMouseDown="setPointer(this, <?=$initSet[$i];?>, 'click', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');"> 
@@ -340,11 +350,12 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 </div>
 
 <script>
-function GetPengaduan(r_pegawai__nama,r_pnpt__finger_print,r_pnpt__shift) {
+function GetPengaduan(r_pegawai__nama,r_pnpt__finger_print,r_pnpt__shift,shift_ket) {
          
          window.opener.document.getElementById('r_pegawai__nama').value=r_pegawai__nama;
           window.opener.document.getElementById('r_pnpt__finger_print').value=r_pnpt__finger_print;
           window.opener.document.getElementById('r_pnpt__shift').value=r_pnpt__shift;
+           window.opener.document.getElementById('shift_ket').value=shift_ket;
          window.close();
     //    alert(KodeDepartemen);
 }
@@ -352,13 +363,23 @@ function GetPengaduan(r_pegawai__nama,r_pnpt__finger_print,r_pnpt__shift) {
 
 
 function doPaging(hal) {
-  frm.action="list_absensi.php";
+//  frm.action="list_absensi.php";
+//  frm.submit();
+  var kode_cabang= document.frm.kode_cabang.value;
+  var kode_cabang_encoded = btoa(kode_cabang);
+   frm.action='list_absensi.php?q='+kode_cabang_encoded;
   frm.submit();
 }
 
 
 function submit(){
-  frm.action="list_absensi.php";
+     var  pil= document.frm.pil.value;
+     var kode_cabang= document.frm.kode_cabang.value;
+     
+     
+    var kode_cabang_encoded = btoa(kode_cabang);
+    var pil_encoded = btoa(pil);
+  frm.action='list_absensi.php?q='+kode_cabang_encoded+'&p='+pil_encoded;
   frm.submit();
 }
 

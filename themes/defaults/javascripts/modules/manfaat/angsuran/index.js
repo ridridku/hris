@@ -32,7 +32,7 @@ function formatangka(objek) {
    for (i = panjang; i > 0; i--) {
      j = j + 1;
      if (((j % 3) == 1) && (j != 1)) {
-       c = b.substr(i-1,1) + "." + c;
+       c = b.substr(i-1,1) + "," + c;
      } else {
        c = b.substr(i-1,1) + c;
      }
@@ -44,48 +44,18 @@ function formatangka(objek) {
 function checkFrm(theForm){
 with (theForm){
    
-//                if (check_list.value == "") OR (check_list.value != "")
+//             if (check_list.value == "")
 //		{ 
 //			alert ("Silahkan Isi Approval!"); 
 //			check_list.focus();
 //			return false; 
 //		}
-//    
-//        
-//                else if (r_ang__platfond.value == "") 
-//		{ 
-//			alert ("Silahkan Isi Isi Flatfond!"); 
-//			r_ang__platfond.focus();
-//			return false; 
-//		}
-//                
-//                else if (r_ang__total.value == "") 
-//		{ 
-//			alert ("Silahkan Isi Besar Pinjaman!"); 
-//			r_ang__total.focus();
-//			return false; 
-//		}
-//
-//                else if (r_ang__tenor_bulan.value == "") 
-//		{ 
-//			alert ("Silahkan Isi Tenor Pinjaman!"); 
-//			r_ang__tenor_bulan.focus();
-//			return false; 
-//		}
-//                else if (r_ang__cicilan.value == "") 
-//		{ 
-//			alert ("Silahkan Isi Cicilan Per Bulan!"); 
-//			r_ang__cicilan.focus();
-//			return false; 
-//		}
-//                
-//
 //
 //	else
-//		{
+		{
 			submit();
 			return true;
-//		}
+		}
 }
 	
 	

@@ -16,7 +16,7 @@ ul, ol {
 p, label {
    background: #c3daf9 url("../images/layout/bg000000.gif") repeat-x scroll 0 0;
     color: #083772;
-    font-size: 11px;
+    font-size: 12px;
     
 }
 .container-wrapper {
@@ -107,9 +107,60 @@ function hideIt(){
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/calendar/dhtmlgoodies_calendar.js"></SCRIPT>
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/tw-ajax.js"></SCRIPT>
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/tw-sack.js"></SCRIPT>
-
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/jquery.dataTables.min-right.css" type="text/css">
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/fixedColumns.dataTables.min.css" type="text/css">
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/buttons.dataTables.min.css" type="text/css">	  
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery-1.12.4.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery.dataTables.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.fixedColumns.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.buttons.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.colVis.min.js"></SCRIPT>
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/style_sorting.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_sorting.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_p.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.flash.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jszip.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/pdfmake.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/vfs_fonts.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.html5.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.print.min.js"></SCRIPT>
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/select.dataTables.min.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.select.min.js"></SCRIPT>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!-- #EndEditable -->
+
+<script>
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        scrollY:        "430",
+        scrollX:        true,
+        scrollCollapse: true,
+        info:true,
+        paging: false,  
+         dom: 'Bfrtip',
+        buttons: ['excel'],
+       language: {search: "Pencarian:",buttons: {colvis: 'Atur Kolom'}},
+        select: {style: 'single'},
+          Sorting: [[ 2, "desc" ]], 
+          pageLength: "50", 
+    // lengthMenu: [ 50, 100, 300, 1000],
+       fixedColumns:   { leftColumns: 4,rightColumns:0 }
+
+        });
+        
+} );
+</script>
+
+<STYLE>
+/* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {width: 1100;margin: 0 auto;}
+    .number_range_filter{width:100px;}
+    
+      div.ColVis {
+        float: centerPage;
+    }
+  </STYLE>
 </HEAD>
 <body class="contentPage" onLoad="hideIt(); <!--{if $OPT==1}-->showAll('_menuEntry1_',1);hideAll('_menuEntry2_',1);<!--{else}-->hideAll('_menuEdit_',1);hideAll('_menuEntry1_',1);showAll('_menuEntry2_',1);<!--{/if}-->">
 <!--tombol_tambah -->
@@ -123,7 +174,7 @@ function hideIt(){
 <DIV ID="_menuEntry1_1" style="top:10px;width:100%;display:none;position:absolute;">
                             
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat">Posting Rekap Absensi HRD</td></tr>
+		<tr><td class="tcat">Posting Rekap Kehadiran HRD</td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/form.gif" align="absmiddle" border="0"> Posting Rekap Absensi HRD</td></tr>
@@ -195,39 +246,22 @@ function hideIt(){
 
 						<!--{/if}-->
 				</TD>
-			</TR>
-
-                        <TR>
-							<TD>Periode Aktif</TD>
-							<TD>							
-							<SELECT name="bulan"   > 
-								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <!--{if $BULAN_SES==1}-->selected<!--{/if}-->>Januari</OPTION>
-								<OPTION VALUE="02"<!--{if $BULAN_SES==2}-->selected<!--{/if}-->  >Februari</OPTION>
-								<OPTION VALUE="03"<!--{if $BULAN_SES==3}-->selected<!--{/if}-->  >Maret</OPTION>
-								<OPTION VALUE="04"<!--{if $BULAN_SES==4}-->selected<!--{/if}-->  >April</OPTION>
-								<OPTION VALUE="05"<!--{if $BULAN_SES==5}-->selected<!--{/if}--> >Mei</OPTION>
-								<OPTION VALUE="06"<!--{if $BULAN_SES==6}-->selected<!--{/if}-->  >Juni</OPTION>
-								<OPTION VALUE="07"<!--{if $BULAN_SES==7}-->selected<!--{/if}-->  >Juli</OPTION>
-								<OPTION VALUE="08"<!--{if $BULAN_SES==8}-->selected<!--{/if}-->  >Agustus</OPTION>
-								<OPTION VALUE="09"<!--{if $BULAN_SES==9}-->selected<!--{/if}-->  >September</OPTION>
-								<OPTION VALUE="10"<!--{if $BULAN_SES==10}-->selected<!--{/if}-->  >Oktober</OPTION>
-								<OPTION VALUE="11"<!--{if $BULAN_SES==11}-->selected<!--{/if}-->  >November</OPTION>
-								<OPTION VALUE="12"<!--{if $BULAN_SES==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
-                                                        </SELECT> 
-
-
-							<SELECT name="tahun" > 
-						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
-						<!--{section name=foo start=2010 loop=2021 step=1}-->
- 							  <!--{if ($smarty.section.foo.index)==$TAHUN_SES}-->
-								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
-							  <!--{else}-->
-									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
-							 <!--{/if}--> 
-						<!--{/section}-->
-						</SELECT> 
-						 </TD></TR>
+			</TR>                       
+                         <TR>
+				<TD>Periode Awal<font color="#ff0000">*</font></TD>
+                                <TD>
+                                <input type="text" readonly="" NAME="periode_awal" value="<!--{$PERIODE_AWAL}-->">
+				<img  src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.periode_awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+                                </TD>
+			</TR>  
+                         <TR>
+				<TD>Periode Akhir<font color="#ff0000">*</font></TD>
+                                <TD>
+                                <input type="text" readonly="" NAME="periode_akhir" value="<!--{$PERIODE_AKHIR}-->">
+				<img  src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.periode_akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+                                </TD>
+			</TR>  
+                        
                         
                         
 <INPUT TYPE="hidden" name="t_abs__id" value="<!--{$EDIT_T_ABS__ID}-->">      
@@ -331,98 +365,92 @@ function hideIt(){
 		
 		<FORM METHOD=GET ACTION="" NAME="frmList">
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat"> Data Rekap Kehadiran</td></tr>
+		<tr><td class="tcat">Posting Rekap Kehadiran HRD</td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" >
-		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0"> Data Rekap Kehadiran  </td></tr>
+		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0">Periode aktif  Mulai : <!--{$PERIODE_AWAL|date_format:"%d-%B-%Y"}--> s/d <!--{$PERIODE_AKHIR|date_format:"%d-%B-%Y"}-->  </td></tr>
 		<tr><td class="alt2" style="padding:0px;">
-		<table width="100%">
-		<tr>
-                                        						<th class="tdatahead" align="left">NO</TH>
-                                                                                        <th class="tdatahead" align="left">ID FINGER</TH>
-											<th class="tdatahead" align="left">NAMA</TH>											
-											<th class="tdatahead" align="left" >CABANG</TH>
-                                                                                        <th class="tdatahead" align="left" >SUB CABANG</TH>
-                                                                                        <th class="tdatahead" align="left" >DEPARTEMEN</TH>
-                                                                                        <th class="tdatahead" align="left" >TAHUN</TH>
-                                                                                        <th class="tdatahead" align="left" >BULAN</TH>
-                                                                                        <th class="tdatahead" align="left" >APPROVAL STATUS</TH>
-                                                                                        <th class="tdatahead" align="left" >HADIR</TH>
-                                                                                        <th class="tdatahead" align="left" >SAKIT</TH>
-                                                                                        <th class="tdatahead" align="left" >IZIN</TH>
-                                                                                        <th class="tdatahead" align="left" >ALPA</TH>
-                                                                                        <th class="tdatahead" align="left" >DINAS</TH>
-                                                                                        <th class="tdatahead" align="left" >CUTI</TH>
-                                                                                        <th class="tdatahead" align="left" >KETERANGAN</TH>
+<table id="example" class="display" cellpadding="6" cellspacing="6" width="100%">
+<thead class="tdatahead">
+                    
+                        <TR>
+                                <th class="alt2">NO</TH>
+                                <th class="alt2">ID FINGER</TH>
+                                <th class="alt2">NAMA</TH>											
+                                <th class="alt2" align="center">CABANG</TH>
+                                <th class="alt2" align="center">SUB CABANG</TH>
+                                <th class="alt2" align="center">DEPARTEMEN</TH>
+                                <th class="alt2" align="center">PERIODE AWAL</TH>
+                                <th class="alt2" align="center">PERIODE AKHIR</TH>
+                                <th class="alt2" align="center">STATUS AKTIF</TH>
+                                <th class="alt2" align="center">APPROVAL STATUS</TH>
+                                <th class="alt2" align="center">HADIR</TH>
+                                <th class="alt2" align="center">SAKIT</TH>
+                                <th class="alt2" align="center">IZIN</TH>
+                                <th class="alt2" align="center">ALPA</TH>
+                                <th class="alt2" align="center">DINAS</TH>
+                                <th class="alt2" align="center">CUTI</TH>
+                                <th class="alt2" align="center">KETERANGAN</TH>
 											
-			</tr>
+			</TR>
 			</thead>
-			<tbody>
+			<tbody class="tdatacontent" >
 			<!--{section name=x loop=$DATA_TB}-->
-			<tr class='<!--{cycle values="alt,alt3"}-->'>
-											<TD width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
-                                                                                        <TD class="tdatacontent"  ><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
-                                                                                         <TD class="tdatacontent"  ><!--{$DATA_TB[x].r_pegawai__nama}-->  </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].r_cabang__nama}-->  </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].r_subcab__nama}--> </TD> 
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].r_dept__ket}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__thn}--></TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__bln}--> </TD>
-                                                                                        <TD class="tdatacontent"  >
-                                                                                            
-                                                                                            
-                                                                                              <!--{if ($DATA_TB[x].t_rkp__approval) ==1}-->
-                                                                                                        Telah disetujui HRD
-                                                                                           <!--{elseif ($DATA_TB[x].t_rkp__approval) ==2}-->
-                                                                                                         <font color="green">Telah disetujui BOM</font>
-                                                                                            <!--{else ($DATA_TB[x].t_rkp__approval) ==3}-->  
-                                                                                                         <font color="#ff0000">Telah disetujui HGLM</font>
-                                                                                            <!--{/if}-->
-                                                                                        </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__hadir}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__sakit}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__izin}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__alpa}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__dinas}--> </TD>
-                                                                                         <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__cuti}--> </TD>
-                                                                                         <TD class="tdatacontent"  > 
-                                                                                         
-                                                                                           <!--{if ($DATA_TB[x].t_rkp__keterangan) =='KURANG'}-->
-                                                                                              <font color="#ff0000"><!--{$DATA_TB[x].t_rkp__keterangan}--></font>
-                                                                                           <!--{else}-->
-                                                                                              <!--{$DATA_TB[x].t_rkp__keterangan}-->   
-                                                                                            <!--{/if}-->
-                                                                                         
-                                                                                         
-                                                                                         </TD>
-                                                                                       
-										</TR>
-										<!--{sectionelse}-->
-										<TR>
-											<TD class="tdatacontent" COLSPAN="16" align="center">Maaf, Data masih kosong</TD>
-										</TR>
+			<tr >
+                                <TD> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
+                                <TD><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
+                                <TD><!--{$DATA_TB[x].r_pegawai__nama}-->  </TD>
+                                <TD> <!--{$DATA_TB[x].r_cabang__nama}-->  </TD>
+                                <TD> <!--{$DATA_TB[x].r_subcab__nama}--> </TD> 
+                                <TD> <!--{$DATA_TB[x].r_dept__ket}--> </TD>
+                                <TD> <!--{$DATA_TB[x].t_rkp__awal}--></TD>
+                                <TD> <!--{$DATA_TB[x].t_rkp__akhir}--> </TD>
+                                 <TD align="center"  >
+                   <!--{if ($DATA_TB[x].ket_keluar) ==0}-->Aktif<!--{else}-->  <font color="#ff0000">Resign</font>
+                    <!--{/if}-->  </TD>
+                                <TD>   
+                                <!--{if ($DATA_TB[x].t_rkp__approval) ==1}-->
+                                Telah disetujui HRD
+				<!--{elseif ($DATA_TB[x].t_rkp__approval) ==2 &&  $JENIS_USER_SES!='1'}-->
+				<font color="green">Telah disetujui BOM</font>
+				<!--{elseif ($DATA_TB[x].t_rkp__approval) ==2 &&  $JENIS_USER_SES=='1'}-->
+				<font color="green"> Telah disetujui Koordinator</font>
+				<!--{elseif ($DATA_TB[x].t_rkp__approval) ==3}-->  
+                                <font color="#1384a0">Telah disetujui HGLM</font>
+                                <!--{elseif ($DATA_TB[x].t_rkp__approval) ==4}-->  
+                                      <font color="#d15e93">Closing</font>
+                               <!--{else}-->  
+                                            <font color="#ff0000">Kehadiran Kosong</font>
+                                <!--{/if}-->
+                                </TD>
+                                <TD> <!--{$DATA_TB[x].t_rkp__hadir}--> </TD>
+                                <TD> <!--{$DATA_TB[x].t_rkp__sakit}--> </TD>
+                                <TD> <!--{$DATA_TB[x].t_rkp__izin}--> </TD>
+                                <TD> <!--{$DATA_TB[x].t_rkp__alpa}--> </TD>
+                                <TD> <!--{$DATA_TB[x].t_rkp__dinas}--> </TD>
+                                 <TD> <!--{$DATA_TB[x].t_rkp__cuti}--> </TD>
+                                 <TD> 
+
+                                   <!--{if ($DATA_TB[x].t_rkp__keterangan) =='KURANG'}-->
+                                      <font color="#ff0000"><!--{$DATA_TB[x].t_rkp__keterangan}--></font>
+                                   <!--{else}-->
+                                      <!--{$DATA_TB[x].t_rkp__keterangan}-->   
+                                    <!--{/if}-->
+
+
+                                 </TD>
+
+                        </TR>
+                        <!--{sectionelse}-->
+                        <TR>
+                                <TD  COLSPAN="16" align="center">Maaf, Data masih kosong</TD>
+                        </TR>
 			<!--{/section}-->
 			</tbody>
 		</table>
 <div id="panel-footer">
     <!--halaman -->
- <table width="100%">
-                    <tr class="text-regular">
-                    <td width="20">Tampilkan</td>
-                    <td width="35"><INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
-                    <INPUT TYPE="hidden" name="kode_perwakilan_cari" value="<!--{$KODE_PERWAKILAN_CARI}-->">
-                    <INPUT TYPE="hidden" name="no_paspor_cari" value="<!--{$NO_PASPOR_CARI}-->">
-                    <INPUT TYPE="hidden" name="nama_karyawan_cari" value="<!--{$NAMA_KARYAWAN_CARI}-->">
-                    <INPUT TYPE="hidden" name="kode_sumber" value="<!--{$KODE_SUMBER}-->">
-                                    <SELECT NAME="limit" onchange="this.form.page.value='1'; this.form.submit();" class="text-paging">
-                                    <!--{section name=x loop=$LISTVAL}-->
-                                    <OPTION VALUE = "<!--{$LISTVAL[x]}-->" <!--{if $LISTVAL[x]==$LIMIT}--> SELECTED <!--{/if}-->> <!--{$LISTVAL[x]}--> </OPTION>
-                                    <!--{/section}-->
-                                    </SELECT></td>
-                    <td>Baris : <!--{$COUNT_VIEW}--> - <!--{$COUNT_ALL}--> Dari <!--{$COUNT}--></td>
-                    <td align="right"><!--{$NEXT_PREV}--></td>
-                    </tr>
-                    </table>
+ 
     <!--halaman -->
 </div>
 		</td></tr>

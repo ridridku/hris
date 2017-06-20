@@ -33,31 +33,31 @@ function angka(e) {
 function checkFrm(theForm){
 with (theForm){
       if(r_pegawai__tgl_masuk.value == "") 
-		{ 
-			alert ("Silahkan Tgl Masuk Karyawan  !"); 
-			r_pegawai__tgl_masuk.focus();
-			return false; 
-		}
+        { 
+                alert ("Silahkan Tgl Masuk Karyawan  !"); 
+                r_pegawai__tgl_masuk.focus();
+                return false; 
+        }
 	else if (r_pegawai__nama.value == "") 
-		{ 
-			alert ("Silahkan Masukan Nama !"); 
-			r_pegawai__nama.focus();
-			return false; 
-		}
+        { 
+                alert ("Silahkan Masukan Nama !"); 
+                r_pegawai__nama.focus();
+                return false; 
+        }
     
         else if (r_pegawai__tmpt_lahir.value == "") 
-		{ 
-			alert ("Silahkan Isi Tempat Lahir Karyawan!"); 
-			r_pegawai__tmpt_lahir.focus();
-			return false; 
-		}
+        { 
+                alert ("Silahkan Isi Tempat Lahir Karyawan!"); 
+                r_pegawai__tmpt_lahir.focus();
+                return false; 
+        }
 		
 	 else if (r_pegawai__tgl_lahir.value == "") 
-		{ 
-			alert ("Silahkan isi Tgl Lahir !"); 
-			r_pegawai__tgl_lahir.focus();
-			return false; 
-		}
+        { 
+                alert ("Silahkan isi Tgl Lahir !"); 
+                r_pegawai__tgl_lahir.focus();
+                return false; 
+        }
         else if (r_pegawai__jk.value == "") 
 		{ 
 			alert ("Silahkan isi Jenis Kelamin !"); 
@@ -111,7 +111,19 @@ with (theForm){
 			alert ("Silahkan isi Tgl Lulus  !"); 
 			r_pegawai__pend_tgl_lulus.focus();
 			return false; 
-		}       
+		}    
+                 else if (r_pegawai__no_bpjs.value == "") 
+		{ 
+			alert (" NO BPJS KETENEGA KERJAAN HARUS ADA  !"); 
+			r_pegawai__no_bpjs.focus();
+			return false; 
+		}    
+                   else if (r_pegawai__bank1.value == "") 
+		{ 
+			alert ("NO REKENING  BANK HARUS ADA !"); 
+			r_pegawai__bank1.focus();
+			return false; 
+		}    
                        
                
 	
@@ -465,10 +477,9 @@ if(http.readyState == 4)
 
 function cari_subcab2(subcab_id)
 {
-    
+
 if (subcab_id != '') {
-	http.open('get','index.php?get_subcab2=1&no_subcab='+subcab_id);
-        //http.open('get','index.php?get_prop_ktp=1&no_prop_ktp='+prop_id_ktp);
+	http.open('get','index.php?q=1&y='+subcab_id);
 	http.onreadystatechange = handlechoice_subcab2; 
 	http.send(null);
 	} 

@@ -117,19 +117,35 @@ if ($_GET['departemen_cari']) $departemen_cari = $_GET['departemen_cari'];
 else if ($_POST['departemen_cari']) $departemen_cari = $_POST['departemen_cari'];
 else $departemen_cari="";
 
-if ($_GET['bulan']) $bulan = $_GET['bulan'];
-else if ($_POST['bulan']) $bulan = $_POST['bulan'];
-else $bulan="";
+if ($_GET['bulan1']) $bulan1 = $_GET['bulan1'];
+else if ($_POST['bulan1']) $bulan1 = $_POST['bulan1'];
+else $bulan1="";
 
-if ($_GET['tahun']) $tahun = $_GET['tahun'];
-else if ($_POST['tahun']) $tahun = $_POST['tahun'];
-else $tahun="";
+if ($_GET['bulan2']) $bulan2 = $_GET['bulan2'];
+else if ($_POST['bulan2']) $bulan2 = $_POST['bulan2'];
+else $bulan2="";
+
+if ($_GET['tahun1']) $tahun1 = $_GET['tahun1'];
+else if ($_POST['tahun1']) $tahun1 = $_POST['tahun1'];
+else $tahun1="";
+
+if ($_GET['tahun2']) $tahun2 = $_GET['tahun2'];
+else if ($_POST['tahun2']) $tahun2 = $_POST['tahun1'];
+else $tahun2="";
+
+if ($_GET['tgl1']) $tgl1 = $_GET['tgl1'];
+else if ($_POST['tgl1']) $tgl1 = $_POST['tgl1'];
+else $tgl1="";
+
+if ($_GET['tgl2']) $tgl2= $_GET['tgl2'];
+else if ($_POST['tgl2']) $tgl2 = $_POST['tgl2'];
+else $tgl2="";
 
 
 if ($_GET['nama_karyawan_cari']) $nama_karyawan_cari = $_GET['nama_karyawan_cari'];
 else if ($_POST['nama_karyawan_cari']) $nama_karyawan_cari = $_POST['nama_karyawan_cari'];
 else $nama_karyawan_cari="";
-//var_dump($a)or die();
+
 
 if ($_GET['search']) $search = $_GET['search'];
 else if ($_POST['search']) $search = $_POST['search'];
@@ -137,59 +153,50 @@ else $search="";
 
 
 $smarty->assign ("KODE_CABANG_CARI", $kode_cabang_cari);
-$tahun_ses		=	$_SESSION['SESSION_TAHUN'];
-$smarty->assign ("TAHUN_SES", $tahun_ses);
 
-//$fields_find_jns_jln_	= $jns_jln!=""?$jns_jln:$jns_jln2;
+$arr = array($tahun1,$bulan1,$tgl1);                                 
+$date_awal= implode("-",$arr); 
 
-$Search_Year = $_GET[tahun];
-$smarty->assign ("SEARCH", $search);
+$arr = array($tahun2,$bulan2,$tgl2);                                 
+$date_akhir= implode("-",$arr); 
+$Search_Year='2016';
+
+$smarty->assign ("TAHUN1", $tahun1);
+$smarty->assign ("TAHUN2", $tahun2);
+
+//var_dump($Search_Year)or die();
 
 $str_completer = "mod_id=".$mod_id."&limit=".$LIMIT."&SORT=".$SORT."&search=1&Search_Year=".$Search_Year."&kode_cabang_cari=".$kode_cabang_cari."&nama_karyawan_cari=".$nama_karyawan_cari."&kode_subcab_cari=".$kode_subcab_cari;
 $str_completer_ = "limit=".$LIMIT."&SORT=".$SORT."&page=".$page."&search=1&Search_Year=".$Search_Year;
 
-$SES_TAHUN		= $_SESSION['TAHUN'];
+//$SES_TAHUN		= $_SESSION['TAHUN'];
 $SES_INSTANSI		= $_SESSION['KODE_INSTANSI'];
 $SES_JENIS_USER		= $_SESSION['JENIS_USER'];
 //var_dump($str_completer)or die();
 
-$jenis_user     = $_SESSION['SESSION_JNS_USER'];
-$kode_pw_ses    = $_SESSION['SESSION_KODE_CABANG'];
-$tahun_session	= $_SESSION['SESSION_TAHUN_AKTIF'];  
-$bulan_session	= $_SESSION['SESSION_BULAN_AKTIF'];
+$jenis_user     = $_SESSION['SESSION_JNS_USER'];$smarty->assign ("JENIS_USER_SES", $jenis_user);
+$kode_pw_ses    = $_SESSION['SESSION_KODE_CABANG'];$smarty->assign ("KODE_PW_SES", $kode_pw_ses);
+$periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF'];$smarty->assign ("PERIODE_AKHIR", $periode_akhir);
 
-$smarty->assign ("JENIS_USER_SES", $jenis_user);
-$smarty->assign ("KODE_PW_SES", $kode_pw_ses);
+
+$orderdate1 = explode('-',$periode_awal);
+$year1  = $orderdate1[0];$smarty->assign ("YEAR1", $year1);
+$month1 = $orderdate1[1];$smarty->assign ("MONTH1", $month1);
+$day1   = $orderdate1[2];$smarty->assign ("DAY1", $day1);
+
+
+$orderdate2 = explode('-',$periode_akhir);
+$year2  = $orderdate2[0];$smarty->assign ("YEAR2", $year2);
+$month2 = $orderdate2[1];$smarty->assign ("MONTH2", $month2);
+$day2   = $orderdate2[2];$smarty->assign ("DAY2", $day2);
 
 
 //--------------------------------------
 //SHOW DATA INSTANSI
 //---------------------------------------
-
-
 $smarty->assign ("SES_INSTANSI", $SES_INSTANSI);
 $smarty->assign ("SES_JENIS_USER", $SES_JENIS_USER);
-
-
-
-$smarty->assign ("BULAN", $bulan);
-$smarty->assign ("TAHUN", $tahun);
-
-
-
-$sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_bulan,r_periode__payroll_tahun,r_periode__payroll_status
-                                  FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
-                  
-                                $rs_val = $db->Execute($sql_cek_periode);
-                                $periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
-       
-                                $periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];
-$smarty->assign ("TAHUN_SESSION", $periode_tahun);
-$smarty->assign ("BULAN_SESSION", $periode_bulan);
-
- //--------------------------------------//
- 
-
 
 //-----------------DATA SUBCABANG--------------------------------------------------------//
 
@@ -277,44 +284,8 @@ $smarty->assign ("DATA_DEPARTEMEN", $data_departemen);
 //-----------CLOSE DATA DEPARTEMEN----//
 
 
-//-----------------BLN PERIODE AKTIF--------------------------------------------------------//
-$sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_bulan,r_periode__payroll_tahun,r_periode__payroll_status
-                                  FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
-                  
-        $rs_val = $db->Execute($sql_cek_periode);
-        $periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
-        $periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];
+//---------DATA SUBCABANG-------------------------//     
 
-        $smarty->assign ("PERIODE_BULAN",  $periode_bulan);
-        $smarty->assign ("PERIODE_TAHUN",  $periode_tahun);
-
-//--------------CLOSE BLN PERIODE AKTIF-----------------------------------//
-
-//if ($_GET[get_proyek] == 1)
-//{
-//	$kode_proyek = $_GET[kode_proyek];
-//			if($kode_proyek!=''){	
-//					$sql_ruas_combo 	  = " SELECT * FROM tbl_proyek_detail_ruas   WHERE kode_proyek ='$kode_proyek' ORDER BY nama_paket ";
-//					$result_data_usulan = $db->execute($sql_ruas_combo);
-//			 
-//					//echo $sql_data_usulan;
-//					$data_usulan = "<select id=\"kode_paket\"  name=\"kode_paket\" style=\"width:200px\" >";
-//					$data_usulan .= "<option value=\"\"> [Pilih  Paket] </option>";
-//
-//					while(!$result_data_usulan ->EOF):
-//						$data_usulan .= "<option value=".$result_data_usulan->fields['kode_paket'].">".$result_data_usulan->fields['nama_paket']."</option>";
-//						$result_data_usulan->MoveNext();
-//					endwhile; 	
-//					 $data_usulan .="</select>";
-//					$delimeter   = "-";
-//			 
-//					 $option_choice = $data_usulan."^/&".$delimeter;	
-//					echo $option_choice;	
-//			}
-//}
-
-    
-//-----------------DATA SUBCABANG--------------------------------------------------------//
     
     $sql_subcab = "SELECT cab.r_cabang__id,cab.r_cabang__nama,subcab.r_subcab__nama,subcab.r_subcab__id FROM r_cabang cab,r_subcabang subcab
         where cab.r_cabang__id=subcab.r_subcab__cabang and cab.r_cabang__id='$kode_pw_ses'  order by subcab.r_subcab__id " ;
@@ -352,8 +323,8 @@ if ($_GET['search'] == '1')
                                                             peg.r_dept__id,
                                                             peg.r_dept__ket,
                                                             ra.t_rkp__no_mutasi,
-                                                            ra.t_rkp__bln,
-                                                            ra.t_rkp__thn,
+                                                            ra.t_rkp__awal,
+                                                            ra.t_rkp__akhir,
                                                             ra.t_rkp__approval,
                                                             ra.t_rkp__hadir,
                                                             ra.t_rkp__sakit,
@@ -364,7 +335,8 @@ if ($_GET['search'] == '1')
                                                             ra. t_rkp__keterangan
                                                             FROM
                                                             t_rekap_absensi ra 
-                                                                    LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi where 1=1 AND r_cabang__id = '".$kode_pw_ses."' ";
+                                                            LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi 
+                                                            where r_cabang__id = '".$kode_pw_ses."' ";
                                                 
                       
 
@@ -377,8 +349,8 @@ if ($_GET['search'] == '1')
                                                             peg.r_dept__id,
                                                             peg.r_dept__ket,
                                                             ra.t_rkp__no_mutasi,
-                                                            ra.t_rkp__bln,
-                                                            ra.t_rkp__thn,
+                                                            ra.t_rkp__awal,
+                                                            ra.t_rkp__akhir,
                                                             ra.t_rkp__approval,
                                                             ra.t_rkp__hadir,
                                                             ra.t_rkp__sakit,
@@ -389,7 +361,8 @@ if ($_GET['search'] == '1')
                                                             ra. t_rkp__keterangan
                                                             FROM
                                                             t_rekap_absensi ra 
-                                                                    LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi where 1=1 ";	
+                                                            LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi 
+                                                            where 1=1 ";	
 
 			}
  
@@ -407,14 +380,9 @@ if ($_GET['search'] == '1')
 						 	$sql.="  and r_dept__id='$departemen_cari' ";
 						 } 
 
-						 
-                                                  if ($bulan !='') {
-						 	$sql.=" and t_rkp__bln='$bulan'";
-						 }
-                                                 
-                                                  if ($tahun !='') {
-						 	$sql.=" AND t_rkp__thn=$tahun  ";
-						 }
+						if ($tahun1 !='' AND $tahun2 !='' ) {
+						 	$sql.="  AND t_rkp__awal>='$date_awal' AND t_rkp__akhir<='$date_akhir'  ";
+						 } 
                                                  
                                                   if ($nama_karyawan_cari !='') {
 						 	$sql.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
@@ -424,8 +392,8 @@ if ($_GET['search'] == '1')
 
 			 	 $sql.=" GROUP BY r_pnpt__finger_print ORDER BY r_pnpt__id_pegawai ";
 
-			//    if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
-                       // var_dump($sql)or die();
+                            //    if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
+                      //   var_dump($sql)or die();
 				$numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
 			//	$pages = $p->findPages($count,$LIMIT); 
@@ -444,8 +412,26 @@ if ($_GET['search'] == '1')
                                  $label="Nama :". $arr[r_pegawai__nama]; 
                                  
                                  
-                                 $label_bln=$arr[label_bulan];
-                                 $label_tahun=$arr[label_tahun];
+                                   $status=$arr[t_rkp__approval];
+                               if($status==3)
+                               {
+                                   $label_status='Disetujui HGLM';
+                               } elseif($status==4)
+                               {
+                                   $label_status='Closing';
+                               }
+                               elseif($status==2)
+                               {
+                                   $label_status='Disetujui BOM';
+                               } 
+                               elseif($status==1)
+                               {
+                                   $label_status='Disetujui HRD';
+                               }   
+				elseif($status==0)
+                               {
+                                   $label_status='Tidak Disetujui';
+                               }   
 				
 					
 			   
@@ -456,18 +442,16 @@ if ($_GET['search'] == '1')
                                     $arr[r_cabang__nama],
                                     $arr[r_subcab__nama],
                                     $arr[r_dept__ket],
-                                    $arr[t_rkp__approval],
-                                    $arr[t_rkp__thn],
+                                    $label_status,
                                     $arr[t_rkp__hadir],
                                     $arr[t_rkp__sakit],
                                     $arr[t_rkp__izin],
                                     $arr[t_rkp__cuti],
                                     $arr[t_rkp__dinas],
-                                    $arr[t_rkp__alpa]
+                                    $arr[t_rkp__alpa],
+                                    $arr[t_rkp__keterangan]
                                    );	
-                           
-                           //
-                           
+     
 					if ($z%2==0){ 
 						$ROW_CLASSNAME="#CCCCCC"; }
 					else {
@@ -486,7 +470,8 @@ if ($_GET['search'] == '1')
                         
                           //total karyawan
                           $sql_total="SELECT COUNT(*) as total_orang FROM t_rekap_absensi ra 
-                                            LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi where 1=1 ";
+                                            LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi 
+                                            where t_rkp__awal>='$periode_awal' AND t_rkp__akhir<='$periode_akhir' ";
                              if ($kode_cabang_cari !='') {
                                        $sql_total.=" and  r_cabang__id =".$kode_cabang_cari."  ";
                                 }
@@ -497,11 +482,7 @@ if ($_GET['search'] == '1')
 
                                if ($departemen_cari !=''  ) {
                                        $sql_total.="  and r_dept__id='$departemen_cari' ";
-                                } 
-
-
-                              
-                               // var_dump($sql_total)or die();
+                                }
                                 $numresults4=$db->Execute($sql_total);
 				$count4 = $numresults4->RecordCount();
  				$recordSet4 = $db->Execute($sql_total);
@@ -529,20 +510,20 @@ if ($_GET['search'] == '1')
                                //TUTUP karyawan
                                 
                                 
-				$file= $DIR_HOME."/files/rekap_absensi_".$nm_perwakilan."_".$tahun.".xls";
+				$file= $DIR_HOME."/files/rekap_absensi_".$nm_perwakilan."_".$periode_akhir.".xls";
 				$fp=@fopen($file,"w");
 				if(!is_resource($fp))
 				return false;
 				//$content = str_replace("@@@@BREAKPAGE@@@@@",$content_break,$content);
 				stream_set_write_buffer($fp, 0);
                              
-				$content = print_header($nm_perwakilan,$bulan,$tahun);
+				$content = print_header($nm_perwakilan,$periode_awal,$periode_akhir);
 				$content .= $content_data;
 				
 				$content .= print_footer();
 				fwrite($fp,$content);
 				fclose($fp);
-				$file_2= $HREF_HOME."/files/rekap_absensi_".$nm_perwakilan."_".$tahun.".xls";
+				$file_2= $HREF_HOME."/files/rekap_absensi_".$nm_perwakilan."_".$periode_akhir.".xls";
                              
                                 
                               
@@ -550,221 +531,7 @@ if ($_GET['search'] == '1')
 }
 
 }
-else
- 
-{
-				
-            $sql__="SELECT *,UPPER(r_cabang__nama) AS nm_perwakilan FROM r_cabang WHERE  r_cabang.r_cabang__id='$kode_cabang_cari' ";
-            $rs__=$db->Execute($sql__);
-            $nm_perwakilan = $rs__->fields['nm_perwakilan'];
-            $smarty->assign ("NM_PERWAKILAN", $nm_perwakilan);
-            
-			if($jenis_user=='2'){
-                            
-                           
 
-                                                
-                                                $sql = "SELECT peg.r_pegawai__nama,peg.r_pnpt__finger_print,
-                                                            peg.r_cabang__nama,
-                                                            peg.r_cabang__id,
-                                                            peg.r_subcab__id,
-                                                            peg.r_subcab__nama,
-                                                            peg.r_dept__id,
-                                                            peg.r_dept__ket,
-                                                            ra.t_rkp__no_mutasi,
-                                                            ra.t_rkp__bln,
-                                                            ra.t_rkp__thn,
-                                                            ra.t_rkp__approval,
-                                                            ra.t_rkp__hadir,
-                                                            ra.t_rkp__sakit,
-                                                            ra.t_rkp__izin,
-                                                            ra.t_rkp__cuti,
-                                                            ra.t_rkp__dinas,
-                                                            ra.t_rkp__alpa,
-                                                            ra. t_rkp__keterangan
-                                                            FROM
-                                                            t_rekap_absensi ra 
-                                                                    LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi where 1=1 AND  r_cabang__id= '".$kode_pw_ses."' ";
-                                            
-
-			} else {
-						$sql  = "SELECT peg.r_pegawai__nama,peg.r_pnpt__finger_print,
-                                                            peg.r_cabang__nama,
-                                                            peg.r_cabang__id,
-                                                            peg.r_subcab__id,
-                                                            peg.r_subcab__nama,
-                                                            peg.r_dept__id,
-                                                            peg.r_dept__ket,
-                                                            ra.t_rkp__no_mutasi,
-                                                            ra.t_rkp__bln,
-                                                            ra.t_rkp__thn,
-                                                            ra.t_rkp__approval,
-                                                            ra.t_rkp__hadir,
-                                                            ra.t_rkp__sakit,
-                                                            ra.t_rkp__izin,
-                                                            ra.t_rkp__cuti,
-                                                            ra.t_rkp__dinas,
-                                                            ra.t_rkp__alpa,
-                                                            ra. t_rkp__keterangan
-                                                            FROM
-                                                            t_rekap_absensi ra 
-                                                                    LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi where 1=1    ";	
-
-			}
- 				
-                                      if ($kode_cabang_cari !='') {
-						 	$sql.=" and  r_cabang__id =".$kode_cabang_cari."  ";
-						 }
-
-						 if ($kode_subcab_cari !='') {
-						 	$sql.=" and  r_subcab__id ='$kode_subcab_cari' ";
-						 }
-
-						if ($departemen_cari !=''  ) {
-						 	$sql.="  and r_dept__id='$departemen_cari' ";
-						 } 
-
-						 
-                                                  if ($bulan !='') {
-						 	$sql.=" and t_abs__tgl='$bulan'  ";
-						 }
-                                                 
-                                                  if ($tahun !='') {
-						 	$sql.=" AND t_abs__tgl=$tahun  ";
-						 }
-                                                 
-                                                  if ($nama_karyawan_cari !='') {
-						 	$sql.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
-						 }
-		
- 
-			 	$sql.=" GROUP BY r_pnpt__finger_print ORDER BY r_pnpt__id_pegawai ";
- 
-			//	if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
-
-                                $numresults=$db->Execute($sql);
-                          
-				$count = $numresults->RecordCount();
-
-//				$pages = $p->findPages($count,$LIMIT); 
-//				$sql  .= "LIMIT ".$start.", ".$LIMIT;
-//				
-				$recordSet = $db->Execute($sql);
-				$end = $recordSet->RecordCount();
-				$initSet = array();
-				$data_tb = array();
-				$row_class = array();
-				$z=0;
-                                 $count_no = 1;
-				while ($arr=$recordSet->FetchRow()) {
-					array_push($data_tb, $arr);
-                                        
-                                 $label="Nama :". $arr[r_pegawai__nama]; 					
-                                  $label_bln=$arr[label_bulan];
-                                 $label_tahun=$arr[label_tahun];
-				
-					
-			   
-			       $content_data .= print_content(
-                                    $count_no,
-                                    $arr[r_pnpt__finger_print],
-                                    $arr[r_pegawai__nama],
-                                    $arr[r_cabang__nama],
-                                    $arr[r_subcab__nama],
-                                    $arr[r_dept__ket],
-                                    $arr[t_rkp__approval],
-                                    $arr[t_rkp__thn],
-                                    $arr[t_rkp__hadir],
-                                    $arr[t_rkp__sakit],
-                                    $arr[t_rkp__izin],
-                                    $arr[t_rkp__cuti],
-                                    $arr[t_rkp__dinas],
-                                    $arr[t_rkp__alpa]
-                                   );
-					if ($z%2==0){ 
-						$ROW_CLASSNAME="#CCCCCC"; }
-					else {
-						$ROW_CLASSNAME="#EEEEEE";
-					   }
-					array_push($row_class, $ROW_CLASSNAME);
-					array_push($initSet, $z);
-					$z++;
-                                         $count_no=$count_no+1;
-				}
-
-				$count_view = $start+1;
-				$count_all  = $start+$end;
-			//	$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
-                                $smarty->assign ("DATA_TB", $data_tb);
-                                
-                                 //total karyawan
-                        $sql_total="SELECT COUNT(*) as total_orang FROM t_rekap_absensi ra 
-                                            LEFT JOIN v_pegawai peg ON ra.t_rkp__no_mutasi=peg.r_pnpt__no_mutasi where 1=1 ";
-                         if ($kode_cabang_cari !='') {
-                                       $sql_total.=" and  r_cabang__id =".$kode_cabang_cari."  ";
-                                }
-
-                                if ($kode_subcab_cari !='') {
-                                       $sql_total.=" and  r_subcab__id ='$kode_subcab_cari' ";
-                                }
-
-                               if ($departemen_cari !=''  ) {
-                                       $sql_total.="  and r_dept__id='$departemen_cari' ";
-                                } 
-
-
-                                 if ($bulan !='') {
-                                       $sql_total.=" and t_abs__tgl='$bulan'";
-                                }
-
-                                 if ($tahun !='') {
-                                       $sql_total.=" AND t_abs__tgl=$tahun";
-                                }
-
-                                 if ($nama_karyawan_cari !='') {
-                                       $sql_total.=" AND r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
-                                }
-                                //var_dump($sql_total)or die();
-                                $numresults4=$db->Execute($sql_total);
-				$count4 = $numresults4->RecordCount();
- 				$recordSet4 = $db->Execute($sql_total);
-				$end4 = $recordSet4->RecordCount();
-				$initSet4 = array();
-				$data_tb4 = array();
-				$row_class4 = array();
-				$z=0;
-				while ($arr4=$recordSet4->FetchRow()) {
-					array_push($data_tb4, $arr4);
-					if ($z%2==0){
-						$ROW_CLASSNAME="#CCCCCC"; }
-					else {
-						$ROW_CLASSNAME="#EEEEEE";
-					   }
-                                array_push($row_class4, $ROW_CLASSNAME2);
-				array_push($initSet4, $z);
-					$z++;
-
-					$label="JML KARYAWAN : ".$arr4[total_orang];
-					$content_data .= print_content("","","","","","","","","","","","","",$label);
-				}
-
-                                $smarty->assign ("DATA_TB4", $data_tb4);          
-                               //TUTUP karyawan
-				$file= $DIR_HOME."/files/rekap_absensi_".$nm_perwakilan."_".$tahun.".xls";
-				$fp=@fopen($file,"w");
-				if(!is_resource($fp))
-				return false;
-				//$content = str_replace("@@@@BREAKPAGE@@@@@",$content_break,$content);
-				stream_set_write_buffer($fp, 0);
-				$content = print_header($nm_perwakilan,$bulan,$tahun);
-				$content .= $content_data;
-				
-				$content .= print_footer();
-				fwrite($fp,$content);
-				fclose($fp);
-				$file_2= $HREF_HOME."/files/rekap_absensi_".$nm_perwakilan."_".$tahun.".xls";
-                                
-}
 
 ($_GET['search'] == '1') ? $tampilkan_search_box = 0: $tampilkan_search_box = 1;
 $smarty->assign ("SEARCH_BOX", $tampilkan_search_box);

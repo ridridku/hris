@@ -106,8 +106,8 @@ if ($_GET['page']) $page = $_GET['page'];
 else if ($_POST['page']) $page = $_POST['page'];
 else $page="1";
 
-if ($_GET['kode_cabang_cari']) $kode_cabang_cari = $_GET['kode_cabang_cari'];
-else if ($_POST['kode_cabang_cari']) $kode_cabang_cari = $_POST['kode_cabang_cari'];
+if ($_GET['kode_cabang_cari']) $kode_cabang_cari = base64_decode ($_GET['kode_cabang_cari']);
+else if ($_POST['kode_cabang_cari']) $kode_cabang_cari = base64_decode ($_POST['kode_cabang_cari']);
 else $kode_cabang_cari="";
 
 if ($_GET['t_sp__no_cari']) $t_sp__no_cari = $_GET['t_sp__no_cari'];
@@ -317,7 +317,7 @@ if ($_GET[get_combo_karyawan] == 1)
 
 //-----------SHOW DATA CABANG--------------------------//
 
-$sql_cabang = "SELECT * FROM r_cabang";
+$sql_cabang = "SELECT r_cabang__id,r_cabang__akronim,r_cabang__nama FROM r_cabang";
 $result_cabang = $db->Execute($sql_cabang);
 $initSet = array();
 $data_cabang = array();
@@ -505,7 +505,7 @@ $smarty->assign ("CV_JABATAN", $data_jabatan_history);
 			 	 $sql.=" ORDER BY r_pegawai__id ";
 
 			    if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
-                           //  var_dump($sql)or die();
+                      
 				$numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
 				$pages = $p->findPages($count,$LIMIT); 

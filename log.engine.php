@@ -4,7 +4,7 @@
 
 # Including Main Configuration
 # including file for Main Configurations
-require_once('includes/config.conf.php');	 	
+require_once('includes/config.conf.php');
 
 # Create a session to store global config path
 session_save_path($DIR_SESS);
@@ -73,12 +73,23 @@ else:
 $sql  = "SELECT * FROM tbl_sys_master_user WHERE user_id = '$usr_name' AND user_password = '$usr_password' AND user_active_status = '1' AND level='".$jenis_user."' AND kode_cabang='".$kode_cabang."' ";
 endif;
 
-
-//var_dump($sql)or die;
 $recordSet = $db->Execute($sql);
 $cek_rows = $recordSet->RecordCount();
+$session_aktif=$recordSet->fields['user_session_aktif'];
 
- if ($cek_rows <= 0) {
+$tgl=date("h:i:10");
+
+$splitTimeStamp = explode(":",$tgl);
+$hours = $splitTimeStamp[0];
+$minutes = $splitTimeStamp[1];
+$second = $splitTimeStamp[2];
+
+ $_SESSION['start'] = time($second); // Taking now logged in time.
+  // Ending a session in 30 minutes from the starting time.
+  //$_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
+
+ if ($cek_rows <= 0 AND $session_aktif==1)
+ {
 		$smarty->assign ("SUCCEED", "0");
 		$smarty->assign ("ACTION", $HREF_HOME);
 		$smarty->assign ("METHOD", "GET");
@@ -93,65 +104,63 @@ $cek_rows = $recordSet->RecordCount();
 }
 else
 {
-			if($jenis_user==""){
-				$smarty->assign ("SUCCEED", "0");
-				$smarty->assign ("ACTION", $HREF_HOME);
-				$smarty->assign ("METHOD", "GET");
-				$smarty->assign ("TARGET", "_self");
-				$smarty->assign ("AUTHCOMPLETE", _AUTHCOMPLETE);
-				$smarty->assign ("RESULTS", _RESULTS);
-				$smarty->assign ("ACCESS", _ACCESSNO);
-				$smarty->assign ("PRIV1", _PRIV1NO);
-				$smarty->assign ("PRIV2", _PRIV2NO);
-				$smarty->assign ("PRESSOK", _PRESSOK);			
-			} else {
-                            
-                            
-                            $sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_bulan,r_periode__payroll_tahun,r_periode__payroll_status
-                                  FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
-                  
-                                $rs_val = $db->Execute($sql_cek_periode);
-                                $periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
-                                $periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];
-                                
-                                
-				$smarty->assign ("SUCCEED", "1");
-				$_SESSION['UID']                        = base64_encode($recordSet->fields['user_id']);
-                                
-				$date_now = strtotime('now');
-				$ip_now = $_SERVER['REMOTE_ADDR'];
-				$user_id = $recordSet->fields['user_id'];
-                                $id_pegawai = $recordSet->fields['$id_pegawai'];
-                                
-                                $_SESSION['SESSION_BULAN']		= $bln;
-				$_SESSION['SESSION_TAHUN']		= $th;
-                         	$_SESSION['SESSION_JNS_USER']		= $jenis_user;
-				$_SESSION['SESSION_KODE_CABANG']        = $recordSet->fields['kode_cabang'];
-                                $_SESSION['SESSION_ID_PEG']             = $recordSet->fields['id_pegawai'];
-                                $_SESSION['SESSION_NAMA']               = $recordSet->fields['user_id'];
-				$_SESSION['SESSION_TAHUN_AKTIF']        = $periode_tahun;
-                                $_SESSION['SESSION_BULAN_AKTIF']        = $periode_bulan;   
-                                
-                                
-                             
-                               	
-				$sql="UPDATE tbl_sys_master_user SET user_current_login_date = '$date_now', user_current_login_host = '$ip_now' WHERE user_id = '".$recordSet->fields['user_id']."'" ;
-				$db->Execute($sql);
-	
-				$sql="INSERT INTO tbl_sys_history_log_user (log_user_id, log_login_date, log_login_host)  VALUES ('$user_id','$date_now','$ip_now') ";
-				$db->Execute($sql);
-					
-				$smarty->assign ("ACTION", $HREF_HOME.'/modules/');
-				$smarty->assign ("CHECKER", '1');
-				$smarty->assign ("METHOD", "POST");
-				$smarty->assign ("TARGET", "_self");
-				$smarty->assign ("AUTHCOMPLETE", _AUTHCOMPLETE);
-				$smarty->assign ("RESULTS", _RESULTS);
-				$smarty->assign ("ACCESS", _ACCESS);
-				$smarty->assign ("PRIV1", _PRIV1);
-				$smarty->assign ("PRIV2", _PRIV2);
-				$smarty->assign ("PRESSOK", _PRESSOK);
-			}	
+			if(($jenis_user=="")OR($session_aktif==1))
+          {
+        				$smarty->assign ("SUCCEED", "0");
+        				$smarty->assign ("ACTION", $HREF_HOME);
+        				$smarty->assign ("METHOD", "GET");
+        				$smarty->assign ("TARGET", "_self");
+        				$smarty->assign ("AUTHCOMPLETE", _AUTHCOMPLETE);
+        				$smarty->assign ("RESULTS", _RESULTS);
+        				$smarty->assign ("ACCESS", _ACCESSNO);
+        				$smarty->assign ("PRIV1", _PRIV1NO);
+        				$smarty->assign ("PRIV2", _PRIV2NO);
+        				$smarty->assign ("PRESSOK", _PRESSOK);
+	         }
+       else
+          {
+                  $sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_awal,r_periode__payroll_akhir,r_periode__payroll_status FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
+                  $rs_val = $db->Execute($sql_cek_periode);
+                  $periode_awal= $rs_val->fields['r_periode__payroll_awal'];
+                  $periode_akhir= $rs_val->fields['r_periode__payroll_akhir'];
+          				$smarty->assign ("SUCCEED", "1");
+          				$_SESSION['UID']= base64_encode($recordSet->fields['user_id']);
+          				$date_now = strtotime('now');
+          				$ip_now = $_SERVER['REMOTE_ADDR'];
+          				$user_id = $recordSet->fields['user_id'];
+                  $id_pegawai = $recordSet->fields['$id_pegawai'];
+
+                    $_SESSION['SESSION_BULAN']        = $bln;
+                    $_SESSION['SESSION_TAHUN']        = $th;
+                    $_SESSION['SESSION_JNS_USER']     = $jenis_user;
+                    $_SESSION['SESSION_KODE_CABANG']  = $recordSet->fields['kode_cabang'];
+                    $_SESSION['SESSION_ID_PEG']       = $recordSet->fields['id_pegawai'];
+                    $_SESSION['SESSION_NAMA']         = $recordSet->fields['user_id'];
+                    $_SESSION['SESSION_AWAL_AKTIF']   = $periode_awal;
+                    $_SESSION['SESSION_AKHIR_AKTIF']  = $periode_akhir;
+                    $_SESSION['SESSION_GROUP']  = $recordSet->fields['group_user'];
+                    $_SESSION['start_time'] = time();
+
+
+
+          				$sql="UPDATE tbl_sys_master_user SET user_current_login_date = '$date_now',user_session_aktif='0', user_current_login_host = '$ip_now' WHERE user_id = '".$recordSet->fields['user_id']."'" ;
+          				$db->Execute($sql);
+                                        if(!empty($recordSet->fields['user_id']))
+                                        {
+          				$sql="INSERT INTO tbl_sys_history_log_user (log_user_id, log_login_date, log_login_host)  VALUES ('$user_id','$date_now','$ip_now') ";
+          				$db->Execute($sql);
+                                        }
+          				$smarty->assign ("ACTION", $HREF_HOME.'/modules/');
+          				$smarty->assign ("CHECKER", '1');
+          				$smarty->assign ("METHOD", "POST");
+          				$smarty->assign ("TARGET", "_self");
+          				$smarty->assign ("AUTHCOMPLETE", _AUTHCOMPLETE);
+          				$smarty->assign ("RESULTS", _RESULTS);
+          				$smarty->assign ("ACCESS", _ACCESS);
+          				$smarty->assign ("PRIV1", _PRIV1);
+          				$smarty->assign ("PRIV2", _PRIV2);
+          				$smarty->assign ("PRESSOK", _PRESSOK);
+			}
 }
 
 

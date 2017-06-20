@@ -176,7 +176,7 @@ function hideIt(){
 							<TD>
                                                         <SELECT NAME="tgl1" > 
                                                         <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
-                                                        <!--{section name=foo start=1 loop=31 step=1}-->
+                                                        <!--{section name=foo start=1 loop=32 step=1}-->
                                                                   <!--{if ($smarty.section.foo.index)==$smarty.now|date_format:"%d"}-->
                                                                          <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
                                                                   <!--{else}-->
@@ -184,17 +184,18 @@ function hideIt(){
                                                                  <!--{/if}--> 
                                                         <!--{/section}-->
                                                         </SELECT> 
+                                                       
 							<SELECT name="bulan1"> 
 								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01"<!--{if $BULAN_SES==1}-->selected<!--{/if}-->>Januari</OPTION>
-								<OPTION VALUE="02"<!--{if $BULAN_SES==2}-->selected<!--{/if}-->  >Februari</OPTION>
-								<OPTION VALUE="03"<!--{if $BULAN_SES==3}-->selected<!--{/if}-->  >Maret</OPTION>
-								<OPTION VALUE="04"<!--{if $BULAN_SES==4}-->selected<!--{/if}-->  >April</OPTION>
-								<OPTION VALUE="05"<!--{if $BULAN_SES==5}-->selected<!--{/if}--> >Mei</OPTION>
-								<OPTION VALUE="06"<!--{if $BULAN_SES==6}-->selected<!--{/if}-->  >Juni</OPTION>
-								<OPTION VALUE="07"<!--{if $BULAN_SES==7}-->selected<!--{/if}-->  >Juli</OPTION>
-								<OPTION VALUE="08"<!--{if $BULAN_SES==8}-->selected<!--{/if}-->  >Agustus</OPTION>
-								<OPTION VALUE="09"<!--{if $BULAN_SES==9}-->selected<!--{/if}-->  >September</OPTION>
+                                                                <OPTION value="1"<!--{if $BULAN_SES==1}-->selected<!--{/if}-->>Januari</OPTION>
+								<OPTION VALUE="2"<!--{if $BULAN_SES==2}-->selected<!--{/if}-->  >Februari</OPTION>
+								<OPTION VALUE="3"<!--{if $BULAN_SES==3}-->selected<!--{/if}-->  >Maret</OPTION>
+								<OPTION VALUE="4"<!--{if $BULAN_SES==4}-->selected<!--{/if}-->  >April</OPTION>
+								<OPTION VALUE="5"<!--{if $BULAN_SES==5}-->selected<!--{/if}--> >Mei</OPTION>
+								<OPTION VALUE="6"<!--{if $BULAN_SES==6}-->selected<!--{/if}-->  >Juni</OPTION>
+								<OPTION VALUE="7"<!--{if $BULAN_SES==7}-->selected<!--{/if}-->  >Juli</OPTION>
+								<OPTION VALUE="8"<!--{if $BULAN_SES==8}-->selected<!--{/if}-->  >Agustus</OPTION>
+								<OPTION VALUE="9"<!--{if $BULAN_SES==9}-->selected<!--{/if}-->  >September</OPTION>
 								<OPTION VALUE="10"<!--{if $BULAN_SES==10}-->selected<!--{/if}-->  >Oktober</OPTION>
 								<OPTION VALUE="11"<!--{if $BULAN_SES==11}-->selected<!--{/if}-->  >November</OPTION>
 								<OPTION VALUE="12"<!--{if $BULAN_SES==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
@@ -215,7 +216,7 @@ function hideIt(){
 							<TD>
                                                         <SELECT NAME="tgl2" > 
                                                         <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
-                                                        <!--{section name=foo start=1 loop=31 step=1}-->
+                                                        <!--{section name=foo start=1 loop=32 step=1}-->
                                                                   <!--{if ($smarty.section.foo.index)==$smarty.now|date_format:"%d"}-->
                                                                          <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
                                                                   <!--{else}-->
@@ -225,15 +226,15 @@ function hideIt(){
                                                         </SELECT> 
 							<SELECT name="bulan2"> 
 								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01"<!--{if $BULAN_SES==1}-->selected<!--{/if}-->>Januari</OPTION>
-								<OPTION VALUE="02"<!--{if $BULAN_SES==2}-->selected<!--{/if}-->  >Februari</OPTION>
-								<OPTION VALUE="03"<!--{if $BULAN_SES==3}-->selected<!--{/if}-->  >Maret</OPTION>
-								<OPTION VALUE="04"<!--{if $BULAN_SES==4}-->selected<!--{/if}-->  >April</OPTION>
-								<OPTION VALUE="05"<!--{if $BULAN_SES==5}-->selected<!--{/if}--> >Mei</OPTION>
-								<OPTION VALUE="06"<!--{if $BULAN_SES==6}-->selected<!--{/if}-->  >Juni</OPTION>
-								<OPTION VALUE="07"<!--{if $BULAN_SES==7}-->selected<!--{/if}-->  >Juli</OPTION>
-								<OPTION VALUE="08"<!--{if $BULAN_SES==8}-->selected<!--{/if}-->  >Agustus</OPTION>
-								<OPTION VALUE="09"<!--{if $BULAN_SES==9}-->selected<!--{/if}-->  >September</OPTION>
+                                                                <OPTION value="1"<!--{if $BULAN_SES==1}-->selected<!--{/if}-->>Januari</OPTION>
+								<OPTION VALUE="2"<!--{if $BULAN_SES==2}-->selected<!--{/if}-->  >Februari</OPTION>
+								<OPTION VALUE="3"<!--{if $BULAN_SES==3}-->selected<!--{/if}-->  >Maret</OPTION>
+								<OPTION VALUE="4"<!--{if $BULAN_SES==4}-->selected<!--{/if}-->  >April</OPTION>
+								<OPTION VALUE="5"<!--{if $BULAN_SES==5}-->selected<!--{/if}--> >Mei</OPTION>
+								<OPTION VALUE="6"<!--{if $BULAN_SES==6}-->selected<!--{/if}-->  >Juni</OPTION>
+								<OPTION VALUE="7"<!--{if $BULAN_SES==7}-->selected<!--{/if}-->  >Juli</OPTION>
+								<OPTION VALUE="8"<!--{if $BULAN_SES==8}-->selected<!--{/if}-->  >Agustus</OPTION>
+								<OPTION VALUE="9"<!--{if $BULAN_SES==9}-->selected<!--{/if}-->  >September</OPTION>
 								<OPTION VALUE="10"<!--{if $BULAN_SES==10}-->selected<!--{/if}-->  >Oktober</OPTION>
 								<OPTION VALUE="11"<!--{if $BULAN_SES==11}-->selected<!--{/if}-->  >November</OPTION>
 								<OPTION VALUE="12"<!--{if $BULAN_SES==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
@@ -312,7 +313,7 @@ function hideIt(){
                                                                                     <TH class="tdatahead" align="left">NO </TH>
                                                                                         <TH class="tdatahead" align="left">NIP </TH>
                                                                                       
-											<TH class="tdatahead" align="left">NAMA PESERTA</TH>
+											<TH class="tdatahead" align="left">NAMA</TH>
 											<TH class="tdatahead" align="left">CABANG</TH>
 											<TH class="tdatahead" align="left">DEPARTEMEN</TH>
                                                                                         <TH class="tdatahead" align="left">BULAN</TH>
@@ -372,14 +373,14 @@ function hideIt(){
 											<TD class="tdatacontent" COLSPAN="9" align="center">Maaf, Data Masih Kosong</TD>
 										</TR>
 										<!--{/section}-->
-										</tbody>
+										
                                                                                 <TR><!--{section name=y loop=$DATA_TB4}-->
-										<Td class="tdatahead" colspan="6" align="right" ><b>JML Karyawan : </b></td>	
-										<Td class="tdatahead"  colspan="2"  align=" right" > <!--{$DATA_TB4[y].total_orang}--> Orang </td>	
+										<Td class="tdatahead" colspan="6" align="right" ><b> Average : </b></td>	
+                                                                                <Td class="tdatahead"  colspan="2"  align=" right" > <!--{$DATA_TB4[y].total_orang|string_format:"%.2f"}--> Orang </td>	
                                                                                 <!--{/section}-->
 										</TR>
                                                                                                 
-                                                                                                
+                                                                                  </tbody>              
                                                                                                 
                                                                                                 
 									</TABLE></TD> 

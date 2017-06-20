@@ -1,4 +1,4 @@
-<? 
+<?PHP 
 require_once('../../../includes/config.conf.php');	 
 require_once($DIR_INC.'/db.conf.php');
 require_once($DIR_ADODB.'/adodb.inc.php');
@@ -8,7 +8,7 @@ $db = &ADONewConnection($DB_TYPE);
  //$db->debug = true;
 $db->Connect($DB_HOST, $DB_USER, $DB_PWD, $DB_NAME);
  
- $HREF_HOME_PATH_AJAX = $HREF_HOME."/modules/data_wni/wni";
+ $HREF_HOME_PATH_AJAX = $HREF_HOME."/modules/kehadiran/rekap_verifikasi_hglm";
  
  $kode_wni = trim($_GET['kode_wni']);
  $id = $_GET['id'];

@@ -111,7 +111,7 @@ function hideIt(){
 <DIV ID="_menuEntry1_1" style="top:10px;width:100%;display:none;position:absolute;">
 
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat">Master Data Pinjaman</td></tr>
+		<tr><td class="tcat">Posting Angsuran Pinjaman Periode </td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="left">
                  <tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/form.gif" align="absmiddle" border="0">Form Tambah/Ubah Data</td></tr>
@@ -121,35 +121,57 @@ function hideIt(){
                 
                   <TABLE width="100%" border="0" align="left" > 
                         <THEAD>
-											<TH class="tdatahead" align="left">NO</TH>
-                                                                                        <TH class="tdatahead" align="left">NAMA </TH>
-                                                                                        <TH class="tdatahead" align="left">NIP </TH>
-                                                                                        <TH class="tdatahead" align="left">NO PJM </TH>
-                                                                                        <TH class="tdatahead" align="left">CABANG </TH>
-											<TH class="tdatahead" align="left" >JENIS PINJAMAN</TH>                                                                                       
-                                                                                        <TH class="tdatahead" align="left" >PLATFON</TH>
-											<TH class="tdatahead" align="left">TENOR</TH>
-											<TH class="tdatahead" align="left" >CICILAN PER BULAN</TH>         
-                                                                                        
-											<TH class="tdatahead" align="left" width="10%">APROVAL</TH>   
-											
+                                <TH class="tdatahead" align="left">NO</TH>
+                                  <TH class="tdatahead" align="left">NIP </TH>
+                                <TH class="tdatahead" align="left">NAMA </TH>
+                              
+                                <TH class="tdatahead" align="left">ID PJM</TH>
+                                <TH class="tdatahead" align="left">CABANG </TH>
+                                <TH class="tdatahead" align="left" >JENIS PINJAMAN</TH>                                                                                       
+                                <TH class="tdatahead" align="left" >TOTAL PINJAMAN</TH>
+                                <TH class="tdatahead" align="left" >SUDAH BAYAR</TH>
+                                <TH class="tdatahead" align="left">TENOR</TH>
+                                <TH class="tdatahead" align="left" >CICILAN PER BULAN</TH>   
+                                <TH class="tdatahead" align="left" >STATUS</TH> 
+                                 <TH class="tdatahead" align="left" >SISA</TH> 
+
+                                <TH class="tdatahead" align="left" width="10%">APROVAL</TH>   
+
 			
 			</THEAD>
 			<tbody>
 			<!--{section name=x loop=$DATA_PJM}-->
 			<tr class='<!--{cycle values="alt,alt3"}-->'>
-											<td class="tdatacontent-first-col"> <!--{$smarty.section.x.index+1}--></TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_PJM[x].r_pegawai__nama}--></TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_PJM[x].r_pnpt__nip}--></TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_PJM[x].t_pjm__no_pinjaman}--></TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_PJM[x].r_cabang__nama}--></TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_ang__jenis}--> </TD>
-                                                                                        <TD class="tdatacontent">Rp. <!--{$DATA_TB[x].r_ang__platfond|number_format:2:".":","}--> </TD>
-											<TD class="tdatacontent"> <!--{$DATA_TB[x].r_ang__tenor_bulan}-->  </TD>
-                                                                                        <TD class="tdatacontent">Rp. <!--{$DATA_TB[x].r_ang__cicilan|number_format:2:".":","}--> </TD>                                                                                                                                                                    
-                                                                                              
-                                                                                        <TD class="tdatacontent" align="center"><INPUT type="checkbox" name="bayar[]" id="check_list" value="<!--{$DATA_PJM[x].t_pjm__no_pinjaman}-->"></TD>
-                                                                                                                                                                          
+                           
+                        <td class="tdatacontent-first-col"> <!--{$smarty.section.x.index+1}--></TD>
+                        <TD class="tdatacontent" ><!--{$DATA_PJM[x].r_pnpt__nip}--></TD>
+                        <TD class="tdatacontent" ><!--{$DATA_PJM[x].r_pegawai__nama}--></TD>
+                        <TD class="tdatacontent" ><!--{$DATA_PJM[x].t_pjm__no_pinjaman}--></TD>
+                        <TD class="tdatacontent" ><!--{$DATA_PJM[x].r_cabang__nama}--></TD>
+                        <TD class="tdatacontent"><!--{if ($DATA_PJM[x].t_pjm__jenis)==1}--><font color="#1a842d">COP</font><!--{else}-->  <font color="#2785c4">PRIBADI</font><!--{/if}--></TD>
+                        <TD class="tdatacontent"><!--{$DATA_PJM[x].t_pjm__total_pinjam|number_format:2:".":","}--> </TD>
+                        <TD class="tdatacontent"><!--{$DATA_PJM[x].jml_sudah_bayar|number_format:2:".":","}--> </TD>
+                        <TD class="tdatacontent"> <!--{$DATA_PJM[x].t_pjm__tenor}--></TD>
+                        <TD class="tdatacontent"><INPUT onkeyup="formatangka(this)" style="text-align :left;" type="text" name="angsuran[]"  value=" <!--{$DATA_PJM[x].t_pjm__cicilan_perbulan|number_format:0:".":","}--> "></TD>                                                                                                                                                                    
+                        <TD class="tdatacontent"><!--{if ($DATA_PJM[x].sisa_status)==0}--><font color="#2605FF">Lunas</font><!--{else}--><font color="#FA0505">Belum Lunas</font><!--{/if}--></TD> 
+                                
+                        <TD class="tdatacontent"><!--{$DATA_PJM[x].sisa_pembayaran|number_format:0:".":","}--> </TD>
+                        <TD class="tdatacontent" align="center">
+                            <INPUT type="checkbox" name="no_pjm[]" id="check_list" value="<!--{$DATA_PJM[x].t_pjm__no_pinjaman}-->">
+                            <INPUT type="hidden" name="jenis[]"  value="<!--{$DATA_PJM[x].t_pjm__jenis}-->">
+                            <INPUT type="hidden" name="mutasi[]"  value="<!--{$DATA_PJM[x].r_pnpt__no_mutasi}-->">
+                            <INPUT type="hidden" name="id_karyawan[]"  value="<!--{$DATA_PJM[x].r_pegawai__id}-->">
+                            <INPUT type="hidden" name="tgl_bayar[]"  value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->">
+                        
+                       
+                        
+                    
+                  
+                        
+                        
+                        
+                        </TD>
+
                                                                                           
 											
 										</TR>
@@ -269,12 +291,12 @@ function hideIt(){
 											<TH class="tdatahead" align="left">NO</TH>
                                                                                         <TH class="tdatahead" align="left">NAMA KARYAWAN </TH>
                                                                                         <TH class="tdatahead" align="left" >NIP </TH>
-                                                                                          <TH class="tdatahead" align="left" >NO PINJAMAN </TH>
-											<TH class="tdatahead" align="left" >PLATFON</TH>                                                                                       
-											<TH class="tdatahead" align="left">TENOR</TH>
-											<TH class="tdatahead" align="left" >CICILAN</TH>                                                                                       
-											<TH class="tdatahead" align="left" width="10%">CICILAN KE</TH>    
-                                                                                        <TH class="tdatahead" align="left" width="10%">TGL PEMBAYARAN</TH>  
+                                                                                          <TH class="tdatahead" align="left" >ID PJM </TH>
+											<TH class="tdatahead" align="left" >TOTAL PINJAM</TH>                                                                                       
+											<TH class="tdatahead" align="left">JML CICILAN</TH>
+											<TH class="tdatahead" align="left" >PEMBAYARAN</TH>                                                                                       
+											<TH class="tdatahead" align="left" width="10%">SISA PEMBAYARAN</TH>    
+                                                                                        <TH class="tdatahead" align="left" width="10%">STATUS</TH>  
                                                                                         </THEAD>
                                                                                         <tbody>
                                                                                         <!--{section name=x loop=$DATA_TB}-->
@@ -282,13 +304,12 @@ function hideIt(){
 											<td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].r_pegawai__nama}--></TD>
                                                                                         <TD class="tdatacontent"  ><!--{$DATA_TB[x].r_pnpt__nip}--></TD>
-                                                                                        <TD class="tdatacontent"  ><!--{$DATA_TB[x].t_ang__nopjm}--></TD>
-                                                                                        <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].r_ang__platfond|number_format:2:".":","}--> </TD>
-                                                                                       
-											<TD class="tdatacontent"> <!--{$DATA_TB[x].r_ang__tenor_bulan}-->  </TD>
-                                                                                        <TD class="tdatacontent">Rp. <!--{$DATA_TB[x].r_ang__cicilan|number_format:2:".":","}--> </TD>                                                                                        
-											<TD class="tdatacontent">Cicilan ke- <!--{$DATA_TB[x].t_ang__angsuran_ke}--></TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].t_ang__tanggal|date_format:"%d-%b-%Y"}--></TD>
+                                                                                        <TD class="tdatacontent"  ><!--{$DATA_TB[x].t_pjm__no_pinjaman}--></TD>
+                                                                                        <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].t_pjm__total_pinjam|number_format:2:".":","}--> </TD>
+											<TD class="tdatacontent">Rp.<!--{$DATA_TB[x].t_pjm__cicilan_perbulan|number_format:2:".":","}--> </TD>
+                                                                                        <TD class="tdatacontent">Rp.<!--{$DATA_TB[x].jml_sudah_bayar|number_format:2:".":","}--> </TD>                                                                                        
+											<TD class="tdatacontent">Rp.<!--{$DATA_TB[x].sisa_pembayaran|number_format:2:".":","}--></TD>
+                                                                                        <TD class="tdatacontent"><!--{if ($DATA_TB[x].sisa_status)==0}--><font color="#2605FF">Lunas</font><!--{else}--><font color="#FA0505">Belum Lunas</font><!--{/if}--></TD>
     
 										</TR>
 										<!--{sectionelse}-->

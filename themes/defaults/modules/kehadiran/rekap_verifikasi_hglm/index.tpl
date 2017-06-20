@@ -9,14 +9,13 @@
     padding: 0;
 }
 
-
 ul, ol {
     list-style-type: none;
 }
 p, label {
-   background: #c3daf9 url("../images/layout/bg000000.gif") repeat-x scroll 0 0;
+   // background: #c3daf9 url("../images/layout/bg000000.gif") repeat-x scroll 0 0;
     color: #083772;
-    font-size: 11px;
+    font-size: 12px;
     
 }
 .container-wrapper {
@@ -58,9 +57,6 @@ label.tab-menu {
     opacity: 1;
     transition: opacity 1s ease 0s;
 }
-
-
-
 
 pre.code {
     border: 1px solid #999;
@@ -109,46 +105,316 @@ function hideIt(){
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/tw-ajax.js"></SCRIPT>
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/tw-sack.js"></SCRIPT>
 
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/jquery.dataTables.min.css" type="text/css">
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/fixedColumns.dataTables.min.css" type="text/css">
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/buttons.dataTables.min.css" type="text/css">	  
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery-1.12.4.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery.dataTables.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.fixedColumns.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.buttons.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.colVis.min.js"></SCRIPT>
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/style_sorting.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_sorting.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_p.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.flash.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jszip.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/pdfmake.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/vfs_fonts.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.html5.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.print.min.js"></SCRIPT>
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/select.dataTables.min.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.select.min.js"></SCRIPT>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!-- #EndEditable -->
 
 
+<script>
+ $(document).ready(function() {
+    var table = $('#example').DataTable( {
+        scrollY:        "430",
+        scrollX:        true,
+        scrollCollapse: true,
+        info:true,
+       // paging: true,  
+         dom: 'Bfrtip',
+        buttons: ['excel','copy'],
+       language: {search: "Pencarian:",buttons: {colvis: 'Atur Kolom'}},
+        select: {style: 'single'},
+          Sorting: [[ 2, "desc" ]], 
+          pageLength: "50", 
+    // lengthMenu: [ 50, 100, 300, 1000],
+       fixedColumns:   { leftColumns: 2}
+
+        });
+        
+} );   
+    $(document).ready(function() {
+    var table = $('#verifikasi').DataTable( {
+        scrollY:        "430",
+       scrollX:        "100",
+      scrollCollapse: true,
+       ordering: true,
+        columnDefs: [
+            { width: '0%', targets: 0 }
+        ], 
+        info:true,
+        paging: false,
+       dom: 'Bfrtip',
+      buttons: ['excel'],
+       language: {search: "Pencarian:",buttons: {colvis: 'Atur Kolom'}},
+        select: {style: 'single'},
+          Sorting: [[ 2, "desc" ]], 
+         // pageLength: "50"
+    // lengthMenu: [ 50, 100, 300, 1000],
+     fixedColumns: true, fixedColumns:   { leftColumns: 3,rightColumns:0 }
+
+    } );
+   
+    
+} );
+    
+/* $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#verifikasi tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#verifikasi').DataTable(
+    {
+        //scrollY: "430",
+       //scrollX: "100",
+        scrollCollapse: true,
+       // columnDefs: [
+        //    { width: '5%', targets: 0 }
+       // ], 
+    serching:true,
+    ordering: true,
+    info:true,
+    paging: false,
+     //  dom: 'Bfrtip',
+     // buttons: ['excel'],
+    language: {search: "Pencarian:",buttons: {colvis: 'Atur Kolom'}},
+    select: {style: 'single'}
+      //    Sorting: [[ 2, "desc" ]], 
+         // pageLength: "50"
+    // lengthMenu: [ 50, 100, 300, 1000],
+  // fixedColumns: true, fixedColumns:   { leftColumns: 3,rightColumns:0 }
+
+    } 
+    
+    
+    
+    );
+ 
+    // Apply the search
+   table.columns().every( function () {
+       var that = this;
+ 
+  $( 'input', this.footer() ).on( 'keyup change', function () {
+          if ( that.search() !== this.value ) {
+            that
+                .search( this.value )
+             .draw();
+      }
+     } );
+  } );
+
+      
+      
+} );*/
+
+</script>
+
+<STYLE>
+/* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {width: 1100;margin: 0 auto;}
+    .number_range_filter{width:100px;}
+    
+      div.ColVis {
+        float: centerPage;
+    }
+  
+    tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+  </STYLE>
 </HEAD>
+
 <body class="contentPage" onLoad="hideIt(); <!--{if $OPT==1}-->showAll('_menuEntry1_',1);hideAll('_menuEntry2_',1);<!--{else}-->hideAll('_menuEdit_',1);hideAll('_menuEntry1_',1);showAll('_menuEntry2_',1);<!--{/if}-->">
 <!--tombol_tambah -->
 <div id="add-search-box">
-<a class="button" href="#" onclick="this.blur();showLevel('_menuEdit_',1,1);"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/search.png" align="absmiddle"> Pencarian Data</span></a>
+<!--{if $OPT==0}-->        
+<a class="button" href="#" onclick="this.blur();showLevel('_menuEdit_',1,1);"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/search.png" align="absmiddle"> Pencarian Data</span></a>     
+   <!--{/if}-->    
 </div>
 <!--tombol_tambah  -->
 
 <!--form_tambah -->
 <DIV ID="_menuEntry1_1" style="top:10px;width:100%;display:none;position:absolute;">
                             
-		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat">Verifikasi Rekap Kehadiran Oleh HGLM</td></tr>
-		</table>
-		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/form.gif" align="absmiddle" border="0"> Verifikasi Rekap Kehadiran Oleh HGLM
-                    </td></tr>
-		<tr><td class="alt2" style="padding:0px;">
-		<FORM NAME="frmCreate" METHOD="POST" ACTION="engine.php" >
-		<TABLE id="table-add-box">
-				
-					<!--{if $EDIT_VAL==0}-->
-                                        <INPUT TYPE="hidden" NAME="id" value="(OTOMATIS OLEH SISTEM)" size="35" readOnly class="text_disabled">
-					<!--{else}-->
-                                        <INPUT TYPE="hidden" NAME="id" value="<!--{$EDIT_ID}-->" size="35" readOnly class="text_disabled">
-					<!--{/if}-->
-			<TR>
-                                <TD>Cabang <font color="#ff0000">*</font></TD> 
-				<TD>:
+<FORM NAME="frmCreate" METHOD="POST" ACTION="engine.php">   
+<table border="0" class="tborder" cellpadding="4" cellspacing="1" border="0" width="100%" >
+<tr><td class="tcat" colspan="22">
+        <INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
+<INPUT TYPE="hidden" name="limit" value="<!--{$LIMIT}-->">
+<INPUT TYPE="hidden" name="SORT" value="<!--{$SORT}-->">
+<INPUT TYPE="hidden" name="page" value="<!--{$page}-->">
+<INPUT TYPE="hidden" name="op" value="0">
+<a class="button" href="#" onclick="this.blur();return checkFrm(frmCreate);"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$SUBMIT}--></span></a>
+<a class="button" href="#" onclick="this.blur();document.frmCreate.reset(); resetFrm(frmCreate); "><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$RESET}--></span></a>   
+</td></tr>
 
+
+</TABLE>
+
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/form.gif" align="absmiddle" border="0"> Rekap Data Kehadiran Oleh <!--{$NAMA_PRIV}--></td></tr>
+<tr><td class="alt2" style="padding:0px;">
+
+<table id="verifikasi" class="display" cellpadding="6" cellspacing="1" width="100%">
+<thead class="tdatahead">
+        <tr>
+                <th  class="alt2"  align="left">NO</TH>
+                <th class="alt2"  align="center">ID FINGER</TH>
+                <th  class="alt2" align="center">NAMA</TH>											
+                <th  class="alt2"  align="center" >CABANG</TH>
+                <th  class="alt2"  align="center" >SUB CABANG</TH>
+                <th  class="alt2"  align="center" >DEPARTEMEN</TH>
+                <th  class="alt2"  align="center" >JABATAN</TH>
+                <th  class="alt2"  align="center" >AWAL</TH>
+                <th  class="alt2"  align="center" >AKHIR</TH>
+                <th  class="alt2"  align="center" >MAKS HK</TH>
+                 <th  class="alt2"  align="center" >STATUS AKTIF</TH>
+                <th  class="alt2"  align="center" >APPROVAL STATUS</TH>
+               
+                <th  class="alt2"  align="center" >HADIR</TH>
+                <th  class="alt2"  align="center" >SAKIT</TH>
+                <th  class="alt2"  align="center" >IZIN</TH>
+                <th  class="alt2"  align="center" >ALPA</TH>
+                <th  class="alt2"  align="center" >DINAS</TH>
+                <th  class="alt2"  align="center" >CUTI</TH>
+                <th  class="alt2"  align="center" >KETERANGAN</TH>
+             
+        </tr>
+</thead>
+
+ <tfoot  class="tdatahead">
+             <tr>
+                <th  class="alt2"  align="left">NO</TH>
+                <th class="alt2"  align="center">ID FINGER</TH>
+                <th  class="alt2" align="center">NAMA</TH>											
+                <th  class="alt2"  align="center" >CABANG</TH>
+                <th  class="alt2"  align="center" >SUB CABANG</TH>
+                <th  class="alt2"  align="center" >DEPARTEMEN</TH>
+                <th  class="alt2"  align="center" >JABATAN</TH>
+                <th  class="alt2"  align="center" >AWAL</TH>
+                <th  class="alt2"  align="center" >AKHIR</TH>
+                <th  class="alt2"  align="center" >MAKS HK</TH>
+                 <th  class="alt2"  align="center" >STATUS AKTIF</TH>
+                <th  class="alt2"  align="center" >APPROVAL STATUS</TH>
+               
+                <th  class="alt2"  align="center" >HADIR</TH>
+                <th  class="alt2"  align="center" >SAKIT</TH>
+                <th  class="alt2"  align="center" >IZIN</TH>
+                <th  class="alt2"  align="center" >ALPA</TH>
+                <th  class="alt2"  align="center" >DINAS</TH>
+                <th  class="alt2"  align="center" >CUTI</TH>
+                <th  class="alt2"  align="center" >KETERANGAN</TH>
+             
+        </tr>
+        </tfoot>
+<tbody class="tdatacontent">
+<!--{section name=x loop=$DATA_RKP}-->
+<tr>
+<TD><!--{$smarty.section.x.index+1}-->.</TD>
+<TD align="center"> <!--{$DATA_RKP[x].r_pnpt__finger_print}--> </TD>
+<TD align="center"> <!--{$DATA_RKP[x].r_pegawai__nama}--></TD>
+<TD align="center"><!--{$DATA_RKP[x].r_cabang__nama}-->  </TD>
+<TD align="center"><!--{$DATA_RKP[x].r_subcab__nama}--> </TD> 
+<TD align="center"><!--{$DATA_RKP[x].r_dept__ket}--> </TD>
+<TD align="center"><!--{$DATA_RKP[x].r_jabatan__ket}--> </TD>
+<TD align="center"><!--{$DATA_RKP[x].t_rkp__awal}--></TD>
+<TD align="center"><!--{$DATA_RKP[x].t_rkp__akhir}--> </TD>
+<TD align="center"><!--{$DATA_RKP[x].mx_day}--> 
+<INPUT type="hidden"  name="mutasi[]" value="<!--{$DATA_RKP[x].r_pnpt__no_mutasi}-->">
+<INPUT type="hidden" name="awal[]" value="<!--{$DATA_RKP[x].t_rkp__awal}-->">
+<INPUT type="hidden" name="akhir[]" value="<!--{$DATA_RKP[x].t_rkp__akhir}-->">
+<INPUT type="hidden" name="status[]" value="<!--{$DATA_RKP[x].t_rkp__approval}-->">
+<INPUT type="hidden" name="akhir[]" value="<!--{$DATA_RKP[x].t_rkp__akhir}-->">
+</TD>
+<TD align="center">
+<!--{if ($DATA_RKP[x].ket_keluar) ==0}-->Aktif<!--{else}-->  <font color="#ff0000">Resign</font>
+                    <!--{/if}-->  </TD>
+<TD align="center"  >  
+<!--{if ($DATA_RKP[x].t_rkp__approval) ==1}-->
+Telah disetujui HRD
+<!--{elseif ($DATA_RKP[x].t_rkp__approval) ==2}-->
+<font color="green">Telah disetujui BOM / Koor</font>
+<!--{elseif ($DATA_RKP[x].t_rkp__approval) ==3}-->  
+<font color="#1384a0">Telah disetujui HGLM</font>
+<!--{elseif ($DATA_RKP[x].t_rkp__approval) ==4}-->  
+<font color="#d15e93">Closing</font>
+<!--{else}-->  
+<font color="#ff0000">Kehadiran Kosong</font>
+<!--{/if}-->
+
+</TD>
+<TD align="left"><input maxlength="2" size="2" type="text" name="hadir[]" value="<!--{$DATA_RKP[x].t_rkp__hadir|number_format:0:".":","}-->" onkeyup="formatangka(this)" style="text-align :Right;"> </TD>
+<TD align="left"><input maxlength="2" size="2" type="text" name="sakit[]" value="<!--{$DATA_RKP[x].t_rkp__sakit|number_format:0:".":","}-->" onkeyup="formatangka(this)" style="text-align :Right;"></TD>
+<TD align="left"><input maxlength="2" size="2" type="text" name="izin[]" value="<!--{$DATA_RKP[x].t_rkp__izin|number_format:0:".":","}-->" onkeyup="formatangka(this)" style="text-align :Right;"> </TD>
+<TD align="left"><input maxlength="2" size="2" type="text" name="alpa[]" value="<!--{$DATA_RKP[x].t_rkp__alpa|number_format:0:".":","}-->" onkeyup="formatangka(this)" style="text-align :Right;"> </TD>
+<TD align="left"><input  maxlength="2" size="2" type="text" name="dinas[]" value="<!--{$DATA_RKP[x].t_rkp__dinas|number_format:0:".":","}-->" onkeyup="formatangka(this)" style="text-align :Right;"></TD>
+<TD align="left"><input maxlength="2" size="2" type="text" name="cuti[]" value="<!--{$DATA_RKP[x].t_rkp__cuti|number_format:0:".":","}-->" onkeyup="formatangka(this)" style="text-align :Right;"></TD>
+<TD align="center"  > 
+<textarea name="keterangan[]" cols="5" rows="1"><!--{$DATA_RKP[x].t_rkp__keterangan}--></textarea>
+
+</TD>
+        </TR>
+        <!--{sectionelse}-->
+        <TR>
+                <TD  COLSPAN="16" align="center">Maaf, Data masih kosong</TD>
+        </TR>
+<!--{/section}-->
+</tbody>
+</table>
+
+                       
+      </td></tr>
+		</table>       
+				
+</form>
+
+		</DIV>
+		
+<!--form_tambah_tutup-->                              	
+<DIV ID="_menuEntry2_1" style="top:10px;width:100%;position:absolute;">
+	<TABLE WIDTH="100%" ALIGN="CENTER" CELLPADDING="1" CELLSPACING="2">
+		<!--DIVIDER HERE-->
+		<TR>
+			<TD>
+		<DIV ID="_menuEdit_1">
+<!--form_cari--> 
+<div id="panel-box">
+		<div id="title-box2">Pencarian Data</div>
+		<div id="title-box-close"><img src="<!--{$HREF_IMG_PATH}-->/icon/close.gif" onClick="document.getElementById('_menuEdit_1').style.display='none';" align="absmiddle" class="imgLink" title="Close"></div>
+		<div id="panel-content">
+		
+		<FORM METHOD=GET ACTION="" NAME="frmList1">
+		<TABLE id="table-search-box">	
+                    
+		<TR>
+                                <TD>Cabang <font color="#ff0000">*</font></TD> 
+				<TD>
 					<!--{if ($JENIS_USER_SES==1)}-->
 
-								<select name="kode_cabang" >
+								<select name="kode_perwakilan_cari" onchange="cari_subcab(this.value);">
 								<option value=""> Pilih Cabang </option>
 								<!--{section name=x loop=$DATA_CABANG}-->
-
 								<!--{if ($OPT==1)}-->
 
 									<!--{if trim($DATA_CABANG[x].r_cabang__id) == $EDIT_R_CABANG__ID}-->
@@ -171,7 +437,7 @@ function hideIt(){
 
 						<!--{else}-->
 
-					<select name="kode_cabang" >
+					<select name="kode_perwakilan_cari  >
 						<option value=""> Pilih Cabang </option>
 								<!--{section name=x loop=$DATA_CABANG}-->
 
@@ -198,222 +464,49 @@ function hideIt(){
 
 						<!--{/if}-->
 				</TD>
-			</TR>
-                         <TR>
-                                <TD>Nama Karyawan<font color="#ff0000">*</font> </TD>
-                                <TD>:
-                                    <INPUT TYPE="text" NAME="r_pegawai__nama" readonly  id="r_pegawai__nama"  size="35" value="<!--{$EDIT_R_PEGAWAI__NAMA}-->">
-                                </TD>   
-                        </TR>
-                         <TR>
-                                <TD>Jumlah Hadir<font color="#ff0000">*</font> </TD>
-                                <TD>:
-                                    <INPUT TYPE="text" NAME="t_rkp__hadir"  size="5" value="<!--{$EDIT_T_RKP__HADIR}-->">
-                                </TD>
-                        </TR>
-                        <TR>
-                                <TD>Jumlah Sakit<font color="#ff0000">*</font> </TD>
-                                <TD>:
-                                    <INPUT TYPE="text" NAME="t_rkp__sakit"  size="5" value="<!--{$EDIT_T_RKP__SAKIT}-->">
-                                </TD>
-                        </TR>
-                        <TR>
-                                <TD>Jumlah Izin<font color="#ff0000">*</font> </TD>
-                                <TD>:
-                                    <INPUT TYPE="text" NAME="t_rkp__izin"  size="5" value="<!--{$EDIT_T_RKP__IZIN}-->">
-                                </TD>
-                                
-                        </TR>
-                        <TR>
-                                <TD>Jumlah Alpa<font color="#ff0000">*</font> </TD>
-                                <TD>:
-                                    <INPUT TYPE="text" NAME="t_rkp__alpa"  size="5" value="<!--{$EDIT_T_RKP__ALPA}-->">
-                                </TD>  
-                        </TR>
-                        <TR>
-                                <TD>Jumlah Perjalanan Dinas<font color="#ff0000">*</font> </TD>
-                                <TD>:
-                                    <INPUT TYPE="text" NAME="t_rkp__dinas"  size="5" value="<!--{$EDIT_T_RKP__DINAS}-->">
-                                </TD>   
-                        </TR>
-                         <TR>
-                                <TD>Jumlah Cuti<font color="#ff0000">*</font> </TD>
-                                <TD>:
-                                    <INPUT TYPE="text" NAME="t_rkp__cuti"  size="5" value="<!--{$EDIT_T_RKP__CUTI}-->">
-                                </TD>
-                        </TR>
-                        
-
-                        <TR>
-                                <TD>Tahun <font color="#ff0000">*</font></TD> 
-			
-					<TD>: <SELECT name="tahun">
-							<OPTION value="">[Pilih Tahun]</OPTION>
-							<OPTION value="2016" <!--{if $EDIT_T_RKP__THN ==2016}-->selected<!--{/if}-->>2016</OPTION>
-							<OPTION value="2017" <!--{if $EDIT_T_RKP__THN ==2017}-->selected<!--{/if}-->>2017</OPTION>
-                                                        <OPTION value="2018" <!--{if $EDIT_T_RKP__THN ==2018}-->selected<!--{/if}-->>2018</OPTION>
-						</SELECT>
-					</TD>
-			</TR>
-                         <TR>
-                                <TD>Bulan <font color="#ff0000">*</font></TD> 
-					<TD>: <SELECT name="bulan" >
-                                            <OPTION value="">[Pilih Bulan]</OPTION>
-                                            <OPTION value="1" <!--{if $EDIT_T_RKP__BLN==1}-->selected<!--{/if}-->>Januari</OPTION>
-                                            <OPTION value="2" <!--{if $EDIT_T_RKP__BLN==2}-->selected<!--{/if}-->>Februari</OPTION>
-                                            <OPTION value="3" <!--{if $EDIT_T_RKP__BLN==3}-->selected<!--{/if}-->>Maret</OPTION>
-                                            <OPTION value="4" <!--{if $EDIT_T_RKP__BLN==4}-->selected<!--{/if}-->>April</OPTION>
-                                            <OPTION value="5" <!--{if $EDIT_T_RKP__BLN==5}-->selected<!--{/if}-->>Mei</OPTION>
-                                            <OPTION value="6" <!--{if $EDIT_T_RKP__BLN==6}-->selected<!--{/if}-->>Juni</OPTION>
-                                            <OPTION value="7" <!--{if $EDIT_T_RKP__BLN==7}-->selected<!--{/if}-->>Juli</OPTION>
-                                            <OPTION value="8" <!--{if $EDIT_T_RKP__BLN==8}-->selected<!--{/if}-->>Agustus</OPTION>
-                                            <OPTION value="9" <!--{if $EDIT_T_RKP__BLN==9}-->selected<!--{/if}-->>September</OPTION>
-                                            <OPTION value="10" <!--{if $EDIT_T_RKP__BLN==10}-->selected<!--{/if}-->>Oktober</OPTION>
-                                            <OPTION value="11" <!--{if $EDIT_T_RKP__BLN==11}-->selected<!--{/if}-->>Nopember</OPTION>
-                                            <OPTION value="12" <!--{if $EDIT_T_RKP__BLN==12}-->selected<!--{/if}-->>Desember</OPTION>
-						</SELECT>
-					</TD>
-			</TR>
-                        
-                        
-  <TR>
-                                <TD>Status <font color="#ff0000">*</font></TD> 
-			
-					<TD>: <SELECT name="approval">
-							<OPTION value="">[Pilih Status]</OPTION>
-							<OPTION value="3" <!--{if $EDIT_T_RKP__APPROVAL=='3'}-->selected<!--{/if}-->>Disetujui HGLM</OPTION>
-							<OPTION value="2" <!--{if $EDIT_T_RKP__APPROVAL=='2'}-->selected<!--{/if}-->>Tidak Disetujui HGLM</OPTION>       
-						</SELECT>
-			</TD>
-  </TR>
-                        
-                        <TR>
-                                <TD>Keterangan <font color="#ff0000">*</font></TD> 
-			
-                                <TD>: <textarea rows="5" cols="20" NAME="t_rkp__keterangan"  size="12" ><!--{$EDIT_T_RKP__KETERANGAN}--></textarea></TD>
-                        </TR>
-</TR>                       
-  
-<INPUT TYPE="hidden" NAME="t_rkp__thn"  size="5" value="<!--{$EDIT_T_RKP__THN}-->">
-<INPUT TYPE="hidden" NAME="t_rkp__bln"  size="5" value="<!--{$EDIT_T_RKP__BLN}-->">
-<INPUT TYPE="hidden" NAME="t_rkp__no_mutasi"  size="5" value="<!--{$EDIT_T_RKP__NO_MUTASI}-->">
-<INPUT TYPE="hidden" NAME="t_rkp__approval"  size="5" value="<!--{$EDIT_T_RKP__APPROVAL}-->">
-                              
-                                
-                                <TR><TD height="40"></TD>
-					<TD>
-					<INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
-					<INPUT TYPE="hidden" name="limit" value="<!--{$LIMIT}-->">
-					<INPUT TYPE="hidden" name="SORT" value="<!--{$SORT}-->">
-					<INPUT TYPE="hidden" name="page" value="<!--{$page}-->">
-					<INPUT TYPE="hidden" name="op" value="0">
-                                     
-					<a class="button" href="#" onclick="this.blur();return checkFrm(frmCreate);"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$SUBMIT}--></span></a>
-					<a class="button" href="#" onclick="this.blur();document.frmCreate.reset(); resetFrm(frmCreate); "><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$RESET}--></span></a>
-					</TD>
-				</TR>
-					<TR><td  colspan="2"> <font color="#ff0000"> Keterangan * Wajib Diisi</font></td>
-
-					</tr>
-                
-			</TABLE>
-		</FORM>
-		</td></tr>
-		</table>
-		</DIV>
-		
-<!--form_tambah_tutup-->                              	
-<DIV ID="_menuEntry2_1" style="top:10px;width:100%;position:absolute;">
-	<TABLE WIDTH="100%" ALIGN="CENTER" CELLPADDING="1" CELLSPACING="2">
-		<!--DIVIDER HERE-->
-		<TR>
-			<TD>
-		<DIV ID="_menuEdit_1">
-<!--form_cari--> 
-<div id="panel-box">
-		<div id="title-box2">Pencarian Data</div>
-		<div id="title-box-close"><img src="<!--{$HREF_IMG_PATH}-->/icon/close.gif" onClick="document.getElementById('_menuEdit_1').style.display='none';" align="absmiddle" class="imgLink" title="Close"></div>
-		<div id="panel-content">
-		
-		<FORM METHOD=GET ACTION="" NAME="frmList1">
-		<TABLE id="table-search-box">	
-		<!--{if ($JENIS_USER_SES=='1')}-->
-							<TR>
-								<TD>Cabang</TD>
-								<TD><select name="kode_perwakilan_cari" onchange="cari_subcab(this.value);"> 
-									<option value=""> [Pilih Cabang] </option>
-									<!--{section name=x loop=$DATA_CABANG}-->
-									<!--{if trim($DATA_CABANG[x].r_cabang__id) == $EDIT_KODE_CABANG}-->
-									<option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
-									<!--{else}-->
-									<option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
-									<!--{/if}-->
-									<!--{/section}-->
-									</select>		</TD>
-							</TR>
-					<!--{/if}-->	
-							<TR>
-								<TD>Pilih Sub Cabang</TD>
-								<TD>
-                                                                        <DIV id="ajax_subcabang">
-                                                                            <select name="cari_sub_cab" onchange="cari_subcab(this.value);">
-                                                                            <option value="">[Pilih Kabupaten]</option>
-                                                                            <!--{section name=x loop=$DATA_SUBCABANG}-->
-                                                                            <!--{if trim($DATA_SUBCABANG[x].r_subcab__id)}-->
-                                                                            <option value="<!--{$DATA_SUBCABANG[x].r_subcab__id}-->" selected > <!--{$DATA_SUBCABANG[x].subcab.r_subcab__id}--> </option>
-                                                                            <!--{else}-->
-                                                                            <option value="<!--{$DATA_SUBCABANG[x].r_subcab__id}-->"  > <!--{$DATA_SUBCABANG[x].subcab.r_subcab__id}--> </option>
-                                                                            <!--{/if}-->
-                                                                            <!--{/section}-->
-                                                                            </select> 
-                                                                    </DIV>
-                                                                </TD>
-							</TR>
+			</TR> 	
 							
-							<TR>
-								<TD>Nama Karyawan </TD>
-								<TD><INPUT TYPE="text" NAME="nama_karyawan_cari" size="30"></TD>
-							</TR>
-                                                         <TR><TD>ID Finger </TD><TD><INPUT TYPE="text" NAME="id_finger_cari" size="30"></TD></TR>
-                            <TR>
-                                    <TD>Periode Bulan Aktif<font color="#ff0000">*</font></TD> 
-					<TD><SELECT name="bulan_cari" >
-                                            <OPTION value="">[Pilih Bulan]</OPTION>
-                                            <OPTION value="01" <!--{if $PERIODE_BULAN==1}-->selected<!--{/if}-->>Januari</OPTION>
-                                            <OPTION value="02" <!--{if $PERIODE_BULAN==2}-->selected<!--{/if}-->>Februari</OPTION>
-                                            <OPTION value="03" <!--{if $PERIODE_BULAN==3}-->selected<!--{/if}-->>Maret</OPTION>      
-                                            <OPTION value="04" <!--{if $PERIODE_BULAN==4}-->selected<!--{/if}-->>April</OPTION>
-                                            <OPTION value="05" <!--{if $PERIODE_BULAN==5}-->selected<!--{/if}-->>Mei</OPTION>
-                                            <OPTION value="06" <!--{if $PERIODE_BULAN==6}-->selected<!--{/if}-->>Juni</OPTION>
-                                            <OPTION value="07" <!--{if $PERIODE_BULAN==7}-->selected<!--{/if}-->>Juli</OPTION>
-                                            <OPTION value="08" <!--{if $PERIODE_BULAN==8}-->selected<!--{/if}-->>Agustus</OPTION>
-                                            <OPTION value="09" <!--{if $PERIODE_BULAN==9}-->selected<!--{/if}-->>September</OPTION>
-                                            <OPTION value="10" <!--{if $PERIODE_BULAN==10}-->selected<!--{/if}-->>Oktober</OPTION>
-                                            <OPTION value="11" <!--{if $PERIODE_BULAN==11}-->selected<!--{/if}-->>Nopember</OPTION>
-                                            <OPTION value="12" <!--{if $PERIODE_BULAN==12}-->selected<!--{/if}-->>Desember</OPTION>
+							
+							
                                                         
-						</SELECT>
-					</TD>
-			</TR>
-                        <TR>
-                                <TD>Periode Tahun Aktif<font color="#ff0000">*</font></TD> 
-                                            <TD><SELECT name="tahun_cari" >
-							<OPTION value="">[Pilih Tahun]</OPTION>
-							<OPTION value="2016" <!--{if $PERIODE_TAHUN==2016}-->selected<!--{/if}-->>2016</OPTION>
-							<OPTION value="2017" <!--{if $PERIODE_TAHUN==2017}-->selected<!--{/if}-->>2017</OPTION>
-                                                        <OPTION value="2018" <!--{if $PERIODE_TAHUN==2018}-->selected<!--{/if}-->>2018</OPTION>
-							<OPTION value="2019" <!--{if $PERIODE_TAHUN==2019}-->selected<!--{/if}-->>2019</OPTION>
-							<OPTION value="2020" <!--{if $PERIODE_TAHUN==2020}-->selected<!--{/if}-->>2020</OPTION>
-                                                        
-                                                        
-                                                       
-                                                        
-						</SELECT>
-                                            </TD>
-			</TR>
-                                                        
-                                                        			 
-			<TR><TD></TD>
+                        <TR><TD>Nama Karyawan </TD><TD><INPUT TYPE="text" NAME="nama_karyawan_cari" size="30"></TD></TR>
+                        <TR><TD>ID Finger </TD><TD><INPUT TYPE="text" NAME="id_finger_cari" size="30"></TD></TR>
+			<TR>
+							<TD>Periode</TD>
+							<TD>							
+							<SELECT name="bulan"   > 
+								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
+                                                                <OPTION value="01" <!--{if $BULAN_SES==1}-->selected<!--{/if}-->>Januari</OPTION>
+								<OPTION VALUE="02"<!--{if $BULAN_SES==2}-->selected<!--{/if}-->>Februari</OPTION>
+								<OPTION VALUE="03"<!--{if $BULAN_SES==3}-->selected<!--{/if}-->>Maret</OPTION>
+								<OPTION VALUE="04"<!--{if $BULAN_SES==4}-->selected<!--{/if}-->>April</OPTION>
+								<OPTION VALUE="05"<!--{if $BULAN_SES==5}-->selected<!--{/if}-->>Mei</OPTION>
+								<OPTION VALUE="06"<!--{if $BULAN_SES==6}-->selected<!--{/if}-->>Juni</OPTION>
+								<OPTION VALUE="07"<!--{if $BULAN_SES==7}-->selected<!--{/if}-->>Juli</OPTION>
+								<OPTION VALUE="08"<!--{if $BULAN_SES==8}-->selected<!--{/if}-->>Agustus</OPTION>
+								<OPTION VALUE="09"<!--{if $BULAN_SES==9}-->selected<!--{/if}-->>September</OPTION>
+								<OPTION VALUE="10"<!--{if $BULAN_SES==10}-->selected<!--{/if}-->>Oktober</OPTION>
+								<OPTION VALUE="11"<!--{if $BULAN_SES==11}-->selected<!--{/if}-->>November</OPTION>
+								<OPTION VALUE="12"<!--{if $BULAN_SES==12}-->selected<!--{/if}-->>Desember</OPTION>				 
+                                                        </SELECT> 
+
+
+							<SELECT name="tahun" > 
+						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
+						<!--{section name=foo start=2010 loop=2021 step=1}-->
+ 							  <!--{if ($smarty.section.foo.index)==$TAHUN_SES}-->
+								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+							  <!--{else}-->
+									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+							 <!--{/if}--> 
+						<!--{/section}-->
+						</SELECT> 
+						 </TD></TR>
+                        
+                        
+                        
+                        
+                        <TR><TD></TD>
 				<TD>
 				<INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
 				<INPUT TYPE="hidden" name="limit" value="<!--{$LIMIT}-->">
@@ -430,125 +523,88 @@ function hideIt(){
 			</TABLE>
 			</FORM>
 			</div></div>
-                                
-        <!--form_cari--> 			
+
+
+
+<!--form_cari--> 			
 		</DIV>
 		
 		<FORM METHOD=GET ACTION="" NAME="frmList">
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat">Verifikasi Rekap Data Kehadiran oleh HGLM</td></tr>
+		<tr><td class="tcat">Verifikasi Rekap Data Absen <!--{$NAMA_PRIV}--></td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" >
-		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0"> Verifikasi Rekap Data Kehadiran oleh HGLM </td></tr>
-		<tr><td class="alt2" style="padding:0px;">
-		<table width="100%">
-		<TR>
-                                        						<th class="tdatahead" align="left">NO</TH>
-                                                                                        <th class="tdatahead" align="left">ID FINGER</TH>
-											<th class="tdatahead" align="left">NAMA</TH>											
-											<th class="tdatahead" align="left" >CABANG</TH>
-                                                                                        <th class="tdatahead" align="left" >SUB CABANG</TH>
-                                                                                        <th class="tdatahead" align="left" >DEPARTEMEN</TH>
-                                                                                        <th class="tdatahead" align="left" >BULAN</TH>
-                                                                                        <th class="tdatahead" align="left" >TAHUN</TH>
-                                                                                        <th class="tdatahead" align="left" >APPROVAL STATUS</TH>
-                                                                                        <th class="tdatahead" align="left" >HADIR</TH>
-                                                                                        <th class="tdatahead" align="left" >SAKIT</TH>
-                                                                                        <th class="tdatahead" align="left" >IZIN</TH>
-                                                                                        <th class="tdatahead" align="left" >ALPA</TH>
-                                                                                        <th class="tdatahead" align="left" >DINAS</TH>
-                                                                                        <th class="tdatahead" align="left" >CUTI</TH>
-                                                                                        <th class="tdatahead" align="left" >KETERANGAN</TH>
-                                                                                       
-                                                                                       <th class="tdatahead" COLSPAN="2"><!--{$ACTION}--></th>
-                                                                                        
-											
-			</TR>
+		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0"> Periode aktif  Mulai : <!--{$PERIODE_AWAL|date_format:"%d-%B-%Y"}--> s/d <!--{$PERIODE_AKHIR|date_format:"%d-%B-%Y"}--> </td></tr>
+                        <tr><td class="alt2" style="padding:0px;">
+                    
+             
+		
+<table id="example" class="display" cellpadding="6" cellspacing="6" width="100%">
+             <thead class="tdatahead">
+		<tr>
+					<th width="4%" rowspan="2" align="left" class="alt2">NO</TH>							
+					<th width="8%" rowspan="2" align="left" class="alt2" >CABANG</TH>
+					<th width="13%" align="left" class="alt2" >PERIODE AWAL</TH>
+					<th width="13%" align="left" class="alt2" >PERIODE AKHIR</TH>
+					<th width="4%" rowspan="2" align="left" class="alt2" >HK</TH>
+					<th colspan="3" align="left" class="alt2" ><div align="center">PEGAWAI</div></TH>
+					<th align="left" class="alt2" ><div align="center">REKAP ABSEN </div></TH>
+                    <th colspan="5" align="left" class="alt2" ><div align="center">APPROVAL</div></TH>
+                                    
+	          </tr>
+			<tr>
+			  <th width="13%" align="left" class="alt2" >
+                              <!--{if ($AWAL_CARI)!=''}--> 
+                              <!--{$AWAL_CARI}-->
+                            <!--{else}--> 
+                            <!--{$PERIODE_AWAL}-->
+                                 <!--{/if}--></TH>
+                            <th width="13%" align="left" class="alt2" > <!--{if ($AWAL_CARI)!=''}--> 
+                              <!--{$AKHIR_CARI}-->
+                            <!--{else}--> 
+                            <!--{$PERIODE_AKHIR}-->
+                                 <!--{/if}--></TH>
+                            <th width="11%" align="left" class="alt2" ><div align="left">PEG AWAL </div></TH>
+                            <th width="11%" align="left" class="alt2" ><div align="left">PEG RESIGN </div></TH>
+                            <th width="11%" align="left" class="alt2" ><div align="left">PEG AKTIF </div></TH>
+                            <th width="7%" align="left" class="alt2" >TDK ADA ABSEN</TH>
+                            <th width="8%" align="left" class="alt2" > HRD</TH>
+                            <th width="14%" align="left" class="alt2" >BOM/KOORD</TH>
+                            <th width="9%" align="left" class="alt2" > HGLM</TH>
+                            <th width="9%" align="left" class="alt2" >CLOSING</TH>
+							  <th width="9%" align="left" class="alt2" >AKSI</TH>
+			</tr>
 			</thead>
-			<tbody>
+			<tbody class="tdatacontent" >
 			<!--{section name=x loop=$DATA_TB}-->
-			<tr class='<!--{cycle values="alt,alt3"}-->'>
-											<TD width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
-                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_pegawai__nama}--></TD>
-                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_cabang__nama}--></TD>
-                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_subcab__nama}--></TD> 
-                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_dept__ket}--></TD>
-                                                                                        <TD class="tdatacontent">
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==1)}--> Januari <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==2)}--> Februari <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==3)}--> Maret <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==4)}--> April <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==5)}--> Mei <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==6)}--> Juni <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==7)}--> Juli <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==8)}--> Agustus <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==9)}--> September <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==10)}--> Oktober <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==11)}--> November <!--{/if}-->
-                                                                                        <!--{if ($DATA_TB[x].t_rkp__bln==12)}--> Desember <!--{/if}-->
-                                                                                        </TD>
-                                                                                          <TD class="tdatacontent"> <!--{$DATA_TB[x].t_rkp__thn}--></TD>
-                                                                                        <TD class="tdatacontent"> 
-                                                                                         <!--{if ($DATA_TB[x].t_rkp__approval) ==1}-->
-                                                                                                        Telah disetujui HRD
-                                                                                           <!--{elseif ($DATA_TB[x].t_rkp__approval) ==2}-->
-                                                                                                         <font color="green">Telah disetujui BOM</font>
-                                                                                            <!--{else ($DATA_TB[x].t_rkp__approval) ==3}-->  
-                                                                                                         <font color="#ff0000">Telah disetujui HGLM</font>
-                                                                                            <!--{/if}--> 
-                                                                                        </TD>
-                                                                                        
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__hadir}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__sakit}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__izin}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__alpa}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__dinas}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_rkp__cuti}--></TD>
-                                                                                        <TD class="tdatacontent"  >
-                                                                                            <!--{if ($DATA_TB[x].t_rkp__keterangan) =='KURANG'}-->
-                                                                                              <font color="#ff0000"><!--{$DATA_TB[x].t_rkp__keterangan}--></font>
-                                                                                           <!--{else}-->
-                                                                                              <!--{$DATA_TB[x].t_rkp__keterangan}-->   
-                                                                                            <!--{/if}-->                                                                   
-                                                                                           </TD>
-                                                                                    
-                                                                                        <TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].t_rkp__no_mutasi}-->&tahun=<!--{$DATA_TB[x].t_rkp__thn}-->&bulan=<!--{$DATA_TB[x].t_rkp__bln}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
-											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/delete.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$DELETE}-->" onclick="return checkDelete('engine.php?op=2&id=<!--{$DATA_TB[x].t_rkp__no_mutasi}-->&tahun=<!--{$DATA_TB[x].t_rkp__thn}-->&bulan=<!--{$DATA_TB[x].t_rkp__bln}--> &mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
-                                                                                       
-										</TR>
-										<!--{sectionelse}-->
-										<TR>
-											<TD class="tdatacontent" COLSPAN="18" align="center">Maaf, Data masih kosong</TD>
-										</TR>
+			<tr>
+                        <TD  align="center"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
+                        <TD align="left"> <!--{$DATA_TB[x].r_cabang__nama}-->  </TD>
+                        <TD align="center"> <!--{if ($DATA_TB[x].t_rkp__awal)>0}--> <!--{$DATA_TB[x].t_rkp__awal}-->
+                            <!--{else}--> <font color="#ff0000">Blm ada Rkp Absen</font> 
+                                 <!--{/if}--> </TD>
+                        <TD align="center"><!--{if ($DATA_TB[x].t_rkp__akhir)>0}--> <!--{$DATA_TB[x].t_rkp__akhir}-->
+                            <!--{else}--> <font color="#ff0000">Blm ada Rkp Absen</font> 
+                                 <!--{/if}--> </TD>
+                        <TD align="center"> <!--{$DATA_TB[x].mx_day}--> </TD>
+                        <TD align="center"><font color="#0c49f2"> <!--{$DATA_TB[x].rkp_peg}--></font> </TD>
+			<TD> <!--{$DATA_TB[x].rkp_resign}--> </TD>
+			<TD> <font color="#0c49f2"><!--{$DATA_TB[x].rkp_peg_aktif}--></font> </TD>
+                        <TD align="center"><font color="#ff0000"><!--{$DATA_TB[x].rkp_nol}--></font> </TD>
+                        <TD align="center"><font color="#137477"><!--{$DATA_TB[x].rkp_hrd}--></font> </TD>
+                        <TD align="center"><font color="#28490a"><!--{$DATA_TB[x].rkp_bom}--></font> </TD>
+                        <TD align="center"><font color="#310538"><!--{$DATA_TB[x].rkp_hglm}--></font> </TD>
+                         <TD align="center"><font color="#a00404"><!--{$DATA_TB[x].rkp_closing}--></font> </TD>
+                          <TD width="20" ALIGN="CENTER">
+                                    <IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/arrow_skip.png" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].r_cabang__id}-->&tahun=<!--{$DATA_TB[x].t_rkp__thn}-->&bulan=<!--{$DATA_TB[x].t_rkp__bln}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink">
+                                  </TD>
+                        </TR>
+                        <!--{sectionelse}-->
+                        <TR>
+                                <TD COLSPAN="18" align="center">Maaf, Data masih kosong</TD>
+                        </TR>
 			<!--{/section}-->
 			</tbody>
-		</table>
-<div id="panel-footer">
-    <!--halaman -->
- <table width="100%">
-                    <tr class="text-regular">
-                    <td width="20">Tampilkan</td>
-                    <td width="35"><INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
-                    <INPUT TYPE="hidden" name="kode_perwakilan_cari" value="<!--{$KODE_PERWAKILAN_CARI}-->">
-                    <INPUT TYPE="hidden" name="nama_karyawan_cari" value="<!--{$NAMA_KARYAWAN_CARI}-->">
-                    <INPUT TYPE="hidden" name="kode_subcab_cari" value="<!--{$KODE_SUBCAB_CARI}-->">
-                    <INPUT TYPE="hidden" name="tahun_cari" value="<!--{$TAHUN_CARI}-->">
-                    <INPUT TYPE="hidden" name="bulan_cari" value="<!--{$BULAN_CARI}-->">
-                    
-                    
-                                    <SELECT NAME="limit" onchange="this.form.page.value='1'; this.form.submit();" class="text-paging">
-                                    <!--{section name=x loop=$LISTVAL}-->
-                                    <OPTION VALUE = "<!--{$LISTVAL[x]}-->" <!--{if $LISTVAL[x]==$LIMIT}--> SELECTED <!--{/if}-->> <!--{$LISTVAL[x]}--> </OPTION>
-                                    <!--{/section}-->
-                                    </SELECT></td>
-                    <td>Baris : <!--{$COUNT_VIEW}--> - <!--{$COUNT_ALL}--> Dari <!--{$COUNT}--></td>
-                    <td align="right"><!--{$NEXT_PREV}--></td>
-                    </tr>
-                    </table>
-    <!--halaman -->
-</div>
-		</td></tr>
 		</table>
 		
 		</form>

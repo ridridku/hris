@@ -35,6 +35,7 @@ $hal_ke_ = $n_limit*($hal_ke-1);
 
 $sql="SELECT
   r_penempatan.r_pnpt__nip AS r_pnpt__nip,
+   r_pegawai.r_pegawai__id AS r_pegawai__id,
   r_pegawai.r_pegawai__nama AS r_pegawai__nama,
   r_pegawai.r_pegawai__jk AS r_pegawai__jk,
   r_pegawai.r_pegawai__nama AS r_pegawai__nama,
@@ -133,7 +134,6 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 <td width="10">:</td>
 <td width="30">
 <select name='pil' class="text">
-<option value=0></option>
 <option value='1' <?PHP if ($pil==1) { echo "selected"; } ?>>Nama  </option>
 <option value='2' <?PHP if ($pil==2) { echo "selected"; } ?>>Nip</option>
  </select>
@@ -197,7 +197,7 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
                                         ?>
 				
 				<tr align="center" 
-                                    onclick="GetPengaduan('<?=$list_arr_satuan[$i]['r_pegawai__nama'];?>','<?=$list_arr_satuan[$i]['r_pnpt__nip'];?>','<?=$list_arr_satuan[$i]['r_pegawai__tlp_kantor'];?>',
+                                    onclick="GetPengaduan('<?=$list_arr_satuan[$i]['r_pegawai__nama'];?>','<?=$list_arr_satuan[$i]['r_pegawai__id'];?>','<?=$list_arr_satuan[$i]['r_pegawai__tlp_kantor'];?>',
                                                 '<?=$list_arr_satuan[$i]['r_pegawai__jk'];?>','<?=$list_arr_satuan[$i]['r_pegawai__tlp_rumah'];?>','<?=$list_arr_satuan[$i]['r_pegawai__nama_jalan'];?>');"  
                                     onMouseOver="setPointer(this, <?=$initSet[$i];?>, 'over', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 
                                     onMouseOut="setPointer(this, <?=$initSet[$i];?>, 'out', '<?=$row_class[$i];?>', '#CCFFCC', '#FFCC99');" 

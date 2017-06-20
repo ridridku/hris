@@ -122,6 +122,9 @@ function hideIt(){
 <body class="contentPage" onLoad="hideIt(); <!--{if $OPT==1}-->showAll('_menuEntry1_',1);hideAll('_menuEntry2_',1);<!--{else}-->hideAll('_menuEdit_',1);hideAll('_menuEntry1_',1);showAll('_menuEntry2_',1);<!--{/if}-->">
 <!--tombol_tambah -->
 <div id="add-search-box">
+    <a class="button" href="#" onclick="this.blur();showAll('_menuEntry1_',1);hideAll('_menuEntry2_',1);this.disabled=true;" <!--{if $OPT==1}--> DISABLED <!--{/if}-->><span><img src="<!--{$HREF_IMG_PATH}-->/icon/details.gif" align="absmiddle"> <!--{$BTN_NEW}--></span></a>
+<a class="button" href="#" onclick="this.blur();showLevel('_menuEdit_',1,1);"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/search.png" align="absmiddle"> Pencarian Data</span></a>
+
 
 </div>
 <!--tombol_tambah  -->
@@ -143,39 +146,33 @@ function hideIt(){
                                         <INPUT TYPE="hidden" NAME="id" value="<!--{$EDIT_ID}-->" size="35" readOnly class="text_disabled">
 					<!--{/if}-->
                         
+                        
                         <TR>
-				<TD>Bulan Dan Tahun Periode<font color="#ff0000">*</font></TD>
-                                
-			</TR>    
-                        <TR>
-							<TD>Periode</TD>
-							<TD>							
-                                                            <SELECT name="bulan" > 
-								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="1" <!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==1}-->selected<!--{/if}-->>Januari</OPTION>
-								<OPTION VALUE="2"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==2}-->selected<!--{/if}-->  >Februari</OPTION>
-								<OPTION VALUE="3"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==3}-->selected<!--{/if}-->  >Maret</OPTION>
-								<OPTION VALUE="4"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==4}-->selected<!--{/if}-->  >April</OPTION>
-								<OPTION VALUE="5"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==5}-->selected<!--{/if}--> >Mei</OPTION>
-								<OPTION VALUE="6"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==6}-->selected<!--{/if}-->  >Juni</OPTION>
-								<OPTION VALUE="7"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==7}-->selected<!--{/if}-->  >Juli</OPTION>
-								<OPTION VALUE="8"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==8}-->selected<!--{/if}-->  >Agustus</OPTION>
-								<OPTION VALUE="9"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==9}-->selected<!--{/if}-->  >September</OPTION>
-								<OPTION VALUE="10"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==10}-->selected<!--{/if}-->  >Oktober</OPTION>
-								<OPTION VALUE="11"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==11}-->selected<!--{/if}-->  >November</OPTION>
-								<OPTION VALUE="12"<!--{if $EDIT_R_PERIODE__PAYROLL_BULAN==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
-                                                        </SELECT> 
-						<SELECT name="tahun" > 
-						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
-						<!--{section name=foo start=2010 loop=2021 step=1}-->
- 							  <!--{if ($smarty.section.foo.index)==$EDIT_R_PERIODE__PAYROLL_TAHUN}-->
-								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
-							  <!--{else}-->
-									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
-							 <!--{/if}--> 
-						<!--{/section}-->
-						</SELECT> 
-						 </TD></TR>
+                        <TD>Periode Awal <font color="#ff0000">*</font></TD>
+                        <TD>:							
+                        <!--{if $EDIT_VAL==0}-->
+
+                                <input type="text" NAME="awal" readonly="" value="<!--{$TODAY}-->" >
+				<img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{else}-->
+				 <input type="text" name="awal" value="<!--{$EDIT_R_PEGAWAI__TGL_LULUS}-->" >
+				<img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{/if}-->
+                        </TD>
+                        </TR>
+                          <TR>
+                        <TD>Periode Akhir <font color="#ff0000">*</font></TD>
+                        <TD>:							
+                        <!--{if $EDIT_VAL==0}-->
+
+                                <input type="text" NAME="akhir" readonly="" value="<!--{$TODAY}-->" >
+				<img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{else}-->
+				 <input type="text" name="akhir" value="<!--{$EDIT_R_PEGAWAI__TGL_LULUS}-->" >
+				<img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{/if}-->
+                        </TD>
+                        </TR>
                         
 			<TR>
                                 <TD >Aktifasi Periode</TD>
@@ -286,14 +283,14 @@ function hideIt(){
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
 		<tr><td class="tcat">Rekap Data Kehadiran</td></tr>
 		</table>
-		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="40%" align="left" >
+		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="left" >
 		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0"> Rekap Data Kehadiran</td></tr>
 		<tr><td class="alt2" style="padding:0px;">
 		<table width="100%">
 		<tr>
                                         						<th class="tdatahead" align="left">NO</TH>
-											<th class="tdatahead" align="left" width="10%">BULAN</TH>
-											<th class="tdatahead" align="left">TAHUN</TH>	
+											<th class="tdatahead" align="left" >Periode Awal</TH>
+											<th class="tdatahead" align="left">Periode Akhir</TH>	
                                                                                         <th class="tdatahead" align="left">STATUS</TH>
 											<th class="tdatahead" COLSPAN="2"><!--{$ACTION}--></th>
                 </tr>
@@ -303,49 +300,8 @@ function hideIt(){
 			<tr class='<!--{cycle values="alt,alt3"}-->'>
 											<TD width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
                                                                                         
-                                                                                        <TD class="tdatacontent"> 
-                                                                                                                                                                                         
-                                                                                             <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==1}-->
-                                                                                                    Januari 
-                                                                                            <!--{/if}-->  
-                                                                                            
-                                                                                             <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==2}-->
-                                                                                                    Februari 
-                                                                                            <!--{/if}-->  
-                                                                                            
-                                                                                             <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==3}-->
-                                                                                                    Maret 
-                                                                                            <!--{/if}-->  
-                                                                                              <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==4}-->
-                                                                                                    April 
-                                                                                            <!--{/if}-->  
-                                                                                              <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==5}-->
-                                                                                                    Mei 
-                                                                                            <!--{/if}-->  
-                                                                                            <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==6}-->
-                                                                                                    Juni 
-                                                                                            <!--{/if}-->  
-                                                                                              <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==7}-->
-                                                                                                    Juli 
-                                                                                            <!--{/if}-->  
-                                                                                             <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==8}-->
-                                                                                                    Agustus 
-                                                                                            <!--{/if}-->  
-                                                                                              <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==9}-->
-                                                                                                    September 
-                                                                                            <!--{/if}--> 
-                                                                                              <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==10}-->
-                                                                                                    Oktober 
-                                                                                            <!--{/if}--> 
-                                                                                            <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==11}-->
-                                                                                                    Nopember 
-                                                                                            <!--{/if}-->  
-                                                                                             <!--{if ($DATA_TB[x].r_periode__payroll_bulan)==12}-->
-                                                                                                    Desember 
-                                                                                            <!--{/if}-->  
-                                                                                            
-											 </TD>
-											<TD class="tdatacontent"> <!--{$DATA_TB[x].r_periode__payroll_tahun}-->  </TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_periode__payroll_awal}--></TD>
+											<TD class="tdatacontent"> <!--{$DATA_TB[x].r_periode__payroll_akhir}-->  </TD>
                                                                                         
                                                                                         <TD class="tdatacontent"  >
                                                                                             <!--{if ($DATA_TB[x].r_periode__payroll_status)==1}-->

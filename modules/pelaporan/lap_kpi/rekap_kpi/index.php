@@ -10,7 +10,6 @@ session_start();
 if ((!isset($_SESSION['UID'])) || (empty($_SESSION['UID']))){
 	require_once('../../../../includes/header.redirect.inc');
 }else{
-
 //yang harus dibuat session
 $THEME = base64_encode("defaults");
 $LANG = base64_encode("indonesia");
@@ -157,7 +156,6 @@ $date_akhir= implode("-",$arr);
 
 $smarty->assign ("PERIODE_AWAL", $date_awal);
 $smarty->assign ("PERIODE_AKHIR", $date_akhir);
-
         
 if ($_GET['nama_karyawan_cari']) $nama_karyawan_cari = $_GET['nama_karyawan_cari'];
 else if ($_POST['nama_karyawan_cari']) $nama_karyawan_cari = $_POST['nama_karyawan_cari'];
@@ -168,12 +166,9 @@ if ($_GET['search']) $search = $_GET['search'];
 else if ($_POST['search']) $search = $_POST['search'];
 else $search="";
 
-
 if ($_GET['tema_cari']) $tema_cari= $_GET['tema_cari'];
 else if ($_POST['tema_cari']) $tema_cari = $_POST['tema_cari'];
 else $tema_cari="";
-
-
 
 $smarty->assign ("KODE_CABANG_CARI", $kode_cabang_cari);
 $tahun_ses		=	$_SESSION['SESSION_TAHUN'];
@@ -224,13 +219,9 @@ $smarty->assign ("DATA_STS", $data_sts);
 //--------------------------------------
 //SHOW DATA INSTANSI
 //---------------------------------------
-
 $smarty->assign ("SES_TAHUN", $SES_TAHUN);
 $smarty->assign ("SES_INSTANSI", $SES_INSTANSI);
 $smarty->assign ("SES_JENIS_USER", $SES_JENIS_USER);
-
-
-
  //--------------------------------------
  
 
@@ -450,7 +441,7 @@ if ($_GET['search'] == '1')
 						 } 
                                                  if ($date_awal !='' AND $date_akhir !='')
                                                      {
-                                                     $sql.=" AND date(r_kpi__date_updated) BETWEEN '$date_awal' AND '$date_akhir' ";
+                                                     $sql.=" AND date(r_kpi__tgl) BETWEEN '$date_awal' AND '$date_akhir' ";
                                                      }
 						if ($nama_karyawan_cari !='') {
 						 	$sql.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
@@ -460,7 +451,7 @@ if ($_GET['search'] == '1')
 						 }
 //                                               
 						  $sql.=" order by r_kpi__id ASC  ";
-                                                //  var_dump($sql) or die();
+                                              
 							$numresults=$db->Execute($sql);
 							$count = $numresults->RecordCount();
 							$recordSet = $db->Execute($sql);
@@ -509,12 +500,13 @@ if ($_GET['search'] == '1')
                                                 $smarty->assign ("DATA_TB", $data_tb);
                                             
                                                 //total karyawan
-                                                $sql_total="SELECT COUNT(r_kpi.r_kpi__id) AS total_orang,
+                                                $sql_total="SELECT 
+                                                            COUNT(r_kpi.r_kpi__id) AS count_kpi,
                                                             r_kpi.r_kpi__id AS r_kpi__id,
                                                             r_kpi.r_kpi__finger AS r_kpi__finger,
                                                             r_kpi.r_kpi__bulan AS r_kpi__bulan,
                                                             r_kpi.r_kpi__tahun AS r_kpi__tahun,
-                                                            r_kpi.r_kpi__nilai AS r_kpi__nilai,
+                                                            (SUM(r_kpi.r_kpi__nilai)/COUNT(r_kpi.r_kpi__id)) AS total_orang,
                                                             r_kpi.r_kpi__keterangan AS r_kpi__keterangan,
                                                             r_kpi.r_kpi__approval AS r_kpi__approval,
                                                             r_kpi.r_kpi__date_created AS r_kpi__date_created,
@@ -552,7 +544,7 @@ if ($_GET['search'] == '1')
 						 } 
                                                  if ($date_awal !='' AND $date_akhir !='')
                                                      {
-                                                     $sql_total.=" AND date(r_kpi__date_updated) BETWEEN '$date_awal' AND '$date_akhir' ";
+                                                     $sql_total.=" AND date(r_kpi__tgl) BETWEEN '$date_awal' AND '$date_akhir' ";
                                                      }
 						if ($nama_karyawan_cari !='') {
 						 	$sql_total.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
@@ -562,7 +554,7 @@ if ($_GET['search'] == '1')
 						 }
 //                                               
 						  $sql.=" order by r_kpi__tahun Asc ";
-                                               
+                                         //      var_dump($sql_total) or die();
                                 $numresults4=$db->Execute($sql_total);
 				$count4 = $numresults4->RecordCount();
  				$recordSet4 = $db->Execute($sql_total);
@@ -606,154 +598,6 @@ if ($_GET['search'] == '1')
 
         }
 }
-//else 
-//{
-//    
-//    $sql__="SELECT *,UPPER(r_cabang__nama) AS nm_perwakilan FROM r_cabang WHERE  r_cabang.r_cabang__id='$kode_cabang_cari' ";
-//     
-//        $rs__=$db->Execute($sql__);
-//        $nm_perwakilan = $rs__->fields['nm_perwakilan'];
-//        $smarty->assign ("NM_PERWAKILAN", $nm_perwakilan);
-//	
-//        if($jenis_user=='2')    {
-//					$sql = "SELECT * from v_pegawai peg WHERE 1 = 1  AND peg.r_cabang__id='$kode_pw_ses'";
-//                		}
-//                
-//                else
-//                {
-//                    
-//                    $sql  =  "SELECT * FROM v_pegawai peg where 1=1 ";
-//                }
-//                
-//                
-//						 if ($kode_cabang_cari !='') {
-//						 	$sql.="and  peg.r_cabang__id =".$kode_cabang_cari."  ";
-//						 }
-//
-//						 if ($kode_subcab_cari !='') {
-//						 	$sql.=" and  peg.r_subcab__id ='$kode_subcab_cari' ";
-//						 }
-//
-//						if ($departemen_cari !=''  ) {
-//						 	$sql.="  and peg.r_dept__id='$departemen_cari' ";
-//						 } 
-//
-//						  if ($nama_karyawan_cari !='') {
-//						 	$sql.="and peg.r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
-//						 }
-//
-// 
-//						    $sql.=" order by peg.r_pegawai__nama asc ";
-//                                                 
-//							$numresults=$db->Execute($sql);
-//							$count = $numresults->RecordCount();
-//							$recordSet = $db->Execute($sql);
-//							$end = $recordSet->RecordCount();
-//							$initSet = array();
-//							$data_tb = array();
-//							$row_class = array();
-//							$z=0;
-//                                                         $count_no = 1;
-//							while ($arr=$recordSet->FetchRow()) {
-//								array_push($data_tb, $arr);
-//								
-//						
-//                    $label="Nama :". $arr[r_pegawai__nama];
-//                    $labeltgl=$arr[tanggal_tl]." ".$nama_bulan." ".$arr[tahun_tl];
-//					
-//			   $content_data .= print_content(
-//                                   $count_no,
-//                                   $arr[r_pnpt__nip],
-//                                   $arr[r_pnpt__finger_print],
-//                                   $arr[r_pegawai__nama],
-//                                   $arr[r_cabang__nama],
-//                                   $arr[r_subcab__nama],
-//                                   $arr[r_dept__ket],
-//                                   $arr[r_jabatan__ket],
-//                                   $arr[r_level__ket],
-//                                   $arr[r_stp__nama],
-//                                   $arr[r_pnpt__kon_awal],
-//                                   $arr[r_pnpt__kon_akhir]);	
-//							
-//								if ($z%2==0){ 
-//									$ROW_CLASSNAME="#CCCCCC"; }
-//								else {
-//									$ROW_CLASSNAME="#EEEEEE";
-//								   }
-//								array_push($row_class, $ROW_CLASSNAME);
-//								array_push($initSet, $z);
-//								$z++;	
-//                                                               $count_no=$count_no+1;  
-//                                                                } 
-//                                                                   
-//                                                                    $count_view = $start+1;
-//                                                              
-//			    $smarty->assign ("DATA_TB", $data_tb);
-//                            
-//                            
-//                            
-//                            
-//                            //total karyawan
-//                          $sql_total="SELECT COUNT(*) as total_orang FROM v_pegawai where 1=1 ";
-//                             if ($kode_cabang_cari !='') {
-//                                       $sql_total.=" and  r_cabang__id =".$kode_cabang_cari."  ";
-//                                }
-//
-//                                if ($kode_subcab_cari !='') {
-//                                       $sql_total.=" and  r_subcab__id ='$kode_subcab_cari' ";
-//                                }
-//
-//                               if ($departemen_cari !=''  ) {
-//                                       $sql_total.="  and r_dept__id='$departemen_cari' ";
-//                                } 
-//                               if ($nama_karyawan_cari !='') {
-//                                        $sql_total.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
-//						 }
-//
-//
-//                                //      var_dump($sql_total)or die();
-//                                $numresults4=$db->Execute($sql_total);
-//				$count4 = $numresults4->RecordCount();
-// 				$recordSet4 = $db->Execute($sql_total);
-//				$end4 = $recordSet4->RecordCount();
-//				$initSet4 = array();
-//				$data_tb4 = array();
-//				$row_class4 = array();
-//				$z=0;
-//				while ($arr4=$recordSet4->FetchRow()) {
-//					array_push($data_tb4, $arr4);
-//					if ($z%2==0){
-//						$ROW_CLASSNAME="#CCCCCC"; }
-//					else {
-//						$ROW_CLASSNAME="#EEEEEE";
-//					   }
-//                                array_push($row_class4, $ROW_CLASSNAME2);
-//				array_push($initSet4, $z);
-//					$z++;
-//
-//					$label="JML KARYAWAN : ".$arr4[total_orang];
-//					$content_data .= print_content("","","","","","","","","","","",$label);
-//				}
-//
-//                                $smarty->assign ("DATA_TB4", $data_tb4);          
-//                               //TUTUP TOTAL 
-//				$file= $DIR_HOME."/files/laporan_pegawai_".$nm_perwakilan."_".$tahun.".xls";
-//				$fp=@fopen($file,"w");
-//				if(!is_resource($fp))
-//				return false;
-//				//$content = str_replace("@@@@BREAKPAGE@@@@@",$content_break,$content);
-//				stream_set_write_buffer($fp, 0);
-//				
-//				$content = print_header($nm_perwakilan,$tahun);
-//				$content .= $content_data;
-//				$content .= print_footer();
-//				fwrite($fp,$content);
-//				fclose($fp);
-//				$file_2= $HREF_HOME."/files/laporan_pegawai_".$nm_perwakilan."_".$tahun.".xls";	
-//
-//               
-//
-//        }
 
         
         

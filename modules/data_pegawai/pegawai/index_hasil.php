@@ -83,7 +83,8 @@ if($_POST['mod_id'])
 {
 		$mod_id = $_GET['mod_id'];
 }
-
+$jenis_user   = $_SESSION['SESSION_JNS_USER'];
+$kode_pw_ses  = $_SESSION['SESSION_KODE_CABANG'];
 $user_id = base64_decode($_SESSION['UID']);
 
 $smarty->assign ("MOD_ID", $mod_id);
@@ -216,8 +217,13 @@ else
 			if($jenis_user=='2'){
 
                                                 
-                                                $sql =  "select A.r_pegawai__id AS r_pegawai__id,A.r_pegawai__nama AS r_pegawai__nama, A.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk 
-            from r_pegawai A where A.r_pegawai__id not in (select distinct B.r_pnpt__id_pegawai from r_penempatan B)";
+$sql =  "SELECT
+A.r_pegawai__id AS r_pegawai__id,
+A.r_pegawai__nama AS r_pegawai__nama,
+A.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk
+FROM r_pegawai A,r_cabang C
+WHERE 
+A.r_pegawai__id NOT IN (SELECT DISTINCT B.r_pnpt__id_pegawai FROM r_penempatan B) AND C.r_cabang__id=A.r_pegawai__id_subcab AND r_cabang__id='$kode_pw_ses'";
                                             
 
 			} else {

@@ -65,7 +65,7 @@ img.pngfix { behavior: url("themes/defaults/css/iepngfix.htc") }
 <td><select name="jns_user"  onChange="cari(this.value);">
 <option value="">[Pilih Level Pengguna]</option>
 <option value="1">Pusat</option>
-<option value="2">Cabang</option> 
+<option value="2">Cabang</option>
 </select>
 </td>
 </tr>
@@ -73,10 +73,10 @@ img.pngfix { behavior: url("themes/defaults/css/iepngfix.htc") }
 <tr><td class="login_txt" align="left">
 <span style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#000000; font-weight:bold;"> Cabang</span
 ></td>
-<td> 
- <div id="ajax_instansi"> 
-	 <select name="kode_cabang"> 
-	 <option value="">[Pilih Cabang]</option> 
+<td>
+ <div id="ajax_instansi">
+	 <select name="kode_cabang">
+	 <option value="">[Pilih Cabang]</option>
 	 </select>
  </div>
  </td>

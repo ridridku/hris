@@ -325,6 +325,18 @@ td
 
  </tr> <tr height=18 style='height:13.5pt'>
   <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+  <td class=xl29>110150001</td>
+  <td class=xl29 align=right x:num>Ace Syaifulloh</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right>123</td>
+  <td class=xl29 align=right>1</td>
+  <td class=xl29 align=right>1</td>
+  <td class=xl29 align=right>2016-09-27</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
   <td class=xl29>100130048</td>
   <td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
   <td class=xl29 align=right x:num>PUSAT</td>
@@ -336,7 +348,7 @@ td
 
   
  </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
   <td class=xl29>160210116</td>
   <td class=xl29 align=right x:num>Abdul Muji</td>
   <td class=xl29 align=right x:num>BANDUNG</td>
@@ -356,7 +368,7 @@ td
   <td class=xl29 align=right></td>
   <td class=xl29 align=right></td>
   <td class=xl29 align=right></td>
-  <td class=xl29 align=right>JML KARYAWAN : 2</td>
+  <td class=xl29 align=right>JML KARYAWAN : 3</td>
 
   
  </tr> <![if supportMisalignedColumns]>

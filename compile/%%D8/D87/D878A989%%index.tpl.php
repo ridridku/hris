@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-19 11:48:42
+<?php /* Smarty version 2.6.18, created on 2017-06-12 12:21:59
          compiled from defaults/modules/pelaporan/lap_kepegawaian/data_pegawai_detail/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/pelaporan/lap_kepegawaian/data_pegawai_detail/index.tpl', 470, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/pelaporan/lap_kepegawaian/data_pegawai_detail/index.tpl', 410, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -303,7 +303,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                             <TD><INPUT TYPE="text" NAME="nip_karyawan_cari" readonly id="r_pnpt__nip" size="35" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__NIP']; ?>
 " >
                               
-                               <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan()" value=" ... " />  
+                                <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan()" value=" ... " />  
                                
                             </TD>
 
@@ -596,6 +596,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
             <td class=bdr><div align="center"><b>NO</b></div></td>
             <td class=bdr><div align="center"><b>KONTRAK AWAL</b></div></td>
             <td class=bdr><div align="center"><b>KONTRAK AKHIR</b></div></td>
+             <td class=bdr><div align="center"><b>STATUS</b></div></td>
             <td class=bdr><div align="center"><b>JABATAN</b></div></td>
             <td class=bdr><div align="center"><b>DEPARTEMEN</b></div></td>
           </tr>
@@ -625,15 +626,22 @@ $this->_sections['x']['first']      = ($this->_sections['x']['iteration'] == 1);
 $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $this->_sections['x']['total']);
 ?>					
           <tr> 
-              <td class=bdr align=right width=10 valign=top><?php echo $this->_sections['x']['index']+1; ?>
+              <TD class=bdr align=right width=10 valign=top><?php echo $this->_sections['x']['index']+1; ?>
 .&nbsp;</td>
-               <td class=bdr align=center width=80 valign=top><?php echo $this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_pnpt__kon_awal']; ?>
+               <TD class=bdr align=center width=80 valign=top>
+                   <?php if (( $this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_stp__id'] ) < 4): ?>
+                  <?php echo ((is_array($_tmp=$this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_pnpt__kon_awal'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%m-%Y") : smarty_modifier_date_format($_tmp, "%d-%m-%Y")); ?>
+ 
+                <?php else: ?>Tetap<?php endif; ?></TD>
+                <TD class=bdr align=center width=80 valign=top> <?php if (( $this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_stp__id'] ) < 4): ?>
+                  <?php echo ((is_array($_tmp=$this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_pnpt__kon_akhir'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%m-%Y") : smarty_modifier_date_format($_tmp, "%d-%m-%Y")); ?>
+ 
+                <?php else: ?>Tetap<?php endif; ?></td>
+                  <TD class=bdr align=center width=80 valign=top><?php echo $this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_stp__nama']; ?>
 </td>
-                <td class=bdr align=center width=80 valign=top><?php echo $this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_pnpt__kon_akhir']; ?>
+            <TD class=bdr align=center width=80 valign=top><?php echo $this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_jabatan__ket']; ?>
 </td>
-            <td class=bdr align=center width=80 valign=top><?php echo $this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_jabatan__ket']; ?>
-</td>
-            <td class=bdr align=center width=80 valign=top><?php echo $this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_dept__ket']; ?>
+            <TD class=bdr align=center width=80 valign=top><?php echo $this->_tpl_vars['CV_JABATAN'][$this->_sections['x']['index']]['r_dept__ket']; ?>
 </td>
            
           </tr>
@@ -773,15 +781,13 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 <div align=right>
 <hr width=300><font size="1"><i><?php echo $this->_tpl_vars['SHOW_NAMA_KARYAWAN']; ?>
  - <?php echo $this->_tpl_vars['SHOW_NPK']; ?>
-</i></font>&nbsp;&nbsp;</div>
-
-                    
-                <div style="position:relative;float:right;margin-top:20;"><INPUT TYPE="text" NAME="print_desc" class="text_transparent" style="background:transparant;border:0;">
-                <IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+</i></font>&nbsp;&nbsp;</div>                   
+<div style="position:relative;float:right;margin-top:20;"><INPUT TYPE="text" NAME="print_desc" class="text_transparent" style="background:transparant;border:0;">
+<IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /print.png" style="cursor:pointer" align="absmiddle" onMouseOver="document.frmList.print_desc.value='Print';" onMouseOut="document.frmList.print_desc.value='';" 
-                onClick = "window.open('<?php echo $this->_tpl_vars['FILES']; ?>
+onClick = "window.open('<?php echo $this->_tpl_vars['FILES']; ?>
 ');">							
-                </div>
+</div>
                 </FORM>
            <!--CLOSE_VIEW_INDEX-->
 

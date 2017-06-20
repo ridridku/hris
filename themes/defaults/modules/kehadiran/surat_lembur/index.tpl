@@ -111,7 +111,7 @@ function hideIt(){
 <DIV ID="_menuEntry1_1" style="top:10px;width:100%;display:none;position:absolute;">
 
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat"> Data Penempatan</td></tr>
+		<tr><td class="tcat"> Data Lembur</td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/form.gif" align="absmiddle" border="0"> Form Tambah/Ubah Data</td></tr>
@@ -142,7 +142,7 @@ function hideIt(){
                             </TD> 
                                                            <TD><!--{if ($JENIS_USER_SES==1)}-->
 
-                                                                                           <select name="kode_cabang" onchange="cari_subcab(this.value);"> 
+                                                                                           <select name="kode_cabang" > 
                                                                                            <option value=""> Pilih Cabang </option>
                                                                                            <!--{section name=x loop=$DATA_CABANG}-->
 
@@ -201,18 +201,22 @@ function hideIt(){
                    <TR>
                             <TD>Nama Karyawan<font color="#ff0000">*</font> </TD>
                             <TD><INPUT TYPE="text" NAME="karyawan_nama" readonly  id="r_pegawai__nama"  size="35" value="<!--{$EDIT_T_LEMBUR__PEGAWAI_NAMA}-->">
-                             NIP   <INPUT TYPE="text" NAME="karyawan_nip" readonly id="r_pnpt__nip" size="35" value="<!--{$EDIT_T_LEMBUR__NIP}-->" >
-                                
+                                <INPUT TYPE="text" NAME="karyawan_id" readonly id="finger" size="35" value="<!--{$EDIT_T_LEMBUR__NIP}-->" >
                                 <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan()" value=" ... " />
                             </TD>
 
                     </TR>
-                    
+                    <TR>
+                            <TD>Jabatan<font color="#ff0000">*</font> </TD>
+                            <TD><INPUT TYPE="text" NAME="jabatan_id" readonly  id="r_pnpt__jabatan"  size="35" value="<!--{$EDIT_JABATAN}-->">
+                                <INPUT TYPE="hidden" NAME="level_id" readonly  id="level_id"  size="35" value="<!--{$EDIT_LEVEL}-->">
+                            </TD>
+
+                    </TR>
                     <TR>
                             <TD>Nama Atasan<font color="#ff0000">*</font> </TD>
-                            <TD><INPUT TYPE="text" NAME="atasan__nama" readonly  id="r_pegawai__nama2"  size="35" value="<!--{$EDIT_T_LEMBUR__ATASAN_NAMA}-->">
-                              NIP  <INPUT TYPE="text" NAME="atasan__nip" readonly id="r_pnpt__nip2" size="35" value="<!--{$EDIT_T_LEMBUR__ATASAN_NIP}-->" >
-                                
+                            <TD><INPUT TYPE="text" NAME="atasan__nama" readonly  id="atasan_nama"  size="35" value="<!--{$EDIT_T_LEMBUR__ATASAN_NAMA}-->">
+                                <INPUT TYPE="hidden" NAME="atasan__nip" readonly id="atasan_id" size="35" value="<!--{$EDIT_T_LEMBUR__ATASAN_NIP}-->" >
                                 <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan2()" value=" ... " />
                             </TD>
                     </TR>
@@ -221,10 +225,10 @@ function hideIt(){
                                 <TD>
                                     <!--{if $EDIT_VAL==0}-->
 
-                                                        <input readonly="" type="text" NAME="lembur_tanggal"  value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->">
+                                    <input readonly="" type="text" NAME="lembur_tanggal"  id="lembur_tanggal" value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->">
 							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.lembur_tanggal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{else}-->
-								 <input readonly="" type="text" name="lembur_tanggal" value="<!--{$EDIT_T_LEMBUR__TANGGAL}-->" >
+								 <input readonly="" type="text" name="lembur_tanggal" id="lembur_tanggal" value="<!--{$EDIT_T_LEMBUR__TANGGAL}-->" >
 							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.lembur_tanggal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{/if}-->                                    
                                 </TD>
@@ -232,31 +236,53 @@ function hideIt(){
                     <TR>
                         <TD>Durasi Jam Lembur  <font color="#ff0000">*</font> </TD>
                             <TD> 
-                                <INPUT TYPE="text" name="lembur_durasi" value="<!--{$EDIT_T_LEMBUR__DURASI}-->" size="10" onkeyup="formatdurasi(this)">  
-                                 Nominal Per jam Rp.<INPUT TYPE="text" name="lembur_nominal" value="<!--{$EDIT_T_LEMBUR__NOMINAL}-->" size="10" onkeyup="formatangka(this)"> 
+                                <INPUT TYPE="text" name="lembur_durasi" value="<!--{$EDIT_T_LEMBUR__DURASI}-->" size="10" >  
+                                
                             </TD>
                     </TR> 
                      <TR>
-                                <TD>Job Description <font color="#ff0000">*</font></TD> 
-			
-                                <TD><textarea rows="5" cols="20" NAME="lembur_deskripsi"  size="12" ><!--{$EDIT_T_LEMBUR__JOB_DESCRIPTION}--></textarea></TD>
+                        <TD>Rincian Lembur<font color="#ff0000">*</font> </TD>
+                            <TD> 
+                                <div id="lembur_cost">
+                                   <TABLE class='tborder' border='0' cellpadding='1' cellspacing='1' border='0' width='100%' align='left'>
+                                       <THEAD>
+                                       <th class='tdatahead' align='left' width='10%'>Nominal Lembur/Jam</th>
+                                         <th class='tdatahead' align='left' width='10%'>Jumlah Lembur</th>
+                                         <th class='tdatahead' align='left' width='10%'>Uang Makan</th>
+                                         <th class='tdatahead'  align='left'  width='10%'>Uang Transport</th>
+                                         <th class='tdatahead'  align='left'  width='10%'>Total</th>
+				  </THEAD>
+                                  <TR>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_nominal' value=<!--{$EDIT_T_LEMBUR__NOMINAL}-->></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_jml' value=<!--{$EDIT_T_LEMBUR__NOMINAL_JML}-->></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_makan' value=<!--{$EDIT_T_LEMBUR__MAKAN}-->></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_transport' value=<!--{$EDIT_T_LEMBUR__TRANSPORT}-->></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_total' value=<!--{$EDIT_T_LEMBUR__TOTAL}-->></TD>
+                                   </TABLE>
+                      
+                            </div>
+                        <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;"  value="Hitung" onclick="cek_lembur()" />
+                            </TD>
+                    </TR>
+                    
+                    
+                    
+                     <TR>
+                                <TD>Job Description <font color="#ff0000">*</font></TD>
+                                <TD><textarea rows="5" cols="55" NAME="lembur_deskripsi"  size="12" ><!--{$EDIT_T_LEMBUR__JOB_DESCRIPTION}--></textarea></TD>
                     </TR>
                      <TR>
                                 <TD>Hasil Evaluasi Atasan <font color="#ff0000">*</font></TD> 
-			
-                                <TD><textarea rows="5" cols="20" NAME="lembur_evaluasi"  size="12" ><!--{$EDIT_T_LEMBUR__JOB_EVALUASI}--></textarea></TD>
+                                <TD><textarea rows="5" cols="55" NAME="lembur_evaluasi"  size="12" ><!--{$EDIT_T_LEMBUR__JOB_EVALUASI}--></textarea></TD>
                     </TR>
                     <TR>
-                           
-
                     </TR>
                     <TR>
                                 <TD>Approval <font color="#ff0000">*</font></TD> 
 					<TD><SELECT name="approval">
 							<OPTION value="">[Pilih Approval]</OPTION>
 							<OPTION value="1" <!--{if $EDIT_T_LEMBUR__APPROVAL=='1'}-->selected<!--{/if}-->>Disetujui HRD</OPTION>
-							<OPTION value="0" <!--{if $EDIT_T_LEMBUR__APPROVAL=='0'}-->selected<!--{/if}-->>Tidak Disetujui HRD</OPTION>  
-                                                        <OPTION value="3" <!--{if $EDIT_T_LEMBUR__APPROVAL=='2'}-->selected<!--{/if}-->>Telah Disetujui BOM</OPTION>
+                                                        <OPTION value="2" <!--{if $EDIT_T_LEMBUR__APPROVAL=='2'}-->selected<!--{/if}-->>Tidak Disetujui</OPTION>
 						</SELECT>
                                 </TD>
                     </TR>
@@ -296,8 +322,8 @@ function hideIt(){
 
 		<FORM METHOD=GET ACTION="" NAME="frmList1">
 		<TABLE id="table-search-box" >
-                    <TR>
-                    <TD>Cabang <font color="#ff0000">*</font>
+                <TR>
+                <TD>Cabang <font color="#ff0000">*</font>
                             </TD> 
                                                            <TD><!--{if ($JENIS_USER_SES==1)}-->
 
@@ -462,21 +488,19 @@ function hideIt(){
 		<tr>
 											<th class="tdatahead" align="left">NO</TH>
 											<th class="tdatahead" align="left" width="10%">NAMA KARYAWAN</TH>
-                                                                                        <th class="tdatahead" align="left" width="10%">NIP KARYAWAN</TH>
-                                                                                        
+                                                                                        <th class="tdatahead" align="left" width="10%">NIP KARYAWAN</TH>                                                                                        
                                                                                         <th class="tdatahead" align="left" >CABANG</TH>
-											<th class="tdatahead" align="left">DEPARTEMEN</TH>
-											<th class="tdatahead" align="left" >JABATAN</TH>
-                                                                                         <th class="tdatahead" align="left">NAMA ATASAN</TH>
+											<th class="tdatahead" align="left">DEPARTEMEN</TH>  
                                                                                         
 											<th class="tdatahead" align="left">TGL LEMBUR</TH>
-                                                                                        <th class="tdatahead" align="left">LAMA JAM LEMBUR</TH>
-											<th class="tdatahead" align="left" >BIAYA LEMBUR</TH>
-                                                                                        <th class="tdatahead" align="left">JOB DESC</TH>
-											<th class="tdatahead" align="left">EVALUASI</TH>
-                                                                                        <th class="tdatahead" align="left">STATUS</TH>
+                                                                                        <th class="tdatahead" align="left">LAMA LEMBUR</TH>
+											<th class="tdatahead" align="left" >NOMINAL /JAM</TH>
                                                                                         
-                                                                                       
+                                                                                        <th class="tdatahead" align="left" >UANG MAKAN</TH>
+                                                                                         <th class="tdatahead" align="left">UANG TRANSPORT</TH>
+                                                                                        <th class="tdatahead" align="left">TOTAL</TH>
+										
+                                                                                        <th class="tdatahead" align="left">STATUS</TH>
 											<th class="tdatahead" COLSPAN="2"><!--{$ACTION}--></th>
 			</tr>
 			</thead>
@@ -485,29 +509,24 @@ function hideIt(){
 			<tr class='<!--{cycle values="alt,alt3"}-->'>
 											<td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
 											<TD class="tdatacontent"> <!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
-                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
-                                                                                        
+                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_pnpt__nip}--> </TD>                                                                                        
                                                                                         <TD class="tdatacontent"> <!--{$DATA_TB[x].r_cabang__nama}--> </TD>
 											<TD class="tdatacontent"> <!--{$DATA_TB[x].r_dept__ket}-->  </TD>
-                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_jabatan__ket}--> </TD>
-                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].t_lembur__atasan_nama}--></TD>
+                                                                                      
                                                                                         
-											<TD class="tdatacontent"> <!--{$DATA_TB[x].t_lembur__tanggal}--></TD>
+                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].t_lembur__tanggal}--></TD>                                                                                        
 											<TD class="tdatacontent"> <!--{$DATA_TB[x].t_lembur__durasi}--></TD>
-											<TD class="tdatacontent">Rp. <!--{$DATA_TB[x].t_lembur__total}--></TD>
+											<TD class="tdatacontent"> <!--{$DATA_TB[x].t_lembur__nominal}--></TD>
                                                                                         
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].t_lembur__job_description}--></TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].t_lembur__job_evaluasi}--></TD>
+											<TD class="tdatacontent">Rp. <!--{$DATA_TB[x].t_lembur__makan}--></TD>                                                                                        
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].t_lembur__transport}--></TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].t_lembur__total}--></TD>
                                                                                         <TD class="tdatacontent">                                                                                            
-                                                                                             <!--{if ($DATA_TB[x].t_lembur__approval) ==0}-->
-                                                                                                       Tidak disetujui HRD
-                                                                                           <!--{elseif ($DATA_TB[x].t_lembur__approval) ==1}-->
-                                                                                                         <font color="green">Telah disetujui HRD</font>
-                                                                                            <!--{else ($DATA_TB[x].t_lembur__approval) ==2}-->  
-                                                                                                         <font color="red">Telah disetujui BOM</font>
+                                                                                             <!--{if ($DATA_TB[x].t_lembur__approval==1)}-->
+                                                                                                       Disetujui 
+                                                                                            <!--{else}-->  
+                                                                                                         <font color="red">Tidak Disetujui</font>
                                                                                             <!--{/if}--> 
-                                                                                            
-                                                                                            
                                                                                           </TD>
                                                                                           <INPUT TYPE="hidden" name="t_lembur__no" value="<!--{$MOD_ID}-->">
 											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].t_lembur__no}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>

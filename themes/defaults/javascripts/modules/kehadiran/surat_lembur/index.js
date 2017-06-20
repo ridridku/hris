@@ -22,10 +22,13 @@ function check(str_msg, str_location){
 
 var err = 0;
 var err_ = 0;
+  var numbers = /^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/;
+  //  var numbers = ''^(-?0[.]\\d+)$|^(-?[1-9]+\\d*([.]\\d+)?)$|^0$;
 
 function checkFrm(theForm){
+
 with (theForm){
-    
+
 	 if (lembur__no.value == "") 
 		{ 
 			alert ("Silahkan isi No Penempatan !"); 
@@ -34,16 +37,23 @@ with (theForm){
 		}
  else if (kode_cabang.value == "") 
 		{ 
-			alert ("Silahkan Pilih Sub Cabang !"); 
+			alert ("Silahkan Pilih Cabang !"); 
 			kode_cabang.focus();
 			return false; 
 		}               
- else if (karyawan_nip.value == "") 
+ else if (karyawan_id.value == "") 
 		{ 
 			alert ("Silahkan Pilih Nama Karyawan !"); 
-			karyawan_nip.focus();
+			karyawan_id.focus();
 			return false; 
 		}
+   else if (atasan__nip.value == "") 
+		{ 
+			alert ("Silahkan Pilih Nama Atasan !"); 
+			atasan__nip.focus();
+			return false; 
+		}              
+                
 
 else if (lembur_tanggal.value == "") 
        { 
@@ -51,6 +61,8 @@ else if (lembur_tanggal.value == "")
                lembur_tanggal.focus();
                return false; 
        }
+       
+       
 else if (lembur_durasi.value == "") 
        { 
                alert ("Silahkan Isi Durasi Lembur Dalam Jam!"); 
@@ -59,11 +71,10 @@ else if (lembur_durasi.value == "")
        } 
 else if (lembur_nominal.value == "") 
        { 
-               alert ("Silahkan Isi Nominal lembur Perjam!"); 
+               alert ("Klik Hitung lembur!"); 
                lembur_nominal.focus();
                return false; 
        } 
-       
        
  else if (lembur_deskripsi.value == "") 
        { 
@@ -86,7 +97,12 @@ else if (approval.value == "")
        }
        
        
- 
+   else if(!lembur_durasi.value.match(numbers))
+      {
+      alert('angka....');
+      lembur_durasi.focus();
+      return false;
+      }
 		
 	else
 		{
@@ -133,6 +149,13 @@ function formatdurasi(objek) {
    objek.value = c;
 }
 
+      
+
+  
+  
+  
+  
+  
 function checkSubmit(){
 
 <?php
@@ -171,71 +194,27 @@ with(theForm){
 
 
 
-
-
-
-//------------------JS PILIH SUBCAB-----------//
-
-function cari_subcab(subcab_id)
-{
-if (subcab_id != '') {
-	http.open('get','index.php?get_subcab=1&no_subcab='+subcab_id);
-        //http.open('get','index.php?get_prop_ktp=1&no_prop_ktp='+prop_id_ktp);
-	http.onreadystatechange = handlechoice_kab_ktp; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_kab_ktp(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		var a = response.split('^/&');
-		document.getElementById('ajax_subcabang').innerHTML = a[0];
-		
-    }
-}
-//------------------CLOSE JS PILIH SUBCAB-----------//
-
-
-
-//------------------JS AJAX SUBDEP-----------//subdep
-function cari_subdep(subdep_id)
-{
-//alert (subdep_id)
-if (subdep_id != '') {
-	http.open('get','index.php?get_subdep=1&no_subdep='+subdep_id);
-        //http.open('get','index.php?get_prop_ktp=1&no_prop_ktp='+prop_id_ktp);
-	http.onreadystatechange = handlechoice_subdep; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_subdep(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		var a = response.split('^/&');
-		document.getElementById('ajax_subdep').innerHTML = a[0];
-		
-    }
-}
-//------------------CLOSE AJAX SUBDEP-----------//
-
-
 function goCarikaryawan() {
     
-			kode_cabang= document.frmCreate.kode_cabang.value;
-                       // window.open('../../../function/list_tki_penampungan.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
-			//window.open('../../../function/list_penempatan.php',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
- 			window.open('../../../function/list_surat_lembur.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
+kode_cabang= document.frmCreate.kode_cabang.value;
+     if(kode_cabang =='')
+    {
+           alert('Isi Dahulu Cabang!');
+           return false; 
+    } 
+                      window.open('../../../function/list_surat_lembur.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
                         }
+                        
+                        
 function goCarikaryawan2() {
     
-			kode_cabang= document.frmCreate.kode_cabang.value;
-                       // window.open('../../../function/list_tki_penampungan.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
-			//window.open('../../../function/list_penempatan.php',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
- 			window.open('../../../function/list_surat_lembur2.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
+kode_cabang= document.frmCreate.kode_cabang.value;
+  if(kode_cabang =='')
+    {
+           alert('Isi Dahulu Cabang!');
+           return false; 
+    } 
+         window.open('../../../function/list_surat_lembur2.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
                         }
 
 
@@ -249,7 +228,6 @@ function cari_subcab2(subcab_id)
     
 if (subcab_id != '') {
 	http.open('get','index.php?get_subcab2=1&no_subcab='+subcab_id);
-        //http.open('get','index.php?get_prop_ktp=1&no_prop_ktp='+prop_id_ktp);
 	http.onreadystatechange = handlechoice_subcab2; 
 	http.send(null);
 	} 
@@ -265,5 +243,68 @@ if(http.readyState == 4)
     }
 }
 //------------------CLOSE JS PILIH SUBCAB2-----------//
+
+
+function cek_lembur() {
+
+            level_id= document.frmCreate.level_id.value;
+            lembur_tanggal= document.frmCreate.lembur_tanggal.value;
+            lembur_durasi= document.frmCreate.lembur_durasi.value;
+            id_pegawai= document.frmCreate.karyawan_id.value;
+            
+  if(level_id =='')
+    {
+           alert('Isi Nama Karyawan!');
+           return false; 
+    }else if(lembur_tanggal=='')
+    {
+        
+         alert('Isi Dahulu tgl Lembur!');
+         return false; 
+    }
+    else if(lembur_durasi=='')
+    {
+        
+         alert('Isi Jam Lembur !');
+         return false; 
+    }
+  
+  
+        
+    
+     else {          
+            http.open('get','index.php?cek_lembur=1&level_id='+level_id+'&lembur_tanggal='+lembur_tanggal+'&lembur_durasi='+lembur_durasi+'&id_pegawai='+id_pegawai);
+           http.onreadystatechange = handlechoice_ceklembur; 
+            http.send(null);
+
+ 			}
+                        
+                  
+ }
+ 
+ function handlechoice_ceklembur(){
+if(http.readyState == 4)
+	{ 
+		var response = http.responseText;
+		var a = response.split('^/&');
+		document.getElementById('lembur_cost').innerHTML = a[0];
+		
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </SCRIPT>

@@ -1,5 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-20 06:54:07
+<?php /* Smarty version 2.6.18, created on 2017-06-07 13:34:15
          compiled from defaults/modules/pelaporan/lap_absen/rekap_absen_harian/index.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/pelaporan/lap_absen/rekap_absen_harian/index.tpl', 356, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -282,26 +284,65 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                                 </TD>
 							</TR>
                                                    <TR>
-							<TD>Periode </TD>
-							<TD>							
-							<SELECT name="bulan"   > 
-								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <?php if ($this->_tpl_vars['BULAN_SES'] == 01): ?>selected<?php endif; ?>>Januari</OPTION>
-								<OPTION VALUE="02"<?php if ($this->_tpl_vars['BULAN_SES'] == 02): ?>selected<?php endif; ?>  >Februari</OPTION>
-								<OPTION VALUE="03"<?php if ($this->_tpl_vars['BULAN_SES'] == 03): ?>selected<?php endif; ?>  >Maret</OPTION>
-								<OPTION VALUE="04"<?php if ($this->_tpl_vars['BULAN_SES'] == 04): ?>selected<?php endif; ?>  >April</OPTION>
-								<OPTION VALUE="05"<?php if ($this->_tpl_vars['BULAN_SES'] == 05): ?>selected<?php endif; ?> >Mei</OPTION>
-								<OPTION VALUE="06"<?php if ($this->_tpl_vars['BULAN_SES'] == 06): ?>selected<?php endif; ?>  >Juni</OPTION>
-								<OPTION VALUE="07"<?php if ($this->_tpl_vars['BULAN_SES'] == 07): ?>selected<?php endif; ?>  >Juli</OPTION>
-								<OPTION VALUE="08"<?php if ($this->_tpl_vars['BULAN_SES'] == 08): ?>selected<?php endif; ?>  >Agustus</OPTION>
-								<OPTION VALUE="09"<?php if ($this->_tpl_vars['BULAN_SES'] == 09): ?>selected<?php endif; ?>  >September</OPTION>
-								<OPTION VALUE="10"<?php if ($this->_tpl_vars['BULAN_SES'] == 10): ?>selected<?php endif; ?>  >Oktober</OPTION>
-								<OPTION VALUE="11"<?php if ($this->_tpl_vars['BULAN_SES'] == 11): ?>selected<?php endif; ?>  >November</OPTION>
-								<OPTION VALUE="12"<?php if ($this->_tpl_vars['BULAN_SES'] == 12): ?>selected<?php endif; ?>  >Desember</OPTION>				 
+							<TD>Periode Awal</TD>
+							<TD>
+                                                        <SELECT NAME="tgl1" > 
+                                                        <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
+                                                        <?php unset($this->_sections['foo']);
+$this->_sections['foo']['name'] = 'foo';
+$this->_sections['foo']['start'] = (int)1;
+$this->_sections['foo']['loop'] = is_array($_loop=31) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['foo']['step'] = ((int)1) == 0 ? 1 : (int)1;
+$this->_sections['foo']['show'] = true;
+$this->_sections['foo']['max'] = $this->_sections['foo']['loop'];
+if ($this->_sections['foo']['start'] < 0)
+    $this->_sections['foo']['start'] = max($this->_sections['foo']['step'] > 0 ? 0 : -1, $this->_sections['foo']['loop'] + $this->_sections['foo']['start']);
+else
+    $this->_sections['foo']['start'] = min($this->_sections['foo']['start'], $this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] : $this->_sections['foo']['loop']-1);
+if ($this->_sections['foo']['show']) {
+    $this->_sections['foo']['total'] = min(ceil(($this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] - $this->_sections['foo']['start'] : $this->_sections['foo']['start']+1)/abs($this->_sections['foo']['step'])), $this->_sections['foo']['max']);
+    if ($this->_sections['foo']['total'] == 0)
+        $this->_sections['foo']['show'] = false;
+} else
+    $this->_sections['foo']['total'] = 0;
+if ($this->_sections['foo']['show']):
+
+            for ($this->_sections['foo']['index'] = $this->_sections['foo']['start'], $this->_sections['foo']['iteration'] = 1;
+                 $this->_sections['foo']['iteration'] <= $this->_sections['foo']['total'];
+                 $this->_sections['foo']['index'] += $this->_sections['foo']['step'], $this->_sections['foo']['iteration']++):
+$this->_sections['foo']['rownum'] = $this->_sections['foo']['iteration'];
+$this->_sections['foo']['index_prev'] = $this->_sections['foo']['index'] - $this->_sections['foo']['step'];
+$this->_sections['foo']['index_next'] = $this->_sections['foo']['index'] + $this->_sections['foo']['step'];
+$this->_sections['foo']['first']      = ($this->_sections['foo']['iteration'] == 1);
+$this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] == $this->_sections['foo']['total']);
+?>
+                                                                  <?php if (( $this->_sections['foo']['index'] ) == $this->_tpl_vars['DAY1']): ?>
+                                                                         <option value="<?php echo $this->_sections['foo']['index']; ?>
+"  selected><?php echo $this->_sections['foo']['index']; ?>
+</option>
+                                                                  <?php else: ?>
+                                                                                 <option value="<?php echo $this->_sections['foo']['index']; ?>
+"   ><?php echo $this->_sections['foo']['index']; ?>
+</option>
+                                                                 <?php endif; ?> 
+                                                        <?php endfor; endif; ?>
                                                         </SELECT> 
-
-
-							<SELECT name="tahun" > 
+							<SELECT name="bulan1"> 
+								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
+                                                                <OPTION value="01"<?php if ($this->_tpl_vars['MONTH1'] == 1): ?>selected<?php endif; ?>>Januari</OPTION>
+								<OPTION VALUE="02"<?php if ($this->_tpl_vars['MONTH1'] == 2): ?>selected<?php endif; ?>  >Februari</OPTION>
+								<OPTION VALUE="03"<?php if ($this->_tpl_vars['MONTH1'] == 3): ?>selected<?php endif; ?>  >Maret</OPTION>
+								<OPTION VALUE="04"<?php if ($this->_tpl_vars['MONTH1'] == 4): ?>selected<?php endif; ?>  >April</OPTION>
+								<OPTION VALUE="05"<?php if ($this->_tpl_vars['MONTH1'] == 5): ?>selected<?php endif; ?> >Mei</OPTION>
+								<OPTION VALUE="06"<?php if ($this->_tpl_vars['MONTH1'] == 6): ?>selected<?php endif; ?>  >Juni</OPTION>
+								<OPTION VALUE="07"<?php if ($this->_tpl_vars['MONTH1'] == 7): ?>selected<?php endif; ?>  >Juli</OPTION>
+								<OPTION VALUE="08"<?php if ($this->_tpl_vars['MONTH1'] == 8): ?>selected<?php endif; ?>  >Agustus</OPTION>
+								<OPTION VALUE="09"<?php if ($this->_tpl_vars['MONTH1'] == 9): ?>selected<?php endif; ?>  >September</OPTION>
+								<OPTION VALUE="10"<?php if ($this->_tpl_vars['MONTH1'] == 10): ?>selected<?php endif; ?>  >Oktober</OPTION>
+								<OPTION VALUE="11"<?php if ($this->_tpl_vars['MONTH1'] == 11): ?>selected<?php endif; ?>  >November</OPTION>
+								<OPTION VALUE="12"<?php if ($this->_tpl_vars['MONTH1'] == 12): ?>selected<?php endif; ?>  >Desember</OPTION>				 
+                                                        </SELECT> 
+						<SELECT NAME="tahun1" > 
 						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
 						<?php unset($this->_sections['foo']);
 $this->_sections['foo']['name'] = 'foo';
@@ -331,7 +372,7 @@ $this->_sections['foo']['index_next'] = $this->_sections['foo']['index'] + $this
 $this->_sections['foo']['first']      = ($this->_sections['foo']['iteration'] == 1);
 $this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] == $this->_sections['foo']['total']);
 ?>
- 							  <?php if (( $this->_sections['foo']['index'] ) == $this->_tpl_vars['TAHUN_SES']): ?>
+ 							  <?php if (( $this->_sections['foo']['index'] ) == $this->_tpl_vars['YEAR1']): ?>
 								 <option value="<?php echo $this->_sections['foo']['index']; ?>
 "  selected><?php echo $this->_sections['foo']['index']; ?>
 </option>
@@ -341,7 +382,108 @@ $this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] ==
 </option>
 							 <?php endif; ?> 
 						<?php endfor; endif; ?>
-						</SELECT> 
+						</SELECT>                                                 
+						 </TD></TR>    
+                                         <TR>
+							<TD>Periode Akhir</TD>
+							<TD>
+                                                        <SELECT NAME="tgl2" > 
+                                                        <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
+                                                        <?php unset($this->_sections['foo']);
+$this->_sections['foo']['name'] = 'foo';
+$this->_sections['foo']['start'] = (int)1;
+$this->_sections['foo']['loop'] = is_array($_loop=31) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['foo']['step'] = ((int)1) == 0 ? 1 : (int)1;
+$this->_sections['foo']['show'] = true;
+$this->_sections['foo']['max'] = $this->_sections['foo']['loop'];
+if ($this->_sections['foo']['start'] < 0)
+    $this->_sections['foo']['start'] = max($this->_sections['foo']['step'] > 0 ? 0 : -1, $this->_sections['foo']['loop'] + $this->_sections['foo']['start']);
+else
+    $this->_sections['foo']['start'] = min($this->_sections['foo']['start'], $this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] : $this->_sections['foo']['loop']-1);
+if ($this->_sections['foo']['show']) {
+    $this->_sections['foo']['total'] = min(ceil(($this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] - $this->_sections['foo']['start'] : $this->_sections['foo']['start']+1)/abs($this->_sections['foo']['step'])), $this->_sections['foo']['max']);
+    if ($this->_sections['foo']['total'] == 0)
+        $this->_sections['foo']['show'] = false;
+} else
+    $this->_sections['foo']['total'] = 0;
+if ($this->_sections['foo']['show']):
+
+            for ($this->_sections['foo']['index'] = $this->_sections['foo']['start'], $this->_sections['foo']['iteration'] = 1;
+                 $this->_sections['foo']['iteration'] <= $this->_sections['foo']['total'];
+                 $this->_sections['foo']['index'] += $this->_sections['foo']['step'], $this->_sections['foo']['iteration']++):
+$this->_sections['foo']['rownum'] = $this->_sections['foo']['iteration'];
+$this->_sections['foo']['index_prev'] = $this->_sections['foo']['index'] - $this->_sections['foo']['step'];
+$this->_sections['foo']['index_next'] = $this->_sections['foo']['index'] + $this->_sections['foo']['step'];
+$this->_sections['foo']['first']      = ($this->_sections['foo']['iteration'] == 1);
+$this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] == $this->_sections['foo']['total']);
+?>
+                                                                  <?php if (( $this->_sections['foo']['index'] ) == $this->_tpl_vars['DAY2']): ?>
+                                                                         <option value="<?php echo $this->_sections['foo']['index']; ?>
+"  selected><?php echo $this->_sections['foo']['index']; ?>
+</option>
+                                                                  <?php else: ?>
+                                                                                 <option value="<?php echo $this->_sections['foo']['index']; ?>
+"   ><?php echo $this->_sections['foo']['index']; ?>
+</option>
+                                                                 <?php endif; ?> 
+                                                        <?php endfor; endif; ?>
+                                                        </SELECT> 
+							<SELECT name="bulan2"> 
+								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
+                                                                <OPTION value="01"<?php if ($this->_tpl_vars['MONTH2'] == 1): ?>selected<?php endif; ?>>Januari</OPTION>
+								<OPTION VALUE="02"<?php if ($this->_tpl_vars['MONTH2'] == 2): ?>selected<?php endif; ?>  >Februari</OPTION>
+								<OPTION VALUE="03"<?php if ($this->_tpl_vars['MONTH2'] == 3): ?>selected<?php endif; ?>  >Maret</OPTION>
+								<OPTION VALUE="04"<?php if ($this->_tpl_vars['MONTH2'] == 4): ?>selected<?php endif; ?>  >April</OPTION>
+								<OPTION VALUE="05"<?php if ($this->_tpl_vars['MONTH2'] == 5): ?>selected<?php endif; ?> >Mei</OPTION>
+								<OPTION VALUE="06"<?php if ($this->_tpl_vars['MONTH2'] == 6): ?>selected<?php endif; ?>  >Juni</OPTION>
+								<OPTION VALUE="07"<?php if ($this->_tpl_vars['MONTH2'] == 7): ?>selected<?php endif; ?>  >Juli</OPTION>
+								<OPTION VALUE="08"<?php if ($this->_tpl_vars['MONTH2'] == 8): ?>selected<?php endif; ?>  >Agustus</OPTION>
+								<OPTION VALUE="09"<?php if ($this->_tpl_vars['MONTH2'] == 9): ?>selected<?php endif; ?>  >September</OPTION>
+								<OPTION VALUE="10"<?php if ($this->_tpl_vars['MONTH2'] == 10): ?>selected<?php endif; ?>  >Oktober</OPTION>
+								<OPTION VALUE="11"<?php if ($this->_tpl_vars['MONTH2'] == 11): ?>selected<?php endif; ?>  >November</OPTION>
+								<OPTION VALUE="12"<?php if ($this->_tpl_vars['MONTH2'] == 12): ?>selected<?php endif; ?>  >Desember</OPTION>				 
+                                                        </SELECT> 
+						<SELECT NAME="tahun2" > 
+						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
+						<?php unset($this->_sections['foo']);
+$this->_sections['foo']['name'] = 'foo';
+$this->_sections['foo']['start'] = (int)2010;
+$this->_sections['foo']['loop'] = is_array($_loop=2021) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['foo']['step'] = ((int)1) == 0 ? 1 : (int)1;
+$this->_sections['foo']['show'] = true;
+$this->_sections['foo']['max'] = $this->_sections['foo']['loop'];
+if ($this->_sections['foo']['start'] < 0)
+    $this->_sections['foo']['start'] = max($this->_sections['foo']['step'] > 0 ? 0 : -1, $this->_sections['foo']['loop'] + $this->_sections['foo']['start']);
+else
+    $this->_sections['foo']['start'] = min($this->_sections['foo']['start'], $this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] : $this->_sections['foo']['loop']-1);
+if ($this->_sections['foo']['show']) {
+    $this->_sections['foo']['total'] = min(ceil(($this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] - $this->_sections['foo']['start'] : $this->_sections['foo']['start']+1)/abs($this->_sections['foo']['step'])), $this->_sections['foo']['max']);
+    if ($this->_sections['foo']['total'] == 0)
+        $this->_sections['foo']['show'] = false;
+} else
+    $this->_sections['foo']['total'] = 0;
+if ($this->_sections['foo']['show']):
+
+            for ($this->_sections['foo']['index'] = $this->_sections['foo']['start'], $this->_sections['foo']['iteration'] = 1;
+                 $this->_sections['foo']['iteration'] <= $this->_sections['foo']['total'];
+                 $this->_sections['foo']['index'] += $this->_sections['foo']['step'], $this->_sections['foo']['iteration']++):
+$this->_sections['foo']['rownum'] = $this->_sections['foo']['iteration'];
+$this->_sections['foo']['index_prev'] = $this->_sections['foo']['index'] - $this->_sections['foo']['step'];
+$this->_sections['foo']['index_next'] = $this->_sections['foo']['index'] + $this->_sections['foo']['step'];
+$this->_sections['foo']['first']      = ($this->_sections['foo']['iteration'] == 1);
+$this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] == $this->_sections['foo']['total']);
+?>
+ 							  <?php if (( $this->_sections['foo']['index'] ) == $this->_tpl_vars['YEAR2']): ?>
+								 <option value="<?php echo $this->_sections['foo']['index']; ?>
+"  selected><?php echo $this->_sections['foo']['index']; ?>
+</option>
+							  <?php else: ?>
+									 <option value="<?php echo $this->_sections['foo']['index']; ?>
+"   ><?php echo $this->_sections['foo']['index']; ?>
+</option>
+							 <?php endif; ?> 
+						<?php endfor; endif; ?>
+						</SELECT>                                                 
 						 </TD></TR>
 
 							<TR>
@@ -504,7 +646,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 </TD>
                                                                                         <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_shift__jam_pulang']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent" align="left" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_abs__tgl']; ?>
+                                                                                        <TD class="tdatacontent" align="left" ><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_abs__tgl'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%A,%d/%m/%Y") : smarty_modifier_date_format($_tmp, "%A,%d/%m/%Y")); ?>
 </TD>
                                                                                         <TD class="tdatacontent" align="left" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_abs__jam_masuk']; ?>
 </TD>

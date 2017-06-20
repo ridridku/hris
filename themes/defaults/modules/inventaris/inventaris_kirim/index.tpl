@@ -117,14 +117,14 @@ function hideIt(){
     <tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/form.gif" align="absmiddle" border="0">Form Tambah/Ubah Data</td></tr>
     <tr><td class="alt2" style="padding:0px;">
     <FORM NAME="frmCreate" METHOD="POST" ACTION="engine.php" enctype="multipart/form-data">
-    <TABLE id="table-add-box">
+    <TABLE id="table-add-box" border="0">
     <TR>
             <TD>No Peminjaman Alat <font color="#ff0000">*</font></TD>
                      <TD>
                         <!--{if $EDIT_VAL==0}-->
                             <INPUT  readonly=""  TYPE="text" name="inv_id" size="35" value="<!--{$ID_INV}-->"  onkeypress="JavaScript:Ajax('ajax_cek_id','<!--{$HREF_HOME_PATH_AJAX}-->/cek.php?t_sp__no='+frmCreate.t_sp__no.value)">
                             <!--{else}-->
-                            <INPUT  readonly=""  TYPE="text" name="inv_id" size="35" value="<!--{$EDIT_PEL_ID}-->"  onkeypress="JavaScript:Ajax('ajax_cek_id','<!--{$HREF_HOME_PATH_AJAX}-->/cek.php?t_sp__no='+frmCreate.t_sp__no.value)">
+                            <INPUT  readonly=""  TYPE="text" name="inv_id" size="35" value="<!--{$EDIT_ID}-->"  onkeypress="JavaScript:Ajax('ajax_cek_id','<!--{$HREF_HOME_PATH_AJAX}-->/cek.php?t_sp__no='+frmCreate.t_sp__no.value)">
                             <!--{/if}-->  
 
             </TR>   
@@ -189,27 +189,24 @@ function hideIt(){
                    <TR>
                             <TD>Nama <font color="#ff0000">*</font> </TD>
                             <TD><INPUT TYPE="text" NAME="nama" readonly  id="r_pegawai__nama"  size="35" value="<!--{$EDIT_PEGAWAI_NAMA}-->">
-                                NIP<INPUT TYPE="hidden" NAME="nip" readonly id="r_pnpt__nip" size="35" value="<!--{$EDIT_PNPT_NIP}-->" >
-                            <INPUT TYPE="text" NAME="mutasi" readonly id="r_pnpt__no_mutasi" size="35" value="<!--{$EDIT_MUTASI}-->" > 
+                                <INPUT TYPE="hidden" NAME="nip" readonly id="r_pnpt__nip" size="35" value="<!--{$EDIT_PNPT_NIP}-->" >
+                                <INPUT TYPE="hidden" NAME="mutasi" readonly id="r_pnpt__no_mutasi" size="35" value="<!--{$EDIT_MUTASI}-->" > 
                             <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan()" value=" ... " />
                             </TD>
-
                     </TR>
-                   
                     <TR>
                             <TD>Jabatan<font color="#ff0000">*</font></TD>
                             <TD><INPUT TYPE="text" NAME="jabatan" readonly id="r_jabatan__ket" size="35" value="<!--{$EDIT_JABATAN}-->" ></TD>                         
                     </TR>
-                    
                      <TR>
 				<TD>Tgl Peminjaman </TD>
                                 <TD>
                                     <!--{if $EDIT_VAL==0}-->
 
-                                    <input readonly="" type="text" NAME="tgl"  value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->">
+                                        <input readonly="" type="text" NAME="tgl"  value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->">
 							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{else}-->
-                                        <input readonly="" type="text" name="tgl" value="<!--{$EDIT_TGL_AWAL}-->" >
+                                        <input readonly="" type="text" name="tgl" value="<!--{$EDIT_TGL_PJM}-->" >
 							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{/if}-->  
                                 </TD>         
@@ -220,7 +217,7 @@ function hideIt(){
                                        <select name="jenis_alat" >
                                        <option value="">[Pilih Jenis]</option>
                                        <!--{section name=x loop=$DATA_JENIS}-->
-                                       <!--{if trim($DATA_JENIS[x].r_jenis__id)==$EDIT_JENIS_ID}-->
+                                       <!--{if trim($DATA_JENIS[x].r_jenis__id)==$EDIT_JENIS}-->
                                        <option value="<!--{$DATA_JENIS[x].r_jenis__id}-->" selected > <!--{$DATA_JENIS[x].r_jenis__nama}--> </option>
                                        <!--{else}-->
                                        <option value="<!--{$DATA_JENIS[x].r_jenis__id}-->"  > <!--{$DATA_JENIS[x].r_jenis__nama}--> </option>
@@ -232,66 +229,99 @@ function hideIt(){
                     <TR>
                               <TD>Nama Inventaris </TD>
                               <TD>   
-                                  <INPUT TYPE="text" NAME="nama_alat"  size="35" value="<!--{$EDIT_SERTIFIKAT}-->" >      
+                                  <INPUT TYPE="text" NAME="nama_alat"  size="35" value="<!--{$EDIT_ALAT}-->" >      
                               </TD>
                    </TR>    
                     <TR>
-                              <TD>Kode Inventaris </TD>
+                              <TD>Kode Barang/Alat </TD>
                               <TD>   
-                                  <INPUT TYPE="text" NAME="kode_alat"  size="35" value="<!--{$EDIT_SERTIFIKAT}-->" >      
+                                  <INPUT TYPE="text" NAME="kode_alat"  size="35" value="<!--{$EDIT_KODE}-->" >      
                               </TD>
                    </TR>
                     <TR>
                               <TD>Banyak Alat Inventaris </TD>
                               <TD>   
-                                  <INPUT TYPE="text" NAME="qty_alat"  size="35" value="<!--{$EDIT_SERTIFIKAT}-->" >      
+                                  <INPUT TYPE="text" NAME="qty_alat"  size="35" value="<!--{$EDIT_QTY}-->" >      
                               </TD>
                    </TR>                   
-                    <TR>
-                                <TD>Kepemilikan Inventaris<font color="#ff0000">*</font></TD> 
-				<TD>    
-                                    <INPUT TYPE="text" NAME="pemilik_alat"  size="35" value="<!--{$EDIT_NILAI}-->" >   
-                                </TD>
-                    </TR>
+                  
+                     <TR>
+                                   <TD>Kepemilikan Inventaris<font color="#ff0000">*</font></TD> 
+                                           <TD><SELECT name="pemilik_alat">
+                                        <OPTION value="">[Status Kepemilikan]</OPTION>
+                                         <OPTION value='Personal' <!--{if $EDIT_PEMILIK=='Personal'}-->selected<!--{/if}-->>Personal </OPTION>
+                                        <OPTION value='Office' <!--{if $EDIT_PEMILIK=='Office'}-->selected<!--{/if}-->>Office</OPTION>
+                                                          
+                                                   </SELECT>
+                                           </TD>
+                        </TR>
                     <TR>
                                 <TD>Lokasi Penempatan<font color="#ff0000">*</font></TD> 
 				<TD>    
-                                    <INPUT TYPE="text" NAME="lokasi_alat"  size="35" value="<!--{$EDIT_NILAI}-->" >   
+                                    <INPUT TYPE="text" NAME="lokasi_alat"  size="35" value="<!--{$EDIT_LOKASI}-->" >   
                                 </TD>
                     </TR>
                      <TR>
                                 <TD>Kondisi Inventaris<font color="#ff0000">*</font></TD> 
 				<TD>    
-                                    <SELECT NAME="kondisi_alat"    >   
-                                        <option value="">Pilih Kondisi Alat</OPTION>
-                                        <option value="Baru">Baru</OPTION>
-                                         <option value="Baik">Baik</OPTION>
-                                          <option value="Rusak">Rusak</OPTION>
+                                    <SELECT NAME="kondisi_alat" >   
+                                            <option value="">Pilih Kondisi Alat</OPTION>
+                                            <option value="Baru" <!--{if $EDIT_KONDISI=='Baru'}-->selected<!--{/if}-->>Baru</OPTION>
+                                            <option value="Baik" <!--{if $EDIT_KONDISI=='Baik'}-->selected<!--{/if}-->>Baik</OPTION>
+                                            <option value="Rusak" <!--{if $EDIT_KONDISI=='Rusak'}-->selected<!--{/if}-->>Rusak</OPTION>
                                     </SELECT>
                                 </TD>
                     </TR>
                     <TR>
                                 <TD>Keterangan<font color="#ff0000">*</font></TD> 
 				<TD>    
-                                    <TEXTAREA name="keterangan_alat" cols="35" rows="10"></TEXTAREA>   
+                                    <TEXTAREA name="keterangan_alat" cols="35" rows="10"> <!--{$EDIT_KET}--></TEXTAREA>   
                                 </TD>
                     </TR>
-                    
-                    
-                    
-                    
+                        <TR>
+                                   <TD>Status<font color="#ff0000">*</font></TD> 
+                                           <TD><SELECT name="status" size="1" onchange="toggleOther( document.frmCreate.values.options[ document.frmCreate.values.selectedIndex ].value );">
+                                                           <OPTION value="">[Status Alat / Barang]</OPTION>
+                                                            <!--{if $EDIT_VAL==0}-->
+                                                            <OPTION value='2' <!--{if $EDIT_STATUS==2}-->selected<!--{/if}-->>Dipinjam </OPTION>
+                                                           
+                                                              <!--{else}-->   
+                                                                 <OPTION value='2' <!--{if $EDIT_STATUS==2}-->selected<!--{/if}-->>Dipinjam </OPTION>
+                                                             <OPTION value='1' <!--{if $EDIT_STATUS==1}-->selected<!--{/if}-->> Sudah Kembali </OPTION>
+                                                          
+                                                          <!--{/if}-->  
+                                                   </SELECT>
+                                           </TD>
+                        </TR>
+                                     <!--{if $EDIT_VAL==0}-->
+                        <TR>
+				<TD></TD>
+                                <TD> 
+                                <input readonly="" type="hidden" NAME="tgl_kembali"  value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->">
+				<img hidden="" src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.tgl_kembali,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					
+                                </TD>         
+                                </TR>
+                                <!--{else}-->       
+                                <TR>
+				<TD >Tgl Kembali Alat Atau Barang </TD>
+                                <TD> 
+                                <input readonly="" type="text" name="tgl_kembali" value="<!--{$EDIT_TGL_KEMBALI}-->" >
+                                <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_kembali,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<!--{/if}-->  
+                                </TD>         
+                                </TR>
                     <TR>
                                 <TD>Check Jika ada File Upload</TD> 
 				<TD>    
-                                    <!-- <input type="text" disabled size="10" name="file_xls">-->
                                     <input type="checkbox" onclick="codename()" name="checkboxname" value="1">  
                                 </TD>
                      </TR> 
                      <TR>
                                 <TD>Foto/Gambar</TD> 
 				<TD>    
-                                    <INPUT TYPE="file" disabled NAME="file_xls" size="35"  value="<!--{$EDIT_PEL_ID}-->-<!--{$FOTO_NAME}-->" >   
-                                    <INPUT TYPE ="hidden"  name="foto2"  value="<!--{$EDIT_PEL_ID}-->-<!--{$FOTO_NAME}-->">  
+                                    <INPUT TYPE="file" disabled NAME="file_gambar" size="35"  value="<!--{$EDIT_GAMBAR}-->" >   
+                                    <INPUT TYPE ="hidden"  name="foto2"  value="<!--{$EDIT_GAMBAR}-->">  
                                 </TD>
                                 
                      </TR> 
@@ -299,7 +329,7 @@ function hideIt(){
                    <TR>
                         <TD></TD> 
                         <TD>   
-                        <img src="<!--{$HREF_FOTO}-->/<!--{$FOTO_NAME}-->" width=105 height=134 >
+                        <img src="<!--{$HREF_FOTO}-->/<!--{$EDIT_GAMBAR}-->" width=105 height=134 >
                     </TD>
                      </TR> 
                       <!--{/if}-->
@@ -431,11 +461,41 @@ function hideIt(){
                                                                             </select>                                    
                                                                 </TD>
                                                      </TR>  
-                             <TR>
-                                    <TD>Bidang</TD><TD><INPUT TYPE="text" NAME="bidang_cari" ></TD>
-                            </TR>                        
+                               <TR>
+                                <TD>Status Inventaris<font color="#ff0000">*</font></TD> 
+				<TD>    
+                                    <SELECT NAME="status_cari" >   
+                                            <option value="">Pilih Status Cari</OPTION>
+                                            <option value="1">Sudah Kembali</OPTION>
+                                            <option value="2">Dipinjam</OPTION>
+                                           
+                                    </SELECT>
+                                </TD>
+                                </TR>
+                        <TR>
+                           <TD>Jenis Inventaris <font color="#ff0000">*</font></TD>
+                           <TD>
+                                       <select name="jenis_alat" >
+                                       <option value="">[Pilih Jenis]</option>
+                                       <!--{section name=x loop=$DATA_JENIS}-->
+                                       <!--{if trim($DATA_JENIS[x].r_jenis__id)==$EDIT_JENIS_ID}-->
+                                       <option value="<!--{$DATA_JENIS[x].r_jenis__id}-->" selected > <!--{$DATA_JENIS[x].r_jenis__nama}--> </option>
+                                       <!--{else}-->
+                                       <option value="<!--{$DATA_JENIS[x].r_jenis__id}-->"  > <!--{$DATA_JENIS[x].r_jenis__nama}--> </option>
+                                       <!--{/if}-->
+                                       <!--{/section}-->
+                                       </select> 
+                           </TD>
+                        </TR>
                             <TR>
                                     <TD>Nama Karyawan</TD><TD><INPUT TYPE="text" NAME="nama_cari" ></TD>
+                            </TR>
+                            <TR>
+                                    <TD>Finger Print</TD><TD><INPUT TYPE="text" NAME="finger_cari" ></TD>
+                            </TR>
+                            
+                            <TR>
+                                    <TD>Kode Inventaris</TD><TD><INPUT TYPE="text" NAME="kode_inv_cari" ></TD>
                             </TR>
                             <TR><TD></TD>
 				<TD>
@@ -468,11 +528,14 @@ function hideIt(){
                     <THEAD>
 											<TH class="tdatahead" align="left">NO</TH>
                                                                                         <TH class="tdatahead" align="left" width="10%">NIP </TH>
+                                                                                        <TH class="tdatahead" align="left" width="10%">ID FINGER </TH>
 											<TH class="tdatahead" align="left" width="10%">NAMA</TH>                                                                                       
                                                                                         <TH class="tdatahead" align="left" >CABANG</TH>
 											<TH class="tdatahead" align="left">DEPARTEMEN</TH>
-											<TH class="tdatahead" align="left" >JABATAN</TH>                                                                                       
-											<TH class="tdatahead" align="left">NAMA ALAT</TH>
+											<TH class="tdatahead" align="left">JABATAN</TH>                                                                                       
+											<TH class="tdatahead" align="left">JENIS</TH>
+                                                                                        <TH class="tdatahead" align="left" width="10%">NO INVENTARIS </TH>
+                                                                                        <TH class="tdatahead" align="left">NAMA ALAT/BARANG</TH>
                                                                                         <TH class="tdatahead" align="left">TGL PEMINJAMAN</TH>
                                                                                         <TH class="tdatahead" align="left">KONDISI</TH>
                                                                                         <TH class="tdatahead" align="left">STATUS</TH>
@@ -484,25 +547,29 @@ function hideIt(){
 			<tr class='<!--{cycle values="alt,alt3"}-->'>
 											<td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
 											<TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
                                                                                         <TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
                                                                                         <TD class="tdatacontent"><!--{$DATA_TB[x].r_cabang__nama}--> </TD>
 											<TD class="tdatacontent"><!--{$DATA_TB[x].r_dept__ket}-->  </TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_jabatan__ket}--> </TD>                                                                                        
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_jabatan__ket}--> </TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_jenis__nama}--></TD>    
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_inventaris__id}--></TD>   
 											<TD class="tdatacontent"><!--{$DATA_TB[x].r_inventaris__alat}--></TD>
+                                                                                    
                                                                                         <TD class="tdatacontent"><!--{$DATA_TB[x].r_inventaris__tgl_pinjam|date_format:'%d-%b-%Y'}--></TD>
                                                                                         <TD class="tdatacontent"><!--{$DATA_TB[x].r_inventaris__kondisi}--></TD>
                                                                                         <TD class="tdatacontent">
-                                                                                           <!--{if ($DATA_TB[x]._inventaris__status)==1}-->
-                                                                                           <font color="#0a8727">Kembali </font>
+                                                                                           <!--{if ($DATA_TB[x].r_inventaris__status)==1}-->
+                                                                                           <font color="#0a8727">Sudah Kembali </font>
                                                                                            <!--{else}-->
-                                                                                                <font color="#ff0000">Dipinjam</font>
+                                                                                                <font color="#ff0000">Sedang Dipinjam</font>
                                                                                             <!--{/if}-->
                                                                                         
                                                                                         
                                                                                         </TD>
                                                                                         
-											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].r_pel__id}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
-											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/delete.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$DELETE}-->" onclick="return checkDelete('engine.php?op=2&id=<!--{$DATA_TB[x].r_pel__id}--> &mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
+											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].r_inventaris__id}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
+											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/delete.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$DELETE}-->" onclick="return checkDelete('engine.php?op=2&id=<!--{$DATA_TB[x].r_inventaris__id}--> &mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
 										</TR>
 										<!--{sectionelse}-->
 										<TR>

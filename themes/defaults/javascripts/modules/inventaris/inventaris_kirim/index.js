@@ -98,7 +98,19 @@ with (theForm){
                         alert ("Silahkan Isi Keterangan Alat "); 
                         keterangan_alat.focus();
                         return false; 
-                }                  
+                }         
+            else if (status.value == "") 
+                { 
+                        alert ("Silahkan Isi Status "); 
+                        status.focus();
+                        return false; 
+                }         
+                 else if (tgl_kembali.value == "") 
+                { 
+                        alert ("Silahkan Tgl Kembali "); 
+                        tgl_kembali.focus();
+                        return false; 
+                }         
             else
                     {
                             submit();
@@ -183,7 +195,6 @@ function cari_subdep(subdep_id)
 //alert (subdep_id)
 if (subdep_id != '') {
 	http.open('get','index.php?get_subdep=1&no_subdep='+subdep_id);
-        //http.open('get','index.php?get_prop_ktp=1&no_prop_ktp='+prop_id_ktp);
 	http.onreadystatechange = handlechoice_subdep; 
 	http.send(null);
 	} 
@@ -203,12 +214,21 @@ if(http.readyState == 4)
 
 function goCarikaryawan() {
     
-			kode_cabang= document.frmCreate.kode_cabang.value;
-                        window.open('../../../function/list_training.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
-                        }
+kode_cabang= document.frmCreate.kode_cabang.value;
+                        
+ if(kode_cabang =='')
+    {
+           alert('Isi Dahulu Cabang!');
+           return false; 
+    }
+else
+{
+    window.open('../../../function/list_training.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
+}             
+                      }
 
 function cek_id_pel() {
-                      // kode_cabang= document.frmCreate.kode_cabang.value;
+                     
                         window.open('../../../function/list_mst_pelatihan.php',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
                        
                     }
@@ -256,22 +276,20 @@ function formatangka(objek) {
 
 
 function codename() {
-
-
     if(document.frmCreate.checkboxname.checked)
     {
-         document.frmCreate.file_xls.disabled=false;
+         document.frmCreate.file_gambar.disabled=false;
          document.frmCreate.foto2.disabled=true;
-          
-           
     }
     else
     {
-         document.frmCreate.file_xls.disabled=true;
-           document.frmCreate.foto2.disabled=false;
+            document.frmCreate.file_gambar.disabled=true;
+            document.frmCreate.foto2.disabled=false;
     }
     
     
     
 }
+
+
 </SCRIPT>

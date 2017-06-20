@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-19 08:47:52
+<?php /* Smarty version 2.6.18, created on 2017-06-02 09:11:04
          compiled from D:/xampp/htdocs//hris/themes/defaults/index2.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'D:/xampp/htdocs//hris/themes/defaults/index2.tpl', 84, false),)), $this); ?>
@@ -81,7 +81,7 @@ img.pngfix { behavior: url("themes/defaults/css/iepngfix.htc") }
 <td><select name="jns_user"  onChange="cari(this.value);">
 <option value="">[Pilih Level Pengguna]</option>
 <option value="1">Pusat</option>
-<option value="2">Cabang</option> 
+<option value="2">Cabang</option>
 </select>
 </td>
 </tr>
@@ -89,10 +89,10 @@ img.pngfix { behavior: url("themes/defaults/css/iepngfix.htc") }
 <tr><td class="login_txt" align="left">
 <span style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#000000; font-weight:bold;"> Cabang</span
 ></td>
-<td> 
- <div id="ajax_instansi"> 
-	 <select name="kode_cabang"> 
-	 <option value="">[Pilih Cabang]</option> 
+<td>
+ <div id="ajax_instansi">
+	 <select name="kode_cabang">
+	 <option value="">[Pilih Cabang]</option>
 	 </select>
  </div>
  </td>
@@ -117,4 +117,4 @@ img.pngfix { behavior: url("themes/defaults/css/iepngfix.htc") }
 
 
 </body>
-</html>
+</html>

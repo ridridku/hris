@@ -40,7 +40,6 @@ $HREF_ADODB	=$HREF_HOME."/adodb";
 $HREF_JPGRAPH	=$HREF_HOME."/jpgraph";
 $HREF_UPLOADS	=$HREF_HOME."/uploads";
 
-
 $DOC_SELF_NAME	=$_SERVER['PHP_SELF'];
 $DOC_PARSE_URL = parse_url($DOC_SELF_NAME);
 $DOC_SELF_ONLY = basename($DOC_PARSE_URL[path]); 
@@ -234,4 +233,113 @@ function tampil_bulan ($x) {
     return $bulan;
 }
 /*** End 0f Array***/
+
+
+
+function encrypt_url($string) {
+  $key = "MAL_979805"; //key to encrypt and decrypts.
+  $result = '';
+  $test = "";
+   for($i=0; $i<strlen($string); $i++) {
+     $char = substr($string, $i, 1);
+     $keychar = substr($key, ($i % strlen($key))-1, 1);
+     $char = chr(ord($char)+ord($keychar));
+
+     $test[$char]= ord($char)+ord($keychar);
+     $result.=$char;
+   }
+
+   return urlencode(base64_encode($result));
+}
+
+function decrypt_url($string) {
+    $key = "MAL_979805"; //key to encrypt and decrypts.
+    $result = '';
+    $string = base64_decode(urldecode($string));
+   for($i=0; $i<strlen($string); $i++) {
+     $char = substr($string, $i, 1);
+     $keychar = substr($key, ($i % strlen($key))-1, 1);
+     $char = chr(ord($char)-ord($keychar));
+     $result.=$char;
+   }
+   }
+   
+function encrypt($pure_string) {
+    $dirty = array("+", "/", "=");
+    $clean = array("_PLUS_", "_SLASH_", "_EQUALS_");
+    $iv_size = mcrypt_get_iv_size(MCRYPT_BLOWFISH, MCRYPT_MODE_ECB);
+    $_SESSION['iv'] = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+    $encrypted_string = mcrypt_encrypt(MCRYPT_BLOWFISH, $_SESSION['encryption-key'], utf8_encode($pure_string), MCRYPT_MODE_ECB, $_SESSION['iv']);
+    $encrypted_string = base64_encode($encrypted_string);
+    return str_replace($dirty, $clean, $encrypted_string);
+}
+
+function decrypt($encrypted_string) { 
+    $dirty = array("+", "/", "=");
+    $clean = array("_PLUS_", "_SLASH_", "_EQUALS_");
+
+    $string = base64_decode(str_replace($clean, $dirty, $encrypted_string));
+
+    $decrypted_string = mcrypt_decrypt(MCRYPT_BLOWFISH, $_SESSION['encryption-key'],$string, MCRYPT_MODE_ECB, $_SESSION['iv']);
+    return $decrypted_string;
+}
+
+
+
+function encryptIt( $q ) {
+    $cryptKey  = 'qJB0rGtIn5UB1xG03efyCp';
+    $qEncoded      = base64_encode( mcrypt_encrypt( MCRYPT_RIJNDAEL_256, md5( $cryptKey ), $q, MCRYPT_MODE_CBC, md5( md5( $cryptKey ) ) ) );
+    return( $qEncoded );
+}
+
+function decryptIt( $q ) {
+    $cryptKey  = 'qJB0rGtIn5UB1xG03efyCp';
+    $qDecoded      = rtrim( mcrypt_decrypt( MCRYPT_RIJNDAEL_256, md5( $cryptKey ), base64_decode( $q ), MCRYPT_MODE_CBC, md5( md5( $cryptKey ) ) ), "\0");
+    return( $qDecoded );
+}
+    
+   
+function namahari($tanggal){
+    
+  
+    $tgl=substr($tanggal,8,2);
+    $bln=substr($tanggal,5,2);
+    $thn=substr($tanggal,0,4);
+
+    $info=date('w', mktime(0,0,0,$bln,$tgl,$thn));
+    
+    switch($info){
+        case '0': return "Minggu"; break;
+        case '1': return "Senin"; break;
+        case '2': return "Selasa"; break;
+        case '3': return "Rabu"; break;
+        case '4': return "Kamis"; break;
+        case '5': return "Jumat"; break;
+        case '6': return "Sabtu"; break;
+    };
+    
+}
+
+
+ function convertrupiah($angka)
+    {
+            $jadi = "Rp " . number_format($angka,2,',','.');
+            return $jadi;
+    }
+
+
+function datediff( $date1, $date2 )
+    {
+        $diff = abs( strtotime( $date1 ) - strtotime( $date2 ) );
+
+        return sprintf
+        (
+           "%d:%d:%d",
+         //   intval( $diff / 86400 ),
+            intval( ( $diff % 86400 ) / 3600),
+            intval( ( $diff / 60 ) % 60 ),
+            intval( $diff % 60 )
+        );
+    }
+
 ?>

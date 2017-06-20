@@ -155,35 +155,82 @@ function hideIt(){
                                                                 </TD>
 							</TR>
                                                    <TR>
-							<TD>Periode </TD>
-							<TD>							
-							<SELECT name="bulan"   > 
-								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <!--{if $BULAN_SES==01}-->selected<!--{/if}-->>Januari</OPTION>
-								<OPTION VALUE="02"<!--{if $BULAN_SES==02}-->selected<!--{/if}-->  >Februari</OPTION>
-								<OPTION VALUE="03"<!--{if $BULAN_SES==03}-->selected<!--{/if}-->  >Maret</OPTION>
-								<OPTION VALUE="04"<!--{if $BULAN_SES==04}-->selected<!--{/if}-->  >April</OPTION>
-								<OPTION VALUE="05"<!--{if $BULAN_SES==05}-->selected<!--{/if}--> >Mei</OPTION>
-								<OPTION VALUE="06"<!--{if $BULAN_SES==06}-->selected<!--{/if}-->  >Juni</OPTION>
-								<OPTION VALUE="07"<!--{if $BULAN_SES==07}-->selected<!--{/if}-->  >Juli</OPTION>
-								<OPTION VALUE="08"<!--{if $BULAN_SES==08}-->selected<!--{/if}-->  >Agustus</OPTION>
-								<OPTION VALUE="09"<!--{if $BULAN_SES==09}-->selected<!--{/if}-->  >September</OPTION>
-								<OPTION VALUE="10"<!--{if $BULAN_SES==10}-->selected<!--{/if}-->  >Oktober</OPTION>
-								<OPTION VALUE="11"<!--{if $BULAN_SES==11}-->selected<!--{/if}-->  >November</OPTION>
-								<OPTION VALUE="12"<!--{if $BULAN_SES==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+							<TD>Periode Awal</TD>
+							<TD>
+                                                        <SELECT NAME="tgl1" > 
+                                                        <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
+                                                        <!--{section name=foo start=1 loop=31 step=1}-->
+                                                                  <!--{if ($smarty.section.foo.index)==$DAY1}-->
+                                                                         <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+                                                                  <!--{else}-->
+                                                                                 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+                                                                 <!--{/if}--> 
+                                                        <!--{/section}-->
                                                         </SELECT> 
-
-
-							<SELECT name="tahun" > 
+							<SELECT name="bulan1"> 
+								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
+                                                                <OPTION value="01"<!--{if $MONTH1==1}-->selected<!--{/if}-->>Januari</OPTION>
+								<OPTION VALUE="02"<!--{if $MONTH1==2}-->selected<!--{/if}-->  >Februari</OPTION>
+								<OPTION VALUE="03"<!--{if $MONTH1==3}-->selected<!--{/if}-->  >Maret</OPTION>
+								<OPTION VALUE="04"<!--{if $MONTH1==4}-->selected<!--{/if}-->  >April</OPTION>
+								<OPTION VALUE="05"<!--{if $MONTH1==5}-->selected<!--{/if}--> >Mei</OPTION>
+								<OPTION VALUE="06"<!--{if $MONTH1==6}-->selected<!--{/if}-->  >Juni</OPTION>
+								<OPTION VALUE="07"<!--{if $MONTH1==7}-->selected<!--{/if}-->  >Juli</OPTION>
+								<OPTION VALUE="08"<!--{if $MONTH1==8}-->selected<!--{/if}-->  >Agustus</OPTION>
+								<OPTION VALUE="09"<!--{if $MONTH1==9}-->selected<!--{/if}-->  >September</OPTION>
+								<OPTION VALUE="10"<!--{if $MONTH1==10}-->selected<!--{/if}-->  >Oktober</OPTION>
+								<OPTION VALUE="11"<!--{if $MONTH1==11}-->selected<!--{/if}-->  >November</OPTION>
+								<OPTION VALUE="12"<!--{if $MONTH1==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+                                                        </SELECT> 
+						<SELECT NAME="tahun1" > 
 						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
 						<!--{section name=foo start=2010 loop=2021 step=1}-->
- 							  <!--{if ($smarty.section.foo.index)==$TAHUN_SES}-->
+ 							  <!--{if ($smarty.section.foo.index)==$YEAR1}-->
 								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
 							  <!--{else}-->
 									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
 							 <!--{/if}--> 
 						<!--{/section}-->
-						</SELECT> 
+						</SELECT>                                                 
+						 </TD></TR>    
+                                         <TR>
+							<TD>Periode Akhir</TD>
+							<TD>
+                                                        <SELECT NAME="tgl2" > 
+                                                        <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
+                                                        <!--{section name=foo start=1 loop=31 step=1}-->
+                                                                  <!--{if ($smarty.section.foo.index)==$DAY2}-->
+                                                                         <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+                                                                  <!--{else}-->
+                                                                                 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+                                                                 <!--{/if}--> 
+                                                        <!--{/section}-->
+                                                        </SELECT> 
+							<SELECT name="bulan2"> 
+								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
+                                                                <OPTION value="01"<!--{if $MONTH2==1}-->selected<!--{/if}-->>Januari</OPTION>
+								<OPTION VALUE="02"<!--{if $MONTH2==2}-->selected<!--{/if}-->  >Februari</OPTION>
+								<OPTION VALUE="03"<!--{if $MONTH2==3}-->selected<!--{/if}-->  >Maret</OPTION>
+								<OPTION VALUE="04"<!--{if $MONTH2==4}-->selected<!--{/if}-->  >April</OPTION>
+								<OPTION VALUE="05"<!--{if $MONTH2==5}-->selected<!--{/if}--> >Mei</OPTION>
+								<OPTION VALUE="06"<!--{if $MONTH2==6}-->selected<!--{/if}-->  >Juni</OPTION>
+								<OPTION VALUE="07"<!--{if $MONTH2==7}-->selected<!--{/if}-->  >Juli</OPTION>
+								<OPTION VALUE="08"<!--{if $MONTH2==8}-->selected<!--{/if}-->  >Agustus</OPTION>
+								<OPTION VALUE="09"<!--{if $MONTH2==9}-->selected<!--{/if}-->  >September</OPTION>
+								<OPTION VALUE="10"<!--{if $MONTH2==10}-->selected<!--{/if}-->  >Oktober</OPTION>
+								<OPTION VALUE="11"<!--{if $MONTH2==11}-->selected<!--{/if}-->  >November</OPTION>
+								<OPTION VALUE="12"<!--{if $MONTH2==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+                                                        </SELECT> 
+						<SELECT NAME="tahun2" > 
+						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
+						<!--{section name=foo start=2010 loop=2021 step=1}-->
+ 							  <!--{if ($smarty.section.foo.index)==$YEAR2}-->
+								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+							  <!--{else}-->
+									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+							 <!--{/if}--> 
+						<!--{/section}-->
+						</SELECT>                                                 
 						 </TD></TR>
 
 							<TR>
@@ -306,7 +353,7 @@ function hideIt(){
 											<TD class="tdatacontent"><!--{$DATA_TB[x].r_dept__ket}--></TD>
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].r_shift__jam_masuk}--></TD>
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].r_shift__jam_pulang}--></TD>
-                                                                                        <TD class="tdatacontent" align="left" ><!--{$DATA_TB[x].t_abs__tgl}--></TD>
+                                                                                        <TD class="tdatacontent" align="left" ><!--{$DATA_TB[x].t_abs__tgl|date_format:"%A,%d/%m/%Y"}--></TD>
                                                                                         <TD class="tdatacontent" align="left" ><!--{$DATA_TB[x].t_abs__jam_masuk}--></TD>
                                                                                         <TD class="tdatacontent" align="left" ><!--{$DATA_TB[x].t_abs__jam_keluar}--></TD>
                                                                                         <TD class="tdatacontent" align="left" ><!--{$DATA_TB[x].t_abs__early}--></TD>

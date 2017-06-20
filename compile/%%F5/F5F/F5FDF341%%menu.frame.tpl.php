@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-19 12:06:43
+<?php /* Smarty version 2.6.18, created on 2017-06-02 09:11:07
          compiled from defaults/modules/menu.frame.tpl */ ?>
 <html>
 <head>
@@ -8,17 +8,19 @@
 img.pngfix { behavior: url("<?php echo $this->_tpl_vars['HREF_CSS_PATH']; ?>
 /iepngfix.htc") }
 </style>
-	
+
+
+
 <style type="text/css">
 		/* A few IE bug fixes */
 		* { margin: 0; padding: 0; }
 		* html ul ul li a { height: 100%; }
 		* html ul li a { height: 100%; }
 		* html ul ul li { margin-bottom: -1px; }
-		
+
 		body { padding-left: 0px; font-family: Arial, Helvetica, sans-serif; }
 		#theMenu { width: 228px; margin: 0px; padding: 0; }
-		
+
 		/* Some list and link styling */
 		ul li { width: 228px; }
 		ul ul li { margin:1px; padding: 1px; width: 225px; margin-bottom: 0; }
@@ -29,14 +31,14 @@ img.pngfix { behavior: url("<?php echo $this->_tpl_vars['HREF_CSS_PATH']; ?>
 		ul ul ul li { border-left: none; border-bottom: 1px solid #eee; padding: 0; width: 224px; margin-bottom: 1; }
 		ul ul ul li a { display:block; color: #000; padding: 3px 6px; font-size: small; }
 		ul ul ul li a:hover { display:block; color: #369; padding: 3px 6px; font-size: small; }
-		
+
 		li { list-style-type: none; }
 		h2 { margin-top: 1.5em; }
-		
+
 		a.menu-tree {
-		display:block; 
+		display:block;
 		border: 1px solid #cccccc;
-		background: url(../themes/defaults/images/layout/grid-hro-gray.gif) repeat-x;		
+		background: url(../themes/defaults/images/layout/grid-hro-gray.gif) repeat-x;
 		background-position:0 -7px;
 		padding: 3px 6px;
 		margin-left:1px;
@@ -45,9 +47,9 @@ img.pngfix { behavior: url("<?php echo $this->_tpl_vars['HREF_CSS_PATH']; ?>
 		margin-bottom:0px;
 		height:21px;
 		}
-		
+
 		a.menu-tree:hover{
-		background: url(../themes/defaults/images/layout/grid-hro-gray-light.gif) repeat-x;		
+		background: url(../themes/defaults/images/layout/grid-hro-gray-light.gif) repeat-x;
 		background-position:0 -7px;
 		color: #36a;
 		}
@@ -64,54 +66,54 @@ img.pngfix { behavior: url("<?php echo $this->_tpl_vars['HREF_CSS_PATH']; ?>
 			font-face:arial verdana;
 		}
 		/* Header links styling */
-		h3.head a { 
+		h3.head a {
 		text-decoration: none;
-		display:block; 
-		border: 1px solid #ACDBAE;		
+		display:block;
+		border: 1px solid #ACDBAE;
 		background: url(../themes/defaults/images/layout/grid-hro.gif) repeat-x;
 		color: #083772;
 		background-position:0 -7px;
 		padding: 3px 6px;
 		margin:1px;
 		}
-		h3.head a:hover { 
+		h3.head a:hover {
 		color: #000;
 		border:1px solid #ACDBAE;
 		background: url(../themes/defaults/images/layout/grid-hro-light.gif) repeat-x;
 		background-position:0 -7px;
 		}
-		h3.selected a { 
+		h3.selected a {
 		background: url(../themes/defaults/images/layout/grid-hro-dark.gif) repeat-x;
 		background-position:0 -7px;
 		color: #fff;
 		padding: 3px 6px;
 		}
-		h3.selected a:hover { 
+		h3.selected a:hover {
 		background: url(../themes/defaults/images/layout/grid-hro-light.gif) repeat-x;
 		background-position:0 -7px;
 		color: #36a;
 		}
-		
+
 		/* Xtra Header links styling */
-		h4.head a { 
-		display:block; 
-		background: url(../themes/defaults/images/layout/grid-hro-gray.gif) repeat-x;		
+		h4.head a {
+		display:block;
+		background: url(../themes/defaults/images/layout/grid-hro-gray.gif) repeat-x;
 		background-position:0 -7px;
 		padding: 3px 6px;
 		}
-		h4.head a:hover { 
+		h4.head a:hover {
 		color: #000;
 		background: url(../themes/defaults/images/layout/grid-hro-red.gif) repeat-x;
 		background-position:0 -7px;
 		}
-		h4.selected a { 
+		h4.selected a {
 		color: #000;
-		background: url(../themes/defaults/images/layout/grid-hro-gray-light.gif) repeat-x;		
+		background: url(../themes/defaults/images/layout/grid-hro-gray-light.gif) repeat-x;
 		background-position:0 -7px;
 		padding: 3px 6px;
 		}
-		h4.selected a:hover { 
-		background: url(../themes/defaults/images/layout/grid-hro-gray-light.gif) repeat-x;		
+		h4.selected a:hover {
+		background: url(../themes/defaults/images/layout/grid-hro-gray-light.gif) repeat-x;
 		background-position:0 -7px;
 		color: #36a;
 		}
@@ -133,7 +135,7 @@ img.pngfix { behavior: url("<?php echo $this->_tpl_vars['HREF_CSS_PATH']; ?>
 /jquery.countdown.js"></script>-->
 
 <script type="text/javascript">
-jQuery().ready(function(){	
+jQuery().ready(function(){
 	// applying the settings
 	jQuery('#theMenu').Accordion({
 		active: 'h3.selected',
@@ -221,19 +223,19 @@ $this->_sections['z']['last']       = ($this->_sections['z']['iteration'] == $th
 
 
 
-	
-});	
+
+});
 
 
 </script>
-<h3>&nbsp;SISTEM NAVIGASI MENU</h3> 
+<h3>&nbsp;SISTEM NAVIGASI MENU</h3>
 <!--<span id="countdown" style="color:red;">TimeOut # <b class=countdown secs="300">00:00:00</b></span>-->
 <ul>
 	<li><a class="menu-tree" href="main.frame.php" target="mainFrame" title="Home"><IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/home.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Halaman Utama</A></li>
 	<li><a class="menu-tree" href="edit.profile.php?user_id=<?php echo $this->_tpl_vars['USER_ID']; ?>
 " target="mainFrame" title="Edit Your Profile"><IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/icon/edit.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Ubah Password</A></li>				
+/icon/edit.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Ubah Password</A></li>
 </ul>
 
 <ul id="theMenu">
@@ -261,7 +263,7 @@ $this->_sections['x']['index_next'] = $this->_sections['x']['index'] + $this->_s
 $this->_sections['x']['first']      = ($this->_sections['x']['iteration'] == 1);
 $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $this->_sections['x']['total']);
 ?>
-   
+
 	<li>
 		<?php if ($this->_tpl_vars['DATA_MENU_PARENT'][$this->_sections['x']['index']]['menu_id'] == '92'): ?>
 		<h3 class="head" style="height:30px;">
@@ -274,14 +276,14 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 
 		</a></form>
 		-->
-		
+
 		<form name="frmMenuShowGis" method="post" action="show.gis.php" target="_parent">
 		<a class="menu-tree" HREF="javascript:document.frmMenuShowGis.submit();">
 		<IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /<?php echo $this->_tpl_vars['DATA_MENU_PARENT'][$this->_sections['x']['index']]['menu_normal_icon']; ?>
 " WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"><?php echo $this->_tpl_vars['DATA_MENU_PARENT'][$this->_sections['x']['index']]['menu_label']; ?>
 </a></form>
-		
+
 		<!--
 		<a class="menu-tree" HREF="./Aplikasi/GIS_PUM.exe">
 		<IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
@@ -324,14 +326,14 @@ $this->_sections['y']['last']       = ($this->_sections['y']['iteration'] == $th
 				<?php if ($this->_sections['y']['first']): ?>
 				<ul>
 				<?php endif; ?>
-						
-					<?php if ($this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_parent'] == $this->_tpl_vars['DATA_MENU_PARENT'][$this->_sections['x']['index']]['menu_id'] && $this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_level'] == '1'): ?>
-				
 
-					
+					<?php if ($this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_parent'] == $this->_tpl_vars['DATA_MENU_PARENT'][$this->_sections['x']['index']]['menu_id'] && $this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_level'] == '1'): ?>
+
+
+
 						<li>
 						<?php if ($this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['sum_child'] > 0): ?>
-						
+
 								 <ul id="xtraMenu<?php echo $this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_id']; ?>
 ">
 								<li>
@@ -366,13 +368,13 @@ $this->_sections['q']['last']       = ($this->_sections['q']['iteration'] == $th
 															<?php if ($this->_sections['q']['first']): ?>
 															<ul>
 															<?php endif; ?>
-															
+
 															<?php if ($this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['menu_parent'] == $this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_id'] && $this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['menu_level'] == '2' && $this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_parent'] == $this->_tpl_vars['DATA_MENU_PARENT'][$this->_sections['x']['index']]['menu_id']): ?>
-															 
-															 
+
+
 																    	 <?php if ($this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['sum_child2'] > 0): ?>
-																				 
-																			
+
+
 																				<h4 class="head"> <li id="xtraMenu2<?php echo $this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['menu_id']; ?>
 ">  <a href="javascript:;"><img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /<?php echo $this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['menu_normal_icon']; ?>
@@ -404,7 +406,7 @@ $this->_sections['z']['index_next'] = $this->_sections['z']['index'] + $this->_s
 $this->_sections['z']['first']      = ($this->_sections['z']['iteration'] == 1);
 $this->_sections['z']['last']       = ($this->_sections['z']['iteration'] == $this->_sections['z']['total']);
 ?>
-																					
+
 																						<?php if ($this->_tpl_vars['DATA_MENU_SUB_CHILD2'][$this->_sections['z']['index']]['menu_parent'] == $this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['menu_id'] && $this->_tpl_vars['DATA_MENU_SUB_CHILD2'][$this->_sections['z']['index']]['menu_level'] == '3' && $this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['menu_parent'] == $this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_id']): ?>
 																						<li> <a href="<?php echo $this->_tpl_vars['DATA_MODULE']; ?>
 <?php echo $this->_tpl_vars['DATA_MENU_SUB_CHILD2'][$this->_sections['z']['index']]['menu_link']; ?>
@@ -412,11 +414,11 @@ $this->_sections['z']['last']       = ($this->_sections['z']['iteration'] == $th
 " target="mainFrame"> <?php echo $this->_tpl_vars['DATA_MENU_SUB_CHILD2'][$this->_sections['z']['index']]['menu_label']; ?>
   </a></li>
 
-																						<?php endif; ?>																
+																						<?php endif; ?>
 																				<?php endfor; endif; ?>
- 
+
 																	   <?php else: ?>
-																		
+
 																			<li><a href="<?php if ($this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['menu_link'] != ''): ?><?php echo $this->_tpl_vars['DATA_MODULE']; ?>
 <?php echo $this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['menu_link']; ?>
 ?mod_id=<?php echo $this->_tpl_vars['DATA_MENU_SUB_CHILD'][$this->_sections['q']['index']]['menu_id']; ?>
@@ -429,41 +431,41 @@ $this->_sections['z']['last']       = ($this->_sections['z']['iteration'] == $th
 
 
 															 <?php endif; ?>
-									
+
 															<?php if ($this->_sections['q']['last']): ?>
 															</ul>
 															<?php endif; ?>
 									<?php endfor; endif; ?>
 								 </li>
 								</ul>
-						
+
 						<?php else: ?>
-									 
+
 										<a href="<?php if ($this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_link'] != ''): ?><?php echo $this->_tpl_vars['DATA_MODULE']; ?>
 <?php echo $this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_link']; ?>
 ?mod_id=<?php echo $this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_id']; ?>
 <?php endif; ?>" target="mainFrame"><?php echo $this->_tpl_vars['DATA_MENU_CHILD'][$this->_sections['y']['index']]['menu_label']; ?>
 </a>
-								  
+
 						<?php endif; ?>
-						
+
 						</li>
-					
-				
-				
+
+
+
 					<?php endif; ?>
 				<?php if ($this->_sections['y']['last']): ?>
 				</ul>
 				<?php endif; ?>
 		<?php endfor; endif; ?>
-		
+
 	</li>
 	<?php endfor; endif; ?>
 
 </ul>
 
 <ul>
-	
+
 	<li><FORM  NAME="frmMenu" METHOD=POST ACTION="logout.php" target="_parent"><a class="menu-tree" HREF="javascript:document.frmMenu.submit();"><IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/lock.png" WIDTH="16" HEIGHT="16" BORDER="0" align="absmiddle" class="pngfix"> Keluar</A></FORM></li>
 </ul>

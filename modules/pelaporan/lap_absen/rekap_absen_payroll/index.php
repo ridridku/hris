@@ -118,14 +118,31 @@ if ($_GET['departemen_cari']) $departemen_cari = $_GET['departemen_cari'];
 else if ($_POST['departemen_cari']) $departemen_cari = $_POST['departemen_cari'];
 else $departemen_cari="";
 
-if ($_GET['bulan']) $bulan = $_GET['bulan'];
-else if ($_POST['bulan']) $bulan = $_POST['bulan'];
-else $bulan="";
 
-if ($_GET['tahun']) $tahun = $_GET['tahun'];
-else if ($_POST['tahun']) $tahun = $_POST['tahun'];
-else $tahun="";
 
+if ($_GET['bulan1']) $bulan1 = $_GET['bulan1'];
+else if ($_POST['bulan1']) $bulan1 = $_POST['bulan1'];
+else $bulan1="";
+
+if ($_GET['bulan2']) $bulan2 = $_GET['bulan2'];
+else if ($_POST['bulan2']) $bulan2 = $_POST['bulan2'];
+else $bulan2="";
+
+if ($_GET['tahun1']) $tahun1 = $_GET['tahun1'];
+else if ($_POST['tahun1']) $tahun1 = $_POST['tahun1'];
+else $tahun1="";
+
+if ($_GET['tahun2']) $tahun2 = $_GET['tahun2'];
+else if ($_POST['tahun2']) $tahun2 = $_POST['tahun1'];
+else $tahun2="";
+
+if ($_GET['tgl1']) $tgl1 = $_GET['tgl1'];
+else if ($_POST['tgl1']) $tgl1 = $_POST['tgl1'];
+else $tgl1="";
+
+if ($_GET['tgl2']) $tgl2= $_GET['tgl2'];
+else if ($_POST['tgl2']) $tgl2 = $_POST['tgl2'];
+else $tgl2="";
 
 if ($_GET['nama_karyawan_cari']) $nama_karyawan_cari = $_GET['nama_karyawan_cari'];
 else if ($_POST['nama_karyawan_cari']) $nama_karyawan_cari = $_POST['nama_karyawan_cari'];
@@ -138,10 +155,20 @@ else $search="";
 
 
 $smarty->assign ("KODE_CABANG_CARI", $kode_cabang_cari);
-$tahun_ses_aktif		=	$_SESSION['SESSION_TAHUN_AKTIF'];
-$bulan_ses_aktif		=	$_SESSION['SESSION_BULAN_AKTIF'];
-$smarty->assign ("TAHUN_SES", $tahun_ses_aktif);
-$smarty->assign ("BULAN_SES", $bulan_ses_aktif);
+
+
+$arr = array($tahun1,$bulan1,$tgl1);                                 
+$date_awal= implode("-",$arr); 
+
+$arr = array($tahun2,$bulan2,$tgl2);                                 
+$date_akhir= implode("-",$arr); 
+$Search_Year='2016';
+
+$smarty->assign ("DATE_AWAL", $date_awal);
+$smarty->assign ("DATE_AKHIR", $date_akhir);
+
+$smarty->assign ("TAHUN1", $tahun1);
+$smarty->assign ("TAHUN2", $tahun2);
 
 //$fields_find_jns_jln_	= $jns_jln!=""?$jns_jln:$jns_jln2;
 
@@ -158,8 +185,24 @@ $SES_JENIS_USER		= $_SESSION['JENIS_USER'];
 
 $jenis_user     = $_SESSION['SESSION_JNS_USER'];
 $kode_pw_ses    = $_SESSION['SESSION_KODE_CABANG'];
-$tahun_session	= $_SESSION['SESSION_TAHUN'];
-$bulan_session	= $_SESSION['SESSION_BULAN'];  
+
+
+$periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF'];$smarty->assign ("PERIODE_AKHIR", $periode_akhir);
+
+
+$orderdate1 = explode('-',$periode_awal);
+$year1  = $orderdate1[0];$smarty->assign ("YEAR1", $year1);
+$month1 = $orderdate1[1];$smarty->assign ("MONTH1", $month1);
+$day1   = $orderdate1[2];$smarty->assign ("DAY1", $day1);
+
+
+$orderdate2 = explode('-',$periode_akhir);
+$year2  = $orderdate2[0];$smarty->assign ("YEAR2", $year2);
+$month2 = $orderdate2[1];$smarty->assign ("MONTH2", $month2);
+$day2   = $orderdate2[2];$smarty->assign ("DAY2", $day2);
+
+
 
 $smarty->assign ("JENIS_USER_SES", $jenis_user);
 $smarty->assign ("KODE_PW_SES", $kode_pw_ses);
@@ -339,8 +382,8 @@ if ($_GET['search'] == '1')
                       
                                                 $sql  = "SELECT 
                                                         A.t_rkp__no_mutasi AS t_rkp__no_mutasi,
-                                                        A.t_rkp__bln AS t_rkp__bln,
-                                                        A.t_rkp__thn AS t_rkp__thn,
+                                                        A.t_rkp__awal AS t_rkp__awal,
+                                                        A.t_rkp__akhir AS t_rkp__akhir,
                                                         A.t_rkp__approval AS t_rkp__approval,
                                                         A.t_rkp__keterangan AS t_rkp__keterangan,
                                                         A.t_rkp__hadir AS t_rkp__hadir,
@@ -349,11 +392,9 @@ if ($_GET['search'] == '1')
                                                         A.t_rkp__alpa AS t_rkp__alpa,
                                                         A.t_rkp__dinas AS t_rkp__dinas,
                                                         A.t_rkp__cuti AS t_rkp__cuti,
-                                                        A.t_rkp__date_created AS t_rkp__date_created,
-                                                        A.t_rkp__date_updated AS t_rkp__date_updated,
-                                                        A.t_rkp__user_created AS t_rkp__user_created,
-                                                        A.t_rkp__user_updated AS t_rkp__user_updated,
                                                         B.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+                                                        B.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+                                                        B.r_pnpt__finger_print AS finger,
                                                         C.r_pegawai__id AS r_pegawai__id,
                                                         C.r_pegawai__nama AS r_pegawai__nama,
                                                         D.r_subcab__id AS r_subcab__id,
@@ -376,8 +417,8 @@ if ($_GET['search'] == '1')
 			} else {
 						$sql  = "SELECT 
                                                         A.t_rkp__no_mutasi AS t_rkp__no_mutasi,
-                                                        A.t_rkp__bln AS t_rkp__bln,
-                                                        A.t_rkp__thn AS t_rkp__thn,
+                                                        A.t_rkp__awal AS t_rkp__awal,
+                                                        A.t_rkp__akhir AS t_rkp__akhir,
                                                         A.t_rkp__approval AS t_rkp__approval,
                                                         A.t_rkp__keterangan AS t_rkp__keterangan,
                                                         A.t_rkp__hadir AS t_rkp__hadir,
@@ -386,11 +427,8 @@ if ($_GET['search'] == '1')
                                                         A.t_rkp__alpa AS t_rkp__alpa,
                                                         A.t_rkp__dinas AS t_rkp__dinas,
                                                         A.t_rkp__cuti AS t_rkp__cuti,
-                                                        A.t_rkp__date_created AS t_rkp__date_created,
-                                                        A.t_rkp__date_updated AS t_rkp__date_updated,
-                                                        A.t_rkp__user_created AS t_rkp__user_created,
-                                                        A.t_rkp__user_updated AS t_rkp__user_updated,
                                                         B.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+                                                        B.r_pnpt__finger_print AS finger,
                                                         C.r_pegawai__id AS r_pegawai__id,
                                                         C.r_pegawai__nama AS r_pegawai__nama,
                                                         D.r_subcab__id AS r_subcab__id,
@@ -422,18 +460,12 @@ if ($_GET['search'] == '1')
 
 						if ($departemen_cari !=''  ) {
 						 	$sql.="  and r_dept__id='$departemen_cari' ";
+						 }
+                                                if ($tahun1 !='' AND $tahun2 !='' ) {
+						 	$sql.="  AND t_rkp__awal>='$date_awal' AND t_rkp__akhir<='$date_akhir'  ";
 						 } 
-
-						 
-                                                  if ($bulan !='') {
-						 	$sql.=" AND t_rkp__bln='$bulan'  ";
-						 }
                                                  
-                                                  if ($tahun !='') {
-						 	$sql.=" AND t_rkp__thn=$tahun  ";
-						 }
-                                                 
-                                                  if ($nama_karyawan_cari !='') {
+                                                if ($nama_karyawan_cari !='') {
 						 	$sql.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
 						 }
 
@@ -442,7 +474,7 @@ if ($_GET['search'] == '1')
 			 	 $sql.=" ORDER BY r_pegawai__id ";
 
 //			    if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
-  //var_dump($sql)or die();
+// var_dump($sql)or die();
 				$numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
 //				$pages = $p->findPages($count,$LIMIT); 
@@ -461,27 +493,40 @@ if ($_GET['search'] == '1')
                                  $label="Nama :". $arr[r_pegawai__nama]; 
                                  
                                  
-                                 $label_bln=$arr[label_bulan];
-                                 $label_tahun=$arr[label_tahun];
-				
+                                 $status=$arr[t_rkp__approval];
+                               if($status==3)
+                               {
+                                   $label_status='Disetujui HGLM';
+                               } elseif($status==4)
+                               {
+                                   $label_status='Closing';
+                               }
+                               elseif($status==2)
+                               {
+                                   $label_status='Disetujui BOM';
+                               } 
+                               elseif($status==1)
+                               {
+                                   $label_status='Disetujui HRD';
+                               }   
+				elseif($status==0)
+                               {
+                                   $label_status='Tidak Disetujui';
+                               }   
 					
 			   
 			   $content_data .= print_content(
-                                        $arr[t_rkp__no_mutasi],
-                                        $arr[t_rkp__bln],
-                                        $arr[t_rkp__thn],
-                                        $arr[t_rkp__approval],
+                                        $arr[finger],
+                                        $arr[r_pegawai__nama],
+                                        $arr[r_cabang__nama],
+                                        $label_status,
                                         $arr[t_rkp__hadir],
                                         $arr[t_rkp__sakit],
                                         $arr[t_rkp__izin],
                                         $arr[t_rkp__alpa],
                                         $arr[t_rkp__dinas],
                                         $arr[t_rkp__cuti],
-                                      $arr[t_rkp__keterangan],
-                                        $arr[t_rkp__date_created],
-                                        $arr[t_rkp__date_updated],
-                                        $arr[t_rkp__user_created],
-                                        $arr[t_rkp__user_updated]);
+                                        $arr[t_rkp__keterangan]);
                                   
                            
                            
@@ -512,7 +557,7 @@ if ($_GET['search'] == '1')
 				//$content = str_replace("@@@@BREAKPAGE@@@@@",$content_break,$content);
 				stream_set_write_buffer($fp, 0);
                              
-				$content = print_header($nm_perwakilan,$bulan,$tahun);
+				$content = print_header($nm_perwakilan,$date_awal,$date_akhir);
 				$content .= $content_data;
 				
 				$content .= print_footer();
@@ -539,8 +584,8 @@ else
                                                 
                                                 $sql = "SELECT 
                                                         A.t_rkp__no_mutasi AS t_rkp__no_mutasi,
-                                                        A.t_rkp__bln AS t_rkp__bln,
-                                                        A.t_rkp__thn AS t_rkp__thn,
+                                                        A.t_rkp__awal AS t_rkp__awal,
+                                                        A.t_rkp__akhir AS t_rkp__akhir,
                                                         A.t_rkp__approval AS t_rkp__approval,
                                                         A.t_rkp__keterangan AS t_rkp__keterangan,
                                                         A.t_rkp__hadir AS t_rkp__hadir,
@@ -554,6 +599,7 @@ else
                                                         A.t_rkp__user_created AS t_rkp__user_created,
                                                         A.t_rkp__user_updated AS t_rkp__user_updated,
                                                         B.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+                                                        B.r_pnpt__finger_print AS finger,
                                                         C.r_pegawai__id AS r_pegawai__id,
                                                         C.r_pegawai__nama AS r_pegawai__nama,
                                                         D.r_subcab__id AS r_subcab__id,
@@ -575,8 +621,8 @@ else
 			} else {
 						$sql  = "SELECT 
                                                         A.t_rkp__no_mutasi AS t_rkp__no_mutasi,
-                                                        A.t_rkp__bln AS t_rkp__bln,
-                                                        A.t_rkp__thn AS t_rkp__thn,
+                                                        A.t_rkp__awal AS t_rkp__awal,
+                                                        A.t_rkp__akhir AS t_rkp__akhir,
                                                         A.t_rkp__approval AS t_rkp__approval,
                                                         A.t_rkp__keterangan AS t_rkp__keterangan,
                                                         A.t_rkp__hadir AS t_rkp__hadir,
@@ -590,6 +636,7 @@ else
                                                         A.t_rkp__user_created AS t_rkp__user_created,
                                                         A.t_rkp__user_updated AS t_rkp__user_updated,
                                                         B.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+                                                        B.r_pnpt__finger_print AS finger,
                                                         C.r_pegawai__id AS r_pegawai__id,
                                                         C.r_pegawai__nama AS r_pegawai__nama,
                                                         D.r_subcab__id AS r_subcab__id,
@@ -622,13 +669,9 @@ else
 						 } 
 
 						 
-                                                  if ($bulan !='') {
-						 	$sql.=" AND t_rkp__bln='$bulan'  ";
-						 }
-                                                 
-                                                  if ($tahun !='') {
-						 	$sql.=" AND t_rkp__thn=$tahun  ";
-						 }
+                                                  if ($tahun1 !='' AND $tahun2 !='' ) {
+						 	$sql.="  AND t_rkp__awal>='$date_awal' AND t_rkp__akhir<='$date_akhir'  ";
+						 } 
                                                  
                                                   if ($nama_karyawan_cari !='') {
 						 	$sql.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
@@ -663,10 +706,10 @@ else
 				
 					
 			   
-			   $content_data .= print_content(
-                                        $arr[t_rkp__no_mutasi],
-                                        $arr[t_rkp__bln],
-                                        $arr[t_rkp__thn],
+			    $content_data .= print_content(
+                                        $arr[finger],
+                                        $arr[r_pegawai__nama],
+                                        $arr[r_cabang__nama],
                                         $arr[t_rkp__approval],
                                         $arr[t_rkp__hadir],
                                         $arr[t_rkp__sakit],
@@ -674,11 +717,7 @@ else
                                         $arr[t_rkp__alpa],
                                         $arr[t_rkp__dinas],
                                         $arr[t_rkp__cuti],
-                                        $arr[t_rkp__keterangan],
-                                        $arr[t_rkp__date_created],
-                                        $arr[t_rkp__date_updated],
-                                        $arr[t_rkp__user_created],
-                                        $arr[t_rkp__user_updated]);
+                                        $arr[t_rkp__keterangan]);
                                   
                            
                            
@@ -706,7 +745,7 @@ else
 				return false;
 				//$content = str_replace("@@@@BREAKPAGE@@@@@",$content_break,$content);
 				stream_set_write_buffer($fp, 0);
-				$content = print_header($nm_perwakilan,$bulan,$tahun);
+				$content = print_header($nm_perwakilan,$date_awal,$date_akhir);
 				$content .= $content_data;
 				
 				$content .= print_footer();

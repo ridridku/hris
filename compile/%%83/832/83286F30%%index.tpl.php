@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-24 10:18:45
+<?php /* Smarty version 2.6.18, created on 2017-06-07 09:37:34
          compiled from defaults/modules/master/periode_aktif//index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'defaults/modules/master/periode_aktif//index.tpl', 303, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'defaults/modules/master/periode_aktif//index.tpl', 300, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -138,6 +138,12 @@ function hideIt(){
 <body class="contentPage" onLoad="hideIt(); <?php if ($this->_tpl_vars['OPT'] == 1): ?>showAll('_menuEntry1_',1);hideAll('_menuEntry2_',1);<?php else: ?>hideAll('_menuEdit_',1);hideAll('_menuEntry1_',1);showAll('_menuEntry2_',1);<?php endif; ?>">
 <!--tombol_tambah -->
 <div id="add-search-box">
+    <a class="button" href="#" onclick="this.blur();showAll('_menuEntry1_',1);hideAll('_menuEntry2_',1);this.disabled=true;" <?php if ($this->_tpl_vars['OPT'] == 1): ?> DISABLED <?php endif; ?>><span><img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/details.gif" align="absmiddle"> <?php echo $this->_tpl_vars['BTN_NEW']; ?>
+</span></a>
+<a class="button" href="#" onclick="this.blur();showLevel('_menuEdit_',1,1);"><span><img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/search.png" align="absmiddle"> Pencarian Data</span></a>
+
 
 </div>
 <!--tombol_tambah  -->
@@ -161,70 +167,41 @@ function hideIt(){
 " size="35" readOnly class="text_disabled">
 					<?php endif; ?>
                         
+                        
                         <TR>
-				<TD>Bulan Dan Tahun Periode<font color="#ff0000">*</font></TD>
-                                
-			</TR>    
-                        <TR>
-							<TD>Periode</TD>
-							<TD>							
-                                                            <SELECT name="bulan" > 
-								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="1" <?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 1): ?>selected<?php endif; ?>>Januari</OPTION>
-								<OPTION VALUE="2"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 2): ?>selected<?php endif; ?>  >Februari</OPTION>
-								<OPTION VALUE="3"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 3): ?>selected<?php endif; ?>  >Maret</OPTION>
-								<OPTION VALUE="4"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 4): ?>selected<?php endif; ?>  >April</OPTION>
-								<OPTION VALUE="5"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 5): ?>selected<?php endif; ?> >Mei</OPTION>
-								<OPTION VALUE="6"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 6): ?>selected<?php endif; ?>  >Juni</OPTION>
-								<OPTION VALUE="7"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 7): ?>selected<?php endif; ?>  >Juli</OPTION>
-								<OPTION VALUE="8"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 8): ?>selected<?php endif; ?>  >Agustus</OPTION>
-								<OPTION VALUE="9"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 9): ?>selected<?php endif; ?>  >September</OPTION>
-								<OPTION VALUE="10"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 10): ?>selected<?php endif; ?>  >Oktober</OPTION>
-								<OPTION VALUE="11"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 11): ?>selected<?php endif; ?>  >November</OPTION>
-								<OPTION VALUE="12"<?php if ($this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_BULAN'] == 12): ?>selected<?php endif; ?>  >Desember</OPTION>				 
-                                                        </SELECT> 
-						<SELECT name="tahun" > 
-						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
-						<?php unset($this->_sections['foo']);
-$this->_sections['foo']['name'] = 'foo';
-$this->_sections['foo']['start'] = (int)2010;
-$this->_sections['foo']['loop'] = is_array($_loop=2021) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
-$this->_sections['foo']['step'] = ((int)1) == 0 ? 1 : (int)1;
-$this->_sections['foo']['show'] = true;
-$this->_sections['foo']['max'] = $this->_sections['foo']['loop'];
-if ($this->_sections['foo']['start'] < 0)
-    $this->_sections['foo']['start'] = max($this->_sections['foo']['step'] > 0 ? 0 : -1, $this->_sections['foo']['loop'] + $this->_sections['foo']['start']);
-else
-    $this->_sections['foo']['start'] = min($this->_sections['foo']['start'], $this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] : $this->_sections['foo']['loop']-1);
-if ($this->_sections['foo']['show']) {
-    $this->_sections['foo']['total'] = min(ceil(($this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] - $this->_sections['foo']['start'] : $this->_sections['foo']['start']+1)/abs($this->_sections['foo']['step'])), $this->_sections['foo']['max']);
-    if ($this->_sections['foo']['total'] == 0)
-        $this->_sections['foo']['show'] = false;
-} else
-    $this->_sections['foo']['total'] = 0;
-if ($this->_sections['foo']['show']):
+                        <TD>Periode Awal <font color="#ff0000">*</font></TD>
+                        <TD>:							
+                        <?php if ($this->_tpl_vars['EDIT_VAL'] == 0): ?>
 
-            for ($this->_sections['foo']['index'] = $this->_sections['foo']['start'], $this->_sections['foo']['iteration'] = 1;
-                 $this->_sections['foo']['iteration'] <= $this->_sections['foo']['total'];
-                 $this->_sections['foo']['index'] += $this->_sections['foo']['step'], $this->_sections['foo']['iteration']++):
-$this->_sections['foo']['rownum'] = $this->_sections['foo']['iteration'];
-$this->_sections['foo']['index_prev'] = $this->_sections['foo']['index'] - $this->_sections['foo']['step'];
-$this->_sections['foo']['index_next'] = $this->_sections['foo']['index'] + $this->_sections['foo']['step'];
-$this->_sections['foo']['first']      = ($this->_sections['foo']['iteration'] == 1);
-$this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] == $this->_sections['foo']['total']);
-?>
- 							  <?php if (( $this->_sections['foo']['index'] ) == $this->_tpl_vars['EDIT_R_PERIODE__PAYROLL_TAHUN']): ?>
-								 <option value="<?php echo $this->_sections['foo']['index']; ?>
-"  selected><?php echo $this->_sections['foo']['index']; ?>
-</option>
-							  <?php else: ?>
-									 <option value="<?php echo $this->_sections['foo']['index']; ?>
-"   ><?php echo $this->_sections['foo']['index']; ?>
-</option>
-							 <?php endif; ?> 
-						<?php endfor; endif; ?>
-						</SELECT> 
-						 </TD></TR>
+                                <input type="text" NAME="awal" readonly="" value="<?php echo $this->_tpl_vars['TODAY']; ?>
+" >
+				<img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php else: ?>
+				 <input type="text" name="awal" value="<?php echo $this->_tpl_vars['EDIT_R_PEGAWAI__TGL_LULUS']; ?>
+" >
+				<img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php endif; ?>
+                        </TD>
+                        </TR>
+                          <TR>
+                        <TD>Periode Akhir <font color="#ff0000">*</font></TD>
+                        <TD>:							
+                        <?php if ($this->_tpl_vars['EDIT_VAL'] == 0): ?>
+
+                                <input type="text" NAME="akhir" readonly="" value="<?php echo $this->_tpl_vars['TODAY']; ?>
+" >
+				<img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php else: ?>
+				 <input type="text" name="akhir" value="<?php echo $this->_tpl_vars['EDIT_R_PEGAWAI__TGL_LULUS']; ?>
+" >
+				<img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php endif; ?>
+                        </TD>
+                        </TR>
                         
 			<TR>
                                 <TD >Aktifasi Periode</TD>
@@ -406,15 +383,15 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
 		<tr><td class="tcat">Rekap Data Kehadiran</td></tr>
 		</table>
-		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="40%" align="left" >
+		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="left" >
 		<tr><td class="thead"><img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /layout/columns.gif" align="absmiddle" border="0"> Rekap Data Kehadiran</td></tr>
 		<tr><td class="alt2" style="padding:0px;">
 		<table width="100%">
 		<tr>
                                         						<th class="tdatahead" align="left">NO</TH>
-											<th class="tdatahead" align="left" width="10%">BULAN</TH>
-											<th class="tdatahead" align="left">TAHUN</TH>	
+											<th class="tdatahead" align="left" >Periode Awal</TH>
+											<th class="tdatahead" align="left">Periode Akhir</TH>	
                                                                                         <th class="tdatahead" align="left">STATUS</TH>
 											<th class="tdatahead" COLSPAN="2"><?php echo $this->_tpl_vars['ACTION']; ?>
 </th>
@@ -450,49 +427,9 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 											<TD width="17" class="tdatacontent-first-col"> <?php echo $this->_sections['x']['index']+$this->_tpl_vars['COUNT_VIEW']; ?>
 .</TD>
                                                                                         
-                                                                                        <TD class="tdatacontent"> 
-                                                                                                                                                                                         
-                                                                                             <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 1): ?>
-                                                                                                    Januari 
-                                                                                            <?php endif; ?>  
-                                                                                            
-                                                                                             <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 2): ?>
-                                                                                                    Februari 
-                                                                                            <?php endif; ?>  
-                                                                                            
-                                                                                             <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 3): ?>
-                                                                                                    Maret 
-                                                                                            <?php endif; ?>  
-                                                                                              <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 4): ?>
-                                                                                                    April 
-                                                                                            <?php endif; ?>  
-                                                                                              <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 5): ?>
-                                                                                                    Mei 
-                                                                                            <?php endif; ?>  
-                                                                                            <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 6): ?>
-                                                                                                    Juni 
-                                                                                            <?php endif; ?>  
-                                                                                              <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 7): ?>
-                                                                                                    Juli 
-                                                                                            <?php endif; ?>  
-                                                                                             <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 8): ?>
-                                                                                                    Agustus 
-                                                                                            <?php endif; ?>  
-                                                                                              <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 9): ?>
-                                                                                                    September 
-                                                                                            <?php endif; ?> 
-                                                                                              <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 10): ?>
-                                                                                                    Oktober 
-                                                                                            <?php endif; ?> 
-                                                                                            <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 11): ?>
-                                                                                                    Nopember 
-                                                                                            <?php endif; ?>  
-                                                                                             <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_bulan'] ) == 12): ?>
-                                                                                                    Desember 
-                                                                                            <?php endif; ?>  
-                                                                                            
-											 </TD>
-											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_tahun']; ?>
+                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_awal']; ?>
+</TD>
+											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_periode__payroll_akhir']; ?>
   </TD>
                                                                                         
                                                                                         <TD class="tdatacontent"  >

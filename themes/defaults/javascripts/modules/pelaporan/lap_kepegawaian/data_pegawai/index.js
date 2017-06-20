@@ -133,25 +133,7 @@ if(http.readyState == 4)
     }
 }
 
-function cari_kabupaten2(no_propinsi)
-{
 
-if (no_propinsi != '') {
-	http.open('get', 'index.php?get_propinsi=1&no_propinsi='+no_propinsi);
-	http.onreadystatechange = handlechoice2; 
-	http.send(null);
-	} 
-}
-
-function handlechoice2(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		var a = response.split('^/&');
-		document.getElementById('ajax_kabupaten2').innerHTML = a[0];
-		//frmCreate.nama_lengkap.focus();
-    }
-}
 
 function openPopUp_Print(str_location, str_title) {
 	var win_width = 850;
@@ -178,74 +160,33 @@ function printPage()
 //-->
 
 
-
-function cari_ruas(kode_proyek)
+function cari_jabatan(subdep)
 {
-
-if (kode_proyek != '') {
-	http.open('get', 'index.php?get_proyek=1&kode_proyek='+kode_proyek);
-	http.onreadystatechange = handlechoice2; 
+         
+if (subdep != '') {
+	http.open('get','index.php?get_jab_cari=1&subdep='+subdep);
+	http.onreadystatechange = handlechoice_cari_jabatan;
 	http.send(null);
 	}
 }
 
-function handlechoice2(){
+function handlechoice_cari_jabatan(){
 if(http.readyState == 4)
 	{
 		var response = http.responseText;
 		var a = response.split('^/&');
-		document.getElementById('ajax_ruas').innerHTML = a[0];
-		//frmCreate.nama_lengkap.focus();
-    }
+		document.getElementById('ajax_jabatan').innerHTML = a[0];
+
+        }
 }
 
 
 
 
 
-function cari_proyek(tahun,kode_instansi)
-{
-//alert (tahun);
-if (tahun != '') {
-	http.open('get', 'index.php?get_tahun=1&tahun='+tahun+'&kode_instansi='+kode_instansi);
-	http.onreadystatechange = handlechoice; 
-	http.send(null);
-	}
-}
-
-function handlechoice(){
-if(http.readyState == 4)
-	{
-		var response = http.responseText;
-		var a = response.split('^/&');
-		document.getElementById('ajax_proyek').innerHTML = a[0];
-		 
-    }
-}
 
 
 
-
-function cari_info_proyek(kode_instansi,tahun)
-{
-
-if (tahun != '') {
-	http.open('get', 'index.php?get_info_tahun=1&tahun='+tahun+'&kode_instansi='+kode_instansi);
-	http.onreadystatechange = handlechoice; 
-	http.send(null);
-	}
-}
-
-function handlechoice(){
-if(http.readyState == 4)
-	{
-		var response = http.responseText;
-		var a = response.split('^/&');
-		document.getElementById('ajax_proyek').innerHTML = a[0];
-		//document.getElementById('ajax_lokasi').innerHTML = a[1];
-		 
-    }
-}
 
 //------------------JS PILIH SUBCAB-----------//
 

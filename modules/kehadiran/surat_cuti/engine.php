@@ -126,25 +126,27 @@ $ambil_day   = $hari_ambil[2];
         $expired_cuti=array($now_year+1,$exp_bln_msk,$exp_tgl_msk);
 
         $periode_aktif   = implode("-",$start_cuti);
-        $periode_expired = implode("-",$expired_cuti);
+        $periode_expired = implode("-",$expired_cuti);      
         
-        
-       
-        
-        $sql_cek_cutibersama="SELECT COUNT(A.r_tglcuti__tgl) AS JML_CUTI FROM r_cutibersama A where YEAR(A.r_tglcuti__tgl)=$ambil_year";  
-
+      //  $sql_cek_cutibersama="SELECT COUNT(A.r_tglcuti__tgl) AS JML_CUTI FROM r_cutibersama A where YEAR(A.r_tglcuti__tgl)=$ambil_year";  
+ $sql_cek_cutibersama="SELECT
+                        COUNT(t_libur.r_libur__id) AS JML_CUTI,
+                        t_libur.r_libur__shift,
+                        t_libur.r_libur__tgl,
+                        t_libur.r_libur__jenis,
+                        t_libur.r_libur__ket
+                        FROM t_libur WHERE r_libur__jenis = '2' AND YEAR(r_libur__tgl)=$ambil_year GROUP BY r_libur__tgl";
         $rs_val = $db->Execute($sql_cek_cutibersama);
         $jml_cutibersama= $rs_val->fields['JML_CUTI'];
-
+     
         $sql_cek_cuti="SELECT SUM(A.t_cuti__lama_hari) AS MAX_CUTI 
-            FROM t_cuti A where t_cuti__nip='$t_cuti__nip' AND t_cuti__jenis_cuti='1' "
-                . " AND t_cuti__tgl between '$periode_aktif' and '$periode_expired' AND t_cuti__no!='$t_cuti__no'";
+                       FROM t_cuti A where t_cuti__nip='$t_cuti__nip' AND t_cuti__jenis_cuti='1' "
+                       . " AND t_cuti__tgl between '$periode_aktif' and '$periode_expired' AND t_cuti__no!='$t_cuti__no'";
 
         $rs_val = $db->Execute($sql_cek_cuti);
         $sudah_cuti= $rs_val->fields['MAX_CUTI'];
         $cuti_yg_diambil=($jml_cutibersama+$sudah_cuti);
-         //var_dump($sql_cek_cuti)or die();
-
+   
         $d1 = new DateTime($tgl_masuk_karyawan);
         $d2 = new DateTime(date("Y-m-d"));
         $diff = $d2->diff($d1);
@@ -203,7 +205,7 @@ $cek_tgl_cuti=strtotime($_POST[tgl]);
                     $sql_edit .=" t_cuti__atasan_nip='$t_cuti__atasan_nip',";
                     $sql_edit .=" t_cuti__tgl='$_POST[tgl]',";
                     $sql_edit .=" t_cuti__lama_hari='$_POST[lama_hari]',";
-                    $sql_edit .="t_cuti__jenis_cuti='$t_cuti__jenis_cuti',";
+                    $sql_edit .=" t_cuti__jenis_cuti='$t_cuti__jenis_cuti',";
                     $sql_edit .=" t_cuti__alasan= '$t_cuti__alasan',";
                     $sql_edit .=" t_cuti__date_updated = now(), ";
                     $sql_edit .=" t_cuti__user_updated = '$id_peg'";
@@ -248,7 +250,8 @@ $t_cuti__karyawan = $_POST[karyawan_nama];
 $t_cuti__nip = $_POST[karyawan_nip];
 $t_cuti__atasan_nip = $_POST[atasan__nip];
 $t_cuti__atasan_nama = $_POST[atasan__nama];
-$t_cuti__tgl= $_POST[tgl];
+$t_cuti__awal= $_POST[tgl_awal];
+$t_cuti__akhir= $_POST[tgl_akhir];
 
 $t_cuti__lama_hari = $_POST[lama_hari];
 $t_cuti__jenis_cuti  = $_POST[jenis_cuti];
@@ -264,21 +267,19 @@ $ambil_year  = $hari_ambil[0];
 $ambil_month = $hari_ambil[1];
 $ambil_day   = $hari_ambil[2];
 
-
-
 $sql_pw="SELECT
 	peg.r_pegawai__nama AS nama,
 	peg.r_cabang__nama AS r_cabang__nama,
         peg.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,    
-        peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi
-        FROM
-	v_pegawai peg
-
-where r_pnpt__no_mutasi='$t_cuti__nip'";
-
+        peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+          peg.r_pegawai__id as r_pegawai__id,
+        peg.r_pnpt__shift AS r_pnpt__shift
+        FROM v_pegawai peg where r_pnpt__no_mutasi='$t_cuti__nip'";
 $rs_pw	= $db->execute($sql_pw);
 $tgl_masuk=$rs_pw->fields['r_pegawai__tgl_masuk'];
 $tgl_masuk_karyawan=$rs_pw->fields['r_pegawai__tgl_masuk'];
+$shift_karyawan=$rs_pw->fields['r_pnpt__shift'];
+$karyawan_id=$rs_pw->fields['r_pegawai__id'];
 
 $now=date("Y-m-d");
 $now = explode('-', $now);
@@ -295,50 +296,94 @@ $exp_tgl_msk = $tgl_masuk_explode[2];
 $start_cuti=array(trim($now_year),trim($exp_bln_msk),trim($exp_tgl_msk));
 $expired_cuti=array(trim($now_year+1),trim($exp_bln_msk),trim($exp_tgl_msk));
 
-$periode_aktif   = implode("-",$start_cuti);
-$periode_expired = implode("-",$expired_cuti);
+//$periode_aktif   = implode("-",$start_cuti);
+//$periode_expired = implode("-",$expired_cuti);
+
+ //var_dump($periode_aktif.'d'.$periode_expired) or die();
 
 $cek_str=strtotime($periode_aktif);
 $cek_exp=strtotime($periode_expired);
 $cek_tgl_cuti=strtotime($_POST[tgl]);
 
 
-$sql_cek_cutibersama="SELECT COUNT(A.r_tglcuti__tgl) AS JML_CUTI FROM r_cutibersama A where YEAR(A.r_tglcuti__tgl)=$ambil_year";  
+//cek aktivasi cuti
+$sql_cek_aktivasi="SELECT 
+B.THN_AWAL,DATE_ADD(B.THN_AWAL,INTERVAL 1 YEAR) AS THN_AKHIR,
+B.r_pegawai__nama,
+B.r_pegawai__tgl_masuk,
+B.r_pegawai__id,
+B.mulai_cuti 
+FROM (SELECT A.*,
+DATE_ADD(A.r_pegawai__tgl_masuk,INTERVAL (A.mulai_cuti) YEAR) AS THN_AWAL
+FROM (SELECT r_pegawai__tgl_masuk,r_pnpt__no_mutasi,r_pegawai__id,
+YEAR(CURDATE()) AS tahun_now,
+FLOOR(DATEDIFF(CURDATE(),r_pegawai__tgl_masuk)/365) as mulai_cuti, 
+r_pegawai__nama 
+FROM v_pegawai peg
+left join t_cuti On t_cuti__atasan_nip=peg.r_pnpt__nip
+where r_pnpt__aktif=1 and r_pegawai__id='$karyawan_id' limit 1)A)B";
+                        
+$rs_val = $db->Execute($sql_cek_aktivasi);
+$periode_aktif= $rs_val->fields['THN_AWAL'];
+$periode_expired= $rs_val->fields['THN_AKHIR'];
+$mulai_cuti= $rs_val->fields['mulai_cuti'];
+//cek aktivasi cuti
+
+
+
+
+
+$sql_cek_cutibersama="SELECT COUNT(*) AS JML_CUTI FROM t_libur WHERE t_libur.r_libur__shift= '$shift_karyawan' 
+                        AND t_libur.r_libur__jenis= '2' 
+                        and t_libur.r_libur__tgl>='$periode_aktif' AND t_libur.r_libur__tgl<='$periode_expired'";
+                        
 $rs_val = $db->Execute($sql_cek_cutibersama);
 $jml_cutibersama= $rs_val->fields['JML_CUTI'];
 
-$sql_cek_cuti="SELECT SUM(A.t_cuti__lama_hari) AS MAX_CUTI 
-    FROM t_cuti A where t_cuti__nip='$t_cuti__nip' AND t_cuti__jenis_cuti='1' AND t_cuti__tgl between '$periode_aktif' and '$periode_expired'";
+
+
+
+
+$sql_cek_cutibersama="SELECT COUNT(*) AS JML_CUTI FROM t_libur WHERE t_libur.r_libur__shift= '$shift_karyawan' 
+                        AND t_libur.r_libur__jenis= '2' 
+                        and t_libur.r_libur__tgl>='$periode_aktif' AND t_libur.r_libur__tgl<='$periode_expired'";
+                        
+$rs_val = $db->Execute($sql_cek_cutibersama);
+$jml_cutibersama= $rs_val->fields['JML_CUTI'];
+
+$sql_cek_cuti="SELECT IF(SUM(A.t_cuti__lama_hari)IS NULL ,'0',SUM(A.t_cuti__lama_hari)) AS MAX_CUTI
+    FROM t_cuti A where t_cuti__nip='$t_cuti__nip' AND t_cuti__jenis_cuti='1' AND t_cuti__awal between '$periode_aktif' and '$periode_expired'";
+
 
 $rs_val = $db->Execute($sql_cek_cuti);
 $sudah_cuti= $rs_val->fields['MAX_CUTI'];
 $cuti_yg_diambil=($jml_cutibersama+$t_cuti__lama_hari+$sudah_cuti);
-
-
 
 $d1 = new DateTime($tgl_masuk_karyawan);
 $d2 = new DateTime(date("Y-m-d"));
 $diff = $d2->diff($d1);
 $role_cuti=$diff->y;
 
-//var_dump($cek_tgl_cuti>$cek_exp) or die();
-
-            if (($role_cuti<=0 AND $t_cuti__jenis_cuti==1) OR ($cek_tgl_cuti>$cek_exp)) 
+   IF (($role_cuti<=0 AND $t_cuti__jenis_cuti==1) OR ($cek_tgl_cuti>$cek_exp)) 
                 {
+           
                      Header("Location:index_cek.php?ERR=5&nip_karyawan=".$nip_karyawan."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
                 }
                 elseif ( ($role_cuti>=1 AND $cuti_yg_diambil > 12 AND $t_cuti__jenis_cuti==1) OR ($cek_tgl_cuti>$cek_exp)) 
                 {
+             
 			Header("Location:index_cek.php?ERR=5&nip_karyawan=".$nip_karyawan."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
                 }
                 elseif($t_cuti__jenis_cuti==2 AND $role_cuti>=1  )
                 {
+                   
                     $sql	 = "INSERT INTO $tbl_name ("
                                     . "t_cuti__no, "
                                     . "t_cuti__nip,"
                                     . "t_cuti__atasan_nama,"
                                     . "t_cuti__atasan_nip, "
-                                    . "t_cuti__tgl,"
+                                    . "t_cuti__awal,"
+                                    . "t_cuti__akhir,"
                                     . "t_cuti__lama_hari,"
                                     . "t_cuti__jenis_cuti,"
                                     . "t_cuti__alasan,"
@@ -351,7 +396,8 @@ $role_cuti=$diff->y;
                             . "'$t_cuti__nip',"
                             . "'$_POST[atasan__nama]',"
                             . "'$_POST[atasan__nip]',"
-                            . "'$_POST[tgl]',"
+                            . "'$_POST[tgl_awal]'," 
+                            . "'$_POST[tgl_akhir]',"
                              . "'$_POST[lama_hari]',"
                             . "'$_POST[jenis_cuti]',"
                             . "'$_POST[alasan]',"
@@ -365,13 +411,14 @@ $role_cuti=$diff->y;
                                 Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
                 }
                 elseif($role_cuti<=0 AND $t_cuti__jenis_cuti==2  )
-                {
+                { 
                     $sql	 = "INSERT INTO $tbl_name ("
                                    . "t_cuti__no, "
                                     . "t_cuti__nip,"
                                     . "t_cuti__atasan_nama,"
                                     . "t_cuti__atasan_nip, "
-                                    . "t_cuti__tgl,"
+                                    . "t_cuti__awal,"
+                                    . "t_cuti__akhir,"
                                     . "t_cuti__lama_hari,"
                                     . "t_cuti__jenis_cuti,"
                                     . "t_cuti__alasan,"
@@ -384,7 +431,8 @@ $role_cuti=$diff->y;
                                 . "'$t_cuti__nip',"
                                 . "'$_POST[atasan__nama]',"
                                 . "'$_POST[atasan__nip]',"
-                                . "'$_POST[tgl]',"
+                                . "'$_POST[tgl_awal]'," 
+                                . "'$_POST[tgl_akhir]',"
                                 . "'$_POST[lama_hari]',"
                                 . "'$_POST[jenis_cuti]',"
                                 . "'$_POST[alasan]',"
@@ -402,12 +450,14 @@ $role_cuti=$diff->y;
                 }
                     else
                 {
+                   
                     $sql	 = "INSERT INTO $tbl_name ("
                                    . "t_cuti__no, "
                                     . "t_cuti__nip,"
                                     . "t_cuti__atasan_nama,"
                                     . "t_cuti__atasan_nip, "
-                                    . "t_cuti__tgl,"
+                                     . "t_cuti__awal,"
+                                    . "t_cuti__akhir,"
                                     . "t_cuti__lama_hari,"
                                     . "t_cuti__jenis_cuti,"
                                     . "t_cuti__alasan,"
@@ -420,7 +470,8 @@ $sql	.= " VALUES ("
         . "'$t_cuti__nip',"
         . "'$_POST[atasan__nama]',"
         . "'$_POST[atasan__nip]',"
-        . "'$_POST[tgl]',"
+       . "'$_POST[tgl_awal]'," 
+        . "'$_POST[tgl_akhir]',"
         . "'$_POST[lama_hari]',"
         . "'$_POST[jenis_cuti]',"
         . "'$_POST[alasan]',"
@@ -428,8 +479,7 @@ $sql	.= " VALUES ("
         . "now(),"
         . "$id_peg,"
         . "$id_peg)";
-
-
+ //var_dump($sql) or die();
 $sqlresult = $db->Execute($sql);
 Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
                 }

@@ -67,10 +67,16 @@ with (theForm){
 		}
                 
 
-        else if (tgl.value == "") 
+        else if (tgl_awal.value == "") 
                 { 
                         alert ("Silahkan Isi Tanggal Awal Cuti!"); 
-                        tgl.focus();
+                        tgl_awal.focus();
+                        return false; 
+                }
+                  else if (tgl_akhir.value == "") 
+                { 
+                        alert ("Silahkan Isi Tanggal Akhir Cuti!"); 
+                        tgl_akhir.focus();
                         return false; 
                 }
  
@@ -142,8 +148,9 @@ with(theForm){
 
 //------------------JS PILIH SUBCAB-----------//
 
-function cari_subcab(subcab_id)
+function cari_subcab2(subcab_id)
 {
+  
 if (subcab_id != '') {
 	http.open('get','index.php?get_subcab=1&no_subcab='+subcab_id);
         //http.open('get','index.php?get_prop_ktp=1&no_prop_ktp='+prop_id_ktp);
@@ -166,38 +173,52 @@ if(http.readyState == 4)
 
 
 //------------------JS AJAX SUBDEP-----------//subdep
-function cari_subdep(subdep_id)
-{
-//alert (subdep_id)
-if (subdep_id != '') {
-	http.open('get','index.php?get_subdep=1&no_subdep='+subdep_id);
-        //http.open('get','index.php?get_prop_ktp=1&no_prop_ktp='+prop_id_ktp);
-	http.onreadystatechange = handlechoice_subdep; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_subdep(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		var a = response.split('^/&');
-		document.getElementById('ajax_subdep').innerHTML = a[0];
-		
-    }
-}
+//function cari_subdep(subdep_id)
+//{
+////alert (subdep_id)
+//if (subdep_id != '') {
+//	http.open('get','index.php?get_subdep=1&no_subdep='+subdep_id);
+//	http.onreadystatechange = handlechoice_subdep; 
+//	http.send(null);
+//	} 
+//}
+//
+//function handlechoice_subdep(){
+//if(http.readyState == 4)
+//	{ 
+//		var response = http.responseText;
+//		var a = response.split('^/&');
+//		document.getElementById('ajax_subdep').innerHTML = a[0];
+//		
+//    }
+//}
 //------------------CLOSE AJAX SUBDEP-----------//
 
 
 function goCarikaryawan() {
-    
-			kode_cabang= document.frmCreate.kode_cabang.value;
-                        window.open('../../../function/list_surat_cuti1.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
-                        }
+ kode_cabang= document.frmCreate.kode_cabang.value;
+      if(kode_cabang =='')
+    {
+           alert('Piliah Nama Cabang!');
+           return false; 
+    }  else
+    {
+                        
+         window.open('../../../function/list_surat_cuti1.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
+    }
+}
 function goCarikaryawan2() {
-    
-			kode_cabang= document.frmCreate.kode_cabang.value;window.open('../../../function/list_surat_cuti2.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
-                        }
+    kode_cabang= document.frmCreate.kode_cabang.value;
+      if(kode_cabang =='')
+    {
+           alert('Piliah Nama Cabang!');
+           return false; 
+    }  else
+    {
+            
+            window.open('../../../function/list_surat_cuti2.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
+    }
+}
 
 function cek_sisa_cuti() {
     
@@ -209,26 +230,76 @@ function cek_sisa_cuti() {
 
 //------------------JS PILIH SUBCAB2-----------//
 
-function cari_subcab2(subcab_id)
-{
-    
-if (subcab_id != '') {
-	http.open('get','index.php?get_subcab2=1&no_subcab='+subcab_id);
-        //http.open('get','index.php?get_prop_ktp=1&no_prop_ktp='+prop_id_ktp);
-	http.onreadystatechange = handlechoice_subcab2; 
+//function cari_subcab2(subcab_id)
+//{
+//    
+//if (subcab_id != '') {
+//	http.open('get','index.php?get_subcab2=1&no_subcab='+subcab_id);
+//	http.onreadystatechange = handlechoice_subcab2; 
+//	http.send(null);
+//	} 
+//}
+//
+//function handlechoice_subcab2(){
+//if(http.readyState == 4)
+//	{ 
+//		var response = http.responseText;
+//		var a = response.split('^/&');
+//		document.getElementById('ajax_subcabang2').innerHTML = a[0];
+//		
+//    }
+//}
+//------------------CLOSE JS PILIH SUBCAB2-----------//
+
+
+
+function cek_cuti() { 
+     no_mutasi=document.frmCreate.karyawan_nip.value;
+     lama_hari=document.frmCreate.lama_hari.value;
+
+if(no_mutasi =='')
+    {
+           alert('Isi Nama Karyawan!');
+           return false; 
+    }else if(lama_hari=='')
+    {
+        
+        alert('Isi Lama Hari!');
+        return false; 
+    }
+    if (no_mutasi != '') {
+	http.open('get','index.php?cek_lembur=1&no_mutasi='+no_mutasi+'&lama_hari='+lama_hari);
+	http.onreadystatechange = handlechoice_cek_cuti; 
 	http.send(null);
 	} 
+    
 }
-
-function handlechoice_subcab2(){
+function handlechoice_cek_cuti(){
 if(http.readyState == 4)
 	{ 
 		var response = http.responseText;
 		var a = response.split('^/&');
-		document.getElementById('ajax_subcabang2').innerHTML = a[0];
+		document.getElementById('cekcuti').innerHTML = a[0];
 		
     }
 }
-//------------------CLOSE JS PILIH SUBCAB2-----------//
+
+
+function report_cuti() { 
+     q=document.frmCreate.karyawan_nip.value;
+     lama_hari=document.frmCreate.lama_hari.value;
+
+if(no_mutasi =='')
+    {
+           alert('Isi Nama Karyawan!');
+           return false; 
+    }
+
+    if (no_mutasi != '') {
+     window.open('../../../laporan/inc.cuti_detail.php?id='+no_mutasi);
+      } 
+    
+}
+
 
 </SCRIPT>

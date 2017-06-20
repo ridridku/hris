@@ -329,19 +329,2284 @@ td
       <td class=xl27 width=57 style='width:25pt'>SHIFT</td>
  </tr> <tr height=18 style='height:13.5pt'>
   <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
-  <td class=xl29>160252724</td>
-  <td class=xl29 align=right x:num>301536</td>
-  <td class=xl29 align=right x:num>Vicky Rizki Nanjar</td>
+  <td class=xl29>140240106</td>
+  <td class=xl29 align=right x:num>301327</td>
+  <td class=xl29 align=right x:num>Abdul Rohman</td>
   <td class=xl29 align=right >BANDUNG</td>
-  <td class=xl29 align=right >BDG MR Ciparay</td>
+  <td class=xl29 align=right >BDG Cabang</td>
   <td class=xl29 align=right x:num>SALES</td>
-  <td class=xl29 align=right >Sales Presell</td>
+  <td class=xl29 align=right >Merchandiser</td>
   <td class=xl29 align=right >Staff</td>
-  <td class=xl29 align=right >VERIFIKASI</td>
-  <td class=xl29 align=right >2016-09-08</td>
-  <td class=xl29 align=right >2016-10-26</td>
-  <td class=xl29 align=right >-</td>
-  <td class=xl29 align=right >Cabang Reguler</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-09-13</td>
+  <td class=xl29 align=right >2017-03-11</td>
+  <td class=xl29 align=right >4180100315181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>140240107</td>
+  <td class=xl29 align=right x:num>301425</td>
+  <td class=xl29 align=right x:num>Abidin Ranadipura</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-06-29</td>
+  <td class=xl29 align=right >2017-06-29</td>
+  <td class=xl29 align=right >7150100615187</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>160240109</td>
+  <td class=xl29 align=right x:num>301510</td>
+  <td class=xl29 align=right x:num>Achmad Permana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-04-18</td>
+  <td class=xl29 align=right >2017-03-18</td>
+  <td class=xl29 align=right >703210189500</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>130240110</td>
+  <td class=xl29 align=right x:num>303177</td>
+  <td class=xl29 align=right x:num>Achmad Yayan Sofyan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-04-04</td>
+  <td class=xl29 align=right >2017-10-01</td>
+  <td class=xl29 align=right >4150112008181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>130240117</td>
+  <td class=xl29 align=right x:num>301283</td>
+  <td class=xl29 align=right x:num>Adin Nurdin</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-09</td>
+  <td class=xl29 align=right >2017-11-05</td>
+  <td class=xl29 align=right >7150100271187</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>140240120</td>
+  <td class=xl29 align=right x:num>301424</td>
+  <td class=xl29 align=right x:num>Agung Pratama</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-12-19</td>
+  <td class=xl29 align=right >2017-06-16</td>
+  <td class=xl29 align=right >4150112607189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>100240123</td>
+  <td class=xl29 align=right x:num>301004</td>
+  <td class=xl29 align=right x:num>Agung Setiawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -Pasar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-09-01</td>
+  <td class=xl29 align=right >2018-02-28</td>
+  <td class=xl29 align=right >4190104165185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>100240125</td>
+  <td class=xl29 align=right x:num>301006</td>
+  <td class=xl29 align=right x:num>Agus Etanto</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-07-08</td>
+  <td class=xl29 align=right >2017-07-08</td>
+  <td class=xl29 align=right >4150109263182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>140240130</td>
+  <td class=xl29 align=right x:num>301351</td>
+  <td class=xl29 align=right x:num>Ahmad Wahyudin</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-11-13</td>
+  <td class=xl29 align=right >2017-05-11</td>
+  <td class=xl29 align=right >7150100416185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>150240132</td>
+  <td class=xl29 align=right x:num>301436</td>
+  <td class=xl29 align=right x:num>Ali Rizki Subagja</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-08-27</td>
+  <td class=xl29 align=right >2017-08-27</td>
+  <td class=xl29 align=right >4150112634186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>160240133</td>
+  <td class=xl29 align=right x:num>301494</td>
+  <td class=xl29 align=right x:num>Amelia Damayanti Puspitasari</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >703109634700</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>080240134</td>
+  <td class=xl29 align=right x:num>301012</td>
+  <td class=xl29 align=right x:num>Amin Kurniawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Baleendah</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150102441187</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>130240138</td>
+  <td class=xl29 align=right x:num>301231</td>
+  <td class=xl29 align=right x:num>Andri Setiawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-07-18</td>
+  <td class=xl29 align=right >2017-01-13</td>
+  <td class=xl29 align=right >2080107137186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>110240141</td>
+  <td class=xl29 align=right x:num>301259</td>
+  <td class=xl29 align=right x:num>Andrian Gumilar</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-05-16</td>
+  <td class=xl29 align=right >2016-11-16</td>
+  <td class=xl29 align=right >4150109832185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>120240142</td>
+  <td class=xl29 align=right x:num>303131</td>
+  <td class=xl29 align=right x:num>Andriansyah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cimahi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-07-17</td>
+  <td class=xl29 align=right >2017-01-12</td>
+  <td class=xl29 align=right >4150111884186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+  <td class=xl29>150240145</td>
+  <td class=xl29 align=right x:num>301443</td>
+  <td class=xl29 align=right x:num>Anggi Nurwinda </td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sarijadi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-09-30</td>
+  <td class=xl29 align=right >2017-09-30</td>
+  <td class=xl29 align=right >6180100565164</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+  <td class=xl29>160240147</td>
+  <td class=xl29 align=right x:num>301491</td>
+  <td class=xl29 align=right x:num>Annisa Eka Saptha</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MToha</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-02-17</td>
+  <td class=xl29 align=right >2017-01-17</td>
+  <td class=xl29 align=right >703111695600</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+  <td class=xl29>080240149</td>
+  <td class=xl29 align=right x:num>301018</td>
+  <td class=xl29 align=right x:num>Anton Tanumiharja</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-03-28</td>
+  <td class=xl29 align=right >2017-09-24</td>
+  <td class=xl29 align=right >4150102248181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>110240153</td>
+  <td class=xl29 align=right x:num>301019</td>
+  <td class=xl29 align=right x:num>Apep Priansyah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MToha</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-07-12</td>
+  <td class=xl29 align=right >2018-01-08</td>
+  <td class=xl29 align=right >7150100024182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+  <td class=xl29>120240154</td>
+  <td class=xl29 align=right x:num>301024</td>
+  <td class=xl29 align=right x:num>Arief Juniadi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Baleendah</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-08-07</td>
+  <td class=xl29 align=right >2017-02-02</td>
+  <td class=xl29 align=right >4150111901182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+  <td class=xl29>130240157</td>
+  <td class=xl29 align=right x:num>303178</td>
+  <td class=xl29 align=right x:num>Arri Aditya</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-04-19</td>
+  <td class=xl29 align=right >2017-04-19</td>
+  <td class=xl29 align=right >4150111539189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
+  <td class=xl29>160240159</td>
+  <td class=xl29 align=right x:num>301504</td>
+  <td class=xl29 align=right x:num>Asep Badru Zaman</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cililin</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-03-19</td>
+  <td class=xl29 align=right >2017-02-19</td>
+  <td class=xl29 align=right >760936293500</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
+  <td class=xl29>140240160</td>
+  <td class=xl29 align=right x:num>301413</td>
+  <td class=xl29 align=right x:num>Asep Diana Sidik</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-19</td>
+  <td class=xl29 align=right >2017-05-19</td>
+  <td class=xl29 align=right >7150100580188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
+  <td class=xl29>100240162</td>
+  <td class=xl29 align=right x:num>301027</td>
+  <td class=xl29 align=right x:num>Asep Dodo Warlia</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Ciparay</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-04-08</td>
+  <td class=xl29 align=right >2017-04-08</td>
+  <td class=xl29 align=right >4390103812185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
+  <td class=xl29>150240163</td>
+  <td class=xl29 align=right x:num>301473</td>
+  <td class=xl29 align=right x:num>Asep Guntira</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MToha</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-01-02</td>
+  <td class=xl29 align=right >2016-12-28</td>
+  <td class=xl29 align=right >4150112804189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
+  <td class=xl29>130240165</td>
+  <td class=xl29 align=right x:num>301223</td>
+  <td class=xl29 align=right x:num>Asep Mail Permana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MToha</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-03-16</td>
+  <td class=xl29 align=right >2017-09-12</td>
+  <td class=xl29 align=right >9240101412189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
+  <td class=xl29>120240166</td>
+  <td class=xl29 align=right x:num>301029</td>
+  <td class=xl29 align=right x:num>Asep Muhamad Sobur</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sarijadi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-06-05</td>
+  <td class=xl29 align=right >2016-12-05</td>
+  <td class=xl29 align=right >4150111833185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
+  <td class=xl29>080240167</td>
+  <td class=xl29 align=right x:num>301320</td>
+  <td class=xl29 align=right x:num>Asep Murdani</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sarijadi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >703459744600</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
+  <td class=xl29>130240176</td>
+  <td class=xl29 align=right x:num>301032</td>
+  <td class=xl29 align=right x:num>Atti Priyanti</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-04-07</td>
+  <td class=xl29 align=right >2017-04-07</td>
+  <td class=xl29 align=right >5030114853117</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
+  <td class=xl29>110240177</td>
+  <td class=xl29 align=right x:num>301036</td>
+  <td class=xl29 align=right x:num>Basuki Hernowo</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-02-29</td>
+  <td class=xl29 align=right >2017-08-27</td>
+  <td class=xl29 align=right >4150112765181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
+  <td class=xl29>080240178</td>
+  <td class=xl29 align=right x:num>301038</td>
+  <td class=xl29 align=right x:num>Budhiwan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sarijadi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-07-01</td>
+  <td class=xl29 align=right >2017-07-01</td>
+  <td class=xl29 align=right >4150102440181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
+  <td class=xl29>090240182</td>
+  <td class=xl29 align=right x:num>301039</td>
+  <td class=xl29 align=right x:num>Budi Muhammad Ramdan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Speciality</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-06-04</td>
+  <td class=xl29 align=right >2017-06-04</td>
+  <td class=xl29 align=right >4210102255182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
+  <td class=xl29>110240183</td>
+  <td class=xl29 align=right x:num>301041</td>
+  <td class=xl29 align=right x:num>Budi Santoso</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-08-19</td>
+  <td class=xl29 align=right >2018-02-15</td>
+  <td class=xl29 align=right >4210102304185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
+  <td class=xl29>110240193</td>
+  <td class=xl29 align=right x:num>301045</td>
+  <td class=xl29 align=right x:num>Dadan Juanda</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-07-20</td>
+  <td class=xl29 align=right >2017-07-20</td>
+  <td class=xl29 align=right >4150111107186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
+  <td class=xl29>140240195</td>
+  <td class=xl29 align=right x:num>301462</td>
+  <td class=xl29 align=right x:num>Dadan Supardan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-10-27</td>
+  <td class=xl29 align=right >2017-04-24</td>
+  <td class=xl29 align=right >4210102924189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
+  <td class=xl29>100240196</td>
+  <td class=xl29 align=right x:num>301048</td>
+  <td class=xl29 align=right x:num>Dadang Kadarusman</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Mini Market</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-07-05</td>
+  <td class=xl29 align=right >2016-12-31</td>
+  <td class=xl29 align=right >4150108582185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
+  <td class=xl29>110240198</td>
+  <td class=xl29 align=right x:num>301049</td>
+  <td class=xl29 align=right x:num>Dani</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-05-01</td>
+  <td class=xl29 align=right >2017-05-01</td>
+  <td class=xl29 align=right >7150100117189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
+  <td class=xl29>120240200</td>
+  <td class=xl29 align=right x:num>301051</td>
+  <td class=xl29 align=right x:num>Dani Ishak Farid</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -Pasar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-09-05</td>
+  <td class=xl29 align=right >2018-03-04</td>
+  <td class=xl29 align=right >4150111105184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
+  <td class=xl29>120240203</td>
+  <td class=xl29 align=right x:num>301239</td>
+  <td class=xl29 align=right x:num>Dede Resmana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-07-17</td>
+  <td class=xl29 align=right >2017-01-12</td>
+  <td class=xl29 align=right >4150111899181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
+  <td class=xl29>120240206</td>
+  <td class=xl29 align=right x:num>301056</td>
+  <td class=xl29 align=right x:num>Dedi Hidayat</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-21</td>
+  <td class=xl29 align=right >2017-05-21</td>
+  <td class=xl29 align=right >4210102479184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
+  <td class=xl29>080240208</td>
+  <td class=xl29 align=right x:num>303256</td>
+  <td class=xl29 align=right x:num>Dedi Supriadi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-08-28</td>
+  <td class=xl29 align=right >2017-02-23</td>
+  <td class=xl29 align=right >7150100386186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td class=xl29>150240209</td>
+  <td class=xl29 align=right x:num>301430</td>
+  <td class=xl29 align=right x:num>Dellya Ratifah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >4140104348186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td class=xl29>140240210</td>
+  <td class=xl29 align=right x:num>303103</td>
+  <td class=xl29 align=right x:num>Deni Mardiana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-08-15</td>
+  <td class=xl29 align=right >2017-02-10</td>
+  <td class=xl29 align=right >7150100389184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
+  <td class=xl29>160242222</td>
+  <td class=xl29 align=right x:num>301546</td>
+  <td class=xl29 align=right x:num>Deni Setiadi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-12-24</td>
+  <td class=xl29 align=right >2017-06-24</td>
+  <td class=xl29 align=right >703758435100</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td class=xl29>160240215</td>
+  <td class=xl29 align=right x:num>301525</td>
+  <td class=xl29 align=right x:num>Dewi Handayani</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-16</td>
+  <td class=xl29 align=right >2017-01-01</td>
+  <td class=xl29 align=right >703362328200</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>46</td>
+  <td class=xl29>130240218</td>
+  <td class=xl29 align=right x:num>301324</td>
+  <td class=xl29 align=right x:num>Dhani Triswandi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-08-09</td>
+  <td class=xl29 align=right >2017-08-09</td>
+  <td class=xl29 align=right >4150112145187</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>47</td>
+  <td class=xl29>160242223</td>
+  <td class=xl29 align=right x:num>301535</td>
+  <td class=xl29 align=right x:num>Dian Inggar Setyaning Tyas</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-10-07</td>
+  <td class=xl29 align=right >2017-03-07</td>
+  <td class=xl29 align=right >703481437500</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>48</td>
+  <td class=xl29>140240220</td>
+  <td class=xl29 align=right x:num>301432</td>
+  <td class=xl29 align=right x:num>Dian Ismulyana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-07-13</td>
+  <td class=xl29 align=right >2017-07-13</td>
+  <td class=xl29 align=right >4150112616188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>49</td>
+  <td class=xl29>100240222</td>
+  <td class=xl29 align=right x:num>301388</td>
+  <td class=xl29 align=right x:num>Didin </td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Ciparay</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-03-01</td>
+  <td class=xl29 align=right >2017-08-28</td>
+  <td class=xl29 align=right >4140104435187 </td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>50</td>
+  <td class=xl29>130240224</td>
+  <td class=xl29 align=right x:num>301064</td>
+  <td class=xl29 align=right x:num>Didin Wahyudin</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-13</td>
+  <td class=xl29 align=right >2017-05-13</td>
+  <td class=xl29 align=right >6180100093117</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>51</td>
+  <td class=xl29>120240225</td>
+  <td class=xl29 align=right x:num>301066</td>
+  <td class=xl29 align=right x:num>Dika Mulyana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Mini Market</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-04-05</td>
+  <td class=xl29 align=right >2016-10-05</td>
+  <td class=xl29 align=right >5300137002116</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>52</td>
+  <td class=xl29>120240226</td>
+  <td class=xl29 align=right x:num>301065</td>
+  <td class=xl29 align=right x:num>Dikdik Permana Sidik</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Mini Market</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-06-06</td>
+  <td class=xl29 align=right >2017-06-06</td>
+  <td class=xl29 align=right >8660102116187</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>53</td>
+  <td class=xl29>130240227</td>
+  <td class=xl29 align=right x:num>301234</td>
+  <td class=xl29 align=right x:num>Dikdik Setiawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-01-15</td>
+  <td class=xl29 align=right >2017-01-15</td>
+  <td class=xl29 align=right >4130105193181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>54</td>
+  <td class=xl29>090240230</td>
+  <td class=xl29 align=right x:num>301286</td>
+  <td class=xl29 align=right x:num>Diki Nardiwijaya</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS MASR</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-29</td>
+  <td class=xl29 align=right >2017-11-25</td>
+  <td class=xl29 align=right >4150107655189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>55</td>
+  <td class=xl29>130240231</td>
+  <td class=xl29 align=right x:num>301333</td>
+  <td class=xl29 align=right x:num>Dindin Komarudin</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MToha</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-06-23</td>
+  <td class=xl29 align=right >2017-06-23</td>
+  <td class=xl29 align=right >4150112093186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>56</td>
+  <td class=xl29>100240238</td>
+  <td class=xl29 align=right x:num>301072</td>
+  <td class=xl29 align=right x:num>Elan Sutarlan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cililin</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-09-26</td>
+  <td class=xl29 align=right >2018-03-25</td>
+  <td class=xl29 align=right >4150108556184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>57</td>
+  <td class=xl29>160240239</td>
+  <td class=xl29 align=right x:num>301500</td>
+  <td class=xl29 align=right x:num>Elvin Ali Virdaus</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-03-10</td>
+  <td class=xl29 align=right >2017-02-10</td>
+  <td class=xl29 align=right >703164735700</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>58</td>
+  <td class=xl29>140240240</td>
+  <td class=xl29 align=right x:num>304045</td>
+  <td class=xl29 align=right x:num>Ema Supriatna</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MToha</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >4150112621183</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>59</td>
+  <td class=xl29>110240244</td>
+  <td class=xl29 align=right x:num>301074</td>
+  <td class=xl29 align=right x:num>Endi Hendiansyah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-05-07</td>
+  <td class=xl29 align=right >2016-11-07</td>
+  <td class=xl29 align=right >5300110183119</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>60</td>
+  <td class=xl29>160240245</td>
+  <td class=xl29 align=right x:num>301503</td>
+  <td class=xl29 align=right x:num>Enisa Nurcahyan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >703184817000</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>61</td>
+  <td class=xl29>130240250</td>
+  <td class=xl29 align=right x:num>302103</td>
+  <td class=xl29 align=right x:num>Erlangga Laxsmana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-06-13</td>
+  <td class=xl29 align=right >2017-06-13</td>
+  <td class=xl29 align=right >4210102766183</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>62</td>
+  <td class=xl29>120240251</td>
+  <td class=xl29 align=right x:num>301075</td>
+  <td class=xl29 align=right x:num>Erni Nuraeni</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-09-09</td>
+  <td class=xl29 align=right >2018-03-08</td>
+  <td class=xl29 align=right >4150111657181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>63</td>
+  <td class=xl29>140240258</td>
+  <td class=xl29 align=right x:num>301357</td>
+  <td class=xl29 align=right x:num>Fani Farida</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-05-03</td>
+  <td class=xl29 align=right >2017-05-03</td>
+  <td class=xl29 align=right >4150112472186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>64</td>
+  <td class=xl29>100240259</td>
+  <td class=xl29 align=right x:num>301081</td>
+  <td class=xl29 align=right x:num>Fenny Erviana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2015-04-23</td>
+  <td class=xl29 align=right >2016-10-23</td>
+  <td class=xl29 align=right >4150112034182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>65</td>
+  <td class=xl29>140240260</td>
+  <td class=xl29 align=right x:num>301082</td>
+  <td class=xl29 align=right x:num>Feri Pirmansyah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-02-19</td>
+  <td class=xl29 align=right >2017-08-17</td>
+  <td class=xl29 align=right >7150100254185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>66</td>
+  <td class=xl29>140240262</td>
+  <td class=xl29 align=right x:num>301257</td>
+  <td class=xl29 align=right x:num>Firman Firmansyah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150102254182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>67</td>
+  <td class=xl29>130240263</td>
+  <td class=xl29 align=right x:num>301083</td>
+  <td class=xl29 align=right x:num>Firmanto Budi Leksono</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS TOP</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-05-25</td>
+  <td class=xl29 align=right >2016-11-25</td>
+  <td class=xl29 align=right >1160100523183</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>68</td>
+  <td class=xl29>110240267</td>
+  <td class=xl29 align=right x:num>301087</td>
+  <td class=xl29 align=right x:num>Glad Valentino</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -Pasar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-07-28</td>
+  <td class=xl29 align=right >2017-01-23</td>
+  <td class=xl29 align=right >4150110352186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>69</td>
+  <td class=xl29>080240270</td>
+  <td class=xl29 align=right x:num>301090</td>
+  <td class=xl29 align=right x:num>Hardianto</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG MToha</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-08-02</td>
+  <td class=xl29 align=right >2018-01-29</td>
+  <td class=xl29 align=right >4150102452188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>70</td>
+  <td class=xl29>120240272</td>
+  <td class=xl29 align=right x:num>301091</td>
+  <td class=xl29 align=right x:num>Hendi Mulyadi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Baleendah</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-06-26</td>
+  <td class=xl29 align=right >2016-12-26</td>
+  <td class=xl29 align=right >4150111839181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>71</td>
+  <td class=xl29>120240274</td>
+  <td class=xl29 align=right x:num>301323</td>
+  <td class=xl29 align=right x:num>Hendy Karseno Kusvara</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-09-16</td>
+  <td class=xl29 align=right >2018-03-15</td>
+  <td class=xl29 align=right >4150111334181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>72</td>
+  <td class=xl29>140240275</td>
+  <td class=xl29 align=right x:num>301418</td>
+  <td class=xl29 align=right x:num>Hermawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Margahayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-11-12</td>
+  <td class=xl29 align=right >2017-05-10</td>
+  <td class=xl29 align=right >4150112434188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>73</td>
+  <td class=xl29>080240278</td>
+  <td class=xl29 align=right x:num>301099</td>
+  <td class=xl29 align=right x:num>Iik Hikmat</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150102469185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>74</td>
+  <td class=xl29>150240279</td>
+  <td class=xl29 align=right x:num>301450</td>
+  <td class=xl29 align=right x:num>Iip Sarip Hidayat</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-05-24</td>
+  <td class=xl29 align=right >2016-11-19</td>
+  <td class=xl29 align=right >4150112724185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>75</td>
+  <td class=xl29>160240280</td>
+  <td class=xl29 align=right x:num>301499</td>
+  <td class=xl29 align=right x:num>Ikin Sodikin</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-03-10</td>
+  <td class=xl29 align=right >2017-02-10</td>
+  <td class=xl29 align=right >703158686800</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>76</td>
+  <td class=xl29>080240283</td>
+  <td class=xl29 align=right x:num>301104</td>
+  <td class=xl29 align=right x:num>Indra Abdurahman</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150102470186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>77</td>
+  <td class=xl29>150240284</td>
+  <td class=xl29 align=right x:num>301489</td>
+  <td class=xl29 align=right x:num>Indra Eka Permana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-01-23</td>
+  <td class=xl29 align=right >2016-12-30</td>
+  <td class=xl29 align=right >703152958000</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>78</td>
+  <td class=xl29>100240285</td>
+  <td class=xl29 align=right x:num>301105</td>
+  <td class=xl29 align=right x:num>Indra Gunawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Mini Market</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2015-05-07</td>
+  <td class=xl29 align=right >2016-11-07</td>
+  <td class=xl29 align=right >4150108259180</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>79</td>
+  <td class=xl29>110240286</td>
+  <td class=xl29 align=right x:num>301108</td>
+  <td class=xl29 align=right x:num>Ipah Saripah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS MASR</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-05-16</td>
+  <td class=xl29 align=right >2017-11-12</td>
+  <td class=xl29 align=right >4150110440183</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>80</td>
+  <td class=xl29>080240289</td>
+  <td class=xl29 align=right x:num>301110</td>
+  <td class=xl29 align=right x:num>Irwan Darmawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -Pasar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2015-08-12</td>
+  <td class=xl29 align=right >2017-02-07</td>
+  <td class=xl29 align=right >4150102464185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>81</td>
+  <td class=xl29>140240292</td>
+  <td class=xl29 align=right x:num>301358</td>
+  <td class=xl29 align=right x:num>Ita Mutia</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-05-09</td>
+  <td class=xl29 align=right >2017-05-09</td>
+  <td class=xl29 align=right >7150100429188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>82</td>
+  <td class=xl29>130240293</td>
+  <td class=xl29 align=right x:num>301112</td>
+  <td class=xl29 align=right x:num>Itang Mardadi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-04-20</td>
+  <td class=xl29 align=right >2017-10-17</td>
+  <td class=xl29 align=right >7150100255181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>83</td>
+  <td class=xl29>110240299</td>
+  <td class=xl29 align=right x:num>301219</td>
+  <td class=xl29 align=right x:num>Jaelani</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Margahayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-05-01</td>
+  <td class=xl29 align=right >2016-11-01</td>
+  <td class=xl29 align=right >4150110042189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>84</td>
+  <td class=xl29>100240305</td>
+  <td class=xl29 align=right x:num>301125</td>
+  <td class=xl29 align=right x:num>Junaedi Abdurrohim</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-06-30</td>
+  <td class=xl29 align=right >2017-06-30</td>
+  <td class=xl29 align=right >5030106883110</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>85</td>
+  <td class=xl29>120240311</td>
+  <td class=xl29 align=right x:num>301126</td>
+  <td class=xl29 align=right x:num>Kusnadi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Margahayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-06-11</td>
+  <td class=xl29 align=right >2017-06-11</td>
+  <td class=xl29 align=right >4150111447188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>86</td>
+  <td class=xl29>150240313</td>
+  <td class=xl29 align=right x:num>301449</td>
+  <td class=xl29 align=right x:num>Lilis Alalin</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS MASR</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-06-13</td>
+  <td class=xl29 align=right >2016-12-09</td>
+  <td class=xl29 align=right >4190100480169</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>87</td>
+  <td class=xl29>120240319</td>
+  <td class=xl29 align=right x:num>301129</td>
+  <td class=xl29 align=right x:num>Lutfi Hari</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cililin</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-03-01</td>
+  <td class=xl29 align=right >2017-08-28</td>
+  <td class=xl29 align=right >5030114204114</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>88</td>
+  <td class=xl29>110240320</td>
+  <td class=xl29 align=right x:num>301137</td>
+  <td class=xl29 align=right x:num>Maezan Purkon</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cililin</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-06-01</td>
+  <td class=xl29 align=right >2017-06-01</td>
+  <td class=xl29 align=right >4150110572184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>89</td>
+  <td class=xl29>130240322</td>
+  <td class=xl29 align=right x:num>301140</td>
+  <td class=xl29 align=right x:num>Merry Putri Purnamasari</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-09</td>
+  <td class=xl29 align=right >2017-05-09</td>
+  <td class=xl29 align=right >4130100598166</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>90</td>
+  <td class=xl29>120240324</td>
+  <td class=xl29 align=right x:num>301319</td>
+  <td class=xl29 align=right x:num>Moch Saepul Fitriana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-04-02</td>
+  <td class=xl29 align=right >2017-04-02</td>
+  <td class=xl29 align=right >4210102440185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>91</td>
+  <td class=xl29>090240327</td>
+  <td class=xl29 align=right x:num>301130</td>
+  <td class=xl29 align=right x:num>Moh Andry Rohiman</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2015-04-07</td>
+  <td class=xl29 align=right >2016-10-07</td>
+  <td class=xl29 align=right >4150102755188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>92</td>
+  <td class=xl29>080240331</td>
+  <td class=xl29 align=right x:num>301142</td>
+  <td class=xl29 align=right x:num>Muhamad Taufik Hidayat</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Margahayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150102262185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>93</td>
+  <td class=xl29>120240332</td>
+  <td class=xl29 align=right x:num>301132</td>
+  <td class=xl29 align=right x:num>Muhammad Hilman</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Mini Market</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-09-06</td>
+  <td class=xl29 align=right >2017-09-06</td>
+  <td class=xl29 align=right >4150111104188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>94</td>
+  <td class=xl29>080240333</td>
+  <td class=xl29 align=right x:num>301313</td>
+  <td class=xl29 align=right x:num>Muhammad Nur</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cimahi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150102465181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>95</td>
+  <td class=xl29>040240336</td>
+  <td class=xl29 align=right x:num>301145</td>
+  <td class=xl29 align=right x:num>Nana Suryana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-07-08</td>
+  <td class=xl29 align=right >2017-01-03</td>
+  <td class=xl29 align=right >4150101461184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>96</td>
+  <td class=xl29>150240337</td>
+  <td class=xl29 align=right x:num>301451</td>
+  <td class=xl29 align=right x:num>Neng Wilan Piarti</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-05-10</td>
+  <td class=xl29 align=right >2016-11-05</td>
+  <td class=xl29 align=right >4210102945185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>97</td>
+  <td class=xl29>080240339</td>
+  <td class=xl29 align=right x:num>301284</td>
+  <td class=xl29 align=right x:num>Nia Cita Nurhidayah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150102632186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>98</td>
+  <td class=xl29>120240340</td>
+  <td class=xl29 align=right x:num>301146</td>
+  <td class=xl29 align=right x:num>Nia Magdania</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -Pasar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-06-10</td>
+  <td class=xl29 align=right >2016-12-06</td>
+  <td class=xl29 align=right >7150100216187</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>99</td>
+  <td class=xl29>150240342</td>
+  <td class=xl29 align=right x:num>301485</td>
+  <td class=xl29 align=right x:num>Nirwan Setiawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-01-02</td>
+  <td class=xl29 align=right >2016-12-30</td>
+  <td class=xl29 align=right >4210103022184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>100</td>
+  <td class=xl29>160240345</td>
+  <td class=xl29 align=right x:num>301519</td>
+  <td class=xl29 align=right x:num>Nunki Syarief</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS MASR</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-06-12</td>
+  <td class=xl29 align=right >2017-12-09</td>
+  <td class=xl29 align=right >703328576100</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>101</td>
+  <td class=xl29>120240347</td>
+  <td class=xl29 align=right x:num>301321</td>
+  <td class=xl29 align=right x:num>Nur Rohman</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-15</td>
+  <td class=xl29 align=right >2017-05-15</td>
+  <td class=xl29 align=right >4150111229182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>102</td>
+  <td class=xl29>110240349</td>
+  <td class=xl29 align=right x:num>301148</td>
+  <td class=xl29 align=right x:num>Nurjanah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS MASR</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-08-01</td>
+  <td class=xl29 align=right >2018-01-28</td>
+  <td class=xl29 align=right >4150111031181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>103</td>
+  <td class=xl29>150240350</td>
+  <td class=xl29 align=right x:num>301464</td>
+  <td class=xl29 align=right x:num>Nuryani</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >4140104347180</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>104</td>
+  <td class=xl29>160242225</td>
+  <td class=xl29 align=right x:num>301526</td>
+  <td class=xl29 align=right x:num>Nuryanti</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-08-29</td>
+  <td class=xl29 align=right >2017-03-01</td>
+  <td class=xl29 align=right >703443839900</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>105</td>
+  <td class=xl29>160242226</td>
+  <td class=xl29 align=right x:num>301532</td>
+  <td class=xl29 align=right x:num>Puja Putra Pratama</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-09-05</td>
+  <td class=xl29 align=right >2017-02-06</td>
+  <td class=xl29 align=right >703490558200</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>106</td>
+  <td class=xl29>130240361</td>
+  <td class=xl29 align=right x:num>301236</td>
+  <td class=xl29 align=right x:num>Rahmat Rohyana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-06-29</td>
+  <td class=xl29 align=right >2016-12-25</td>
+  <td class=xl29 align=right >7150100371181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>107</td>
+  <td class=xl29>140240362</td>
+  <td class=xl29 align=right x:num>301252</td>
+  <td class=xl29 align=right x:num>Ramdan Mustopa Zaelani</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >6150100741189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>108</td>
+  <td class=xl29>150240363</td>
+  <td class=xl29 align=right x:num>303215</td>
+  <td class=xl29 align=right x:num>Ramon Dias</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-08-15</td>
+  <td class=xl29 align=right >2017-08-15</td>
+  <td class=xl29 align=right >4150112641183</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>109</td>
+  <td class=xl29>150240364</td>
+  <td class=xl29 align=right x:num>301447</td>
+  <td class=xl29 align=right x:num>Randi Somantri</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >9020101189186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>110</td>
+  <td class=xl29>140240365</td>
+  <td class=xl29 align=right x:num>301393</td>
+  <td class=xl29 align=right x:num>Ranny Anggraeni Arsas</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-04-08</td>
+  <td class=xl29 align=right >2017-04-08</td>
+  <td class=xl29 align=right >2240100926168</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>111</td>
+  <td class=xl29>130240366</td>
+  <td class=xl29 align=right x:num>301150</td>
+  <td class=xl29 align=right x:num>Ratih Rismawati</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >6150100743181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>112</td>
+  <td class=xl29>140240368</td>
+  <td class=xl29 align=right x:num>301396</td>
+  <td class=xl29 align=right x:num>Resha Octa Wiguna</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-03-30</td>
+  <td class=xl29 align=right >2017-09-26</td>
+  <td class=xl29 align=right >4150112543181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>113</td>
+  <td class=xl29>160240370</td>
+  <td class=xl29 align=right x:num>301520</td>
+  <td class=xl29 align=right x:num>Rian Hadiat</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-11</td>
+  <td class=xl29 align=right >2017-01-01</td>
+  <td class=xl29 align=right >703408301400</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>114</td>
+  <td class=xl29>080240376</td>
+  <td class=xl29 align=right x:num>301266</td>
+  <td class=xl29 align=right x:num>Ridwan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150107382184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>115</td>
+  <td class=xl29>150240377</td>
+  <td class=xl29 align=right x:num>303220</td>
+  <td class=xl29 align=right x:num>Ridwan Mulyono</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-09-16</td>
+  <td class=xl29 align=right >2017-09-16</td>
+  <td class=xl29 align=right >4150112659186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>116</td>
+  <td class=xl29>090240378</td>
+  <td class=xl29 align=right x:num>301258</td>
+  <td class=xl29 align=right x:num>Ridwan Shodik Rohimhulloh</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-07-29</td>
+  <td class=xl29 align=right >2018-01-25</td>
+  <td class=xl29 align=right >4210102254186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>117</td>
+  <td class=xl29>120240381</td>
+  <td class=xl29 align=right x:num>301155</td>
+  <td class=xl29 align=right x:num>Riki Ripai Sapii</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-16</td>
+  <td class=xl29 align=right >2017-05-16</td>
+  <td class=xl29 align=right >4150111424180</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>118</td>
+  <td class=xl29>140240382</td>
+  <td class=xl29 align=right x:num>301426</td>
+  <td class=xl29 align=right x:num>Rina Yunita</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-07-04</td>
+  <td class=xl29 align=right >2017-07-04</td>
+  <td class=xl29 align=right >4150112618180</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>119</td>
+  <td class=xl29>130240383</td>
+  <td class=xl29 align=right x:num>301156</td>
+  <td class=xl29 align=right x:num>RinRin Susilawati</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >7820100141181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>120</td>
+  <td class=xl29>160242227</td>
+  <td class=xl29 align=right x:num>301531</td>
+  <td class=xl29 align=right x:num>Riri Afrilia Putri</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-08-20</td>
+  <td class=xl29 align=right >2017-02-20</td>
+  <td class=xl29 align=right >703455212000</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>121</td>
+  <td class=xl29>150240385</td>
+  <td class=xl29 align=right x:num>301484</td>
+  <td class=xl29 align=right x:num>Risma Sri Widiyanti</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >6150101231187</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>122</td>
+  <td class=xl29>130240386</td>
+  <td class=xl29 align=right x:num>301221</td>
+  <td class=xl29 align=right x:num>Rismayani</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-12-19</td>
+  <td class=xl29 align=right >2016-12-19</td>
+  <td class=xl29 align=right >6150100730188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>123</td>
+  <td class=xl29>120240388</td>
+  <td class=xl29 align=right x:num>301265</td>
+  <td class=xl29 align=right x:num>Robby Hardianto</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-04-16</td>
+  <td class=xl29 align=right >2016-10-16</td>
+  <td class=xl29 align=right >4150111289182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>124</td>
+  <td class=xl29>080240389</td>
+  <td class=xl29 align=right x:num>301263</td>
+  <td class=xl29 align=right x:num>Robi Hasbullah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150102255188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>125</td>
+  <td class=xl29>140240390</td>
+  <td class=xl29 align=right x:num>301237</td>
+  <td class=xl29 align=right x:num>Rohendi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-08-11</td>
+  <td class=xl29 align=right >2017-02-06</td>
+  <td class=xl29 align=right >7150100379189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>126</td>
+  <td class=xl29>130240392</td>
+  <td class=xl29 align=right x:num>301300</td>
+  <td class=xl29 align=right x:num>Rudi Gumilar</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-09-17</td>
+  <td class=xl29 align=right >2017-09-17</td>
+  <td class=xl29 align=right >4150112189181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>127</td>
+  <td class=xl29>100240393</td>
+  <td class=xl29 align=right x:num>301159</td>
+  <td class=xl29 align=right x:num>Rudi Rukmantara</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-04-01</td>
+  <td class=xl29 align=right >2017-04-01</td>
+  <td class=xl29 align=right >4210102259186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>128</td>
+  <td class=xl29>080240400</td>
+  <td class=xl29 align=right x:num>301180</td>
+  <td class=xl29 align=right x:num>Saeful Usmar</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Speciality</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-02-28</td>
+  <td class=xl29 align=right >2017-08-26</td>
+  <td class=xl29 align=right >4150102487183</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>129</td>
+  <td class=xl29>120240403</td>
+  <td class=xl29 align=right x:num>301164</td>
+  <td class=xl29 align=right x:num>Samun</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Baleendah</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2015-04-09</td>
+  <td class=xl29 align=right >2016-10-09</td>
+  <td class=xl29 align=right >4150111336183</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>130</td>
+  <td class=xl29>140240408</td>
+  <td class=xl29 align=right x:num>301368</td>
+  <td class=xl29 align=right x:num>Shella wati</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Merchandiser</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-11-28</td>
+  <td class=xl29 align=right >2017-05-26</td>
+  <td class=xl29 align=right >5300153483112</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>131</td>
+  <td class=xl29>140240410</td>
+  <td class=xl29 align=right x:num>301416</td>
+  <td class=xl29 align=right x:num>Siti Hany Muslimah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Margahayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-06-11</td>
+  <td class=xl29 align=right >2017-06-11</td>
+  <td class=xl29 align=right >4150112599182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>132</td>
+  <td class=xl29>160240411</td>
+  <td class=xl29 align=right x:num>301496</td>
+  <td class=xl29 align=right x:num>Siti Nuraeni</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-05-02</td>
+  <td class=xl29 align=right >2017-05-02</td>
+  <td class=xl29 align=right >703152025600</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>133</td>
+  <td class=xl29>120240415</td>
+  <td class=xl29 align=right x:num>301168</td>
+  <td class=xl29 align=right x:num>Soni</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-07-05</td>
+  <td class=xl29 align=right >2017-07-05</td>
+  <td class=xl29 align=right >4150108563181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>134</td>
+  <td class=xl29>080240416</td>
+  <td class=xl29 align=right x:num>301169</td>
+  <td class=xl29 align=right x:num>Soni Rudiansyah</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cimahi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150112728189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>135</td>
+  <td class=xl29>120240417</td>
+  <td class=xl29 align=right x:num>301170</td>
+  <td class=xl29 align=right x:num>Soni Zam Zam</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-04-19</td>
+  <td class=xl29 align=right >2017-10-16</td>
+  <td class=xl29 align=right >8720101274180</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>136</td>
+  <td class=xl29>130240418</td>
+  <td class=xl29 align=right x:num>301318</td>
+  <td class=xl29 align=right x:num>Sopian Daryana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sumedang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-03-12</td>
+  <td class=xl29 align=right >2017-03-12</td>
+  <td class=xl29 align=right >4210102723185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>137</td>
+  <td class=xl29>130240422</td>
+  <td class=xl29 align=right x:num>301229</td>
+  <td class=xl29 align=right x:num>Sri Mulyani</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-01-06</td>
+  <td class=xl29 align=right >2017-01-06</td>
+  <td class=xl29 align=right >4150112274180</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>138</td>
+  <td class=xl29>110240424</td>
+  <td class=xl29 align=right x:num>301177</td>
+  <td class=xl29 align=right x:num>Suparman</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cililin</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-09-01</td>
+  <td class=xl29 align=right >2017-09-01</td>
+  <td class=xl29 align=right >8680101149187</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>139</td>
+  <td class=xl29>130240431</td>
+  <td class=xl29 align=right x:num>301181</td>
+  <td class=xl29 align=right x:num>Taufik Ismail</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cimahi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-06-21</td>
+  <td class=xl29 align=right >2016-12-17</td>
+  <td class=xl29 align=right >6180100132181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>140</td>
+  <td class=xl29>110240439</td>
+  <td class=xl29 align=right x:num>301281</td>
+  <td class=xl29 align=right x:num>Toni Oktora</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Kopo</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -Pasar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-06-01</td>
+  <td class=xl29 align=right >2017-11-28</td>
+  <td class=xl29 align=right >4150111029184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>141</td>
+  <td class=xl29>080240440</td>
+  <td class=xl29 align=right x:num>301186</td>
+  <td class=xl29 align=right x:num>Triono Satijan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Margahayu</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Senior FS HFS</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >2020-01-01</td>
+  <td class=xl29 align=right >4150102460181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>142</td>
+  <td class=xl29>120240446</td>
+  <td class=xl29 align=right x:num>301191</td>
+  <td class=xl29 align=right x:num>Wahyu Slamet</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -Pasar</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-10-24</td>
+  <td class=xl29 align=right >2017-10-24</td>
+  <td class=xl29 align=right >4150110058180</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>143</td>
+  <td class=xl29>090240449</td>
+  <td class=xl29 align=right x:num>301194</td>
+  <td class=xl29 align=right x:num>Wawan Hendrawan</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cimahi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-04-25</td>
+  <td class=xl29 align=right >2016-10-25</td>
+  <td class=xl29 align=right >4150102640189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>144</td>
+  <td class=xl29>140240451</td>
+  <td class=xl29 align=right x:num>301374</td>
+  <td class=xl29 align=right x:num>Widi Apriadi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cabang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >RO</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-02-01</td>
+  <td class=xl29 align=right >2017-02-01</td>
+  <td class=xl29 align=right >4150112527185</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>145</td>
+  <td class=xl29>120240452</td>
+  <td class=xl29 align=right x:num>301196</td>
+  <td class=xl29 align=right x:num>Wildan Nugraha</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Baleendah</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-07-19</td>
+  <td class=xl29 align=right >2017-01-14</td>
+  <td class=xl29 align=right >4150111928184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>146</td>
+  <td class=xl29>120240453</td>
+  <td class=xl29 align=right x:num>301377</td>
+  <td class=xl29 align=right x:num>Willy Santoso</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cimahi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-07-17</td>
+  <td class=xl29 align=right >2017-01-12</td>
+  <td class=xl29 align=right >4150111882184</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>147</td>
+  <td class=xl29>080240454</td>
+  <td class=xl29 align=right x:num>301199</td>
+  <td class=xl29 align=right x:num>Wisnu Agustinus Nugraha</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR Sub - D</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-01-01</td>
+  <td class=xl29 align=right >2017-06-29</td>
+  <td class=xl29 align=right >4150112644181</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>148</td>
+  <td class=xl29>130240460</td>
+  <td class=xl29 align=right x:num>303155</td>
+  <td class=xl29 align=right x:num>Yadi Kusnadi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cimahi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -2</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-09-18</td>
+  <td class=xl29 align=right >2017-09-18</td>
+  <td class=xl29 align=right >4150112187189</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>149</td>
+  <td class=xl29>140240462</td>
+  <td class=xl29 align=right x:num>301376</td>
+  <td class=xl29 align=right x:num>Yadi Mulyadi</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cililin</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR RSU</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-02-28</td>
+  <td class=xl29 align=right >2017-08-26</td>
+  <td class=xl29 align=right >4150108858188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>150</td>
+  <td class=xl29>110240465</td>
+  <td class=xl29 align=right x:num>301202</td>
+  <td class=xl29 align=right x:num>Yanti Kuraesin</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Soreang</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-08-12</td>
+  <td class=xl29 align=right >2018-02-08</td>
+  <td class=xl29 align=right >4150109460182</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>151</td>
+  <td class=xl29>110240466</td>
+  <td class=xl29 align=right x:num>301205</td>
+  <td class=xl29 align=right x:num>Yanto</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Cimahi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >SR WS -1</td>
+  <td class=xl29 align=right >Staff</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2015-08-01</td>
+  <td class=xl29 align=right >2017-01-27</td>
+  <td class=xl29 align=right >4150110172188</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>152</td>
+  <td class=xl29>110240469</td>
+  <td class=xl29 align=right x:num>301207</td>
+  <td class=xl29 align=right x:num>Yayan Heryana</td>
+  <td class=xl29 align=right >BANDUNG</td>
+  <td class=xl29 align=right >BDG Sarijadi</td>
+  <td class=xl29 align=right x:num>SALES</td>
+  <td class=xl29 align=right >Junior FS HFS</td>
+  <td class=xl29 align=right >Junior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-02-01</td>
+  <td class=xl29 align=right >2017-07-30</td>
+  <td class=xl29 align=right >4150107790183</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
  </tr> <tr height=18 style='height:13.5pt'>
   <td height=18 class=xl28 align=right style='height:13.5pt'></td>
   <td class=xl29></td>
@@ -356,7 +2621,7 @@ td
   <td class=xl29 align=right ></td>
   <td class=xl29 align=right ></td>
   <td class=xl29 align=right ></td>
-  <td class=xl29 align=right >JML KARYAWAN : 1</td>
+  <td class=xl29 align=right >JML KARYAWAN : 152</td>
  </tr> <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
  <td colspan=14 width=80 clospan= style='width:41pt'></td></tr>

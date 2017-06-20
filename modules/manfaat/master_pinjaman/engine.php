@@ -152,7 +152,7 @@ $t_sp__user_created = $id_peg;
                                             . "'$r_ang__cicilan',"
                                             . "now(),"
                                             . "'$id_peg')";
-                                    var_dump($sql)or die();
+                                 
 
 $sqlresult = $db->Execute($sql);
 Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);

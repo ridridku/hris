@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-19 08:47:53
+<?php /* Smarty version 2.6.18, created on 2017-06-02 09:11:06
          compiled from D:/xampp/htdocs//hris/themes/defaults/log.engine.tpl */ ?>
 <html>
 <head>

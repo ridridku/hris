@@ -338,8 +338,11 @@ if ($_GET['search'] == '1')
                 `peg`.`r_pnpt__kon_akhir` AS `r_pnpt__kon_akhir`,
                 `peg`.`r_jabatan__ket` AS `r_jabatan__ket`,
                 `peg`.`r_dept__ket` AS `r_dept__ket`,
-                `peg`.`r_subdept__id` AS `r_subdept__id` from v_pegawai peg where peg.r_pnpt__nip ='$nip_karyawan_cari' ";
-
+                `peg`.`r_subdept__id` AS `r_subdept__id`,
+                peg.r_stp__id AS r_stp__id,
+		peg.r_stp__nama AS r_stp__nama
+                from v_pegawai peg where peg.r_pnpt__nip ='$nip_karyawan_cari' ";
+          
 $recordSet_jabatan = $db->Execute($sql_jabatan);
 $initSet = array();
 $data_jabatan_history = array();
@@ -521,7 +524,7 @@ $smarty->assign ("CV_PELATIHAN", $data_pelatihan);
                                                 r_pegawai.r_pegawai__status_kawin AS r_pegawai__status_kawin,
                                                 r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
                                                 r_pegawai.r_pegawai__id_subcab AS r_pegawai__id_subcab,
-                                                r_pegawai.r_pegawai__subdept AS r_pegawai__subdept,
+                                                r_pegawai.r_pegawai__bpjs_kesehatan AS r_pegawai__bpjs_kesehatan,
                                                 r_pegawai.r_pegawai__jabatan AS r_pegawai__jabatan,
                                                 r_pegawai.r_pegawai__st_pegawai AS r_pegawai__st_pegawai,
                                                 r_pegawai.r_pegawai__pend_tgl_lulus AS r_pegawai__pend_tgl_lulus,
@@ -644,7 +647,7 @@ $smarty->assign ("CV_PELATIHAN", $data_pelatihan);
                                                 r_pegawai.r_pegawai__status_kawin AS r_pegawai__status_kawin,
                                                 r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
                                                 r_pegawai.r_pegawai__id_subcab AS r_pegawai__id_subcab,
-                                                r_pegawai.r_pegawai__subdept AS r_pegawai__subdept,
+                                                r_pegawai.r_pegawai__bpjs_kesehatan AS r_pegawai__bpjs_kesehatan,
                                                 r_pegawai.r_pegawai__jabatan AS r_pegawai__jabatan,
                                                 r_pegawai.r_pegawai__st_pegawai AS r_pegawai__st_pegawai,
                                                 r_pegawai.r_pegawai__pend_tgl_lulus AS r_pegawai__pend_tgl_lulus,
@@ -694,6 +697,7 @@ $smarty->assign ("CV_PELATIHAN", $data_pelatihan);
 			 	 $sql.=" GROUP BY r_pnpt__nip ORDER BY r_pegawai__id ";
 
 			    if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
+
                                 $numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
 				$pages = $p->findPages($count,$LIMIT); 
@@ -891,7 +895,7 @@ else
                                                 r_pegawai.r_pegawai__status_kawin AS r_pegawai__status_kawin,
                                                 r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
                                                 r_pegawai.r_pegawai__id_subcab AS r_pegawai__id_subcab,
-                                                r_pegawai.r_pegawai__subdept AS r_pegawai__subdept,
+                                                r_pegawai.r_pegawai__bpjs_kesehatan AS r_pegawai__bpjs_kesehatan,
                                                 r_pegawai.r_pegawai__jabatan AS r_pegawai__jabatan,
                                                 r_pegawai.r_pegawai__st_pegawai AS r_pegawai__st_pegawai,
                                                 r_pegawai.r_pegawai__pend_tgl_lulus AS r_pegawai__pend_tgl_lulus,
@@ -1012,7 +1016,7 @@ else
                                                 r_pegawai.r_pegawai__status_kawin AS r_pegawai__status_kawin,
                                                 r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
                                                 r_pegawai.r_pegawai__id_subcab AS r_pegawai__id_subcab,
-                                                r_pegawai.r_pegawai__subdept AS r_pegawai__subdept,
+                                                r_pegawai.r_pegawai__bpjs_kesehatan AS r_pegawai__bpjs_kesehatan,
                                                 r_pegawai.r_pegawai__jabatan AS r_pegawai__jabatan,
                                                 r_pegawai.r_pegawai__st_pegawai AS r_pegawai__st_pegawai,
                                                 DATE_FORMAT(r_pegawai.r_pegawai__pend_tgl_lulus,'%d-%m-%Y') AS r_pegawai__pend_tgl_lulus,

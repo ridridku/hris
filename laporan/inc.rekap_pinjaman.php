@@ -292,7 +292,7 @@ td
  width:290pt'>
  
  <tr height=27 style='height:20.25pt'>
-  <td colspan=11 height=27 class=xl33 style='height:20.25pt;
+  <td colspan=15 height=27 class=xl33 style='height:20.25pt;
   width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
    margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
    visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
@@ -308,34 +308,38 @@ td
   </v:shape><![endif]-->REKAP PINJAMAN  </td>
  </tr>
  <tr height=17 style='height:12.75pt'>
-  <td colspan=11 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+  <td colspan=15 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
  </tr>
  
 EOH;
 
 $content .= "<tr height=21 style='height:15.75pt'>
-  <td colspan=11 height=21 class=xl36 style='height:15.75pt'>CABANG  : ".$nm_perwakilan."</td>
+  <td colspan=15 height=21 class=xl36 style='height:15.75pt'>CABANG  : ".$nm_perwakilan."</td>
  </tr>";
 
 $content .= <<<EOH
- <tr height=18  style='height:13.5pt'>
-  <td colspan=11 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+ <tr height=15  style='height:13.5pt'>
+  <td colspan=15 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
 
  </tr>
  
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
     <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>ID PJM</td>
     <td class=xl27 width=15 style='width:30pt'>NIP</td>
-    <td class=xl27 width=15 style='width:30pt'>NAMA</td>
-    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
-    <td class=xl27 width=100 style='width:30pt'>NO PJM</td>
-    <td class=xl27 width=74 style='width:30pt'>FLAPON</td>
-    <td class=xl27 width=82 style='width:25pt'>TENOR</td>
-    <td class=xl27 width=82 style='width:25pt'>TOTAL SUDAH DIBYAR</td>
-    <td class=xl27 width=82 style='width:25pt'>CICILAN</td>
-    <td class=xl27 width=109 style='width:50pt'>BESAR CICILAN/BULAN </td>
-    <td class=xl27 width=98 style='width:50pt'>STATUS</td> 
-   
+    <td class=xl27 width=20 style='width:30pt'>NAMA</td>
+    <td class=xl27 width=20 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=20 style='width:30pt'>DEPARTEMEn</td>
+    <td class=xl27 width=15 style='width:30pt'>JABATAN</td>
+    <td class=xl27 width=15 style='width:25pt'>JENIS</td>
+    <td class=xl27 width=15 style='width:25pt'>TOTAL PINJAM</td>
+    <td class=xl27 width=15 style='width:25pt'>PEMBAYARAN</td>
+    <td class=xl27 width=15 style='width:50pt'>JML CICILAN</td>
+    <td class=xl27 width=15 style='width:50pt'>CICILAN/BULAN</td> 
+    <td class=xl27 width=15 style='width:50pt'>SISA PINJAMAN</td>
+    <td class=xl27 width=15 style='width:50pt'>CICILAN PEMBAYARAN</td> 
+    <td class=xl27 width=15 style='width:50pt'>STATUS</td> 
+
  </tr>
 EOH;
 
@@ -343,7 +347,7 @@ return $content;
 	
 }
 
-function print_content($cols1,$cols2,$cols3,$cols4,$cols5,$cols6,$cols7,$cols8,$cols9,$cols10,$cols11) {
+function print_content($cols1,$cols2,$cols3,$cols4,$cols5,$cols6,$cols7,$cols8,$cols9,$cols10,$cols11,$cols12,$cols13,$cols14,$cols15) {
 
 $content = " <tr height=18 style='height:13.5pt'>
   <td height=18 class=xl28 align=right style='height:13.5pt'>".$cols1."</td>
@@ -354,10 +358,14 @@ $content = " <tr height=18 style='height:13.5pt'>
   <td class=xl29 align=right>".$cols6."</td>
   <td class=xl29 align=right>".$cols7."</td>
   <td class=xl29 align=right>".$cols8."</td>
-  <td class=xl29 align=right>".$cols9."</td>
-  <td class=xl29 align=right>".$cols10."</td>
-  <td class=xl29 align=right>".$cols11."</td>
-  
+  <td class=xl29 align=right x:num>".$cols9."</td>
+  <td class=xl29 align=right x:num>".$cols10."</td>
+  <td class=xl29 align=right x:num>".$cols11."</td>
+  <td class=xl29 align=right x:num>".$cols12."</td>
+  <td class=xl29 align=right x:num>".$cols13."</td>
+  <td class=xl29 align=right x:num>".$cols14."</td>
+  <td class=xl29 align=right>".$cols15."</td>
+
  </tr>";
 
 return $content;
@@ -369,7 +377,7 @@ function print_footer() {
 $content = <<<EOH
  <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
- <td colspan=11 width=80 clospan= style='width:41pt'></td></tr>
+ <td colspan=15 width=80 clospan= style='width:41pt'></td></tr>
  <![endif]>
 </table>
 

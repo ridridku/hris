@@ -32,17 +32,17 @@ with (theForm){
 			return false; 
 		}
     
-        if (tahun.value == "") 
+        if (periode_awal.value == "") 
 		{ 
-			alert ("Silahkan Pilih tahun !"); 
-			r_pegawai__nama.focus();
+			alert ("Silahkan Isi Awal Aktif !"); 
+			periode_awal.focus();
 			return false; 
 		}
 
-	if (bulan.value == "") 
+	if (periode_akhir.value == "") 
 		{ 
-			alert ("Masukan Bulan !"); 
-			 bulan.focus();
+			alert ("Silahkan Isi Akhir Aktif!"); 
+			 periode_akhir.focus();
 			return false; 
 		}	
                                 

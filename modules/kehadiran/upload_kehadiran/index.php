@@ -53,6 +53,10 @@ $jenis_user  = $_SESSION['SESSION_JNS_USER'];
 $kode_pw_ses  = $_SESSION['SESSION_KODE_CABANG'];
 $smarty->assign ("JENIS_USER_SES", $jenis_user);
 $smarty->assign ("KODE_PW_SES", $kode_pw_ses);
+$periode_awal= $_SESSION['SESSION_AWAL_AKTIF'];
+$periode_akhir= $_SESSION['SESSION_AKHIR_AKTIF'];
+$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$smarty->assign ("PERIODE_AKHIR", $periode_akhir);
 
 #HREF
 $smarty->assign ("HREF_HOME_PATH", $HREF_HOME);
@@ -200,12 +204,66 @@ if ($_GET['search'] == '1')
 	{
  
 		  if($jenis_user=='2'){
-                    $sql  = " SELECT   r_upload__date_created,peg.r_cabang__nama,r_upload__id,r_upload__cabang,r_upload__user,r_upload__filename FROM r_upload_absensi A
-                              INNER JOIN v_pegawai peg ON peg.r_pnpt__id_pegawai=A.r_upload__user WHERE r_cabang__id= '".$kode_pw_ses."'";
+                    $sql  = "SELECT
+                            r_departement.r_dept__ket AS r_dept__ket,
+                            r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
+                            r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+                            r_penempatan.r_pnpt__nip AS r_pnpt__nip,
+                            r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
+                            r_subcabang.r_subcab__id AS r_subcab__id,
+                            r_subcabang.r_subcab__nama AS r_subcab__nama,
+                            r_cabang.r_cabang__id AS r_cabang__id,
+                            r_cabang.r_cabang__nama AS r_cabang__nama,
+                            r_pegawai.r_pegawai__id AS id_pegawai,
+                            r_pegawai.r_pegawai__nama AS r_pegawai__nama,
+                            r_upload_absensi.r_upload__id,
+                            r_upload_absensi.r_upload__cabang,
+                            r_upload_absensi.r_upload__user,
+                            r_upload_absensi.r_upload__filename,
+                              SUBSTRING_INDEX(r_upload_absensi.r_upload__filename,'.',-1) as ext,
+                            r_upload_absensi.r_upload__date_created,
+                            r_upload_absensi.r_upload__date_updated,
+                            r_upload_absensi.r_upload__user_created,
+                            r_upload_absensi.r_upload__user_updated
+                            FROM r_upload_absensi
+                            INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai=r_upload_absensi.r_upload__user
+                            INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id =r_penempatan.r_pnpt__id_pegawai
+                            INNER JOIN r_subcabang ON r_subcabang.r_subcab__id = r_penempatan.r_pnpt__subcab
+                            INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+                            INNER JOIN r_subdepartement ON r_subdepartement.r_subdept__id = r_pnpt__subdept
+                            INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+                            WHERE r_cabang__id= '".$kode_pw_ses."' AND r_pnpt__aktif=1";
 
                             } else {
-                    $sql  = "SELECT  r_upload__date_created,peg.r_cabang__nama,r_upload__id,r_upload__cabang,r_upload__user,r_upload__filename FROM r_upload_absensi A
-                              INNER JOIN v_pegawai peg ON peg.r_pnpt__id_pegawai=A.r_upload__user WHERE 1 = 1   ";	
+                    $sql  = "SELECT
+                            r_departement.r_dept__ket AS r_dept__ket,
+                            r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
+                            r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+                            r_penempatan.r_pnpt__nip AS r_pnpt__nip,
+                            r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
+                            r_subcabang.r_subcab__id AS r_subcab__id,
+                            r_subcabang.r_subcab__nama AS r_subcab__nama,
+                            r_cabang.r_cabang__id AS r_cabang__id,
+                            r_cabang.r_cabang__nama AS r_cabang__nama,
+                            r_pegawai.r_pegawai__id AS id_pegawai,
+                            r_pegawai.r_pegawai__nama AS r_pegawai__nama,
+                            r_upload_absensi.r_upload__id,
+                            r_upload_absensi.r_upload__cabang,
+                            r_upload_absensi.r_upload__user,
+                            r_upload_absensi.r_upload__filename,
+                              SUBSTRING_INDEX(r_upload_absensi.r_upload__filename,'.',-1) as ext,
+                            r_upload_absensi.r_upload__date_created,
+                            r_upload_absensi.r_upload__date_updated,
+                            r_upload_absensi.r_upload__user_created,
+                            r_upload_absensi.r_upload__user_updated
+                            FROM r_upload_absensi
+                            INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai=r_upload_absensi.r_upload__user
+                            INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id =r_penempatan.r_pnpt__id_pegawai
+                            INNER JOIN r_subcabang ON r_subcabang.r_subcab__id = r_penempatan.r_pnpt__subcab
+                            INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+                            INNER JOIN r_subdepartement ON r_subdepartement.r_subdept__id = r_pnpt__subdept
+                            INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+                            WHERE 1 = 1 AND r_pnpt__aktif=1  ";	
 
                             }
 
@@ -261,21 +319,75 @@ else
 
 		if($jenis_user=='2'){
           
-                    $sql = "SELECT  r_upload__date_created,peg.r_cabang__nama,r_upload__id,r_upload__cabang,r_upload__user,r_upload__filename FROM r_upload_absensi A
-                    INNER JOIN v_pegawai peg ON peg.r_pnpt__id_pegawai=A.r_upload__user  WHERE r_cabang__id= '".$kode_pw_ses."'  ";
+                    $sql = "SELECT
+                            r_departement.r_dept__ket AS r_dept__ket,
+                            r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
+                            r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+                            r_penempatan.r_pnpt__nip AS r_pnpt__nip,
+                            r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
+                            r_subcabang.r_subcab__id AS r_subcab__id,
+                            r_subcabang.r_subcab__nama AS r_subcab__nama,
+                            r_cabang.r_cabang__id AS r_cabang__id,
+                            r_cabang.r_cabang__nama AS r_cabang__nama,
+                            r_pegawai.r_pegawai__id AS id_pegawai,
+                            r_pegawai.r_pegawai__nama AS r_pegawai__nama,
+                            r_upload_absensi.r_upload__id,
+                            r_upload_absensi.r_upload__cabang,
+                            r_upload_absensi.r_upload__user,
+                            r_upload_absensi.r_upload__filename,
+                              SUBSTRING_INDEX(r_upload_absensi.r_upload__filename,'.',-1) as ext,
+                            r_upload_absensi.r_upload__date_created,
+                            r_upload_absensi.r_upload__date_updated,
+                            r_upload_absensi.r_upload__user_created,
+                            r_upload_absensi.r_upload__user_updated
+                            FROM r_upload_absensi
+                            INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai=r_upload_absensi.r_upload__user
+                            INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id =r_penempatan.r_pnpt__id_pegawai
+                            INNER JOIN r_subcabang ON r_subcabang.r_subcab__id = r_penempatan.r_pnpt__subcab
+                            INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+                            INNER JOIN r_subdepartement ON r_subdepartement.r_subdept__id = r_pnpt__subdept
+                            INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+                            WHERE r_cabang__id= '".$kode_pw_ses."' AND r_pnpt__aktif=1 ";
                                             
 
                 } else {
-                    $sql  = "SELECT  r_upload__date_created,peg.r_cabang__nama,r_upload__id,r_upload__cabang,r_upload__user,r_upload__filename FROM r_upload_absensi A
-                    INNER JOIN v_pegawai peg ON peg.r_pnpt__id_pegawai=A.r_upload__user AND 1 = 1 ";	
+                    $sql  = "SELECT
+                            r_departement.r_dept__ket AS r_dept__ket,
+                            r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
+                            r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+                            r_penempatan.r_pnpt__nip AS r_pnpt__nip,
+                            r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
+                            r_subcabang.r_subcab__id AS r_subcab__id,
+                            r_subcabang.r_subcab__nama AS r_subcab__nama,
+                            r_cabang.r_cabang__id AS r_cabang__id,
+                            r_cabang.r_cabang__nama AS r_cabang__nama,
+                            r_pegawai.r_pegawai__id AS id_pegawai,
+                            r_pegawai.r_pegawai__nama AS r_pegawai__nama,
+                            r_upload_absensi.r_upload__id,
+                            r_upload_absensi.r_upload__cabang,
+                            r_upload_absensi.r_upload__user,
+                            r_upload_absensi.r_upload__filename,
+                            SUBSTRING_INDEX(r_upload_absensi.r_upload__filename,'.',-1) as ext,
+                            r_upload_absensi.r_upload__date_created,
+                            r_upload_absensi.r_upload__date_updated,
+                            r_upload_absensi.r_upload__user_created,
+                            r_upload_absensi.r_upload__user_updated
+                            FROM r_upload_absensi
+                            INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai=r_upload_absensi.r_upload__user
+                            INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id =r_penempatan.r_pnpt__id_pegawai
+                            INNER JOIN r_subcabang ON r_subcabang.r_subcab__id = r_penempatan.r_pnpt__subcab
+                            INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+                            INNER JOIN r_subdepartement ON r_subdepartement.r_subdept__id = r_pnpt__subdept
+                            INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+                              WHERE 1 = 1 AND r_pnpt__aktif=1 ";	
 
                 }
                                 
                                 if($kode_perwakilan_cari !=''){
-					$sql .= "AND  r_cabang__id= '".$kode_perwakilan_cari."'  ";
+					$sql .= " AND  r_cabang__id= '".$kode_perwakilan_cari."'  ";
 				}
 				if($nama_karyawan_cari !=''){
-					$sql .= "AND  r_pegawai__nama LIKE '%".$nama_karyawan_cari."%' "; 
+					$sql .= " AND  r_pegawai__nama LIKE '%".$nama_karyawan_cari."%' "; 
 				}
 
 				$sql .= " ORDER BY  r_upload__date_created desc  ";
@@ -283,7 +395,7 @@ else
 				if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
 
                                 $numresults=$db->Execute($sql);
-                               //var_dump($sql)or die();
+                       
 				$count = $numresults->RecordCount();
 
 				$pages = $p->findPages($count,$LIMIT); 
@@ -296,15 +408,18 @@ else
 				$row_class = array();
 				$z=0;
 				while ($arr=$recordSet->FetchRow()) {
-					array_push($data_tb, $arr);
-					if ($z%2==0){ 
-						$ROW_CLASSNAME="#CCCCCC"; }
-					else {
-						$ROW_CLASSNAME="#EEEEEE";
-					   }
+                                    array_push($data_tb, $arr);
+                                    
+                                    if ($z%2==0){ 
+                                            $ROW_CLASSNAME="#CCCCCC"; }
+                                    else {
+                                            $ROW_CLASSNAME="#EEEEEE";
+                                       }
+                                           
 					array_push($row_class, $ROW_CLASSNAME);
 					array_push($initSet, $z);
 					$z++;
+                                      
 				}
 
 				$count_view = $start+1;
@@ -315,9 +430,32 @@ else
 
 
 
+//----------- AJAX SUBPENEMPATAN ------------------//
+if ($_GET[get_subpenempatan] == 1)
+{  
+    	$subdep = $_GET[no_subpenempatan];
+           // var_dump($subdep) or die();
+		if($subdep==1){
+                    
 
+                              $input_kab.="<input type='file' NAME='file_xls' id='file_xls'  onchange=checkextensionxls() > <font color=\"#ff0000\">File Harus excel 2003 atau xls</font>";
+					$delimeter   = "-";
+					$option_choice = $input_kab."^/&".$delimeter;
+					echo $option_choice;       
+			}  else {
+                            
+                            
+                              $input_kab.="<input type='file' NAME='file_xls' id='file_dat' onchange=checkextensiondat()> <font color=\"#ff0000\">File Harus  format (.dat) dari mesin Secure</font>";
+					$delimeter   = "-";
+					$option_choice = $input_kab."^/&".$delimeter;
+					echo $option_choice;  
+                            
+                        }
+}
 
+//------------closer AJAX SUBPENEMPATAN----------------------------------------//
 
+$smarty->assign ("TABLE_CAPTION", _CAPTION_TABLE_KELURAHAN);
 $smarty->assign ("TABLE_CAPTION", _CAPTION_TABLE_KELURAHAN);
 $smarty->assign ("TABLE_NAME", _NAMA_TABLE_KELURAHAN);
 $smarty->assign ("FORM_NAME", _FORM);

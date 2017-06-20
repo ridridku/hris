@@ -106,6 +106,61 @@ function hideIt(){
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/tw-sack.js"></SCRIPT>
 
 
+ <link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/jquery.dataTables.min-right.css" type="text/css">
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/fixedColumns.dataTables.min.css" type="text/css">
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/buttons.dataTables.min.css" type="text/css">	  
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery-1.12.4.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery.dataTables.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.fixedColumns.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.buttons.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.colVis.min.js"></SCRIPT>
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/style_sorting.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_sorting.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_p.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.flash.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jszip.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/pdfmake.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/vfs_fonts.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.html5.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.print.min.js"></SCRIPT>
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/select.dataTables.min.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.select.min.js"></SCRIPT>
+
+ 
+ 
+<script>
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        scrollY:        "430",
+        scrollX:        true,
+        scrollCollapse: true,
+        info:true,
+       // paging: true,  
+         dom: 'Bfrtip',
+        buttons: ['excel'],
+       language: {search: "Pencarian:",buttons: {colvis: 'Atur Kolom'}},
+        select: {style: 'single'},
+          Sorting: [[ 2, "desc" ]], 
+          pageLength: "30", 
+    // lengthMenu: [ 50, 100, 300, 1000],
+       fixedColumns:   { leftColumns: 3,rightColumns:0 }
+
+        });
+        
+} );
+</script>
+
+<STYLE>
+/* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {width: 1100;margin: 0 auto;}
+    .number_range_filter{width:100px;}
+    
+      div.ColVis {
+        float: centerPage;
+    }
+  </STYLE>
+
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!-- #EndEditable -->
 </HEAD>
@@ -199,20 +254,27 @@ function hideIt(){
                                 <TD>Nama Karyawan<font color="#ff0000">*</font> </TD>
                                 <TD>: 
                                     <INPUT TYPE="text" NAME="r_pegawai__nama" readonly  id="r_pegawai__nama"  size="35" value="<!--{$EDIT_T_ABS__NAMA}-->">
-                                    <INPUT TYPE="text" NAME="r_pnpt__finger_print" readonly id="r_pnpt__finger_print" size="35" value="<!--{$EDIT_T_ABS__FINGERPRINT}-->" >
-                                    <INPUT TYPE="text" NAME="r_pnpt__shift" readonly id="r_pnpt__shift" size="35" value="<!--{$EDIT_T_ABS__ID_SHIFT}-->" >
-                                    <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goPemberikerja()" value=" ... " />
+                                    <INPUT TYPE="hidden" NAME="r_pnpt__finger_print" readonly id="r_pnpt__finger_print" size="35" value="<!--{$EDIT_T_ABS__FINGERPRINT}-->" >
+                                    <INPUT TYPE="hidden" NAME="r_pnpt__shift" readonly id="r_pnpt__shift" size="35" value="<!--{$EDIT_T_ABS__ID_SHIFT}-->" >
+                                    <INPUT TYPE="hidden" NAME="shift_ket" readonly id="shift_ketasdas" size="35" value="<!--{$EDIT_SHIFT_KET}-->" >
+                                    <!--{if $EDIT_VAL==0}-->
+                                    <INPUT TYPE="button"  name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goPemberikerja()" value=" ... " />
+                               <!--{/if}-->
                                 </TD>
                                 
                         </TR>
-                        <TR>
+                         <TR>
+                                <TD> Shift Kerja<font color="#ff0000">*</font> </TD>
+                                 <TD>:<INPUT TYPE="text" NAME="shift_ket" readonly id="shift_ket" size="35" value="<!--{$EDIT_SHIFT_KET}-->" >   </TD>
+                         </TR>
+                         <TR>
 				<TD>Tgl Hari Kerja  <font color="#ff0000">*</font></TD>
                                 <TD>:
                                 <!--{if $EDIT_VAL==0}-->
-                                <input type="text" NAME="t_abs__tgl" value="<!--{$EDIT_T_ABS__TGL}-->">
+                                <input type="text" readonly="" NAME="t_abs__tgl" value="<!--{$smarty.now|date_format:"%Y-%m-%d"}-->">
 							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_abs__tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{else}-->
-								 <input type="text" name="t_abs__tgl" value="<!--{$EDIT_R_PEGAWAI__TGL_MASUK}-->" >
+                                        <input readonly="" type="text" name="t_abs__tgl" value="<!--{$EDIT_T_ABS__TGL|date_format:"%Y-%m-%d"}-->" >
 							 <img src="<!--{$HREF_IMG_PATH}-->/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_abs__tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<!--{/if}-->
                                 
@@ -223,7 +285,7 @@ function hideIt(){
                  
                                
                                 <TR>
-                                    <TD >Jam Masuk Kerja</TD>
+                                    <TD>Jam Masuk Kerja</TD>
                                     <TD>: <input type="time" name="t_abs__jam_masuk" min="9:00" max="18:00" step="1800" value="<!--{$EDIT_T_ABS__JAM_MASUK}-->"/>
                                        
                                 </TR>
@@ -270,27 +332,45 @@ function hideIt(){
                                     </TD>
                                 </TR>
                                 <TR>
-                                <TD >Keterangan Kehadiran</TD>
+                                <TD>Keterangan Kehadiran</TD>
                                 <TD>:
-                                        <select name="t_abs__status" >
-                                            <OPTION value="">[Pilih Keterangan]</OPTION>
-                                             <OPTION value="1" <!--{if $EDIT_T_ABS__STATUS == '1'}--> selected <!--{/if}--> >HADIR</OPTION>
-                                            <OPTION value="2" <!--{if $EDIT_T_ABS__STATUS == '2'}--> selected <!--{/if}--> >SAKIT</OPTION>
-                                            <OPTION value="3" <!--{if $EDIT_T_ABS__STATUS == '3'}--> selected <!--{/if}-->>IZIN</OPTION>
-                                            <OPTION value="4" <!--{if $EDIT_T_ABS__STATUS == '4'}--> selected <!--{/if}-->>ALFA</OPTION>
-                                            <OPTION value="5" <!--{if $EDIT_T_ABS__STATUS == '5'}--> selected <!--{/if}-->>DINAS LUAR KOTA</OPTION>
-                                             <OPTION value="6" <!--{if $EDIT_T_ABS__STATUS == '6'}--> selected <!--{/if}-->>CUTI</OPTION>
-					
-                                        </select>      
+                                <SELECT name="t_abs__status" onchange="pilih_ext(this.value);" >
+                                <OPTION value="">[Pilih Keterangan]</OPTION>
+                                <OPTION value="1" <!--{if $EDIT_T_ABS__STATUS == '1'}--> selected <!--{/if}--> >HADIR</OPTION>
+                                <OPTION value="2" <!--{if $EDIT_T_ABS__STATUS == '2'}--> selected <!--{/if}--> >SAKIT</OPTION>
+                                <OPTION value="3" <!--{if $EDIT_T_ABS__STATUS == '3'}--> selected <!--{/if}-->>IZIN FULL DAY</OPTION>
+                                <OPTION value="4" <!--{if $EDIT_T_ABS__STATUS == '4'}--> selected <!--{/if}-->>ALFA</OPTION>
+                                <OPTION value="5" <!--{if $EDIT_T_ABS__STATUS == '5'}--> selected <!--{/if}-->>DINAS LUAR KOTA</OPTION>
+                                <OPTION value="6" <!--{if $EDIT_T_ABS__STATUS == '6'}--> selected <!--{/if}-->>CUTI</OPTION>
+                                </select>      
                                 </TD>
+                                  </TR>
+                                
+                                <TR><TD>Keterangan Cuti<font color="#ff0000">*</font></TD>
+                                    <TD>: 
+                                       <DIV id="ajax_subpenempatan">
+                                          <SELECT name="jenis_cuti"  >
+                                                 <OPTION value="">[Pilih Keterangan]</OPTION>
+                                                  <OPTION value="3" <!--{if $EDIT_JENIS_CUTI == ''}--> selected <!--{/if}--> > BUKAN CUTI</OPTION>
+                                                 <OPTION value="1" <!--{if $EDIT_JENIS_CUTI == '1'}--> selected <!--{/if}--> >CUTI TAHUNAN</OPTION>
+                                                 <OPTION value="2" <!--{if $EDIT_JENIS_CUTI == '2'}--> selected <!--{/if}--> >CUTI TAHUNAN KHUSUS</OPTION>
+                                                
+                                          </select>      
+                                       </DIV>
+                                      </TD>
                                 </TR>
                                 
+                            
                                 <TR>
-                                    <TD>Catatan</TD> 
+                                    <TD>Catatan / Alasan </TD> 
                                     <TD>:    
-                                       <textarea rows="5" cols="50" NAME="t_abs__catatan"  size="12" ><!--{$EDIT_T_ABS__CATATAN}--></textarea>
+                                    <textarea rows="5" cols="50" NAME="t_abs__catatan"  size="12" ><!--{$EDIT_T_ABS__CATATAN}--></textarea>
                                     </TD>
-                        </TR>
+                                </TR>
+                        
+                               
+                          
+                                   
                                 <INPUT TYPE="hidden" name="t_abs__id" value="<!--{$EDIT_T_ABS__ID}-->"> 
                                 <TR><TD height="40"></TD>
 					<TD>
@@ -355,37 +435,18 @@ function hideIt(){
 								<TD> ID finger </TD>
 								<TD><INPUT TYPE="text" NAME="idfinger_cari" size="30"></TD>
 							</TR>
-                                                        <TR>
-							<TD>Periode</TD>
-							<TD>							
-							<SELECT name="bulan"   > 
-								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <!--{if $BULAN_SES==01}-->selected<!--{/if}-->>Januari</OPTION>
-								<OPTION VALUE="02"<!--{if $BULAN_SES==02}-->selected<!--{/if}-->  >Februari</OPTION>
-								<OPTION VALUE="03"<!--{if $BULAN_SES==03}-->selected<!--{/if}-->  >Maret</OPTION>
-								<OPTION VALUE="04"<!--{if $BULAN_SES==04}-->selected<!--{/if}-->  >April</OPTION>
-								<OPTION VALUE="05"<!--{if $BULAN_SES==05}-->selected<!--{/if}--> >Mei</OPTION>
-								<OPTION VALUE="06"<!--{if $BULAN_SES==06}-->selected<!--{/if}-->  >Juni</OPTION>
-								<OPTION VALUE="07"<!--{if $BULAN_SES==07}-->selected<!--{/if}-->  >Juli</OPTION>
-								<OPTION VALUE="08"<!--{if $BULAN_SES==08}-->selected<!--{/if}-->  >Agustus</OPTION>
-								<OPTION VALUE="09"<!--{if $BULAN_SES==09}-->selected<!--{/if}-->  >September</OPTION>
-								<OPTION VALUE="10"<!--{if $BULAN_SES==10}-->selected<!--{/if}-->  >Oktober</OPTION>
-								<OPTION VALUE="11"<!--{if $BULAN_SES==11}-->selected<!--{/if}-->  >November</OPTION>
-								<OPTION VALUE="12"<!--{if $BULAN_SES==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
-						</SELECT> 
-
-
-							<SELECT name="tahun" > 
-						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
-						<!--{section name=foo start=2010 loop=2021 step=1}-->
- 							  <!--{if ($smarty.section.foo.index)==$TAHUN_SES}-->
-								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
-							  <!--{else}-->
-									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
-							 <!--{/if}--> 
-						<!--{/section}-->
-						</SELECT> 
-						 </TD></TR>
+                                                         <TR>
+								<TD> Status</TD>
+                                                                <TD><SELECT name="status_cari">
+                                                                        <option value="" selected>Pilih Status</OPTION>
+                                                                        <option value="505">Belum Diverifikasi </OPTION>
+                                                                        <option value="1">Izin Ful Day</OPTION>
+                                                                        <option value="2">Sakit</OPTION>
+                                                                        <option value="3">Alfa</OPTION>
+                                                                        <option value="4">Dinas Luar Kota</OPTION>
+                                                                    </SELECT></TD>
+							</TR>
+                                                        
                                                         
                                                         			 
 			<TR><TD></TD>
@@ -410,103 +471,124 @@ function hideIt(){
 		
 		<FORM METHOD=GET ACTION="" NAME="frmList">
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat">Verifikasi Kehadiran HRD</td></tr>
+		<tr><td class="tcat"> Verifikasi Kehadiran HRD</td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" >
-		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0"> Verifikasi Kehadiran HRD</td></tr>
-		<tr><td class="alt2" style="padding:0px;">
-		<table width="100%">
-		<tr>
-                                        						<th class="tdatahead" align="left">NO</TH>
-                                                                                        <th class="tdatahead" align="left">ID FINGER</TH>
-											<th class="tdatahead" align="left" width="10%">NAMA KARYAWAN</TH>
-											<th class="tdatahead" align="left">CABANG</TH>											
-											<th class="tdatahead" align="left" >TGL MASUK</TH>
-                                                                                        <th class="tdatahead" align="left" >JAM MASUK</TH>
-                                                                                        <th class="tdatahead" align="left" >JAM KELUAR</TH>
-                                                                                        <th class="tdatahead" align="left" >EARLY</TH>
-                                                                                        <th class="tdatahead" align="left" >LATELY</TH>
-                                                                                        <th class="tdatahead" align="left" >WORKTIME</TH>
-                                                                                        <th class="tdatahead" align="left" >OVERTIME</TH>
-                                                                                        <th class="tdatahead" align="left" >LESSTIME</TH>
-                                                                                        <th class="tdatahead" align="left" >KETERANGAN</TH>
-											<th class="tdatahead" COLSPAN="2"><!--{$ACTION}--></th>
-			</tr>
-			</thead>
-			<tbody>
-			<!--{section name=x loop=$DATA_TB}-->
-			<tr class='<!--{cycle values="alt,alt3"}-->'>
-											<td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
-											<TD class="tdatacontent"  > <!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
-											<TD class="tdatacontent"  > <!--{$DATA_TB[x].r_cabang__nama}-->  </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_abs__tgl|date_format:" %e %B , %Y"}--> </TD> 
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_abs__jam_masuk}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_abs__jam_keluar}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_abs__early}--> </TD>
-                                                                                       <TD class="tdatacontent"  > 
-                                                                                           <!--{if ($DATA_TB[x].t_abs__lately) >'00:00:00'}-->
-                                                                                           <font color="#ff0000"><!--{$DATA_TB[x].t_abs__lately}--> </font>
-                                                                                           <!--{else}-->
-                                                                                              <!--{$DATA_TB[x].t_abs__lately}-->   
-                                                                                            <!--{/if}-->
-                                                                                       </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_abs__worktime}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_abs__overtime}--> </TD>
-                                                                                        <TD class="tdatacontent"  > <!--{$DATA_TB[x].t_abs__lesstime}--> </TD>
-                                                                                         <TD class="tdatacontent"  > 
-                                            <!--{if ($DATA_TB[x].t_abs__status) ==1}-->
-                                                     <font color="#green">Hadir</font> 
-                                            <!--{elseif ($DATA_TB[x].t_abs__status) ==2}-->
-                                                      <font color="#ff0000">Sakit</font>
-                                            <!--{elseif ($DATA_TB[x].t_abs__status) ==3}-->  
-                                                       <font color="ff0000">Izin</font>
-                                            <!--{elseif ($DATA_TB[x].t_abs__status) ==4}-->  
-                                                      <font color="#ff0000">Alfa</font> 
-                                            <!--{elseif ($DATA_TB[x].t_abs__status) ==5}-->  
-                                                  <font color="#ff0000">Dinas Luar Kota</font>   
-                                                    <!--{else ($DATA_TB[x].t_abs__status) =='6'}-->  
-                                                     <font color="#ff0000">Cuti</font>   
-                                            <!--{/if}-->  
-                                          
-                                          
-                                         
-
-                                                                                         </TD>
-                                                                                       <TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].t_abs__id}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
-											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/delete.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$DELETE}-->" onclick="return checkDelete('engine.php?op=2&id=<!--{$DATA_TB[x].t_abs__id}--> &mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
-										</TR>
-										<!--{sectionelse}-->
-										<TR>
-											<TD class="tdatacontent" COLSPAN="14" align="center">Maaf, Data masih kosong</TD>
-										</TR>
-			<!--{/section}-->
-			</tbody>
+		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0">Daftar Hadir Periode aktif  Mulai : <!--{$PERIODE_AWAL|date_format:"%d-%B-%Y"}--> s/d <!--{$PERIODE_AKHIR|date_format:"%d-%B-%Y"}--></td></tr>
+		<tr><td class="alt2" style="padding:0px;"></td></tr>
 		</table>
+                <table id="example" class="display" cellpadding="6" cellspacing="6" width="100%">
+                 <thead class="tdatahead">
+            <tr>
+                 <th  align="left">NO</TH>
+                            <th  align="left">ID FINGER</TH>
+                            <th  align="left" width="10%">NAMA KARYAWAN</TH>
+                            <th  align="left">CABANG</TH>											
+                            <th  align="left" >TGL MASUK</TH>
+                            <th  align="left" >RULE JAM MASUK</TH>
+                            <th  align="left" >RULE KELUAR</TH>
+                            <th  align="left" >JAM MASUK</TH>
+                            <th  align="left" >JAM KELUAR</TH>
+                            
+                            <th  align="left" >EARLY</TH>
+                            <th  align="left" >LATELY</TH>
+                            <th  align="left" >WORKTIME</TH>
+                            <th  align="left" >OVERTIME</TH>
+                            <th  align="left" >LESSTIME</TH>
+                            <th  align="left" >KETERANGAN</TH>
+                            <th ><!--{$ACTION}--></th>  
+                            
+            </tr>
+        </thead>
+       <tbody class="tdatacontent">
+          <!--{section name=x loop=$DATA_TB}--> 
+            <tr>
+            <TD width="17" > <!--{$smarty.section.x.index+1}-->.</TD>
+            <TD> <!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
+            <TD> <!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
+            <TD> <!--{$DATA_TB[x].r_cabang__nama}-->  </TD>
+            <TD> <!--{if ($DATA_TB[x].t_abs__worktime) !=''}--><!--{$DATA_TB[x].t_abs__tgl|date_format:"%d-%m-%Y"}--> 
+                <!--{else}-->
+                <!--{$DATA_TB[x].t_abs__tgl}--> 
+                <!--{/if}-->
+            </TD> 
+            <TD> <!--{$DATA_TB[x].ketentuan_jam_masuk}--> </TD>
+            <TD> <!--{$DATA_TB[x].ketentuan_jam_keluar}--> </TD>
+            <TD> <!--{$DATA_TB[x].t_abs__jam_masuk}--> </TD>
+            <TD> <!--{$DATA_TB[x].t_abs__jam_keluar}--> </TD>
+            <TD> <!--{$DATA_TB[x].t_abs__early}--> </TD>
+            <TD > 
+   <!--{if ($DATA_TB[x].t_abs__lately) >'00:00:00'}-->
+   <font color="#ff0000"><!--{$DATA_TB[x].t_abs__lately}--> </font>
+   <!--{else}-->
+      <!--{$DATA_TB[x].t_abs__lately}-->   
+    <!--{/if}-->
+</TD>
+<TD >
+<!--{if ($DATA_TB[x].t_abs__worktime) <'08:00:00'}-->
+        <font color="#ff0000"><!--{$DATA_TB[x].t_abs__worktime}--> </font>
+<!--{elseif ($DATA_TB[x].t_abs__worktime) >'08:00:00'}-->
+          <font color="#072ff9"><!--{$DATA_TB[x].t_abs__worktime}--> </font>
+<!--{else}-->
+            <!--{$DATA_TB[x].t_abs__worktime}--> 
+    <!--{/if}-->
+   </TD>
+    <TD >
+    <!--{if ($DATA_TB[x].t_abs__overtime) >'00:00:00'}-->
+        <font color="#072ff9"><!--{$DATA_TB[x].t_abs__overtime}--> </font>
+   <!--{else}-->
+            <!--{$DATA_TB[x].t_abs__overtime}--> 
+    <!--{/if}-->
+    </TD>
+     <TD >
+         <!--{if ($DATA_TB[x].t_abs__lesstime) >'00:00:00'}-->
+        <font color="#ff0000"><!--{$DATA_TB[x].t_abs__lesstime}--> </font>
+   <!--{else}-->
+            <!--{$DATA_TB[x].t_abs__lesstime}--> 
+    <!--{/if}-->
+
+
+  </TD>
+   <TD > 
+<!--{if ($DATA_TB[x].t_abs__status) ==1}-->
+<font color="#088706">Hadir</font> 
+<!--{elseif ($DATA_TB[x].t_abs__status) ==2}-->
+<font color="#072ff9">Sakit</font>
+<!--{elseif ($DATA_TB[x].t_abs__status) ==3}-->  
+<font color="072ff9">Izin Full Day</font>
+<!--{elseif ($DATA_TB[x].t_abs__status) ==4}-->  
+<font color="#072ff9">Alfa</font> 
+<!--{elseif ($DATA_TB[x].t_abs__status) ==5}-->  
+<font color="#072ff9">Dinas Luar Kota</font>   
+<!--{elseif ($DATA_TB[x].t_abs__status) =='6'}-->  
+<font color="#072ff9">Cuti</font>   
+<!--{else}-->  
+<font color="#ff0000">Belum Terverifikasi</font>   
+<!--{/if}-->  
+ </TD>
+        <TD colspan="2">
+            <IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].t_abs__id}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink">
+        &nbsp&nbsp&nbsp&nbsp
+            <IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/delete.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$DELETE}-->" onclick="return checkDelete('engine.php?op=2&id=<!--{$DATA_TB[x].t_abs__id}--> &mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink">
+        </TD> 
+            </TR>
+            <!--{sectionelse}-->
+            <TR>
+            <TD  COLSPAN="16" align="center">Maaf, Data masih kosong</TD>
+            </TR>
+<!--{/section}-->
+        </tbody>
+                </table>
 <div id="panel-footer">
     <!--halaman -->
- <table width="100%">
-                    <tr class="text-regular">
-                    <td width="20">Tampilkan</td>
-                    <td width="35"><INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
-                    <INPUT TYPE="hidden" name="idfinger_cari" value="<!--{$ID_FINGER_CARI}-->">
-                    <INPUT TYPE="hidden" name="nama_karyawan_cari" value="<!--{$NAMA_KARYAWAN_CARI}-->">
-               
-                                    <SELECT NAME="limit" onchange="this.form.page.value='1'; this.form.submit();" class="text-paging">
-                                    <!--{section name=x loop=$LISTVAL}-->
-                                    <OPTION VALUE = "<!--{$LISTVAL[x]}-->" <!--{if $LISTVAL[x]==$LIMIT}--> SELECTED <!--{/if}-->> <!--{$LISTVAL[x]}--> </OPTION>
-                                    <!--{/section}-->
-                                    </SELECT></td>
-                    <td>Baris : <!--{$COUNT_VIEW}--> - <!--{$COUNT_ALL}--> Dari <!--{$COUNT}--></td>
-                    <td align="right"><!--{$NEXT_PREV}--></td>
-                    </tr>
-                    </table>
+
     <!--halaman -->
 </div>
-		</td></tr>
-		</table>
+		
+                    
 		
 		</form>
+                   
 
 	<div id="div-bg-note-trans"><img src="<!--{$HREF_IMG_PATH}-->/layout/note.png"></div>
 

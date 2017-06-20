@@ -26,6 +26,8 @@ define("_FORM", "Form Tambah/Ubah Data");
 #SYSTEM BUTTON
 define("_SUBMIT", "Simpan");
 define("_APPROVE","Approve");
+define("_POSTING","Posting");
+define("_APPROVE_ALL","Approve All");
 define("_RESET", "Batal");
 define("_LIST_ME", "Tampilkan");
 define("_RECORD_PER_PAGE", "Baris per Halaman");
@@ -39,6 +41,7 @@ define("_EDIT", "Edit");
 define("_DELETE", "Hapus");
 define("_PRINT", "Cetak");
 define("_BTN_NEW", "Data Baru");
+define("_BTN_VERIFIKASI","Verifikasi All");
 define("_BTN_KIRIM_REKAP_HRD", "Kirim Rekap");
 define("_BTN_PROSES", "PROSES");
 

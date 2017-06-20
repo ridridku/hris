@@ -70,10 +70,7 @@ $sql .="WHERE  id= '$_GET[id]' ";
 
 $sqlresult = $db->Execute($sql);
 
-$user_id = base64_decode($_SESSION['UID']);
- $ip_now = $_SERVER['REMOTE_ADDR'];
- $sql2="INSERT INTO tbl_log (url, waktu, module, user_id ) VALUES ('$ip_now',now(),'Hapus data >> master WNI Non TKI','$user_id') ";
- $db->Execute($sql2);
+
 
 }
 
@@ -82,7 +79,10 @@ global $mod_id;
 global $db;
 $user_id = base64_decode($_SESSION['UID']);
 $id_peg = $_SESSION['SESSION_ID_PEG'];
-$today = date("Y-m-d h:i:s");
+
+
+$periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];
+$periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF']; 
 
         $t_abs__id= addslashes($_POST[t_abs__id]);	
         $r_pegawai__nama= addslashes($_POST[r_pegawai__nama]);	
@@ -115,11 +115,11 @@ $today = date("Y-m-d h:i:s");
       
 
 
-		if ($t_abs__fingerprint!=$fingerprint AND $t_abs__tgl !=$tgl_masuk) {
-		 
-				Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+        if ($t_abs__fingerprint!=$fingerprint AND $t_abs__tgl !=$tgl_masuk) {
 
-		} else { 
+                        Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+
+        } else { 
 
                     
 			$sql_edit  ="  UPDATE t_absensi set ";
@@ -136,7 +136,7 @@ $today = date("Y-m-d h:i:s");
                         $sql_edit .=" t_abs__worktime = '$_POST[t_abs__worktime]', ";
                         $sql_edit .=" t_abs__status = '$_POST[t_abs__status]', ";
                         $sql_edit .=" t_abs__catatan = '$_POST[t_abs__catatan]', ";
-                        $sql_edit .=" t_abs__date_updated =  '$t_abs__date_updated',";
+                        $sql_edit .=" t_abs__date_updated = now(),";
                         $sql_edit .=" t_abs__user_updated = '$id_peg'";
                         $sql_edit .="  WHERE t_abs__id='$_POST[t_abs__id]' ";
                        // var_dump($sql_edit)or die();
@@ -152,45 +152,120 @@ $today = date("Y-m-d h:i:s");
 }
 
 function create_(){
-    
+
         global $mod_id;	
         global $db;
         global $tbl_name;
         global $field_name;
         
         $today = date("Y-m-d");
-     
+          $id_peg = $_SESSION['SESSION_ID_PEG'];
         $kode_cabang = addslashes($_POST[kode_cabang]);
-        $tahun = addslashes($_POST[tahun]);
-        $bulan = addslashes($_POST[bulan]);
+        $periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];
+        $periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF']; 
       
-        $sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_bulan,r_periode__payroll_tahun,r_periode__payroll_status
-                                  FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
-                  
-        $rs_val = $db->Execute($sql_cek_periode);
-        $periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
-        $periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];     
+       
+        
+       $sql_cek_edit="SELECT
+                    A.t_rkp__approval AS cek_approval,
+                    A.t_rkp__no_mutasi AS cek_mutasi
+                    FROM
+                    t_rekap_absensi A
+                    INNER JOIN r_penempatan B ON A.t_rkp__no_mutasi=B.r_pnpt__no_mutasi
+                    INNER JOIN r_subcabang ON B.r_pnpt__subcab=r_subcab__id
+                    INNER JOIN r_cabang ON r_cabang__id=r_subcab__cabang 
+                    WHERE
+                    A.t_rkp__awal >= '$periode_awal' AND A.t_rkp__akhir <= '$periode_akhir' AND r_cabang__id='$kode_cabang' ";
+
+                    $rs_val = $db->Execute($sql_cek_edit);
+                    $cek_approval = $rs_val->fields['cek_approval'];
+                    $cek_mutasi = $rs_val->fields['cek_mutasi'];
+        
+              
+           $sql_cek_rekap="SELECT
+                        A.t_rkp__approval AS approval,
+                        A.t_rkp__no_mutasi AS mutasi,
+                        B.r_pnpt__finger_print AS finger
+                    FROM
+                            t_rekap_absensi A
+                    INNER JOIN r_penempatan B ON A.t_rkp__no_mutasi=B.r_pnpt__no_mutasi
+                    INNER JOIN r_subcabang ON B.r_pnpt__subcab=r_subcab__id
+                    INNER JOIN r_cabang ON r_cabang__id=r_subcab__cabang 
+                    WHERE
+                    A.t_rkp__awal >= '$periode_awal' AND A.t_rkp__akhir <= '$periode_akhir' AND r_cabang__id='$kode_cabang'";
+                        
+             $sqlres = $db->Execute($sql_cek_rekap);
+             $tmp = array();
+             $z=0;
+             while ($data=$sqlres->FetchRow())
+                     {
+
+                         $approval=$data[0];
+                         $mutasi=$data[1];
+                         $finger=$data[2];
+                         array_push($tmp, $mutasi);
+                         
+                     
+                         $sql=" UPDATE t_rekap_absensi AS t1 
+                            INNER JOIN v_pegawai AS t2 
+                            SET t1.t_rkp__approval='3',
+                            t_rkp__date_updated=now(),
+                            t_rkp__user_updated='$id_peg'   
+                            WHERE t1.t_rkp__awal>='$periode_awal'  AND t1.t_rkp__akhir<='$periode_akhir' 
+                            AND t2.r_cabang__id='$kode_cabang' AND t2.r_pnpt__no_mutasi=t1.t_rkp__no_mutasi "
+                            . " AND t1.t_rkp__approval='2' AND t1.t_rkp__no_mutasi='$mutasi' ";
+
+                          $sqlresult = $db->Execute($sql);
+                         
+                     }
+        
+                
+                if ($cek_approval>=4)
+                {
+       
+                  Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+                }else{ 
+                    Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);  
+                    }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
     
   
-     if ($tahun!=$periode_tahun AND $bulan !=$periode_bulan) {
-        
-        
-			Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
-		}else { 
-                    
-                    
-                    $sql=" UPDATE t_rekap_absensi AS t1 
-                            INNER JOIN v_pegawai AS t2 
-                            SET t1.t_rkp__approval='3'
-                            WHERE t1.t_rkp__bln='$bulan'  AND t1.t_rkp__thn='$tahun' 
-                            AND t2.r_cabang__id='$kode_cabang' AND t2.r_pnpt__no_mutasi=t1.t_rkp__no_mutasi";
-                    
-                          $sqlresult = $db->Execute($sql);
-                    
-                      Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);  
-                            
-                       
-                }
+//     if (($awal_aktif< $periode_awal) && ($akhir_aktif > $periode_akhir) OR ($approval>=4))
+//            {
+//        
+//			Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+//		}else { 
+//                    
+//                
+//                    $sql=" UPDATE t_rekap_absensi AS t1 
+//                            INNER JOIN v_pegawai AS t2 
+//                            SET t1.t_rkp__approval='3',
+//                        
+//                            t_rkp__date_updated=now(),
+//                          
+//                            t_rkp__user_updated='$id_peg'   
+//                            WHERE t1.t_rkp__awal>='$periode_awal'  AND t1.t_rkp__akhir<='$periode_akhir' 
+//                            AND t2.r_cabang__id='$kode_cabang' AND t2.r_pnpt__no_mutasi=t1.t_rkp__no_mutasi AND t1.t_rkp__approval='2' ";
+//
+//                          $sqlresult = $db->Execute($sql);
+//                    
+//                            Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);  
+//                            
+//                       
+//                }
                
 
          

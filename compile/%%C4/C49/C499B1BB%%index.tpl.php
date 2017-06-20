@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-20 03:50:33
+<?php /* Smarty version 2.6.18, created on 2017-06-05 08:54:45
          compiled from defaults/modules/data_pegawai/surat_peringatan/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'defaults/modules/data_pegawai/surat_peringatan/index.tpl', 720, false),)), $this); ?>
@@ -419,7 +419,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                         <TR>
 				<TD>Tanggal Terbit SP</TD>
                                 <TD>
-				<input type="text" NAME="sp_tgl"  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl']; ?>
+                                    <input  type="text" NAME="sp_tgl"  readonly="" value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl']; ?>
 ">
 				<img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">	
@@ -428,7 +428,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                         <TR>
 				<TD>Tanggal Berakhir SP</TD>
                                 <TD>
-                                <input type="text" NAME="sp_tgl_exp"  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl_EXP']; ?>
+                                <input type="text" NAME="sp_tgl_exp"  readonly=""  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl_EXP']; ?>
 ">
                                 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl_exp,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
@@ -440,7 +440,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                          <TR>
 				<TD>Tanggal Terbit SP</TD>
                                 <TD>
-				<input type="text" NAME="sp_tgl"  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl']; ?>
+				<input type="text" NAME="sp_tgl"  readonly=""  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl']; ?>
 ">
 				<img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">	
@@ -449,7 +449,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                         <TR>
 				<TD>Tanggal Berakhir SP</TD>
                                 <TD>
-                                 <input type="text" NAME="sp_tgl_exp"  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl_EXP']; ?>
+                                 <input type="text" NAME="sp_tgl_exp"  readonly=""  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl_EXP']; ?>
 ">
                          <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl_exp,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
@@ -461,7 +461,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                          <TR>
 				<TD>Tanggal Terbit SP</TD>
                                 <TD>
-				<input type="text" NAME="sp_tgl"  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl']; ?>
+				<input type="text" NAME="sp_tgl"  readonly=""  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl']; ?>
 ">
 				<img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/calendar.png"   onclick="displayCalendar(document.frmCreate.sp_tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">	
@@ -482,7 +482,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                        <TR>
 				<TD>Tanggal Terbit SP</TD>
                                 <TD>
-				<input type="text" NAME="sp_tgl"  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl']; ?>
+				<input type="text" NAME="sp_tgl"  readonly=""  value="<?php echo $this->_tpl_vars['EDIT_T_SP__TGl']; ?>
 "  readonly="" >
 				</TD>         
 			</TR> 
@@ -550,7 +550,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                     <TR>
                                 <TD>Pelanggaran<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_pelanggaran"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__PELANGGARAN']; ?>
+                                <TD><textarea rows="5" cols="60" NAME="sp_pelanggaran"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__PELANGGARAN']; ?>
 </textarea></TD>
                     </TR>
                        <!--2.PELANGGARAN CABANG TAMBAH -->  
@@ -558,7 +558,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                     <TR>
                                 <TD>Pelanggaran<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_pelanggaran"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__PELANGGARAN']; ?>
+                                <TD><textarea rows="5" cols="60" NAME="sp_pelanggaran"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__PELANGGARAN']; ?>
 </textarea></TD>
                     </TR>
                        <!--3.PELANGGARAN CABANG -->  
@@ -566,7 +566,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                       <TR>
                                 <TD>Pelanggaran<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_pelanggaran"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__PELANGGARAN']; ?>
+                                <TD><textarea rows="5" cols="60" NAME="sp_pelanggaran"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__PELANGGARAN']; ?>
 </textarea></TD>
                     </TR>
                      <!--4.PELANGGARAN CABANG -->  
@@ -574,7 +574,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                      <TR>
                                 <TD>Pelanggaran<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_pelanggaran"  size="12" readonly=""><?php echo $this->_tpl_vars['EDIT_T_SP__PELANGGARAN']; ?>
+                                <TD><textarea rows="5" cols="60" NAME="sp_pelanggaran"  size="12" readonly=""><?php echo $this->_tpl_vars['EDIT_T_SP__PELANGGARAN']; ?>
 </textarea></TD>
                     </TR>
                          <?php endif; ?>  
@@ -586,7 +586,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                     <TR>
                                 <TD>Alasan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_alasan"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__ALASAN']; ?>
+                                <TD><textarea rows="5" cols="60" NAME="sp_alasan"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__ALASAN']; ?>
 </textarea></TD>
                     </TR>
                        <!--2.PELANGGARAN CABANG TAMBAH -->  
@@ -594,7 +594,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                     <TR>
                                 <TD>Alasan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_alasan"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__ALASAN']; ?>
+                                <TD><textarea rows="5" cols="60" NAME="sp_alasan"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__ALASAN']; ?>
 </textarea></TD>
                     </TR>
                       <!--3.PELANGGARAN CABANG -->  
@@ -602,7 +602,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                        <TR>
                                 <TD>Alasan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_alasan"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__ALASAN']; ?>
+                                <TD><textarea rows="5" cols="60" NAME="sp_alasan"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_SP__ALASAN']; ?>
 </textarea></TD>
                     </TR>
                        <!--4.PELANGGARAN CABANG -->  
@@ -610,7 +610,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                        <TR>
                                 <TD>Alasan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="sp_alasan"  size="12" readonly="" ><?php echo $this->_tpl_vars['EDIT_T_SP__ALASAN']; ?>
+                                <TD><textarea rows="5" cols="60" NAME="sp_alasan"  size="12" readonly="" ><?php echo $this->_tpl_vars['EDIT_T_SP__ALASAN']; ?>
 </textarea></TD>
                     </TR> 
                      <?php endif; ?>

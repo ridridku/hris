@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-20 07:11:40
+<?php /* Smarty version 2.6.18, created on 2017-06-05 09:13:20
          compiled from defaults/modules/manfaat/angsuran/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'defaults/modules/manfaat/angsuran/index.tpl', 140, false),array('modifier', 'number_format', 'defaults/modules/manfaat/angsuran/index.tpl', 147, false),array('modifier', 'date_format', 'defaults/modules/manfaat/angsuran/index.tpl', 291, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'defaults/modules/manfaat/angsuran/index.tpl', 144, false),array('modifier', 'number_format', 'defaults/modules/manfaat/angsuran/index.tpl', 152, false),array('modifier', 'date_format', 'defaults/modules/manfaat/angsuran/index.tpl', 164, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -126,7 +126,7 @@ function hideIt(){
 <DIV ID="_menuEntry1_1" style="top:10px;width:100%;display:none;position:absolute;">
 
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat">Master Data Pinjaman</td></tr>
+		<tr><td class="tcat">Posting Angsuran Pinjaman Periode </td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="left">
                  <tr><td class="thead"><img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
@@ -137,18 +137,22 @@ function hideIt(){
                 
                   <TABLE width="100%" border="0" align="left" > 
                         <THEAD>
-											<TH class="tdatahead" align="left">NO</TH>
-                                                                                        <TH class="tdatahead" align="left">NAMA </TH>
-                                                                                        <TH class="tdatahead" align="left">NIP </TH>
-                                                                                        <TH class="tdatahead" align="left">NO PJM </TH>
-                                                                                        <TH class="tdatahead" align="left">CABANG </TH>
-											<TH class="tdatahead" align="left" >JENIS PINJAMAN</TH>                                                                                       
-                                                                                        <TH class="tdatahead" align="left" >PLATFON</TH>
-											<TH class="tdatahead" align="left">TENOR</TH>
-											<TH class="tdatahead" align="left" >CICILAN PER BULAN</TH>         
-                                                                                        
-											<TH class="tdatahead" align="left" width="10%">APROVAL</TH>   
-											
+                                <TH class="tdatahead" align="left">NO</TH>
+                                  <TH class="tdatahead" align="left">NIP </TH>
+                                <TH class="tdatahead" align="left">NAMA </TH>
+                              
+                                <TH class="tdatahead" align="left">ID PJM</TH>
+                                <TH class="tdatahead" align="left">CABANG </TH>
+                                <TH class="tdatahead" align="left" >JENIS PINJAMAN</TH>                                                                                       
+                                <TH class="tdatahead" align="left" >TOTAL PINJAMAN</TH>
+                                <TH class="tdatahead" align="left" >SUDAH BAYAR</TH>
+                                <TH class="tdatahead" align="left">TENOR</TH>
+                                <TH class="tdatahead" align="left" >CICILAN PER BULAN</TH>   
+                                <TH class="tdatahead" align="left" >STATUS</TH> 
+                                 <TH class="tdatahead" align="left" >SISA</TH> 
+
+                                <TH class="tdatahead" align="left" width="10%">APROVAL</TH>   
+
 			
 			</THEAD>
 			<tbody>
@@ -178,28 +182,51 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 ?>
 			<tr class='<?php echo smarty_function_cycle(array('values' => "alt,alt3"), $this);?>
 '>
-											<td class="tdatacontent-first-col"> <?php echo $this->_sections['x']['index']+1; ?>
+                           
+                        <td class="tdatacontent-first-col"> <?php echo $this->_sections['x']['index']+1; ?>
 </TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
+                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
+                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['t_pjm__no_pinjaman']; ?>
+                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['t_pjm__no_pinjaman']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
+                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__jenis']; ?>
+                        <TD class="tdatacontent"><?php if (( $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['t_pjm__jenis'] ) == 1): ?><font color="#1a842d">COP</font><?php else: ?>  <font color="#2785c4">PRIBADI</font><?php endif; ?></TD>
+                        <TD class="tdatacontent"><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['t_pjm__total_pinjam'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
  </TD>
-                                                                                        <TD class="tdatacontent">Rp. <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__platfond'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
+                        <TD class="tdatacontent"><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['jml_sudah_bayar'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
  </TD>
-											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__tenor_bulan']; ?>
-  </TD>
-                                                                                        <TD class="tdatacontent">Rp. <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__cicilan'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
- </TD>                                                                                                                                                                    
-                                                                                              
-                                                                                        <TD class="tdatacontent" align="center"><INPUT type="checkbox" name="bayar[]" id="check_list" value="<?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['t_pjm__no_pinjaman']; ?>
-"></TD>
-                                                                                                                                                                          
+                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['t_pjm__tenor']; ?>
+</TD>
+                        <TD class="tdatacontent"><INPUT onkeyup="formatangka(this)" style="text-align :left;" type="text" name="angsuran[]"  value=" <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['t_pjm__cicilan_perbulan'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 0, ".", ",") : number_format($_tmp, 0, ".", ",")); ?>
+ "></TD>                                                                                                                                                                    
+                        <TD class="tdatacontent"><?php if (( $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['sisa_status'] ) == 0): ?><font color="#2605FF">Lunas</font><?php else: ?><font color="#FA0505">Belum Lunas</font><?php endif; ?></TD> 
+                                
+                        <TD class="tdatacontent"><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['sisa_pembayaran'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 0, ".", ",") : number_format($_tmp, 0, ".", ",")); ?>
+ </TD>
+                        <TD class="tdatacontent" align="center">
+                            <INPUT type="checkbox" name="no_pjm[]" id="check_list" value="<?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['t_pjm__no_pinjaman']; ?>
+">
+                            <INPUT type="hidden" name="jenis[]"  value="<?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['t_pjm__jenis']; ?>
+">
+                            <INPUT type="hidden" name="mutasi[]"  value="<?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['r_pnpt__no_mutasi']; ?>
+">
+                            <INPUT type="hidden" name="id_karyawan[]"  value="<?php echo $this->_tpl_vars['DATA_PJM'][$this->_sections['x']['index']]['r_pegawai__id']; ?>
+">
+                            <INPUT type="hidden" name="tgl_bayar[]"  value="<?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, "%Y-%m-%d") : smarty_modifier_date_format($_tmp, "%Y-%m-%d")); ?>
+">
+                        
+                       
+                        
+                    
+                  
+                        
+                        
+                        
+                        </TD>
+
                                                                                           
 											
 										</TR>
@@ -335,12 +362,12 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 											<TH class="tdatahead" align="left">NO</TH>
                                                                                         <TH class="tdatahead" align="left">NAMA KARYAWAN </TH>
                                                                                         <TH class="tdatahead" align="left" >NIP </TH>
-                                                                                          <TH class="tdatahead" align="left" >NO PINJAMAN </TH>
-											<TH class="tdatahead" align="left" >PLATFON</TH>                                                                                       
-											<TH class="tdatahead" align="left">TENOR</TH>
-											<TH class="tdatahead" align="left" >CICILAN</TH>                                                                                       
-											<TH class="tdatahead" align="left" width="10%">CICILAN KE</TH>    
-                                                                                        <TH class="tdatahead" align="left" width="10%">TGL PEMBAYARAN</TH>  
+                                                                                          <TH class="tdatahead" align="left" >ID PJM </TH>
+											<TH class="tdatahead" align="left" >TOTAL PINJAM</TH>                                                                                       
+											<TH class="tdatahead" align="left">JML CICILAN</TH>
+											<TH class="tdatahead" align="left" >PEMBAYARAN</TH>                                                                                       
+											<TH class="tdatahead" align="left" width="10%">SISA PEMBAYARAN</TH>    
+                                                                                        <TH class="tdatahead" align="left" width="10%">STATUS</TH>  
                                                                                         </THEAD>
                                                                                         <tbody>
                                                                                         <?php unset($this->_sections['x']);
@@ -375,19 +402,17 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 </TD>
                                                                                         <TD class="tdatacontent"  ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent"  ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_ang__nopjm']; ?>
+                                                                                        <TD class="tdatacontent"  ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__no_pinjaman']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__platfond'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
+                                                                                        <TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__total_pinjam'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
  </TD>
-                                                                                       
-											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__tenor_bulan']; ?>
-  </TD>
-                                                                                        <TD class="tdatacontent">Rp. <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__cicilan'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
+											<TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__cicilan_perbulan'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
+ </TD>
+                                                                                        <TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['jml_sudah_bayar'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
  </TD>                                                                                        
-											<TD class="tdatacontent">Cicilan ke- <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_ang__angsuran_ke']; ?>
+											<TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['sisa_pembayaran'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
 </TD>
-                                                                                        <TD class="tdatacontent"><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_ang__tanggal'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%b-%Y") : smarty_modifier_date_format($_tmp, "%d-%b-%Y")); ?>
-</TD>
+                                                                                        <TD class="tdatacontent"><?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['sisa_status'] ) == 0): ?><font color="#2605FF">Lunas</font><?php else: ?><font color="#FA0505">Belum Lunas</font><?php endif; ?></TD>
     
 										</TR>
 										<?php endfor; else: ?>

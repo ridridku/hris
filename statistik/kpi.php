@@ -153,6 +153,7 @@ slantLabels='1' numDivLines='5'  exportAtClient='1' exportHandler='fcExporter1' 
 	r_kpi.r_kpi__finger AS r_kpi__finger,
 	r_kpi.r_kpi__bulan AS r_kpi__bulan,
 	r_kpi.r_kpi__tahun AS r_kpi__tahun,
+        r_kpi.r_kpi__tgl AS r_kpi__tgl,
 	r_kpi.r_kpi__nilai AS r_kpi__nilai,
 	r_kpi.r_kpi__keterangan AS r_kpi__keterangan,
 	r_kpi.r_kpi__approval AS r_kpi__approval,
@@ -177,8 +178,9 @@ INNER JOIN r_subcabang ON r_subcabang.r_subcab__id = r_penempatan.r_pnpt__subcab
 INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
 INNER JOIN r_subdepartement ON r_subdepartement.r_subdept__id = r_pnpt__subdept
 INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-WHERE date(r_kpi__date_updated) BETWEEN '$date1' AND '$date2' AND r_pnpt__no_mutasi = '$mutasi'
-order by r_kpi__id ASC  "; 
+WHERE date(r_kpi__tgl) BETWEEN '$date1' AND '$date2' AND r_pnpt__no_mutasi = '$mutasi'
+order by r_kpi__id ASC  ";
+      
 $qr=mysql_query($sql); 
 	$i=1;
 	while($Data=mysql_fetch_array($qr))

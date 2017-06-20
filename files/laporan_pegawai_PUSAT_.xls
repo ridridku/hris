@@ -287,7 +287,7 @@ td
  width:290pt'>
  
  <tr height=27 style='height:20.25pt'>
-  <td colspan=11 height=27 class=xl33 style='height:20.25pt;
+  <td colspan=14 height=27 class=xl33 style='height:20.25pt;
   width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
    margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
    visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
@@ -300,73 +300,231 @@ td
     <x:Anchor>
      0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
    </x:ClientData>
-  </v:shape><![endif]-->REKAP PINJAMAN  </td>
+  </v:shape><![endif]-->REKAP PEGAWAI </td>
  </tr>
  <tr height=17 style='height:12.75pt'>
-  <td colspan=11 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+  <td colspan=14 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
  </tr>
  <tr height=21 style='height:15.75pt'>
-  <td colspan=11 height=21 class=xl36 style='height:15.75pt'>CABANG  : PUSAT</td>
+  <td colspan=14 height=21 class=xl36 style='height:15.75pt'>CABANG  : PUSAT</td>
  </tr> <tr height=18  style='height:13.5pt'>
-  <td colspan=11 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+  <td colspan=14 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
 
  </tr>
  
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
     <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
     <td class=xl27 width=15 style='width:30pt'>NIP</td>
-    <td class=xl27 width=15 style='width:30pt'>NAMA</td>
+    <td class=xl27 width=15 style='width:30pt'>ID FINGER</td>
+    <td class=xl27 width=100 style='width:30pt'>NAMA PEGAWAI</td>
     <td class=xl27 width=100 style='width:30pt'>CABANG</td>
-    <td class=xl27 width=100 style='width:30pt'>NO PJM</td>
-    <td class=xl27 width=74 style='width:30pt'>FLAPON</td>
-    <td class=xl27 width=82 style='width:25pt'>TENOR</td>
-    <td class=xl27 width=82 style='width:25pt'>TOTAL SUDAH DIBYAR</td>
-    <td class=xl27 width=82 style='width:25pt'>CICILAN</td>
-    <td class=xl27 width=109 style='width:50pt'>BESAR CICILAN/BULAN </td>
-    <td class=xl27 width=98 style='width:50pt'>STATUS</td> 
-   
+    <td class=xl27 width=74 style='width:30pt'>SUB CABANG</td>
+    <td class=xl27 width=82 style='width:25pt'>DEPARTEMEN</td>
+    <td class=xl27 width=82 style='width:25pt'>JABATAN</td>
+    <td class=xl27 width=82 style='width:25pt'>LEVEL JABATAN</td>
+    <td class=xl27 width=109 style='width:50pt'>STATUS PEGAWAI</td>
+    <td class=xl27 width=98 style='width:50pt'>AWAL KONTRAK</td> 
+    <td class=xl27 width=57 style='width:25pt'>AKHIR KONTRAK</td>
+     <td class=xl27 width=57 style='width:25pt'>NO REK</td>
+      <td class=xl27 width=57 style='width:25pt'>SHIFT</td>
  </tr> <tr height=18 style='height:13.5pt'>
   <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
-  <td class=xl29>140130044</td>
-  <td class=xl29 align=right x:num>Erik Rahayu Yustiawan</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right>0004</td>
-  <td class=xl29 align=right>5.000.000,00</td>
-  <td class=xl29 align=right>36</td>
-  <td class=xl29 align=right>1.680.000,00</td>
-  <td class=xl29 align=right>3</td>
-  <td class=xl29 align=right>560000</td>
-  <td class=xl29 align=right>Lunas</td>
-  
+  <td class=xl29>131031432</td>
+  <td class=xl29 align=right x:num>273062</td>
+  <td class=xl29 align=right x:num>Aan Sudarmanto</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >IT Supervisor</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-07-23</td>
+  <td class=xl29 align=right >2017-07-24</td>
+  <td class=xl29 align=right >6760101493186</td>
+  <td class=xl29 align=right >Cabang Reguler ||  08:00 s/d 17:00</td>
  </tr> <tr height=18 style='height:13.5pt'>
   <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
-  <td class=xl29>100130048</td>
-  <td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right>0001</td>
-  <td class=xl29 align=right>10.000.000,00</td>
-  <td class=xl29 align=right>24</td>
-  <td class=xl29 align=right>4.750.000,00</td>
-  <td class=xl29 align=right>5</td>
-  <td class=xl29 align=right>950000</td>
-  <td class=xl29 align=right>Belum Lunas</td>
-  
+  <td class=xl29>080120017</td>
+  <td class=xl29 align=right x:num>275001</td>
+  <td class=xl29 align=right x:num>Barid Sujatmiko</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Regional IT</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >TETAP</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703029817500</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>120122199</td>
+  <td class=xl29 align=right x:num>11111</td>
+  <td class=xl29 align=right x:num>Dian Pardiana</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >IT Manager</td>
+  <td class=xl29 align=right >Middle Manager</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2017-03-23</td>
+  <td class=xl29 align=right >2017-03-16</td>
+  <td class=xl29 align=right >701867172400</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>140120041</td>
+  <td class=xl29 align=right x:num>005009</td>
+  <td class=xl29 align=right x:num>Erik Rahayu Yustiawan</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Technical Support & Network Engineer</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701867672900</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>100120044</td>
+  <td class=xl29 align=right x:num>325001</td>
+  <td class=xl29 align=right x:num>Galih Humam Alhanif</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Regional IT</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >1899-12-31</td>
+  <td class=xl29 align=right >1899-12-31</td>
+  <td class=xl29 align=right >700774603800</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>080120053</td>
+  <td class=xl29 align=right x:num>005001</td>
+  <td class=xl29 align=right x:num>Heru Permana Saputra</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >ERP System Help Desk</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >TETAP</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701855800700</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>160120063</td>
+  <td class=xl29 align=right x:num>005017</td>
+  <td class=xl29 align=right x:num>Kristian Maulana</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Desktop App Developer</td>
+  <td class=xl29 align=right >Middle Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-05-30</td>
+  <td class=xl29 align=right >2017-11-30</td>
+  <td class=xl29 align=right >703265314400</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>160120069</td>
+  <td class=xl29 align=right x:num>005019</td>
+  <td class=xl29 align=right x:num>Mochamad Taufik Rida</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Web App Developer</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 1</td>
+  <td class=xl29 align=right >2016-08-30</td>
+  <td class=xl29 align=right >2018-02-28</td>
+  <td class=xl29 align=right >703323607000</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>120120074</td>
+  <td class=xl29 align=right x:num>301387</td>
+  <td class=xl29 align=right x:num>Reggy gusniantri</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >SDS Regional</td>
+  <td class=xl29 align=right >Coordinator</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-12-12</td>
+  <td class=xl29 align=right >2016-12-12</td>
+  <td class=xl29 align=right >7150100200186</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>130120082</td>
+  <td class=xl29 align=right x:num>001032</td>
+  <td class=xl29 align=right x:num>Setiawan Wibawa</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >SDS Coordinator</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 2</td>
+  <td class=xl29 align=right >2015-12-21</td>
+  <td class=xl29 align=right >2017-06-21</td>
+  <td class=xl29 align=right >702508456400</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>160120086</td>
+  <td class=xl29 align=right x:num>005016</td>
+  <td class=xl29 align=right x:num>Soni Yora</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >IT Manager</td>
+  <td class=xl29 align=right >Middle Manager</td>
+  <td class=xl29 align=right >TETAP</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >703136776200</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>120120096</td>
+  <td class=xl29 align=right x:num>335001</td>
+  <td class=xl29 align=right x:num>Yosep Bahtiar</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right x:num>IT</td>
+  <td class=xl29 align=right >Regional IT</td>
+  <td class=xl29 align=right >Senior Supervisor</td>
+  <td class=xl29 align=right >PKWT 3</td>
+  <td class=xl29 align=right >2016-07-15</td>
+  <td class=xl29 align=right >2017-07-15</td>
+  <td class=xl29 align=right >701867166700</td>
+  <td class=xl29 align=right >Pusat Reguler ||   08:00 s/d 17:00</td>
  </tr> <tr height=18 style='height:13.5pt'>
   <td height=18 class=xl28 align=right style='height:13.5pt'></td>
   <td class=xl29></td>
   <td class=xl29 align=right x:num></td>
   <td class=xl29 align=right x:num></td>
-  <td class=xl29 align=right></td>
-  <td class=xl29 align=right></td>
-  <td class=xl29 align=right></td>
-  <td class=xl29 align=right></td>
-  <td class=xl29 align=right></td>
-  <td class=xl29 align=right></td>
-  <td class=xl29 align=right>JML KARYAWAN : 2</td>
-  
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right ></td>
+  <td class=xl29 align=right >JML KARYAWAN : 12</td>
  </tr> <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
- <td colspan=11 width=80 clospan= style='width:41pt'></td></tr>
+ <td colspan=14 width=80 clospan= style='width:41pt'></td></tr>
  <![endif]>
 </table>
 

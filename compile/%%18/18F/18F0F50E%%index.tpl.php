@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-24 06:59:39
+<?php /* Smarty version 2.6.18, created on 2017-06-07 09:37:34
          compiled from defaults/modules/master/shift/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'defaults/modules/master/shift/index.tpl', 236, false),)), $this); ?>

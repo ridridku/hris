@@ -19,38 +19,33 @@ function check(str_msg, str_location){
 	}
  }
 
+function formatangka(objek) {
+   a = objek.value;
+   b = a.replace(/[^\d]/g,"");
+   c = "";
+   panjang = b.length;
+   j = 0;
+   for (i = panjang; i > 0; i--) {
+     j = j + 1;
+     if (((j % 3) == 1) && (j != 1)) {
+       c = b.substr(i-1,1) + "," + c;
+     } else {
+       c = b.substr(i-1,1) + c;
+     }
+   }
+   objek.value = c;
+}
+
 
 var err = 0;
 var err_ = 0;
 
 function checkFrm(theForm){
 with (theForm){
-	 if (kode_cabang.value == "") 
-		{ 
-			alert ("Silahkan Pilih Cabang !"); 
-			kode_cabang.focus();
-			return false; 
-		}
-    
-        if (tahun.value == "") 
-		{ 
-			alert ("Silahkan Pilih tahun !"); 
-			r_pegawai__nama.focus();
-			return false; 
-		}
 
-	if (bulan.value == "") 
-		{ 
-			alert ("Masukan Bulan !"); 
-			 bulan.focus();
-			return false; 
-		}	
-                                
-	else
-		{
 			submit();
 			return true;
-		}
+	
 }
 	
 	

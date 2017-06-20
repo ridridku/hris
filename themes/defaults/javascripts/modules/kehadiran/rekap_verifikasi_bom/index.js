@@ -19,38 +19,33 @@ function check(str_msg, str_location){
 	}
  }
 
+function formatangka(objek) {
+   a = objek.value;
+   b = a.replace(/[^\d]/g,"");
+   c = "";
+   panjang = b.length;
+   j = 0;
+   for (i = panjang; i > 0; i--) {
+     j = j + 1;
+     if (((j % 3) == 1) && (j != 1)) {
+       c = b.substr(i-1,1) + "," + c;
+     } else {
+       c = b.substr(i-1,1) + c;
+     }
+   }
+   objek.value = c;
+}
+
 
 var err = 0;
 var err_ = 0;
 
 function checkFrm(theForm){
 with (theForm){
-	 if (kode_cabang.value == "") 
-		{ 
-			alert ("Silahkan Pilih Cabang !"); 
-			kode_cabang.focus();
-			return false; 
-		}
-    
-        if (tahun.value == "") 
-		{ 
-			alert ("Silahkan Pilih tahun !"); 
-			r_pegawai__nama.focus();
-			return false; 
-		}
 
-	if (bulan.value == "") 
-		{ 
-			alert ("Masukan Bulan !"); 
-			 bulan.focus();
-			return false; 
-		}	
-                                
-	else
-		{
 			submit();
 			return true;
-		}
+	
 }
 	
 	
@@ -92,95 +87,27 @@ with(theForm){
 	doNavigateContentOver('index.php?mod_id=<?=$_GET[mod_id];?>','mainFrame');
 }
 
-function cari_kab(prop_id)
+//----------------------- AJAX KTP-----------------------------//
+function cari_subcab(subcab_id)
 {
-//alert(prop_id);
-if (prop_id != '') {
-	http.open('get', 'index.php?get_prop=1&no_prop='+prop_id);
-	http.onreadystatechange = handlechoice_kab; 
+
+if (subcab_id != '') {
+	http.open('get','index.php?get_subcab=1&no_subcab='+subcab_id);
+        //http.open('get','index.php?get_prop_ktp=1&no_prop_ktp='+prop_id_ktp);
+	http.onreadystatechange = handlechoice_kab_ktp; 
 	http.send(null);
 	} 
 }
 
-function handlechoice_kab(){
+function handlechoice_kab_ktp(){
 if(http.readyState == 4)
 	{ 
 		var response = http.responseText;
-		 var a = response.split('^/&');
-		document.getElementById('ajax_kabupaten').innerHTML = a[0];
-		//frmCreate.nama_lengkap.focus();
+		var a = response.split('^/&');
+		document.getElementById('ajax_subcabang').innerHTML = a[0];
+		
     }
 }
-
-function cari_kec(prop_id,kab_id)
-{
-//alert(prop_id+'  -- '+kab_id);
-if (prop_id != '') {
-	http.open('get', 'index.php?get_kec=1&no_prop='+prop_id+'&no_kab='+kab_id);
-	http.onreadystatechange = handlechoice_kec; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_kec(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		 var a = response.split('^/&');
-		document.getElementById('ajax_kecamatan').innerHTML = a[0];
-		//frmCreate.nama_lengkap.focus();
-    }
-}
-
-function cari_kec2(prop_id,kab_id,kec_id)
-{
-//alert(prop_id+'  -- '+kab_id);
-if (prop_id != '') {
-	http.open('get', 'index.php?get_kec=1&no_prop='+prop_id+'&no_kab='+kab_id+'&no_kec='+kec_id);
-	http.onreadystatechange = handlechoice_kec2; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_kec2(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		 var a = response.split('^/&');
-		document.getElementById('ajax_kecamatan2').innerHTML = a[0];
-		//frmCreate.nama_lengkap.focus();
-    }
-}
-
-//-->
-
-
-function cari_jenis(prop_id)
-{
-//alert(prop_id);
-if (prop_id != '') {
-	http.open('get', 'index.php?get_jenis=1&no_prop='+prop_id);
-	http.onreadystatechange = handlechoice_jenis; 
-	http.send(null);
-	} 
-}
-
-function handlechoice_jenis(){
-if(http.readyState == 4)
-	{ 
-		var response = http.responseText;
-		 var a = response.split('^/&');
-		document.getElementById('ajax_sektor').innerHTML = a[0];
-		document.getElementById('ajax_jenis_wni').innerHTML = a[1];
-		//frmCreate.nama_lengkap.focus();
-    }
-}
-function goPemberikerja() {
-    
-			
-			kode_cabang= document.frmCreate.kode_cabang.value;
-			window.open('../../../function/rekap_verifikasi_hrd.php?kode_cabang='+kode_cabang+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
- 			}
 
 
 </SCRIPT>

@@ -41,7 +41,7 @@ function hideIt(){
 
 <div style="left:10;top:10;float:left;position:absolute;">
 <a class="button" href="#" onclick="this.blur();showLevel('_menuEdit_',1,1);"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/search.png" align="absmiddle"> Pencarian Data</span></a>
-<!--{if $SEARCH_YEAR<>""}-->
+<!--{if $PERIODE_AWAL <> "" AND $PERIODE_AKHIR <> ""}-->
 <a class="button" href="#" onClick = "window.open('<!--{$FILES}-->');"><span><img src="<!--{$HREF_IMG_PATH}-->/icon/print.gif" align="absmiddle"> &nbsp;Cetak</span></a>
 <!--{/if}-->
 </div>
@@ -155,35 +155,82 @@ function hideIt(){
                                                                 </TD>
 							</TR>
                                                    <TR>
-							<TD>Periode</TD>
-							<TD>							
-							<SELECT name="bulan"   > 
-								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <!--{if $BULAN_SES==01}-->selected<!--{/if}-->>Januari</OPTION>
-								<OPTION VALUE="02"<!--{if $BULAN_SES==02}-->selected<!--{/if}-->  >Februari</OPTION>
-								<OPTION VALUE="03"<!--{if $BULAN_SES==03}-->selected<!--{/if}-->  >Maret</OPTION>
-								<OPTION VALUE="04"<!--{if $BULAN_SES==04}-->selected<!--{/if}-->  >April</OPTION>
-								<OPTION VALUE="05"<!--{if $BULAN_SES==05}-->selected<!--{/if}--> >Mei</OPTION>
-								<OPTION VALUE="06"<!--{if $BULAN_SES==06}-->selected<!--{/if}-->  >Juni</OPTION>
-								<OPTION VALUE="07"<!--{if $BULAN_SES==07}-->selected<!--{/if}-->  >Juli</OPTION>
-								<OPTION VALUE="08"<!--{if $BULAN_SES==08}-->selected<!--{/if}-->  >Agustus</OPTION>
-								<OPTION VALUE="09"<!--{if $BULAN_SES==09}-->selected<!--{/if}-->  >September</OPTION>
-								<OPTION VALUE="10"<!--{if $BULAN_SES==10}-->selected<!--{/if}-->  >Oktober</OPTION>
-								<OPTION VALUE="11"<!--{if $BULAN_SES==11}-->selected<!--{/if}-->  >November</OPTION>
-								<OPTION VALUE="12"<!--{if $BULAN_SES==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+							<TD>Periode Awal</TD>
+							<TD>
+                                                        <SELECT NAME="tgl1" > 
+                                                        <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
+                                                        <!--{section name=foo start=1 loop=31 step=1}-->
+                                                                  <!--{if ($smarty.section.foo.index)==$DAY1}-->
+                                                                         <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+                                                                  <!--{else}-->
+                                                                                 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+                                                                 <!--{/if}--> 
+                                                        <!--{/section}-->
                                                         </SELECT> 
-
-
-							<SELECT name="tahun" > 
+							<SELECT name="bulan1"> 
+								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
+                                                                <OPTION value="01"<!--{if $MONTH1==1}-->selected<!--{/if}-->>Januari</OPTION>
+								<OPTION VALUE="02"<!--{if $MONTH1==2}-->selected<!--{/if}-->  >Februari</OPTION>
+								<OPTION VALUE="03"<!--{if $MONTH1==3}-->selected<!--{/if}-->  >Maret</OPTION>
+								<OPTION VALUE="04"<!--{if $MONTH1==4}-->selected<!--{/if}-->  >April</OPTION>
+								<OPTION VALUE="05"<!--{if $MONTH1==5}-->selected<!--{/if}--> >Mei</OPTION>
+								<OPTION VALUE="06"<!--{if $MONTH1==6}-->selected<!--{/if}-->  >Juni</OPTION>
+								<OPTION VALUE="07"<!--{if $MONTH1==7}-->selected<!--{/if}-->  >Juli</OPTION>
+								<OPTION VALUE="08"<!--{if $MONTH1==8}-->selected<!--{/if}-->  >Agustus</OPTION>
+								<OPTION VALUE="09"<!--{if $MONTH1==9}-->selected<!--{/if}-->  >September</OPTION>
+								<OPTION VALUE="10"<!--{if $MONTH1==10}-->selected<!--{/if}-->  >Oktober</OPTION>
+								<OPTION VALUE="11"<!--{if $MONTH1==11}-->selected<!--{/if}-->  >November</OPTION>
+								<OPTION VALUE="12"<!--{if $MONTH1==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+                                                        </SELECT> 
+						<SELECT NAME="tahun1" > 
 						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
 						<!--{section name=foo start=2010 loop=2021 step=1}-->
- 							  <!--{if ($smarty.section.foo.index)==$TAHUN_SES}-->
+ 							  <!--{if ($smarty.section.foo.index)==$YEAR1}-->
 								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
 							  <!--{else}-->
 									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
 							 <!--{/if}--> 
 						<!--{/section}-->
-						</SELECT> 
+						</SELECT>                                                 
+						 </TD></TR>    
+                                         <TR>
+							<TD>Periode Akhir</TD>
+							<TD>
+                                                        <SELECT NAME="tgl2" > 
+                                                        <OPTION VALUE="" selected>[Pilih Tgl]</OPTION>
+                                                        <!--{section name=foo start=1 loop=31 step=1}-->
+                                                                  <!--{if ($smarty.section.foo.index)==$DAY2}-->
+                                                                         <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+                                                                  <!--{else}-->
+                                                                                 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+                                                                 <!--{/if}--> 
+                                                        <!--{/section}-->
+                                                        </SELECT> 
+							<SELECT name="bulan2"> 
+								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
+                                                                <OPTION value="01"<!--{if $MONTH2==1}-->selected<!--{/if}-->>Januari</OPTION>
+								<OPTION VALUE="02"<!--{if $MONTH2==2}-->selected<!--{/if}-->  >Februari</OPTION>
+								<OPTION VALUE="03"<!--{if $MONTH2==3}-->selected<!--{/if}-->  >Maret</OPTION>
+								<OPTION VALUE="04"<!--{if $MONTH2==4}-->selected<!--{/if}-->  >April</OPTION>
+								<OPTION VALUE="05"<!--{if $MONTH2==5}-->selected<!--{/if}--> >Mei</OPTION>
+								<OPTION VALUE="06"<!--{if $MONTH2==6}-->selected<!--{/if}-->  >Juni</OPTION>
+								<OPTION VALUE="07"<!--{if $MONTH2==7}-->selected<!--{/if}-->  >Juli</OPTION>
+								<OPTION VALUE="08"<!--{if $MONTH2==8}-->selected<!--{/if}-->  >Agustus</OPTION>
+								<OPTION VALUE="09"<!--{if $MONTH2==9}-->selected<!--{/if}-->  >September</OPTION>
+								<OPTION VALUE="10"<!--{if $MONTH2==10}-->selected<!--{/if}-->  >Oktober</OPTION>
+								<OPTION VALUE="11"<!--{if $MONTH2==11}-->selected<!--{/if}-->  >November</OPTION>
+								<OPTION VALUE="12"<!--{if $MONTH2==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+                                                        </SELECT> 
+						<SELECT NAME="tahun2" > 
+						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
+						<!--{section name=foo start=2010 loop=2021 step=1}-->
+ 							  <!--{if ($smarty.section.foo.index)==$YEAR2}-->
+								 <option value="<!--{$smarty.section.foo.index}-->"  selected><!--{$smarty.section.foo.index}--></option>
+							  <!--{else}-->
+									 <option value="<!--{$smarty.section.foo.index}-->"   ><!--{$smarty.section.foo.index}--></option>
+							 <!--{/if}--> 
+						<!--{/section}-->
+						</SELECT>                                                 
 						 </TD></TR>
 
 							<TR>
@@ -228,30 +275,20 @@ function hideIt(){
 		<table width="100%" >
 
 				
-									<TR>
-									<TD COLSPAN="2">
-											<table width="100%" class="tbheader" border=0>	
-				<!--{if ($NM_PERWAKILAN !='') }-->
-											<tr><td class="tdatacontent"  width="100" >CABANG</td><td width="5"> : </td><td colspan="2"><!--{$NM_PERWAKILAN}--> &nbsp;</td></tr>
-				<!--{/if}-->
+		<TR>
+		<TD COLSPAN="2">
+		<table width="100%" class="tbheader" border=0>	
+		<!--{if ($NM_PERWAKILAN !='') }-->
+		<tr><td class="tdatacontent"  width="100" >CABANG</td><td width="5"> : </td><td colspan="2"><!--{$NM_PERWAKILAN}--> &nbsp;</td></tr>
+		<!--{else}-->  
+                <tr><td class="tdatacontent"  width="100" >CABANG</td><td width="5"> : </td><td colspan="2">ALL CABANG</td></tr>
+		<!--{/if}-->
 
-				<!--{if ($BULAN !='' or  $TAHUN !='' ) }-->
+				<!--{if ($TAHUN1 !='' or  $TAHUN2 !='' ) }-->
 
 
 											<tr><td class="tdatacontent"  >PERIODE </td><td> : </td><td>
-											<!--{if ($BULAN==1)}--> Januari <!--{/if}--> 
-											<!--{if ($BULAN==2)}--> Februari <!--{/if}--> 
-											<!--{if ($BULAN==3)}--> Maret <!--{/if}--> 
-											<!--{if ($BULAN==4)}--> April <!--{/if}--> 
-											<!--{if ($BULAN==5)}--> Mei <!--{/if}--> 
-											<!--{if ($BULAN==6)}--> Juni <!--{/if}--> 
-											<!--{if ($BULAN==7)}--> Juli <!--{/if}--> 
-											<!--{if ($BULAN==8)}--> Agustus <!--{/if}--> 
-											<!--{if ($BULAN==9)}--> September <!--{/if}--> 
-											<!--{if ($BULAN==10)}--> Oktober <!--{/if}--> 
-											<!--{if ($BULAN==11)}--> November <!--{/if}--> 
-											<!--{if ($BULAN==12)}--> Desember <!--{/if}--> 									
-											<!--{$TAHUN}--> &nbsp;</td></tr>
+                                                                                                <!--{$DATE_AWAL|date_format:'%d-%m-%Y'}--> S/D <!--{$DATE_AKHIR|date_format:'%d-%m-%Y'}--> &nbsp;</td></tr>
 				<!--{/if}-->
 				
 											</table>
@@ -273,7 +310,7 @@ function hideIt(){
                                                                                         <TH class="tdatahead" align="left">DEPARTEMEN</TH>
                                                                                         <TH class="tdatahead" align="left">KETENTUAN JAM MASUK</TH>
                                                                                         <TH class="tdatahead" align="left">KETENTUAN JAM KELUAR</TH>
-                                                                                      <TH class="tdatahead" align="left">KETERLAMBATAN</TH>
+                                                                                      <TH class="tdatahead" align="left">KETERLAMBATAN </TH>
                                                                                       
                                                                                         
 											
@@ -293,7 +330,7 @@ function hideIt(){
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].r_shift__jam_masuk}--></TD>
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].r_shift__jam_pulang}--></TD>
                                                                                       
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_TB[x].timeSum}--></TD>
+                                                                                        <TD class="tdatacontent" ><!--{$DATA_TB[x].rkp_lambat}--></TD>
                                                                                        
 										<!--{sectionelse}-->
 										<TR>

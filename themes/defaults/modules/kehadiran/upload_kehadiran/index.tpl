@@ -119,7 +119,7 @@ function hideIt(){
 		<tr><td class="alt2" style="padding:0px;">
 
 		<FORM NAME="frmCreate" METHOD="POST" ACTION="engine.php" enctype="multipart/form-data" >
-		<TABLE id="table-add-box">
+		<TABLE id="table-add-box" >
 
 				
 					<!--{if $EDIT_VAL==0}-->
@@ -131,7 +131,7 @@ function hideIt(){
 
         				<TR>
 					<TD>Cabang <font color="#ff0000">*</font></TD>
-					<TD>
+					<TD>:
 
 					<!--{if ($JENIS_USER_SES==1)}-->
 
@@ -191,8 +191,24 @@ function hideIt(){
 
 					</TD>
 				</TR>
-                                
-                                <TR><TD>Upload Data <font color="#ff0000">*</font></TD><TD><input type="file" NAME="file_xls" id="file_xls"> </TD></TR>
+                                <TR>
+					<TD>Jenis File <font color="#ff0000">*</font></TD>
+					<TD>:
+                                           
+                                            <select name="tipe_file" onchange="pilih_ext(this.value);" >
+                                            <option value=""> Pilih Jenis File Upload</option>
+                                            <option value="1">Tipe File XLS 2003 .xls</option>
+                                            <option value="2"> Tipe File .dat (absensi secure) </option>
+                                            </SELECT>
+					</TD>
+				</TR>
+                                <TR><TD>Upload Data <font color="#ff0000">*</font></TD><TD>:
+                                        <DIV id="ajax_subpenempatan">
+                                            <input type='file' NAME='file_dat' id='file_dat' onchange=checkextensiondat()>
+                                    </DIV>
+                                    
+                                    
+                                    </TD></TR>
 				<TR><td height="40"></td>
 					<TD>
 					<INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
@@ -205,11 +221,20 @@ function hideIt(){
 					<a class="button" href="#" onclick="this.blur();document.frmCreate.reset(); resetFrm(frmCreate); "><span><img src="<!--{$HREF_IMG_PATH}-->/icon/blank.gif" align="absmiddle"><!--{$RESET}--></span></a>
 					</TD>
 				</TR>
-					<TR><td  colspan="2"> <font color="#ff0000"> Keterangan * Wajib Diisi</font></td>
+					
+                                        <TR><TD>Progress</TD><TD><font size="2"> <progress id="progressBar" max="100" style="width: 400px;" value="0"></progress></font> </td>
 
 					</tr>
-                
+                                        <TR><td  colspan="2"> <font color="#ff0000"> Keterangan * Wajib Diisi</font></td>
+
+					</TR>
+                                                       
+
 			</TABLE>
+   
+
+<h3 id="status">
+</h3>
 		</FORM>
 		</td></tr>
 		</table>
@@ -291,37 +316,43 @@ function hideIt(){
 		
 		<FORM METHOD=GET ACTION="" NAME="frmList">
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="CENTER" style="border-bottom-width:0px">
-		<tr><td class="tcat">Data upload kehadiran</td></tr>
+		<tr><td class="tcat">Daftar File Upload Absen</td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="CENTER">
-		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0">Data Kehadiran Terbaru</td></tr>
+		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0">Periode aktif  Mulai : <!--{$PERIODE_AWAL|date_format:"%d-%B-%Y"}--> s/d <!--{$PERIODE_AKHIR|date_format:"%d-%B-%Y"}--></td></tr>
 		<tr><td class="alt2" style="padding:0px;">
 		<table width="100%">
 		<tr>
-											<th class="tdatahead" align="left">NO</TH>
-											<th class="tdatahead" align="left" width="10%">NAMA FILE</TH>
-                                                                                        <th class="tdatahead" align="left" width="10%">CABANG</TH>
-                                                                                        <th class="tdatahead" align="left" >TGL UPLOAD</TH>
-											
-											
+                <th class="tdatahead" align="left">NO</TH>
+                <th class="tdatahead" align="left" >USER UPLOADER</TH>
+                <th class="tdatahead" align="left" width="10%">NAMA FILE</TH>
+                <th class="tdatahead" align="left" width="10%">CABANG</TH>
+                <th class="tdatahead" align="left" >TGL UPLOAD</TH>
+		
 			</tr>
 			</thead>
 			<tbody>
 			<!--{section name=x loop=$DATA_TB}-->
 			<tr class='<!--{cycle values="alt,alt3"}-->'>
-											<td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
-											<TD class="tdatacontent"> <!--{$DATA_TB[x].r_upload__filename}--> </TD>
-                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_cabang__nama}--> </TD>
-                                                                                        
-                                                                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_upload__date_created|date_format:"%d-%B-%Y %H:%I:%S" }--> </TD>
-											
-                                                                                          
-											
-										</TR>
-										<!--{sectionelse}-->
-										<TR>
-											<TD class="tdatacontent" COLSPAN="14" align="center">Maaf, Data masih kosong</TD>
-										</TR>
+                                        <td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
+                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
+                                        <TD class="tdatacontent">
+                                                <!--{if ($DATA_TB[x].ext) =='dat'}-->
+                                                    <font color="#18bc36"><!--{$DATA_TB[x].r_upload__filename}--></font>
+                                                <!--{else}-->  
+                                                    <font color="#0050ff"><!--{$DATA_TB[x].r_upload__filename}--></font>
+                                            <!--{/if}--> 
+                                        </TD>
+                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_cabang__nama}--> </TD>
+                                        <TD class="tdatacontent"> <!--{$DATA_TB[x].r_upload__date_created|date_format:"%d-%B-%Y %H:%I:%S" }--> </TD>
+
+
+
+                                </TR>
+                                <!--{sectionelse}-->
+                                <TR>
+                                        <TD class="tdatacontent" COLSPAN="14" align="center">Maaf, Data masih kosong</TD>
+                                </TR>
 			<!--{/section}-->
 			</tbody>
 		</table>

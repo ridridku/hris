@@ -121,13 +121,31 @@ else if ($_POST['departemen_cari']) $departemen_cari = $_POST['departemen_cari']
 else $departemen_cari="";
 $smarty->assign ("DEPARTEMEN_CARI", $departemen_cari);
 
-if ($_GET['bulan']) $bulan = $_GET['bulan'];
-else if ($_POST['bulan']) $bulan = $_POST['bulan'];
-else $bulan="";
 
-if ($_GET['tahun']) $tahun = $_GET['tahun'];
-else if ($_POST['tahun']) $tahun = $_POST['tahun'];
-else $tahun="";
+if ($_GET['bulan1']) $bulan1 = $_GET['bulan1'];
+else if ($_POST['bulan1']) $bulan1 = $_POST['bulan1'];
+else $bulan1="";
+
+if ($_GET['bulan2']) $bulan2 = $_GET['bulan2'];
+else if ($_POST['bulan2']) $bulan2 = $_POST['bulan2'];
+else $bulan2="";
+
+if ($_GET['tahun1']) $tahun1 = $_GET['tahun1'];
+else if ($_POST['tahun1']) $tahun1 = $_POST['tahun1'];
+else $tahun1="";
+
+if ($_GET['tahun2']) $tahun2 = $_GET['tahun2'];
+else if ($_POST['tahun2']) $tahun2 = $_POST['tahun1'];
+else $tahun2="";
+
+if ($_GET['tgl1']) $tgl1 = $_GET['tgl1'];
+else if ($_POST['tgl1']) $tgl1 = $_POST['tgl1'];
+else $tgl1="";
+
+if ($_GET['tgl2']) $tgl2= $_GET['tgl2'];
+else if ($_POST['tgl2']) $tgl2 = $_POST['tgl2'];
+else $tgl2="";
+
 
 
 if ($_GET['nama_karyawan_cari']) $nama_karyawan_cari = $_GET['nama_karyawan_cari'];
@@ -144,6 +162,29 @@ if ($_GET['sts_pjm']) $sts_pjm_cari= $_GET['sts_pjm'];
 else if ($_POST['sts_pjm']) $sts_pjm_cari = $_POST['sts_pjm'];
 else $sts_pjm_cari="";
 
+
+$arr = array($tahun1,$bulan1,$tgl1);                                 
+$date_awal= implode("-",$arr); 
+
+$arr = array($tahun2,$bulan2,$tgl2);                                 
+$date_akhir= implode("-",$arr); 
+
+
+
+$periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF'];$smarty->assign ("PERIODE_AKHIR", $periode_akhir);
+
+
+$orderdate1 = explode('-',$periode_awal);
+$year1  = $orderdate1[0];$smarty->assign ("YEAR1", $year1);
+$month1 = $orderdate1[1];$smarty->assign ("MONTH1", $month1);
+$day1   = $orderdate1[2];$smarty->assign ("DAY1", $day1);
+
+
+$orderdate2 = explode('-',$periode_akhir);
+$year2  = $orderdate2[0];$smarty->assign ("YEAR2", $year2);
+$month2 = $orderdate2[1];$smarty->assign ("MONTH2", $month2);
+$day2   = $orderdate2[2];$smarty->assign ("DAY2", $day2);
 
 
 $smarty->assign ("KODE_CABANG_CARI", $kode_cabang_cari);
@@ -334,115 +375,64 @@ if ($_GET['search'] == '1')
         $smarty->assign ("NM_PERWAKILAN", $nm_perwakilan);	
   
               if($jenis_user=='2'){
-				           $sql  = "SELECT
-                                                    r_penempatan.r_pnpt__nip AS r_pnpt__nip,
-                                                    r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
-                                                    r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
-                                                    r_jabatan.r_jabatan__id AS r_jabatan__id,
-                                                    r_jabatan.r_jabatan__ket AS r_jabatan__ket,
-                                                    r_subdepartement.r_subdept__id AS r_subdept__id,
-                                                    r_subdepartement.r_subdept__ket AS r_subdept__ket,
-                                                    r_departement.r_dept__akronim AS r_dept__akronim,
-                                                    r_departement.r_dept__id AS r_dept__id,
-                                                    r_departement.r_dept__ket AS r_dept__ket,
-                                                    r_subcabang.r_subcab__nama AS r_subcab__nama,
-                                                    r_cabang.r_cabang__nama AS r_cabang__nama,
-                                                    r_cabang.r_cabang__id AS r_cabang__id,
-                                                    r_pegawai.r_pegawai__nama AS r_pegawai__nama,
-                                                    r_angsuran.r_ang__id AS r_ang__id,
-                                                    r_angsuran.r_ang__jenis AS r_ang__jenis,
-                                                    r_angsuran.r_ang__platfond AS r_ang__platfond,
-                                                    r_angsuran.r_ang__cicilan AS r_ang__cicilan,
-                                                    r_angsuran.r_ang__tenor_bulan AS r_ang__tenor_bulan,
-                                                    t_pinjaman.t_pjm__no_pinjaman AS t_pjm__no_pinjaman,
-                                                    t_pinjaman.t_pjm__approval AS t_pjm__approval,
-                                                    t_angsuran_pinjaman.t_ang__jenis AS t_ang__jenis,
-                                                    t_angsuran_pinjaman.t_ang__nopjm AS t_ang__nopjm,
-                                                    t_angsuran_pinjaman.t_ang__mutasi AS t_ang__mutasi,
-                                                    t_angsuran_pinjaman.t_ang__tanggal AS t_ang__tanggal,
-                                                    SUM(t_angsuran_pinjaman.t_ang__nilai_angsuran) AS t_ang__nilai_angsuran,
-                                                    COUNT(t_angsuran_pinjaman.t_ang__angsuran_ke) AS t_ang__angsuran_ke
-                                                    FROM
-                                                    r_pegawai
-                                                    INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-                                                    INNER JOIN r_jabatan ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-                                                    INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-                                                    INNER JOIN r_subcabang ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-                                                    INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-                                                    INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-                                                    INNER JOIN t_pinjaman ON t_pinjaman.t_pjm__mutasi = r_penempatan.r_pnpt__no_mutasi
-                                                    INNER JOIN t_angsuran_pinjaman ON t_angsuran_pinjaman.t_ang__mutasi = t_pinjaman.t_pjm__mutasi
-                                                    INNER JOIN r_angsuran ON r_angsuran.r_ang__id = t_pinjaman.t_pjm__jenis
-                                                    WHERE t_pjm__approval = 1 AND r_cabang__id= '".$kode_pw_ses."' ";
+				           $sql  = "SELECT * FROM (SELECT t_angsuran_pinjaman.*, 
+                                                    C.* FROM (SELECT IF((SELECT COUNT(t_ang__idkaryawan) as jml FROM t_angsuran_pinjaman
+                                                    where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm 
+                                                    AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan
+                                                    GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)IS NULL,'0',(SELECT COUNT(t_ang__idkaryawan) as jml FROM t_angsuran_pinjaman
+                                                    where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm 
+                                                    AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan
+                                                    GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)) AS jml_tenor_bayar,IF((B.t_pjm__total_pinjam-B.angsuran_pjm)=0,'1',(2)) AS sisa_status,IF((SELECT SUM(t_ang__nilai_angsuran) as jml FROM t_angsuran_pinjaman where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan
+                                                    GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)IS NULL,'0',(SELECT SUM(t_ang__nilai_angsuran) as jml FROM t_angsuran_pinjaman where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm 
+                                                    AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)) AS jml_sudah_bayar,B.t_pjm__total_pinjam-B.angsuran_pjm as sisa_pembayaran,B.* FROM (SELECT A.*,IF ((SELECT t_ang__nilai_angsuran FROM t_angsuran_pinjaman where t_angsuran_pinjaman.t_ang__idkaryawan=A.t_pjm__idpeg
+                                                    and A.t_pjm__no_pinjaman=t_ang__nopjm GROUP BY t_ang__nopjm) is null,'0',(SELECT sum(t_ang__nilai_angsuran)FROM t_angsuran_pinjaman WHERE t_angsuran_pinjaman.t_ang__idkaryawan = A.t_pjm__idpeg AND A.t_pjm__no_pinjaman = t_ang__nopjm GROUP BY t_ang__nopjm)) AS angsuran_pjm 
+                                                    FROM (SELECT peg.*,t_pinjaman.* FROM v_pegawai peg INNER JOIN t_pinjaman  ON peg.r_pnpt__no_mutasi = t_pinjaman.t_pjm__mutasi)A)B)C
+                                                    INNER JOIN t_angsuran_pinjaman ON  t_angsuran_pinjaman.t_ang__nopjm=C.t_pjm__no_pinjaman GROUP BY t_angsuran_pinjaman.t_ang__nopjm
+                                                    )D  WHERE D.r_cabang__id= '".$kode_pw_ses."' ";
 			} else {
-					   $sql  = "SELECT
-                                                    r_penempatan.r_pnpt__nip AS r_pnpt__nip,
-                                                    r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
-                                                    r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
-                                                    r_jabatan.r_jabatan__id AS r_jabatan__id,
-                                                    r_jabatan.r_jabatan__ket AS r_jabatan__ket,
-                                                    r_subdepartement.r_subdept__id AS r_subdept__id,
-                                                    r_subdepartement.r_subdept__ket AS r_subdept__ket,
-                                                    r_departement.r_dept__akronim AS r_dept__akronim,
-                                                    r_departement.r_dept__id AS r_dept__id,
-                                                    r_departement.r_dept__ket AS r_dept__ket,
-                                                    r_subcabang.r_subcab__nama AS r_subcab__nama,
-                                                    r_cabang.r_cabang__nama AS r_cabang__nama,
-                                                    r_cabang.r_cabang__id AS r_cabang__id,
-                                                    r_pegawai.r_pegawai__nama AS r_pegawai__nama,
-                                                    r_angsuran.r_ang__id AS r_ang__id,
-                                                    r_angsuran.r_ang__jenis AS r_ang__jenis,
-                                                    r_angsuran.r_ang__platfond AS r_ang__platfond,
-                                                    r_angsuran.r_ang__cicilan AS r_ang__cicilan,
-                                                    r_angsuran.r_ang__tenor_bulan AS r_ang__tenor_bulan,
-                                                    t_pinjaman.t_pjm__no_pinjaman AS t_pjm__no_pinjaman,
-                                                    t_pinjaman.t_pjm__approval AS t_pjm__approval,
-                                                    t_angsuran_pinjaman.t_ang__jenis AS t_ang__jenis,
-                                                    t_angsuran_pinjaman.t_ang__nopjm AS t_ang__nopjm,
-                                                    t_angsuran_pinjaman.t_ang__mutasi AS t_ang__mutasi,
-                                                    t_angsuran_pinjaman.t_ang__tanggal AS t_ang__tanggal,
-                                                    SUM(t_angsuran_pinjaman.t_ang__nilai_angsuran) AS t_ang__nilai_angsuran,
-                                                    COUNT(t_angsuran_pinjaman.t_ang__angsuran_ke) AS t_ang__angsuran_ke
-                                                    FROM
-                                                    r_pegawai
-                                                    INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-                                                    INNER JOIN r_jabatan ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-                                                    INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-                                                    INNER JOIN r_subcabang ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-                                                    INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-                                                    INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-                                                    INNER JOIN t_pinjaman ON t_pinjaman.t_pjm__mutasi = r_penempatan.r_pnpt__no_mutasi
-                                                    INNER JOIN t_angsuran_pinjaman ON t_angsuran_pinjaman.t_ang__mutasi = t_pinjaman.t_pjm__mutasi
-                                                    INNER JOIN r_angsuran ON r_angsuran.r_ang__id = t_pinjaman.t_pjm__jenis
-                                                    WHERE 1=1 ";	
+					   $sql  = "SELECT * FROM (SELECT t_angsuran_pinjaman.*, 
+                                                    C.* FROM (SELECT IF((SELECT COUNT(t_ang__idkaryawan) as jml FROM t_angsuran_pinjaman
+                                                    where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm 
+                                                    AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan
+                                                    GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)IS NULL,'0',(SELECT COUNT(t_ang__idkaryawan) as jml FROM t_angsuran_pinjaman
+                                                    where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm 
+                                                    AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan
+                                                    GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)) AS jml_tenor_bayar,IF((B.t_pjm__total_pinjam-B.angsuran_pjm)=0,'1',(2)) AS sisa_status,IF((SELECT SUM(t_ang__nilai_angsuran) as jml FROM t_angsuran_pinjaman where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan
+                                                    GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)IS NULL,'0',(SELECT SUM(t_ang__nilai_angsuran) as jml FROM t_angsuran_pinjaman where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm 
+                                                    AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)) AS jml_sudah_bayar,B.t_pjm__total_pinjam-B.angsuran_pjm as sisa_pembayaran,B.* FROM (SELECT A.*,IF ((SELECT t_ang__nilai_angsuran FROM t_angsuran_pinjaman where t_angsuran_pinjaman.t_ang__idkaryawan=A.t_pjm__idpeg
+                                                    and A.t_pjm__no_pinjaman=t_ang__nopjm GROUP BY t_ang__nopjm) is null,'0',(SELECT sum(t_ang__nilai_angsuran)FROM t_angsuran_pinjaman WHERE t_angsuran_pinjaman.t_ang__idkaryawan = A.t_pjm__idpeg AND A.t_pjm__no_pinjaman = t_ang__nopjm GROUP BY t_ang__nopjm)) AS angsuran_pjm 
+                                                    FROM (SELECT peg.*,t_pinjaman.* FROM v_pegawai peg INNER JOIN t_pinjaman  ON peg.r_pnpt__no_mutasi = t_pinjaman.t_pjm__mutasi)A)B)C
+                                                    INNER JOIN t_angsuran_pinjaman ON  t_angsuran_pinjaman.t_ang__nopjm=C.t_pjm__no_pinjaman GROUP BY t_angsuran_pinjaman.t_ang__nopjm
+                                                    )D  WHERE 1=1 ";	
 
 			}
                         
-                                                if ($kode_cabang_cari !='') {
-                                                             $sql.=" and  r_cabang__id =".$kode_cabang_cari."  ";
+                                                IF ($kode_cabang_cari !='') {
+                                                             $sql.=" and  D.r_cabang__id =".$kode_cabang_cari."  ";
                                                       }
 
-						 if ($kode_subcab_cari !='') {
-						 	$sql.=" and  r_subcab__id ='$kode_subcab_cari' ";
+						 IF ($kode_subcab_cari !='') {
+						 	$sql.=" and  D.r_subcab__id ='$kode_subcab_cari' ";
 						 }
 
-						if ($departemen_cari !=''  ) {
-						 	$sql.="  and r_dept__id='$departemen_cari' ";
+						IF ($departemen_cari !=''  ) {
+						 	$sql.="  and D.r_dept__id='$departemen_cari' ";
 						 } 
-                                                 if ($bulan !=''  ) {
-                                                   $sql.="  and MONTH(r_pnpt__kon_akhir)='$bulan' ";
-                                                     } 
-                                                if ($tahun !=''  ) {
-                                                               $sql.="  and YEAR(r_pnpt__kon_akhir)='$tahun' ";
-                                                        } 
-						if ($nama_karyawan_cari !='') {
-						 	$sql.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
+                                                
+						if ($tahun1 !='' AND $tahun2 !='' ) {
+						 	$sql.="  AND  D.t_ang__awal>='$date_awal' AND D.t_ang__akhir<='$date_akhir'  ";
 						 }
-                                                  if ($sts_pjm_cari !='') {
-						 	$sql.="and t_pjm__approval = '".$sts_pjm_cari."'  ";
+                                                 
+                                                
+						IF ($nama_karyawan_cari !='') {
+						 	$sql.="and D.r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
 						 }
-						    $sql.=" GROUP BY t_pjm__no_pinjaman order by r_pegawai__nama asc ";
-                                          //   var_dump($sql)or die();
+                                                 
+                                                IF ($sts_pjm_cari !='') {
+						 	$sql.="and D.sisa_status = ".$sts_pjm_cari."  ";
+						 }
+						    $sql.=" GROUP BY D.t_pjm__no_pinjaman order by D.r_pegawai__nama asc ";
+                                                  
 							$numresults=$db->Execute($sql);
 							$count = $numresults->RecordCount();
 							$recordSet = $db->Execute($sql);
@@ -457,13 +447,23 @@ if ($_GET['search'] == '1')
 								
 						
                                                         $label="Nama :". $arr[r_pegawai__nama]; 					
-                                                        $status_pjm= $arr[t_pjm__approval];
+                                                        $status_pjm= $arr[sisa_status];
                                                         IF($status_pjm=='1')
                                                         {
-                                                         $label_sts='Belum Lunas';   
-                                                        }  else {
                                                          $label_sts='Lunas';   
+                                                        }  else {
+                                                         $label_sts='Belum Lunas';   
                                                         }
+                                                        
+                                                        
+                                                        $jenis_pjm= $arr[t_pjm__jenis];
+                                                        IF($jenis_pjm=='1')
+                                                        {
+                                                         $label_jenis_pjm='COP';   
+                                                        }  else {
+                                                         $label_jenis_pjm='PRIBADI';   
+                                                        }
+                                                        
                                                    
 
 
@@ -471,15 +471,19 @@ if ($_GET['search'] == '1')
 
                                                 $content_data .= print_content(
                                                         $count_no,
+                                                        $arr[t_pjm__no_pinjaman],
                                                         $arr[r_pnpt__nip],
                                                         $arr[r_pegawai__nama],
                                                         $arr[r_cabang__nama],
-                                                        $arr[t_pjm__no_pinjaman],
-                                                        number_format($arr[r_ang__platfond],2,',','.'),
-                                                        $arr[r_ang__tenor_bulan],//tenor
-                                                        number_format($arr[t_ang__nilai_angsuran],2,',','.'),//total bayar
-                                                        $arr[t_ang__angsuran_ke], //total cicilan
-                                                        number_format($arr[r_ang__cicilan],2,',','.'),
+                                                        $arr[r_dept__ket],
+                                                        $arr[r_jabatan__ket],
+                                                        $label_jenis_pjm,
+                                                        number_format($arr[t_pjm__total_pinjam],2,',','.'),//total pinjam
+                                                       $arr[jml_sudah_bayar],//pembayaran
+                                                        $arr[t_pjm__tenor],//tenor
+                                                        number_format($arr[t_pjm__cicilan_perbulan],2,',','.'),//total bayar
+                                                        $arr[sisa_pembayaran], //sisa bayar
+                                                        $arr[jml_tenor_bayar],
                                                         $label_sts);	
 
                                                         if ($z%2==0){ 
@@ -501,38 +505,52 @@ if ($_GET['search'] == '1')
                             
                             
                             //total karyawan
-                            $sql_total="SELECT COUNT(t_pjm__mutasi) as total_orang
-                                        FROM r_pegawai
-                                        INNER JOIN r_penempatan ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-                                        INNER JOIN r_jabatan ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-                                        INNER JOIN r_subdepartement ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-                                        INNER JOIN r_subcabang ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-                                        INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-                                        INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-                                        INNER JOIN t_pinjaman ON t_pinjaman.t_pjm__mutasi = r_penempatan.r_pnpt__no_mutasi
-                                        where 1=1 ";
+                                                 $sql_total="SELECT 
+                                                        count(D.t_pjm__no_pinjaman) as total_no_pjm,
+                                                        sum(D.t_pjm__total_pinjam) as total_pjm,
+                                                        sum(D.jml_sudah_bayar)  as total_pembayaran,
+                                                        sum(D.sisa_pembayaran)  as total_sisa,
+                                                        D.* FROM (SELECT t_angsuran_pinjaman.*, 
+                                                        C.* FROM (SELECT IF((SELECT COUNT(t_ang__idkaryawan) as jml FROM t_angsuran_pinjaman
+                                                        where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm 
+                                                        AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan
+                                                        GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)IS NULL,'0',(SELECT COUNT(t_ang__idkaryawan) as jml FROM t_angsuran_pinjaman
+                                                        where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm 
+                                                        AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan
+                                                        GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)) AS jml_tenor_bayar,IF((B.t_pjm__total_pinjam-B.angsuran_pjm)=0,'1',(2)) AS sisa_status,IF((SELECT SUM(t_ang__nilai_angsuran) as jml FROM t_angsuran_pinjaman where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan
+                                                        GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)IS NULL,'0',(SELECT SUM(t_ang__nilai_angsuran) as jml FROM t_angsuran_pinjaman where B.t_pjm__no_pinjaman=t_angsuran_pinjaman.t_ang__nopjm 
+                                                        AND  B.t_pjm__idpeg=t_angsuran_pinjaman.t_ang__idkaryawan GROUP BY t_angsuran_pinjaman.t_ang__idkaryawan)) AS jml_sudah_bayar,B.t_pjm__total_pinjam-B.angsuran_pjm as sisa_pembayaran,B.* FROM (SELECT A.*,IF ((SELECT t_ang__nilai_angsuran FROM t_angsuran_pinjaman where t_angsuran_pinjaman.t_ang__idkaryawan=A.t_pjm__idpeg
+                                                        and A.t_pjm__no_pinjaman=t_ang__nopjm GROUP BY t_ang__nopjm) is null,'0',(SELECT sum(t_ang__nilai_angsuran)FROM t_angsuran_pinjaman WHERE t_angsuran_pinjaman.t_ang__idkaryawan = A.t_pjm__idpeg AND A.t_pjm__no_pinjaman = t_ang__nopjm GROUP BY t_ang__nopjm)) AS angsuran_pjm 
+                                                        FROM (SELECT peg.*,t_pinjaman.* FROM v_pegawai peg INNER JOIN t_pinjaman  ON peg.r_pnpt__no_mutasi = t_pinjaman.t_pjm__mutasi)A)B)C
+                                                        INNER JOIN t_angsuran_pinjaman ON  t_angsuran_pinjaman.t_ang__nopjm=C.t_pjm__no_pinjaman GROUP BY t_angsuran_pinjaman.t_ang__nopjm
+                                                        )D
+                                                        WHERE D.r_pnpt__aktif=1 ";
                             
                                                 if ($kode_cabang_cari !='') {
-                                                            $sql_total.=" and  r_cabang__id =".$kode_cabang_cari."  ";
+                                                            $sql_total.=" and  D.r_cabang__id =".$kode_cabang_cari."  ";
                                                     }
 
                                                 if ($kode_subcab_cari !='') {
-                                                           $sql_total.=" and  r_subcab__id ='$kode_subcab_cari' ";
+                                                           $sql_total.=" and  D.r_subcab__id ='$kode_subcab_cari' ";
                                                     }
+                                                    
+                                                    if ($tahun1 !='' AND $tahun2 !='' ) {
+						 	$sql_total.="  AND  D.t_ang__awal>='$date_awal' AND D.t_ang__akhir<='$date_akhir'  ";
+						 }
 
                                                 if ($departemen_cari !=''  ) {
-                                                           $sql_total.="  and r_dept__id='$departemen_cari' ";
+                                                           $sql_total.="  and D.r_dept__id='$departemen_cari' ";
                                                     }
                                                 if ($nama_karyawan_cari !='') {
-                                                            $sql_total.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
+                                                            $sql_total.="and D.r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
 						 }
                                                   if ($sts_pjm_cari !='') {
-                                                            $sql_total.="and t_pjm__approval = '".$sts_pjm_cari."'  ";
+                                                            $sql_total.="and D.sisa_status = '".$sts_pjm_cari."'  ";
 						 }
                               
                                                  
                                                  
-                           // var_dump($sql_total) or die();          
+        
                                 $numresults4=$db->Execute($sql_total);
 				$count4 = $numresults4->RecordCount();
  				$recordSet4 = $db->Execute($sql_total);
@@ -552,8 +570,11 @@ if ($_GET['search'] == '1')
 				array_push($initSet4, $z);
 					$z++;
 
-					$label="JML KARYAWAN : ".$arr4[total_orang];
-					$content_data .= print_content("","","","","","","","","","",$label);
+					$total_sisa=$arr4[total_sisa];
+                                        $total_pinjam=$arr4[total_pjm];
+                                        $total_pembayaran=$arr4[total_pembayaran];
+                                        
+					$content_data .= print_content("","","","","","","","","$total_pinjam","$total_pembayaran","","",$total_sisa,"","");
 				}
 
                                 $smarty->assign ("DATA_TB4", $data_tb4);          

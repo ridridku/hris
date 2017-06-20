@@ -204,8 +204,8 @@ if ($_GET['search'] == '1')
 		  if($jenis_user=='2'){
                                                   $sql  = "SELECT
                                                             r_periode__payroll_id,
-                                                            r_periode__payroll_bulan,
-                                                            r_periode__payroll_tahun,
+                                                            r_periode__payroll_awal,
+                                                            r_periode__payroll_akhir,
                                                             r_periode__payroll_status,
                                                             r_periode__payroll_created,
                                                             r_periode__payroll_user_created,
@@ -218,8 +218,8 @@ if ($_GET['search'] == '1')
 			} else {
 						$sql  = "SELECT
                                                             r_periode__payroll_id,
-                                                            r_periode__payroll_bulan,
-                                                            r_periode__payroll_tahun,
+                                                            r_periode__payroll_awal,
+                                                            r_periode__payroll_akhir,
                                                             r_periode__payroll_status,
                                                             r_periode__payroll_created,
                                                             r_periode__payroll_user_created,
@@ -295,8 +295,8 @@ else
           
                                                 $sql = "SELECT
                                                             r_periode__payroll_id,
-                                                            r_periode__payroll_bulan,
-                                                            r_periode__payroll_tahun,
+                                                            r_periode__payroll_awal,
+                                                            r_periode__payroll_akhir,
                                                             r_periode__payroll_status,
                                                             r_periode__payroll_created,
                                                             r_periode__payroll_user_created,
@@ -309,8 +309,8 @@ else
 			} else {
 						$sql  = "SELECT
                                                             r_periode__payroll_id,
-                                                            r_periode__payroll_bulan,
-                                                            r_periode__payroll_tahun,
+                                                            r_periode__payroll_awal,
+                                                            r_periode__payroll_akhir,
                                                             r_periode__payroll_status,
                                                             r_periode__payroll_created,
                                                             r_periode__payroll_user_created,

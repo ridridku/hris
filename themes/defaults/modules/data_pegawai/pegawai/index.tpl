@@ -8,14 +8,13 @@
     padding: 0;
 }
 
-
 ul, ol {
     list-style-type: none;
 }
 p, label {
-   background: #c3daf9 url("../images/layout/bg000000.gif") repeat-x scroll 0 0;
+  //  background: #c3daf9 url("../images/layout/bg000000.gif") repeat-x scroll 0 0;
     color: #083772;
-    font-size: 11px;
+    font-size: 12px;
 
 }
 .container-wrapper {
@@ -83,19 +82,69 @@ function hideIt(){
 		</td></tr>
 	</table>
 </div>
-
-
 <link rel="stylesheet" href="<!--{$HREF_CSS_PATH}-->/default.css" type="text/css">
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/global.js"></SCRIPT>
 <link rel="stylesheet" href="<!--{$HREF_CSS_PATH}-->/dhtmlgoodies_calendar.css" type="text/css">
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/calendar/dhtmlgoodies_calendar.js"></SCRIPT>
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/tw-ajax.js"></SCRIPT>
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/tw-sack.js"></SCRIPT>
-
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/jquery.dataTables.min-right.css" type="text/css">
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/fixedColumns.dataTables.min.css" type="text/css">
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/buttons.dataTables.min.css" type="text/css">	  
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery-1.12.4.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery.dataTables.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.fixedColumns.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.buttons.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.colVis.min.js"></SCRIPT>
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/style_sorting.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_sorting.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_p.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.flash.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jszip.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/pdfmake.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/vfs_fonts.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.html5.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.print.min.js"></SCRIPT>
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/select.dataTables.min.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.select.min.js"></SCRIPT>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!-- #EndEditable -->
+ 
+ 
+<script>
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        scrollY:        "430",
+        scrollX:        true,
+        scrollCollapse: true,
+        info:true,
+       // paging: true,  
+         dom: 'Bfrtip',
+        buttons: ['excel','colvis'],
+       language: {search: "Pencarian:",buttons: {colvis: 'Atur Kolom'}},
+        select: {style: 'single'},
+          Sorting: [[ 2, "desc" ]], 
+          pageLength: "50", 
+    // lengthMenu: [ 50, 100, 300, 1000],
+       fixedColumns:   { leftColumns: 3,rightColumns:0 }
 
+        });
+        
+} );
+</script>
+
+<STYLE>
+/* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {width: 1100;margin: 0 auto;}
+    .number_range_filter{width:100px;}
+    
+      div.ColVis {
+        float: centerPage;
+    }
+  </STYLE>
+ 
 </HEAD>
 
 <body class="contentPage" onLoad="hideIt(); <!--{if $OPT==1}-->showAll('_menuEntry1_',1);hideAll('_menuEntry2_',1);<!--{else}-->hideAll('_menuEdit_',1);hideAll('_menuEntry1_',1);showAll('_menuEntry2_',1);<!--{/if}-->">
@@ -307,7 +356,7 @@ function hideIt(){
                              
                                
 			
-                                <TD colspan="3"><textarea rows="5" cols="20" NAME="r_pegawai__nama_jalan"  size="12" ><!--{$EDIT_R_PEGAWAI__ALAMAT}--></textarea></TD>
+                                <TD colspan="3"><textarea rows="5" cols="50"  NAME="r_pegawai__nama_jalan"  size="12" ><!--{$EDIT_R_PEGAWAI__ALAMAT}--></textarea></TD>
 			</tr>
                         
                         
@@ -390,20 +439,28 @@ function hideIt(){
                                     RT<INPUT type="text" name="r_pegawai__alm_rt" value="<!--{$EDIT_R_PEGAWAI__ALM_RT}-->" size="5" >
                                     RW<INPUT type="text" name="r_pegawai__alm_rw"  value="<!--{$EDIT_R_PEGAWAI__ALM_RW}-->" size="5" >                                </td>
 			</tr>
-                        <tr class='<!--{cycle values="alt,alt3"}-->'>
-				<td class="tdatacontent" width="249">Kode Pos Domisili</td>
-				<td class="tdatacontent" width="20">:</td>
-                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__alm_kodepos" value="<!--{$EDIT_R_PEGAWAI__ALM_KODEPOS}-->"  ></td>
-			</tr>
-                        <tr class='<!--{cycle values="alt,alt3"}-->'>
-				<td class="tdatacontent" width="249">Telepon Rumah</td>
-				<td class="tdatacontent" width="20">:</td>
-                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__tlp_rumah" value="<!--{$EDIT_R_PEGAWAI__TLP_RUMAH}-->"  ></td>
-			</tr>
+                        
                          <tr class='<!--{cycle values="alt,alt3"}-->'>
-				<td class="tdatacontent" width="249">Telepon Pribadi</td>
+				<td class="tdatacontent" width="249">Alamat Domisili </td>
+				<td class="tdatacontent" width="20">:</td>
+                                <TD class="tdatacontent"  colspan="3"><textarea rows="5" cols="50" NAME="r_pegawai__alm_kodepos"  size="12" ><!--{$EDIT_R_PEGAWAI__ALM_KODEPOS}--></textarea></TD>
+			</tr>
+                        
+                        
+                        
+                        
+                       <TR>
+                           <TD colspan="3">---------------------------</TD>
+                       </TR>
+                         <TR class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">No HP/Telepon Pribadi</td>
 				<td class="tdatacontent" width="20">:</td>
                                 <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__tlp_pribadi" value="<!--{$EDIT_R_PEGAWAI__TLP_PRIBADI}-->" ></td>
+			</TR>
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">No HP/Telepon (Suami/Istri/Keluarga) </td>
+				<td class="tdatacontent" width="20">:</td>
+                                <td colspan="3" class="tdatacontent"><INPUT type="text" name="r_pegawai__tlp_rumah" value="<!--{$EDIT_R_PEGAWAI__TLP_RUMAH}-->"  ></td>
 			</tr>
                         
                         <tr class='<!--{cycle values="alt,alt3"}-->'>
@@ -436,8 +493,8 @@ function hideIt(){
 				<td class="tdatacontent" width="249">Foto</td>
 				<td class="tdatacontent" width="20">:</td>
                                 <td colspan="3" class="tdatacontent">
-                                  <INPUT TYPE="file" disabled NAME="file_foto" size="35"  value="<!--{$FOTO_NO}-->_<!--{$FOTO_NAME}-->" >   
-                                  <INPUT TYPE ="hidden"  name="foto2"  value="<!--{$FOTO_NO}-->_<!--{$FOTO_NAME}-->">                                </td>
+                                  <INPUT TYPE="file" disabled NAME="file_foto" size="35"  value="<!--{$FOTO_NAME}-->" >   
+                                  <INPUT TYPE ="hidden"  name="foto2"  value="<!--{$FOTO_NAME}-->">                                </td>
 			</tr>
 		</table>
 		</div>
@@ -527,8 +584,6 @@ function hideIt(){
                         
                                         
                      
-                          
-                        
                          <tr class='<!--{cycle values="alt,alt3"}-->'>
 				<td class="tdatacontent" width="250">RT/RW Orangtua</td>
 				<td class="tdatacontent" width="5">:</td>
@@ -537,12 +592,12 @@ function hideIt(){
                                     RW<INPUT type="text" name="r_pegawai__ortu_rw"  size="5" value="<!--{$EDIT_R_PEGAWAI__ORTU_RW}-->">
                                 </td>
 			</tr>
-                         <tr class='<!--{cycle values="alt,alt3"}-->'>
-				<td class="tdatacontent" width="250">Kode Pos KTP</td>
-				<td class="tdatacontent" width="5">:</td>
-                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__ortu_kodepos"  value="<!--{$EDIT_R_PEGAWAI__ORTU_KODEPOS}-->"></td>
+                       
+                     	  <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Alamat Orang Tua </td>
+				<td class="tdatacontent" width="20">:</td>
+                                <TD class="tdatacontent"  colspan="3"><textarea rows="5" cols="50" NAME="r_pegawai__ortu_kodepos"  size="12" ><!--{$EDIT_R_PEGAWAI__ORTU_KODEPOS}--></textarea></TD>
 			</tr>
-                     	
 		</table>
 		
 		</div>
@@ -677,11 +732,13 @@ function hideIt(){
                                     RW<INPUT type="text" name="r_pegawai__pas_rw"  size="5" value="<!--{$EDIT_R_PEGAWAI__PAS_RW}-->">
                                 </td>
 			</tr>
-                         <tr class='<!--{cycle values="alt,alt3"}-->'>
-				<td class="tdatacontent" width="250">Kode Pos Suami / Istri</td>
-				<td class="tdatacontent" width="5">:</td>
-                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__pas_kodepos" value="<!--{$EDIT_R_PEGAWAI__PAS_KODEPOS}-->" ></td>
+                        
+                     	  <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="249">Alamat Rumah </td>
+				<td class="tdatacontent" width="20">:</td>
+                                <TD class="tdatacontent"  colspan="3"><textarea rows="5" cols="50" NAME="r_pegawai__pas_kodepos"  size="12" ><!--{$EDIT_R_PEGAWAI__ORTU_KODEPOS}--></textarea></TD>
 			</tr>
+                        
                          <tr class='<!--{cycle values="alt,alt3"}-->'>
 				<td class="tdatacontent" width="250">No Telepon/Hp Suami/Istri </td>
 				<td class="tdatacontent" width="5">:</td>
@@ -723,9 +780,14 @@ function hideIt(){
                                 <td class="tdatacontent"><INPUT type="text" name="r_pegawai__npwp"  value="<!--{$EDIT_R_PEGAWAI__NPWP}-->"></td>
 			</tr>
                         <tr class='<!--{cycle values="alt,alt3"}-->'>
-				<td class="tdatacontent" width="250">No BPJS</td>
+				<td class="tdatacontent" width="250">No BPJS Ketenagakerjaan</td>
 				<td class="tdatacontent" width="5">:</td>
-                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__no_bpjs" value="<!--{$EDIT_R_PEGAWAI__NO_BPJS}-->"></td>
+                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__no_bpjs" value="<!--{$EDIT_BPJS_KETENAGAKERJAAN}-->"></td>
+			</tr>   
+                         <tr class='<!--{cycle values="alt,alt3"}-->'>
+				<td class="tdatacontent" width="250">No BPJS kesehatan</td>
+				<td class="tdatacontent" width="5">:</td>
+                                <td class="tdatacontent"><INPUT type="text" name="bpjs_kesehatan" value="<!--{$EDIT_BPJS_KESEHATAN}-->"></td>
 			</tr>   
                          <tr class='<!--{cycle values="alt,alt3"}-->'>
 				<td class="tdatacontent" width="250">No Inhealth</td>
@@ -746,9 +808,9 @@ function hideIt(){
                                 <td class="tdatacontent">
                                         <select name="r_pegawai__bank1" >
                                         <option value="">[Pilih Status]</option>
-                                        <OPTION value="1" <!--{if $EDIT_R_PEGAWAI__BANK1== '1'}--> selected <!--{/if}--> >BANK CIMB NIAGA</OPTION>
-					<OPTION value="2" <!--{if $EDIT_R_PEGAWAI__BANK1 == '2'}--> selected <!--{/if}-->>BANK BCA</OPTION>
-					<OPTION value="3" <!--{if $EDIT_R_PEGAWAI__BANK1== '3'}--> selected <!--{/if}--> >BANK BRI</OPTION>
+                                        <OPTION value="CIMB NIAGA" <!--{if $EDIT_R_PEGAWAI__BANK1== 'CIMB NIAGA'}--> selected <!--{/if}--> >BANK CIMB NIAGA</OPTION>
+					<OPTION value="BCA" <!--{if $EDIT_R_PEGAWAI__BANK1 == 'BCA'}--> selected <!--{/if}-->>BANK BCA</OPTION>
+					<OPTION value="BRI" <!--{if $EDIT_R_PEGAWAI__BANK1== 'BRI'}--> selected <!--{/if}--> >BANK BRI</OPTION>
 					
                                         </select>  
                                     
@@ -768,7 +830,10 @@ function hideIt(){
                         <tr class='<!--{cycle values="alt,alt3"}-->'>
 				<td class="tdatacontent" width="250">Alamat  Bank ke 1</td>
 				<td class="tdatacontent" width="5">:</td>
-                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__bank1_alm" value="<!--{$EDIT_R_PEGAWAI__BANK1_ALM}-->"></td>
+                                <td class="tdatacontent">
+                                 
+                                <textarea rows="5" cols="50"  NAME="r_pegawai__bank1_alm"  size="12" ><!--{$EDIT_R_PEGAWAI__BANK1_ALM}--></textarea>
+                                </td>
 			</tr>
                         
                         <tr class='<!--{cycle values="alt,alt3"}-->'>
@@ -784,9 +849,9 @@ function hideIt(){
                                 <td class="tdatacontent">
                                         <select name="r_pegawai__bank2" >
                                         <option value="">[Pilih Status]</option>
-                                        <OPTION value="1" <!--{if $EDIT_R_PEGAWAI__BANK2== '1'}--> selected <!--{/if}--> >BANK CIMB NIAGA</OPTION>
-					<OPTION value="0" <!--{if $EDIT_R_PEGAWAI__BANK2 == '2'}--> selected <!--{/if}-->>BANK BCA</OPTION>
-					<OPTION value="1" <!--{if $EDIT_R_PEGAWAI__BANK2== '3'}--> selected <!--{/if}--> >BANK BRI</OPTION>
+                                        <OPTION value="CIMB NIAGA" <!--{if $EDIT_R_PEGAWAI__BANK2=='CIMB NIAGA'}--> selected <!--{/if}--> >BANK CIMB NIAGA</OPTION>
+					<OPTION value="BCA" <!--{if $EDIT_R_PEGAWAI__BANK2 == 'BCA'}--> selected <!--{/if}-->>BANK BCA</OPTION>
+					<OPTION value="BRI" <!--{if $EDIT_R_PEGAWAI__BANK2== 'BRI'}--> selected <!--{/if}--> >BANK BRI</OPTION>
 					
                                         </select>  
                                     
@@ -806,7 +871,11 @@ function hideIt(){
                         <tr class='<!--{cycle values="alt,alt3"}-->'>
 				<td class="tdatacontent" width="250">Alamat  Bank ke 2</td>
 				<td class="tdatacontent" width="5">:</td>
-                                <td class="tdatacontent"><INPUT type="text" name="r_pegawai__bank2_alm" value="<!--{$EDIT_R_PEGAWAI__BANK2_ALM}-->"></td>
+                                <td class="tdatacontent">
+                                   
+                                    <textarea rows="5" cols="50"  NAME="r_pegawai__bank2_alm"  size="12" ><!--{$EDIT_R_PEGAWAI__BANK2_ALM}--></textarea>
+                                
+                                </td>
 			</tr>
                         
                         
@@ -1052,70 +1121,92 @@ function hideIt(){
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->/layout/columns.gif" align="absmiddle" border="0"> Daftar Pegawai</td></tr>
 		<tr><td class="alt2" style="padding:0px;">
-		<table width="100%">
-		<tr>
-											<th class="tdatahead" align="left">NO</TH>
-                                                                                        <th class="tdatahead" align="left" width="10%">NAMA</TH>
-                                                                                        <th class="tdatahead" align="left" width="10%">NIP</TH>
-                                                                                        <th class="tdatahead" align="left" width="10%">ID FINGER</TH>
-											<th class="tdatahead" align="left">DEPARTEMEN</TH>
-											<th class="tdatahead" align="left" >JABATAN</TH>
-                                                                                        <th class="tdatahead" align="left" >CABANG</TH>
-                                                                                        <th class="tdatahead" align="left" >SUB CABANG</TH>
-											<th class="tdatahead" align="left">STATUS KARYAWAN</TH>
-                                                                                        <th class="tdatahead" align="left">MULAI MASUK</TH>
-											
-                                                                                        <th class="tdatahead" align="left">NO REK</TH>
-											<th class="tdatahead" COLSPAN="2"><!--{$ACTION}--></th>
-			</tr>
-			</thead>
-			<tbody>
+		<table id="example" class="display" cellpadding="4" cellspacing="6" width="100%">
+        <thead class="tdatahead">
+            <tr>
+                <th class="alt2" >NO</th>
+                <th class="alt2" style="padding:0px;">NAMA</th>
+                <th class="alt2" style="padding:0px;">NIP</th>
+                <th class="alt2" style="padding:0px;">ID FINGER</th>
+                 <TH class="alt2" align="left">DEPARTEMEN</TH>
+            <TH class="alt2" align="left" >JABATAN</TH>
+                <th class="alt2" style="padding:0px;">NO KTP</th>
+                <th class="alt2" style="padding:0px;">BPJS KT</th>
+                <th class="alt2" style="padding:0px;">BPJS KES</th>
+                <th class="alt2" style="padding:0px;">INHEALTH.</th>
+                <th class="alt2" style="padding:0px;">BANK</th>
+                <th class="alt2" style="padding:0px;">NO REK</TH>
+                <th class="alt2" style="padding:0px;">CABANG</TH>
+                <th class="alt2" style="padding:0px;">SUB CABANG</TH>
+                <th class="alt2" style="padding:0px;">MULAI MASUK</TH>
+                <th class="alt2" style="padding:0px;">STATUS</TH>
+                <th class="alt2" style="padding:0px;">ALAMAT RUMAH</TH>
+                <th class="alt2" style="padding:0px;">PROPINSI</TH>
+                <th class="alt2" style="padding:0px;">KABUPATEN</TH>
+                <th class="alt2" style="padding:0px;">KECAMATAN</TH>
+                <th class="alt2" style="padding:0px;">KEL/DESA</TH>
+                <th class="alt2" style="padding:0px;" >HP</TH>
+                <th class="alt2" style="padding:0px;">TLP RUMAH/ISTRI</TH>
+              
+                <th><!--{$ACTION}--></th>
+            </tr>
+        </thead>
+     
+           <tbody class="tdatacontent">
 			<!--{section name=x loop=$DATA_TB}-->
-			<tr class='<!--{cycle values="alt,alt3"}-->'>
-											<td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_dept__ket}-->  </TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_jabatan__ket}--> </TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_cabang__nama}--> </TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_subcab__nama}-->   </TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_stp__nama}--></TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__tgl_masuk|date_format:"%d-%m-%Y"}--> </TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__bank1_norek}-->  </TD>
-                                                                                        <TD colspan="2" width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].r_pegawai__id}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
-											
-										</TR>
-										<!--{sectionelse}-->
-										<TR>
-											<TD class="tdatacontent" COLSPAN="10" align="center">Maaf, Data masih kosong</TD>
-										</TR>
+			<tr >
+                        <td> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>
+                        <TD ><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
+                        <TD ><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
+                        <TD ><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
+                          <TD > <!--{$DATA_TB[x].r_dept__ket}-->  </TD>
+                        <TD > <!--{$DATA_TB[x].r_jabatan__ket}--> </TD>
+                        <TD ><!--{$DATA_TB[x].r_pegawai__ktp}-->  </TD>
+                        <TD ><!--{$DATA_TB[x].r_pegawai__no_bpjs}--> </TD>
+                        <TD ><!--{$DATA_TB[x].r_pegawai__bpjs_kesehatan}--> </TD>
+                        <TD ><!--{$DATA_TB[x].r_pegawai__no_askes}--> </TD>
+                        <TD ><!--{$DATA_TB[x].r_pegawai__bank1}-->   </TD>
+                        <TD ><!--{$DATA_TB[x].r_pegawai__bank1_norek}-->  </TD>
+                        <TD ><!--{$DATA_TB[x].r_cabang__nama}-->   </TD>
+                        <TD ><!--{$DATA_TB[x].r_subcab__nama}-->  </TD>
+                        <TD ><!--{$DATA_TB[x].r_pegawai__tgl_masuk|date_format:"%d-%m-%Y"}--></TD>
+                        <TD > 
+                        <!--{if ($DATA_TB[x].ket_resign)==1}-->
+                            <font color="#0d47c4">Masih Aktif</font>  
+                        <!--{else}-->  
+                         <font color="#FF0000">Resign</font>     
+                            <!--{/if}--> 
+                        </TD>	
+                    <TD><!--{$DATA_TB[x].r_pegawai__nama_jalan}--> </TD>
+                    <TD><!--{$DATA_TB[x].r_provinsi__nama}--></TD>
+                    <TD><!--{$DATA_TB[x].r_kabupaten__nama}--></TD>
+                    <TD><!--{$DATA_TB[x].r_kecamatan__nama}--></TD>
+                    <TD><!--{$DATA_TB[x].r_wilayah__nama}--></TD>
+                    <TD><!--{$DATA_TB[x].r_pegawai__tlp_pribadi}--></TD>
+                    <TD><!--{$DATA_TB[x].r_pegawai__tlp_rumah}--></TD>
+               
+
+                       <TD colspan="2" width="20"  ALIGN="CENTER"><IMG SRC="<!--{$HREF_IMG_PATH}-->/icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<!--{$EDIT}-->" onclick="return checkEdit('<!--{$SELF}-->?opt=1&id=<!--{$DATA_TB[x].r_pegawai__id}-->&mod_id=<!--{$MOD_ID}-->&<!--{$STR_COMPLETER_}-->');" class="imgLink"></TD>
+
+                </TR>
+                <!--{sectionelse}-->
+                <TR>
+                        <TD  COLSPAN="15" align="center">Maaf, Data masih kosong</TD>
+                </TR>
 			<!--{/section}-->
 			</tbody>
-		</table>
+           
+            
+     
+    </table
 <div id="panel-footer">
     <!--halaman -->
-                    <table width="100%">
-                    <tr class="text-regular">
-                    <td width="20">Tampilkan</td>
-                    <td width="35"><INPUT TYPE="hidden" name="mod_id" value="<!--{$MOD_ID}-->">
-                    <INPUT TYPE="hidden" name="kode_perwakilan_cari" value="<!--{$KODE_PERWAKILAN_CARI}-->">
-                    <INPUT TYPE="hidden" name="no_paspor_cari" value="<!--{$NO_PASPOR_CARI}-->">
-                    <INPUT TYPE="hidden" name="nama_wni_cari" value="<!--{$NAMA_WNI_CARI}-->">
                  
-                                    <SELECT NAME="limit" onchange="this.form.page.value='1'; this.form.submit();" class="text-paging">
-                                    <!--{section name=x loop=$LISTVAL}-->
-                                    <OPTION VALUE = "<!--{$LISTVAL[x]}-->" <!--{if $LISTVAL[x]==$LIMIT}--> SELECTED <!--{/if}-->> <!--{$LISTVAL[x]}--> </OPTION>
-                                    <!--{/section}-->
-                                    </SELECT></td>
-                    <td>Baris : <!--{$COUNT_VIEW}--> - <!--{$COUNT_ALL}--> Dari <!--{$COUNT}--></td>
-                    <td align="right"><!--{$NEXT_PREV}--></td>
-                    </tr>
-                    </table>
     <!--halaman -->
 </div>
-		</td></tr>
+                    </td></tr>
 		</table>
+		
 
 		</form>
 

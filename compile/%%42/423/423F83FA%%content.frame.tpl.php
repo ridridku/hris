@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-19 08:47:53
+<?php /* Smarty version 2.6.18, created on 2017-06-02 09:11:07
          compiled from defaults/modules/content.frame.tpl */ ?>
 <html>
 <head>

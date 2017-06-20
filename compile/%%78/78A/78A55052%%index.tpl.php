@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-20 04:56:55
+<?php /* Smarty version 2.6.18, created on 2017-06-07 13:24:46
          compiled from defaults/modules/pelaporan/lap_kepegawaian/data_surat_peringatan/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/pelaporan/lap_kepegawaian/data_surat_peringatan/index.tpl', 378, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'base64_encode', 'defaults/modules/pelaporan/lap_kepegawaian/data_surat_peringatan/index.tpl', 81, false),array('modifier', 'date_format', 'defaults/modules/pelaporan/lap_kepegawaian/data_surat_peringatan/index.tpl', 378, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -115,11 +115,11 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                                                            <?php if (( $this->_tpl_vars['OPT'] == 1 )): ?>
 
                                                                                                    <?php if (trim ( $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'] ) == $this->_tpl_vars['EDIT_R_CABANG__ID']): ?>
-                                                                                                   <option value="<?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id']; ?>
+                                                                                                   <option value="<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'])) ? $this->_run_mod_handler('base64_encode', true, $_tmp) : base64_encode($_tmp)); ?>
 " selected > <?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </option>
                                                                                                    <?php else: ?>
-                                                                                                   <option value="<?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id']; ?>
+                                                                                                   <option value="<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'])) ? $this->_run_mod_handler('base64_encode', true, $_tmp) : base64_encode($_tmp)); ?>
 "  > <?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </option>
                                                                                                    <?php endif; ?>
@@ -127,11 +127,11 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                                                            <?php else: ?>
 
                                                                                                    <?php if (( $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['kode_cabang'] ) == $this->_tpl_vars['KODE_PW_SES']): ?>
-                                                                                                   <option value="<?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id']; ?>
+                                                                                                   <option value="<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'])) ? $this->_run_mod_handler('base64_encode', true, $_tmp) : base64_encode($_tmp)); ?>
 " selected > <?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </option>
                                                                                                    <?php else: ?>
-                                                                                                   <option value="<?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id']; ?>
+                                                                                                   <option value="<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'])) ? $this->_run_mod_handler('base64_encode', true, $_tmp) : base64_encode($_tmp)); ?>
 "  > <?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </option>
                                                                                                    <?php endif; ?>
@@ -172,11 +172,11 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                                                            <?php if (( $this->_tpl_vars['OPT'] == 1 )): ?>
 
                                                                                                    <?php if (trim ( $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'] ) == $this->_tpl_vars['EDIT_R_CABANG__ID']): ?>
-                                                                                                   <option value="<?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id']; ?>
+                                                                                                   <option value="<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'])) ? $this->_run_mod_handler('base64_encode', true, $_tmp) : base64_encode($_tmp)); ?>
 " selected > <?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </option>
                                                                                                    <?php else: ?>
-                                                                                                   <option value="<?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id']; ?>
+                                                                                                   <option value="<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'])) ? $this->_run_mod_handler('base64_encode', true, $_tmp) : base64_encode($_tmp)); ?>
 "  disabled> <?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </option>
                                                                                                    <?php endif; ?>
@@ -184,11 +184,11 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                                                            <?php else: ?>
 
                                                                                                    <?php if (trim ( $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'] ) == trim ( $this->_tpl_vars['KODE_PW_SES'] )): ?>
-                                                                                                   <option value="<?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id']; ?>
+                                                                                                   <option value="<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'])) ? $this->_run_mod_handler('base64_encode', true, $_tmp) : base64_encode($_tmp)); ?>
 " selected > <?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </option>
                                                                                                    <?php else: ?>
-                                                                                                   <option value="<?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id']; ?>
+                                                                                                   <option value="<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__id'])) ? $this->_run_mod_handler('base64_encode', true, $_tmp) : base64_encode($_tmp)); ?>
 "  disabled> <?php echo $this->_tpl_vars['DATA_CABANG'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </option>
                                                                                                    <?php endif; ?>

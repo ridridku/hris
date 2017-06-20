@@ -282,7 +282,7 @@ $pdf->Cell(27,6,'sanksi lebih lanjut.',0,'FJ',1);
 
 $pdf->Ln();
 $pdf->Ln();
-$pdf->Cell(27,4,'Demikian keputusan ini dibuat dan diberikan kepada Bapak / Ibu / Saurdara agar kemudian',0,'FJ',1);
+$pdf->Cell(27,4,'Demikian keputusan ini dibuat dan diberikan kepada Bapak / Ibu / Saudara agar kemudian',0,'FJ',1);
 $pdf->Ln();
 $pdf->Cell(27,6,'hari dapat lebih hati-hati dan tidak melakukan kesalahan lagi.',0,'FJ',1);
 $pdf->Ln();

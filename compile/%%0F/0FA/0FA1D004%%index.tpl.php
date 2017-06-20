@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-26 03:27:12
+<?php /* Smarty version 2.6.18, created on 2017-06-16 09:30:25
          compiled from defaults/modules/kehadiran/surat_cuti//index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/kehadiran/surat_cuti//index.tpl', 229, false),array('function', 'cycle', 'defaults/modules/kehadiran/surat_cuti//index.tpl', 491, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/kehadiran/surat_cuti//index.tpl', 279, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -106,12 +106,81 @@ function hideIt(){
 /tw-ajax.js"></SCRIPT>
 <SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
 /tw-sack.js"></SCRIPT>
-
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/css/jquery.dataTables.min-right.css" type="text/css">
+<link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/css/fixedColumns.dataTables.min.css" type="text/css">
+<link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/css/buttons.dataTables.min.css" type="text/css">	  
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/jquery-1.12.4.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/jquery.dataTables.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/dataTables.fixedColumns.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/dataTables.buttons.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.colVis.min.js"></SCRIPT>
+<link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/style_sorting.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/script_sorting.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/script_p.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.flash.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/jszip.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/pdfmake.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/vfs_fonts.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.html5.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.print.min.js"></SCRIPT>
+<link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/css/select.dataTables.min.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/dataTables.select.min.js"></SCRIPT>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!-- #EndEditable -->
+<script>
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        scrollY:        "430",
+        scrollX:        true,
+        scrollCollapse: true,
+        info:true,
+       // paging: true,  
+         dom: 'Bfrtip',
+        buttons: ['excel','colvis'],
+       language: {search: "Pencarian:",buttons: {colvis: 'Atur Kolom'}},
+        select: {style: 'single'},
+          Sorting: [[ 2, "desc" ]], 
+          pageLength: "50", 
+    // lengthMenu: [ 50, 100, 300, 1000],
+       fixedColumns:   { leftColumns: 4,rightColumns:0 }
 
+        });
+        
+} );
+</script>
+
+<STYLE>
+/* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {width: 1100;margin: 0 auto;}
+    .number_range_filter{width:100px;}
+    
+      div.ColVis {
+        float: centerPage;
+    }
+  </STYLE>
+<!-- #EndEditable -->
 </HEAD>
-
 <body class="contentPage" onLoad="hideIt(); <?php if ($this->_tpl_vars['OPT'] == 1): ?>showAll('_menuEntry1_',1);hideAll('_menuEntry2_',1);<?php else: ?>hideAll('_menuEdit_',1);hideAll('_menuEntry1_',1);showAll('_menuEntry2_',1);<?php endif; ?>">
     <!--tombol_tambah  -->
 <div id="add-search-box">
@@ -292,12 +361,12 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                             </TD>
 
                     </TR>
-                    <TR>
+                  <!-- <TR>
                             <TD>Cek Cuti<font color="#ff0000">*</font> </TD>
                             <TD><INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="cek_sisa_cuti()" value=" ... " />
                             </TD>
 
-                    </TR>
+                    </TR>*} -->
                     
                     <TR>
                             <TD>Nama Atasan<font color="#ff0000">*</font> </TD>
@@ -309,20 +378,20 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                             </TD>
                     </TR>
                     <TR>
-				<TD>Tanggal </TD>
+				<TD>Tanggal Awal Cuti</TD>
 			
                                 <TD>
                                     <?php if ($this->_tpl_vars['EDIT_VAL'] == 0): ?>
 
-                                    <input readonly="" type="text" NAME="tgl"  value="<?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, "%Y-%m-%d") : smarty_modifier_date_format($_tmp, "%Y-%m-%d")); ?>
+                                    <input readonly="" type="text" NAME="tgl_awal"  value="<?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, "%Y-%m-%d") : smarty_modifier_date_format($_tmp, "%Y-%m-%d")); ?>
 ">
 							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.tgl_awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<?php else: ?>
-                                                        <input readonly=""  type="text" name="tgl" value="<?php echo $this->_tpl_vars['EDIT_T_CUTI__TGL']; ?>
+                                                        <input readonly=""  type="text" name="tgl_awal" value="<?php echo $this->_tpl_vars['EDIT_T_CUTI__AWAL']; ?>
 " >
 							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<?php endif; ?>  
                                       
                                 </TD>         
@@ -331,15 +400,74 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 			
 			</TR>
                         <TR>
-				<TD>Lama Hari</TD>
+				<TD>Tanggal Akhir Cuti </TD>
 			
-                                <TD><input type="text" NAME="lama_hari" size="10" value="<?php echo $this->_tpl_vars['EDIT_T_CUTI__LAMA']; ?>
-" onkeyup="formatangka(this)"> Hari		
+                                <TD>
+                                    <?php if ($this->_tpl_vars['EDIT_VAL'] == 0): ?>
+
+                                    <input readonly="" type="text" NAME="tgl_akhir"  value="<?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, "%Y-%m-%d") : smarty_modifier_date_format($_tmp, "%Y-%m-%d")); ?>
+">
+							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.tgl_akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php else: ?>
+                                                        <input readonly=""  type="text" name="tgl_akhir" value="<?php echo $this->_tpl_vars['EDIT_T_CUTI__AWAL']; ?>
+" >
+							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.tgl_akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php endif; ?>  
+                                      
                                 </TD>         
                                         
                                 
 			
 			</TR>
+                        <TR onclick="cek_cuti()" >
+				<TD>Lama Hari</TD>
+			
+                                <TD><input type="text" NAME="lama_hari" size="10" value="<?php echo $this->_tpl_vars['EDIT_T_CUTI__LAMA']; ?>
+" onkeydown="cek_cuti()" onkeyup="formatangka(this)"> Hari		
+                                </TD>         
+                                        
+                                
+			
+			</TR>
+                         <TR>
+                        <TD>Rincian Cuti<font color="#ff0000">*</font> </TD>
+                            <TD> 
+                                <div id="cekcuti">
+                                   <TABLE class='tborder' border='0' cellpadding='0' cellspacing='0' border='0' width='100%' align='left'>
+                                       <THEAD>
+                                       <th class='tdatahead' align='left' width='10%'>Tgl Masuk</th>
+                                         <th class='tdatahead' align='left' width='10%'>Approval Hak Cuti</th>
+                                         <th class='tdatahead' align='left' width='10%'>Periode Aktif</th>
+                                         <th class='tdatahead'  align='left'  width='10%'>Cuti Bersama</th>
+                                         <th class='tdatahead'  align='left'  width='10%'>Cuti Tahunan</th>
+                                         <th class='tdatahead'  align='left'  width='10%'>Cuti Khusus</th>
+                                         <th class='tdatahead'  align='left'  width='10%'>Sisa Cuti Tahunan</th>
+				  </THEAD>
+                                  <TR>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_nominal' value=<?php echo $this->_tpl_vars['CEK_TGL_MASUK']; ?>
+></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_jml' value=<?php echo $this->_tpl_vars['CEK_LABEL']; ?>
+></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_makan' value=<?php echo $this->_tpl_vars['CEK_AKTIF']; ?>
+s/d<?php echo $this->_tpl_vars['CEK_EXPIRED']; ?>
+></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_transport' value=<?php echo $this->_tpl_vars['CEK_JML_CUTI']; ?>
+></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_total' value=<?php echo $this->_tpl_vars['CEK_JML_THN_AMBIL']; ?>
+></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_total' value=<?php echo $this->_tpl_vars['CEK_JML_KHS_AMBIL']; ?>
+></TD>
+                                       <TD><INPUT TYPE='text' readonly='' name='lembur_total' value=<?php echo $this->_tpl_vars['CEK_LABEL_SISA']; ?>
+></TD>
+                                   </TABLE>
+                      
+                            </div>
+                                   <INPUT  type="button" class="button" style="cursor: hand;"  value="Cek" onkeydown="cek_cuti()" />
+                        <INPUT  type="button" class="button" style="cursor: hand;"  value="Report" onclick="report_cuti()" /> 
+                            </TD>
+                    </TR>
                         <TR>
                                 <TD>Jenis Cuti  <font color="#ff0000">*</font></TD> 
 			
@@ -369,10 +497,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 ">
 					<INPUT TYPE="hidden" name="page" value="<?php echo $this->_tpl_vars['page']; ?>
 ">
-					<INPUT TYPE="hidden" name="op" value="0">
-                                        
-                               
-                                     
+					<INPUT TYPE="hidden" name="op" value="0">      
 					<a class="button" href="#" onclick="this.blur();return checkFrm(frmCreate);"><span><img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/blank.gif" align="absmiddle"><?php echo $this->_tpl_vars['SUBMIT']; ?>
 </span></a>
@@ -387,9 +512,14 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                 
 			</TABLE>
                 </form>
+                                        
+                                       
  </td></tr>
  </table>
+                                        
+                                      
  </DIV>
+                                 
 
 <!--close_form_tambah-->
 
@@ -531,7 +661,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                    <TR>
                                                         <TD>Pilih Sub Cabang</TD>
 								<TD>
-                                                                    <DIV id="ajax_subcabang2">
+                                                                    <DIV id="ajax_subcabang">
                                                                        <select name="kode_subcab_cari">
                                                                             <option value="">[Pilih Sub Cabang]</option>
                                                                             <?php unset($this->_sections['x']);
@@ -576,7 +706,7 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                         
                                                         
                                                       <TR>
-								<TD>Departemen</TD>
+                                                            <TD>Departemen</TD>
 								<TD>
                                                                             <select name="departemen_cari" >
                                                                             <option value="">[Pilih Departemen]</option>
@@ -615,79 +745,35 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                                             <?php endif; ?>
                                                                             <?php endfor; endif; ?>
                                                                             </select> 
-                                                                            
-                                                   
-                                                                    
-                                                                </TD>
+                                                                 </TD>
                                                      </TR>   
-                            <TR>
-                                    <TD>Nama Karyawan</TD><TD><INPUT TYPE="text" NAME="nama_pegawai_cari" ></TD>
-                            </TR>
-                             <TR>
-                                    <TD>Finger Print</TD><TD><INPUT TYPE="text" NAME="finger_cari" ></TD>
-                            </TR>
-                            <TR>
-							<TD>Periode</TD>
-							<TD>							
-							<SELECT name="bulan"   > 
-								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <?php if ($this->_tpl_vars['BULAN_SES'] == 01): ?>selected<?php endif; ?>>Januari</OPTION>
-								<OPTION VALUE="02"<?php if ($this->_tpl_vars['BULAN_SES'] == 02): ?>selected<?php endif; ?>  >Februari</OPTION>
-								<OPTION VALUE="03"<?php if ($this->_tpl_vars['BULAN_SES'] == 03): ?>selected<?php endif; ?>  >Maret</OPTION>
-								<OPTION VALUE="04"<?php if ($this->_tpl_vars['BULAN_SES'] == 04): ?>selected<?php endif; ?>  >April</OPTION>
-								<OPTION VALUE="05"<?php if ($this->_tpl_vars['BULAN_SES'] == 05): ?>selected<?php endif; ?> >Mei</OPTION>
-								<OPTION VALUE="06"<?php if ($this->_tpl_vars['BULAN_SES'] == 06): ?>selected<?php endif; ?>  >Juni</OPTION>
-								<OPTION VALUE="07"<?php if ($this->_tpl_vars['BULAN_SES'] == 07): ?>selected<?php endif; ?>  >Juli</OPTION>
-								<OPTION VALUE="08"<?php if ($this->_tpl_vars['BULAN_SES'] == 08): ?>selected<?php endif; ?>  >Agustus</OPTION>
-								<OPTION VALUE="09"<?php if ($this->_tpl_vars['BULAN_SES'] == 09): ?>selected<?php endif; ?>  >September</OPTION>
-								<OPTION VALUE="10"<?php if ($this->_tpl_vars['BULAN_SES'] == 10): ?>selected<?php endif; ?>  >Oktober</OPTION>
-								<OPTION VALUE="11"<?php if ($this->_tpl_vars['BULAN_SES'] == 11): ?>selected<?php endif; ?>  >November</OPTION>
-								<OPTION VALUE="12"<?php if ($this->_tpl_vars['BULAN_SES'] == 12): ?>selected<?php endif; ?>  >Desember</OPTION>				 
-                                                        </SELECT> 
-
-
-							<SELECT name="tahun" > 
-						<OPTION VALUE="" selected>[Pilih Tahun]</OPTION>
-						<?php unset($this->_sections['foo']);
-$this->_sections['foo']['name'] = 'foo';
-$this->_sections['foo']['start'] = (int)2010;
-$this->_sections['foo']['loop'] = is_array($_loop=2021) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
-$this->_sections['foo']['step'] = ((int)1) == 0 ? 1 : (int)1;
-$this->_sections['foo']['show'] = true;
-$this->_sections['foo']['max'] = $this->_sections['foo']['loop'];
-if ($this->_sections['foo']['start'] < 0)
-    $this->_sections['foo']['start'] = max($this->_sections['foo']['step'] > 0 ? 0 : -1, $this->_sections['foo']['loop'] + $this->_sections['foo']['start']);
-else
-    $this->_sections['foo']['start'] = min($this->_sections['foo']['start'], $this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] : $this->_sections['foo']['loop']-1);
-if ($this->_sections['foo']['show']) {
-    $this->_sections['foo']['total'] = min(ceil(($this->_sections['foo']['step'] > 0 ? $this->_sections['foo']['loop'] - $this->_sections['foo']['start'] : $this->_sections['foo']['start']+1)/abs($this->_sections['foo']['step'])), $this->_sections['foo']['max']);
-    if ($this->_sections['foo']['total'] == 0)
-        $this->_sections['foo']['show'] = false;
-} else
-    $this->_sections['foo']['total'] = 0;
-if ($this->_sections['foo']['show']):
-
-            for ($this->_sections['foo']['index'] = $this->_sections['foo']['start'], $this->_sections['foo']['iteration'] = 1;
-                 $this->_sections['foo']['iteration'] <= $this->_sections['foo']['total'];
-                 $this->_sections['foo']['index'] += $this->_sections['foo']['step'], $this->_sections['foo']['iteration']++):
-$this->_sections['foo']['rownum'] = $this->_sections['foo']['iteration'];
-$this->_sections['foo']['index_prev'] = $this->_sections['foo']['index'] - $this->_sections['foo']['step'];
-$this->_sections['foo']['index_next'] = $this->_sections['foo']['index'] + $this->_sections['foo']['step'];
-$this->_sections['foo']['first']      = ($this->_sections['foo']['iteration'] == 1);
-$this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] == $this->_sections['foo']['total']);
-?>
- 							  <?php if (( $this->_sections['foo']['index'] ) == $this->_tpl_vars['TAHUN_SES']): ?>
-								 <option value="<?php echo $this->_sections['foo']['index']; ?>
-"  selected><?php echo $this->_sections['foo']['index']; ?>
-</option>
-							  <?php else: ?>
-									 <option value="<?php echo $this->_sections['foo']['index']; ?>
-"   ><?php echo $this->_sections['foo']['index']; ?>
-</option>
-							 <?php endif; ?> 
-						<?php endfor; endif; ?>
-						</SELECT> 
-						 </TD></TR>
+                                        <TR>
+                                            <TD>Nama Karyawan</TD><TD><INPUT TYPE="text" NAME="nama_pegawai_cari" ></TD>
+                                        </TR>
+                                        <TR>
+                                            <TD>Finger Print</TD><TD><INPUT TYPE="text" NAME="finger_cari" ></TD>
+                                        </TR>
+                                        <TR>
+                                            <TD>Periode Awal  <font color="#ff0000">*</font></TD>
+                                        <TD>
+                                    <input type="text"  NAME="awal" value="">
+				<img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmList1.awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+				
+                                
+                                </TD>
+			</TR>  
+                        <TR>
+				<TD>Periode Akhir  <font color="#ff0000">*</font></TD>
+                                <TD>
+                                <input type="text"  NAME="akhir" value="">
+				<img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmList1.akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					
+                                
+                                
+                                </TD>
+			</TR>
 			<TR><TD></TD>
 				<TD>
 				<INPUT TYPE="hidden" name="mod_id" value="<?php echo $this->_tpl_vars['MOD_ID']; ?>
@@ -727,24 +813,24 @@ $this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] ==
 		<tr><td class="thead"><img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /layout/columns.gif" align="absmiddle" border="0"> Pengajuan Cuti HRD</td></tr>
 		<tr><td class="alt2" style="padding:0px;">
-		<table width="100%">
-		<tr>
-											<th class="tdatahead" align="left">NO</TH>
-											<th class="tdatahead" align="left" width="10%">NAMA KARYAWAN</TH>
-                                                                                        <th class="tdatahead" align="left" width="10%">NIP KARYAWAN</TH>
-                                                                                        <th class="tdatahead" align="left" width="10%">FINGER PRINT</TH>
-                                                                                        <th class="tdatahead" align="left">CABANG</TH>
-											<th class="tdatahead" align="left">DEPARTEMEN</TH>
-											<th class="tdatahead" align="left">TGL MASUK</TH>
-                                                                                        <th class="tdatahead" align="left">NAMA ATASAN</TH>
-                                                                                        <th class="tdatahead" align="left">TGL PENGAMBILAN</TH>
-                                                                                        <th class="tdatahead" align="left">JENIS CUTI </TH>
-											<th class="tdatahead" align="left">LAMA CUTI</TH>
-                                                                                        <th class="tdatahead" align="left">ALASAN</TH>
-                                                                                        <th class="tdatahead" COLSPAN="2"><?php echo $this->_tpl_vars['ACTION']; ?>
+		<table id="example" class="display" cellpadding="6" cellspacing="6" width="100%">
+		<thead class="tdatahead">
+                <th class="alt2" align="left">NO</TH>
+                <th class="alt2" align="left" width="10%">NAMA KARYAWAN</TH>
+                <th class="alt2" abbr="" align="left" width="10%">NIP KARYAWAN</TH>
+                <th class="alt2" align="left" width="10%">FINGER PRINT</TH>
+                <th class="alt2" align="left">CABANG</TH>
+                <th class="alt2" align="left">DEPARTEMEN</TH>
+                <th class="alt2" align="left">TGL MASUK</TH>
+                <th class="alt2" align="left">NAMA ATASAN</TH>
+                <th class="alt2" align="left">TGL PENGAMBILAN</TH>
+                <th class="alt2" align="left">JENIS CUTI </TH>
+                <th class="alt2" align="left">LAMA CUTI</TH>
+                <th class="alt2" align="left">ALASAN</TH>
+                <th class="alt2" ><?php echo $this->_tpl_vars['ACTION']; ?>
 </th>
-			</tr>
-			</thead>
+			
+		</thead>
 			<tbody>
 			<?php unset($this->_sections['x']);
 $this->_sections['x']['name'] = 'x';
@@ -770,116 +856,70 @@ $this->_sections['x']['index_next'] = $this->_sections['x']['index'] + $this->_s
 $this->_sections['x']['first']      = ($this->_sections['x']['iteration'] == 1);
 $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $this->_sections['x']['total']);
 ?>
-			<tr class='<?php echo smarty_function_cycle(array('values' => "alt,alt3"), $this);?>
-'>
-											<td width="17" class="tdatacontent-first-col"> <?php echo $this->_sections['x']['index']+$this->_tpl_vars['COUNT_VIEW']; ?>
+			<TR >
+                        <TD class="tdatacontent" width="17" > <?php echo $this->_sections['x']['index']+$this->_tpl_vars['COUNT_VIEW']; ?>
 .</TD>
-											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
+                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
  </TD>
-                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
+                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
  </TD>
-                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__finger_print']; ?>
+                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__finger_print']; ?>
  </TD>
-                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
+                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </TD>
-											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_dept__ket']; ?>
+                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_dept__ket']; ?>
   </TD>
-                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_jabatan__ket']; ?>
+                        <TD class="tdatacontent"> <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__tgl_masuk'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%b-%Y") : smarty_modifier_date_format($_tmp, "%d-%b-%Y")); ?>
  </TD>
-                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__atasan_nama']; ?>
+                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__atasan_nama']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__tgl']; ?>
+                        <TD class="tdatacontent"> <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__awal'])) ? $this->_run_mod_handler('date_format', true, $_tmp, '%d-%m-%y') : smarty_modifier_date_format($_tmp, '%d-%m-%y')); ?>
+ &nbsp;s/d &nbsp;<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__akhir'])) ? $this->_run_mod_handler('date_format', true, $_tmp, '%d-%m-%y') : smarty_modifier_date_format($_tmp, '%d-%m-%y')); ?>
 </TD>
-											<TD class="tdatacontent">
-                                                                                        
-                                                                                            <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__jenis_cuti'] ) == 1): ?>
-                                                                                              <font color="#ff1a1a"> Cuti Tahunan</font>
-                                                                                            <?php else: ?>  
-                                                                                               <font color="#4d4dff"> Cuti Khusus</font>
-                                                                                            <?php endif; ?> 
-                                                                                        
-                                                                                        
-                                                                                        </TD>
-											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__lama_hari']; ?>
+                        <TD class="tdatacontent">
+
+                            <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__jenis_cuti'] ) == 1): ?>
+                              <font color="#ff1a1a"> Cuti Tahunan</font>
+                            <?php else: ?>  
+                               <font color="#4d4dff"> Cuti Khusus</font>
+                            <?php endif; ?> 
+
+
+                        </TD>
+                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__lama_hari']; ?>
  Hari</TD>
-                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__alasan']; ?>
+                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__alasan']; ?>
 </TD>
-                                                                                        
-                                                                                    
-											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+
+
+                        <TD class="tdatacontent" width="60" class="tdatacontent" ALIGN="CENTER">
+                            <IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<?php echo $this->_tpl_vars['EDIT']; ?>
 " onclick="return checkEdit('<?php echo $this->_tpl_vars['SELF']; ?>
 ?opt=1&id=<?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__no']; ?>
 &mod_id=<?php echo $this->_tpl_vars['MOD_ID']; ?>
 &<?php echo $this->_tpl_vars['STR_COMPLETER_']; ?>
-');" class="imgLink"></TD>
-											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+');" class="imgLink">
+                        <IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/delete.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<?php echo $this->_tpl_vars['DELETE']; ?>
 " onclick="return checkDelete('engine.php?op=2&id=<?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_cuti__no']; ?>
  &mod_id=<?php echo $this->_tpl_vars['MOD_ID']; ?>
 &<?php echo $this->_tpl_vars['STR_COMPLETER_']; ?>
+');" class="imgLink">
+                        <IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/print.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="" onclick=" window.open('../../../laporan/inc.cuti_detail.php?id=<?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__no_mutasi']; ?>
 ');" class="imgLink"></TD>
-										</TR>
-										<?php endfor; else: ?>
-										<TR>
-											<TD class="tdatacontent" COLSPAN="14" align="center">Maaf, Data masih kosong</TD>
-										</TR>
-			<?php endif; ?>
+                        </TR>
+                        <?php endfor; else: ?>
+                        <TR>
+                        <TD class="tdatacontent" COLSPAN="14" align="center">Maaf, Data masih kosong</TD>
+                        </TR>
+                        <?php endif; ?>
 			</tbody>
 		</table>
 <div id="panel-footer">
     <!--halaman -->
-                    <table width="100%">
-                    <tr class="text-regular">
-                    <td width="20">Tampilkan</td>
-                    <td width="35"><INPUT TYPE="hidden" name="mod_id" value="<?php echo $this->_tpl_vars['MOD_ID']; ?>
-">
-                    <INPUT TYPE="hidden" name="kode_perwakilan_cari" value="<?php echo $this->_tpl_vars['KODE_PERWAKILAN_CARI']; ?>
-">
-                    <INPUT TYPE="hidden" name="no_paspor_cari" value="<?php echo $this->_tpl_vars['NO_PASPOR_CARI']; ?>
-">
-                    <INPUT TYPE="hidden" name="nama_wni_cari" value="<?php echo $this->_tpl_vars['NAMA_WNI_CARI']; ?>
-">
-                    <INPUT TYPE="hidden" name="kode_sumber" value="<?php echo $this->_tpl_vars['KODE_SUMBER']; ?>
-">
-                                    <SELECT NAME="limit" onchange="this.form.page.value='1'; this.form.submit();" class="text-paging">
-                                    <?php unset($this->_sections['x']);
-$this->_sections['x']['name'] = 'x';
-$this->_sections['x']['loop'] = is_array($_loop=$this->_tpl_vars['LISTVAL']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
-$this->_sections['x']['show'] = true;
-$this->_sections['x']['max'] = $this->_sections['x']['loop'];
-$this->_sections['x']['step'] = 1;
-$this->_sections['x']['start'] = $this->_sections['x']['step'] > 0 ? 0 : $this->_sections['x']['loop']-1;
-if ($this->_sections['x']['show']) {
-    $this->_sections['x']['total'] = $this->_sections['x']['loop'];
-    if ($this->_sections['x']['total'] == 0)
-        $this->_sections['x']['show'] = false;
-} else
-    $this->_sections['x']['total'] = 0;
-if ($this->_sections['x']['show']):
-
-            for ($this->_sections['x']['index'] = $this->_sections['x']['start'], $this->_sections['x']['iteration'] = 1;
-                 $this->_sections['x']['iteration'] <= $this->_sections['x']['total'];
-                 $this->_sections['x']['index'] += $this->_sections['x']['step'], $this->_sections['x']['iteration']++):
-$this->_sections['x']['rownum'] = $this->_sections['x']['iteration'];
-$this->_sections['x']['index_prev'] = $this->_sections['x']['index'] - $this->_sections['x']['step'];
-$this->_sections['x']['index_next'] = $this->_sections['x']['index'] + $this->_sections['x']['step'];
-$this->_sections['x']['first']      = ($this->_sections['x']['iteration'] == 1);
-$this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $this->_sections['x']['total']);
-?>
-                                    <OPTION VALUE = "<?php echo $this->_tpl_vars['LISTVAL'][$this->_sections['x']['index']]; ?>
-" <?php if ($this->_tpl_vars['LISTVAL'][$this->_sections['x']['index']] == $this->_tpl_vars['LIMIT']): ?> SELECTED <?php endif; ?>> <?php echo $this->_tpl_vars['LISTVAL'][$this->_sections['x']['index']]; ?>
- </OPTION>
-                                    <?php endfor; endif; ?>
-                                    </SELECT></td>
-                    <td>Baris : <?php echo $this->_tpl_vars['COUNT_VIEW']; ?>
- - <?php echo $this->_tpl_vars['COUNT_ALL']; ?>
- Dari <?php echo $this->_tpl_vars['COUNT']; ?>
-</td>
-                    <td align="right"><?php echo $this->_tpl_vars['NEXT_PREV']; ?>
-</td>
-                    </tr>
-                    </table>
+                  
     <!--halaman -->
 </div>
 		</td></tr>

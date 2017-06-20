@@ -153,7 +153,13 @@
 { $mutasi = $_POST['mutasi'];
 }else{ $mutasi = $_GET['mutasi'];}
 
-var_dump($mutasi) or die();
+if ($_GET['date1']) $date1 = $_GET['date1'];
+else if ($_POST['date1']) $date1 = $_POST['date1'];
+else $date1="";
+
+if ($_GET['date2']) $date2= $_GET['date2'];
+else if ($_POST['date2']) $date2 = $_POST['date2'];
+else $date2="";
 	
 	//labelDisplay='ROTATE' 
 	echo"<SCRIPT LANGUAGE='Javascript' SRC='FusionCharts/FusionCharts.js'></SCRIPT>";
@@ -191,19 +197,19 @@ slantLabels='1' numDivLines='5'  exportAtClient='1' exportHandler='fcExporter1' 
 	r_penempatan.r_pnpt__nip AS r_pnpt__nip,
 	r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
 	r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print
-FROM
-	r_kpi
-INNER JOIN r_penempatan ON r_penempatan.r_pnpt__finger_print = r_kpi.r_kpi__finger
-INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id = r_penempatan.r_pnpt__id_pegawai
-INNER JOIN r_subcabang ON r_subcabang.r_subcab__id = r_penempatan.r_pnpt__subcab
-INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-INNER JOIN r_subdepartement ON r_subdepartement.r_subdept__id = r_pnpt__subdept
-INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-WHERE date(r_kpi__date_updated) BETWEEN '2016-01-21' AND '2016-10-21' AND r_pnpt__no_mutasi = '$mutasi' order by r_kpi__id ASC  "; 
-        
-        
+        FROM
+                r_kpi
+        INNER JOIN r_penempatan ON r_penempatan.r_pnpt__finger_print = r_kpi.r_kpi__finger
+        INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id = r_penempatan.r_pnpt__id_pegawai
+        INNER JOIN r_subcabang ON r_subcabang.r_subcab__id = r_penempatan.r_pnpt__subcab
+        INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+        INNER JOIN r_subdepartement ON r_subdepartement.r_subdept__id = r_pnpt__subdept
+        INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+        WHERE date(r_kpi__tgl) BETWEEN '$date1' AND '$date2' AND r_pnpt__no_mutasi = '$mutasi' order by r_kpi__id ASC  "; 
+                
+       
 	$qr=mysql_query($sql); 
-	//echo $sql;die;
+	var_dump($sql)or die();
 	while($Data=mysql_fetch_array($qr))
 	{
 		$arrData[0][1]="$Data[r_kpi__bulan]"; 

@@ -220,7 +220,6 @@ $nm_cabang=$rs_pw->fields['r_cabang__nama'];
 <td width="10">:</td>
 <td width="30">
 <select name='pil' class="text">
-<option value=0></option>
 <option value='1' <?PHP if ($pil==1) { echo "selected"; } ?>>Nama  </option>
    <option value='2' <?PHP if ($pil==2) { echo "selected"; } ?>>NIP</option>
  <!--     <option value='4' <?PHP if ($pil==4) { echo "selected"; } ?>>Alamat</option>

@@ -14,7 +14,7 @@ session_set_cookie_params($expiry);
 session_start();
 
 if ((!isset($_SESSION['UID'])) || (empty($_SESSION['UID']))){
-		require_once('../../../includes/                                ');
+    require_once('../../../includes/');
 }else{
 
 //yang harus dibuat session
@@ -63,96 +63,188 @@ $jenis_user  = $_SESSION['SESSION_JNS_USER'];
 function delete_(){
 global $mod_id;
 global $db;
-$tahun = $_GET[tahun];
-$bulan = $_GET[bulan];
-$id = $_GET[id];
-$edit_r_subdept__ket = addslashes($_POST[r_subdept__ket]);
-$edit_r_cabang__nama = addslashes($_POST[r_cabang__nama]);
+$periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];
+$periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF'];  
+$t_rkp__no_mutasi=$_GET[id];
 
-        $sql  =" DELETE ";
-        $sql .=" FROM t_rekap_absensi";
-        $sql .=" WHERE  t_rkp__no_mutasi= '$_GET[id]' AND t_rkp__bln='$_GET[bulan]' AND t_rkp__thn='$_GET[tahun]'";
+$sql_cek_edit ="SELECT "
+        . "A.t_rkp__approval as approval,"
+        . "A.t_rkp__no_mutasi as mutasi,"
+        . "A.t_rkp__awal as t_rkp__awal,"
+        . "A.t_rkp__akhir as t_rkp__akhir"
+        . " FROM t_rekap_absensi A "
+        . "  where  A.t_rkp__no_mutasi='$t_rkp__no_mutasi' AND A.t_rkp__awal>='$periode_awal' AND A.t_rkp__akhir<='$periode_akhir'";
+
+        $rs_val = $db->Execute($sql_cek_edit);
+        $approval = $rs_val->fields['approval'];
         
-        $sqlresult = $db->Execute($sql);
+ if ($approval>=1) 
+    {
+       Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+    }  else {
+            $sql  ="DELETE ";
+            $sql .="FROM t_rekap_absensi ";
+            $sql .="WHERE  t_rkp__no_mutasi= '$_GET[id]'  AND t_rkp__awal>='$periode_awal' AND t_rkp__akhir<='$periode_akhir' ";
+            $sqlresult = $db->Execute($sql);
+            Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+                }
+
 
 }
 
 function edit_(){
-global $mod_id;
+     
+global $mod_id;	
 global $db;
+global $tbl_name;
+global $field_name;
+
+
+
 $user_id = base64_decode($_SESSION['UID']);
 $id_peg = $_SESSION['SESSION_ID_PEG'];
-$today = date("Y-m-d h:i:s");
+  
+        $sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_awal,r_periode__payroll_akhir,r_periode__payroll_status "
+                 . "FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
+        $rs_val = $db->Execute($sql_cek_periode);
+        $periode_awal= $rs_val->fields['r_periode__payroll_awal'];
+        $periode_akhir= $rs_val->fields['r_periode__payroll_akhir'];
+  
+ $app_count= $_POST['mutasi'];  
 
-$edit_r_cabang__id = addslashes($_POST[r_cabang__id]);
-$edit_r_subdept__ket = addslashes($_POST[r_subdept__ket]);
-$edit_r_cabang__nama = addslashes($_POST[r_cabang__nama]);
-$edit_r_pegawai__nama = addslashes($_POST[r_pegawai__nama]);
-$edit_t_rkp__no_mutasi = addslashes($_POST[t_rkp__no_mutasi]);
-$edit_t_rkp__bln = addslashes($_POST[t_rkp__bln]);
-$edit_t_rkp__thn = addslashes($_POST[t_rkp__thn]);
-$edit_t_rkp__approval = addslashes($_POST[t_rkp__approval]); 
-$edit_t_rkp__keterangan = addslashes($_POST[t_rkp__keterangan]);
-$edit_t_rkp__hadir = addslashes($_POST[t_rkp__hadir]);
-$edit_t_rkp__sakit = addslashes($_POST[t_rkp__sakit]);
-$edit_t_rkp__izin = addslashes($_POST[t_rkp__izin]);
-$edit_t_rkp__alpa = addslashes($_POST[t_rkp__alpa]);
-$edit_t_rkp__dinas = addslashes($_POST[t_rkp__dinas]);
-$edit_t_rkp__cuti = addslashes($_POST[t_rkp__cuti]);
-
-
-
-
-
-$t_rkp__date_updated= date("Y-m-d h:i:s");
-$t_rkp__user_updated= $id_peg;	
-
-$sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_bulan,r_periode__payroll_tahun,r_periode__payroll_status
-                                  FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
-                  
-$rs_val = $db->Execute($sql_cek_periode);
-$periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
-$periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];
+if (!empty($app_count))
+    {
+    $bad_symbols = array(",", ".");
+    $approval_array=$_POST['mutasi'];
+     $mutasi_array=$_POST['mutasi'];
+    $array__hadir = $_POST['hadir'];
+    $array__sakit = str_replace($bad_symbols,"",$_POST['sakit']);
+    $array__izin = str_replace($bad_symbols,"",$_POST['izin']);
+    $array__alpa = str_replace($bad_symbols,"",$_POST['alpa']);
+    $array__dinas = str_replace($bad_symbols,"",$_POST['dinas']);
+    $array__cuti = str_replace($bad_symbols,"",$_POST['cuti']);
+    $array__keterangan = str_replace($bad_symbols,"",$_POST['keterangan']);
+    $array__awal = str_replace($bad_symbols,"",$_POST['awal']);
+    $array__akhir = str_replace($bad_symbols,"",$_POST['akhir']);
+    $array__status = str_replace($bad_symbols,"",$_POST['status']);
 
 
-
-$sql_cek_approval="SELECT A.t_rkp__no_mutasi,A.t_rkp__approval,A.t_rkp__bln,A.t_rkp__thn
-FROM  t_rekap_absensi A LEFT JOIN v_pegawai P ON P.r_pnpt__no_mutasi=A.t_rkp__no_mutasi
-WHERE A.t_rkp__thn='$periode_tahun' AND A.t_rkp__bln='$periode_bulan' AND A.t_rkp__no_mutasi='$edit_t_rkp__no_mutasi' ";
+   for ($i = 0; $i < count($approval_array); $i++) 
+    {
+        
+        $t_rkp__mutasi = mysql_real_escape_string($mutasi_array[$i]);
+        $t_rkp__awal= mysql_real_escape_string($array__awal[$i]);
+        $t_rkp__akhir= mysql_real_escape_string($array__akhir[$i]);
+        $t_rkp__hadir= mysql_real_escape_string($array__hadir[$i]);
+        $t_rkp__sakit= mysql_real_escape_string($array__sakit[$i]);
+        $t_rkp__izin= mysql_real_escape_string($array__izin[$i]);
+        $t_rkp__alpa= mysql_real_escape_string($array__alpa[$i]);
+        $t_rkp__dinas= mysql_real_escape_string($array__dinas[$i]);
+        $t_rkp__cuti= mysql_real_escape_string($array__cuti[$i]);    
+        $t_rkp__keterangan= mysql_real_escape_string($array__keterangan[$i]);
+        $t_rkp__status= mysql_real_escape_string($array__status[$i]);
+          
+      $jml_hadir=$t_rkp__hadir+$t_rkp__sakit+$t_rkp__izin+$t_rkp__alpa+$t_rkp__dinas+$t_rkp__cuti;
       
-$rs_val = $db->Execute($sql_cek_approval);
-$cek__no_mutasi= $rs_val->fields['t_rkp__no_mutasi'];
-$cek__approval= $rs_val->fields['t_rkp__approval'];
+       IF ($jml_hadir>0)
+      {$status='1';}else{$status='0';}
+      
+      
+      $sql_status="SELECT 
+                           t_rekap_absensi.t_rkp__no_mutasi AS t_rkp__no_mutasi,
+                           t_rekap_absensi.t_rkp__awal AS t_rkp__awal,
+                           t_rekap_absensi.t_rkp__akhir AS t_rkp__akhir,
+                           t_rekap_absensi.t_rkp__approval AS t_rkp__approval
+                           FROM t_rekap_absensi
+                           WHERE t_rekap_absensi.t_rkp__no_mutasi='$t_rkp__mutasi'
+                           AND t_rekap_absensi.t_rkp__awal>='$t_rkp__awal' AND t_rekap_absensi.t_rkp__akhir<='$t_rkp__akhir'";
+    
+        $rs_val = $db->Execute($sql_status);
+        $status_id= $rs_val->fields['t_rkp__no_mutasi'];
+       $status_app= $rs_val->fields['t_rkp__approval'];
 
 
-		if ($edit_t_rkp__bln!=$periode_bulan AND $edit_t_rkp__thn !=$periode_tahun OR $cek__approval==2 OR $cek__approval==3) {
-		 
-				Header("Location:index_cek.php?ERR=5&cek__approval=".$cek__approval."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+  
+if($status_id!='' AND $status_app<=1)
+    {
+  
+   
+        $sql_edit  =" UPDATE t_rekap_absensi set ";
+                    $sql_edit .=" t_rkp__no_mutasi = '$t_rkp__mutasi', ";
+                    $sql_edit .=" t_rkp__awal = '$t_rkp__awal', ";
+                    $sql_edit .=" t_rkp__akhir = '$t_rkp__akhir', ";
+                    $sql_edit .=" t_rkp__approval = '$status', ";
+                    $sql_edit .=" t_rkp__keterangan = '$t_rkp__keterangan', ";
+                    $sql_edit .=" t_rkp__hadir = '$t_rkp__hadir', ";
+                    $sql_edit .=" t_rkp__sakit = '$t_rkp__sakit', ";
+                    $sql_edit .=" t_rkp__izin = '$t_rkp__izin', ";
+                    $sql_edit .=" t_rkp__alpa = '$t_rkp__alpa', ";
+                    $sql_edit .=" t_rkp__dinas = '$t_rkp__dinas', ";
+                    $sql_edit .=" t_rkp__cuti = '$t_rkp__cuti', ";
+                    $sql_edit .=" t_rkp__date_updated = now(),";
+                    $sql_edit .=" t_rkp__user_updated = '$id_peg'";
+                    $sql_edit .="  WHERE t_rkp__no_mutasi='$t_rkp__mutasi' AND t_rkp__awal>='$t_rkp__awal' AND t_rkp__akhir<='$t_rkp__akhir'";
+             
+                    $sqlresult4 = $db->Execute($sql_edit);
+     
+  
+    }elseif($status_id=='' AND $status_app<=1)
+        {  
+    
+        $sql2="INSERT INTO t_rekap_absensi"
+                            . " (t_rkp__no_mutasi,"
+                            . " t_rkp__awal, "
+                            . "t_rkp__akhir, "
+                            . "t_rkp__approval, "
+                            . "t_rkp__keterangan, "
+                            . "t_rkp__hadir, "
+                            . "t_rkp__sakit, "
+                            . "t_rkp__izin, "
+                            . "t_rkp__alpa, "
+                            . "t_rkp__dinas, "
+                            . "t_rkp__cuti, "
+                            . "t_rkp__date_created, "
+                            . "t_rkp__date_updated, "
+                            . "t_rkp__user_created, "
+                            . "t_rkp__user_updated) ";
 
-		} else {
-			$sql_edit  ="  UPDATE t_rekap_absensi set ";
-                        $sql_edit .=" t_rkp__no_mutasi = '$edit_t_rkp__no_mutasi', ";
-                        $sql_edit .=" t_rkp__bln = '$edit_t_rkp__bln', ";
-                        $sql_edit .=" t_rkp__thn = '$edit_t_rkp__thn', ";
-                        $sql_edit .=" t_rkp__approval = '1', ";
-                        $sql_edit .=" t_rkp__keterangan = '$edit_t_rkp__keterangan', ";
-                        $sql_edit .=" t_rkp__hadir = '$edit_t_rkp__hadir', ";
-                        $sql_edit .=" t_rkp__sakit = '$edit_t_rkp__sakit', ";
-                        $sql_edit .=" t_rkp__izin = '$edit_t_rkp__izin', ";
-                        $sql_edit .=" t_rkp__alpa = '$edit_t_rkp__alpa', ";
-                        $sql_edit .=" t_rkp__dinas = '$edit_t_rkp__dinas', ";
-                        $sql_edit .=" t_rkp__cuti = '$edit_t_rkp__cuti', ";
-                        $sql_edit .=" t_rkp__date_updated =  '$t_rkp__date_updated',";
-                        $sql_edit .=" t_rkp__user_updated = '$id_peg'";
-                        $sql_edit .="  WHERE t_rkp__no_mutasi='$_POST[t_rkp__no_mutasi]' AND t_rkp__bln='$edit_t_rkp__bln' AND t_rkp__thn='$edit_t_rkp__thn'";
-                       
-			$sqlresult4 = $db->Execute($sql_edit);
-			Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
-		}
+                        $sql2 .= " VALUES ('".strip_tags($t_rkp__mutasi)."',"
+                            . "'".strip_tags($t_rkp__awal)."',"
+                            . "'".strip_tags($t_rkp__akhir)."',"
+                            . "'".strip_tags($status)."',"
+                            . "'$t_rkp__keterangan',"
+                            . "'".strip_tags($t_rkp__hadir)."',"
+                            . "'".strip_tags($t_rkp__sakit)."',"
+                            . "'".strip_tags($t_rkp__izin)."',"
+                            . "'".strip_tags($t_rkp__alpa)."',"
+                            . "'".strip_tags($t_rkp__dinas)."',"
+                            . "'".strip_tags($t_rkp__cuti)."',"
+                            . "now(),"
+                            . "now(),"
+                            . "'".strip_tags($id_peg)."',"
+                            . "'".strip_tags($id_peg)."')";
+           
+                            $sqlresult = $db->Execute($sql2);
+               
+        } 
+    
+    
+
+  } 
+    
+ 
+
+}
+  
+      Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+     
+
+     
 }
 
 function create_(){
     
+     
         global $mod_id;	
         global $db;
         global $tbl_name;
@@ -197,13 +289,9 @@ function create_(){
 
   
     if ($tahun!=$periode_tahun AND $bulan !=$periode_bulan AND $periode_mutasi!=$r_pnpt__no_mutasi OR $t_rkp__hadir>$cek_libur  ) {
-        
-        
-			Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+        Header("Location:index_cek.php?ERR=5&kode_peminjaman=".$kode_peminjaman."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 		}else {
-                        
-                           
-                     $sql ="INSERT INTO t_rekap_absensi (t_rkp__no_mutasi, t_rkp__bln, t_rkp__thn, t_rkp__approval, t_rkp__keterangan, t_rkp__hadir, t_rkp__sakit, t_rkp__izin, t_rkp__alpa, t_rkp__dinas, t_rkp__cuti, t_rkp__date_created, t_rkp__user_created)";
+        $sql ="INSERT INTO t_rekap_absensi (t_rkp__no_mutasi, t_rkp__bln, t_rkp__thn, t_rkp__approval, t_rkp__keterangan, t_rkp__hadir, t_rkp__sakit, t_rkp__izin, t_rkp__alpa, t_rkp__dinas, t_rkp__cuti, t_rkp__date_created, t_rkp__user_created)";
                      $sql	.= " VALUES ('".strip_tags($r_pnpt__no_mutasi)."',"
                                         . "'".strip_tags($bulan)."',"
                                         . "'".strip_tags($tahun)."',"

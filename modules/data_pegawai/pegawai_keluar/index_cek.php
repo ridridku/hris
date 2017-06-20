@@ -51,7 +51,7 @@ require_once($DIR_INC."/libs.inc.php");
 // echo "<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>";
 #HREF
 $smarty->assign ("HREF_HOME_PATH", $HREF_HOME);
-$smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/form_isian/form_peminjaman');
+$smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/data_pegawai/pegawai_keluar');
 $smarty->assign ("HREF_IMG_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images'));
 $smarty->assign ("HREF_CSS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/css'));
 $smarty->assign ("HREF_JS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts'));
@@ -66,12 +66,12 @@ $smarty->assign ("SELF", $_SERVER['PHP_SELF']);
 
 //------------------------------------LOCAL CONFIG--------------------------------------//
 #SETTING FOR TEMPLATE 
-$TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/data_pegawai/penempatan';
+$TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/data_pegawai/pegawai_keluar';
 
 
 #SETTING FILE JS INCLUDE
 $JS_MODUL = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts/modules/data_pegawai');
-$FILE_JS  = $JS_MODUL.'/penempatan';
+$FILE_JS  = $JS_MODUL.'/pegawai_keluar';
 
 $JS_MODUL2 = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts');
   

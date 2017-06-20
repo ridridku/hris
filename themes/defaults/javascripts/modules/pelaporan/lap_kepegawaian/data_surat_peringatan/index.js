@@ -265,18 +265,27 @@ if(http.readyState == 4)
 }
 //------------------CLOSE JS PILIH SUBCAB-----------//
 
-
-
+function b64EncodeUnicode(str) {
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {
+        return String.fromCharCode('0x' + p1);
+    }));
+}
 
 function goCarikaryawan() {
-			//document.frm.KodeEselon1.value='';
-			//document.frm.NamaEselon1.value='';
-kode_cabang_cari= document.frmList1.kode_cabang_cari.value;
-//kode_subcab_cari= document.frmList1.kode_subcab_cari.value;
-//departemen_cari= document.frmList1.departemen_cari.value;
-           
- window.open('../../../../function/list_sp_detail.php?kode_cabang_cari='+kode_cabang_cari,null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
-//  window.open('../../../../function/list_sp_detail.php?kode_cabang_cari='+kode_cabang_cari+'&kode_subcab_cari='+kode_subcab_cari+'&departemen_cari='+departemen_cari+'',null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
+	           	
+kode_cabang_cari = document.frmList1.kode_cabang_cari.value;
+          
+ if(kode_cabang_cari =='')
+    {
+           alert('Isi Dahulu Cabang!');
+           return false; 
+    }else
+    {
+        //'../../../../function/list_sp_detail.php?kode_cabang_cari='+kode_cabang_cari
+        window.open('../../../../function/list_sp_detail.php?q='+kode_cabang_cari,null,'height=500,width=550,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,left=0,top=0,screenX=0,screenY=0')
+    
+    
+    }
  			
                             }
 </SCRIPT>

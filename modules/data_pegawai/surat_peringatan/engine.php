@@ -174,7 +174,7 @@ $kode_cabang    = $_POST[kode_cabang];
 $t_sp__no       = $_POST[t_sp__no];
 $t_sp__mutasi   = $_POST[sp_mutasi];
 
-$t_sp__hglm   = 'CECEP YOSEP';
+$t_sp__hglm   ='Iqbal Abdurahaman';
 $t_sp__hglm_mutasi   = 'HGL MANAGER';
 $t_sp__atasan_nama  = $_POST[atasan__nama];
 $t_sp__atasan_jabatan   = $_POST[atasan_jabatan];
@@ -220,7 +220,7 @@ $t2=  strtotime($t_sp__tgl_expired);
                 {
                     
                                   $sql= "INSERT INTO $tbl_name ("
-                                            . "t_sp__no,"
+                                            
                                             . "t_sp__mutasi, "
                                             ."  t_sp__hglm,"
                                             ." t_sp__hglm_mutasi,"
@@ -234,7 +234,7 @@ $t2=  strtotime($t_sp__tgl_expired);
                                             . "t_sp__date_created,"
                                             . "t_sp__user_created)";
                                          $sql    .= " VALUES ("
-                                            . "'$t_sp__no',"
+                                           
                                             . "'$t_sp__mutasi',"
                                             . "'$t_sp__hglm',"
                                             . "'$t_sp__hglm_mutasi',"
@@ -248,10 +248,12 @@ $t2=  strtotime($t_sp__tgl_expired);
                                             . "now(),"
                                             . "'$id_peg')";
                                     
-                                
-                                  
+                                   
+                               
 $sqlresult = $db->Execute($sql);
-Header("Location:inc.sp.php?bulan=".$bulan."&tahun=".$tahun."nip=".$nip."&no=".$no."&mutasi=".$mutasi."&index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+//Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+//Header("Location:inc.sp.php?bulan=".$bulan."&tahun=".$tahun."nip=".$nip."&no=".$no."&mutasi=".$mutasi."&index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 //Header("Location:inc.sp.php?bulan=".$bulan."&tahun=".$tahun."&nip=".$nip."&no=".$no."&mutasi=".$mutasi);
                 }
 }

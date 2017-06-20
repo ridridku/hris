@@ -1,5 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-20 11:02:52
+<?php /* Smarty version 2.6.18, created on 2017-06-12 11:32:33
          compiled from defaults/modules/pelaporan/lap_kepegawaian/data_pegawai/index.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/pelaporan/lap_kepegawaian/data_pegawai/index.tpl', 398, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -36,7 +38,91 @@ function hideIt(){
 /default.css" type="text/css">
 <SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
 /global.js"></SCRIPT>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/css/jquery.dataTables.min.css" type="text/css">
+ <link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/css/fixedColumns.dataTables.min.css" type="text/css">
+ <link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/css/buttons.dataTables.min.css" type="text/css">	  
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/jquery-1.12.4.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/jquery.dataTables.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/dataTables.fixedColumns.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/dataTables.buttons.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.colVis.min.js"></SCRIPT>
+
+<link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/style_sorting.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/script_sorting.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/script_p.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.flash.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/jszip.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/pdfmake.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/vfs_fonts.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.html5.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.print.min.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.flash.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/jszip.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/pdfmake.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/vfs_fonts.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.html5.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/buttons.print.min.js"></SCRIPT>
+<link rel="stylesheet" href="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/css/select.dataTables.min.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $this->_tpl_vars['HREF_JS_PATH']; ?>
+/datatable/js/dataTables.select.min.js"></SCRIPT>
+
+<script>
+$(document).ready(function() {
+    var table = $('#payroll').DataTable( {
+       scrollY:        "430",
+       scrollX:        true,
+       scrollCollapse: true,
+       info:true,
+      paging: false,  
+       //dom: 'Bfrtip',
+       //buttons: ['excel'],
+       language: {search: "Pencarian:",buttons: {colvis: 'Atur Kolom'}},
+       select: {style: 'single'},
+       Sorting: [[ 2, "desc" ]], 
+       pageLength: "50", 
+    // lengthMenu: [ 50, 100, 300, 1000],
+       fixedColumns:   { leftColumns: 3,rightColumns:0}
+        });
+        
+} );
+</script>
+
+<STYLE>
+/* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {width: 1100;margin: 0 auto;}
+    .number_range_filter{width:100px;}
+    
+      div.ColVis {
+        float: centerPage;
+    }
+  </STYLE>
 <!-- #EndEditable -->
 </HEAD>
 
@@ -282,7 +368,50 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                                     
                                                                 </TD>
 							</TR>
-                                                          <TR>
+                                    <TR>
+                                    <TR>
+                           <TD>Jabatan <font color="#ff0000">*</font></TD>
+                           <TD><DIV id="ajax_jabatan">
+                                       <select name="jabatan_cari" >
+                                       <option value="">[Pilih Jabatan]</option>
+                                       <?php unset($this->_sections['x']);
+$this->_sections['x']['name'] = 'x';
+$this->_sections['x']['loop'] = is_array($_loop=$this->_tpl_vars['DATA_JABATAN']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['x']['show'] = true;
+$this->_sections['x']['max'] = $this->_sections['x']['loop'];
+$this->_sections['x']['step'] = 1;
+$this->_sections['x']['start'] = $this->_sections['x']['step'] > 0 ? 0 : $this->_sections['x']['loop']-1;
+if ($this->_sections['x']['show']) {
+    $this->_sections['x']['total'] = $this->_sections['x']['loop'];
+    if ($this->_sections['x']['total'] == 0)
+        $this->_sections['x']['show'] = false;
+} else
+    $this->_sections['x']['total'] = 0;
+if ($this->_sections['x']['show']):
+
+            for ($this->_sections['x']['index'] = $this->_sections['x']['start'], $this->_sections['x']['iteration'] = 1;
+                 $this->_sections['x']['iteration'] <= $this->_sections['x']['total'];
+                 $this->_sections['x']['index'] += $this->_sections['x']['step'], $this->_sections['x']['iteration']++):
+$this->_sections['x']['rownum'] = $this->_sections['x']['iteration'];
+$this->_sections['x']['index_prev'] = $this->_sections['x']['index'] - $this->_sections['x']['step'];
+$this->_sections['x']['index_next'] = $this->_sections['x']['index'] + $this->_sections['x']['step'];
+$this->_sections['x']['first']      = ($this->_sections['x']['iteration'] == 1);
+$this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $this->_sections['x']['total']);
+?>
+                                       <?php if (trim ( $this->_tpl_vars['DATA_JABATAN'][$this->_sections['x']['index']]['r_jabatan__id'] ) == 0): ?>
+                                       <option value="<?php echo $this->_tpl_vars['DATA_JABATAN'][$this->_sections['x']['index']]['r_jabatan__id']; ?>
+" selected > <?php echo $this->_tpl_vars['DATA_JABATAN'][$this->_sections['x']['index']]['r_jabatan__ket']; ?>
+ </option>
+                                       <?php else: ?>
+                                       <option value="<?php echo $this->_tpl_vars['DATA_JABATAN'][$this->_sections['x']['index']]['r_jabatan__id']; ?>
+"  > <?php echo $this->_tpl_vars['DATA_JABATAN'][$this->_sections['x']['index']]['r_jabatan__ket']; ?>
+ </option>
+                                       <?php endif; ?>
+                                       <?php endfor; endif; ?>
+                                       </select>
+                               </DIV>
+                           </TD>
+                   </TR>    
                                        <TD>Status Pegawai</TD>
                                        <TD>
                                             <select name="sts_pegawai" >
@@ -323,24 +452,24 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                     <?php endfor; endif; ?>
                                             </select> 
                                        </TD>
-                            </TR>
+                                    </TR>
                                                          <TR>
 							<TD>Periode Akhir Kontrak</TD>
 							<TD>							
 							<SELECT name="bulan"   > 
 								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <?php if ($this->_tpl_vars['BULAN_SES'] == 1): ?>selected<?php endif; ?>>Januari</OPTION>
-								<OPTION VALUE="02"<?php if ($this->_tpl_vars['BULAN_SES'] == 2): ?>selected<?php endif; ?>  >Februari</OPTION>
-								<OPTION VALUE="03"<?php if ($this->_tpl_vars['BULAN_SES'] == 3): ?>selected<?php endif; ?>  >Maret</OPTION>
-								<OPTION VALUE="04"<?php if ($this->_tpl_vars['BULAN_SES'] == 4): ?>selected<?php endif; ?>  >April</OPTION>
-								<OPTION VALUE="05"<?php if ($this->_tpl_vars['BULAN_SES'] == 5): ?>selected<?php endif; ?> >Mei</OPTION>
-								<OPTION VALUE="06"<?php if ($this->_tpl_vars['BULAN_SES'] == 6): ?>selected<?php endif; ?>  >Juni</OPTION>
-								<OPTION VALUE="07"<?php if ($this->_tpl_vars['BULAN_SES'] == 7): ?>selected<?php endif; ?>  >Juli</OPTION>
-								<OPTION VALUE="08"<?php if ($this->_tpl_vars['BULAN_SES'] == 8): ?>selected<?php endif; ?>  >Agustus</OPTION>
-								<OPTION VALUE="09"<?php if ($this->_tpl_vars['BULAN_SES'] == 9): ?>selected<?php endif; ?>  >September</OPTION>
-								<OPTION VALUE="10"<?php if ($this->_tpl_vars['BULAN_SES'] == 10): ?>selected<?php endif; ?>  >Oktober</OPTION>
-								<OPTION VALUE="11"<?php if ($this->_tpl_vars['BULAN_SES'] == 11): ?>selected<?php endif; ?>  >November</OPTION>
-								<OPTION VALUE="12"<?php if ($this->_tpl_vars['BULAN_SES'] == 12): ?>selected<?php endif; ?>  >Desember</OPTION>				 
+                                                                <OPTION value="01" >Januari</OPTION>
+								<OPTION VALUE="02" >Februari</OPTION>
+								<OPTION VALUE="03">Maret</OPTION>
+								<OPTION VALUE="04">April</OPTION>
+								<OPTION VALUE="05">Mei</OPTION>
+								<OPTION VALUE="06">Juni</OPTION>
+								<OPTION VALUE="07">Juli</OPTION>
+								<OPTION VALUE="08">Agustus</OPTION>
+								<OPTION VALUE="09">September</OPTION>
+								<OPTION VALUE="10">Oktober</OPTION>
+								<OPTION VALUE="11">November</OPTION>
+								<OPTION VALUE="12">Desember</OPTION>				 
                                                         </SELECT> 
 
 
@@ -480,30 +609,28 @@ $this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] ==
 
 								<TR>
 									<TD COLSPAN="2">
-										<TABLE ALIGN="CENTER" WIDTH="100%"  cellspacing="1" cellpadding="2">										
-										<thead>									 
-										<TR>
-                                                                                    <TH class="tdatahead" align="left">NO </TH>
-                                                                                        <TH class="tdatahead" align="left">NIP </TH>
-                                                                                        <TH class="tdatahead" align="left">ID FINGER </TH>
-											<TH class="tdatahead" align="left">NAMA PEGAWAI</TH>
-											
-											<TH class="tdatahead" align="left">SUB CABANG</TH>
-											<TH class="tdatahead" align="left">DEPARTEMEN</TH>
-                                                                                        <TH class="tdatahead" align="left">JABATAN</TH>
-                                                                                        <TH class="tdatahead" align="left">LEVEL JABATAN</TH>
-                                                                                        <TH class="tdatahead" align="left">STATUS PEGAWAI</TH>
-                                                                                        <TH class="tdatahead" align="left">AWAL KONTRAK</TH>
-                                                                                        <TH class="tdatahead" align="left">AKHIR KONTRAK</TH>
-                                                                                        <TH class="tdatahead" align="left">NO REK</TH>
-                                                                                        <TH class="tdatahead" align="left">SHIFT</TH>
+									 <table id="payroll" class="display" cellpadding="4" cellspacing="6" width="100%" >									
+									<thead >									 
+									<TH class="alt2" align="left">NO </TH>
+                                                                        <TH class="alt2"  align="left">NIP </TH>
+                                                                        <TH class="alt2" align="left">ID FINGER </TH>
+									<TH class="alt2" align="left">NAMA PEGAWAI</TH>
+									<TH class="alt2" align="left">SUB CABANG</TH>
+									<TH class="alt2" align="left">DEPARTEMEN</TH>
+                                                                        <TH   class="alt2" align="left">JABATAN</TH>
+                                                                        <TH  class="alt2" align="left">LEVEL JABATAN</TH>
+                                                                        <TH  class="alt2" align="left">STATUS PEGAWAI</TH>
+                                                                        <TH class="alt2"  align="left">AWAL KONTRAK</TH>
+                                                                        <TH class="alt2" align="left">AKHIR KONTRAK</TH>
+                                                                        <TH class="alt2" align="left">NO REK</TH>
+                                                                        <TH   class="alt2" align="left">SHIFT</TH>
                                                                                         
 											
  									 
-										</TR>										 
+																			 
 										</thead>
 										
-										<tbody>									
+										<tbody class="tdatacontent"> 									
 										<?php unset($this->_sections['x']);
 $this->_sections['x']['name'] = 'x';
 $this->_sections['x']['loop'] = is_array($_loop=$this->_tpl_vars['DATA_TB']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
@@ -535,40 +662,58 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 ', '#CCFFCC', '#FFCC99');" onmousedown="setPointer(this, <?php echo $this->_tpl_vars['INITSET'][$this->_sections['x']['index']]; ?>
 , 'click', '<?php echo $this->_tpl_vars['ROW_CLASSNAME'][$this->_sections['x']['index']]; ?>
 ', '#CCFFCC', '#FFCC99');">
-                                                                                      <td width="17" class="tdatacontent-first-col"> <?php echo $this->_sections['x']['index']+$this->_tpl_vars['COUNT_VIEW']; ?>
+                                                                                    <TD> <?php echo $this->_sections['x']['index']+$this->_tpl_vars['COUNT_VIEW']; ?>
 .</TD>  
-                                                                                    <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
+                                                                                    <TD><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
  </TD>
-                                                                                     <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__finger_print']; ?>
+                                                                                    <TD><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__finger_print']; ?>
  </TD>
-											<TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
+                                                                                    <TD><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
  </TD>
-											
-											<TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_subcab__nama']; ?>
+                                                                                    <TD><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_subcab__nama']; ?>
 </TD>
-											<TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_dept__ket']; ?>
+                                                                                    <TD><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_dept__ket']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_jabatan__ket']; ?>
+                                                                                    <TD><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_jabatan__ket']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_level__ket']; ?>
+                                                                                    <TD><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_level__ket']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_stp__nama']; ?>
+                                                                                    <TD><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_stp__nama']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__kon_awal']; ?>
+                                                                                    <TD ><?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_stp__id'] ) < 4): ?>
+                                                                                            <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__kon_awal'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%m-%Y") : smarty_modifier_date_format($_tmp, "%d-%m-%Y")); ?>
+ 
+                                                                                        <?php else: ?>Tetap<?php endif; ?></TD>
+                                                                                   <TD > <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_stp__id'] ) < 4): ?>
+                                                                                         <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__kon_akhir'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%m-%Y") : smarty_modifier_date_format($_tmp, "%d-%m-%Y")); ?>
+
+                                                                                        <?php else: ?>
+                                                                                          Tetap
+                                                                                         <?php endif; ?>
+                                                                                    <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['warning'] ) == ( -2 ) && ( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_stp__id'] ) < 4): ?>
+                                                                                    <br><font color="#c45f36"><b>Kontrak Akan Habis 2 Bulan lagi</b></font>
+                                                                                   <?php elseif (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['warning'] ) == ( -1 ) && ( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_stp__id'] ) < 4): ?>
+                                                                                   <br> <font color="#ea4402"><b>Kontrak Akan Habis 1 Bulan lagi</b></font>
+                                                                                   <?php elseif (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['warning'] ) == 0 && ( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_stp__id'] ) < 4): ?>
+                                                                                   <br> <font color="#f48342"><b>Kontrak Akan Segera habis</b></font>
+                                                                                    <?php elseif (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['warning'] ) >= 0 && ( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_stp__id'] ) < 4): ?>
+                                                                                   <br> <font color="#ff0000"><b>Kontrak Sudah habis</b></font>
+                                                                                   <?php elseif (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_stp__id'] ) < 4): ?>
+                                                                                   <br> <font color="#4286f4"><b>Kontrak Masih Berjalan</b></font>
+                                                                                   <?php endif; ?></TD>
+                                                                                       <TD ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__bank1_norek']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__kon_akhir']; ?>
-</TD>
-                                                                                       <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__bank1_norek']; ?>
-</TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_shift__ket']; ?>
+                                                                                        <TD ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_shift__ket']; ?>
 </TD>
 
 										<?php endfor; else: ?>
 										<TR>
-											<TD class="tdatacontent" COLSPAN="16" align="center">Maaf, Data Masih Kosong</TD>
+											<TD  COLSPAN="16" align="center">Maaf, Data Masih Kosong</TD>
 										</TR>
 										<?php endif; ?>
 										</tbody>
+                                                                           </TABLE>
+                                                                                <TABLE>
                                                                                 <TR><?php unset($this->_sections['y']);
 $this->_sections['y']['name'] = 'y';
 $this->_sections['y']['loop'] = is_array($_loop=$this->_tpl_vars['DATA_TB4']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
@@ -593,8 +738,8 @@ $this->_sections['y']['index_next'] = $this->_sections['y']['index'] + $this->_s
 $this->_sections['y']['first']      = ($this->_sections['y']['iteration'] == 1);
 $this->_sections['y']['last']       = ($this->_sections['y']['iteration'] == $this->_sections['y']['total']);
 ?>
-										<Td class="tdatahead" colspan="10" align="right" ><b>JML Karyawan : </b></td>	
-										<Td class="tdatahead"  colspan="2"  align=" " > <?php echo $this->_tpl_vars['DATA_TB4'][$this->_sections['y']['index']]['total_orang']; ?>
+										<Td  colspan="10" align="right" ><b>JML Karyawan : </b></td>	
+										<Td  colspan="4"  align=" " > <?php echo $this->_tpl_vars['DATA_TB4'][$this->_sections['y']['index']]['total_orang']; ?>
  Orang </td>	
                                                                                 <?php endfor; endif; ?>
 										</TR>

@@ -29,7 +29,66 @@ function hideIt(){
 
 <link rel="stylesheet" href="<!--{$HREF_CSS_PATH}-->/default.css" type="text/css">
 <SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/global.js"></SCRIPT>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/jquery.dataTables.min.css" type="text/css">
+ <link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/fixedColumns.dataTables.min.css" type="text/css">
+ <link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/buttons.dataTables.min.css" type="text/css">	  
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery-1.12.4.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jquery.dataTables.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.fixedColumns.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.buttons.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.colVis.min.js"></SCRIPT>
+
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/style_sorting.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_sorting.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/script_p.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.flash.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jszip.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/pdfmake.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/vfs_fonts.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.html5.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.print.min.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.flash.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/jszip.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/pdfmake.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/vfs_fonts.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.html5.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/buttons.print.min.js"></SCRIPT>
+<link rel="stylesheet" href="<!--{$HREF_JS_PATH}-->/datatable/css/select.dataTables.min.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" SRC="<!--{$HREF_JS_PATH}-->/datatable/js/dataTables.select.min.js"></SCRIPT>
+
+<script>
+$(document).ready(function() {
+    var table = $('#payroll').DataTable( {
+       scrollY:        "430",
+       scrollX:        true,
+       scrollCollapse: true,
+       info:true,
+      paging: false,  
+       //dom: 'Bfrtip',
+       //buttons: ['excel'],
+       language: {search: "Pencarian:",buttons: {colvis: 'Atur Kolom'}},
+       select: {style: 'single'},
+       Sorting: [[ 2, "desc" ]], 
+       pageLength: "50", 
+    // lengthMenu: [ 50, 100, 300, 1000],
+       fixedColumns:   { leftColumns: 3,rightColumns:0}
+        });
+        
+} );
+</script>
+
+<STYLE>
+/* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {width: 1100;margin: 0 auto;}
+    .number_range_filter{width:100px;}
+    
+      div.ColVis {
+        float: centerPage;
+    }
+  </STYLE>
 <!-- #EndEditable -->
 </HEAD>
 
@@ -155,7 +214,23 @@ function hideIt(){
                                                                     
                                                                 </TD>
 							</TR>
-                                                          <TR>
+                                    <TR>
+                                    <TR>
+                           <TD>Jabatan <font color="#ff0000">*</font></TD>
+                           <TD><DIV id="ajax_jabatan">
+                                       <select name="jabatan_cari" >
+                                       <option value="">[Pilih Jabatan]</option>
+                                       <!--{section name=x loop=$DATA_JABATAN}-->
+                                       <!--{if trim($DATA_JABATAN[x].r_jabatan__id)==0}-->
+                                       <option value="<!--{$DATA_JABATAN[x].r_jabatan__id}-->" selected > <!--{$DATA_JABATAN[x].r_jabatan__ket}--> </option>
+                                       <!--{else}-->
+                                       <option value="<!--{$DATA_JABATAN[x].r_jabatan__id}-->"  > <!--{$DATA_JABATAN[x].r_jabatan__ket}--> </option>
+                                       <!--{/if}-->
+                                       <!--{/section}-->
+                                       </select>
+                               </DIV>
+                           </TD>
+                   </TR>    
                                        <TD>Status Pegawai</TD>
                                        <TD>
                                             <select name="sts_pegawai" >
@@ -169,24 +244,24 @@ function hideIt(){
                                                     <!--{/section}-->
                                             </select> 
                                        </TD>
-                            </TR>
+                                    </TR>
                                                          <TR>
 							<TD>Periode Akhir Kontrak</TD>
 							<TD>							
 							<SELECT name="bulan"   > 
 								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <!--{if $BULAN_SES==1}-->selected<!--{/if}-->>Januari</OPTION>
-								<OPTION VALUE="02"<!--{if $BULAN_SES==2}-->selected<!--{/if}-->  >Februari</OPTION>
-								<OPTION VALUE="03"<!--{if $BULAN_SES==3}-->selected<!--{/if}-->  >Maret</OPTION>
-								<OPTION VALUE="04"<!--{if $BULAN_SES==4}-->selected<!--{/if}-->  >April</OPTION>
-								<OPTION VALUE="05"<!--{if $BULAN_SES==5}-->selected<!--{/if}--> >Mei</OPTION>
-								<OPTION VALUE="06"<!--{if $BULAN_SES==6}-->selected<!--{/if}-->  >Juni</OPTION>
-								<OPTION VALUE="07"<!--{if $BULAN_SES==7}-->selected<!--{/if}-->  >Juli</OPTION>
-								<OPTION VALUE="08"<!--{if $BULAN_SES==8}-->selected<!--{/if}-->  >Agustus</OPTION>
-								<OPTION VALUE="09"<!--{if $BULAN_SES==9}-->selected<!--{/if}-->  >September</OPTION>
-								<OPTION VALUE="10"<!--{if $BULAN_SES==10}-->selected<!--{/if}-->  >Oktober</OPTION>
-								<OPTION VALUE="11"<!--{if $BULAN_SES==11}-->selected<!--{/if}-->  >November</OPTION>
-								<OPTION VALUE="12"<!--{if $BULAN_SES==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+                                                                <OPTION value="01" >Januari</OPTION>
+								<OPTION VALUE="02" >Februari</OPTION>
+								<OPTION VALUE="03">Maret</OPTION>
+								<OPTION VALUE="04">April</OPTION>
+								<OPTION VALUE="05">Mei</OPTION>
+								<OPTION VALUE="06">Juni</OPTION>
+								<OPTION VALUE="07">Juli</OPTION>
+								<OPTION VALUE="08">Agustus</OPTION>
+								<OPTION VALUE="09">September</OPTION>
+								<OPTION VALUE="10">Oktober</OPTION>
+								<OPTION VALUE="11">November</OPTION>
+								<OPTION VALUE="12">Desember</OPTION>				 
                                                         </SELECT> 
 
 
@@ -286,56 +361,72 @@ function hideIt(){
 
 								<TR>
 									<TD COLSPAN="2">
-										<TABLE ALIGN="CENTER" WIDTH="100%"  cellspacing="1" cellpadding="2">										
-										<thead>									 
-										<TR>
-                                                                                    <TH class="tdatahead" align="left">NO </TH>
-                                                                                        <TH class="tdatahead" align="left">NIP </TH>
-                                                                                        <TH class="tdatahead" align="left">ID FINGER </TH>
-											<TH class="tdatahead" align="left">NAMA PEGAWAI</TH>
-											
-											<TH class="tdatahead" align="left">SUB CABANG</TH>
-											<TH class="tdatahead" align="left">DEPARTEMEN</TH>
-                                                                                        <TH class="tdatahead" align="left">JABATAN</TH>
-                                                                                        <TH class="tdatahead" align="left">LEVEL JABATAN</TH>
-                                                                                        <TH class="tdatahead" align="left">STATUS PEGAWAI</TH>
-                                                                                        <TH class="tdatahead" align="left">AWAL KONTRAK</TH>
-                                                                                        <TH class="tdatahead" align="left">AKHIR KONTRAK</TH>
-                                                                                        <TH class="tdatahead" align="left">NO REK</TH>
-                                                                                        <TH class="tdatahead" align="left">SHIFT</TH>
+									 <table id="payroll" class="display" cellpadding="4" cellspacing="6" width="100%" >									
+									<thead >									 
+									<TH class="alt2" align="left">NO </TH>
+                                                                        <TH class="alt2"  align="left">NIP </TH>
+                                                                        <TH class="alt2" align="left">ID FINGER </TH>
+									<TH class="alt2" align="left">NAMA PEGAWAI</TH>
+									<TH class="alt2" align="left">SUB CABANG</TH>
+									<TH class="alt2" align="left">DEPARTEMEN</TH>
+                                                                        <TH   class="alt2" align="left">JABATAN</TH>
+                                                                        <TH  class="alt2" align="left">LEVEL JABATAN</TH>
+                                                                        <TH  class="alt2" align="left">STATUS PEGAWAI</TH>
+                                                                        <TH class="alt2"  align="left">AWAL KONTRAK</TH>
+                                                                        <TH class="alt2" align="left">AKHIR KONTRAK</TH>
+                                                                        <TH class="alt2" align="left">NO REK</TH>
+                                                                        <TH   class="alt2" align="left">SHIFT</TH>
                                                                                         
 											
  									 
-										</TR>										 
+																			 
 										</thead>
 										
-										<tbody>									
+										<tbody class="tdatacontent"> 									
 										<!--{section name=x loop=$DATA_TB}-->
 										<TR onmouseover="setPointer(this, <!--{$INITSET[x]}-->, 'over', '<!--{$ROW_CLASSNAME[x]}-->', '#CCFFCC', '#FFCC99');" onmouseout="setPointer(this, <!--{$INITSET[x]}-->, 'out', '<!--{$ROW_CLASSNAME[x]}-->', '#CCFFCC', '#FFCC99');" onmousedown="setPointer(this, <!--{$INITSET[x]}-->, 'click', '<!--{$ROW_CLASSNAME[x]}-->', '#CCFFCC', '#FFCC99');">
-                                                                                      <td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>  
-                                                                                    <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
-                                                                                     <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
-											
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_subcab__nama}--></TD>
-											<TD class="tdatacontent"><!--{$DATA_TB[x].r_dept__ket}--></TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_jabatan__ket}--></TD>
-                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_level__ket}--></TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_TB[x].r_stp__nama}--></TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_TB[x].r_pnpt__kon_awal}--></TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_TB[x].r_pnpt__kon_akhir}--></TD>
-                                                                                       <TD class="tdatacontent" ><!--{$DATA_TB[x].r_pegawai__bank1_norek}--></TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_TB[x].r_shift__ket}--></TD>
+                                                                                    <TD> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>  
+                                                                                    <TD><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
+                                                                                    <TD><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
+                                                                                    <TD><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
+                                                                                    <TD><!--{$DATA_TB[x].r_subcab__nama}--></TD>
+                                                                                    <TD><!--{$DATA_TB[x].r_dept__ket}--></TD>
+                                                                                    <TD><!--{$DATA_TB[x].r_jabatan__ket}--></TD>
+                                                                                    <TD><!--{$DATA_TB[x].r_level__ket}--></TD>
+                                                                                    <TD><!--{$DATA_TB[x].r_stp__nama}--></TD>
+                                                                                    <TD ><!--{if ($DATA_TB[x].r_stp__id)<4}-->
+                                                                                            <!--{$DATA_TB[x].r_pnpt__kon_awal|date_format:"%d-%m-%Y"}--> 
+                                                                                        <!--{else}-->Tetap<!--{/if}--></TD>
+                                                                                   <TD > <!--{if ($DATA_TB[x].r_stp__id)<4}-->
+                                                                                         <!--{$DATA_TB[x].r_pnpt__kon_akhir|date_format:"%d-%m-%Y"}-->
+                                                                                        <!--{else}-->
+                                                                                          Tetap
+                                                                                         <!--{/if}-->
+                                                                                    <!--{if ($DATA_TB[x].warning) ==(-2) and ($DATA_TB[x].r_stp__id)<4}-->
+                                                                                    <br><font color="#c45f36"><b>Kontrak Akan Habis 2 Bulan lagi</b></font>
+                                                                                   <!--{elseif ($DATA_TB[x].warning) ==(-1)and ($DATA_TB[x].r_stp__id)<4}-->
+                                                                                   <br> <font color="#ea4402"><b>Kontrak Akan Habis 1 Bulan lagi</b></font>
+                                                                                   <!--{elseif ($DATA_TB[x].warning)==0 and ($DATA_TB[x].r_stp__id)<4}-->
+                                                                                   <br> <font color="#f48342"><b>Kontrak Akan Segera habis</b></font>
+                                                                                    <!--{elseif ($DATA_TB[x].warning)>=0 and ($DATA_TB[x].r_stp__id)<4}-->
+                                                                                   <br> <font color="#ff0000"><b>Kontrak Sudah habis</b></font>
+                                                                                   <!--{elseif ($DATA_TB[x].r_stp__id)<4}-->
+                                                                                   <br> <font color="#4286f4"><b>Kontrak Masih Berjalan</b></font>
+                                                                                   <!--{/if}--></TD>
+                                                                                       <TD ><!--{$DATA_TB[x].r_pegawai__bank1_norek}--></TD>
+                                                                                        <TD ><!--{$DATA_TB[x].r_shift__ket}--></TD>
 
 										<!--{sectionelse}-->
 										<TR>
-											<TD class="tdatacontent" COLSPAN="16" align="center">Maaf, Data Masih Kosong</TD>
+											<TD  COLSPAN="16" align="center">Maaf, Data Masih Kosong</TD>
 										</TR>
 										<!--{/section}-->
 										</tbody>
+                                                                           </TABLE>
+                                                                                <TABLE>
                                                                                 <TR><!--{section name=y loop=$DATA_TB4}-->
-										<Td class="tdatahead" colspan="10" align="right" ><b>JML Karyawan : </b></td>	
-										<Td class="tdatahead"  colspan="2"  align=" " > <!--{$DATA_TB4[y].total_orang}--> Orang </td>	
+										<Td  colspan="10" align="right" ><b>JML Karyawan : </b></td>	
+										<Td  colspan="4"  align=" " > <!--{$DATA_TB4[y].total_orang}--> Orang </td>	
                                                                                 <!--{/section}-->
 										</TR>
                                                                                                 

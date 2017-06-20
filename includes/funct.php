@@ -1,5 +1,4 @@
 <?php
-
 function sqlvalue($val, $quote)
 {
   if ($quote) //true == num
@@ -37,8 +36,6 @@ function get_data_kecamatan2($jml) {
 	}
 	return substr($data,0,-1);
 }
-
-
 function get_data_kabupaten($jml) {
 	$data="";
 	for($i=0;$i<$jml;$i++) {
@@ -65,7 +62,6 @@ function covt($kd) {
 	$value = "'".$value."'";
 	return $value;
 }
-
 /******
 function covt_bln_thn($v,$arr){
 

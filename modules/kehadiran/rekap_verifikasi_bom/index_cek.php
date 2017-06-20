@@ -67,8 +67,6 @@ $smarty->assign ("SELF", $_SERVER['PHP_SELF']);
 //------------------------------------LOCAL CONFIG--------------------------------------//
 #SETTING FOR TEMPLATE 
 $TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/kehadiran/verifikasi_kehadiran';
-
-
 #SETTING FILE JS INCLUDE
 $JS_MODUL = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts/modules/kehadiran');
 $FILE_JS  = $JS_MODUL.'/verifikasi_kehadiran';

@@ -309,7 +309,7 @@ td
   <td colspan=16 height=21 class=xl36 style='height:15.75pt'>CABANG  : PUSAT</td>
  </tr>
  <tr height=21 style='height:15.75pt'>
-  <td colspan=16 height=21 class=xl36 style='height:15.75pt'>Periode : Tahun: 2016 Bulan :01</td>
+  <td colspan=16 height=21 class=xl36 style='height:15.75pt'>Periode : Tahun: 2016 Bulan :11</td>
  </tr> <tr height=18  style='height:13.5pt'>
   <td colspan=16 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
  </tr>
@@ -333,6 +333,363 @@ td
     <td class=xl27 width=100 style='width:10pt'>SHIFT</td>
      
  </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Rabu/2016-11-02</td>
+<td class=xl29 align=right >07:43:00</td>
+<td class=xl29 align=right >17:21:00</td>
+<td class=xl29 align=right >00:32:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >08:38:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >00:38:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Kamis/2016-11-03</td>
+<td class=xl29 align=right >07:45:00</td>
+<td class=xl29 align=right >17:14:00</td>
+<td class=xl29 align=right >00:30:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >08:29:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >00:29:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Jumat/2016-11-04</td>
+<td class=xl29 align=right >07:49:00</td>
+<td class=xl29 align=right >19:24:00</td>
+<td class=xl29 align=right >00:26:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >10:35:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >02:35:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Senin/2016-11-07</td>
+<td class=xl29 align=right >07:50:00</td>
+<td class=xl29 align=right >18:35:00</td>
+<td class=xl29 align=right >00:25:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >09:45:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >01:45:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Selasa/2016-11-08</td>
+<td class=xl29 align=right >07:49:00</td>
+<td class=xl29 align=right >19:02:00</td>
+<td class=xl29 align=right >00:26:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >10:13:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >02:13:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Rabu/2016-11-09</td>
+<td class=xl29 align=right >07:45:00</td>
+<td class=xl29 align=right >20:05:00</td>
+<td class=xl29 align=right >00:30:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >11:20:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >03:20:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Kamis/2016-11-10</td>
+<td class=xl29 align=right >07:45:00</td>
+<td class=xl29 align=right >17:12:00</td>
+<td class=xl29 align=right >00:30:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >08:27:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >00:27:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Jumat/2016-11-11</td>
+<td class=xl29 align=right >07:49:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >00:26:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >06:49:00</td>
+<td class=xl29 align=right >01:11:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Senin/2016-11-14</td>
+<td class=xl29 align=right >07:55:00</td>
+<td class=xl29 align=right >18:49:00</td>
+<td class=xl29 align=right >00:20:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >09:54:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >01:54:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Selasa/2016-11-15</td>
+<td class=xl29 align=right >07:48:00</td>
+<td class=xl29 align=right >18:59:00</td>
+<td class=xl29 align=right >00:27:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >10:11:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >02:11:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Rabu/2016-11-16</td>
+<td class=xl29 align=right >07:33:00</td>
+<td class=xl29 align=right >17:17:00</td>
+<td class=xl29 align=right >00:42:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >08:44:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >00:44:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Kamis/2016-11-17</td>
+<td class=xl29 align=right >07:49:00</td>
+<td class=xl29 align=right >18:18:00</td>
+<td class=xl29 align=right >00:26:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >09:29:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >01:29:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Jumat/2016-11-18</td>
+<td class=xl29 align=right >07:38:00</td>
+<td class=xl29 align=right >17:42:00</td>
+<td class=xl29 align=right >00:37:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >09:04:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >01:04:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Senin/2016-11-21</td>
+<td class=xl29 align=right >07:46:00</td>
+<td class=xl29 align=right >19:11:00</td>
+<td class=xl29 align=right >00:29:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >10:25:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >02:25:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Selasa/2016-11-22</td>
+<td class=xl29 align=right >07:46:00</td>
+<td class=xl29 align=right >17:29:00</td>
+<td class=xl29 align=right >00:29:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >08:43:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >00:43:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Rabu/2016-11-23</td>
+<td class=xl29 align=right >07:25:00</td>
+<td class=xl29 align=right >18:25:00</td>
+<td class=xl29 align=right >00:50:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >10:00:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >02:00:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Kamis/2016-11-24</td>
+<td class=xl29 align=right >07:44:00</td>
+<td class=xl29 align=right >18:26:00</td>
+<td class=xl29 align=right >00:31:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >09:42:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >01:42:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Jumat/2016-11-25</td>
+<td class=xl29 align=right >07:42:00</td>
+<td class=xl29 align=right >17:42:00</td>
+<td class=xl29 align=right >00:33:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >09:00:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >01:00:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Senin/2016-11-28</td>
+<td class=xl29 align=right >07:48:00</td>
+<td class=xl29 align=right >17:26:00</td>
+<td class=xl29 align=right >00:27:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >08:38:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >00:38:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Selasa/2016-11-29</td>
+<td class=xl29 align=right >07:32:00</td>
+<td class=xl29 align=right >17:48:00</td>
+<td class=xl29 align=right >00:43:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >09:16:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >01:16:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
+<td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
+<td class=xl29>325001</td>
+<td class=xl29 align=right x:num>Galih Humam Al Hanif</td>
+<td class=xl29 align=right x:num>PUSAT</td>
+<td class=xl29 align=right >IT</td>
+<td class=xl29 align=right >08:15:00</td>
+<td class=xl29 align=right>17:00:00</td>
+<td class=xl29 align=right >Rabu/2016-11-30</td>
+<td class=xl29 align=right >07:45:00</td>
+<td class=xl29 align=right >18:00:00</td>
+<td class=xl29 align=right >00:30:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >09:15:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >01:15:00</td>
+<td class=xl29 align=right >Pusat Reguler //    08:00 s/d 17:00</td>
+ </tr> <tr height=18 style='height:13.5pt'>
 <td height=18 class=xl28 align=right style='height:13.5pt'></td>
 <td class=xl29></td>
 <td class=xl29 align=right x:num></td>
@@ -343,11 +700,11 @@ td
 <td class=xl29 align=right ></td>
 <td class=xl29 align=right ></td>
 <td class=xl29 align=right >TOTAL JAM :</td>
-<td class=xl29 align=right ></td>
-<td class=xl29 align=right ></td>
-<td class=xl29 align=right ></td>
-<td class=xl29 align=right ></td>
-<td class=xl29 align=right ></td>
+<td class=xl29 align=right >10:18:00</td>
+<td class=xl29 align=right >00:00:00</td>
+<td class=xl29 align=right >186:55:00</td>
+<td class=xl29 align=right >01:11:00</td>
+<td class=xl29 align=right >28:06:00</td>
 <td class=xl29 align=right ></td>
  </tr> <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>

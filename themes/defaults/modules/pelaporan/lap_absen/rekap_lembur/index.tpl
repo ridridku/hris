@@ -159,18 +159,18 @@ function hideIt(){
 							<TD>							
 							<SELECT name="bulan"   > 
 								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <!--{if $BULAN_SES==01}-->selected<!--{/if}-->>Januari</OPTION>
-								<OPTION VALUE="02"<!--{if $BULAN_SES==02}-->selected<!--{/if}-->  >Februari</OPTION>
-								<OPTION VALUE="03"<!--{if $BULAN_SES==03}-->selected<!--{/if}-->  >Maret</OPTION>
-								<OPTION VALUE="04"<!--{if $BULAN_SES==04}-->selected<!--{/if}-->  >April</OPTION>
-								<OPTION VALUE="05"<!--{if $BULAN_SES==05}-->selected<!--{/if}--> >Mei</OPTION>
-								<OPTION VALUE="06"<!--{if $BULAN_SES==06}-->selected<!--{/if}-->  >Juni</OPTION>
-								<OPTION VALUE="07"<!--{if $BULAN_SES==07}-->selected<!--{/if}-->  >Juli</OPTION>
-								<OPTION VALUE="08"<!--{if $BULAN_SES==08}-->selected<!--{/if}-->  >Agustus</OPTION>
-								<OPTION VALUE="09"<!--{if $BULAN_SES==09}-->selected<!--{/if}-->  >September</OPTION>
-								<OPTION VALUE="10"<!--{if $BULAN_SES==10}-->selected<!--{/if}-->  >Oktober</OPTION>
-								<OPTION VALUE="11"<!--{if $BULAN_SES==11}-->selected<!--{/if}-->  >November</OPTION>
-								<OPTION VALUE="12"<!--{if $BULAN_SES==12}-->selected<!--{/if}-->  >Desember</OPTION>				 
+                                                                <OPTION value="1">Januari</OPTION>
+								<OPTION VALUE="2">Februari</OPTION>
+								<OPTION VALUE="3">Maret</OPTION>
+								<OPTION VALUE="4">April</OPTION>
+								<OPTION VALUE="5">Mei</OPTION>
+								<OPTION VALUE="6">Juni</OPTION>
+								<OPTION VALUE="7">Juli</OPTION>
+								<OPTION VALUE="8">Agustus</OPTION>
+								<OPTION VALUE="9">September</OPTION>
+								<OPTION VALUE="10">Oktober</OPTION>
+								<OPTION VALUE="11">November</OPTION>
+								<OPTION VALUE="12">Desember</OPTION>				 
                                                         </SELECT> 
 
 
@@ -190,6 +190,12 @@ function hideIt(){
                                                                 <TD>Nama</TD>
                                                                         <TD>
                                                                             <INPUT TYPE="text" NAME="nama_karyawan_cari" value=""  id="nama_karyawan_cari"  size="35" > 
+                                                                        </TD>
+							</TR>
+                                                        <TR>
+                                                                <TD>Finger Print</TD>
+                                                                        <TD>
+                                                                            <INPUT TYPE="text" NAME="finger_cari" value=""  id="finger"  size="35" > 
                                                                         </TD>
 							</TR>
                                                         <TR>
@@ -271,50 +277,48 @@ function hideIt(){
 								<TR>
 									<TD COLSPAN="2">
 										<TABLE ALIGN="CENTER" WIDTH="100%"  cellspacing="1" cellpadding="2">										
-										<thead>									 
+										<THEAD>									 
 										<TR>
-                                                                                        <TH class="tdatahead" align="left">NO </TH>
+                                                                                        <TH class="tdatahead" align="left">NO</TH>
                                                                                         <TH class="tdatahead" align="left">NIP</TH>
+                                                                                        <TH class="tdatahead" align="left">FINGER PRINT</TH>
                                                                                         <TH class="tdatahead" align="left">NAMA PEGAWAI</TH>
                                                                                         <TH class="tdatahead" align="left">CABANG</TH>
                                                                                         <TH class="tdatahead" align="left">SUB CABANG</TH>
                                                                                         <TH class="tdatahead" align="left">DEPARTEMEN</TH>
                                                                                         <TH class="tdatahead" align="left">JABATAN</TH>
                                                                                         <TH class="tdatahead" align="left">NAMA ATASAN</TH>
-                                                                                         <TH class="tdatahead" align="left">TGL LEMBUR</TH>
+                                                                                        <TH class="tdatahead" align="left">TGL LEMBUR</TH>
                                                                                         <TH class="tdatahead" align="left">LAMA LEMBUR</TH>
                                                                                         <TH class="tdatahead" align="left">BIAYA LEMBUR</TH>
                                                                                         <TH class="tdatahead" align="left">JOB DESC</TH>
-                                                                                         <TH class="tdatahead" align="left">EVALUASI</TH>
+                                                                                        <TH class="tdatahead" align="left">EVALUASI</TH>
                                                                                         <TH class="tdatahead" align="left">STATUS</TH>
-                                                                                      
-                                                                                        
-											
- 									 
 										</TR>										 
-										</thead>
+										</THEAD>
 										
 										<tbody>									
 										<!--{section name=x loop=$DATA_TB}-->
 										<TR onmouseover="setPointer(this, <!--{$INITSET[x]}-->, 'over', '<!--{$ROW_CLASSNAME[x]}-->', '#CCFFCC', '#FFCC99');" onmouseout="setPointer(this, <!--{$INITSET[x]}-->, 'out', '<!--{$ROW_CLASSNAME[x]}-->', '#CCFFCC', '#FFCC99');" onmousedown="setPointer(this, <!--{$INITSET[x]}-->, 'click', '<!--{$ROW_CLASSNAME[x]}-->', '#CCFFCC', '#FFCC99');">
                                                                                     <td width="17" class="tdatacontent-first-col"> <!--{$smarty.section.x.index+$COUNT_VIEW}-->.</TD>    
                                                                                     <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__nip}--> </TD>
+                                                                                        <TD class="tdatacontent"><!--{$DATA_TB[x].r_pnpt__finger_print}--> </TD>
 											<TD class="tdatacontent"><!--{$DATA_TB[x].r_pegawai__nama}--> </TD>
 											<TD class="tdatacontent"><!--{$DATA_TB[x].r_cabang__nama}--></TD>
 											<TD class="tdatacontent"><!--{$DATA_TB[x].r_subcab__nama}--></TD>
 											<TD class="tdatacontent"><!--{$DATA_TB[x].r_dept__ket}--></TD>
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].r_jabatan__ket}--></TD>
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].t_lembur__atasan_nama}--></TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_TB[x].t_lembur__tanggal}--></TD>
+                                                                                        <TD class="tdatacontent" ><!--{$DATA_TB[x].t_lembur__tanggal|date_format:"%d-%m-%Y"}--></TD>
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].t_lembur__durasi}--> Jam</TD>
-                                                                                        <TD class="tdatacontent" ><!--{$DATA_TB[x].t_lembur__total}--></TD>
+                                                                                        <TD class="tdatacontent" align="right"><!--{$DATA_TB[x].t_lembur__total|number_format:2:".":","}--></TD>
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].t_lembur__job_description}--></TD>
                                                                                         <TD class="tdatacontent" ><!--{$DATA_TB[x].t_lembur__job_evaluasi}--></TD>
                                                                                         <TD class="tdatacontent" > 
                                                                                             <!--{if ($DATA_TB[x].t_lembur__approval) ==1}-->
-                                                                                                        <font color="green">Tidak Disetujui BOM</font> 
-                                                                                           <!--{else ($DATA_TB[x].t_lembur__approval) ==2}-->
-                                                                                                         <font color="green">Telah disetujui BOM</font>
+                                                                                                        <font color="green">Disetujui </font> 
+                                                                                           <!--{else ($DATA_TB[x].t_lembur__approval) ==0}-->
+                                                                                                         <font color="green">Tidak Disetujui</font>
                                                                                             
                                                                                             <!--{/if}--> </TD>
                                                                                        
@@ -323,6 +327,11 @@ function hideIt(){
 											<TD class="tdatacontent" COLSPAN="16" align="center">Maaf, Data Masih Kosong</TD>
 										</TR>
 										<!--{/section}-->
+                                                                                 <TR><!--{section name=y loop=$DATA_TB4}-->
+										<Td class="tdatahead" colspan="2" align="right" ><b>Total Biaya : </b></td>	
+										<Td class="tdatahead"  colspan="10"  align=" right" >Rp.<!--{$DATA_TB4[y].total_orang|number_format:2:".":","}--></td>	
+                                                                                <!--{/section}-->
+										</TR>
 										</tbody>
 									</TABLE></TD> 
 										  

@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-19 09:58:43
+<?php /* Smarty version 2.6.18, created on 2017-06-06 14:59:10
          compiled from defaults/modules/kehadiran/upload_kehadiran//index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'defaults/modules/kehadiran/upload_kehadiran//index.tpl', 311, false),array('modifier', 'date_format', 'defaults/modules/kehadiran/upload_kehadiran//index.tpl', 316, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/kehadiran/upload_kehadiran//index.tpl', 322, false),array('function', 'cycle', 'defaults/modules/kehadiran/upload_kehadiran//index.tpl', 336, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -134,7 +134,7 @@ function hideIt(){
 		<tr><td class="alt2" style="padding:0px;">
 
 		<FORM NAME="frmCreate" METHOD="POST" ACTION="engine.php" enctype="multipart/form-data" >
-		<TABLE id="table-add-box">
+		<TABLE id="table-add-box" >
 
 				
 					<?php if ($this->_tpl_vars['EDIT_VAL'] == 0): ?>
@@ -147,7 +147,7 @@ function hideIt(){
 
         				<TR>
 					<TD>Cabang <font color="#ff0000">*</font></TD>
-					<TD>
+					<TD>:
 
 					<?php if (( $this->_tpl_vars['JENIS_USER_SES'] == 1 )): ?>
 
@@ -269,8 +269,24 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 
 					</TD>
 				</TR>
-                                
-                                <TR><TD>Upload Data <font color="#ff0000">*</font></TD><TD><input type="file" NAME="file_xls" id="file_xls"> </TD></TR>
+                                <TR>
+					<TD>Jenis File <font color="#ff0000">*</font></TD>
+					<TD>:
+                                           
+                                            <select name="tipe_file" onchange="pilih_ext(this.value);" >
+                                            <option value=""> Pilih Jenis File Upload</option>
+                                            <option value="1">Tipe File XLS 2003 .xls</option>
+                                            <option value="2"> Tipe File .dat (absensi secure) </option>
+                                            </SELECT>
+					</TD>
+				</TR>
+                                <TR><TD>Upload Data <font color="#ff0000">*</font></TD><TD>:
+                                        <DIV id="ajax_subpenempatan">
+                                            <input type='file' NAME='file_dat' id='file_dat' onchange=checkextensiondat()>
+                                    </DIV>
+                                    
+                                    
+                                    </TD></TR>
 				<TR><td height="40"></td>
 					<TD>
 					<INPUT TYPE="hidden" name="mod_id" value="<?php echo $this->_tpl_vars['MOD_ID']; ?>
@@ -290,11 +306,20 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 </span></a>
 					</TD>
 				</TR>
-					<TR><td  colspan="2"> <font color="#ff0000"> Keterangan * Wajib Diisi</font></td>
+					
+                                        <TR><TD>Progress</TD><TD><font size="2"> <progress id="progressBar" max="100" style="width: 400px;" value="0"></progress></font> </td>
 
 					</tr>
-                
+                                        <TR><td  colspan="2"> <font color="#ff0000"> Keterangan * Wajib Diisi</font></td>
+
+					</TR>
+                                                       
+
 			</TABLE>
+   
+
+<h3 id="status">
+</h3>
 		</FORM>
 		</td></tr>
 		</table>
@@ -438,20 +463,22 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 		
 		<FORM METHOD=GET ACTION="" NAME="frmList">
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="CENTER" style="border-bottom-width:0px">
-		<tr><td class="tcat">Data upload kehadiran</td></tr>
+		<tr><td class="tcat">Daftar File Upload Absen</td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="CENTER">
 		<tr><td class="thead"><img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/layout/columns.gif" align="absmiddle" border="0">Data Kehadiran Terbaru</td></tr>
+/layout/columns.gif" align="absmiddle" border="0">Periode aktif  Mulai : <?php echo ((is_array($_tmp=$this->_tpl_vars['PERIODE_AWAL'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%B-%Y") : smarty_modifier_date_format($_tmp, "%d-%B-%Y")); ?>
+ s/d <?php echo ((is_array($_tmp=$this->_tpl_vars['PERIODE_AKHIR'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%B-%Y") : smarty_modifier_date_format($_tmp, "%d-%B-%Y")); ?>
+</td></tr>
 		<tr><td class="alt2" style="padding:0px;">
 		<table width="100%">
 		<tr>
-											<th class="tdatahead" align="left">NO</TH>
-											<th class="tdatahead" align="left" width="10%">NAMA FILE</TH>
-                                                                                        <th class="tdatahead" align="left" width="10%">CABANG</TH>
-                                                                                        <th class="tdatahead" align="left" >TGL UPLOAD</TH>
-											
-											
+                <th class="tdatahead" align="left">NO</TH>
+                <th class="tdatahead" align="left" >USER UPLOADER</TH>
+                <th class="tdatahead" align="left" width="10%">NAMA FILE</TH>
+                <th class="tdatahead" align="left" width="10%">CABANG</TH>
+                <th class="tdatahead" align="left" >TGL UPLOAD</TH>
+		
 			</tr>
 			</thead>
 			<tbody>
@@ -481,23 +508,31 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 ?>
 			<tr class='<?php echo smarty_function_cycle(array('values' => "alt,alt3"), $this);?>
 '>
-											<td width="17" class="tdatacontent-first-col"> <?php echo $this->_sections['x']['index']+$this->_tpl_vars['COUNT_VIEW']; ?>
+                                        <td width="17" class="tdatacontent-first-col"> <?php echo $this->_sections['x']['index']+$this->_tpl_vars['COUNT_VIEW']; ?>
 .</TD>
-											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_upload__filename']; ?>
+                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
  </TD>
-                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
+                                        <TD class="tdatacontent">
+                                                <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['ext'] ) == 'dat'): ?>
+                                                    <font color="#18bc36"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_upload__filename']; ?>
+</font>
+                                                <?php else: ?>  
+                                                    <font color="#0050ff"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_upload__filename']; ?>
+</font>
+                                            <?php endif; ?> 
+                                        </TD>
+                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </TD>
-                                                                                        
-                                                                                        <TD class="tdatacontent"> <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_upload__date_created'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%B-%Y %H:%I:%S") : smarty_modifier_date_format($_tmp, "%d-%B-%Y %H:%I:%S")); ?>
+                                        <TD class="tdatacontent"> <?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_upload__date_created'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%B-%Y %H:%I:%S") : smarty_modifier_date_format($_tmp, "%d-%B-%Y %H:%I:%S")); ?>
  </TD>
-											
-                                                                                          
-											
-										</TR>
-										<?php endfor; else: ?>
-										<TR>
-											<TD class="tdatacontent" COLSPAN="14" align="center">Maaf, Data masih kosong</TD>
-										</TR>
+
+
+
+                                </TR>
+                                <?php endfor; else: ?>
+                                <TR>
+                                        <TD class="tdatacontent" COLSPAN="14" align="center">Maaf, Data masih kosong</TD>
+                                </TR>
 			<?php endif; ?>
 			</tbody>
 		</table>

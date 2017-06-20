@@ -58,7 +58,7 @@ global $db;
 
 $sql  ="DELETE ";
 $sql .="FROM t_lembur ";
-$sql .="WHERE  id= '$_GET[id]' ";
+$sql .="WHERE  t_lembur__no= '$_GET[id]' ";
 
 $sqlresult = $db->Execute($sql);
 
@@ -74,57 +74,58 @@ global $mod_id;
 global $db;
 global $tbl_name;
 global $field_name;
-       //$r_pegawai__no_askes = addslashes($_POST[r_pegawai__no_askes]);
-       
- 
- 
-        $t_lembur__no = $_POST[lembur__no];
-        $t_lembur__nip = $_POST[karyawan_nip];
-        $t_lembur__nama_pegawai= $_POST[karyawan_nama];
-        $t_lembur__atasan_nama = $_POST[atasan__nama];
-        $t_lembur__atasan_nip = $_POST[atasan__nip];
-      
-        $t_lembur__tanggal= $_POST[lembur_tanggal];
-        $t_lembur__durasi= $_POST[lembur_durasi];
-        $t_lembur__nominal= $_POST[lembur_nominal];
-        $t_lembur__total= $_POST[lembur__total];
-        $t_lembur__job_description = $_POST[lembur_deskripsi];
-        $t_lembur__job_evaluasi = $_POST[lembur_evaluasi];
-        $t_lembur__approval = $_POST[approval];
-        $t_lembur__date_updated = $_POST[t_lembur__date_updated];
-        $t_lembur__user_updated = $_POST[t_lembur__user_updated];
-        $user_id = base64_decode($_SESSION['UID']);
-        $id_peg = $_SESSION['SESSION_ID_PEG'];
-        $tgl_now = date("Y-m-d h:i:s");
+$user_id = base64_decode($_SESSION['UID']);
+$id_peg = $_SESSION['SESSION_ID_PEG'];
+$t_lembur__no  = $_POST[lembur__no];
+$t_lembur__idpeg = $_POST[karyawan_id];
+$t_lembur__atasan_idpeg = $_POST[atasan__nip];
+$t_lembur__atasan_nama = $_POST[atasan__nama];
+$t_lembur__tanggal = $_POST[lembur_tanggal];
+$t_lembur__nominal=$_POST[lembur_nominal];
+$t_lembur__durasi   = $_POST[lembur_durasi];
+$t_lembur__jml_nominal = $_POST[lembur_jml];
+$t_lembur__makan= $_POST[lembur_makan];
+$t_lembur__transport= $_POST[lembur_transport];
+$t_lembur__total= $_POST[lembur__total];
+$t_lembur__job_description  = $_POST[lembur_deskripsi];
+$t_lembur__job_evaluasi = $_POST[lembur_evaluasi];
+$t_lembur__approval   = $_POST[approval];
+
         
-        
-        $hitung_lembur=($_POST[lembur_durasi] * $_POST[lembur_nominal]);
+        $total_lembur=$t_lembur__jml_nominal+$t_lembur__makan+$t_lembur__transport ;
+     
         
         
 $sql_cek="select * from $tbl_name where t_lembur__approval ='$t_lembur__approval' AND t_lembur__no=$t_lembur__no ";
 
 $rs_val = $db->Execute($sql_cek);
  $cek_approval = $rs_val->fields['$t_lembur__approval'];
- if ($cek_approval!=2) {
+ 
+ if ($t_lembur__no=='') {
 			Header("Location:index_cek.php?ERR=5&nip_karyawan=".$nip_karyawan."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 		}else{
+
+                    
                     $sql_edit  ="  UPDATE $tbl_name SET ";
-                    $sql_edit .=" t_lembur__no ='$t_lembur__no', ";
-                    $sql_edit .=" t_lembur__nip='$t_lembur__nip',";
+     
+                    $sql_edit .=" t_lembur__idpeg='$t_lembur__idpeg',";
                     $sql_edit .=" t_lembur__atasan_nama='$t_lembur__atasan_nama',";
-                    $sql_edit .=" t_lembur__atasan_nip='$t_lembur__atasan_nip',";
+                    $sql_edit .=" t_lembur__atasan_idpeg='$t_lembur__atasan_idpeg',";
                     $sql_edit .=" t_lembur__tanggal='$t_lembur__tanggal',";
-                    $sql_edit .=" t_lembur__durasi= $t_lembur__durasi,";
                     $sql_edit .=" t_lembur__nominal='$t_lembur__nominal',";
-                     $sql_edit .="t_lembur__total='$hitung_lembur',";
+                    $sql_edit .=" t_lembur__durasi= '$t_lembur__durasi',";
+                    $sql_edit .=" t_lembur__jml_nominal= '$t_lembur__jml_nominal',";
+                    $sql_edit .=" t_lembur__makan= '$t_lembur__makan',";
+                    $sql_edit .=" t_lembur__transport= '$t_lembur__transport',";
+                    $sql_edit .=" t_lembur__total='$total_lembur',";
                     $sql_edit .=" t_lembur__job_description= '$t_lembur__job_description',";
                     $sql_edit .=" t_lembur__job_evaluasi = '$t_lembur__job_evaluasi',";
                     $sql_edit .=" t_lembur__approval = '$t_lembur__approval',";
-                    $sql_edit .=" t_lembur__date_updated = '$tgl_now',";
+                    $sql_edit .=" t_lembur__date_updated = now(),";
                     $sql_edit .=" t_lembur__user_updated = '$id_peg'";
-                     $sql_edit .="  WHERE t_lembur__no='$_POST[lembur__no]' ";
+                    $sql_edit .="  WHERE t_lembur__no='$t_lembur__no' ";
 
-                 //var_dump($sql_edit)or die(); 
+                //var_dump($sql_edit)or die(); 
                     $sqlresult = $db->Execute($sql_edit);
                      
 			Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
@@ -139,66 +140,77 @@ global $db;
 global $tbl_name;
 global $field_name;
 
-
 $user_id = base64_decode($_SESSION['UID']);
 $id_peg = $_SESSION['SESSION_ID_PEG'];
-$tgl_now = date("Y-m-d h:i:s");
-$t_lembur__no  = $_POST[lembur_no];
-$t_lembur__nip = $_POST[karyawan_nip];
-$t_lembur__atasan_nip = $_POST[atasan__nip];
+
+$t_lembur__no  = $_POST[lembur__no];
+$t_lembur__idpeg = $_POST[karyawan_id];
+$t_lembur__atasan_idpeg = $_POST[atasan__nip];
 $t_lembur__atasan_nama = $_POST[atasan__nama];
 $t_lembur__tanggal = $_POST[lembur_tanggal];
+$t_lembur__nominal=$_POST[lembur_nominal];
 $t_lembur__durasi   = $_POST[lembur_durasi];
-$t_lembur__durasi_nominal = $_POST[lembur_nominal];
+$t_lembur__jml_nominal = $_POST[lembur_jml];
+$t_lembur__makan= $_POST[lembur_makan];
+$t_lembur__transport= $_POST[lembur_transport];
+$t_lembur__total= $_POST[lembur__total];
 $t_lembur__job_description  = $_POST[lembur_deskripsi];
 $t_lembur__job_evaluasi = $_POST[lembur_evaluasi];
 $t_lembur__approval   = $_POST[approval];
-
-$t_lembur__date_created= date("Y-m-d h:i:s");
 $t_lembur__user_created = $id_peg;
 
-$hitung_lembur=($t_lembur__durasi * $t_lembur__durasi_nominal) ;
+
+$total_lembur=$t_lembur__jml_nominal+$t_lembur__makan+$t_lembur__transport ;
 
 $sql_cek_nip="SELECT MAX(A.r_pnpt__id_pegawai) as nip_max  FROM r_penempatan A ";   
 $rs_val = $db->Execute($sql_cek_nip);
 $nip_max= $rs_val->fields['nip_max'];
 
-//var_dump($nip)or die();
 
- if ($t_lembur__no!='') {
+ if ($t_lembur__no=='') {
 			Header("Location:index_cek.php?ERR=5&nip_karyawan=".$nip_karyawan."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 		}else
                 {
                     $sql	 = "INSERT INTO $tbl_name ("
                                     . "t_lembur__no, "
-                                    . "t_lembur__nip,"
+                                    . "t_lembur__idpeg,"
                                     . "t_lembur__atasan_nama,"
-                                    . "t_lembur__atasan_nip, "
+                                    . "t_lembur__atasan_idpeg, "
                                     . "t_lembur__tanggal,"
-                                    . "t_lembur__durasi, "
-                                    . "t_lembur__nominal,"
+                                    . "t_lembur__nominal, "
+                                    . "t_lembur__durasi,"
+                                    . "t_lembur__jml_nominal,"
+                                    . "t_lembur__makan, "
+                                    . "t_lembur__transport, "
                                     . "t_lembur__total,"
-                                    . "t_lembur__job_description, "
-                                    . "t_lembur__job_evaluasi, "
+                                    . "t_lembur__job_description,"
+                                    . "t_lembur__job_evaluasi,"
                                     . "t_lembur__approval, "
-                                    . "t_lembur__date_created, "
-                                    . "t_lembur__user_created)";
+                                    . "t_lembur__date_created,"
+                                    . "t_lembur__date_updated,"
+                                    . "t_lembur__user_created,"
+                                    . "t_lembur__user_updated)";
 $sql	.= " VALUES ("
-        . "'$_POST[lembur_no]',"
-        . "'$_POST[karyawan_nip]',"
-        . "'$_POST[atasan__nama]',"
-        . "'$_POST[atasan__nip]',"
-        . "'$_POST[lembur_tanggal]',"
-        . "'$_POST[lembur_durasi]',"
-        . "'$_POST[lembur_nominal]',"
-        . "'$hitung_lembur',"
-        . "'$_POST[lembur_deskripsi]',"
-        . "'$_POST[lembur_evaluasi]',"
-        . "'$_POST[approval]',"
-        . "'".strip_tags($t_lembur__date_created)."',"
-        . "'".strip_tags($t_lembur__user_created)."')";
+        . "'$t_lembur__no',"
+        . "'$t_lembur__idpeg',"
+        . "'$t_lembur__atasan_nama',"
+        . "'$t_lembur__atasan_idpeg',"
+        . "'$t_lembur__tanggal',"
+        . "'$t_lembur__nominal',"
+        . "'$t_lembur__durasi',"
+        . "'$t_lembur__jml_nominal',"
+        . "'$t_lembur__makan',"
+        . "'$t_lembur__transport',"
+        . "'$total_lembur',"
+        . "'$t_lembur__job_description',"
+        . "'$t_lembur__job_evaluasi',"
+        . "'$t_lembur__approval',"
+        . "now(),"
+        . "now(),"
+        . "'".strip_tags($id_peg)."',"
+        . "'".strip_tags($id_peg)."')";
 
-//var_dump($sql) or die();
+
 $sqlresult = $db->Execute($sql);
 Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
                 }

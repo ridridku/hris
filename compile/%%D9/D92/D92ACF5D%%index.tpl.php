@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-20 10:34:47
+<?php /* Smarty version 2.6.18, created on 2017-06-05 09:13:13
          compiled from defaults/modules/manfaat/pengajuan_pinjaman/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'number_format', 'defaults/modules/manfaat/pengajuan_pinjaman/index.tpl', 237, false),array('function', 'cycle', 'defaults/modules/manfaat/pengajuan_pinjaman/index.tpl', 452, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/manfaat/pengajuan_pinjaman/index.tpl', 216, false),array('modifier', 'number_format', 'defaults/modules/manfaat/pengajuan_pinjaman/index.tpl', 263, false),array('function', 'cycle', 'defaults/modules/manfaat/pengajuan_pinjaman/index.tpl', 478, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -283,9 +283,11 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                             <TD>Nama Karyawan<font color="#ff0000">*</font> </TD>
                             <TD><INPUT TYPE="text" NAME="nama" readonly  id="r_pegawai__nama"  size="35" value="<?php echo $this->_tpl_vars['EDIT_NAMA']; ?>
 ">
-                             NIP<INPUT TYPE="text" NAME="nip" readonly id="r_pnpt__nip" size="35" value="<?php echo $this->_tpl_vars['EDIT_NIP']; ?>
+                                <INPUT TYPE="hidden" NAME="nip" readonly id="r_pnpt__nip" size="35" value="<?php echo $this->_tpl_vars['EDIT_NIP']; ?>
 " >
-                             <INPUT TYPE="text" NAME="mutasi" readonly id="r_pnpt__no_mutasi" size="35" value="<?php echo $this->_tpl_vars['EDIT_T_PJM__MUTASI']; ?>
+                              <INPUT TYPE="hidden" NAME="id_karyawan" readonly id="id_karyawan" size="35" value="<?php echo $this->_tpl_vars['EDIT_T_PJM__ID_KARYAWAN']; ?>
+" >
+                             <INPUT TYPE="hidden" NAME="mutasi" readonly id="r_pnpt__no_mutasi" size="35" value="<?php echo $this->_tpl_vars['EDIT_T_PJM__MUTASI']; ?>
 " > 
                             <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan()" value=" ... " />
                             </TD>
@@ -297,71 +299,97 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 " ></TD>                         
                     </TR>
                     <TR>
-				<TD>Tanggal Disetujui </TD>
+				<TD>Tgl Disetujui Pinjaman </TD>
+                                <TD>
+                                    <?php if ($this->_tpl_vars['EDIT_VAL'] == 0): ?>
+							 <input type="text" NAME="t_pjm__tgl_pinjam" value="<?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, "%Y-%m-%d") : smarty_modifier_date_format($_tmp, "%Y-%m-%d")); ?>
+" >
+							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.t_pjm__tgl_pinjam,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php else: ?>
+                                                        <input type="text" name="t_pjm__tgl_pinjam"  value="<?php echo $this->_tpl_vars['EDIT_TGl_PJM']; ?>
+">
+							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_pjm__tgl_pinjam,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php endif; ?>  
+                                </TD>         
+                    </TR>
+                     <TR>
+				<TD>Tgl Awal Bayar </TD>
                                 <TD>
                                     <?php if ($this->_tpl_vars['EDIT_VAL'] == 0): ?>
 
-							 <input type="text" NAME="t_pjm__tgl_disetujui"  value="<?php echo $this->_tpl_vars['EDIT_TGl_PJM']; ?>
-">
-							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.t_pjm__tgl_disetujui,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
-					<?php else: ?>
-                                                        <input type="text" name="t_pjm__tgl_disetujui" value="<?php echo $this->_tpl_vars['EDIT_TGl_PJM']; ?>
+							 <input type="text" NAME="t_pjm__awal"  value="<?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, "%Y-%m-%d") : smarty_modifier_date_format($_tmp, "%Y-%m-%d")); ?>
 " >
 							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
-/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_pjm__tgl_disetujui,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.t_pjm__awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php else: ?>
+                                                        <input type="text" name="t_pjm__awal" value="<?php echo $this->_tpl_vars['EDIT_TGl_AWAL']; ?>
+" >
+							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_pjm__awal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php endif; ?>  
+                                </TD>         
+                    </TR>
+                    <TR>
+				<TD>Tgl Akhir Bayar </TD>
+                                <TD>
+                                    <?php if ($this->_tpl_vars['EDIT_VAL'] == 0): ?>
+
+							 <input type="text" NAME="t_pjm__akhir"  value="<?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, "%Y-%m-%d") : smarty_modifier_date_format($_tmp, "%Y-%m-%d")); ?>
+" >
+							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"   onclick="displayCalendar(document.frmCreate.t_pjm__akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
+					<?php else: ?>
+                                                        <input type="text" name="t_pjm__akhir" value="<?php echo $this->_tpl_vars['EDIT_TGl_AKHIR']; ?>
+" >
+							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
+/icon/calendar.png"  onclick="displayCalendar(document.frmCreate.t_pjm__akhir,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<?php endif; ?>  
                                 </TD>         
                     </TR>
                      
                     <TR>
                                 <TD>Jenis Pinjaman <font color="#ff0000">*</font></TD> 
-				<TD>    
-                                    <INPUT TYPE="hidden" NAME="t_pjm__jenis" readonly  id="angsuran_id"  size="35" value="<?php echo $this->_tpl_vars['EDIT_ANG_ID']; ?>
-">
-                                       <INPUT TYPE="text" NAME="jenis" readonly  id="jenis"  size="35" value="<?php echo $this->_tpl_vars['EDIT_ANG_JENIS']; ?>
-">
-                                       <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goPjm()" value=" ... " />
-                                     
-                                </TD>
+				<TD><SELECT name="t_pjm__jenis">
+							<OPTION value="">[JENIS PINJAMAN]</OPTION>
+							<OPTION value="1" <?php if ($this->_tpl_vars['EDIT_T_PJM__APPROVAL'] == '1'): ?>selected<?php endif; ?>> COP </OPTION>
+							<OPTION value="2" <?php if ($this->_tpl_vars['EDIT_T_PJM__APPROVAL'] == '2'): ?>selected<?php endif; ?>>PRIBADI </OPTION>
+						</SELECT>
+                                        </TD>
                      </TR>
                     <TR>
-                                <TD>Flapon <font color="#ff0000">*</font></TD> 
+                                <TD>Total Pinjaman <font color="#ff0000">*</font></TD> 
 				<TD>    
-                                    <INPUT TYPE="text" NAME="plafond" readonly id="plafond" size="35" value="Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['EDIT_ANG_PLAFON'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
-" >   
+                                    <INPUT TYPE="text" NAME="plafond"  id="plafond" size="35" onkeyup="formatangka(this)" value="<?php echo ((is_array($_tmp=$this->_tpl_vars['EDIT_T_PJM__TOTAL'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 0, ",", ".") : number_format($_tmp, 0, ",", ".")); ?>
+" > 
+                                  
                                 </TD>
                      </TR>  
                      <TR>
-                                <TD>Tenor <font color="#ff0000">*</font></TD> 
+                                <TD>Tenor
+                                    <font color="#ff0000">*</font></TD> 
 				<TD>    
-                                    <INPUT TYPE="text" NAME="tenor" readonly id="tenor" size="35" value="<?php echo $this->_tpl_vars['EDIT_ANG_TENOR']; ?>
-" >   
+                                    <INPUT TYPE="text" NAME="tenor" maxlength="2"  id="tenor" size="35" value="<?php echo $this->_tpl_vars['EDIT_T_PJM__TENOR']; ?>
+" onkeyup="formatangka(this)" onkeydown="bagi()">   
+                               
                                 </TD>
                      </TR> 
-                     <TR>
+                     <TR >
                                 <TD>Cicilan <font color="#ff0000">*</font></TD> 
-				<TD>    
-                                    <INPUT TYPE="text" NAME="cicilan" readonly id="cicilan" size="35" value="Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['EDIT_ANG_CICILAN'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
-" >   
+				<TD><INPUT type="button" value="hitung" onclick="bagi()">    
+                                    <INPUT TYPE="text" NAME="cicilan" readonly  size="30" value="<?php echo ((is_array($_tmp=$this->_tpl_vars['EDIT_T_PJM__CICILAN'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 0, ",", ".") : number_format($_tmp, 0, ",", ".")); ?>
+"  >   
                                 </TD>
                      </TR> 
-                     <TR>
-                                <TD>Approval<font color="#ff0000">*</font></TD> 
-			
-					<TD><SELECT name="t_pjm__approval">
-							<OPTION value="">[APPROVAL]</OPTION>
-							<OPTION value="1" <?php if ($this->_tpl_vars['EDIT_T_PJM__APPROVAL'] == '1'): ?>selected<?php endif; ?>> Proses </OPTION>
-							<OPTION value="0" <?php if ($this->_tpl_vars['EDIT_T_PJM__APPROVAL'] == '0'): ?>selected<?php endif; ?>>Lunas </OPTION>
-						</SELECT>
-                                        </TD>
-                     </TR>                                     
-               <TR>
+                                                    
+                    <TR >
                                 <TD>Keterangan<font color="#ff0000">*</font></TD> 
 			
-                                <TD><textarea rows="5" cols="20" NAME="t_pjm__keterangan"  size="12" ><?php echo $this->_tpl_vars['EDIT_KET']; ?>
+                                <TD><textarea  rows="5" cols="20" NAME="t_pjm__keterangan"  size="12" ><?php echo $this->_tpl_vars['EDIT_KET']; ?>
 </textarea></TD>
                     </TR>
+                    
                               
                     
                                 <TR><TD height="40"></TD>
@@ -664,16 +692,21 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 		<table width="100%">
                     <THEAD>
 											<TH class="tdatahead" align="left">NO</TH>
+                                                                                        <TH class="tdatahead" align="left">ID PJM</TH>
                                                                                         <TH class="tdatahead" align="left" width="10%">NIP </TH>
 											<TH class="tdatahead" align="left" width="10%">NAMA</TH>                                                                                       
                                                                                         <TH class="tdatahead" align="left" >CABANG</TH>
 											<TH class="tdatahead" align="left">DEPARTEMEN</TH>
 											<TH class="tdatahead" align="left" >JABATAN</TH>                                                                                       
 											<TH class="tdatahead" align="left">JENIS PINJAMAN</TH>
-                                                                                        <TH class="tdatahead" align="left">PLAFON</TH>
-                                                                                        <TH class="tdatahead" align="left">CICILAN</TH>                                                                                      
-                                                                                        <TH class="tdatahead" align="left">TENOR</TH>   
-                                                                                        <TH class="tdatahead" align="left">NO PINJAMAN</TH>
+                                                                                        
+                                                                                        
+                                                                                        <TH class="tdatahead" align="left">TOTAL PINJAM</TH>
+                                                                                        <TH class="tdatahead" align="left">PEMBAYARAN</TH>
+                                                                                        <TH class="tdatahead" align="left">JML CICILAN</TH>   
+                                                                                        <TH class="tdatahead" align="left">CICILAN/BULAN</TH>
+                                                                                        <TH class="tdatahead" align="left">SISA PINJAMAN</TH>                                                                                      
+                                                                                        <TH class="tdatahead" align="left">CICILAN SUDAH BAYAR</TH>   
                                                                                         <TH class="tdatahead" align="left">STATUS</TH>
 											<TH class="tdatahead" COLSPAN="2"><?php echo $this->_tpl_vars['ACTION']; ?>
 </TH>
@@ -708,7 +741,9 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 '>
 											<td width="17" class="tdatacontent-first-col"> <?php echo $this->_sections['x']['index']+$this->_tpl_vars['COUNT_VIEW']; ?>
 .</TD>
-											<TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
+											<TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__no_pinjaman']; ?>
+</TD>
+                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
  </TD>
                                                                                         <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
  </TD>
@@ -719,26 +754,31 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                                                                         <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_jabatan__ket']; ?>
  </TD>                                                                                        
 											<TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__jenis']; ?>
-</TD>
-                                                                                        <TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__platfond'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
-</TD>
-                                                                                        <TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__cicilan'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
-</TD>                                                                                           
-                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_ang__tenor_bulan']; ?>
- Bln</TD>
-                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__no_pinjaman']; ?>
-</TD>
-                                                                                        <TD class="tdatacontent">
+
                                                                                         
-                                                                                        <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__approval'] ) == 0): ?>
-                                                                                                         <font color="#FA0505">Lunas</font>              
-                                                                                                <?php elseif (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__approval'] ) == 1): ?>  
-                                                                                                         <font color="#2BCC40">On Proses</font>     
+                                                                                             <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__jenis'] ) == 1): ?>
+                                                                                                         <font color="#1a842d">COP</font>              
+                                                                                                
                                                                                                  <?php else: ?>  
-                                                                                                           <font color="#2605FF">Lunas</font>     
+                                                                                                           <font color="#2785c4">PRIBADI</font>     
                                                                                                 <?php endif; ?> 
                                                                                         
+                                                                                        
+                                                                                        
                                                                                         </TD>
+                                                                                      <TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__total_pinjam'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
+</TD>
+                                                                                      <TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['jml_sudah_bayar'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
+</TD>
+                                                                                      <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__tenor']; ?>
+</TD>
+                                                                                      <TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_pjm__cicilan_perbulan'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
+</TD>
+                                                                                      <TD class="tdatacontent">Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['sisa_pembayaran'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
+</TD>                                                                                           
+                                                                                      <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['jml_tenor_bayar']; ?>
+ Bln</TD>
+                                                                                      <TD class="tdatacontent"><?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['sisa_status'] ) == 0): ?><font color="#2605FF">Lunas</font><?php else: ?><font color="#FA0505">Belum Lunas</font><?php endif; ?> </TD>
 											<TD width="20" class="tdatacontent" ALIGN="CENTER"><IMG SRC="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/edit.gif" WIDTH="12" HEIGHT="13" BORDER=0 ALT="<?php echo $this->_tpl_vars['EDIT']; ?>
 " onclick="return checkEdit('<?php echo $this->_tpl_vars['SELF']; ?>

@@ -1,0 +1,4071 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=31 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->LAPORAN REKAP PAYROLL</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=31 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=31 height=21 class=xl36 style='height:15.75pt'>CABANG  : MAGELANG</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=31 height=21 class=xl36 style='height:15.75pt'>PERIODE  : 2017-03-21 s.d 2017-04-20</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td colspan=31 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+
+ </tr>
+ 
+<tr height=21 style='mso-height-source:userset;height:15.75pt'>
+<td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+<td class=xl27 width=15 style='width:30pt'>NIP</td>
+<td class=xl27 width=15 style='width:30pt'>IDFINGER</td>
+<td class=xl27 width=15 style='width:30pt'>NAMA</td>
+<td class=xl27 width=15 style='width:30pt'>CABANG</td>
+<td class=xl27 width=15 style='width:30pt'>SUBCABANG</td>
+<td class=xl27 width=15 style='width:30pt'>DEPARTEMEN</td>
+<td class=xl27 width=15 style='width:30pt'>COST CENTRE</td>
+<td class=xl27 width=15 style='width:30pt'>LEVEL</td>
+<td class=xl27 width=15 style='width:30pt'>JABATAN</td>
+<td class=xl27 width=15 style='width:30pt'>TGL MASUK</td>
+<td class=xl27 width=15 style='width:30pt'>LAMA KERJA (BLN)</td>
+<td class=xl27 width=15 style='width:30pt'>KEHADIRAN</td>
+<td class=xl27 width=15 style='width:30pt'>STATUS</td>
+<td class=xl27 width=15 style='width:30pt'>GAPOK</td>
+<td class=xl27 width=15 style='width:30pt'>T.JABATAN</td>
+<td class=xl27 width=15 style='width:30pt'>T.TRANS</td>
+<td class=xl27 width=15 style='width:30pt'>T.MAKAN</td>
+<td class=xl27 width=15 style='width:30pt'>T.LAIN1</td>
+<td class=xl27 width=15 style='width:30pt'>T.LAIN2</td>
+<td class=xl27 width=15 style='width:30pt'>T.KEMAHALAN</td>
+<td class=xl27 width=15 style='width:30pt'>DASAR BPJS</td>
+<td class=xl27 width=15 style='width:30pt'>BPJS TK TMW</td>
+<td class=xl27 width=15 style='width:30pt'>BPJS TK PEG</td>
+<td class=xl27 width=15 style='width:30pt'>BPJS KES TMW</td>  
+<td class=xl27 width=15 style='width:30pt'>BPJS KES PEG</td>
+<td class=xl27 width=15 style='width:30pt'>ANGSURAN</td>
+<td class=xl27 width=15 style='width:30pt'>TRANS.AMOUNT</td>
+<td class=xl27 width=15 style='width:30pt'>NAMA BANK</td>
+<td class=xl27 width=15 style='width:30pt'>NAMA REKENING</td>
+<td class=xl27 width=15 style='width:30pt'>ACC.NO</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>1</td>
+<td class=xl29 align=right >131331936</td>
+<td class=xl29 align=right >293019</td>
+<td class=xl29 align=right x:num>Abdul Malik</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2013-08-22</td>
+<td class=xl29 align=right>45</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Bandongan</td>
+<td class=xl29 align=right>701816187100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>2</td>
+<td class=xl29 align=right >171342233</td>
+<td class=xl29 align=right >291161</td>
+<td class=xl29 align=right x:num>Abrina Viorenzy Mougen</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>RO</td>
+<td class=xl29 align=right>2017-01-02</td>
+<td class=xl29 align=right>4</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Abrina Viorenzy Mougen</td>
+<td class=xl29 align=right>703866509000</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>3</td>
+<td class=xl29 align=right >121341937</td>
+<td class=xl29 align=right >291022</td>
+<td class=xl29 align=right x:num>Ade Lovian</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2012-10-08</td>
+<td class=xl29 align=right>55</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Resign</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1410055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Parakan</td>
+<td class=xl29 align=right>703090993400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>4</td>
+<td class=xl29 align=right >131351938</td>
+<td class=xl29 align=right >294003</td>
+<td class=xl29 align=right x:num>Adib Zaenudin</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>UMUM</td>
+<td class=xl29 align=right>ADMIN</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Office Safety</td>
+<td class=xl29 align=right>2013-10-02</td>
+<td class=xl29 align=right>43</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>873000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1230055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Parakan</td>
+<td class=xl29 align=right>703089242400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>5</td>
+<td class=xl29 align=right >091321939</td>
+<td class=xl29 align=right >295001</td>
+<td class=xl29 align=right x:num>Agil Dwi Haryanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>IT</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Coordinator</td>
+<td class=xl29 align=right>IT Supervisor</td>
+<td class=xl29 align=right>2009-09-01</td>
+<td class=xl29 align=right>92</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Tengah</td>
+<td class=xl29 align=right>760798356200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>6</td>
+<td class=xl29 align=right >101341940</td>
+<td class=xl29 align=right >291070</td>
+<td class=xl29 align=right x:num>Agung Samsu</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -Pasar</td>
+<td class=xl29 align=right>2010-07-01</td>
+<td class=xl29 align=right>82</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Utara</td>
+<td class=xl29 align=right>760800854400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>7</td>
+<td class=xl29 align=right >141331941</td>
+<td class=xl29 align=right >293040</td>
+<td class=xl29 align=right x:num>Agus Ardiyanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Loper</td>
+<td class=xl29 align=right>2014-11-07</td>
+<td class=xl29 align=right>30</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1393410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Bandongan</td>
+<td class=xl29 align=right>703092118400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>8</td>
+<td class=xl29 align=right >101331943</td>
+<td class=xl29 align=right >293032</td>
+<td class=xl29 align=right x:num>Agus Prasetyo</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Coordinator</td>
+<td class=xl29 align=right>Coordinator Ekspedisi</td>
+<td class=xl29 align=right>2010-04-16</td>
+<td class=xl29 align=right>85</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Tengah</td>
+<td class=xl29 align=right>760798988300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>9</td>
+<td class=xl29 align=right >101341944</td>
+<td class=xl29 align=right >291008</td>
+<td class=xl29 align=right x:num>Ahmad Rekhwan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -2</td>
+<td class=xl29 align=right>2010-07-26</td>
+<td class=xl29 align=right>82</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1394055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Pringsurat</td>
+<td class=xl29 align=right>760800588600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>10</td>
+<td class=xl29 align=right >131341945</td>
+<td class=xl29 align=right >291048</td>
+<td class=xl29 align=right x:num>Ahmad Zaenal Arifin</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Junior Supervisor</td>
+<td class=xl29 align=right>Junior FS HFS</td>
+<td class=xl29 align=right>2013-09-02</td>
+<td class=xl29 align=right>44</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >360510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>760447070900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>11</td>
+<td class=xl29 align=right >131341946</td>
+<td class=xl29 align=right >291027</td>
+<td class=xl29 align=right x:num>Akhmad Mustangin</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2013-02-07</td>
+<td class=xl29 align=right>51</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Wonosobo</td>
+<td class=xl29 align=right>760437763800</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>12</td>
+<td class=xl29 align=right >161331947</td>
+<td class=xl29 align=right >293067</td>
+<td class=xl29 align=right x:num>Akhmad Ngusman</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2016-07-29</td>
+<td class=xl29 align=right>9</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Gaarung</td>
+<td class=xl29 align=right>703442026900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>13</td>
+<td class=xl29 align=right >141341948</td>
+<td class=xl29 align=right >291095</td>
+<td class=xl29 align=right x:num>Akhsan Ariefanda</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2014-11-01</td>
+<td class=xl29 align=right>30</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>760438448000</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>14</td>
+<td class=xl29 align=right >091331949</td>
+<td class=xl29 align=right >293001</td>
+<td class=xl29 align=right x:num>Ambrosius Dwi Kristanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Coordinator</td>
+<td class=xl29 align=right>Coordinator Gudang</td>
+<td class=xl29 align=right>2009-04-01</td>
+<td class=xl29 align=right>97</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >340410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Ambarawa</td>
+<td class=xl29 align=right>703088662900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>15</td>
+<td class=xl29 align=right >111331950</td>
+<td class=xl29 align=right >293013</td>
+<td class=xl29 align=right x:num>Andi Fauzi</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Helper Ekspedisi</td>
+<td class=xl29 align=right>2011-07-08</td>
+<td class=xl29 align=right>70</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Utara</td>
+<td class=xl29 align=right>760422193500</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>16</td>
+<td class=xl29 align=right >171332238</td>
+<td class=xl29 align=right >293077</td>
+<td class=xl29 align=right x:num>Andi Irawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Driver Intercity</td>
+<td class=xl29 align=right>2017-01-16</td>
+<td class=xl29 align=right>4</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Andi Irawan</td>
+<td class=xl29 align=right>703853673000</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>17</td>
+<td class=xl29 align=right >111341952</td>
+<td class=xl29 align=right >291017</td>
+<td class=xl29 align=right x:num>Andi Kurniawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -1</td>
+<td class=xl29 align=right>2011-10-19</td>
+<td class=xl29 align=right>67</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>760421694900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>18</td>
+<td class=xl29 align=right >131341951</td>
+<td class=xl29 align=right >293003</td>
+<td class=xl29 align=right x:num>Andi Kurniawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2013-09-23</td>
+<td class=xl29 align=right>44</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Bandongan</td>
+<td class=xl29 align=right>700194170000</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>19</td>
+<td class=xl29 align=right >161332193</td>
+<td class=xl29 align=right >293073</td>
+<td class=xl29 align=right x:num>Andreas Gabriel Febriko</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Admin Gudang</td>
+<td class=xl29 align=right>2016-10-24</td>
+<td class=xl29 align=right>7</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Andreas Gabriel Febriko</td>
+<td class=xl29 align=right>703664841100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>20</td>
+<td class=xl29 align=right >121341953</td>
+<td class=xl29 align=right >293029</td>
+<td class=xl29 align=right x:num>Ari Alfiansah</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR RSU</td>
+<td class=xl29 align=right>2012-04-06</td>
+<td class=xl29 align=right>61</td>
+<td class=xl29 align=right>5</td>
+<td class=xl29 align=right>Resign</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 40000</td>
+<td class=xl29 align=right x:num>40000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >218011</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Temanggung</td>
+<td class=xl29 align=right>703089034900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>21</td>
+<td class=xl29 align=right >151331954</td>
+<td class=xl29 align=right >291099</td>
+<td class=xl29 align=right x:num>Ari Sumardiono</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2015-03-16</td>
+<td class=xl29 align=right>26</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Tengah</td>
+<td class=xl29 align=right>703085337400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>22</td>
+<td class=xl29 align=right >131341955</td>
+<td class=xl29 align=right >291041</td>
+<td class=xl29 align=right x:num>Arief Romadhon</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -1</td>
+<td class=xl29 align=right>2013-04-08</td>
+<td class=xl29 align=right>49</td>
+<td class=xl29 align=right>23</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 184000</td>
+<td class=xl29 align=right x:num>184000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1356150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Bener</td>
+<td class=xl29 align=right>703084946300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>23</td>
+<td class=xl29 align=right >161341956</td>
+<td class=xl29 align=right >293049</td>
+<td class=xl29 align=right x:num>Arief Wahyu Nugroho</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -1</td>
+<td class=xl29 align=right>2016-08-01</td>
+<td class=xl29 align=right>9</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Purworejo</td>
+<td class=xl29 align=right>703085679900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>24</td>
+<td class=xl29 align=right >081341957</td>
+<td class=xl29 align=right >291030</td>
+<td class=xl29 align=right x:num>Arif Wahyu Hidayat</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Junior Supervisor</td>
+<td class=xl29 align=right>Junior FS HFS</td>
+<td class=xl29 align=right>2008-07-01</td>
+<td class=xl29 align=right>106</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >360510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Bandongan</td>
+<td class=xl29 align=right>701450308700</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>25</td>
+<td class=xl29 align=right >111341958</td>
+<td class=xl29 align=right >291007</td>
+<td class=xl29 align=right x:num>Aris Tri Bagyo</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -1</td>
+<td class=xl29 align=right>2011-01-11</td>
+<td class=xl29 align=right>76</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Candimulyo</td>
+<td class=xl29 align=right>760412278100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>26</td>
+<td class=xl29 align=right >131341960</td>
+<td class=xl29 align=right >291056</td>
+<td class=xl29 align=right x:num>Aupriyono</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2013-11-23</td>
+<td class=xl29 align=right>42</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Purworejo</td>
+<td class=xl29 align=right>703084536300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>27</td>
+<td class=xl29 align=right >101311961</td>
+<td class=xl29 align=right >292011</td>
+<td class=xl29 align=right x:num>Bely Rachmawati</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Kasir Kas Kecil</td>
+<td class=xl29 align=right>2010-04-19</td>
+<td class=xl29 align=right>85</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1393410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Selatan</td>
+<td class=xl29 align=right>760798284600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>28</td>
+<td class=xl29 align=right >121341962</td>
+<td class=xl29 align=right >293007</td>
+<td class=xl29 align=right x:num>Budi Hermanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -Pasar</td>
+<td class=xl29 align=right>2012-11-17</td>
+<td class=xl29 align=right>54</td>
+<td class=xl29 align=right>23</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 184000</td>
+<td class=xl29 align=right x:num>184000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1356150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Purworejo</td>
+<td class=xl29 align=right>703083946300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>29</td>
+<td class=xl29 align=right >101341963</td>
+<td class=xl29 align=right >291004</td>
+<td class=xl29 align=right x:num>Budi Winarto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>MASR MIX</td>
+<td class=xl29 align=right>2010-08-01</td>
+<td class=xl29 align=right>81</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>760804067100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>30</td>
+<td class=xl29 align=right >081341964</td>
+<td class=xl29 align=right >291039</td>
+<td class=xl29 align=right x:num>Chafsin</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -Pasar</td>
+<td class=xl29 align=right>2008-06-01</td>
+<td class=xl29 align=right>107</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1397510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Wonosobo</td>
+<td class=xl29 align=right>701750313200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>31</td>
+<td class=xl29 align=right >121331965</td>
+<td class=xl29 align=right >293009</td>
+<td class=xl29 align=right x:num>Dedy Gunawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Helper Ekspedisi</td>
+<td class=xl29 align=right>2012-07-27</td>
+<td class=xl29 align=right>57</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Tengah</td>
+<td class=xl29 align=right>700193661900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>32</td>
+<td class=xl29 align=right >121341966</td>
+<td class=xl29 align=right >291016</td>
+<td class=xl29 align=right x:num>Devia Saraswati</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Junior Supervisor</td>
+<td class=xl29 align=right>Junior FS MASR</td>
+<td class=xl29 align=right>2012-05-23</td>
+<td class=xl29 align=right>60</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >340410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan </td>
+<td class=xl29 align=right>760427250100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>33</td>
+<td class=xl29 align=right >161342204</td>
+<td class=xl29 align=right >291152</td>
+<td class=xl29 align=right x:num>Diah Prima Nursanti</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>RO</td>
+<td class=xl29 align=right>2016-12-01</td>
+<td class=xl29 align=right>5</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Diah Prima Nursanti</td>
+<td class=xl29 align=right>703722998100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>34</td>
+<td class=xl29 align=right >131341967</td>
+<td class=xl29 align=right >291054</td>
+<td class=xl29 align=right x:num>Didik Fedi Ariyanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Junior Supervisor</td>
+<td class=xl29 align=right>Junior FS HFS</td>
+<td class=xl29 align=right>2013-11-18</td>
+<td class=xl29 align=right>42</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >340410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Kaliangkrik</td>
+<td class=xl29 align=right>700194243800</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>35</td>
+<td class=xl29 align=right >121341968</td>
+<td class=xl29 align=right >291015</td>
+<td class=xl29 align=right x:num>Dwi Andriyanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS TOP</td>
+<td class=xl29 align=right>2012-07-18</td>
+<td class=xl29 align=right>58</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1397510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Kertek</td>
+<td class=xl29 align=right>760429893500</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>36</td>
+<td class=xl29 align=right >131341969</td>
+<td class=xl29 align=right >291084</td>
+<td class=xl29 align=right x:num>Dwi Candra</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR RSU</td>
+<td class=xl29 align=right>2013-12-02</td>
+<td class=xl29 align=right>41</td>
+<td class=xl29 align=right>8</td>
+<td class=xl29 align=right>Resign</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 64000</td>
+<td class=xl29 align=right x:num>64000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >363971</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Tegalrejo</td>
+<td class=xl29 align=right>701816320100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>37</td>
+<td class=xl29 align=right >131341971</td>
+<td class=xl29 align=right >291060</td>
+<td class=xl29 align=right x:num>Eko Wibowo</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -2</td>
+<td class=xl29 align=right>2013-09-10</td>
+<td class=xl29 align=right>44</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Salaman</td>
+<td class=xl29 align=right>700194103100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>38</td>
+<td class=xl29 align=right >161341972</td>
+<td class=xl29 align=right >291119</td>
+<td class=xl29 align=right x:num>Eko Yulianto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2016-01-23</td>
+<td class=xl29 align=right>16</td>
+<td class=xl29 align=right>1</td>
+<td class=xl29 align=right>Resign</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 8000</td>
+<td class=xl29 align=right x:num>8000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >41042</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Jumo</td>
+<td class=xl29 align=right>703128897600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>39</td>
+<td class=xl29 align=right >081311973</td>
+<td class=xl29 align=right >292014</td>
+<td class=xl29 align=right x:num>Eny Istiana</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Senior Supervisor</td>
+<td class=xl29 align=right>OM</td>
+<td class=xl29 align=right>2008-10-01</td>
+<td class=xl29 align=right>103</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >340410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>701817815400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>40</td>
+<td class=xl29 align=right >161341975</td>
+<td class=xl29 align=right >293071</td>
+<td class=xl29 align=right x:num>Fajar Purwanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Merchandiser</td>
+<td class=xl29 align=right>2016-08-19</td>
+<td class=xl29 align=right>9</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1410055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Selatan</td>
+<td class=xl29 align=right>703534273100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>41</td>
+<td class=xl29 align=right >131311976</td>
+<td class=xl29 align=right >292021</td>
+<td class=xl29 align=right x:num>Fera Handayani</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Kasir kas Besar</td>
+<td class=xl29 align=right>2013-11-25</td>
+<td class=xl29 align=right>42</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1393410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Selatan</td>
+<td class=xl29 align=right>700194280200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>42</td>
+<td class=xl29 align=right >161342202</td>
+<td class=xl29 align=right >291148</td>
+<td class=xl29 align=right x:num>Fery Wibowo</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Merchandiser</td>
+<td class=xl29 align=right>2016-10-26</td>
+<td class=xl29 align=right>7</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Fery Wibowo</td>
+<td class=xl29 align=right>703642823700</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>43</td>
+<td class=xl29 align=right >131351977</td>
+<td class=xl29 align=right >292016</td>
+<td class=xl29 align=right x:num>Firman Dwi Saputro</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Coordinator</td>
+<td class=xl29 align=right>Coordinator Depo</td>
+<td class=xl29 align=right>2013-04-18</td>
+<td class=xl29 align=right>49</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356650</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>700193821300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>44</td>
+<td class=xl29 align=right >141351978</td>
+<td class=xl29 align=right >294011</td>
+<td class=xl29 align=right x:num>Franto Suratman</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>UMUM</td>
+<td class=xl29 align=right>ADMIN</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Office Safety</td>
+<td class=xl29 align=right>2014-09-01</td>
+<td class=xl29 align=right>32</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>851500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1208150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Purworejo</td>
+<td class=xl29 align=right>703085038500</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>45</td>
+<td class=xl29 align=right >141311979</td>
+<td class=xl29 align=right >292022</td>
+<td class=xl29 align=right x:num>Galih Safitri</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Checker</td>
+<td class=xl29 align=right>2014-04-02</td>
+<td class=xl29 align=right>37</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Tengah</td>
+<td class=xl29 align=right>700194728300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>46</td>
+<td class=xl29 align=right >081341980</td>
+<td class=xl29 align=right >291005</td>
+<td class=xl29 align=right x:num>Handy Sekar Wicaksono</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Junior Supervisor</td>
+<td class=xl29 align=right>Junior FS HFS</td>
+<td class=xl29 align=right>2008-07-01</td>
+<td class=xl29 align=right>106</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356650</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Tengah</td>
+<td class=xl29 align=right>701450909900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>47</td>
+<td class=xl29 align=right >081351981</td>
+<td class=xl29 align=right >244001</td>
+<td class=xl29 align=right x:num>Heri Sartono</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>UMUM</td>
+<td class=xl29 align=right>ADMIN</td>
+<td class=xl29 align=right>Middle Manager</td>
+<td class=xl29 align=right>BOM</td>
+<td class=xl29 align=right>2008-07-16</td>
+<td class=xl29 align=right>106</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Tingkir</td>
+<td class=xl29 align=right>701455163800</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>48</td>
+<td class=xl29 align=right >101341982</td>
+<td class=xl29 align=right >291085</td>
+<td class=xl29 align=right x:num>Heri Setiawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -1</td>
+<td class=xl29 align=right>2010-11-01</td>
+<td class=xl29 align=right>78</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>760805107100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>49</td>
+<td class=xl29 align=right >131341983</td>
+<td class=xl29 align=right >293031</td>
+<td class=xl29 align=right x:num>Hermanto Budiawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Merchandiser</td>
+<td class=xl29 align=right>2013-12-02</td>
+<td class=xl29 align=right>41</td>
+<td class=xl29 align=right>8</td>
+<td class=xl29 align=right>Resign</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 64000</td>
+<td class=xl29 align=right x:num>64000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >364178</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Parakan</td>
+<td class=xl29 align=right>760414593800</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>50</td>
+<td class=xl29 align=right >121331985</td>
+<td class=xl29 align=right >293016</td>
+<td class=xl29 align=right x:num>Heru Susanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Driver Dropping</td>
+<td class=xl29 align=right>2012-05-28</td>
+<td class=xl29 align=right>59</td>
+<td class=xl29 align=right>23</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 184000</td>
+<td class=xl29 align=right x:num>184000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1377410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Muntilan</td>
+<td class=xl29 align=right>760427730600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>51</td>
+<td class=xl29 align=right >151341986</td>
+<td class=xl29 align=right >291116</td>
+<td class=xl29 align=right x:num>Hesti Eliyawati</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>RO</td>
+<td class=xl29 align=right>2015-12-16</td>
+<td class=xl29 align=right>17</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1410055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Parakan</td>
+<td class=xl29 align=right>703109515200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>52</td>
+<td class=xl29 align=right >171332237</td>
+<td class=xl29 align=right >293064</td>
+<td class=xl29 align=right x:num>Ilham Wibisono</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Driver Dropping</td>
+<td class=xl29 align=right>2017-01-14</td>
+<td class=xl29 align=right>4</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Ilham Wibisono</td>
+<td class=xl29 align=right>703334806600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>53</td>
+<td class=xl29 align=right >101341989</td>
+<td class=xl29 align=right >291028</td>
+<td class=xl29 align=right x:num>Indera Prasetya</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -2</td>
+<td class=xl29 align=right>2010-08-02</td>
+<td class=xl29 align=right>81</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Wonosobo</td>
+<td class=xl29 align=right>760801143100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>54</td>
+<td class=xl29 align=right >091311990</td>
+<td class=xl29 align=right >292007</td>
+<td class=xl29 align=right x:num>Isti Nurhayati</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Debitur</td>
+<td class=xl29 align=right>2009-05-11</td>
+<td class=xl29 align=right>96</td>
+<td class=xl29 align=right>23</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 184000</td>
+<td class=xl29 align=right x:num>184000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1377410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Sawangan</td>
+<td class=xl29 align=right>700200353300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>55</td>
+<td class=xl29 align=right >171332240</td>
+<td class=xl29 align=right >291079</td>
+<td class=xl29 align=right x:num>Iwan Ardiana</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Loper</td>
+<td class=xl29 align=right>2017-01-24</td>
+<td class=xl29 align=right>4</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >360510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Iwan Ardiana</td>
+<td class=xl29 align=right>703893332100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>56</td>
+<td class=xl29 align=right >141331991</td>
+<td class=xl29 align=right >293041</td>
+<td class=xl29 align=right x:num>Iwan Prihartanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -1</td>
+<td class=xl29 align=right>2014-12-09</td>
+<td class=xl29 align=right>29</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1410055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Temanggung</td>
+<td class=xl29 align=right>701816660200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>57</td>
+<td class=xl29 align=right >111341992</td>
+<td class=xl29 align=right >291013</td>
+<td class=xl29 align=right x:num>Kresna Suhernadi</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2011-11-24</td>
+<td class=xl29 align=right>66</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Wonosobo</td>
+<td class=xl29 align=right>702762949600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>58</td>
+<td class=xl29 align=right >161352203</td>
+<td class=xl29 align=right >294017</td>
+<td class=xl29 align=right x:num>Kuswantoro</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>UMUM</td>
+<td class=xl29 align=right>ADMIN</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Office Safety</td>
+<td class=xl29 align=right>2016-11-30</td>
+<td class=xl29 align=right>5</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>873000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1233510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Kuswantoro</td>
+<td class=xl29 align=right>761261296700</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>59</td>
+<td class=xl29 align=right >111341993</td>
+<td class=xl29 align=right >291019</td>
+<td class=xl29 align=right x:num>Lindu Pamujianto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -Pasar</td>
+<td class=xl29 align=right>2011-03-02</td>
+<td class=xl29 align=right>74</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Tengah</td>
+<td class=xl29 align=right>760413578500</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>60</td>
+<td class=xl29 align=right >161341994</td>
+<td class=xl29 align=right >291129</td>
+<td class=xl29 align=right x:num>Lulun Adi Widodo</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2016-04-28</td>
+<td class=xl29 align=right>12</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Secang</td>
+<td class=xl29 align=right>703345685400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>61</td>
+<td class=xl29 align=right >171332236</td>
+<td class=xl29 align=right >293076</td>
+<td class=xl29 align=right x:num>Moh Hasyim</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Driver Dropping</td>
+<td class=xl29 align=right>2017-01-10</td>
+<td class=xl29 align=right>4</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >340410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Moh Hasyim</td>
+<td class=xl29 align=right>703930880600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>62</td>
+<td class=xl29 align=right >081341995</td>
+<td class=xl29 align=right >291024</td>
+<td class=xl29 align=right x:num>Muhamad Abdul Rohman </td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Junior Supervisor</td>
+<td class=xl29 align=right>Junior FS HFS</td>
+<td class=xl29 align=right>2008-07-01</td>
+<td class=xl29 align=right>106</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Srumbung</td>
+<td class=xl29 align=right>701450306300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>63</td>
+<td class=xl29 align=right >171352239</td>
+<td class=xl29 align=right >291157</td>
+<td class=xl29 align=right x:num>Muhamad Auliyak Arifin</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>UMUM</td>
+<td class=xl29 align=right>ADMIN</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Staff CS</td>
+<td class=xl29 align=right>2017-01-20</td>
+<td class=xl29 align=right>4</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Muhamad Auliyak Arifin</td>
+<td class=xl29 align=right>703936966300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>64</td>
+<td class=xl29 align=right >161331997</td>
+<td class=xl29 align=right >293063</td>
+<td class=xl29 align=right x:num>Muhammad Hermanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Helper Ekspedisi</td>
+<td class=xl29 align=right>2016-08-22</td>
+<td class=xl29 align=right>9</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Bandongan</td>
+<td class=xl29 align=right>703537078600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>65</td>
+<td class=xl29 align=right >151331998</td>
+<td class=xl29 align=right >293047</td>
+<td class=xl29 align=right x:num>Muhammad Muntaha Rifai</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Driver Dropping</td>
+<td class=xl29 align=right>2015-05-09</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Wonosobo</td>
+<td class=xl29 align=right>702763386100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>66</td>
+<td class=xl29 align=right >161331999</td>
+<td class=xl29 align=right >293061</td>
+<td class=xl29 align=right x:num>Muhammad Tafrikhan Aziz</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2016-04-01</td>
+<td class=xl29 align=right>13</td>
+<td class=xl29 align=right>17</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 136000</td>
+<td class=xl29 align=right x:num>136000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1282055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Parakan</td>
+<td class=xl29 align=right>703244166400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>67</td>
+<td class=xl29 align=right >141332000</td>
+<td class=xl29 align=right >293030</td>
+<td class=xl29 align=right x:num>Muhlis Rahmawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2014-03-06</td>
+<td class=xl29 align=right>38</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mungkid</td>
+<td class=xl29 align=right>760449677100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>68</td>
+<td class=xl29 align=right >121342001</td>
+<td class=xl29 align=right >291034</td>
+<td class=xl29 align=right x:num>Muhtafin</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR RSU</td>
+<td class=xl29 align=right>2012-11-19</td>
+<td class=xl29 align=right>54</td>
+<td class=xl29 align=right>7</td>
+<td class=xl29 align=right>Resign</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 56000</td>
+<td class=xl29 align=right x:num>56000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >315143</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Garung</td>
+<td class=xl29 align=right>760434680600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>69</td>
+<td class=xl29 align=right >151342002</td>
+<td class=xl29 align=right >291114</td>
+<td class=xl29 align=right x:num>Niran</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2015-12-01</td>
+<td class=xl29 align=right>17</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Bruno</td>
+<td class=xl29 align=right>703085783900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>70</td>
+<td class=xl29 align=right >131312003</td>
+<td class=xl29 align=right >292013</td>
+<td class=xl29 align=right x:num>Nova Tri Amaroh</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Operator</td>
+<td class=xl29 align=right>2013-05-04</td>
+<td class=xl29 align=right>48</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Resign</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1337674</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan </td>
+<td class=xl29 align=right>760449677100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>71</td>
+<td class=xl29 align=right >131312004</td>
+<td class=xl29 align=right >292023</td>
+<td class=xl29 align=right x:num>Novy Ardyani</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Operator</td>
+<td class=xl29 align=right>2013-11-28</td>
+<td class=xl29 align=right>41</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Pringsurat</td>
+<td class=xl29 align=right>750448247500</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>72</td>
+<td class=xl29 align=right >161312005</td>
+<td class=xl29 align=right >292028</td>
+<td class=xl29 align=right x:num>Nur Anisa</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Operator</td>
+<td class=xl29 align=right>2016-05-24</td>
+<td class=xl29 align=right>12</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Kertek</td>
+<td class=xl29 align=right>703342978700</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>73</td>
+<td class=xl29 align=right >111342006</td>
+<td class=xl29 align=right >291011</td>
+<td class=xl29 align=right x:num>Nurdin Prasetiawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -2</td>
+<td class=xl29 align=right>2011-02-02</td>
+<td class=xl29 align=right>75</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Banyuurip</td>
+<td class=xl29 align=right>760412947300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>74</td>
+<td class=xl29 align=right >101312007</td>
+<td class=xl29 align=right >292024</td>
+<td class=xl29 align=right x:num>Nurhaedi</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Kolektor</td>
+<td class=xl29 align=right>2010-04-01</td>
+<td class=xl29 align=right>85</td>
+<td class=xl29 align=right>23</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 184000</td>
+<td class=xl29 align=right x:num>184000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1377410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Muntilan</td>
+<td class=xl29 align=right>703091461300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>75</td>
+<td class=xl29 align=right >161342205</td>
+<td class=xl29 align=right >291162</td>
+<td class=xl29 align=right x:num>Ony Triyaningsih</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>RO</td>
+<td class=xl29 align=right>2016-12-26</td>
+<td class=xl29 align=right>5</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Ony Triyaningsih</td>
+<td class=xl29 align=right>703825454100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>76</td>
+<td class=xl29 align=right >091342008</td>
+<td class=xl29 align=right >291067</td>
+<td class=xl29 align=right x:num>Prihantono</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Junior Supervisor</td>
+<td class=xl29 align=right>Junior FS HFS</td>
+<td class=xl29 align=right>2009-04-01</td>
+<td class=xl29 align=right>97</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >341055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Tuntang</td>
+<td class=xl29 align=right>760426521600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>77</td>
+<td class=xl29 align=right >151342009</td>
+<td class=xl29 align=right >291107</td>
+<td class=xl29 align=right x:num>Puji Mufaat</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -2</td>
+<td class=xl29 align=right>2015-08-24</td>
+<td class=xl29 align=right>21</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Bener</td>
+<td class=xl29 align=right>703085626800</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>78</td>
+<td class=xl29 align=right >141342010</td>
+<td class=xl29 align=right >291094</td>
+<td class=xl29 align=right x:num>Rahmat Adi Aryanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2014-05-20</td>
+<td class=xl29 align=right>36</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Wonosobo</td>
+<td class=xl29 align=right>760451121600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>79</td>
+<td class=xl29 align=right >171332235</td>
+<td class=xl29 align=right >293075</td>
+<td class=xl29 align=right x:num>Riyan Agus Suryawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2017-01-09</td>
+<td class=xl29 align=right>4</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Riyan Agus Suryawan</td>
+<td class=xl29 align=right>088215307308</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>80</td>
+<td class=xl29 align=right >161332011</td>
+<td class=xl29 align=right >293062</td>
+<td class=xl29 align=right x:num>Rotama Pujo Wibowo</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2016-04-02</td>
+<td class=xl29 align=right>13</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1410055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Temanggung</td>
+<td class=xl29 align=right>703255827900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>81</td>
+<td class=xl29 align=right >131312012</td>
+<td class=xl29 align=right >292019</td>
+<td class=xl29 align=right x:num>Rr Chitra Ardiyanti A Md</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Operator</td>
+<td class=xl29 align=right>2013-09-13</td>
+<td class=xl29 align=right>44</td>
+<td class=xl29 align=right>23</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 184000</td>
+<td class=xl29 align=right x:num>184000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1356150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Purworejo</td>
+<td class=xl29 align=right>703084360200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>82</td>
+<td class=xl29 align=right >151332013</td>
+<td class=xl29 align=right >293046</td>
+<td class=xl29 align=right x:num>Safii</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2015-04-24</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Gebang</td>
+<td class=xl29 align=right>703082651400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>83</td>
+<td class=xl29 align=right >131342014</td>
+<td class=xl29 align=right >291057</td>
+<td class=xl29 align=right x:num>Sandi Aprilian Setyawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2013-11-23</td>
+<td class=xl29 align=right>42</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Dukun</td>
+<td class=xl29 align=right>760448535700</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>84</td>
+<td class=xl29 align=right >131342015</td>
+<td class=xl29 align=right >291078</td>
+<td class=xl29 align=right x:num>Shohif Anwar</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2013-10-29</td>
+<td class=xl29 align=right>42</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Wonosobo</td>
+<td class=xl29 align=right>760447203400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>85</td>
+<td class=xl29 align=right >171342234</td>
+<td class=xl29 align=right >291163</td>
+<td class=xl29 align=right x:num>Siti Aminah</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>RO</td>
+<td class=xl29 align=right>2017-01-02</td>
+<td class=xl29 align=right>4</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >357055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Siti Aminah</td>
+<td class=xl29 align=right>703838135200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>86</td>
+<td class=xl29 align=right >161342016</td>
+<td class=xl29 align=right >291142</td>
+<td class=xl29 align=right x:num>Siti Baikuniyah</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>RO</td>
+<td class=xl29 align=right>2016-08-20</td>
+<td class=xl29 align=right>9</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Bruno</td>
+<td class=xl29 align=right>703501478300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>87</td>
+<td class=xl29 align=right >101332017</td>
+<td class=xl29 align=right >293008</td>
+<td class=xl29 align=right x:num>Sudirman</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Admin Ekspedisi</td>
+<td class=xl29 align=right>2010-12-03</td>
+<td class=xl29 align=right>77</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Wonosari</td>
+<td class=xl29 align=right>760411914900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>88</td>
+<td class=xl29 align=right >121332018</td>
+<td class=xl29 align=right >293023</td>
+<td class=xl29 align=right x:num>Sunariyo</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2012-12-05</td>
+<td class=xl29 align=right>53</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Tengah</td>
+<td class=xl29 align=right>700193707800</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>89</td>
+<td class=xl29 align=right >151332019</td>
+<td class=xl29 align=right >273078</td>
+<td class=xl29 align=right x:num>Supriyanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Helper Ekspedisi</td>
+<td class=xl29 align=right>2015-08-07</td>
+<td class=xl29 align=right>21</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1393410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Sleman</td>
+<td class=xl29 align=right>701454269400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>90</td>
+<td class=xl29 align=right >121312020</td>
+<td class=xl29 align=right >292008</td>
+<td class=xl29 align=right x:num>Sutriyani</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Debitur</td>
+<td class=xl29 align=right>2012-05-10</td>
+<td class=xl29 align=right>60</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Resign</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Kaliangkrik</td>
+<td class=xl29 align=right>760427066400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>91</td>
+<td class=xl29 align=right >131352021</td>
+<td class=xl29 align=right >292010</td>
+<td class=xl29 align=right x:num>Tri Harningsih</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>UMUM</td>
+<td class=xl29 align=right>ADMIN</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Staff HRGA</td>
+<td class=xl29 align=right>2013-04-01</td>
+<td class=xl29 align=right>49</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Selatan</td>
+<td class=xl29 align=right>760442149400</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>92</td>
+<td class=xl29 align=right >121352022</td>
+<td class=xl29 align=right >292017</td>
+<td class=xl29 align=right x:num>Tri Setyowati</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Coordinator</td>
+<td class=xl29 align=right>Coordinator Depo</td>
+<td class=xl29 align=right>2012-08-28</td>
+<td class=xl29 align=right>56</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >357055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Kranggan</td>
+<td class=xl29 align=right>703090989100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>93</td>
+<td class=xl29 align=right >131342023</td>
+<td class=xl29 align=right >291029</td>
+<td class=xl29 align=right x:num>Untoro Dwi Asmoro</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Purworejo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Merchandiser</td>
+<td class=xl29 align=right>2013-01-21</td>
+<td class=xl29 align=right>52</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1031500</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1445000</td>
+<td class=xl29 align=right x:num>61268</td>
+<td class=xl29 align=right x:num>28900</td>
+<td class=xl29 align=right x:num>57800</td>
+<td class=xl29 align=right x:num>14450</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1388150</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Purworejo</td>
+<td class=xl29 align=right>703084046300</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>94</td>
+<td class=xl29 align=right >091342024</td>
+<td class=xl29 align=right >291066</td>
+<td class=xl29 align=right x:num>Wahadi</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Merchandiser</td>
+<td class=xl29 align=right>2009-02-15</td>
+<td class=xl29 align=right>99</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>701815620900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>95</td>
+<td class=xl29 align=right >091342025</td>
+<td class=xl29 align=right >291003</td>
+<td class=xl29 align=right x:num>Wahyu Marya Sucahyono</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -2</td>
+<td class=xl29 align=right>2009-07-01</td>
+<td class=xl29 align=right>94</td>
+<td class=xl29 align=right>24</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 192000</td>
+<td class=xl29 align=right x:num>192000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1394055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Parakan</td>
+<td class=xl29 align=right>703088843500</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>96</td>
+<td class=xl29 align=right >121342026</td>
+<td class=xl29 align=right >291025</td>
+<td class=xl29 align=right x:num>Wahyu Priagustanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>MASR MIX</td>
+<td class=xl29 align=right>2012-12-18</td>
+<td class=xl29 align=right>53</td>
+<td class=xl29 align=right>14</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 112000</td>
+<td class=xl29 align=right x:num>112000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1233410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>760435567600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>97</td>
+<td class=xl29 align=right >121342027</td>
+<td class=xl29 align=right >291014</td>
+<td class=xl29 align=right x:num>Wahyu Suhartono</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR WS -Pasar</td>
+<td class=xl29 align=right>2012-04-24</td>
+<td class=xl29 align=right>61</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Kajoran</td>
+<td class=xl29 align=right>760426543000</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>98</td>
+<td class=xl29 align=right >151332028</td>
+<td class=xl29 align=right >293048</td>
+<td class=xl29 align=right x:num>Wawan Adi Purwanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>LOGISTIK</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Delivery Motor Box</td>
+<td class=xl29 align=right>2015-07-01</td>
+<td class=xl29 align=right>22</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Garung</td>
+<td class=xl29 align=right>700197144200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>99</td>
+<td class=xl29 align=right >131342029</td>
+<td class=xl29 align=right >291036</td>
+<td class=xl29 align=right x:num>Wiwit Danang Cahyanto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2013-03-08</td>
+<td class=xl29 align=right>50</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1413510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Kaliwiro</td>
+<td class=xl29 align=right>760439847900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>100</td>
+<td class=xl29 align=right >131342030</td>
+<td class=xl29 align=right >291055</td>
+<td class=xl29 align=right x:num>Yayan Septiyawan</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2013-11-20</td>
+<td class=xl29 align=right>42</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Magelang Tengah</td>
+<td class=xl29 align=right>700194131200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>101</td>
+<td class=xl29 align=right >141352031</td>
+<td class=xl29 align=right >293042</td>
+<td class=xl29 align=right x:num>Yogi Prasetyo</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Wonosobo</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Coordinator</td>
+<td class=xl29 align=right>Coordinator Depo</td>
+<td class=xl29 align=right>2014-11-26</td>
+<td class=xl29 align=right>30</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>4100</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >360510</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Leksono</td>
+<td class=xl29 align=right>760457373700</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>102</td>
+<td class=xl29 align=right >131342032</td>
+<td class=xl29 align=right >291081</td>
+<td class=xl29 align=right x:num>Yuli Vera Kholisa</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>RO</td>
+<td class=xl29 align=right>2013-05-04</td>
+<td class=xl29 align=right>48</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Parakan</td>
+<td class=xl29 align=right>703091627900</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>103</td>
+<td class=xl29 align=right >131342033</td>
+<td class=xl29 align=right >291046</td>
+<td class=xl29 align=right x:num>Yulia Sulistianto</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>SALES</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>SR Sub - D</td>
+<td class=xl29 align=right>2013-08-19</td>
+<td class=xl29 align=right>45</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1409410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>700194131200</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>104</td>
+<td class=xl29 align=right >151312034</td>
+<td class=xl29 align=right >292026</td>
+<td class=xl29 align=right x:num>Yulianingsih</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Cabang</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Coordinator</td>
+<td class=xl29 align=right>AR Control</td>
+<td class=xl29 align=right>2015-11-20</td>
+<td class=xl29 align=right>18</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1453000</td>
+<td class=xl29 align=right x:num>61607</td>
+<td class=xl29 align=right x:num>29060</td>
+<td class=xl29 align=right x:num>58120</td>
+<td class=xl29 align=right x:num>14530</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >356410</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Mertoyudan</td>
+<td class=xl29 align=right>700197547600</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>105</td>
+<td class=xl29 align=right >141312035</td>
+<td class=xl29 align=right >292025</td>
+<td class=xl29 align=right x:num>Zainati Munatiqoh</td>
+<td class=xl29 align=right>MAGELANG</td>
+<td class=xl29 align=right>MGL Temanggung</td>
+<td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+<td class=xl29 align=right>LOGISTIC</td>
+<td class=xl29 align=right>Staff</td>
+<td class=xl29 align=right>Operator</td>
+<td class=xl29 align=right>2014-11-26</td>
+<td class=xl29 align=right>30</td>
+<td class=xl29 align=right>25</td>
+<td class=xl29 align=right>Aktif</td>
+<td class=xl29 align=right x:num>1053000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 200000</td>
+<td class=xl29 align=right x:num>200000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>1431500</td>
+<td class=xl29 align=right x:num>60696</td>
+<td class=xl29 align=right x:num>28630</td>
+<td class=xl29 align=right x:num>57260</td>
+<td class=xl29 align=right x:num>14315</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >1410055</td>
+<td class=xl29 align=right>CIMB NIAGA</td>
+<td class=xl29 align=right>Parakan</td>
+<td class=xl29 align=right>703089614100</td>
+       
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+<td class=xl28 align=right style='height:5.5pt'>TOTAL PEGAWAI</td>
+<td class=xl29 align=right >105</td>
+<td class=xl29 align=right ></td>
+<td class=xl29 align=right x:num></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right x:num>84452000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num> 19864000</td>
+<td class=xl29 align=right x:num>19864000</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num>82000</td>
+<td class=xl29 align=right x:num>152093000</td>
+<td class=xl29 align=right x:num></td>
+<td class=xl29 align=right x:num></td>
+<td class=xl29 align=right x:num></td>
+<td class=xl29 align=right x:num></td>
+<td class=xl29 align=right x:num>0</td>
+<td class=xl29 align=right x:num >115428734</td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+<td class=xl29 align=right></td>
+       
+
+  
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=31 width=80 clospan= style='width:41pt'></td></tr>
+ <![endif]>
+</table>
+
+
+</body>			
+</html>
+
+

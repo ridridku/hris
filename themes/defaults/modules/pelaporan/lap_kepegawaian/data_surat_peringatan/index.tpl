@@ -78,17 +78,17 @@ var err_ = 0;
                                                                                            <!--{if ($OPT==1)}-->
 
                                                                                                    <!--{if trim($DATA_CABANG[x].r_cabang__id) == $EDIT_R_CABANG__ID}-->
-                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id|base64_encode}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
                                                                                                    <!--{else}-->
-                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id|base64_encode}-->"  > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
                                                                                                    <!--{/if}-->
 
                                                                                            <!--{else}-->
 
                                                                                                    <!--{if  ($DATA_CABANG[x].kode_cabang) == $KODE_PW_SES}-->
-                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id|base64_encode}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
                                                                                                    <!--{else}-->
-                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id|base64_encode}-->"  > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
                                                                                                    <!--{/if}-->
                                                                                            <!--{/if}-->
 
@@ -104,17 +104,17 @@ var err_ = 0;
                                                                                            <!--{if ($OPT==1)}-->
 
                                                                                                    <!--{if trim($DATA_CABANG[x].r_cabang__id) == $EDIT_R_CABANG__ID}-->
-                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id|base64_encode}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
                                                                                                    <!--{else}-->
-                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  disabled> <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id|base64_encode}-->"  disabled> <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
                                                                                                    <!--{/if}-->
 
                                                                                            <!--{else}-->
 
                                                                                                    <!--{if  trim($DATA_CABANG[x].r_cabang__id) == trim($KODE_PW_SES)}-->
-                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id|base64_encode}-->" selected > <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
                                                                                                    <!--{else}-->
-                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id}-->"  disabled> <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
+                                                                                                   <option value="<!--{$DATA_CABANG[x].r_cabang__id|base64_encode}-->"  disabled> <!--{$DATA_CABANG[x].r_cabang__nama}--> </option>
                                                                                                    <!--{/if}-->
 
                                                                                            <!--{/if}-->

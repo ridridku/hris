@@ -117,24 +117,53 @@ if ($_GET['departemen_cari']) $departemen_cari = $_GET['departemen_cari'];
 else if ($_POST['departemen_cari']) $departemen_cari = $_POST['departemen_cari'];
 else $departemen_cari="";
 
-if ($_GET['bulan']) $bulan = $_GET['bulan'];
-else if ($_POST['bulan']) $bulan = $_POST['bulan'];
-else $bulan="";
-
-if ($_GET['tahun']) $tahun = $_GET['tahun'];
-else if ($_POST['tahun']) $tahun = $_POST['tahun'];
-else $tahun="";
-
-
 if ($_GET['nama_karyawan_cari']) $nama_karyawan_cari = $_GET['nama_karyawan_cari'];
 else if ($_POST['nama_karyawan_cari']) $nama_karyawan_cari = $_POST['nama_karyawan_cari'];
 else $nama_karyawan_cari="";
-//var_dump($a)or die();
+
 
 if ($_GET['search']) $search = $_GET['search'];
 else if ($_POST['search']) $search = $_POST['search'];
 else $search="";
 
+
+if ($_GET['bulan1']) $bulan1 = $_GET['bulan1'];
+else if ($_POST['bulan1']) $bulan1 = $_POST['bulan1'];
+else $bulan1="";
+
+if ($_GET['bulan2']) $bulan2 = $_GET['bulan2'];
+else if ($_POST['bulan2']) $bulan2 = $_POST['bulan2'];
+else $bulan2="";
+
+if ($_GET['tahun1']) $tahun1 = $_GET['tahun1'];
+else if ($_POST['tahun1']) $tahun1 = $_POST['tahun1'];
+else $tahun1="";
+
+if ($_GET['tahun2']) $tahun2 = $_GET['tahun2'];
+else if ($_POST['tahun2']) $tahun2 = $_POST['tahun1'];
+else $tahun2="";
+
+if ($_GET['tgl1']) $tgl1 = $_GET['tgl1'];
+else if ($_POST['tgl1']) $tgl1 = $_POST['tgl1'];
+else $tgl1="";
+
+if ($_GET['tgl2']) $tgl2= $_GET['tgl2'];
+else if ($_POST['tgl2']) $tgl2 = $_POST['tgl2'];
+else $tgl2="";
+
+
+$arr = array($tahun1,$bulan1,$tgl1);                                 
+$date_awal= implode("-",$arr); 
+
+$arr = array($tahun2,$bulan2,$tgl2);                                 
+$date_akhir= implode("-",$arr); 
+$Search_Year='2016';
+
+$smarty->assign ("DATE_AWAL", $date_awal);
+$smarty->assign ("DATE_AKHIR", $date_akhir);
+
+$smarty->assign ("TAHUN1", $tahun1);
+$smarty->assign ("TAHUN2", $tahun2);
 
 $smarty->assign ("KODE_CABANG_CARI", $kode_cabang_cari);
 $tahun_ses_aktif		=	$_SESSION['SESSION_TAHUN_AKTIF'];
@@ -163,8 +192,20 @@ $bulan_session	= $_SESSION['SESSION_BULAN'];
 $smarty->assign ("JENIS_USER_SES", $jenis_user);
 $smarty->assign ("KODE_PW_SES", $kode_pw_ses);
 
-$smarty->assign ("TAHUN_SESSION", $tahun_session);
-$smarty->assign ("BULAN_SESSION", $bulan_session);
+$periode_awal	= $_SESSION['SESSION_AWAL_AKTIF'];$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$periode_akhir	= $_SESSION['SESSION_AKHIR_AKTIF'];$smarty->assign ("PERIODE_AKHIR", $periode_akhir);
+
+$orderdate1 = explode('-',$periode_awal);
+$year1  = $orderdate1[0];$smarty->assign ("YEAR1", $year1);
+$month1 = $orderdate1[1];$smarty->assign ("MONTH1", $month1);
+$day1   = $orderdate1[2];$smarty->assign ("DAY1", $day1);
+
+
+$orderdate2 = explode('-',$periode_akhir);
+$year2  = $orderdate2[0];$smarty->assign ("YEAR2", $year2);
+$month2 = $orderdate2[1];$smarty->assign ("MONTH2", $month2);
+$day2   = $orderdate2[2];$smarty->assign ("DAY2", $day2);
+
 //--------------------------------------
 //SHOW DATA INSTANSI
 //---------------------------------------
@@ -466,13 +507,9 @@ if ($_GET['search'] == '1')
 						 } 
 
 						 
-                                                  if ($bulan !='') {
-						 	$sql.=" and MONTH(t_abs__tgl)='$bulan'  ";
-						 }
-                                                 
-                                                  if ($tahun !='') {
-						 	$sql.=" AND YEAR(t_abs__tgl)=$tahun  ";
-						 }
+                                                  if ($tahun1 !='' AND $tahun2 !='' ) {
+						 	$sql.="  AND t_abs__tgl>='$date_awal' AND t_abs__tgl<='$date_akhir'  ";
+						 } 
                                                  
                                                   if ($nama_karyawan_cari !='') {
 						 	$sql.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
@@ -483,8 +520,8 @@ if ($_GET['search'] == '1')
 			 	$sql.=" ORDER BY t_abs__tgl asc ";
 
 			//    if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
-                    // var_dump($sql)or die();
-                                 
+                   // var_dump($sql)or die();
+                             
 				$numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
 			//	$pages = $p->findPages($count,$LIMIT); 
@@ -494,19 +531,17 @@ if ($_GET['search'] == '1')
 				$end = $recordSet->RecordCount();
 				$initSet = array();
 				$data_tb = array();
+                              
 				$row_class = array();
 				$z=0;
 				 $count_no = 1;
 				while ($arr=$recordSet->FetchRow()) {
-					array_push($data_tb, $arr);
-                                        
-                                 $label="Nama :". $arr[r_pegawai__nama]; 
-                                 
-                                 
-                                 $label_bln=$arr[label_bulan];
-                                 $label_tahun=$arr[label_tahun];
+                                array_push($data_tb, $arr);
+                                $label="Nama :". $arr[r_pegawai__nama];
+                                $label_bln=$arr[label_bulan];
+                                $label_tahun=$arr[label_tahun];
+                               
 				
-					
 			   
 			   $content_data .= print_content(
                                     $count_no,
@@ -516,7 +551,7 @@ if ($_GET['search'] == '1')
                                     $arr[r_dept__ket],
                                     $arr[r_shift__jam_masuk],
                                     $arr[r_shift__jam_pulang],
-                                    $arr[t_abs__tgl],
+                                    namahari($arr[t_abs__tgl]).'/'.$arr[t_abs__tgl],
                                     $arr[t_abs__jam_masuk],
                                     $arr[t_abs__jam_keluar],
                                     $arr[t_abs__early],
@@ -544,6 +579,9 @@ if ($_GET['search'] == '1')
 				$count_all  = $start+$end;
 			//	$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer);                                 
                                   $smarty->assign ("DATA_TB", $data_tb);
+                                 
+                                  
+                                 
                                   
                               //total karyawan
                           $sql_total="SELECT COUNT(t_abs__tgl) As sum_tgl,
@@ -572,7 +610,9 @@ if ($_GET['search'] == '1')
                                   INNER JOIN t_absensi
                                     ON t_absensi.t_abs__fingerprint = r_penempatan.r_pnpt__finger_print
                                   INNER JOIN r_shift
-                                    ON r_shift.r_shift__id = t_absensi.t_abs__id_shift where 1=1 ";
+                                    ON r_shift.r_shift__id = t_absensi.t_abs__id_shift where 1=1 AND t_absensi.t_abs__tgl NOT IN
+                                    (SELECT t_libur.r_libur__tgl FROM t_libur,t_absensi where t_libur.r_libur__tgl=t_absensi.t_abs__tgl
+                                   AND t_libur.r_libur__shift=t_absensi.t_abs__id_shift)  ";
                              if ($kode_cabang_cari !='') {
                                        $sql_total.=" and  r_cabang__id =".$kode_cabang_cari."  ";
                                 }
@@ -587,54 +627,21 @@ if ($_GET['search'] == '1')
                                if ($nama_karyawan_cari !='') {
                                         $sql_total.="and r_pegawai__nama LIKE '%".$nama_karyawan_cari."%'  ";
 						 }
-//
+                                                             
                                    $rs_sum=$db->Execute($sql_total);
                                    
-                                   $sum_early =$rs_sum->fields['sum_early'];
-                                   $sum_lately =$rs_sum->fields['sum_lately'];
-                                   $sum_worktime =$rs_sum->fields['sum_worktime'];
-                                   $sum_overtime= $rs_sum->fields['sum_overtime'];
-                                   $sum_lesstime= $rs_sum->fields['sum_lesstime'];
-                                   
-                               //    var_dump($sum_early) or die();
-                                 $smarty->assign ("SUM_EARLY", $sum_early); 
-                                 $smarty->assign ("SUM_LATELY", $sum_lately);
-                                 $smarty->assign ("SUM_WORKTIME", $sum_worktime);
-                                 $smarty->assign ("SUM_OVERTIME", $sum_overtime);
-                                 $smarty->assign ("SUM_LESSTIME", $sum_lesstime);
-           
+                                $sum_early =$rs_sum->fields['sum_early'];
+                                $sum_lately =$rs_sum->fields['sum_lately'];
+                                $sum_worktime =$rs_sum->fields['sum_worktime'];
+                                $sum_overtime= $rs_sum->fields['sum_overtime'];
+                                $sum_lesstime= $rs_sum->fields['sum_lesstime'];
+                                $smarty->assign ("SUM_EARLY", $sum_early); 
+                                $smarty->assign ("SUM_LATELY", $sum_lately);
+                                $smarty->assign ("SUM_WORKTIME", $sum_worktime);
+                                $smarty->assign ("SUM_OVERTIME", $sum_overtime);
+                                $smarty->assign ("SUM_LESSTIME", $sum_lesstime);
+
         
-                               //TUTUP TOTAL    
-//                                 //   var_dump($sum_overtime)or die();
-//                                $numresults4=$db->Execute($sql_total);
-//				$count4 = $numresults4->RecordCount();
-// 				$recordSet4 = $db->Execute($sql_total);
-//				$end4 = $recordSet4->RecordCount();
-//				$initSet4 = array();
-//				$data_tb4 = array();
-//				$row_class4 = array();
-//				$z=0;
-//				while ($arr4=$recordSet4->FetchRow()) {
-//					array_push($data_tb4, $arr4);
-//					if ($z%2==0){
-//						$ROW_CLASSNAME="#CCCCCC"; }
-//					else {
-//						$ROW_CLASSNAME="#EEEEEE";
-//					   }
-//                                array_push($row_class4, $ROW_CLASSNAME2);
-//				array_push($initSet4, $z);
-//					$z++;
-//                                  //      var_dump($arr4[sum_early])or die();
-//				//	$label="JML KARYAWAN : ".$arr4[total_orang];
-//				//	$content_data .= print_content("","","","","","","","","","","",$label);
-//				}
-//$content_data .= print_content("","","","","","","","","",$label,$sum_early,$sum_lately,$sum_worktime,$sum_lesstime,$sum_overtime,"");
-                           
-//                                  $sum_early =$arr4['sum_early'];
-//                                   $sum_lately =$arr4['sum_lately'];
-//                                   $sum_worktime =$arr4['sum_worktime'];
-//                                   $sum_overtime= $arr4['sum_overtime'] ;
-//                                   $sum_lesstime= $arr4['sum_lesstime'] ;
                                 
                                 $label="TOTAL JAM :";
                          //   $content_data .= print_content("","","","","","","","","",$label,$arr4[sum_early],$arr4[sum_lately],$arr4[sum_worktime],$arr4[sum_lesstime],$arr4[sum_overtime],"");

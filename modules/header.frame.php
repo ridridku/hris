@@ -81,14 +81,12 @@ $smarty->assign ("SESSION_TAHUN", $session_tahun);
 $smarty->assign ("SESSION_BULAN", $session_bulan);
 
 
-
-
  $sql_cek_periode="SELECT r_periode__payroll_id,r_periode__payroll_bulan,r_periode__payroll_tahun,r_periode__payroll_status
                                   FROM r_periode_payroll WHERE r_periode__payroll_status=1 ";
-                //  var_dump($sql_cek_periode)or die();
-                        $rs_val = $db->Execute($sql_cek_periode);
-                        $periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
-                        $periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];  
+//  var_dump($sql_cek_periode)or die();
+$rs_val = $db->Execute($sql_cek_periode);
+$periode_bulan= $rs_val->fields['r_periode__payroll_bulan'];
+$periode_tahun= $rs_val->fields['r_periode__payroll_tahun'];  
 $smarty->assign ("PERIODE_TAHUN", $periode_tahun);
 $smarty->assign ("PERIODE_BULAN", $periode_bulan);
 

@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-20 06:55:32
+<?php /* Smarty version 2.6.18, created on 2017-06-05 16:00:14
          compiled from defaults/modules/kehadiran/surat_lembur//index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/kehadiran/surat_lembur//index.tpl', 224, false),array('function', 'cycle', 'defaults/modules/kehadiran/surat_lembur//index.tpl', 485, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/kehadiran/surat_lembur//index.tpl', 228, false),array('function', 'cycle', 'defaults/modules/kehadiran/surat_lembur//index.tpl', 509, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -127,7 +127,7 @@ function hideIt(){
 <DIV ID="_menuEntry1_1" style="top:10px;width:100%;display:none;position:absolute;">
 
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat"> Data Penempatan</td></tr>
+		<tr><td class="tcat"> Data Lembur</td></tr>
 		</table>
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 		<tr><td class="thead"><img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
@@ -162,7 +162,7 @@ function hideIt(){
                             </TD> 
                                                            <TD><?php if (( $this->_tpl_vars['JENIS_USER_SES'] == 1 )): ?>
 
-                                                                                           <select name="kode_cabang" onchange="cari_subcab(this.value);"> 
+                                                                                           <select name="kode_cabang" > 
                                                                                            <option value=""> Pilih Cabang </option>
                                                                                            <?php unset($this->_sections['x']);
 $this->_sections['x']['name'] = 'x';
@@ -284,21 +284,27 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                             <TD>Nama Karyawan<font color="#ff0000">*</font> </TD>
                             <TD><INPUT TYPE="text" NAME="karyawan_nama" readonly  id="r_pegawai__nama"  size="35" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__PEGAWAI_NAMA']; ?>
 ">
-                             NIP   <INPUT TYPE="text" NAME="karyawan_nip" readonly id="r_pnpt__nip" size="35" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__NIP']; ?>
+                                <INPUT TYPE="text" NAME="karyawan_id" readonly id="finger" size="35" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__NIP']; ?>
 " >
-                                
                                 <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan()" value=" ... " />
                             </TD>
 
                     </TR>
-                    
+                    <TR>
+                            <TD>Jabatan<font color="#ff0000">*</font> </TD>
+                            <TD><INPUT TYPE="text" NAME="jabatan_id" readonly  id="r_pnpt__jabatan"  size="35" value="<?php echo $this->_tpl_vars['EDIT_JABATAN']; ?>
+">
+                                <INPUT TYPE="hidden" NAME="level_id" readonly  id="level_id"  size="35" value="<?php echo $this->_tpl_vars['EDIT_LEVEL']; ?>
+">
+                            </TD>
+
+                    </TR>
                     <TR>
                             <TD>Nama Atasan<font color="#ff0000">*</font> </TD>
-                            <TD><INPUT TYPE="text" NAME="atasan__nama" readonly  id="r_pegawai__nama2"  size="35" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__ATASAN_NAMA']; ?>
+                            <TD><INPUT TYPE="text" NAME="atasan__nama" readonly  id="atasan_nama"  size="35" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__ATASAN_NAMA']; ?>
 ">
-                              NIP  <INPUT TYPE="text" NAME="atasan__nip" readonly id="r_pnpt__nip2" size="35" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__ATASAN_NIP']; ?>
+                                <INPUT TYPE="hidden" NAME="atasan__nip" readonly id="atasan_id" size="35" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__ATASAN_NIP']; ?>
 " >
-                                
                                 <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;" onclick="goCarikaryawan2()" value=" ... " />
                             </TD>
                     </TR>
@@ -307,12 +313,12 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                                 <TD>
                                     <?php if ($this->_tpl_vars['EDIT_VAL'] == 0): ?>
 
-                                                        <input readonly="" type="text" NAME="lembur_tanggal"  value="<?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, "%Y-%m-%d") : smarty_modifier_date_format($_tmp, "%Y-%m-%d")); ?>
+                                    <input readonly="" type="text" NAME="lembur_tanggal"  id="lembur_tanggal" value="<?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, "%Y-%m-%d") : smarty_modifier_date_format($_tmp, "%Y-%m-%d")); ?>
 ">
 							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/calendar.png"   onclick="displayCalendar(document.frmCreate.lembur_tanggal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
 					<?php else: ?>
-								 <input readonly="" type="text" name="lembur_tanggal" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__TANGGAL']; ?>
+								 <input readonly="" type="text" name="lembur_tanggal" id="lembur_tanggal" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__TANGGAL']; ?>
 " >
 							 <img src="<?php echo $this->_tpl_vars['HREF_IMG_PATH']; ?>
 /icon/calendar.png"  onclick="displayCalendar(document.frmCreate.lembur_tanggal,'yyyy-mm-dd',this)"  class="imgLink" align="absmiddle" title="Show Calendar List">
@@ -323,34 +329,60 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
                         <TD>Durasi Jam Lembur  <font color="#ff0000">*</font> </TD>
                             <TD> 
                                 <INPUT TYPE="text" name="lembur_durasi" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__DURASI']; ?>
-" size="10" onkeyup="formatdurasi(this)">  
-                                 Nominal Per jam Rp.<INPUT TYPE="text" name="lembur_nominal" value="<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__NOMINAL']; ?>
-" size="10" onkeyup="formatangka(this)"> 
+" size="10" >  
+                                
                             </TD>
                     </TR> 
                      <TR>
-                                <TD>Job Description <font color="#ff0000">*</font></TD> 
-			
-                                <TD><textarea rows="5" cols="20" NAME="lembur_deskripsi"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_LEMBUR__JOB_DESCRIPTION']; ?>
+                        <TD>Rincian Lembur<font color="#ff0000">*</font> </TD>
+                            <TD> 
+                                <div id="lembur_cost">
+                                   <TABLE class='tborder' border='0' cellpadding='1' cellspacing='1' border='0' width='100%' align='left'>
+                                       <THEAD>
+                                       <th class='tdatahead' align='left' width='10%'>Nominal Lembur/Jam</th>
+                                         <th class='tdatahead' align='left' width='10%'>Jumlah Lembur</th>
+                                         <th class='tdatahead' align='left' width='10%'>Uang Makan</th>
+                                         <th class='tdatahead'  align='left'  width='10%'>Uang Transport</th>
+                                         <th class='tdatahead'  align='left'  width='10%'>Total</th>
+				  </THEAD>
+                                  <TR>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_nominal' value=<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__NOMINAL']; ?>
+></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_jml' value=<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__NOMINAL_JML']; ?>
+></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_makan' value=<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__MAKAN']; ?>
+></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_transport' value=<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__TRANSPORT']; ?>
+></TD>
+                                   <TD><INPUT TYPE='text' readonly='' name='lembur_total' value=<?php echo $this->_tpl_vars['EDIT_T_LEMBUR__TOTAL']; ?>
+></TD>
+                                   </TABLE>
+                      
+                            </div>
+                        <INPUT name="ButtonDepartemen" type="button" class="button" style="cursor: hand;"  value="Hitung" onclick="cek_lembur()" />
+                            </TD>
+                    </TR>
+                    
+                    
+                    
+                     <TR>
+                                <TD>Job Description <font color="#ff0000">*</font></TD>
+                                <TD><textarea rows="5" cols="55" NAME="lembur_deskripsi"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_LEMBUR__JOB_DESCRIPTION']; ?>
 </textarea></TD>
                     </TR>
                      <TR>
                                 <TD>Hasil Evaluasi Atasan <font color="#ff0000">*</font></TD> 
-			
-                                <TD><textarea rows="5" cols="20" NAME="lembur_evaluasi"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_LEMBUR__JOB_EVALUASI']; ?>
+                                <TD><textarea rows="5" cols="55" NAME="lembur_evaluasi"  size="12" ><?php echo $this->_tpl_vars['EDIT_T_LEMBUR__JOB_EVALUASI']; ?>
 </textarea></TD>
                     </TR>
                     <TR>
-                           
-
                     </TR>
                     <TR>
                                 <TD>Approval <font color="#ff0000">*</font></TD> 
 					<TD><SELECT name="approval">
 							<OPTION value="">[Pilih Approval]</OPTION>
 							<OPTION value="1" <?php if ($this->_tpl_vars['EDIT_T_LEMBUR__APPROVAL'] == '1'): ?>selected<?php endif; ?>>Disetujui HRD</OPTION>
-							<OPTION value="0" <?php if ($this->_tpl_vars['EDIT_T_LEMBUR__APPROVAL'] == '0'): ?>selected<?php endif; ?>>Tidak Disetujui HRD</OPTION>  
-                                                        <OPTION value="3" <?php if ($this->_tpl_vars['EDIT_T_LEMBUR__APPROVAL'] == '2'): ?>selected<?php endif; ?>>Telah Disetujui BOM</OPTION>
+                                                        <OPTION value="2" <?php if ($this->_tpl_vars['EDIT_T_LEMBUR__APPROVAL'] == '2'): ?>selected<?php endif; ?>>Tidak Disetujui</OPTION>
 						</SELECT>
                                 </TD>
                     </TR>
@@ -400,8 +432,8 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 
 		<FORM METHOD=GET ACTION="" NAME="frmList1">
 		<TABLE id="table-search-box" >
-                    <TR>
-                    <TD>Cabang <font color="#ff0000">*</font>
+                <TR>
+                <TD>Cabang <font color="#ff0000">*</font>
                             </TD> 
                                                            <TD><?php if (( $this->_tpl_vars['JENIS_USER_SES'] == 1 )): ?>
 
@@ -721,21 +753,19 @@ $this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] ==
 		<tr>
 											<th class="tdatahead" align="left">NO</TH>
 											<th class="tdatahead" align="left" width="10%">NAMA KARYAWAN</TH>
-                                                                                        <th class="tdatahead" align="left" width="10%">NIP KARYAWAN</TH>
-                                                                                        
+                                                                                        <th class="tdatahead" align="left" width="10%">NIP KARYAWAN</TH>                                                                                        
                                                                                         <th class="tdatahead" align="left" >CABANG</TH>
-											<th class="tdatahead" align="left">DEPARTEMEN</TH>
-											<th class="tdatahead" align="left" >JABATAN</TH>
-                                                                                         <th class="tdatahead" align="left">NAMA ATASAN</TH>
+											<th class="tdatahead" align="left">DEPARTEMEN</TH>  
                                                                                         
 											<th class="tdatahead" align="left">TGL LEMBUR</TH>
-                                                                                        <th class="tdatahead" align="left">LAMA JAM LEMBUR</TH>
-											<th class="tdatahead" align="left" >BIAYA LEMBUR</TH>
-                                                                                        <th class="tdatahead" align="left">JOB DESC</TH>
-											<th class="tdatahead" align="left">EVALUASI</TH>
-                                                                                        <th class="tdatahead" align="left">STATUS</TH>
+                                                                                        <th class="tdatahead" align="left">LAMA LEMBUR</TH>
+											<th class="tdatahead" align="left" >NOMINAL /JAM</TH>
                                                                                         
-                                                                                       
+                                                                                        <th class="tdatahead" align="left" >UANG MAKAN</TH>
+                                                                                         <th class="tdatahead" align="left">UANG TRANSPORT</TH>
+                                                                                        <th class="tdatahead" align="left">TOTAL</TH>
+										
+                                                                                        <th class="tdatahead" align="left">STATUS</TH>
 											<th class="tdatahead" COLSPAN="2"><?php echo $this->_tpl_vars['ACTION']; ?>
 </th>
 			</tr>
@@ -772,38 +802,32 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
  </TD>
                                                                                         <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
- </TD>
-                                                                                        
+ </TD>                                                                                        
                                                                                         <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
  </TD>
 											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_dept__ket']; ?>
   </TD>
-                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_jabatan__ket']; ?>
- </TD>
-                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__atasan_nama']; ?>
-</TD>
+                                                                                      
                                                                                         
-											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__tanggal']; ?>
-</TD>
+                                                                                        <TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__tanggal']; ?>
+</TD>                                                                                        
 											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__durasi']; ?>
 </TD>
-											<TD class="tdatacontent">Rp. <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__total']; ?>
+											<TD class="tdatacontent"> <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__nominal']; ?>
 </TD>
                                                                                         
-                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__job_description']; ?>
+											<TD class="tdatacontent">Rp. <?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__makan']; ?>
+</TD>                                                                                        
+                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__transport']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__job_evaluasi']; ?>
+                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__total']; ?>
 </TD>
                                                                                         <TD class="tdatacontent">                                                                                            
-                                                                                             <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__approval'] ) == 0): ?>
-                                                                                                       Tidak disetujui HRD
-                                                                                           <?php elseif (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__approval'] ) == 1): ?>
-                                                                                                         <font color="green">Telah disetujui HRD</font>
+                                                                                             <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__approval'] == 1 )): ?>
+                                                                                                       Disetujui 
                                                                                             <?php else: ?>  
-                                                                                                         <font color="red">Telah disetujui BOM</font>
+                                                                                                         <font color="red">Tidak Disetujui</font>
                                                                                             <?php endif; ?> 
-                                                                                            
-                                                                                            
                                                                                           </TD>
                                                                                           <INPUT TYPE="hidden" name="t_lembur__no" value="<?php echo $this->_tpl_vars['MOD_ID']; ?>
 ">

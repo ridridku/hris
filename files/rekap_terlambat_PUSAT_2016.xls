@@ -309,7 +309,7 @@ td
   <td colspan=9 height=21 class=xl36 style='height:15.75pt'>CABANG  : PUSAT</td>
  </tr>
  <tr height=21 style='height:15.75pt'>
-  <td colspan=9 height=21 class=xl36 style='height:15.75pt'>Periode : Tahun: 2016 Bulan :</td>
+  <td colspan=9 height=21 class=xl36 style='height:15.75pt'>Periode : Tahun: 2016 Bulan :11</td>
  </tr> <tr height=18  style='height:13.5pt'>
   <td colspan=9 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
  </tr>
@@ -327,542 +327,230 @@ td
      
  </tr> <tr height=18 style='height:13.5pt'>
   <td height=18 class=xl28 align=right style='height:13.5pt'>1</td>
-  <td class=xl29>001032</td>
-  <td class=xl29 align=right x:num>Setiawan Wibawa</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >SALES</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >05:05:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
-  <td class=xl29>002001</td>
-  <td class=xl29 align=right x:num>Maria Asumpta Peding</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:57:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
-  <td class=xl29>002002</td>
-  <td class=xl29 align=right x:num>Hendra Permana</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:43:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
   <td class=xl29>002004</td>
   <td class=xl29 align=right x:num>Daniel Yusup</td>
   <td class=xl29 align=right x:num>PUSAT</td>
   <td class=xl29 align=right >PUSAT</td>
   <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >03:28:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
-  <td class=xl29>002005</td>
-  <td class=xl29 align=right x:num>Aloysia Nataya Devi</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >01:32:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
-  <td class=xl29>002007</td>
-  <td class=xl29 align=right x:num>Edwin Tejasukmana</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >01:06:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
-  <td class=xl29>002008</td>
-  <td class=xl29 align=right x:num>Herbina Purba</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >02:33:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
-  <td class=xl29>002009</td>
-  <td class=xl29 align=right x:num>Yustin Handayani Yusuf</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:28:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
-  <td class=xl29>002016</td>
-  <td class=xl29 align=right x:num>Afriyanti</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:06:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
-  <td class=xl29>002018</td>
-  <td class=xl29 align=right x:num>Sarwoko</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:59:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
-  <td class=xl29>002020</td>
-  <td class=xl29 align=right x:num>Herlina Wijaya</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:04:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
-  <td class=xl29>002021</td>
-  <td class=xl29 align=right x:num>Hargianto</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >01:26:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
-  <td class=xl29>002024</td>
-  <td class=xl29 align=right x:num>Devi Nurfitri</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:19:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
-  <td class=xl29>002027</td>
-  <td class=xl29 align=right x:num>Irvan Septian</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:59:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
-  <td class=xl29>002031</td>
-  <td class=xl29 align=right x:num>Sri Ana Nurhikmah</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >04:13:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
-  <td class=xl29>002035</td>
-  <td class=xl29 align=right x:num>Fazar Sidiq</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:54:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
-  <td class=xl29>002038</td>
-  <td class=xl29 align=right x:num>Santi Novianti</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:14:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
-  <td class=xl29>002041</td>
-  <td class=xl29 align=right x:num>Deden</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:03:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
-  <td class=xl29>002042</td>
-  <td class=xl29 align=right x:num>Oktora Wulansari</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:02:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>20</td>
-  <td class=xl29>002044</td>
-  <td class=xl29 align=right x:num>Rossy Siti Fatimah</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:12:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>21</td>
-  <td class=xl29>002045</td>
-  <td class=xl29 align=right x:num>Siti Kodariah</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >01:11:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>22</td>
-  <td class=xl29>002047</td>
-  <td class=xl29 align=right x:num>Muhamad Nur Jamiludin</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:06:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>23</td>
-  <td class=xl29>002050</td>
-  <td class=xl29 align=right x:num>Dina Amalia</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
+  <td class=xl29 align=right>08:15:00</td>
   <td class=xl29 align=right >17:00:00</td>
   <td class=xl29 align=right >00:20:00</td>
 
 
  </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>24</td>
-  <td class=xl29>002055</td>
-  <td class=xl29 align=right x:num>Dani Mulyana</td>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>2</td>
+  <td class=xl29>002005</td>
+  <td class=xl29 align=right x:num>Aloysia Nataya Devi</td>
   <td class=xl29 align=right x:num>PUSAT</td>
   <td class=xl29 align=right >PUSAT</td>
   <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
+  <td class=xl29 align=right>08:15:00</td>
   <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >01:19:00</td>
+  <td class=xl29 align=right >06:28:00</td>
 
 
  </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>25</td>
-  <td class=xl29>002057</td>
-  <td class=xl29 align=right x:num>Annisa Fitria Sumardi</td>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>3</td>
+  <td class=xl29>002007</td>
+  <td class=xl29 align=right x:num>Edwin Tejasukmana</td>
   <td class=xl29 align=right x:num>PUSAT</td>
   <td class=xl29 align=right >PUSAT</td>
   <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >02:35:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>26</td>
-  <td class=xl29>002059</td>
-  <td class=xl29 align=right x:num>Dellina Astri Widya</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >01:26:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>27</td>
-  <td class=xl29>003001</td>
-  <td class=xl29 align=right x:num>Soni Christianto</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >LOGISTIK</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >04:01:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>28</td>
-  <td class=xl29>003002</td>
-  <td class=xl29 align=right x:num>Eni Handayani</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >LOGISTIK</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >02:59:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>29</td>
-  <td class=xl29>003003</td>
-  <td class=xl29 align=right x:num>Rima Novidianti</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >LOGISTIK</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >02:12:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>30</td>
-  <td class=xl29>003015</td>
-  <td class=xl29 align=right x:num>Iim Samsiah</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >LOGISTIK</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:02:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>31</td>
-  <td class=xl29>004003</td>
-  <td class=xl29 align=right x:num>Cecep Yosep</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:08:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>32</td>
-  <td class=xl29>004004</td>
-  <td class=xl29 align=right x:num>Yuni Yuningsih</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:31:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>33</td>
-  <td class=xl29>004005</td>
-  <td class=xl29 align=right x:num>Fajar satria dwi cahya</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:26:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>34</td>
-  <td class=xl29>004007</td>
-  <td class=xl29 align=right x:num>wahyu kurniadi santoso</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:53:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>35</td>
-  <td class=xl29>004008</td>
-  <td class=xl29 align=right x:num>Misbahul Anwar</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:07:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>36</td>
-  <td class=xl29>004009</td>
-  <td class=xl29 align=right x:num>Lucky suhendi</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:43:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>37</td>
-  <td class=xl29>004014</td>
-  <td class=xl29 align=right x:num>Toni Haryadi</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:34:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>38</td>
-  <td class=xl29>004019</td>
-  <td class=xl29 align=right x:num>Wahyu Hidayat</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:49:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>39</td>
-  <td class=xl29>005001</td>
-  <td class=xl29 align=right x:num>Heru Permana Saputra</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >IT</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:04:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>40</td>
-  <td class=xl29>005009</td>
-  <td class=xl29 align=right x:num>Erik Rahayu Yustiawan</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >IT</td>
-  <td class=xl29 align=right>08:00:00</td>
+  <td class=xl29 align=right>08:15:00</td>
   <td class=xl29 align=right >17:00:00</td>
   <td class=xl29 align=right >01:07:00</td>
 
 
  </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>41</td>
-  <td class=xl29>005017</td>
-  <td class=xl29 align=right x:num>kristian maulana</td>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>4</td>
+  <td class=xl29>002008</td>
+  <td class=xl29 align=right x:num>Herbina Purba</td>
   <td class=xl29 align=right x:num>PUSAT</td>
   <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >IT</td>
-  <td class=xl29 align=right>08:00:00</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right>08:15:00</td>
   <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >01:25:00</td>
+  <td class=xl29 align=right >00:19:00</td>
 
 
  </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>42</td>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>5</td>
+  <td class=xl29>002009</td>
+  <td class=xl29 align=right x:num>Yustin Handayani Yusuf</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >02:14:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>6</td>
+  <td class=xl29>002041</td>
+  <td class=xl29 align=right x:num>Deden</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >00:32:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>7</td>
+  <td class=xl29>002043</td>
+  <td class=xl29 align=right x:num>Mia Pici Doris</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >00:35:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>8</td>
+  <td class=xl29>002045</td>
+  <td class=xl29 align=right x:num>Siti Kodariah</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >01:18:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>9</td>
+  <td class=xl29>002057</td>
+  <td class=xl29 align=right x:num>Annisa Fitria Sumardi</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >00:03:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>10</td>
+  <td class=xl29>003001</td>
+  <td class=xl29 align=right x:num>Soni Christianto</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >00:16:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>11</td>
+  <td class=xl29>003002</td>
+  <td class=xl29 align=right x:num>Eni Handayani</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >LOGISTIK</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >01:58:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>12</td>
+  <td class=xl29>003004</td>
+  <td class=xl29 align=right x:num>Desti Retno Yulianti</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >00:21:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>13</td>
+  <td class=xl29>004009</td>
+  <td class=xl29 align=right x:num>Lucky suhendi</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >00:58:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>14</td>
+  <td class=xl29>004010</td>
+  <td class=xl29 align=right x:num>Iqbal Abdurrohman</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >UMUM</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >00:05:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>15</td>
+  <td class=xl29>005001</td>
+  <td class=xl29 align=right x:num>Heru Permana Saputra</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >IT</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >00:28:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>16</td>
   <td class=xl29>005019</td>
   <td class=xl29 align=right x:num>Mochamad Taufik Rida</td>
   <td class=xl29 align=right x:num>PUSAT</td>
   <td class=xl29 align=right >PUSAT</td>
   <td class=xl29 align=right >IT</td>
-  <td class=xl29 align=right>08:00:00</td>
+  <td class=xl29 align=right>08:15:00</td>
   <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >01:03:00</td>
+  <td class=xl29 align=right >00:07:00</td>
 
 
  </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>43</td>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>17</td>
   <td class=xl29>301277</td>
   <td class=xl29 align=right x:num>Ecin Waryati</td>
   <td class=xl29 align=right x:num>PUSAT</td>
   <td class=xl29 align=right >PUSAT</td>
   <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
+  <td class=xl29 align=right>08:15:00</td>
   <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >00:09:00</td>
+  <td class=xl29 align=right >02:18:00</td>
 
 
  </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>44</td>
-  <td class=xl29>302052</td>
-  <td class=xl29 align=right x:num>Jamjam Nurjaman</td>
-  <td class=xl29 align=right x:num>PUSAT</td>
-  <td class=xl29 align=right >PUSAT</td>
-  <td class=xl29 align=right >FINANCE & ACCOUNTING</td>
-  <td class=xl29 align=right>08:00:00</td>
-  <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >02:23:00</td>
-
-
- </tr> <tr height=18 style='height:13.5pt'>
-  <td height=18 class=xl28 align=right style='height:13.5pt'>45</td>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>18</td>
   <td class=xl29>314001</td>
   <td class=xl29 align=right x:num>Pringadhie Billy Hardja</td>
   <td class=xl29 align=right x:num>PUSAT</td>
   <td class=xl29 align=right >PUSAT</td>
   <td class=xl29 align=right >UMUM</td>
-  <td class=xl29 align=right>08:00:00</td>
+  <td class=xl29 align=right>08:15:00</td>
   <td class=xl29 align=right >17:00:00</td>
-  <td class=xl29 align=right >05:17:00</td>
+  <td class=xl29 align=right >02:52:00</td>
+
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl28 align=right style='height:13.5pt'>19</td>
+  <td class=xl29>321148</td>
+  <td class=xl29 align=right x:num>Sulaiman</td>
+  <td class=xl29 align=right x:num>PUSAT</td>
+  <td class=xl29 align=right >PUSAT</td>
+  <td class=xl29 align=right >SALES</td>
+  <td class=xl29 align=right>08:15:00</td>
+  <td class=xl29 align=right >17:00:00</td>
+  <td class=xl29 align=right >00:33:00</td>
 
 
  </tr> <![if supportMisalignedColumns]>

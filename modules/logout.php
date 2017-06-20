@@ -1,8 +1,17 @@
+<html>
+<head>
+
+</head>
+
+
+</html>
+
 <?php
+
 
 # Including Main Configuration
 # including file for Main Configurations
-require_once('../includes/config.conf.php');	 	
+require_once('../includes/config.conf.php');
 
 # Create a session to store global config path
 session_save_path($DIR_SESS);
@@ -66,7 +75,12 @@ $smarty->assign ("DIR_JS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']
 			$db->Execute($sql);
 			$sql2="INSERT INTO tbl_log (url, waktu,   module, user_id )  VALUES ('$ip_now',now(),'Keluar Aplikasi','$user_id') ";
 			$db->Execute($sql2);
-			
+
+
+                        $sql3="UPDATE tbl_sys_master_user SET user_session_aktif='0' WHERE user_id = '$user_id' AND user_session_aktif='1'" ;
+
+                        $db->Execute($sql3);
+
 		$TARGET	= $HREF_HOME."/index.php";
 
 		$_SESSION['UID']='';
@@ -80,7 +94,7 @@ $smarty->assign ("DIR_JS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']
                 unset($_SESSION['SESSION_KODE_CABANG']);
                 unset($_SESSION['SESSION_ID_PEG']);
                 unset($_SESSION['SESSION_NAMA']);
- 
+
                 session_unset();
 		session_destroy();
 ?>
@@ -88,9 +102,9 @@ $smarty->assign ("DIR_JS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']
 		<SCRIPT LANGUAGE="JavaScript">
 		parent.location ='<?php echo $TARGET; ?>';
 		</SCRIPT>
-		
+
 <?php
-		
+
 # Finally Grab All Parsed variables, parse it into the template, and generate ouput
 # Clear Cache First
 $smarty->clear_cache ($DIR_THEME.'/'.base64_decode($_SESSION['THEME']).'/'.$DOC_SELF_NAME_ONLY.'.tpl');

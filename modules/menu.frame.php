@@ -51,20 +51,16 @@ $smarty->assign ("DIR_HOME_PATH", $DIR_HOME);
 $smarty->assign ("DIR_IMG_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images'));
 $smarty->assign ("DIR_CSS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/css'));
 $smarty->assign ("DIR_JS_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts'));
-
 $smarty->assign ("TITLE", _TITLE);
 //=================================== END OF FILE CONFIGURATION====================================
-
 $user_id = base64_decode($_SESSION['UID']);
-
 //$HREF_MODUL_MASTER = $HREF_HOME ."/modules/data_master" ;
 $HREF_MODUL_MASTER = $HREF_HOME ."/modules" ;
-
 $smarty->assign ("DATA_MODULE", $HREF_MODUL_MASTER);
 
 //parent level 0
 $sql = "SELECT a.* FROM tbl_sys_master_menu as a INNER JOIN tbl_sys_master_privileges as b ON a.menu_id = b.priv_menu_id INNER JOIN tbl_sys_master_user as c ON b.priv_user_id = c.user_id ";
-$sql .= "WHERE a.menu_level = '0' AND c.user_id = '$user_id' AND a.menu_active = '1' AND b.priv_view = '1' ORDER BY a.menu_sort ASC ";
+$sql .= "WHERE a.menu_level = '0' AND c.user_id = '$user_id' AND a.menu_active = '1' AND b.priv_view = '1' ORDER BY a.menu_id ASC ";
 
 $resultSet = $db->Execute($sql);
 $data_menu = array();
@@ -76,9 +72,9 @@ $smarty->assign ("DATA_MENU_PARENT", $data_menu);
 
 //child level 1
 $sql_child = " SELECT a.*,(SELECT COUNT(*) FROM tbl_sys_master_menu WHERE menu_level = '2' AND menu_parent=a.menu_id) as sum_child FROM tbl_sys_master_menu as a INNER JOIN tbl_sys_master_privileges as b ON a.menu_id = b.priv_menu_id INNER JOIN tbl_sys_master_user as c ON b.priv_user_id = c.user_id ";
-$sql_child .= " WHERE a.menu_level = '1' AND c.user_id = '$user_id' AND a.menu_active = '1' AND b.priv_view = '1' ORDER BY a.menu_sort ASC ";
+$sql_child .= " WHERE a.menu_level = '1' AND c.user_id = '$user_id' AND a.menu_active = '1' AND b.priv_view = '1' ORDER BY a.menu_parent,a.menu_sort asc";
+//var_dump($sql_child)or die();
 $resultSet_child = $db->Execute($sql_child);
-
 $data_menu_child = array();
 while ($arr=$resultSet_child->FetchRow()) {
 	array_push($data_menu_child, $arr);

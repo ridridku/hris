@@ -12,7 +12,6 @@ session_start();
 if ((!isset($_SESSION['UID'])) || (empty($_SESSION['UID']))){
 	require_once('../../../../includes/header.redirect.inc');
 }else{
-
 //yang harus dibuat session
 $THEME = base64_encode("defaults");
 $LANG = base64_encode("indonesia");
@@ -114,6 +113,10 @@ if ($_GET['kode_subcab_cari']) $kode_subcab_cari = $_GET['kode_subcab_cari'];
 else if ($_POST['kode_subcab_cari']) $kode_subcab_cari = $_POST['kode_subcab_cari'];
 else $kode_subcab_cari="";
 
+if ($_GET['jabatan_cari']) $jabatan_cari= $_GET['jabatan_cari'];
+else if ($_POST['jabatan_cari']) $jabatan_cari = $_POST['jabatan_cari'];
+else $jabatan_cari="";
+
 
 
 if ($_GET['departemen_cari']) $departemen_cari = $_GET['departemen_cari'];
@@ -187,7 +190,19 @@ while ($arr=$result_sts->FetchRow()) {
 $smarty->assign ("DATA_STS", $data_sts);
 //-----------DATA STATUS PEGAWAI-----------------------//
 
+//---------------------Data_jabatan---------------------------
 
+$sql_jabatan= "SELECT A.r_jabatan__id,A.r_jabatan__ket FROM r_jabatan A ";
+$result_jabatan = $db->Execute($sql_jabatan);
+$initSet = array();
+$data_jabatan = array();
+$z=0;
+while ($arr=$result_jabatan->FetchRow()) {
+	array_push($data_jabatan, $arr);
+	array_push($initSet, $z);
+	$z++;
+}
+$smarty->assign ("DATA_JABATAN", $data_jabatan);
 
 //--------------------------------------
 //SHOW DATA INSTANSI
@@ -386,6 +401,10 @@ if ($_GET['search'] == '1')
 						 	$sql.=" and peg.r_pnpt__status = '".$sts_pegawai_cari."'  ";
 						 }
                                                  
+                                                  if ($jabatan_cari !='') {
+						 	$sql.=" and peg.r_jabatan__id = '".$jabatan_cari."'  ";
+						 }
+                                                 
                                                  
 
  
@@ -472,6 +491,12 @@ if ($_GET['search'] == '1')
                                 if ($sts_pegawai_cari !='') {
 						 	$sql_total.=" and r_pnpt__status = '".$sts_pegawai_cari."'  ";
 						 }
+                                    
+                                if ($jabatan_cari !='') {
+                                      $sql_total.=" and peg.r_jabatan__id = '".$jabatan_cari."'  ";
+                               }
+
+                                                 
                                // var_dump($sql_total) or die();          
                                 $numresults4=$db->Execute($sql_total);
 				$count4 = $numresults4->RecordCount();

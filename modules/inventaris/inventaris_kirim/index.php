@@ -71,7 +71,6 @@ $smarty->assign ("HREF_IMG_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEM
 $smarty->assign ("HREF_CSS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/css'));
 $smarty->assign ("HREF_JS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts'));
 
-
 #DIR
 $smarty->assign ("DIR_HOME_PATH", $DIR_HOME);
 $smarty->assign ("DIR_IMG_PATH", $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images'));
@@ -147,15 +146,19 @@ else if ($_POST['nama_cari']) $nama_pegawai_cari = $_POST['nama_cari'];
 else $nama_pegawai_cari="";
 
 
-if ($_GET['bidang_cari']) $bidang_cari = $_GET['bidang_cari'];
-else if ($_POST['bidang_cari']) $bidang_cari = $_POST['bidang_cari'];
-else $bidang_cari="";
+if ($_GET['finger_cari']) $finger_cari = $_GET['finger_cari'];
+else if ($_POST['finger_cari']) $finger_cari = $_POST['finger_cari'];
+else $finger_cari="";
+
+if ($_GET['kode_inv_cari']) $kode_inv_cari = $_GET['kode_inv_cari'];
+else if ($_POST['kode_inv_cari']) $kode_inv_cari = $_POST['kode_inv_cari'];
+else $kode_inv_cari="";
+
 
 
 $smarty->assign ("BIDANG_CARI", $bidang_cari);
 $smarty->assign ("NAMA_CARI", nama_cari);
 $smarty->assign ("KODE_SUBCAB_CARI", $kode_subcab_cari);
-
 
 
 $str_completer = "mod_id=".$mod_id."&limit=".$LIMIT."&SORT=".$SORT."&kode_perwakilan_cari=".$kode_subcab_cari."&kode_subcab_cari=".$kode_subcab_cari;
@@ -188,8 +191,7 @@ $bulan_masuk    =   $array1[1];
 $tgl_masuk      =   $array1[2];
 
 $tahun_pinjam= substr($tahun_masuk,2,4);
-
-$sql_cek_no="SELECT count(A.r_inventaris__id) as no_pel FROM r_inventaris A";
+$sql_cek_no="SELECT SUBSTR(MAX(A.r_inventaris__id),5,5) as no_pel FROM r_inventaris A";
 $rs_val = $db->Execute($sql_cek_no);
 $no_pel= $rs_val->fields[no_pel];
 $idMax = $no_pel;
@@ -200,7 +202,6 @@ $smarty->assign ("ID_INV", $sub_current_year.''.$sub_current_month.''.$newID);
 
 
 //-----------SHOW DATA CABANG----------------------//
-
 $sql_cabang = "SELECT A.r_cabang__id,A.r_cabang__nama FROM r_cabang A";
 $result_cabang = $db->Execute($sql_cabang);
 $initSet = array();
@@ -229,7 +230,8 @@ $sql_subcab = "SELECT subcab.r_subcab__nama,subcab.r_subcab__id FROM r_cabang ca
 $smarty->assign ("DATA_SUBCABANG", $data_subcab);
 //-----------------CLOSE DATA SUBCABANG------------//
 
-//-----------------------DATA AJAX SUBCAB---------//
+
+//----------------DATA AJAX SUBCAB-------------//
 
 if ($_GET[get_subcab] == 1)
 {
@@ -237,7 +239,7 @@ if ($_GET[get_subcab] == 1)
 			if($subcabang!=''){
 					$sql_kabupaten = "SELECT cab.r_cabang__id ,cab.r_cabang__nama,subcab.r_subcab__nama,subcab.r_subcab__id as subcab FROM r_cabang cab,r_subcabang subcab
                                                           where cab.r_cabang__id=subcab.r_subcab__cabang AND cab.r_cabang__id='$subcabang' ORDER BY cab.r_cabang__nama ASC";
-                                        //var_dump($sql_kabupaten)or die();
+                                        
                                         $recordSet_kabupaten = $db->Execute($sql_kabupaten);
 					
 					$input_kab="<select name=kode_subcab_cari >";
@@ -259,15 +261,12 @@ if ($_GET[get_subcab] == 1)
 			}
 }
 //---closer ajax subcabang id------//
-//-----------------------DATA AJAX SUBCAB2---------//
+//---DATA AJAX SUBCAB2---------//
 
 if ($_GET[get_subcab2] == 1)
 {  
     
-	$subcabang = $_GET[no_subcab];   
-       
-       
-
+	$subcabang = $_GET[no_subcab];
 			if($subcabang!=''){
 					$sql_kabupaten = "SELECT cab.r_cabang__id ,cab.r_cabang__nama,subcab.r_subcab__nama,subcab.r_subcab__id as subcab FROM r_cabang cab,r_subcabang subcab
                                                           where cab.r_cabang__id=subcab.r_subcab__cabang AND cab.r_cabang__id='$subcabang' ORDER BY cab.r_cabang__nama ASC";
@@ -294,9 +293,6 @@ if ($_GET[get_subcab2] == 1)
 			}
 }
 //---closer ajax subcabang2-----//
-
-
-
 
 
 //-----------SHOW DATA DEPARTEMEN-----------------------//
@@ -326,7 +322,6 @@ while ($arr=$result_subdepartement->FetchRow()) {
 }
 $smarty->assign ("DATA_SUBDEP", $data_subdepartement);
 //-----------CLOSE DATA SUBDEPARTEMEN----------------------//
-
 
 
 
@@ -400,7 +395,6 @@ $smarty->assign ("DATA_JABATAN", $data_jabatan);
 //----------------------data_bank------------------------------------
 $sql_bank = "SELECT * FROM r_bank order by r_bank__kode  ";
 $result_bank = $db->Execute($sql_bank);
-
 $initSet = array();
 $data_bank = array();
 $z=0;
@@ -431,99 +425,105 @@ $opt = $_GET[opt];
 $ed = 0;
 if($opt=="1"){ 
 
-$sql_ = "SELECT
-	B.r_pel__id AS r_pel__id,
-	B.r_pel__mutasi AS r_pel__mutasi,
-	B.r_pel__master_pel AS r_pel__master_pel,
-	B.r_pel__tema AS r_pel__tema,
-	B.r_pel__no_sertifikat AS r_pel__no_sertifikat,
-	B.r_pel__nilai AS r_pel__nilai,
-	B.r_pel__document AS r_pel__document,
-	C.r_mastpel__id AS r_mastpel__id,
-	C.r_mastpel__mutasi AS r_mastpel__mutasi,
-	C.r_mastpel__email_pic AS r_mastpel__email_pic,
-	C.r_mastpel__tema AS r_mastpel__tema,
-	C.r_mastpel__tgl_awal AS r_mastpel__tgl_awal,
-	C.r_mastpel__tgl_akhir AS r_mastpel__tgl_akhir,
-	C.r_mastpel__penyelenggara AS r_mastpel__penyelenggara,
-	C.r_mastpel__jenis AS r_mastpel__jenis,
-	C.r_mastpel__deskripsi AS r_mastpel__deskripsi,
-	C.r_mastpel__tempat,
-	C.r_mastpel__status,
-	peg.r_pnpt__nip AS r_pnpt__nip,
-	peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
-	peg.r_pnpt__aktif AS r_pnpt__aktif,
-	peg.r_jabatan__id AS r_jabatan__id,
-	peg.r_jabatan__ket AS r_jabatan__ket,
-	peg.r_subdept__id AS r_subdept__id,
-	peg.r_subdept__ket AS r_subdept__ket,
-	peg.r_dept__akronim AS r_dept__akronim,
-	peg.r_dept__id AS r_dept__id,
-	peg.r_dept__ket AS r_dept__ket,
-	peg.r_subcab__nama AS r_subcab__nama,
-	peg.r_cabang__nama AS r_cabang__nama,
-	peg.r_cabang__id AS r_cabang__id,
-	peg.r_subcab__id AS r_subcab__id,
-	peg.r_subcab__cabang AS r_subcab__cabang,
-	peg.r_pegawai__id AS r_pegawai__id,
-	peg.r_pegawai__nama AS r_pegawai__nama
+$sql_ = "SELECT B.r_inventaris__id,
+B.r_inventaris__mutasi,
+B.r_inventaris__tgl_pinjam,
+B.r_inventaris__tgl_kembali,
+B.r_inventaris__alat,
+B.r_inventaris__kode,
+B.r_inventaris__qty,
+B.r_inventaris__kondisi,
+B.r_inventaris__kepemilikan,
+B.r_inventaris__gambar,
+B.r_inventaris__lokasi,
+B.r_inventaris__keterangan,
+B.r_inventaris__status,
+B.r_inventaris__date_created,
+B.r_inventaris__date_updated,
+B.r_inventaris__user_created,
+B.r_inventaris__user_updated ,
+peg.r_pnpt__nip AS r_pnpt__nip,
+peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+peg.r_pnpt__aktif AS r_pnpt__aktif,
+peg.r_jabatan__id AS r_jabatan__id,
+peg.r_jabatan__ket AS r_jabatan__ket,
+peg.r_subdept__id AS r_subdept__id,
+peg.r_subdept__ket AS r_subdept__ket,
+peg.r_dept__akronim AS r_dept__akronim,
+peg.r_dept__id AS r_dept__id,
+peg.r_dept__ket AS r_dept__ket,
+peg.r_subcab__nama AS r_subcab__nama,
+peg.r_cabang__nama AS r_cabang__nama,
+peg.r_cabang__id AS r_cabang__id,
+peg.r_subcab__id AS r_subcab__id,
+peg.r_subcab__cabang AS r_subcab__cabang,
+peg.r_pegawai__id AS r_pegawai__id,
+peg.r_pegawai__nama AS r_pegawai__nama,
+C.r_jenis__id AS r_jenis__id,
+C.r_jenis__nama AS r_jenis__nama
 FROM
-	r_pelatihan B
-INNER JOIN r_master_pelatihan C ON C.r_mastpel__id = B.r_pel__master_pel
-INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi=B.r_pel__mutasi 
-WHERE r_pnpt__aktif = 1 AND r_pel__id='".$_GET['id']."' ";
-//var_dump($sql_)or die();
+r_inventaris B
+INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi = B.r_inventaris__mutasi
+INNER JOIN r_inventaris_jenis C ON B.r_inventaris__jenis=C.r_jenis__id   WHERE r_inventaris__id='".$_GET['id']."' ";
+
 $resultSet = $db->Execute($sql_);
-$edit_r_pel__id= $resultSet->fields[r_pel__id];
-$edit_r_pel__no_pelatihan = $resultSet->fields[r_pel__no_pelatihan];
-$edit_r_pel__nip = $resultSet->fields[r_pel__nip];
-$edit_r_pel__no_sertifikat = $resultSet->fields[r_pel__no_sertifikat];
-$edit_r_pel__bidang = $resultSet->fields[r_pel__bidang];
-$edit_r_pel__tema = $resultSet->fields[r_pel__tema];
-$edit_r_pel__master_pel=$resultSet->fields[r_pel__master_pel];
-$edit_r_pel__document = $resultSet->fields[r_pel__document];
-$edit_r_pel__pelaksana=$resultSet->fields[r_pel__pelaksana];
-$edit_r_pel__nilai=$resultSet->fields[r_pel__nilai];
+$edit_r_inventaris__id= $resultSet->fields[r_inventaris__id];
+$edit_r_inventaris__mutasi= $resultSet->fields[r_inventaris__mutasi];
+$edit_r_inventaris__tgl_pinjam = $resultSet->fields[r_inventaris__tgl_pinjam];
+$edit_r_inventaris__tgl_kembali = $resultSet->fields[r_inventaris__tgl_kembali];
+$edit_r_inventaris__jenis = $resultSet->fields[r_inventaris__jenis];
+$edit_r_inventaris__alat = $resultSet->fields[r_inventaris__alat];
+$edit_r_inventaris__kode = $resultSet->fields[r_inventaris__kode];
+$edit_r_inventaris__qty=$resultSet->fields[r_inventaris__qty];
+$edit_r_inventaris__kepemilikan=$resultSet->fields[r_inventaris__kepemilikan];
+$edit_r_inventaris__gambar=$resultSet->fields[r_inventaris__gambar];
+$edit_r_inventaris__lokasi=$resultSet->fields[r_inventaris__lokasi];
+$edit_r_inventaris__kondisi=$resultSet->fields[r_inventaris__kondisi];
+$edit_r_inventaris__keterangan=$resultSet->fields[r_inventaris__keterangan];
+$edit_r_inventaris__status=$resultSet->fields[r_inventaris__status];
 $edit_r_pnpt__nip = $resultSet->fields[r_pnpt__nip];
 $edit_r_jabatan__ket = $resultSet->fields[r_jabatan__ket];
 $edit_r_cabang__id=$resultSet->fields[r_cabang__id];
 $edit_r_cabang__nama=$resultSet->fields[r_cabang__nama];
 $edit_r_pnpt__no_mutasi=$resultSet->fields[r_pnpt__no_mutasi];
-
 $edit_r_pegawai__id=$resultSet->fields[r_pegawai__id];
 $edit_r_pegawai__nama=$resultSet->fields[r_pegawai__nama];
+$edit_r_jenis__nama=$resultSet->fields[r_jenis__nama];
+$edit_r_jenis__id=$resultSet->fields[r_jenis__id];     
 
-$edit_r_mastpel__id=$resultSet->fields[r_mastpel__id];
-$edit_r_mastpel__tema=$resultSet->fields[r_mastpel__tema];
-
-
-$path_gambar = explode('-', $edit_r_pel__document);
-    $foto_no  = $path_gambar[0];
-    $foto_name= $path_gambar[1];
-                                
-                                
-                                
-
+        if($edit_r_inventaris__tgl_kembali=='0000-00-00')
+            {
+                $tgl_kembali=  date("Y-m-d");
+            }  
+                 else 
+            {
+                  $tgl_kembali=$edit_r_inventaris__tgl_kembali;
+            }
+                                                                                            
 $edit = 1;
 
 }
 
 //----------------CLOSE EDIT---------------------//
 
+
 $smarty->assign ("OPT", $opt);
-$smarty->assign ("EDIT_ID",$edit_id);
-$smarty->assign ("EDIT_PEL_ID",$edit_r_pel__id); 
-$smarty->assign ("EDIT_PELATIHAN",$edit_r_pel__no_pelatihan);
-$smarty->assign ("EDIT_NIP",$edit_r_pel__nip);
-$smarty->assign ("EDIT_SERTIFIKAT",$edit_r_pel__no_sertifikat);
-$smarty->assign ("EDIT_BIDANG",$edit_r_pel__bidang);
-$smarty->assign ("EDIT_ID_TEMA",$edit_r_pel__master_pel);
-$smarty->assign ("EDIT_TEMA",$edit_r_pel__tema);
-$smarty->assign ("EDIT_NILAI",$edit_r_pel__nilai);
-$smarty->assign ("EDIT_DOCUMENT",$edit_r_pel__document);
-$smarty->assign ("EDIT_PELAKSANA",$edit_r_pel__pelaksana);
-$smarty->assign ("EDIT_TGL_AWAL",$edit_r_pel__tgl_awal);
-$smarty->assign ("EDIT_TGL_AKHIR",$edit_r_pel__tgl_akhir);
+$smarty->assign ("EDIT_ID",$edit_r_inventaris__id);
+$smarty->assign ("EDIT_MUTASI",$edit_r_inventaris__mutasi);
+$smarty->assign ("EDIT_TGL_PJM",$edit_r_inventaris__tgl_pinjam); 
+$smarty->assign ("EDIT_TGL_KEMBALI",$tgl_kembali);
+
+$smarty->assign ("EDIT_JENIS",$edit_r_jenis__id);
+$smarty->assign ("EDIT_ALAT",$edit_r_inventaris__alat);
+$smarty->assign ("EDIT_KODE",$edit_r_inventaris__kode);
+$smarty->assign ("EDIT_QTY",$edit_r_inventaris__qty);
+$smarty->assign ("EDIT_KONDISI",$edit_r_inventaris__kondisi);
+$smarty->assign ("EDIT_PEMILIK",$edit_r_inventaris__kepemilikan);
+$smarty->assign ("EDIT_GAMBAR",$edit_r_inventaris__gambar);
+$smarty->assign ("EDIT_LOKASI",$edit_r_inventaris__lokasi);
+$smarty->assign ("EDIT_STATUS",$edit_r_inventaris__status);
+$smarty->assign ("EDIT_KET",$edit_r_inventaris__keterangan);
+
 $smarty->assign ("EDIT_PNPT_NIP",$edit_r_pnpt__nip);
 $smarty->assign ("EDIT_JABATAN",$edit_r_jabatan__ket);
 $smarty->assign ("EDIT_CABANG_ID",$edit_r_cabang__id);
@@ -567,6 +567,7 @@ if ($_GET['search'] == '1')
                                     B.r_inventaris__user_created,
                                     B.r_inventaris__user_updated ,
                                     peg.r_pnpt__nip AS r_pnpt__nip,
+                                     peg.r_pnpt__finger_print AS r_pnpt__finger_print,
                                     peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
                                     peg.r_pnpt__aktif AS r_pnpt__aktif,
                                     peg.r_jabatan__id AS r_jabatan__id,
@@ -582,9 +583,13 @@ if ($_GET['search'] == '1')
                                     peg.r_subcab__id AS r_subcab__id,
                                     peg.r_subcab__cabang AS r_subcab__cabang,
                                     peg.r_pegawai__id AS r_pegawai__id,
-                                    peg.r_pegawai__nama AS r_pegawai__nama
-                                     FROM r_inventaris B
-                                    INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi=B.r_inventaris__mutasi WHERE 1 = 1  AND r_cabang__id= '".$kode_pw_ses."' ";
+                                    peg.r_pegawai__nama AS r_pegawai__nama,
+                                   C.r_jenis__id AS r_jenis__id,
+                                    C.r_jenis__nama AS r_jenis__nama
+                                    FROM
+                                    r_inventaris B
+                                    INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi = B.r_inventaris__mutasi
+                                    INNER JOIN r_inventaris_jenis C ON B.r_inventaris__jenis=C.r_jenis__id where 1=1   AND r_cabang__id= '".$kode_pw_ses."' ";
 
 
 
@@ -608,6 +613,7 @@ if ($_GET['search'] == '1')
                                     B.r_inventaris__user_created,
                                     B.r_inventaris__user_updated ,
                                     peg.r_pnpt__nip AS r_pnpt__nip,
+                                         peg.r_pnpt__finger_print AS r_pnpt__finger_print,
                                     peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
                                     peg.r_pnpt__aktif AS r_pnpt__aktif,
                                     peg.r_jabatan__id AS r_jabatan__id,
@@ -623,9 +629,13 @@ if ($_GET['search'] == '1')
                                     peg.r_subcab__id AS r_subcab__id,
                                     peg.r_subcab__cabang AS r_subcab__cabang,
                                     peg.r_pegawai__id AS r_pegawai__id,
-                                    peg.r_pegawai__nama AS r_pegawai__nama
-                                     FROM r_inventaris B
-                                    INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi=B.r_inventaris__mutasi WHERE 1=1";	
+                                    peg.r_pegawai__nama AS r_pegawai__nama,
+                                        C.r_jenis__id AS r_jenis__id,
+                                    C.r_jenis__nama AS r_jenis__nama
+                                    FROM
+                                    r_inventaris B
+                                    INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi = B.r_inventaris__mutasi
+                                    INNER JOIN r_inventaris_jenis C ON B.r_inventaris__jenis=C.r_jenis__id where 1=1 ";	
 
             }
  
@@ -648,10 +658,16 @@ if ($_GET['search'] == '1')
 					
                                         $sql .= " AND r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari)."%'";
 				} 
-                                if($bidang_cari!=''){
+                                if($finger_cari!=''){
 					
-                                        $sql .= " AND r_mastpel__tema LIKE '%".addslashes($bidang_cari)."%'";
+                                        $sql .= " AND r_pnpt__finger_print ='".addslashes($finger_cari)."'";
 				} 
+                                if($kode_inv_cari!=''){
+					
+                                        $sql .= " AND r_inventaris__id ='".addslashes($kode_inv_cari)."'";
+				} 
+                                
+                          
 		
 			 	$sql .= " ORDER BY  trim(r_pegawai__nama) asc ";
 
@@ -712,6 +728,7 @@ else
                                     B.r_inventaris__user_created,
                                     B.r_inventaris__user_updated ,
                                     peg.r_pnpt__nip AS r_pnpt__nip,
+                                         peg.r_pnpt__finger_print AS r_pnpt__finger_print,
                                     peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
                                     peg.r_pnpt__aktif AS r_pnpt__aktif,
                                     peg.r_jabatan__id AS r_jabatan__id,
@@ -727,9 +744,13 @@ else
                                     peg.r_subcab__id AS r_subcab__id,
                                     peg.r_subcab__cabang AS r_subcab__cabang,
                                     peg.r_pegawai__id AS r_pegawai__id,
-                                    peg.r_pegawai__nama AS r_pegawai__nama
-                                     FROM r_inventaris B
-                                    INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi=B.r_inventaris__mutasi
+                                    peg.r_pegawai__nama AS r_pegawai__nama,
+                                       C.r_jenis__id AS r_jenis__id,
+                                    C.r_jenis__nama AS r_jenis__nama
+                                    FROM
+                                    r_inventaris B
+                                    INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi = B.r_inventaris__mutasi
+                                    INNER JOIN r_inventaris_jenis C ON B.r_inventaris__jenis=C.r_jenis__id 
                                     WHERE r_cabang__id= '".$kode_pw_ses."'";
 
 
@@ -753,6 +774,7 @@ else
                                     B.r_inventaris__user_created,
                                     B.r_inventaris__user_updated ,
                                     peg.r_pnpt__nip AS r_pnpt__nip,
+                                    peg.r_pnpt__finger_print AS r_pnpt__finger_print,
                                     peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
                                     peg.r_pnpt__aktif AS r_pnpt__aktif,
                                     peg.r_jabatan__id AS r_jabatan__id,
@@ -768,9 +790,13 @@ else
                                     peg.r_subcab__id AS r_subcab__id,
                                     peg.r_subcab__cabang AS r_subcab__cabang,
                                     peg.r_pegawai__id AS r_pegawai__id,
-                                    peg.r_pegawai__nama AS r_pegawai__nama
-                                     FROM r_inventaris B
-                                    INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi=B.r_inventaris__mutasi where 1=1 ";	
+                                    peg.r_pegawai__nama AS r_pegawai__nama,
+                                    C.r_jenis__id AS r_jenis__id,
+                                    C.r_jenis__nama AS r_jenis__nama
+                                    FROM
+                                    r_inventaris B
+                                    INNER JOIN v_pegawai peg ON peg.r_pnpt__no_mutasi = B.r_inventaris__mutasi
+                                    INNER JOIN r_inventaris_jenis C ON B.r_inventaris__jenis=C.r_jenis__id where 1=1 ";	
 
 			}
 
@@ -790,17 +816,21 @@ else
 					
                                         $sql .= " AND r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari)."%'";
 				} 
-                                if($bidang_cari!=''){
+                                if($finger_cari!=''){
 					
-                                        $sql .= " AND r_pel__tema LIKE '%".addslashes($bidang_cari)."%'";
+                                        $sql .= " AND r_pnpt__finger_print ='".addslashes($finger_cari)."'";
 				} 
-
+                                
+                                if($kode_inv_cari!=''){
+					
+                                        $sql .= " AND r_inventaris__id ='".addslashes($kode_inv_cari)."'";
+				} 
 				$sql .= " ORDER BY  trim(r_pegawai__nama) asc ";
-                         
+                                
  
 				if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
 
-//var_dump($sql)or die();
+
                                 $numresults=$db->Execute($sql);
                                 $count = $numresults->RecordCount();
                                 $pages = $p->findPages($count,$LIMIT); 

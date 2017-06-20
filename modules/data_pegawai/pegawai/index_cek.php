@@ -66,12 +66,12 @@ $smarty->assign ("SELF", $_SERVER['PHP_SELF']);
 
 //------------------------------------LOCAL CONFIG--------------------------------------//
 #SETTING FOR TEMPLATE 
-$TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/data_wni/wni';
+$TPL_PATH = base64_decode($_SESSION['THEME']).'/modules/data_pegawai/pegawai';
 
 
 #SETTING FILE JS INCLUDE
-$JS_MODUL = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts/modules/data_wni');
-$FILE_JS  = $JS_MODUL.'/wni';
+$JS_MODUL = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts/modules/data_pegawai');
+$FILE_JS  = $JS_MODUL.'/pegawai';
 
 $JS_MODUL2 = $DIR_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts');
   
@@ -105,13 +105,7 @@ if ($_GET['page']) $page = $_GET['page'];
 else if ($_POST['page']) $page = $_POST['page'];
 else $page="1";
 
-if ($_GET['kode_jadwal']) $KODE_JADWAL = $_GET['kode_jadwal'];
-else if ($_POST['kode_jadwal']) $KODE_JADWAL = $_POST['kode_jadwal'];
-else $KODE_JADWAL="";
 
-if ($_GET['kode_proyek']) $KODE_PROYEK = $_GET['kode_proyek'];
-else if ($_POST['kode_proyek']) $KODE_PROYEK = $_POST['kode_proyek'];
-else $KODE_PROYEK="";
 
  
  
@@ -125,9 +119,9 @@ $SES_JENIS_USER		= $_SESSION['JENIS_USER'];
  
 
  IF ($_GET['ERR'] =='5') {
-	 $label_error = "No.PASPOR WNI SUDAH ADA";
+	 $label_error = "DATA SUDAH ADA / TIDAK BISA DIUBAH";
  } else {
-	 $label_error = "KODE PENJADWALAN SUDAH ADA";	
+	 $label_error = "DATA SUDAH ADA / TIDAK BISA DIUBAH";	
  }
 $smarty->assign ("LABEL_ERROR", $label_error);
 

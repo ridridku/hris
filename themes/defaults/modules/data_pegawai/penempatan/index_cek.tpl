@@ -52,11 +52,11 @@ function hideIt(){
 		<FORM METHOD=GET ACTION="" NAME="frmList">
 
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-		<tr><td class="tcat">Data Penempatan</td></tr>
+		<tr><td class="tcat">Klarifikasi Mutasi/Rotasi/Promosi </td></tr>
 		</table>
 
 		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->\layout\columns.gif" align="absmiddle" border="0"> Daftar Penempatan</td></tr>
+		<tr><td class="thead"><img src="<!--{$HREF_IMG_PATH}-->\layout\columns.gif" align="absmiddle" border="0">Ada Error</td></tr>
 		<tr><td class="alt2" style="padding:0px;">
 		<table width="100%">
 		<tr>

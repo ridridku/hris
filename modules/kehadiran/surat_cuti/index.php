@@ -50,10 +50,11 @@ require_once($DIR_INC."/libs.inc.php");
 
 $jenis_user  = $_SESSION['SESSION_JNS_USER'];
 $kode_pw_ses  = $_SESSION['SESSION_KODE_CABANG'];
-$tahun_ses_aktif		=$_SESSION['SESSION_TAHUN_AKTIF'];
-$bulan_ses_aktif		=$_SESSION['SESSION_BULAN_AKTIF'];
-$smarty->assign ("TAHUN_SES", $tahun_ses_aktif);
-$smarty->assign ("BULAN_SES", $bulan_ses_aktif);
+$periode_awal= $_SESSION['SESSION_AWAL_AKTIF'];
+$periode_akhir= $_SESSION['SESSION_AKHIR_AKTIF'];
+
+$smarty->assign ("PERIODE_AWAL", $periode_awal);
+$smarty->assign ("PERIODE_AKHIR", $periode_akhir);
  
 
 $smarty->assign ("JENIS_USER_SES", $jenis_user);
@@ -136,13 +137,13 @@ if ($_GET['departemen_cari']) $departemen_cari = $_GET['departemen_cari'];
 else if ($_POST['departemen_cari']) $departemen_cari= $_POST['departemen_cari'];
 else $departemen_cari="";
 
-if ($_GET['bulan']) $bulan = $_GET['bulan'];
-else if ($_POST['bulan']) $bulan = $_POST['bulan'];
-else $bulan="";
+if ($_GET['awal']) $awal_cari= $_GET['awal'];
+else if ($_POST['awal']) $awal_cari = $_POST['awal'];
+else $awal_cari="";
 
-if ($_GET['tahun']) $tahun = $_GET['tahun'];
-else if ($_POST['tahun']) $tahun = $_POST['tahun'];
-else $tahun="";
+if ($_GET['akhir']) $akhir_cari= $_GET['akhir'];
+else if ($_POST['akhir']) $akhir_cari = $_POST['akhir'];
+else $akhir_cari="";
 
 if ($_GET['finger_cari']) $finger_cari =$_GET['finger_cari'];
 else if ($_POST['finger_cari']) $finger_cari= $_POST['finger_cari'];
@@ -282,7 +283,7 @@ $smarty->assign ("DATA_SUBCABANG", $data_subcab);
 
 if ($_GET[get_subcab] == 1)
 {  
-    
+   // var_dump('11')or die();
 	$subcabang = $_GET[no_subcab];   
        
        
@@ -522,8 +523,9 @@ if($opt=="1"){
             K.t_cuti__no AS t_cuti__no,
             K.t_cuti__nip AS t_cuti__nip,
             K.t_cuti__atasan_nama AS t_cuti__atasan_nama ,
-            K.t_cuti__atasan_nip AS t_cuti__atasan_nip,
-            K.t_cuti__tgl AS t_cuti__tgl,
+            K.t_cuti__atasan_nip AS t_cuti__atasan_nip,            
+            K.t_cuti__awal AS t_cuti__awal,
+            K.t_cuti__akhir AS t_cuti__akhir,
             K.t_cuti__lama_hari AS t_cuti__lama_hari,
             K.t_cuti__jenis_cuti AS t_cuti__jenis_cuti,
             K.t_cuti__alasan AS t_cuti__alasan,
@@ -541,24 +543,24 @@ if($opt=="1"){
             AND A.r_pnpt__jabatan=G.r_jabatan__id AND A.r_pnpt__status=H.r_stp__id
             AND K.t_cuti__nip=A.r_pnpt__no_mutasi AND A.r_pnpt__aktif=1 AND t_cuti__no='".$_GET['id']."' ";
      // var_dump($sql_)or die();
-$resultSet = $db->Execute($sql_);
-$edit_t_cuti__no = $resultSet->fields[t_cuti__no];
-$edit_t_cuti__cabang=$resultSet->fields[r_cabang__id];
-$edit_t_cuti__pegawai_nama = $resultSet->fields[r_pegawai__nama];
-$edit_t_cuti__pegawai_nip = $resultSet->fields[t_cuti__nip];
-$edit_t_cuti__atasan_nama= $resultSet->fields[t_cuti__atasan_nama];
-$edit_t_cuti__atasan_nip = $resultSet->fields[t_cuti__atasan_nip];
-$edit_t_cuti__tgl = $resultSet->fields[t_cuti__tgl];
-//$edit_t_cuti__tgl_akhir= $resultSet->fields[t_cuti__tgl_akhir];
-$edit_t_cuti__lama_hari= $resultSet->fields[t_cuti__lama_hari];
-$edit_t_cuti__jenis_cuti= $resultSet->fields[t_cuti__jenis_cuti];
-$edit_t_cuti__alasan= $resultSet->fields[t_cuti__alasan];
-$edit_t_cuti__approval = $resultSet->fields[t_cuti__approval];
-$edit_t_cuti__date_created = $resultSet->fields[t_cuti__date_created];
-$edit_t_cuti__date_updated = $resultSet->fields[t_cuti__date_updated];
-$edit_t_cuti__user_created = $resultSet->fields[t_cuti__user_created];
-$edit_t_cuti__user_updated = $resultSet->fields[t_cuti__user_updated];
-$edit = 1;
+            $resultSet = $db->Execute($sql_);
+            $edit_t_cuti__no = $resultSet->fields[t_cuti__no];
+            $edit_t_cuti__cabang=$resultSet->fields[r_cabang__id];
+            $edit_t_cuti__pegawai_nama = $resultSet->fields[r_pegawai__nama];
+            $edit_t_cuti__pegawai_nip = $resultSet->fields[t_cuti__nip];
+            $edit_t_cuti__atasan_nama= $resultSet->fields[t_cuti__atasan_nama];
+            $edit_t_cuti__atasan_nip = $resultSet->fields[t_cuti__atasan_nip];
+            $edit_t_cuti__awal = $resultSet->fields[t_cuti__awal];
+            $edit_t_cuti__akhir= $resultSet->fields[t_cuti__akhir];
+            $edit_t_cuti__lama_hari= $resultSet->fields[t_cuti__lama_hari];
+            $edit_t_cuti__jenis_cuti= $resultSet->fields[t_cuti__jenis_cuti];
+            $edit_t_cuti__alasan= $resultSet->fields[t_cuti__alasan];
+            $edit_t_cuti__approval = $resultSet->fields[t_cuti__approval];
+            $edit_t_cuti__date_created = $resultSet->fields[t_cuti__date_created];
+            $edit_t_cuti__date_updated = $resultSet->fields[t_cuti__date_updated];
+            $edit_t_cuti__user_created = $resultSet->fields[t_cuti__user_created];
+            $edit_t_cuti__user_updated = $resultSet->fields[t_cuti__user_updated];
+            $edit = 1;
 
 }
 
@@ -573,7 +575,8 @@ $smarty->assign ("EDIT_T_LEMBUR__PEGAWAI_NAMA",$edit_t_cuti__pegawai_nama);
 $smarty->assign ("EDIT_T_LEMBUR__PEGAWAI_NIP",$edit_t_cuti__pegawai_nip); 
 $smarty->assign ("EDIT_T_CUTI__ATASAN_NAMA",$edit_t_cuti__atasan_nama);
 $smarty->assign ("EDIT_T_CUTI__ATASAN_NIP",$edit_t_cuti__atasan_nip);
-$smarty->assign ("EDIT_T_CUTI__TGL",$edit_t_cuti__tgl);  
+$smarty->assign ("EDIT_T_CUTI__AWAL",$edit_t_cuti__awal);  
+$smarty->assign ("EDIT_T_CUTI__AKHIR",$edit_t_cuti__akhir);  
 $smarty->assign ("EDIT_T_CUTI__LAMA",$edit_t_cuti__lama_hari); 
 $smarty->assign ("EDIT_T_CUTI__JENIS",$edit_t_cuti__jenis_cuti);  
 $smarty->assign ("EDIT_T_CUTI__ALASAN",$edit_t_cuti__alasan);
@@ -612,12 +615,14 @@ if ($_GET['search'] == '1')
                                             peg.r_subcab__cabang AS r_subcab__cabang,
                                             peg.r_pegawai__id AS r_pegawai__id,
                                             peg.r_pegawai__nama AS r_pegawai__nama,
+                                            peg.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
                                             t_cuti.t_cuti__atasan_nip AS t_cuti__atasan_nip,
                                             t_cuti__no AS t_cuti__no,
                                             t_cuti__nip AS t_cuti__nip,
                                             t_cuti__atasan_nama AS t_cuti__atasan_nama,
                                             t_cuti__atasan_nip AS t_cuti__atasan_nip,
-                                            t_cuti__tgl AS t_cuti__tgl ,
+                                            t_cuti__awal AS t_cuti__awal,
+                                            t_cuti__akhir AS t_cuti__akhir,
                                             SUM(t_cuti__lama_hari) AS t_cuti__lama_hari,
                                             t_cuti__jenis_cuti AS t_cuti__jenis_cuti,
                                             t_cuti__alasan AS t_cuti__alasan,
@@ -648,12 +653,14 @@ if ($_GET['search'] == '1')
                                             peg.r_subcab__cabang AS r_subcab__cabang,
                                             peg.r_pegawai__id AS r_pegawai__id,
                                             peg.r_pegawai__nama AS r_pegawai__nama,
+                                            peg.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
                                             t_cuti.t_cuti__atasan_nip AS t_cuti__atasan_nip,
                                             t_cuti__no AS t_cuti__no,
                                             t_cuti__nip AS t_cuti__nip,
                                             t_cuti__atasan_nama AS t_cuti__atasan_nama,
                                             t_cuti__atasan_nip AS t_cuti__atasan_nip,
-                                            t_cuti__tgl AS t_cuti__tgl ,
+                                           t_cuti__awal AS t_cuti__awal,
+                                            t_cuti__akhir AS t_cuti__akhir,
                                             SUM(t_cuti__lama_hari) AS t_cuti__lama_hari,
                                             t_cuti__jenis_cuti AS t_cuti__jenis_cuti,
                                             t_cuti__alasan AS t_cuti__alasan,
@@ -682,26 +689,25 @@ if ($_GET['search'] == '1')
 					
                                         $sql .= "AND r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari)."%'";
 				} 
-                                if ($bulan !='') {
-                                       $sql.=" AND MONTH(t_cuti__tgl)='$bulan'";
+                                if ($awal_cari !='') {
+                                       $sql.=" AND t_cuti__awal>='$awal_cari'";
                                 }
-
-                                 if ($tahun !='') {
-                                       $sql.=" AND YEAR(t_cuti__tgl)='$tahun'";
+                                   if ($akhir_cari !='') {
+                                       $sql.=" AND t_cuti__akhir<='$akhir_cari'";
                                 }
                                 
                                  if ($finger_cari !='') {
                                        $sql.=" AND r_pnpt__finger_print='$finger_cari'";
                                 }
                                 
-			 	$sql .= " GROUP BY t_cuti__no ORDER BY  trim(r_pegawai__nama) asc ";
+			 	$sql .= "GROUP BY t_cuti__no  ORDER BY peg.r_pegawai__nama   asc ";
 
 			    if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
 
                                 $numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
-				$pages = $p->findPages($count,$LIMIT); 
-				$sql  .= "LIMIT ".$start.", ".$LIMIT;
+				//$pages = $p->findPages($count,$LIMIT); 
+				//$sql  .= "LIMIT ".$start.", ".$LIMIT;
 				$recordSet = $db->Execute($sql);
 				//print $sql;
 				$end = $recordSet->RecordCount();
@@ -718,12 +724,15 @@ if ($_GET['search'] == '1')
 					   }
 					array_push($row_class, $ROW_CLASSNAME);
 					array_push($initSet, $z);
+                                        
+                                
+                                        
 					$z++;
 				}
 
 				$count_view = $start+1;
-				$count_all  = $start+$end;
-				$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
+				//$count_all  = $start+$end;
+				//$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
 }
 
 }
@@ -754,12 +763,14 @@ else
                                             peg.r_subcab__cabang AS r_subcab__cabang,
                                             peg.r_pegawai__id AS r_pegawai__id,
                                             peg.r_pegawai__nama AS r_pegawai__nama,
+                                            peg.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
                                               t_cuti.t_cuti__atasan_nip AS t_cuti__atasan_nip,
                                             t_cuti__no AS t_cuti__no,
                                             t_cuti__nip AS t_cuti__nip,
                                             t_cuti__atasan_nama AS t_cuti__atasan_nama,
                                             t_cuti__atasan_nip AS t_cuti__atasan_nip,
-                                            t_cuti__tgl AS t_cuti__tgl ,
+                                            t_cuti__awal AS t_cuti__awal,
+                                            t_cuti__akhir AS t_cuti__akhir,
                                             SUM(t_cuti__lama_hari) AS t_cuti__lama_hari,
                                             t_cuti__jenis_cuti AS t_cuti__jenis_cuti,
                                             t_cuti__alasan AS t_cuti__alasan,
@@ -789,12 +800,14 @@ else
                                             peg.r_subcab__cabang AS r_subcab__cabang,
                                             peg.r_pegawai__id AS r_pegawai__id,
                                             peg.r_pegawai__nama AS r_pegawai__nama,
+                                            peg.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
                                               t_cuti.t_cuti__atasan_nip AS t_cuti__atasan_nip,
                                             t_cuti__no AS t_cuti__no,
                                             t_cuti__nip AS t_cuti__nip,
                                             t_cuti__atasan_nama AS t_cuti__atasan_nama,
                                             t_cuti__atasan_nip AS t_cuti__atasan_nip,
-                                            t_cuti__tgl AS t_cuti__tgl ,
+                                            t_cuti__awal AS t_cuti__awal,
+                                            t_cuti__akhir AS t_cuti__akhir,
                                         
                                             SUM(t_cuti__lama_hari) AS t_cuti__lama_hari,
                                             t_cuti__jenis_cuti AS t_cuti__jenis_cuti,
@@ -823,11 +836,11 @@ else
                                            $sql .= "AND r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari)."%'";
 				} 
                                 if ($bulan !='') {
-                                       $sql.=" AND MONTH(t_cuti__tgl_awal)='$bulan'";
+                                       $sql.=" AND MONTH(t_cuti__awal)='$bulan'";
                                 }
 
                                  if ($tahun !='') {
-                                       $sql.=" AND YEAR(t_cuti__tgl_awal)='$tahun'";
+                                       $sql.=" AND YEAR(t_cuti__akhir)='$tahun'";
                                 }
                                  if ($finger_cari !='') {
                                        $sql.=" AND r_pnpt__finger_print='$finger_cari'";
@@ -843,8 +856,8 @@ else
                            
 				$count = $numresults->RecordCount();
 
-				$pages = $p->findPages($count,$LIMIT); 
-				$sql  .= "LIMIT ".$start.", ".$LIMIT;
+				//$pages = $p->findPages($count,$LIMIT); 
+				//$sql  .= "LIMIT ".$start.", ".$LIMIT;
 				
 				$recordSet = $db->Execute($sql);
 				$end = $recordSet->RecordCount();
@@ -854,6 +867,13 @@ else
 				$z=0;
 				while ($arr=$recordSet->FetchRow()) {
 					array_push($data_tb, $arr);
+                         
+                                        $key = '1234';
+                                        $string = $arr[r_pnpt__no_mutasi];
+                                        
+                                        // var_dump($string)or die();
+                                       $url=base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
+                                       $smarty->assign ("URL", $url);
 					if ($z%2==0){ 
 						$ROW_CLASSNAME="#CCCCCC"; }
 					else {
@@ -861,15 +881,256 @@ else
 					   }
 					array_push($row_class, $ROW_CLASSNAME);
 					array_push($initSet, $z);
-					$z++;
+					  
+                                        $z++;
+                                        
+                                        
+                                        
+                                        
+                                        
+                                         
 				}
-
+                              
 				$count_view = $start+1;
-				$count_all  = $start+$end;
-				$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
+				//$count_all  = $start+$end;
+				//$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
 }
 //---------------------------------CLOSE VIEW INDEX---------------------------------------------------------------------//
 
+
+
+//------------CEK_JUMLAH_CUTI----------------------
+
+if ($_GET[cek_lembur] == 1)
+{
+    
+    $no_mutasi=$_GET['no_mutasi'];
+    $lama_hari=$_GET['lama_hari'];
+    
+     $sql_shift="SELECT r_penempatan.r_pnpt__shift FROM r_penempatan WHERE r_penempatan.r_pnpt__aktif=1 and r_penempatan.r_pnpt__no_mutasi='$no_mutasi'";
+     $rs_shift	= $db->execute($sql_shift);
+     $shift=$rs_shift->fields['r_pnpt__shift'];
+
+    
+    
+$sql_pw="SELECT peg.r_pegawai__nama AS nama,
+	peg.r_cabang__nama AS r_cabang__nama,
+	peg.r_jabatan__ket AS jabatan,
+	peg.r_pnpt__finger_print AS finger,
+        peg.r_pnpt__nip AS nip,
+	DATE_FORMAT(
+	peg.r_pegawai__tgl_masuk,'%d-%m-%Y') AS r_pegawai__tgl_masuk,
+	peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+        peg.r_pegawai__id as r_pegawai__id
+        from v_pegawai peg
+        WHERE
+        r_pnpt__no_mutasi='$no_mutasi'";
+
+$rs_pw	= $db->execute($sql_pw);
+$nm_cabang=$rs_pw->fields['r_cabang__nama'];
+$no_cuti=$rs_pw->fields['t_cuti__no'];
+$nama_karyawan=$rs_pw->fields['nama'];
+$tgl_masuk=$rs_pw->fields['r_pegawai__tgl_masuk'];
+$jabatan==$rs_pw->fields['jabatan'];
+$finger==$rs_pw->fields['finger'];
+$karyawan_id=$rs_pw->fields['r_pegawai__id'];
+
+$now=date("Y-m-d");
+$now = explode('-', $now);
+$now_year  = $now[0];
+$now_month = $now[1];
+$now_day   = $now[2];
+
+$tgl_masuk_explode=date($tgl_masuk);
+$tgl_masuk_explode = explode('-',$tgl_masuk_explode);
+$exp_tgl_msk   = $tgl_masuk_explode[0];
+$exp_bln_msk   = $tgl_masuk_explode[1];
+$exp_tahun_msk = $tgl_masuk_explode[2];
+ 
+$d1 = new DateTime($tgl_masuk);
+$d2 = new DateTime(date("Y-m-d"));
+$diff = $d2->diff($d1);
+$role_cuti=$diff->y;
+
+$start_cuti=array(trim($now_year),trim($exp_bln_msk),trim($exp_tgl_msk));
+$expired_cuti=array(trim($now_year+1),trim($exp_bln_msk),trim($exp_tgl_msk));
+
+//$periode_aktif   = implode("-",$start_cuti);
+//$periode_expired = implode("-",$expired_cuti);
+
+//cek aktivasi cuti
+$sql_cek_aktivasi="SELECT 
+B.THN_AWAL,DATE_ADD(B.THN_AWAL,INTERVAL 1 YEAR) AS THN_AKHIR,
+B.r_pegawai__nama,
+B.r_pegawai__tgl_masuk,
+B.r_pegawai__id,
+B.mulai_cuti 
+FROM (SELECT A.*,
+DATE_ADD(A.r_pegawai__tgl_masuk,INTERVAL (A.mulai_cuti) YEAR) AS THN_AWAL
+FROM (SELECT r_pegawai__tgl_masuk,r_pnpt__no_mutasi,r_pegawai__id,
+YEAR(CURDATE()) AS tahun_now,
+FLOOR(DATEDIFF(CURDATE(),r_pegawai__tgl_masuk)/365) as mulai_cuti, 
+r_pegawai__nama 
+FROM v_pegawai peg
+left join t_cuti On t_cuti__atasan_nip=peg.r_pnpt__nip
+where r_pnpt__aktif=1 and r_pegawai__id='$karyawan_id' limit 1)A)B";
+    //   var_dump($sql_cek_aktivasi)or die();                 
+$rs_val = $db->Execute($sql_cek_aktivasi);
+$periode_aktif= $rs_val->fields['THN_AWAL'];
+$periode_expired= $rs_val->fields['THN_AKHIR'];
+$mulai_cuti= $rs_val->fields['mulai_cuti'];
+//cek aktivasi cuti
+
+     
+     $sql_cek_cuber="SELECT COUNT(*) AS jml_libur_bersama FROM t_libur"
+             . " WHERE r_libur__jenis = '2' AND t_libur.r_libur__shift='$shift' AND t_libur.r_libur__tgl>='$periode_aktif' AND t_libur.r_libur__tgl<='$periode_expired'";
+    
+ // var_dump($sql_cek_cuber)or die();
+        $rs_cuber	= $db->execute($sql_cek_cuber);
+        $jml_cuti_bersama=$rs_cuber->fields['jml_libur_bersama'];
+
+
+if($role_cuti>=1)
+    {
+        $role_cuti_label='<font size="2">Cuti Tahunan Bisa Diambil</font>';
+    } else 
+    {
+        $role_cuti_label='<font color=red>Belum 1 Thn Tidak Bisa Ambil Cuti Tahunan';
+    }
+    
+    
+    $sql_tahunan="SELECT  IF(SUM(t_cuti__lama_hari)IS NULL,'0',SUM(t_cuti__lama_hari))AS cuti
+                    FROM v_pegawai peg
+                INNER JOIN t_cuti ON t_cuti.t_cuti__nip=peg.r_pnpt__no_mutasi
+                where r_pnpt__no_mutasi='$no_mutasi' AND t_cuti.t_cuti__jenis_cuti='1'
+                    AND t_cuti__awal>= '$periode_aktif' AND  t_cuti__awal<='$periode_expired'";
+
+$rs_tahunan	= $db->execute($sql_tahunan);
+$cuti_tahunan_jml=$rs_tahunan->fields['cuti']; 
+
+ IF($cuti_tahunan_jml<= 0)
+{
+    $cuti_tahunan_jml='0';
+}  else {
+    $cuti_tahunan_jml=$rs_tahunan->fields['cuti'];
+}
+
+
+ //  var_dump($sql_tahunan)or die(); 
+   
+ $sql_khusus="SELECT
+	peg.r_pnpt__nip AS r_pnpt__nip,
+	peg.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
+	peg.r_pnpt__aktif AS r_pnpt__aktif,
+	peg.r_jabatan__id AS r_jabatan__id,
+	peg.r_jabatan__ket AS r_jabatan__ket,
+	peg.r_subdept__id AS r_subdept__id,
+	peg.r_subdept__ket AS r_subdept__ket,
+	peg.r_dept__akronim AS r_dept__akronim,
+	peg.r_dept__id AS r_dept__id,
+	peg.r_dept__ket AS r_dept__ket,
+	peg.r_subcab__nama AS r_subcab__nama,
+	peg.r_cabang__nama AS r_cabang__nama,
+	peg.r_cabang__id AS r_cabang__id,
+	peg.r_subcab__id AS r_subcab__id,
+	peg.r_subcab__cabang AS r_subcab__cabang,
+	peg.r_pegawai__id AS r_pegawai__id,
+	peg.r_pegawai__nama AS r_pegawai__nama,
+	t_cuti.t_cuti__atasan_nip,
+	t_cuti__no,
+	t_cuti__nip,
+	t_cuti__atasan_nama,
+	t_cuti__atasan_nip,
+	t_cuti__tgl,
+	SUM(t_cuti__lama_hari) AS cuti,
+	t_cuti__jenis_cuti,
+	t_cuti__alasan
+FROM
+v_pegawai peg
+INNER JOIN t_cuti ON t_cuti.t_cuti__nip=peg.r_pnpt__no_mutasi
+where r_pnpt__no_mutasi='$no_mutasi' AND t_cuti.t_cuti__jenis_cuti=2 AND t_cuti__tgl between '$periode_aktif' and '$periode_expired'";
+
+ 
+$rs_khusus	= $db->execute($sql_khusus);
+$cuti_khusus=$rs_khusus->fields['cuti'];   
+
+ IF($cuti_khusus<= 0)
+{
+    $cuti_khusus_jml='0';
+}  else {
+    $cuti_khusus_jml=$rs_khusus->fields['cuti'];
+}
+
+
+$sisa_cuti=((12)-($jml_cuti_bersama+$cuti_tahunan_jml));
+
+//var_dump($jml_cuti_bersama.'aaaa'.$cuti_tahunan_jml)or die();
+
+IF($sisa_cuti<=0)
+{
+    $label_sisa='<font color="#ff0000" ><b>'.$sisa_cuti.'  Habis Tidak bisa</b></font>';
+}  else {
+    $label_sisa='<font color="#2e20ea"><b>Jatah '.$sisa_cuti.' Hari lagi Boleh Diambil </b></font>';
+}
+
+if($no_mutasi!='' AND $lama_hari!=''){
+        $input_kab="<TABLE class='tborder' border='0' cellpadding='1' cellspacing='1' border='0' width='100%' align='left'>";
+          $input_kab.='<THEAD>';
+                                       
+                        $input_kab.="<th class='tdatahead' align='left' width='25%'>Tgl Masuk</th>";
+                        $input_kab.="<th class='tdatahead' align='left' width='25%'>Status Hak Cuti</th>";
+                        $input_kab.="<th class='tdatahead' align='left' width='25%'>Periode Aktif</th>";
+                        $input_kab.="<th class='tdatahead' align='left' width='25%'>Cuti Bersama</th>";
+                        $input_kab.="<th class='tdatahead' align='left' width='25%'>Cuti Tahunan</th>";
+                        $input_kab.="<th class='tdatahead' align='left' width='25%'>Cuti Khusus</th>";
+                       if($role_cuti>=1){
+                        $input_kab.="<th class='tdatahead' align='left' width='25%'>Sisa Cuti Tahunan</th>";
+                       }
+                       else
+                       {
+                            $input_kab.="";
+                       }
+                        $input_kab.='</THEAD>';
+                        $input_kab.="<TR><TD class=tdatacontent width='30%'>$tgl_masuk</TD>";
+                        $input_kab.="<TD class=tdatacontent width='30%'>$role_cuti_label</TD>";
+                        $input_kab.="<TD class=tdatacontent >".$periode_aktif." s/d ".$periode_expired."</TD>";
+                        $input_kab.="<TD class=tdatacontent>$jml_cuti_bersama</TD>";
+                        $input_kab.="<TD class=tdatacontent>$cuti_tahunan_jml</TD>";
+                        $input_kab.="<TD class=tdatacontent>$cuti_khusus_jml</TD>";
+                            if($role_cuti>=1){
+                        $input_kab.="<TD class=tdatacontent>$label_sisa</TD></TR>";
+                            }  else {
+                          $input_kab.="";        
+                            }
+                        $smarty->assign ("CEK_TGL_MASUK",$tgl_masuk);
+                        $smarty->assign ("CEK_LABEL",$role_cuti_label);
+                        $smarty->assign ("CEK_AKTIF",$periode_aktif);
+                        $smarty->assign ("CEK_EXPIRED",$periode_expired);
+                        $smarty->assign ("CEK_JML_CUTI",$jml_cuti_bersama);
+                        $smarty->assign ("CEK_JML_THN_AMBIL",$cuti_tahunan_jml);
+                        $smarty->assign ("CEK_JML_KHS_AMBIL",$cuti_khusus_jml);
+                        $smarty->assign ("CEK_LABEL_SISA",$label_sisa);
+
+                        $input_kab.="</table> ";
+                        $delimeter   = "-";
+                        $option_choice = $input_kab."^/&".$delimeter;
+                        echo $option_choice;
+        }
+
+
+    
+}
+//-------------|CLOSE_CEK_CUTI|----------------------//
+
+//-------------||CETAK_CUTI||-------------------------//
+
+$enkrip=encrypt_url($string);
+$dekrip=  decrypt_url($string);
+
+$smarty->assign ("ENKRIP", $enkrip);
+$smarty->assign ("DEKRIP", $dekrip);
+
+//-------------||CETAK_CUTI||------------------------//
 $smarty->assign ("TABLE_CAPTION", _CAPTION_TABLE_KELURAHAN);
 $smarty->assign ("TABLE_NAME", _NAMA_TABLE_KELURAHAN);
 $smarty->assign ("FORM_NAME", _FORM);

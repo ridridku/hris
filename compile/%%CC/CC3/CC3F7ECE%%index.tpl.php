@@ -1,5 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2016-10-20 05:23:39
+<?php /* Smarty version 2.6.18, created on 2017-06-08 08:34:49
          compiled from defaults/modules/pelaporan/lap_absen/rekap_lembur/index.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'defaults/modules/pelaporan/lap_absen/rekap_lembur/index.tpl', 312, false),array('modifier', 'number_format', 'defaults/modules/pelaporan/lap_absen/rekap_lembur/index.tpl', 314, false),)), $this); ?>
 <HTML>
 <HEAD>
 <!-- #BeginEditable "TITLE" -->
@@ -286,18 +288,18 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 							<TD>							
 							<SELECT name="bulan"   > 
 								<OPTION VALUE="" selected>[Pilih Bulan]</OPTION>
-                                                                <OPTION value="01" <?php if ($this->_tpl_vars['BULAN_SES'] == 01): ?>selected<?php endif; ?>>Januari</OPTION>
-								<OPTION VALUE="02"<?php if ($this->_tpl_vars['BULAN_SES'] == 02): ?>selected<?php endif; ?>  >Februari</OPTION>
-								<OPTION VALUE="03"<?php if ($this->_tpl_vars['BULAN_SES'] == 03): ?>selected<?php endif; ?>  >Maret</OPTION>
-								<OPTION VALUE="04"<?php if ($this->_tpl_vars['BULAN_SES'] == 04): ?>selected<?php endif; ?>  >April</OPTION>
-								<OPTION VALUE="05"<?php if ($this->_tpl_vars['BULAN_SES'] == 05): ?>selected<?php endif; ?> >Mei</OPTION>
-								<OPTION VALUE="06"<?php if ($this->_tpl_vars['BULAN_SES'] == 06): ?>selected<?php endif; ?>  >Juni</OPTION>
-								<OPTION VALUE="07"<?php if ($this->_tpl_vars['BULAN_SES'] == 07): ?>selected<?php endif; ?>  >Juli</OPTION>
-								<OPTION VALUE="08"<?php if ($this->_tpl_vars['BULAN_SES'] == 08): ?>selected<?php endif; ?>  >Agustus</OPTION>
-								<OPTION VALUE="09"<?php if ($this->_tpl_vars['BULAN_SES'] == 09): ?>selected<?php endif; ?>  >September</OPTION>
-								<OPTION VALUE="10"<?php if ($this->_tpl_vars['BULAN_SES'] == 10): ?>selected<?php endif; ?>  >Oktober</OPTION>
-								<OPTION VALUE="11"<?php if ($this->_tpl_vars['BULAN_SES'] == 11): ?>selected<?php endif; ?>  >November</OPTION>
-								<OPTION VALUE="12"<?php if ($this->_tpl_vars['BULAN_SES'] == 12): ?>selected<?php endif; ?>  >Desember</OPTION>				 
+                                                                <OPTION value="1">Januari</OPTION>
+								<OPTION VALUE="2">Februari</OPTION>
+								<OPTION VALUE="3">Maret</OPTION>
+								<OPTION VALUE="4">April</OPTION>
+								<OPTION VALUE="5">Mei</OPTION>
+								<OPTION VALUE="6">Juni</OPTION>
+								<OPTION VALUE="7">Juli</OPTION>
+								<OPTION VALUE="8">Agustus</OPTION>
+								<OPTION VALUE="9">September</OPTION>
+								<OPTION VALUE="10">Oktober</OPTION>
+								<OPTION VALUE="11">November</OPTION>
+								<OPTION VALUE="12">Desember</OPTION>				 
                                                         </SELECT> 
 
 
@@ -348,6 +350,12 @@ $this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] ==
                                                                 <TD>Nama</TD>
                                                                         <TD>
                                                                             <INPUT TYPE="text" NAME="nama_karyawan_cari" value=""  id="nama_karyawan_cari"  size="35" > 
+                                                                        </TD>
+							</TR>
+                                                        <TR>
+                                                                <TD>Finger Print</TD>
+                                                                        <TD>
+                                                                            <INPUT TYPE="text" NAME="finger_cari" value=""  id="finger"  size="35" > 
                                                                         </TD>
 							</TR>
                                                         <TR>
@@ -438,28 +446,25 @@ $this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] ==
 								<TR>
 									<TD COLSPAN="2">
 										<TABLE ALIGN="CENTER" WIDTH="100%"  cellspacing="1" cellpadding="2">										
-										<thead>									 
+										<THEAD>									 
 										<TR>
-                                                                                        <TH class="tdatahead" align="left">NO </TH>
+                                                                                        <TH class="tdatahead" align="left">NO</TH>
                                                                                         <TH class="tdatahead" align="left">NIP</TH>
+                                                                                        <TH class="tdatahead" align="left">FINGER PRINT</TH>
                                                                                         <TH class="tdatahead" align="left">NAMA PEGAWAI</TH>
                                                                                         <TH class="tdatahead" align="left">CABANG</TH>
                                                                                         <TH class="tdatahead" align="left">SUB CABANG</TH>
                                                                                         <TH class="tdatahead" align="left">DEPARTEMEN</TH>
                                                                                         <TH class="tdatahead" align="left">JABATAN</TH>
                                                                                         <TH class="tdatahead" align="left">NAMA ATASAN</TH>
-                                                                                         <TH class="tdatahead" align="left">TGL LEMBUR</TH>
+                                                                                        <TH class="tdatahead" align="left">TGL LEMBUR</TH>
                                                                                         <TH class="tdatahead" align="left">LAMA LEMBUR</TH>
                                                                                         <TH class="tdatahead" align="left">BIAYA LEMBUR</TH>
                                                                                         <TH class="tdatahead" align="left">JOB DESC</TH>
-                                                                                         <TH class="tdatahead" align="left">EVALUASI</TH>
+                                                                                        <TH class="tdatahead" align="left">EVALUASI</TH>
                                                                                         <TH class="tdatahead" align="left">STATUS</TH>
-                                                                                      
-                                                                                        
-											
- 									 
 										</TR>										 
-										</thead>
+										</THEAD>
 										
 										<tbody>									
 										<?php unset($this->_sections['x']);
@@ -497,6 +502,8 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 .</TD>    
                                                                                     <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__nip']; ?>
  </TD>
+                                                                                        <TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pnpt__finger_print']; ?>
+ </TD>
 											<TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_pegawai__nama']; ?>
  </TD>
 											<TD class="tdatacontent"><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['r_cabang__nama']; ?>
@@ -509,11 +516,11 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 </TD>
                                                                                         <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__atasan_nama']; ?>
 </TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__tanggal']; ?>
+                                                                                        <TD class="tdatacontent" ><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__tanggal'])) ? $this->_run_mod_handler('date_format', true, $_tmp, "%d-%m-%Y") : smarty_modifier_date_format($_tmp, "%d-%m-%Y")); ?>
 </TD>
                                                                                         <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__durasi']; ?>
  Jam</TD>
-                                                                                        <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__total']; ?>
+                                                                                        <TD class="tdatacontent" align="right"><?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__total'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
 </TD>
                                                                                         <TD class="tdatacontent" ><?php echo $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__job_description']; ?>
 </TD>
@@ -521,9 +528,9 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 </TD>
                                                                                         <TD class="tdatacontent" > 
                                                                                             <?php if (( $this->_tpl_vars['DATA_TB'][$this->_sections['x']['index']]['t_lembur__approval'] ) == 1): ?>
-                                                                                                        <font color="green">Tidak Disetujui BOM</font> 
+                                                                                                        <font color="green">Disetujui </font> 
                                                                                            <?php else: ?>
-                                                                                                         <font color="green">Telah disetujui BOM</font>
+                                                                                                         <font color="green">Tidak Disetujui</font>
                                                                                             
                                                                                             <?php endif; ?> </TD>
                                                                                        
@@ -532,6 +539,35 @@ $this->_sections['x']['last']       = ($this->_sections['x']['iteration'] == $th
 											<TD class="tdatacontent" COLSPAN="16" align="center">Maaf, Data Masih Kosong</TD>
 										</TR>
 										<?php endif; ?>
+                                                                                 <TR><?php unset($this->_sections['y']);
+$this->_sections['y']['name'] = 'y';
+$this->_sections['y']['loop'] = is_array($_loop=$this->_tpl_vars['DATA_TB4']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['y']['show'] = true;
+$this->_sections['y']['max'] = $this->_sections['y']['loop'];
+$this->_sections['y']['step'] = 1;
+$this->_sections['y']['start'] = $this->_sections['y']['step'] > 0 ? 0 : $this->_sections['y']['loop']-1;
+if ($this->_sections['y']['show']) {
+    $this->_sections['y']['total'] = $this->_sections['y']['loop'];
+    if ($this->_sections['y']['total'] == 0)
+        $this->_sections['y']['show'] = false;
+} else
+    $this->_sections['y']['total'] = 0;
+if ($this->_sections['y']['show']):
+
+            for ($this->_sections['y']['index'] = $this->_sections['y']['start'], $this->_sections['y']['iteration'] = 1;
+                 $this->_sections['y']['iteration'] <= $this->_sections['y']['total'];
+                 $this->_sections['y']['index'] += $this->_sections['y']['step'], $this->_sections['y']['iteration']++):
+$this->_sections['y']['rownum'] = $this->_sections['y']['iteration'];
+$this->_sections['y']['index_prev'] = $this->_sections['y']['index'] - $this->_sections['y']['step'];
+$this->_sections['y']['index_next'] = $this->_sections['y']['index'] + $this->_sections['y']['step'];
+$this->_sections['y']['first']      = ($this->_sections['y']['iteration'] == 1);
+$this->_sections['y']['last']       = ($this->_sections['y']['iteration'] == $this->_sections['y']['total']);
+?>
+										<Td class="tdatahead" colspan="2" align="right" ><b>Total Biaya : </b></td>	
+										<Td class="tdatahead"  colspan="10"  align=" right" >Rp.<?php echo ((is_array($_tmp=$this->_tpl_vars['DATA_TB4'][$this->_sections['y']['index']]['total_orang'])) ? $this->_run_mod_handler('number_format', true, $_tmp, 2, ".", ",") : number_format($_tmp, 2, ".", ",")); ?>
+</td>	
+                                                                                <?php endfor; endif; ?>
+										</TR>
 										</tbody>
 									</TABLE></TD> 
 										  

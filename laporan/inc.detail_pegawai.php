@@ -114,7 +114,7 @@ $sql_cek_periode="SELECT
   r_pegawai.r_pegawai__status_kawin AS r_pegawai__status_kawin,
   r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
   r_pegawai.r_pegawai__id_subcab AS r_pegawai__id_subcab,
-  r_pegawai.r_pegawai__subdept AS r_pegawai__subdept,
+  r_pegawai.r_pegawai__bpjs_kesehatan AS r_pegawai__bpjs_kesehatan,
   r_pegawai.r_pegawai__jabatan AS r_pegawai__jabatan,
   r_pegawai.r_pegawai__st_pegawai AS r_pegawai__st_pegawai,
   r_pegawai.r_pegawai__pend_tgl_lulus AS r_pegawai__pend_tgl_lulus,
@@ -154,7 +154,7 @@ FROM
     ON r_wilayah.r_desa__id = r_pegawai__ktp_desa 
 
   WHERE r_pnpt__nip='$nip'  AND r_pnpt__no_mutasi='$no_mutasi'";
-             
+//var_dump($sql_cek_periode)or die();
 
         $rs_val = $db->Execute($sql_cek_periode);
   
@@ -302,57 +302,25 @@ $pdf->Ln();
 //JABATAN BUKA
 $pdf->SetLeftMargin(15);
 $pdf->Ln();
-$pdf->SetFont('helvetica','',10); 
+$pdf->SetFont('helvetica','',8); 
 $pdf->Cell(10,6,'1. RIWAYAT JABATAN','',0,'',true);				  
 	
-  $sql_jabatan="SELECT
-  r_penempatan.r_pnpt__nip AS r_pnpt__nip,
-  r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
-  r_penempatan.r_pnpt__jabatan AS r_pnpt__jabatan,
-  r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
-  r_penempatan.r_pnpt__status AS r_pnpt__status,
-  r_penempatan.r_pnpt__tipe_salary AS r_pnpt__tipe_salary,
-  r_penempatan.r_pnpt__subdept AS r_pnpt__subdept,
-  r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
-  r_penempatan.r_pnpt__gapok AS r_pnpt__gapok,
-  r_penempatan.r_pnpt__subcab AS r_pnpt__subcab,
-  r_penempatan.r_pnpt__shift AS r_pnpt__shift,
-  r_penempatan.r_pnpt__kon_awal AS r_pnpt__kon_awal,
-  r_penempatan.r_pnpt__kon_akhir AS r_pnpt__kon_akhir,
-  r_penempatan.r_pnpt__aktif AS r_pnpt__aktif,
-  r_jabatan.r_jabatan__id AS r_jabatan__id,
-  r_jabatan.r_jabatan__ket AS r_jabatan__ket,
-  r_subdepartement.r_subdept__id AS r_subdept__id,
-  r_subdepartement.r_subdept__ket AS r_subdept__ket,
-  r_departement.r_dept__akronim AS r_dept__akronim,
-  r_departement.r_dept__id AS r_dept__id,
-  r_departement.r_dept__ket AS r_dept__ket,
-  r_subcabang.r_subcab__nama AS r_subcab__nama,
-  r_cabang.r_cabang__nama AS r_cabang__nama,
-  r_cabang.r_cabang__id AS r_cabang__id,
-  r_subcabang.r_subcab__id AS r_subcab__id,
-  r_subcabang.r_subcab__cabang AS r_subcab__cabang,
-  r_pegawai.r_pegawai__id AS r_pegawai__id,
-  r_pegawai.r_pegawai__nama AS r_pegawai__nama
-  
- 
-FROM
-  r_pegawai
-  LEFT JOIN r_penempatan
-    ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-  LEFT JOIN r_jabatan
-    ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-  LEFT JOIN r_subdepartement
-    ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-  LEFT JOIN r_subcabang
-    ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-  LEFT JOIN r_departement
-    ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-  LEFT JOIN r_cabang
-    ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-  
-WHERE
-  r_pnpt__nip = '$nip'  ";
+  $sql_jabatan="SELECT 
+                A.*,
+                IF((A.r_stp__id)<4,A.r_pnpt__kon_awal,'Tetap') as kon_awal,
+                IF((A.r_stp__id)<4,A.r_pnpt__kon_akhir,'Tetap') as kon_akhir
+                FROM (SELECT
+                `peg`.`r_pnpt__no_mutasi` AS `r_pnpt__no_mutasi`,
+                `peg`.`r_pnpt__kon_awal` AS `r_pnpt__kon_awal`,
+                `peg`.`r_pnpt__kon_akhir` AS `r_pnpt__kon_akhir`,
+                `peg`.`r_jabatan__ket` AS `r_jabatan__ket`,
+                `peg`.`r_dept__ket` AS `r_dept__ket`,
+                `peg`.`r_subdept__id` AS `r_subdept__id`,
+                peg.r_stp__id AS r_stp__id,
+                peg.r_stp__nama	AS r_stp__nama,
+                peg.r_cabang__nama AS r_cabang__nama,
+                peg.r_pnpt__nip AS r_pnpt__nip
+                FROM v_pegawai peg )A WHERE A.r_pnpt__nip ='$nip'  ";
 
 $result_jabatan = $db->Execute($sql_jabatan);
 $initSet = array();
@@ -367,22 +335,24 @@ while ($arr=$result_jabatan->FetchRow()) {
             $pdf->Ln(); //KOLOM JABATAN
             //$pdf->SetFillColor(120,180,230);
             $pdf->SetFillColor(222,222,222);
-            $pdf->SetFont('helvetica','',10); 
-            $pdf->Cell(10,6,'No','LRT',0,'L',true);
-            $pdf->Cell(40,6,'Tgl Kont Awal','LRT',0,'C',true);
-            $pdf->Cell(40,6,'Tgl Kont Akhir','LRT',0,'C',true);
-            $pdf->Cell(40,6,'JABATAN','LRT',0,'C',true);
-            $pdf->Cell(40,6,'Cabang','LRT',0,'C',true);      
+            $pdf->SetFont('helvetica','',8); 
+            $pdf->Cell(10,6,'NO','LRT',0,'L',true);
+            $pdf->Cell(20,6,'KONT AWAL','LRT',0,'C',true);
+            $pdf->Cell(20,6,'KONT AKHIR','LRT',0,'C',true);
+            $pdf->Cell(15,6,'STATUS','LRT',0,'C',true);
+            $pdf->Cell(80,6,'JABATAN','LRT',0,'C',true);
+            $pdf->Cell(40,6,'CABANG','LRT',0,'C',true);      
             
  for ($i=0;$i<=$z-1;$i++)
  {
             $pdf->Ln(); //KOLOM JABATAN
-             $pdf->SetFillColor(255,255,255);
-            $pdf->SetFont('helvetica','',10); 
+            $pdf->SetFillColor(255,255,255);
+            $pdf->SetFont('helvetica','',8); 
             $pdf->Cell(10 ,6 ,$i+1,'LRTB',0,'L',true);
-            $pdf->Cell(40 ,6,$data_jabatan[$i][r_pnpt__kon_awal],'LRTB',0,'C',true);
-            $pdf->Cell(40,6,$data_jabatan[$i][r_pnpt__kon_akhir],'LRTB',0,'C',true);
-            $pdf->Cell(40,6,$data_jabatan[$i][r_jabatan__ket],'LRTB',0,'C',true);
+            $pdf->Cell(20 ,6,$data_jabatan[$i][kon_awal],'LRTB',0,'C',true);
+            $pdf->Cell(20,6,$data_jabatan[$i][kon_awal],'LRTB',0,'C',true);
+             $pdf->Cell(15,6,$data_jabatan[$i][r_stp__nama],'LRTB',0,'C',true);
+            $pdf->Cell(80,6,$data_jabatan[$i][r_jabatan__ket] ,'LRTB',0,'C',true);
             $pdf->Cell(40,6,$data_jabatan[$i][r_cabang__nama],'LRTB',0,'C',true);
  }
  
@@ -391,25 +361,25 @@ while ($arr=$result_jabatan->FetchRow()) {
 $pdf->SetLeftMargin(15);
 $pdf->Ln();
 $pdf->Ln();
-$pdf->SetFont('helvetica','',10); 
+$pdf->SetFont('helvetica','',8); 
 $pdf->Cell(10,6,'2. PENDIDIKAN','',0,'',true);	
 $pdf->Ln(); //KOLOM PENDIDIKAN
 //$pdf->SetFillColor(120,180,230);
 $pdf->SetFillColor(222,222,222);
-$pdf->SetFont('helvetica','',10); 
+$pdf->SetFont('helvetica','',8); 
 $pdf->Cell(10,6,'No','LRT',0,'L',true);
-$pdf->Cell(40,6,'Nama Sekolah','LRT',0,'C',true);
-$pdf->Cell(40,6,'Jenjang','LRT',0,'C',true);
-$pdf->Cell(40,6,'Jurusan','LRT',0,'C',true);
-$pdf->Cell(40,6,'Tahun Lulus','LRT',0,'C',true);   
+$pdf->Cell(70,6,'Nama Sekolah','LRT',0,'C',true);
+$pdf->Cell(15,6,'Jenjang','LRT',0,'C',true);
+$pdf->Cell(60,6,'Jurusan','LRT',0,'C',true);
+$pdf->Cell(30,6,'Tahun Lulus','LRT',0,'C',true);   
  $pdf->Ln(); //KOLOM PENDIDIKAN
  $pdf->SetFillColor(255,255,255);
-$pdf->SetFont('helvetica','',10); 
+$pdf->SetFont('helvetica','',8); 
 $pdf->Cell(10,6,'1','LRTB',0,'L',true);
-$pdf->Cell(40,6,$sekolah_nama,'LRTB',0,'C',true);
-$pdf->Cell(40,6,$sekolah_akhir,'LRTB',0,'C',true);
-$pdf->Cell(40,6,$sekolah_jur,'LRTB',0,'C',true);
-$pdf->Cell(40,6,$sekolah_th_lulus,'LRTB',0,'C',true);   
+$pdf->Cell(70,6,$sekolah_nama,'LRTB',0,'C',true);
+$pdf->Cell(15,6,$sekolah_akhir,'LRTB',0,'C',true);
+$pdf->Cell(60,6,$sekolah_jur,'LRTB',0,'C',true);
+$pdf->Cell(30,6,$sekolah_th_lulus,'LRTB',0,'C',true);   
  
 
 //PELATIHAN 
@@ -417,7 +387,7 @@ $pdf->SetLeftMargin(15);
 $pdf->Ln();
 $pdf->Ln();
 
-$pdf->SetFont('helvetica','',10); 
+$pdf->SetFont('helvetica','',8); 
 $pdf->Cell(10,6,'3.PELATIHAN','',0,'',true);	
 $pdf->Ln(); //KOLOM PENDIDIKAN
 $pdf->SetFont('helvetica','',10); 
@@ -429,11 +399,11 @@ $pdf->Cell(20,6,'Tahun','LRT',0,'C',true);
 
  $pdf->Ln(); //KOLOM PENDIDIKAN
  $pdf->SetFillColor(255,255,255);
-$pdf->SetFont('helvetica','',10); 
+$pdf->SetFont('helvetica','',8); 
 $pdf->Cell(10,6,'1','LRTB',0,'L',true);
-$pdf->Cell(60,6,$sekolah_nama,'LRTB',0,'C',true);
-$pdf->Cell(80,6,$sekolah_akhir,'LRTB',0,'C',true);
-$pdf->Cell(20,6,$sekolah_jur,'LRTB',0,'C',true);
+$pdf->Cell(60,6,'-','LRTB',0,'C',true);
+$pdf->Cell(80,6,'-','LRTB',0,'C',true);
+$pdf->Cell(20,6,'-','LRTB',0,'C',true);
   
   
  

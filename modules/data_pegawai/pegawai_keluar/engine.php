@@ -82,25 +82,30 @@ global $field_name;
     $r_resign__approval= $_POST[rsg__approval];
     $r_resign__ket     = $_POST[rsg__ket]; 
     $r_resign__nip     = $_POST[rsg__nip];
+    $r_resign__regretted=$_POST[keluhan];
     $t_sp__date_created = $tgl_now;
     $t_sp__user_created = $id_peg;
 
+
  
-    $sql_cek_no="SELECT  A.t_sp__no,  A.t_sp__nip,  A.t_sp__tgl,  A.t_sp__jabatan,  A.t_sp__cabang,  A.t_sp__jenis,  A.t_sp__alasan
-                    FROM t_surat_peringatan A where A.t_sp__nip='$t_sp__nip' ";
+    $sql_cek_no="SELECT
+                r_resign.r_resign__no,
+                r_resign.r_resign__tgl,
+                r_resign.r_resign__mutasi,
+                r_resign.r_resign__approval,
+                r_resign.r_resign__ket
+                FROM
+                r_resign WHERE   r_resign.r_resign__mutasi='$r_resign__mutasi' ";
 
    $rs_val = $db->Execute($sql_cek_no);
-   $cek_no__sp= $rs_val->fields['t_sp__no'];
+   $cek_mutasi= $rs_val->fields['r_resign__mutasi'];
   
-   
-   $sql_jml_sp="SELECT  count(A.t_sp__no) AS jml_sp FROM t_surat_peringatan A where A.t_sp__nip='$t_sp__nip' ";
-   $rs_val = $db->Execute($sql_jml_sp);
-   $jml_sp= $rs_val->fields['jml_sp'];
-   
+    
+
    
    
  
- if ($r_resign__no=='') {
+ if ($r_resign__no=='' or $rs_val==false ) {
 			Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 		}else{
                     
@@ -113,24 +118,29 @@ global $field_name;
                         $aktif=0;
                     }
                     
-                        $sql_edit7  ="UPDATE r_penempatan set ";
-                        $sql_edit7 .="r_pnpt__aktif = '$aktif' ";
-                        $sql_edit7 .="  WHERE r_pnpt__no_mutasi='$r_resign__mutasi'";
-			$sqlresult7 = $db->Execute($sql_edit7);
+                        $sql_edit7  =" UPDATE r_penempatan set ";
+                        $sql_edit7 .=" r_pnpt__aktif = '$aktif' ,";
+                        $sql_edit7 .=" r_pnpt__date_updated = now(), ";
+                        $sql_edit7 .=" r_pnpt__user_updated = '$aktif' ";
+                        $sql_edit7 .=" WHERE r_pnpt__no_mutasi='$cek_mutasi'";
+			$sqlresult7 =  $db->Execute($sql_edit7);
+ 
+
                            
-                        $sql_edit  ="UPDATE $tbl_name set ";
+                        $sql_edit  =" UPDATE $tbl_name set ";
                         $sql_edit .=" r_resign__tgl='$r_resign__tgl',";
                         $sql_edit .=" r_resign__mutasi='$r_resign__mutasi',";
                         $sql_edit .=" r_resign__approval='$r_resign__approval',";
                         $sql_edit .=" r_resign__ket='$r_resign__ket',";
-                        $sql_edit .=" t_resign__date_updated = now(), ";
-                        $sql_edit .=" t_resign__user_updated = '$id_peg'";
-                        $sql_edit .="  WHERE r_resign__no='$r_resign__no' ";
+                        $sql_edit .=" r_resign__regretted='$r_resign__regretted',";
+                        $sql_edit .=" r_resign__date_updated = now(), ";
+                        $sql_edit .=" r_resign__user_updated = '$id_peg'";
+                        $sql_edit .=" WHERE r_resign__no='$r_resign__no' ";
                         
-                        //var_dump($sql_edit)or die();
+                      
                         $sqlresult = $db->Execute($sql_edit);
                      
-			Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+			Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]."&no_cari=".$r_resign__mutasi);
 		
                 }
 }
@@ -153,6 +163,7 @@ $r_resign__tgl      = $_POST[rsg__tgl];
 $r_resign__approval = $_POST[rsg__approval];
 $r_resign__mutasi   = $_POST[rsg__mutasi];
 $r_resign__ket      = $_POST[rsg__ket];
+ $r_resign__regretted=$_POST[keluhan];
 
 
 
@@ -161,42 +172,60 @@ $r_resign__ket      = $_POST[rsg__ket];
    $rs_val = $db->Execute($sql_cek_no);
    $no_mutasi   = $rs_val->fields['no_mutasi'];
    $nip         =$rs_val->fields['r_pnpt__nip'];
-   
-    $sql_jml_sp="SELECT count(A.t_sp__no) AS jml_sp FROM t_surat_peringatan A where A.t_sp__nip='$t_sp__nip' ";
-    $rs_val = $db->Execute($sql_jml_sp);
-    $jml_sp= $rs_val->fields['jml_sp'];
-   
+ 
 
- if ($r_resign__nip=='') {
+ if ($r_resign__nip=='' or $rs_val==false) {
 			Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
 		}else
                 {
-                        $sql_edit7  ="UPDATE r_penempatan set ";
-                        $sql_edit7 .="r_pnpt__aktif = '0' ";
-                        $sql_edit7 .="  WHERE r_pnpt__nip='$nip' and r_pnpt__aktif='1' ";
-			$sqlresult7 = $db->Execute($sql_edit7);
-                    
+                  
+                    if(!empty($r_resign__tgl)&&!empty($r_resign__mutasi)&&!empty($r_resign__ket)&&!empty($r_resign__regretted))
+                    {
                                     $sql= "INSERT INTO $tbl_name ("
-                                            . "r_resign__no,"
+                                          
                                             . "r_resign__tgl, "
                                             . "r_resign__mutasi,"
                                             . "r_resign__approval,"
                                             . "r_resign__ket,"
-                                            . "t_resign__date_created,"
-                                            . "t_resign__user_created)";
+                                            . "r_resign__regretted,"
+                                            . "r_resign__date_created,"
+                                            . "r_resign__date_updated,"
+                                            . "r_resign__user_created,"
+                                            . "r_resign__user_updated)";
  
                                     $sql	.= " VALUES ("
-                                            . "'$r_resign__no',"
+                                           
                                             . "'$r_resign__tgl',"
                                             . "'$r_resign__mutasi',"
                                             . "'$r_resign__approval',"
                                             . "'$r_resign__ket',"
+                                            . "'$r_resign__regretted',"
                                             . "now(),"
+                                            . "now(),"
+                                            . "'$id_peg',"
                                             . "'$id_peg')";
-                                
+                             
 
-$sqlresult = $db->Execute($sql);
-Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+                        $sqlres = $db->Execute($sql); 
+                    }
+                    else
+                    {
+                      Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+                    }
+                                       
+                   if($sqlres==true)
+                   {
+                        $sql_edit7  ="UPDATE r_penempatan set ";
+                        $sql_edit7 .="r_pnpt__aktif = '0' ";
+                        $sql_edit7 .="  WHERE r_pnpt__nip='$nip' and r_pnpt__aktif='1'";    
+			$sqlresult7 = $db->Execute($sql_edit7); 
+                   }else{ 
+                       
+                        Header("Location:index_cek.php?ERR=5&cek_no__sp=".$t_sp__no."&mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]);
+                   }
+                                            
+                    
+                        Header("Location:index.php?mod_id=$mod_id&limit=".$_POST[limit]."&SORT=".$_POST['SORT']."&page=".$_POST[page]."&no_cari=".$r_resign__mutasi);
                 }
 
     

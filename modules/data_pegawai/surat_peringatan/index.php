@@ -769,12 +769,8 @@ else
                          
  
 				if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
-
-
                                 $numresults=$db->Execute($sql);
-                           
 				$count = $numresults->RecordCount();
-
 				$pages = $p->findPages($count,$LIMIT); 
 				$sql  .= "LIMIT ".$start.", ".$LIMIT;
 				

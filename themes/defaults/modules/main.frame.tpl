@@ -1,18 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
-
 <!-- #BeginEditable "TITLE" -->
-
 <title><!--{$TITLE}--></title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
+<meta http-equiv="Cache-control" content="no-cache">
 <link rel="stylesheet" href="<!--{$HREF_CSS_PATH}-->/common.css" type="text/css">
 <link rel="stylesheet" href="<!--{$HREF_CSS_PATH}-->/preload.css" type="text/css">
 <script src='<!--{$HREF_JS_PATH}-->/jquery.js' type='text/javascript'></script>
 <script src='<!--{$HREF_JS_PATH}-->/jquery.imghover.js' type='text/javascript'></script>
 <script src='<!--{$HREF_JS_PATH}-->/common.js' type='text/javascript'></script>
 <script src='<!--{$HREF_JS_PATH}-->/global.js' type='text/javascript'></script>
-
 
 <style type="text/css">
 img.pngfix { behavior: url("<!--{$HREF_CSS_PATH}-->/iepngfix.htc") }
@@ -64,10 +61,10 @@ img.link { behavior: url("<!--{$HREF_CSS_PATH}-->/iepngfix.htc"); cursor:pointer
 		    <td>Letak Geografis</td>
 		    <td>: 02' 27` 20" LS 04' 24` 55" LU
 		    113 49'00 119 57 ' BT</td>
-		  </tr> 
+		  </tr>
 		</table>
 		</td>
-  </tr> 
+  </tr>
 </table>
 
 <!-- ### END INFO BOX ### -->
@@ -92,7 +89,7 @@ img.link { behavior: url("<!--{$HREF_CSS_PATH}-->/iepngfix.htc"); cursor:pointer
 
 <!--{if $USER_ID == 'BABEL'}-->
     <img src="<!--{$HREF_IMG_PATH}-->/common/propinsi/BABEL.PNG">
- 
+
       <!--{else}-->
     <img src="<!--{$HREF_IMG_PATH}-->/common/kabupaten/pwni1.gif">
 <!--{/if}-->
@@ -105,63 +102,63 @@ img.link { behavior: url("<!--{$HREF_CSS_PATH}-->/iepngfix.htc"); cursor:pointer
 <tr><td>
 <table width="97%" align="center">
 
-        <tr> 
+        <tr>
           <td class="text-regular" width="120px">Level Pengguna</td>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right"><B><!--{$LEVEL|upper}--></B></td>
 		  </tr>
-     
-        <tr> 
+
+        <tr>
           <td class="text-regular" width="120px">Nama Lengkap</td>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right"><B><!--{$USER_NAME|upper}--></B></td>
 		  </tr>
-		<tr> 
+		<tr>
           <td class="text-regular">Nama Panggilan</td>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right"><!--{$USER_NICK|upper}--></td>
         </tr>
- 	<!--	<tr> 
+ 	<!--<tr>
           <td class="text-regular">Tanggal Aktif User</td>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right">$USER_DATE_JOIN</td>
         </tr> -->
-		<tr> 
+		<tr>
           <td class="text-regular">Alamat</td>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right"><!--{$USER_ADDRESS}--></td>
         </tr>
-		<tr> 
+		<tr>
           <td class="text-regular">No. Telepon</td>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right"><!--{$USER_TELEPON}--></td>
         </tr>
-		<tr> 
+		<tr>
           <td class="text-regular">E-mail</td>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right"><!--{$USER_EMAIL}--></td>
         </tr>
-        <tr> 
+        <tr>
           <td class="text-regular">Terakhir Masuk<i>(Waktu)</i></td>
           <td class="text-regular">:</td>
           <td class="text-regular" align="right"><!--{$USER_LAST_LOGIN_DATE}--></td>
         </tr>
-		<tr> 
+		<tr>
           <td class="text-regular">Terakhir Masuk <i>(Host)</i></td>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right"><!--{$USER_LAST_LOGIN_HOST}--></td>
         </tr>
-		<tr> 
+		<tr>
           <td class="text-regular">Terakhir Keluar Aplikasi <i>(Waktu)</i></td>
           <td class="text-regular">:</td>
           <td class="text-regular" align="right"><!--{$USER_LAST_LOGOUT_DATE}--></td>
         </tr>
-		<tr> 
+		<tr>
           <td class="text-regular">Terakhir Keluar Aplikasi <i>(Host)</i></td>
           <td class="text-regular">:</td>
 		  <td class="text-regular" align="right"><!--{$USER_LAST_LOGOUT_HOST}--></td>
         </tr>
-        
+
       </table>
       </td></tr></table>
 </td></tr></table>

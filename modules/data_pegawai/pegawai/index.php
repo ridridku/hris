@@ -53,6 +53,7 @@ $kode_pw_ses  = $_SESSION['SESSION_KODE_CABANG'];
 $today =date("Y-m-d");
 
 
+
 $smarty->assign ("JENIS_USER_SES", $jenis_user);
 $smarty->assign ("KODE_PW_SES", $kode_pw_ses);
 $smarty->assign ("TODAY", $today);
@@ -66,7 +67,6 @@ $smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/data_pegawai/pegawa
 $smarty->assign ("HREF_IMG_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images'));
 $smarty->assign ("HREF_CSS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/css'));
 $smarty->assign ("HREF_JS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts'));
-
 
 #DIR
 $smarty->assign ("DIR_HOME_PATH", $DIR_HOME);
@@ -91,9 +91,7 @@ if($_POST['mod_id'])
 {
 		$mod_id = $_GET['mod_id'];
 }
-
 $user_id = base64_decode($_SESSION['UID']);
-
 $smarty->assign ("MOD_ID", $mod_id);
 
 #Initiate TABLE
@@ -145,9 +143,6 @@ else if ($_POST['ktp_cari']) $ktp_cari= $_POST['ktp_cari'];
 else $ktp_cari="";
 
 
-
-
-
 $smarty->assign ("KODE_PERWAKILAN_CARI", $kode_perwakilan_cari);
 $smarty->assign ("NO_PASPOR_CARI", $no_paspor_cari);
 $smarty->assign ("NAMA_PEGAWAI_CARI", $nama_pegawai_cari);
@@ -189,14 +184,15 @@ $sql_subcab = "SELECT subcab.r_subcab__nama,subcab.r_subcab__id FROM r_cabang ca
                         }
 $smarty->assign ("DATA_SUBCABANG", $data_subcab);
 //-----------------CLOSE DATA SUBCABANG------------//
-//------------------DATA AJAX SUBCAB2---------//
+//------------------DATA AJAX SUBCAB2-------------//
 
-if ($_GET[get_subcab2] == 1)
+
+if ($_GET[q] == 1)
 {
-    $subcabang = $_GET[no_subcab];
-			if($subcabang!=''){
+    $nosubcab = $_GET[y];
+			if($nosubcab!=''){
 					$sql_kabupaten = "SELECT cab.r_cabang__id ,cab.r_cabang__nama,subcab.r_subcab__nama,subcab.r_subcab__id as subcab FROM r_cabang cab,r_subcabang subcab
-                                                          where cab.r_cabang__id=subcab.r_subcab__cabang AND cab.r_cabang__id='$subcabang' ORDER BY cab.r_cabang__nama ASC";
+                                                          where cab.r_cabang__id=subcab.r_subcab__cabang AND cab.r_cabang__id='$nosubcab' ORDER BY cab.r_cabang__nama ASC";
                                         //var_dump($sql_kabupaten)or die();
                                         $recordSet_kabupaten = $db->Execute($sql_kabupaten);
 					$input_kab="<select name=kode_subcab_cari>";
@@ -289,7 +285,6 @@ $sql_dep = " SELECT r_dept__id,
   r_dept__user_created,
   r_dept__user_updated from r_departement A order by r_dept__ket";
 $result_dep = $db->Execute($sql_dep);
-
 $initSet = array();
 $data_dep = array();
 $z=0;
@@ -527,7 +522,6 @@ if ($_GET[get_kec_alm] == 1)
 
 if ($_GET[get_desa_alm] == 1)
 {
-   
   $kec_id = $_GET[kec_id];
   if($kec_id!=''){
 					$sql_kecamatan = "SELECT
@@ -570,10 +564,9 @@ if ($_GET[get_prop_ortu] == 1)
 	$no_prop_ortu = $_GET[no_prop_ortu];    
 			if($no_prop_ortu!=''){
 					$sql_kabupaten = "SELECT A.r_provinsi__id,A.r_provinsi__nama,B.r_kabupaten__id,B.r_kabupaten__nama,B.r_kabupaten__sts FROM r_provinsi A
-                                                            LEFT JOIN r_kabupaten B on A.r_provinsi__id = B.r_kabupaten__provinsi_id
-                                                            WHERE A.r_provinsi__id='".$no_prop_ortu."' ORDER BY A.r_provinsi__id ASC";
+                                                          LEFT JOIN r_kabupaten B on A.r_provinsi__id = B.r_kabupaten__provinsi_id
+                                                          WHERE A.r_provinsi__id='".$no_prop_ortu."' ORDER BY A.r_provinsi__id ASC";
 					$recordSet_kabupaten = $db->Execute($sql_kabupaten);
-					
 					$input_kab2="<select name=r_pegawai__ortu_kab  onchange=\"cari_kec_ortu(this.value)\">";
 					$input_kab2.="<option value=''";
 					$input_kab2.="</option> ";
@@ -791,7 +784,7 @@ if($opt=="1"){
         $edit_r_pegawai__jk = $resultSet->fields[r_pegawai__jk];
         $edit_r_pegawai__ktp = $resultSet->fields[r_pegawai__ktp];
         $edit_r_pegawai__sim = $resultSet->fields[r_pegawai__sim];
-       $edit_r_pegawai__nama_jalan=$resultSet->fields[r_pegawai__nama_jalan];
+        $edit_r_pegawai__nama_jalan=$resultSet->fields[r_pegawai__nama_jalan];
         $edit_r_pegawai__ktp_prov = $resultSet->fields[r_pegawai__ktp_prov];
         $edit_r_pegawai__ktp_kab = $resultSet->fields[r_pegawai__ktp_kab];
         $edit_r_pegawai__ktp_kec = $resultSet->fields[r_pegawai__ktp_kec];
@@ -857,7 +850,7 @@ if($opt=="1"){
         $edit_r_pegawai__status_kawin = $resultSet->fields[r_pegawai__status_kawin];
         $edit_r_pegawai__tgl_masuk = $resultSet->fields[r_pegawai__tgl_masuk];
         $edit_r_pegawai__id_subcab = $resultSet->fields[r_pegawai__id_subcab];
-        $edit_r_pegawai__subdept = $resultSet->fields[r_pegawai__subdept];
+        $edit_r_pegawai__subdept = $resultSet->fields[r_pegawai__bpjs_kesehatan];
         $edit_r_pegawai__jabatan = $resultSet->fields[r_pegawai__jabatan];
         $edit_r_pegawai__st_pegawai = $resultSet->fields[r_pegawai__st_pegawai];
         $edit_r_pegawai__pend_tgl_lulus = $resultSet->fields[r_pegawai__pend_tgl_lulus];
@@ -914,7 +907,7 @@ $smarty->assign ("EDIT_R_PEGAWAI__ORTU_RT",$edit_r_pegawai__ortu_rt);
 $smarty->assign ("EDIT_R_PEGAWAI__ORTU_RW",$edit_r_pegawai__ortu_rw);
 $smarty->assign ("EDIT_R_PEGAWAI__ORTU_KODEPOS",$edit_r_pegawai__ortu_kodepos);
 $smarty->assign ("EDIT_R_PEGAWAI__NPWP",$edit_r_pegawai__npwp);
-$smarty->assign ("EDIT_R_PEGAWAI__NO_BPJS",$edit_r_pegawai__no_bpjs);
+$smarty->assign ("EDIT_BPJS_KETENAGAKERJAAN",$edit_r_pegawai__no_bpjs);
 $smarty->assign ("EDIT_R_PEGAWAI__NO_ASKES",$edit_r_pegawai__no_askes);
 $smarty->assign ("EDIT_R_PEGAWAI__BANK1",$edit_r_pegawai__bank1);
 $smarty->assign ("EDIT_R_PEGAWAI__BANK1_REK",$edit_r_pegawai__bank1_rek);
@@ -945,8 +938,6 @@ $path_gambar = explode('_', $edit_r_pegawai__photo);
 $foto_no  = $path_gambar[0];
 $foto_name= $path_gambar[1];
 
-
-
 IF($edit_r_pegawai__photo=='' OR $edit_r_pegawai__photo=='-')
     {
         $true=0;
@@ -957,7 +948,7 @@ IF($edit_r_pegawai__photo=='' OR $edit_r_pegawai__photo=='-')
         $true=1;
         $smarty->assign ("ADA_IMAGE",$true);   
         $smarty->assign ("FOTO_NO",$foto_no);   
-        $smarty->assign ("FOTO_NAME",$foto_name);
+        $smarty->assign ("FOTO_NAME",$edit_r_pegawai__photo);
     }
  
 
@@ -965,7 +956,7 @@ IF($edit_r_pegawai__photo=='' OR $edit_r_pegawai__photo=='-')
 $smarty->assign ("EDIT_R_PEGAWAI__STATUS_KAWIN",$edit_r_pegawai__status_kawin);
 $smarty->assign ("EDIT_R_PEGAWAI__TGL_MASUK",$edit_r_pegawai__tgl_masuk);
 $smarty->assign ("EDIT_R_PEGAWAI__ID_SUBCAB",$edit_r_pegawai__id_subcab);
-$smarty->assign ("EDIT_R_PEGAWAI__SUBDEPT",$edit_r_pegawai__subdept);
+$smarty->assign ("EDIT_BPJS_KESEHATAN",$edit_r_pegawai__subdept);
 $smarty->assign ("EDIT_R_PEGAWAI__JABATAN",$edit_r_pegawai__jabatan);
 $smarty->assign ("EDIT_R_PEGAWAI__ST_PEGAWAI",$edit_r_pegawai__st_pegawai);
 $smarty->assign ("EDIT_R_PEGAWAI__TGL_PENGANGKATAN",$edit_r_pegawai__tgl_pengangkatan);
@@ -986,9 +977,7 @@ $smarty->assign ("EDIT_VAL", $edit);
 //----------------EDIT DATA KABUPATEN KTP---------------------//	
    
         $sql_kabupaten_ktp = "SELECT * FROM r_kabupaten where r_kabupaten__id='".$edit_r_pegawai__ktp_kab."' ORDER BY r_kabupaten__id ASC ";
-      
         $result_kabupaten_ktp = $db->Execute($sql_kabupaten_ktp);
-
         $initSet = array();
         $data_kabupaten_ktp = array();
         $z=0;
@@ -1024,7 +1013,7 @@ $smarty->assign ("EDIT_VAL", $edit);
 
 //----------------CLOSE EDIT DATA KECAMATAN-------------//	
         
-//----------------  EDIT DATA DESA KTP-------------//
+//----------------EDIT DATA DESA KTP-------------------//
        $sql_desa= "SELECT
                             A.r_desa__id,
                             A.r_desa__kecamatan_id,
@@ -1264,159 +1253,84 @@ if ($_GET['search'] == '1')
  
 		  if($jenis_user=='2'){
 
-                                                $sql  = "  SELECT 
-                                                        r_penempatan.r_pnpt__nip AS r_pnpt__nip,
-                                                        r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
-                                                        r_penempatan.r_pnpt__jabatan AS r_pnpt__jabatan,
-                                                        r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
-                                                        r_penempatan.r_pnpt__status AS r_pnpt__status,
-                                                        r_penempatan.r_pnpt__tipe_salary AS r_pnpt__tipe_salary,
-                                                        r_penempatan.r_pnpt__subdept AS r_pnpt__subdept,
-                                                        r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
-                                                        r_penempatan.r_pnpt__gapok AS r_pnpt__gapok,
-                                                        r_penempatan.r_pnpt__subcab AS r_pnpt__subcab,
-                                                        r_penempatan.r_pnpt__shift AS r_pnpt__shift,
-                                                        r_penempatan.r_pnpt__kon_awal AS r_pnpt__kon_awal,
-                                                        r_penempatan.r_pnpt__kon_akhir AS r_pnpt__kon_akhir,
-                                                        r_penempatan.r_pnpt__aktif AS r_pnpt__aktif,
-                                                        r_penempatan.r_pnpt__pdrm AS r_pnpt__pdrm,
-                                                        r_jabatan.r_jabatan__id AS r_jabatan__id,
-                                                        r_jabatan.r_jabatan__ket AS r_jabatan__ket,
-                                                        r_subdepartement.r_subdept__id AS r_subdept__id,
-                                                        r_subdepartement.r_subdept__ket AS r_subdept__ket,
-                                                        r_departement.r_dept__akronim AS r_dept__akronim,
-                                                        r_departement.r_dept__id AS r_dept__id,
-                                                        r_departement.r_dept__ket AS r_dept__ket,
-                                                        r_subcabang.r_subcab__nama AS r_subcab__nama,
-                                                        r_cabang.r_cabang__nama AS r_cabang__nama,
-                                                        r_cabang.r_cabang__id AS r_cabang__id,
-                                                        r_subcabang.r_subcab__id AS r_subcab__id,
-                                                        r_subcabang.r_subcab__cabang AS r_subcab__cabang,
-                                                        r_pegawai.r_pegawai__id AS r_pegawai__id,
-                                                        r_pegawai.r_pegawai__nama AS r_pegawai__nama,
-                                                        r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
-                                                        r_pegawai.r_pegawai__ktp AS r_pegawai__ktp,
-                                                        r_status_pegawai.r_stp__id AS r_stp__id,
-                                                        r_status_pegawai.r_stp__nama AS r_stp__nama
-                                                        
-
-                                                      FROM
-                                                        r_pegawai
-                                                        INNER JOIN r_penempatan
-                                                          ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-                                                        INNER JOIN r_jabatan
-                                                          ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-                                                        INNER JOIN r_subdepartement
-                                                          ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-                                                        INNER JOIN r_subcabang
-                                                          ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-                                                        INNER JOIN r_departement
-                                                          ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-                                                        INNER JOIN r_cabang
-                                                          ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-                                                        INNER JOIN r_status_pegawai
-                                                          ON r_status_pegawai.r_stp__id = r_penempatan.r_pnpt__status
-                                                        INNER JOIN r_provinsi
-                                                        ON r_provinsi.r_provinsi__id=r_pegawai__ktp_prov
-                                                        INNER JOIN r_kabupaten
-                                                        ON r_kabupaten.r_kabupaten__id=r_pegawai__ktp_kab
-                                                        INNER JOIN r_kecamatan 
-                                                        ON r_kecamatan.r_kecamatan__id=r_pegawai__ktp_kec
-                                                        INNER JOIN r_wilayah
-                                                        ON  r_wilayah.r_desa__id=r_pegawai__ktp_desa
-                                                        INNER JOIN r_agama
-                                                          ON r_agama.r_agama__id=r_pegawai__agama where r_cabang__id= '".$kode_pw_ses."'";
+                            $sql  = "SELECT  CASE B.r_pnpt__no_mutasi
+					WHEN (SELECT r_resign.r_resign__mutasi
+					FROM r_resign WHERE r_resign.r_resign__mutasi = B.r_pnpt__no_mutasi
+					AND r_resign__approval = 1
+					) THEN '0' ELSE'1'
+					END ket_resign,	B.*  FROM (SELECT 
+                                       r_jabatan.*,r_subdepartement.*,r_departement.*,r_subcabang.*,r_cabang.*,r_kecamatan.*,r_kabupaten.*,r_provinsi.*,
+                                        A.*
+                                         FROM (SELECT r_penempatan .*,r_pegawai.* FROM r_penempatan
+                                        INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id = r_penempatan.r_pnpt__id_pegawai
+                                        ORDER BY r_penempatan.r_pnpt__date_updated DESC )A
+                                        INNER JOIN r_jabatan ON A.r_pnpt__jabatan = r_jabatan.r_jabatan__id
+                                        INNER JOIN r_subdepartement ON A.r_pnpt__subdept = r_subdepartement.r_subdept__id
+                                        INNER JOIN r_subcabang ON  r_subcabang.r_subcab__id = A.r_pnpt__subcab
+                                        INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+                                        INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+                                        INNER JOIN r_status_pegawai ON r_status_pegawai.r_stp__id = A.r_pnpt__status
+                                        INNER JOIN r_provinsi ON r_provinsi.r_provinsi__id = r_pegawai__ktp_prov
+                                        INNER JOIN r_kabupaten ON r_kabupaten.r_kabupaten__id = r_pegawai__ktp_kab
+                                        INNER JOIN r_kecamatan ON r_kecamatan.r_kecamatan__id = r_pegawai__ktp_kec
+                                        INNER JOIN r_wilayah ON r_wilayah.r_desa__id = r_pegawai__ktp_desa
+                                        INNER JOIN r_agama ON r_agama.r_agama__id = r_pegawai__agama
+                                        GROUP BY A.r_pegawai__id)B
+                                        where B.r_cabang__id= '".$kode_pw_ses."'";
 			} else {
-						$sql  = "  SELECT 
-                                                        r_penempatan.r_pnpt__nip AS r_pnpt__nip,
-                                                        r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
-                                                        r_penempatan.r_pnpt__jabatan AS r_pnpt__jabatan,
-                                                        r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
-                                                        r_penempatan.r_pnpt__status AS r_pnpt__status,
-                                                        r_penempatan.r_pnpt__tipe_salary AS r_pnpt__tipe_salary,
-                                                        r_penempatan.r_pnpt__subdept AS r_pnpt__subdept,
-                                                        r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
-                                                        r_penempatan.r_pnpt__gapok AS r_pnpt__gapok,
-                                                        r_penempatan.r_pnpt__subcab AS r_pnpt__subcab,
-                                                        r_penempatan.r_pnpt__shift AS r_pnpt__shift,
-                                                        r_penempatan.r_pnpt__kon_awal AS r_pnpt__kon_awal,
-                                                        r_penempatan.r_pnpt__kon_akhir AS r_pnpt__kon_akhir,
-                                                        r_penempatan.r_pnpt__aktif AS r_pnpt__aktif,
-                                                        r_penempatan.r_pnpt__pdrm AS r_pnpt__pdrm,
-                                                        r_jabatan.r_jabatan__id AS r_jabatan__id,
-                                                        r_jabatan.r_jabatan__ket AS r_jabatan__ket,
-                                                        r_subdepartement.r_subdept__id AS r_subdept__id,
-                                                        r_subdepartement.r_subdept__ket AS r_subdept__ket,
-                                                        r_departement.r_dept__akronim AS r_dept__akronim,
-                                                        r_departement.r_dept__id AS r_dept__id,
-                                                        r_departement.r_dept__ket AS r_dept__ket,
-                                                        r_subcabang.r_subcab__nama AS r_subcab__nama,
-                                                        r_cabang.r_cabang__nama AS r_cabang__nama,
-                                                        r_cabang.r_cabang__id AS r_cabang__id,
-                                                        r_subcabang.r_subcab__id AS r_subcab__id,
-                                                        r_subcabang.r_subcab__cabang AS r_subcab__cabang,
-                                                        r_pegawai.r_pegawai__id AS r_pegawai__id,
-                                                        r_pegawai.r_pegawai__nama AS r_pegawai__nama,
-                                                        r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
-                                                        r_pegawai.r_pegawai__ktp AS r_pegawai__ktp,
-                                                        r_status_pegawai.r_stp__id AS r_stp__id,
-                                                        r_status_pegawai.r_stp__nama AS r_stp__nama
-
-                                                      FROM
-                                                        r_pegawai
-                                                        INNER JOIN r_penempatan
-                                                          ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-                                                        INNER JOIN r_jabatan
-                                                          ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-                                                        INNER JOIN r_subdepartement
-                                                          ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-                                                        INNER JOIN r_subcabang
-                                                          ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-                                                        INNER JOIN r_departement
-                                                          ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-                                                        INNER JOIN r_cabang
-                                                          ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-                                                        INNER JOIN r_status_pegawai
-                                                          ON r_status_pegawai.r_stp__id = r_penempatan.r_pnpt__status
-                                                        INNER JOIN r_provinsi
-                                                        ON r_provinsi.r_provinsi__id=r_pegawai__ktp_prov
-                                                        INNER JOIN r_kabupaten
-                                                        ON r_kabupaten.r_kabupaten__id=r_pegawai__ktp_kab
-                                                        INNER JOIN r_kecamatan 
-                                                        ON r_kecamatan.r_kecamatan__id=r_pegawai__ktp_kec
-                                                        INNER JOIN r_wilayah
-                                                        ON  r_wilayah.r_desa__id=r_pegawai__ktp_desa
-                                                        INNER JOIN r_agama
-                                                          ON r_agama.r_agama__id=r_pegawai__agama where 1=1 ";	
+                            $sql  = "SELECT  CASE B.r_pnpt__no_mutasi
+					WHEN (SELECT r_resign.r_resign__mutasi
+					FROM r_resign WHERE r_resign.r_resign__mutasi = B.r_pnpt__no_mutasi
+					AND r_resign__approval = 1
+					) THEN '0' ELSE'1'
+					END ket_resign,	B.*  FROM (SELECT 
+                                    	r_jabatan.*,r_subdepartement.*,r_departement.*,r_subcabang.*,r_cabang.*,r_kecamatan.*,r_kabupaten.*,r_provinsi.*,
+                                        A.*
+                                         FROM (SELECT r_penempatan .*,r_pegawai.* FROM r_penempatan
+                                        INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id = r_penempatan.r_pnpt__id_pegawai
+                                        ORDER BY r_penempatan.r_pnpt__date_updated DESC )A
+                                        INNER JOIN r_jabatan ON A.r_pnpt__jabatan = r_jabatan.r_jabatan__id
+                                        INNER JOIN r_subdepartement ON A.r_pnpt__subdept = r_subdepartement.r_subdept__id
+                                        INNER JOIN r_subcabang ON  r_subcabang.r_subcab__id = A.r_pnpt__subcab
+                                        INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+                                        INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+                                        INNER JOIN r_status_pegawai ON r_status_pegawai.r_stp__id = A.r_pnpt__status
+                                        INNER JOIN r_provinsi ON r_provinsi.r_provinsi__id = r_pegawai__ktp_prov
+                                        INNER JOIN r_kabupaten ON r_kabupaten.r_kabupaten__id = r_pegawai__ktp_kab
+                                        INNER JOIN r_kecamatan ON r_kecamatan.r_kecamatan__id = r_pegawai__ktp_kec
+                                        INNER JOIN r_wilayah ON r_wilayah.r_desa__id = r_pegawai__ktp_desa
+                                        INNER JOIN r_agama ON r_agama.r_agama__id = r_pegawai__agama
+                                        GROUP BY A.r_pegawai__id)B
+                                        where 1=1";	
 
 			}
  
 				//echo "<br><br><br><br><br><br><br><br><br><br>dddddddddkode_perwakilan_cari ===".$kode_perwakilan_cari;
                                 if($kode_cabang_cari !=''){
-					$sql .= "AND r_cabang__id = '".$kode_cabang_cari."' ";
+					$sql .= " AND B.r_cabang__id = '".$kode_cabang_cari."' ";
 				}
 				if($kode_subcab_cari !=''){
-					$sql .= "AND r_subcab__id = '".$kode_subcab_cari."' "; 
+					$sql .= " AND B.r_subcab__id = '".$kode_subcab_cari."' "; 
 				}
 
 				if( $departemen_cari!=''){
-					$sql .= "AND r_dept__id = '".$departemen_cari."' ";
+					$sql .= " AND B.r_dept__id = '".$departemen_cari."' ";
 				} 
                                 if($nama_pegawai_cari_!=''){
 					
-                                        $sql .= "AND r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari_)."%'";
+                                        $sql .= " AND B.r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari_)."%'";
 				} 
                                  if($finger_pegawai_cari!=''){
 					
-                                        $sql .= "AND r_pnpt__finger_print ='".$finger_pegawai_cari."'";
+                                        $sql .= " AND B.r_pnpt__finger_print ='".$finger_pegawai_cari."'";
 				} 
 				  if($ktp_cari!=''){
 					
-                                        $sql .= "AND r_pegawai__ktp ='".$ktp_cari."'";
+                                        $sql .= " AND B.r_pegawai__ktp ='".$ktp_cari."'";
 				} 
 
 
-				$sql .= "ORDER BY  r_pegawai__id asc ";
+				$sql .= " GROUP BY B.r_pegawai__id ORDER BY B.r_pegawai__id asc  ";
 
                     if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
 
@@ -1424,8 +1338,8 @@ if ($_GET['search'] == '1')
 				$numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
 
-				$pages = $p->findPages($count,$LIMIT); 
-				$sql  .= "LIMIT ".$start.", ".$LIMIT;
+//				$pages = $p->findPages($count,$LIMIT); 
+//         			$sql  .= "LIMIT ".$start.", ".$LIMIT;
                                 
 				$recordSet = $db->Execute($sql);
 			
@@ -1449,8 +1363,8 @@ if ($_GET['search'] == '1')
 				}
 
 				$count_view = $start+1;
-				$count_all  = $start+$end;
-				$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
+//				$count_all  = $start+$end;
+//				$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
 }
 
 }
@@ -1462,171 +1376,92 @@ else
 			if($jenis_user=='2'){
 
                                                 
-                                                $sql =  " SELECT 
-                                                        r_penempatan.r_pnpt__nip AS r_pnpt__nip,
-                                                        r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
-                                                        r_penempatan.r_pnpt__jabatan AS r_pnpt__jabatan,
-                                                        r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
-                                                        r_penempatan.r_pnpt__status AS r_pnpt__status,
-                                                        r_penempatan.r_pnpt__tipe_salary AS r_pnpt__tipe_salary,
-                                                        r_penempatan.r_pnpt__subdept AS r_pnpt__subdept,
-                                                        r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
-                                                        r_penempatan.r_pnpt__gapok AS r_pnpt__gapok,
-                                                        r_penempatan.r_pnpt__subcab AS r_pnpt__subcab,
-                                                        r_penempatan.r_pnpt__shift AS r_pnpt__shift,
-                                                        r_penempatan.r_pnpt__kon_awal AS r_pnpt__kon_awal,
-                                                        r_penempatan.r_pnpt__kon_akhir AS r_pnpt__kon_akhir,
-                                                        r_penempatan.r_pnpt__aktif AS r_pnpt__aktif,
-                                                        r_penempatan.r_pnpt__pdrm AS r_pnpt__pdrm,
-                                                        r_jabatan.r_jabatan__id AS r_jabatan__id,
-                                                        r_jabatan.r_jabatan__ket AS r_jabatan__ket,
-                                                        r_subdepartement.r_subdept__id AS r_subdept__id,
-                                                        r_subdepartement.r_subdept__ket AS r_subdept__ket,
-                                                        r_departement.r_dept__akronim AS r_dept__akronim,
-                                                        r_departement.r_dept__id AS r_dept__id,
-                                                        r_departement.r_dept__ket AS r_dept__ket,
-                                                        r_subcabang.r_subcab__nama AS r_subcab__nama,
-                                                        r_cabang.r_cabang__nama AS r_cabang__nama,
-                                                        r_cabang.r_cabang__id AS r_cabang__id,
-                                                        r_subcabang.r_subcab__id AS r_subcab__id,
-                                                        r_subcabang.r_subcab__cabang AS r_subcab__cabang,
-                                                        r_pegawai.r_pegawai__id AS r_pegawai__id,
-                                                        r_pegawai.r_pegawai__nama AS r_pegawai__nama,
-                                                        r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
-                                                        r_pegawai.r_pegawai__ktp AS r_pegawai__ktp,
-                                                        r_status_pegawai.r_stp__id AS r_stp__id,
-                                                        r_status_pegawai.r_stp__nama AS r_stp__nama
-
-                                                      FROM
-                                                        r_pegawai
-                                                        INNER JOIN r_penempatan
-                                                          ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-                                                        INNER JOIN r_jabatan
-                                                          ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-                                                        INNER JOIN r_subdepartement
-                                                          ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-                                                        INNER JOIN r_subcabang
-                                                          ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-                                                        INNER JOIN r_departement
-                                                          ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-                                                        INNER JOIN r_cabang
-                                                          ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-                                                        INNER JOIN r_status_pegawai
-                                                          ON r_status_pegawai.r_stp__id = r_penempatan.r_pnpt__status
-                                                        INNER JOIN r_provinsi
-                                                        ON r_provinsi.r_provinsi__id=r_pegawai__ktp_prov
-                                                        INNER JOIN r_kabupaten
-                                                        ON r_kabupaten.r_kabupaten__id=r_pegawai__ktp_kab
-                                                        INNER JOIN r_kecamatan 
-                                                        ON r_kecamatan.r_kecamatan__id=r_pegawai__ktp_kec
-                                                        INNER JOIN r_wilayah
-                                                        ON  r_wilayah.r_desa__id=r_pegawai__ktp_desa
-                                                        INNER JOIN r_agama
-                                                          ON r_agama.r_agama__id=r_pegawai__agama where r_cabang__id= '".$kode_pw_ses."'";
+                                                $sql =  "SELECT  CASE B.r_pnpt__no_mutasi
+					WHEN (SELECT r_resign.r_resign__mutasi
+					FROM r_resign WHERE r_resign.r_resign__mutasi = B.r_pnpt__no_mutasi
+					AND r_resign__approval = 1
+					) THEN '0' ELSE'1'
+					END ket_resign,	B.* FROM (SELECT 
+                                       	r_jabatan.*,r_subdepartement.*,r_departement.*,r_subcabang.*,r_cabang.*,r_kecamatan.*,r_kabupaten.*,r_provinsi.*,
+                                        A.*
+                                         FROM (SELECT r_penempatan .*,r_pegawai.* FROM r_penempatan
+                                        INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id = r_penempatan.r_pnpt__id_pegawai
+                                        ORDER BY r_penempatan.r_pnpt__date_updated DESC )A
+                                        INNER JOIN r_jabatan ON A.r_pnpt__jabatan = r_jabatan.r_jabatan__id
+                                        INNER JOIN r_subdepartement ON A.r_pnpt__subdept = r_subdepartement.r_subdept__id
+                                        INNER JOIN r_subcabang ON  r_subcabang.r_subcab__id = A.r_pnpt__subcab
+                                        INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+                                        INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+                                        INNER JOIN r_status_pegawai ON r_status_pegawai.r_stp__id = A.r_pnpt__status
+                                        INNER JOIN r_provinsi ON r_provinsi.r_provinsi__id = r_pegawai__ktp_prov
+                                        INNER JOIN r_kabupaten ON r_kabupaten.r_kabupaten__id = r_pegawai__ktp_kab
+                                        INNER JOIN r_kecamatan ON r_kecamatan.r_kecamatan__id = r_pegawai__ktp_kec
+                                        INNER JOIN r_wilayah ON r_wilayah.r_desa__id = r_pegawai__ktp_desa
+                                        INNER JOIN r_agama ON r_agama.r_agama__id = r_pegawai__agama
+                                        GROUP BY A.r_pegawai__id)B
+                                        where B.r_cabang__id = '".$kode_pw_ses."'";
                                             
 
 			} else {
-						$sql  =  " SELECT 
-                                                        r_penempatan.r_pnpt__nip AS r_pnpt__nip,
-                                                        r_penempatan.r_pnpt__no_mutasi AS r_pnpt__no_mutasi,
-                                                        r_penempatan.r_pnpt__jabatan AS r_pnpt__jabatan,
-                                                        r_penempatan.r_pnpt__id_pegawai AS r_pnpt__id_pegawai,
-                                                        r_penempatan.r_pnpt__status AS r_pnpt__status,
-                                                        r_penempatan.r_pnpt__tipe_salary AS r_pnpt__tipe_salary,
-                                                        r_penempatan.r_pnpt__subdept AS r_pnpt__subdept,
-                                                        r_penempatan.r_pnpt__finger_print AS r_pnpt__finger_print,
-                                                        r_penempatan.r_pnpt__gapok AS r_pnpt__gapok,
-                                                        r_penempatan.r_pnpt__subcab AS r_pnpt__subcab,
-                                                        r_penempatan.r_pnpt__shift AS r_pnpt__shift,
-                                                        r_penempatan.r_pnpt__kon_awal AS r_pnpt__kon_awal,
-                                                        r_penempatan.r_pnpt__kon_akhir AS r_pnpt__kon_akhir,
-                                                        r_penempatan.r_pnpt__aktif AS r_pnpt__aktif,
-                                                        r_penempatan.r_pnpt__pdrm AS r_pnpt__pdrm,
-                                                        r_jabatan.r_jabatan__id AS r_jabatan__id,
-                                                        r_jabatan.r_jabatan__ket AS r_jabatan__ket,
-                                                        r_subdepartement.r_subdept__id AS r_subdept__id,
-                                                        r_subdepartement.r_subdept__ket AS r_subdept__ket,
-                                                        r_departement.r_dept__akronim AS r_dept__akronim,
-                                                        r_departement.r_dept__id AS r_dept__id,
-                                                        r_departement.r_dept__ket AS r_dept__ket,
-                                                        r_subcabang.r_subcab__nama AS r_subcab__nama,
-                                                        r_cabang.r_cabang__nama AS r_cabang__nama,
-                                                        r_cabang.r_cabang__id AS r_cabang__id,
-                                                        r_subcabang.r_subcab__id AS r_subcab__id,
-                                                        r_subcabang.r_subcab__cabang AS r_subcab__cabang,
-                                                        r_pegawai.r_pegawai__id AS r_pegawai__id,
-                                                        r_pegawai.r_pegawai__nama AS r_pegawai__nama,
-                                                        r_pegawai.r_pegawai__tgl_masuk AS r_pegawai__tgl_masuk,
-                                                         r_pegawai.r_pegawai__ktp AS r_pegawai__ktp,
-                                                        r_status_pegawai.r_stp__id AS r_stp__id,
-                                                        r_status_pegawai.r_stp__nama AS r_stp__nama
-
-                                                      FROM
-                                                        r_pegawai
-                                                        INNER JOIN r_penempatan
-                                                          ON r_penempatan.r_pnpt__id_pegawai = r_pegawai.r_pegawai__id
-                                                        INNER JOIN r_jabatan
-                                                          ON r_penempatan.r_pnpt__jabatan = r_jabatan.r_jabatan__id
-                                                        INNER JOIN r_subdepartement
-                                                          ON r_penempatan.r_pnpt__subdept = r_subdepartement.r_subdept__id
-                                                        INNER JOIN r_subcabang
-                                                          ON r_penempatan.r_pnpt__subcab = r_subcabang.r_subcab__id
-                                                        INNER JOIN r_departement
-                                                          ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
-                                                        INNER JOIN r_cabang
-                                                          ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
-                                                        INNER JOIN r_status_pegawai
-                                                          ON r_status_pegawai.r_stp__id = r_penempatan.r_pnpt__status
-                                                        INNER JOIN r_provinsi
-                                                        ON r_provinsi.r_provinsi__id=r_pegawai__ktp_prov
-                                                        INNER JOIN r_kabupaten
-                                                        ON r_kabupaten.r_kabupaten__id=r_pegawai__ktp_kab
-                                                        INNER JOIN r_kecamatan 
-                                                        ON r_kecamatan.r_kecamatan__id=r_pegawai__ktp_kec
-                                                        INNER JOIN r_wilayah
-                                                        ON  r_wilayah.r_desa__id=r_pegawai__ktp_desa
-                                                        INNER JOIN r_agama
-                                                          ON r_agama.r_agama__id=r_pegawai__agama where 1=1 ";	
+                                $sql  = "SELECT  CASE B.r_pnpt__no_mutasi
+					WHEN (SELECT r_resign.r_resign__mutasi
+					FROM r_resign WHERE r_resign.r_resign__mutasi = B.r_pnpt__no_mutasi
+					AND r_resign__approval = 1
+					) THEN '0' ELSE'1'
+					END ket_resign,	
+					B.* FROM (SELECT 
+                                       	r_jabatan.*,r_subdepartement.*,r_departement.*,r_subcabang.*,r_cabang.*,r_kecamatan.*,r_kabupaten.*,r_provinsi.*,
+                                        A.*
+                                         FROM (SELECT r_penempatan .*,r_pegawai.* FROM r_penempatan
+                                        INNER JOIN r_pegawai ON r_pegawai.r_pegawai__id = r_penempatan.r_pnpt__id_pegawai
+                                        ORDER BY r_penempatan.r_pnpt__date_updated DESC )A
+                                        INNER JOIN r_jabatan ON A.r_pnpt__jabatan = r_jabatan.r_jabatan__id
+                                        INNER JOIN r_subdepartement ON A.r_pnpt__subdept = r_subdepartement.r_subdept__id
+                                        INNER JOIN r_subcabang ON  r_subcabang.r_subcab__id = A.r_pnpt__subcab
+                                        INNER JOIN r_departement ON r_departement.r_dept__id = r_subdepartement.r_subdept__dept
+                                        INNER JOIN r_cabang ON r_cabang.r_cabang__id = r_subcabang.r_subcab__cabang
+                                        INNER JOIN r_status_pegawai ON r_status_pegawai.r_stp__id = A.r_pnpt__status
+                                        INNER JOIN r_provinsi ON r_provinsi.r_provinsi__id = r_pegawai__ktp_prov
+                                        INNER JOIN r_kabupaten ON r_kabupaten.r_kabupaten__id = r_pegawai__ktp_kab
+                                        INNER JOIN r_kecamatan ON r_kecamatan.r_kecamatan__id = r_pegawai__ktp_kec
+                                        INNER JOIN r_wilayah ON r_wilayah.r_desa__id = r_pegawai__ktp_desa
+                                        INNER JOIN r_agama ON r_agama.r_agama__id = r_pegawai__agama
+                                        GROUP BY A.r_pegawai__id)B
+                                         where B.r_cabang__id = '1'"; 	
 
 			}
-
-				
-                      
-
-
-
-                         if($kode_cabang_cari !=''){
-					$sql .= "AND r_cabang__id = '".$kode_cabang_cari."' ";
+                
+                                if($kode_cabang_cari !=''){
+					$sql .= " AND r_cabang__id = '".$kode_cabang_cari."' ";
 				}
 				if($kode_subcab_cari !=''){
-					$sql .= "AND r_subcab__id = '".$kode_subcab_cari."' "; 
+					$sql .= " AND B.r_subcab__id = '".$kode_subcab_cari."' "; 
 				}
-
 				if( $departemen_cari!=''){
-					$sql .= "AND r_dept__id = '".$departemen_cari."' ";
+					$sql .= " AND B.r_dept__id = '".$departemen_cari."' ";
 				} 
                                 if($nama_pegawai_cari_!=''){
 					
-                                        $sql .= "AND r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari_)."%'";
+                                        $sql .= " AND B.r_pegawai__nama LIKE '%".addslashes($nama_pegawai_cari_)."%'";
 				} 
                                  if($finger_pegawai_cari!=''){
 					
-                                        $sql .= "AND r_pnpt__finger_print ='".$finger_pegawai_cari."'";
+                                        $sql .= " AND B.r_pnpt__finger_print ='".$finger_pegawai_cari."'";
 				} 
                                  if($ktp_cari!=''){
 					
-                                        $sql .= "AND r_pegawai__ktp ='".$ktp_cari."'";
+                                        $sql .= " AND B.r_pegawai__ktp ='".$ktp_cari."'";
 				} 
                                 
-                            $sql .= " ORDER BY r_pegawai__id asc ";
+                            $sql .= "  GROUP BY B.r_pegawai__id ORDER BY B.r_pegawai__id asc ";
  
 				if ($_GET['page']) $start = $p->findStartGet($LIMIT); else $start = $p->findStartPost($LIMIT);
 
 
                                 $numresults=$db->Execute($sql);
 				$count = $numresults->RecordCount();
-				$pages = $p->findPages($count,$LIMIT); 
-				$sql  .= "LIMIT ".$start.", ".$LIMIT;
+//				$pages = $p->findPages($count,$LIMIT); 
+//				$sql  .= "LIMIT ".$start.", ".$LIMIT;
 				
 				$recordSet = $db->Execute($sql);
 				$end = $recordSet->RecordCount();
@@ -1649,8 +1484,8 @@ else
 				}
 
 				$count_view = $start+1;
-				$count_all  = $start+$end;
-				$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
+//				$count_all  = $start+$end;
+//				$next_prev = $p->nextPrevCustom($page, $pages, "ORDER=".$ORDER."&".$str_completer); 
 }
 //---------------------------------CLOSE VIEW INDEX---------------------------------------------------------------------//
 

@@ -51,7 +51,7 @@ require_once($DIR_INC."/libs.inc.php");
 // echo "<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>";
 #HREF
 $smarty->assign ("HREF_HOME_PATH", $HREF_HOME);
-$smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/form_isian/form_peminjaman');
+$smarty->assign ("HREF_HOME_PATH_AJAX", $HREF_HOME.'/modules/kehadiran/upload_kehadiran');
 $smarty->assign ("HREF_IMG_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/images'));
 $smarty->assign ("HREF_CSS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/css'));
 $smarty->assign ("HREF_JS_PATH", $HREF_THEME.'/'.(base64_decode($_SESSION['THEME']).'/javascripts'));
@@ -123,9 +123,9 @@ $SES_JENIS_USER             = $_SESSION['JENIS_USER'];
  
 
  IF ($_GET['ERR'] =='5') {
-	 $label_error = "Upload Berhasil";
+	 $label_error = "Upload Gagal atau File tidak sesuai ";
  } else {
-	 $label_error = "Upload Gagal";	
+	 $label_error = "Upload Berhasil";	
  }
 $smarty->assign ("LABEL_ERROR", $label_error);
 $smarty->assign ("TABLE_CAPTION", _CAPTION_TABLE_KAT);

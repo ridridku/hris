@@ -1,6 +1,6 @@
 <?PHP
 
-function print_header($nm_perwakilan,$bulan,$tahun) {
+function print_header($nm_perwakilan,$date_awal,$date_akhir){
 
 $content = <<<EOH
 <html xmlns:v="urn:schemas-microsoft-com:vml"
@@ -295,6 +295,14 @@ td
  
 EOH;
 
+if($nm_perwakilan!='')
+{    $label_perwakilan=$nm_perwakilan;}  else {$label_perwakilan='ALL CABANG';}
+$content .= "<tr height=21 style='height:15.75pt'>
+  <td colspan=11 height=21 class=xl36 style='height:15.75pt'>CABANG  : ".$label_perwakilan."</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ <td colspan=11 height=21 class=xl36 style='height:15.75pt'>Periode : ".$date_awal." S/D: ".$date_akhir."</td>
+ </tr>";
 
 
 
@@ -302,21 +310,18 @@ $content .= <<<EOH
 
  
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>t_rkp__no_mutasi</td>
-    <td class=xl27 width=15 style='width:30pt'>t_rkp__bln</td>
-    <td class=xl27 width=100 style='width:30pt'>t_rkp__thn</td>
-    <td class=xl27 width=100 style='width:30pt'>t_rkp__approval</td>
-    <td class=xl27 width=82 style='width:25pt'>t_rkp__hadir</td>
-    <td class=xl27 width=109 style='width:50pt'>t_rkp__sakit</td>
-    <td class=xl27 width=98 style='width:50pt'>t_rkp__izin</td> 
-    <td class=xl27 width=57 style='width:25pt'>t_rkp__alpa</td>
-    <td class=xl27 width=57 style='width:25pt'>t_rkp__dinas</td>
-    <td class=xl27 width=57 style='width:25pt'>t_rkp__cuti</td>
-    <td class=xl27 width=74 style='width:30pt'>t_rkp__keterangan</td>
-    <td class=xl27 width=57 style='width:25pt'>t_rkp__date_created</td>
-    <td class=xl27 width=57 style='width:25pt'>t_rkp__date_updated</td>
-    <td class=xl27 width=57 style='width:25pt'>t_rkp__user_created</td>
-    <td class=xl27 width=57 style='width:25pt'>t_rkp__user_updated</td>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>ID FINGER</td>
+    <td class=xl27 width=15 style='width:30pt'>NAMA</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=100 style='width:30pt'>STATUS</td>
+    <td class=xl27 width=82 style='width:25pt'>HADIR</td>
+    <td class=xl27 width=109 style='width:50pt'>SAKIT</td>
+    <td class=xl27 width=98 style='width:50pt'>IZIN</td> 
+    <td class=xl27 width=57 style='width:25pt'>ALPA</td>
+    <td class=xl27 width=57 style='width:25pt'>DINAS LUAR</td>
+    <td class=xl27 width=57 style='width:25pt'>CUTI</td>
+    <td class=xl27 width=74 style='width:30pt'>KETERANGAN</td>
+    
         
          
      
@@ -327,7 +332,7 @@ return $content;
 	
 }
 
-function print_content($cols1,$cols2,$cols3,$cols4,$cols5,$cols6,$cols7,$cols8,$cols9,$cols10,$cols11,$cols12,$cols13,$cols14,$cols15) {
+function print_content($cols1,$cols2,$cols3,$cols4,$cols5,$cols6,$cols7,$cols8,$cols9,$cols10,$cols11) {
 
 $content = " <tr height=18 style='height:13.5pt'>
   <td height=18 class=xl28 align=right style='height:13.5pt'>".$cols1."</td>
@@ -341,10 +346,7 @@ $content = " <tr height=18 style='height:13.5pt'>
   <td class=xl29 align=right >".$cols9."</td>
   <td class=xl29 align=right >".$cols10."</td>
   <td class=xl29 align=right >".$cols11."</td>
-    <td class=xl29 align=right >".$cols12."</td>
-    <td class=xl29 align=right >".$cols13."</td>
-    <td class=xl29 align=right >".$cols14."</td>
-    <td class=xl29 align=right >".$cols15."</td>
+    
 
  </tr>";
 
@@ -357,21 +359,8 @@ function print_footer() {
 $content = <<<EOH
  <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
-  <td width=74 style='width:34pt'></td>
-  <td width=74 style='width:290pt'></td>
-  <td width=74 style='width:41pt'></td>
-  <td width=74 style='width:41pt'></td>
-  <td width=74 style='width:41pt'></td>
-  <td width=74 style='width:41pt'></td>
-  <td width=74 style='width:41pt'></td>
-  <td width=74 style='width:41pt'></td>
-  <td width=74 style='width:41pt'></td>
-<td width=74 style='width:41pt'></td>
-<td width=74 style='width:41pt'></td>
-<td width=74 style='width:41pt'></td>
-<td width=74 style='width:41pt'></td>
-<td width=74 style='width:41pt'></td>
-        <td width=74 style='width:41pt'></td>
+    <td colspan=11 width=74 style='width:34pt'></td>
+  
 
  </tr>
  <![endif]>

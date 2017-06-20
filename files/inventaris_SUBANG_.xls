@@ -1,0 +1,1738 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+				
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>ALS</o:LastAuthor>
+  <o:LastPrinted>2008-01-12T03:10:37Z</o:LastPrinted>
+  <o:LastSaved>2008-01-21T04:47:07Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{mso-header-data:"&LSistem Informasi Kepegawaian TMW";
+	mso-footer-data:"&LTanggal \: &D&RHalaman &P \: &N";
+	margin:.77in .75in .62in .75in;
+	mso-header-margin:.32in;
+	mso-footer-margin:.27in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:#FFCC99;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl29
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:2.0pt double windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl34
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl36
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	background:white;
+	mso-pattern:auto none;}
+.xl37
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl38
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:auto none;}
+.xl39
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Data Karyawan</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:ShowPageBreakZoom/>
+     <x:PageBreakZoom>100</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>20</x:ActiveRow>
+       <x:ActiveCol>6</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>10005</x:WindowHeight>
+  <x:WindowWidth>10005</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+				
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=975 style='border-collapse:
+ collapse;table-layout:fixed;width:736pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'
+ <col class=xl24  width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ <col class=xl24 width=100 style='mso-width-source:userset;mso-width-alt:3816;
+ width:78pt'>
+ <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+  <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+   <col class=xl24 width=387 style='mso-width-source:userset;mso-width-alt:14153;
+ width:290pt'>
+ 
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=11 height=27 class=xl33 style='height:20.25pt;
+  width:652pt'><!--[if gte vml 1]><v:shape id="_x0000_s1027" style='position:absolute;
+   margin-left:0;margin-top:0;width:832.5pt;height:156.75pt;z-index:1;
+   visibility:hidden' coordsize="21600,21600" o:spt="100" o:preferrelative="t"
+   adj="0,,0" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas/>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t" selection="t"/>
+   <x:ClientData ObjectType="Shape">
+    <x:Anchor>
+     0, 0, 0, 0, 14, 7, 10, 55</x:Anchor>
+   </x:ClientData>
+  </v:shape><![endif]-->LAPORAN REKAP JAMINAN KARYAWAN  </td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=11 height=17 class=xl34 style='height:12.75pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=11 height=21 class=xl36 style='height:15.75pt'>CABANG  : SUBANG</td>
+ </tr> <tr height=18  style='height:13.5pt'>
+  <td colspan=11 height=18 class=xl25 style='height:13.5pt'>&nbsp;</td>
+
+ </tr>
+ 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+    <td height=21 class=xl26 width=54 style='height:15.75pt;width:20pt'>NO</td>
+    <td class=xl27 width=15 style='width:30pt'>FINGER PRINT</td>
+     <td class=xl27 width=15 style='width:30pt'>ID JAMINAN</td>
+    <td class=xl27 width=15 style='width:30pt'>NAMA</td>
+    <td class=xl27 width=100 style='width:30pt'>CABANG</td>
+    <td class=xl27 width=100 style='width:30pt'>DEPARTEMEN</td>
+    <td class=xl27 width=74 style='width:30pt'>JENIS JAMINAN</td>
+    <td class=xl27 width=82 style='width:25pt'>NO JAMINAN</td>
+    <td class=xl27 width=82 style='width:25pt'>TGL PENYERAHAN</td>
+    <td class=xl27 width=82 style='width:25pt'>TGL DIKEMBALIKAN</td>
+    <td class=xl27 width=82 style='width:25pt'>STATUS</td>
+
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>1</td>
+  <td class=xl29>342008</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Abbas Bhasuki</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>2</td>
+  <td class=xl29>344008</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ade Edi Suryadi</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>UMUM</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>3</td>
+  <td class=xl29>343066</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ade Heryanto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>4</td>
+  <td class=xl29>341003</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ade Saliman</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>5</td>
+  <td class=xl29>343030</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ade Suryaman </td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>6</td>
+  <td class=xl29>341155</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ade Yayan Sofyan</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>7</td>
+  <td class=xl29>344081</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Adi Puspito</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>8</td>
+  <td class=xl29>341024</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Aep  Saepulloh Nur Hakim</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>9</td>
+  <td class=xl29>343050</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Aep Saepudin</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>10</td>
+  <td class=xl29>341127</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Agung Ginanjar</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>11</td>
+  <td class=xl29>341040</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Agustian Permana</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>12</td>
+  <td class=xl29>343097</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Anggara</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>13</td>
+  <td class=xl29>342015</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ani Siti Munigar</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>14</td>
+  <td class=xl29>341052</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Arifin</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>15</td>
+  <td class=xl29>343025</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Asep Komarudin </td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>16</td>
+  <td class=xl29>341053</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Asep Koswara</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>17</td>
+  <td class=xl29>341131</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Asep Legy Munawar</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>18</td>
+  <td class=xl29>341010</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Asep Saepudin</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>19</td>
+  <td class=xl29>343088</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Asep Saepul Rizal</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>20</td>
+  <td class=xl29>343079</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Budi Sugiar</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>21</td>
+  <td class=xl29>341120</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Budi Susanto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>22</td>
+  <td class=xl29>345003</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Chandra Indra Permana</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>IT</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>23</td>
+  <td class=xl29>341051</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Cokro Miharja</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>24</td>
+  <td class=xl29>341093</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dani Heryanto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>25</td>
+  <td class=xl29>341014</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dani Juniansyah</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>26</td>
+  <td class=xl29>341015</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Danta Risdianto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>27</td>
+  <td class=xl29>343076</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dayat Budiman</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>28</td>
+  <td class=xl29>341017</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dede Hermawan</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>29</td>
+  <td class=xl29>343010</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dede Pendi Alinurdin</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>30</td>
+  <td class=xl29>343011</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dede Sulaeman</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>31</td>
+  <td class=xl29>341018</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dede Zaenudin</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>32</td>
+  <td class=xl29>341164</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Deden Sukriadi</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>33</td>
+  <td class=xl29>341050</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dedeng Hidayatulloh</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>34</td>
+  <td class=xl29>341019</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dedi Sugianto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>35</td>
+  <td class=xl29>341020</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dedi Supriatna</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>36</td>
+  <td class=xl29>341021</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Deni Supratmanto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>37</td>
+  <td class=xl29>343029</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Deny Supriyatna</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>38</td>
+  <td class=xl29>342028</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Dicky Nugraha</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>UMUM</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>39</td>
+  <td class=xl29>341049</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Edi Efendi</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>40</td>
+  <td class=xl29>342013</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Edi Junaedi</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>41</td>
+  <td class=xl29>341125</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Engkos Kosasih</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>42</td>
+  <td class=xl29>341087</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Erwin Adiana</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>43</td>
+  <td class=xl29>341153</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Fajar hermawan</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>44</td>
+  <td class=xl29>343014</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Fajar Oktaviana</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>45</td>
+  <td class=xl29>341048</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Fariz Muttaqin Putra</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>46</td>
+  <td class=xl29>341115</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Firman Wibisono</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>47</td>
+  <td class=xl29>342027</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ganjar Maola</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>48</td>
+  <td class=xl29>341042</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ginanjar Septian</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>49</td>
+  <td class=xl29>342004</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Haerudin</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>50</td>
+  <td class=xl29>341023</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Haerul Saleh</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>51</td>
+  <td class=xl29>341107</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Hasnul Rasyidin</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>52</td>
+  <td class=xl29>341121</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Heryana</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>53</td>
+  <td class=xl29>344025</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>HM Aliludin</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>UMUM</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>54</td>
+  <td class=xl29>342009</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Imas Haerunisa</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>55</td>
+  <td class=xl29>343075</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Indra Faisal</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>56</td>
+  <td class=xl29>343086</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ipan Sopian</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>57</td>
+  <td class=xl29>343074</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Iwan Darmawan</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>58</td>
+  <td class=xl29>303078</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Iwan Setiawan</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>59</td>
+  <td class=xl29>343016</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Johan Banihar</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>60</td>
+  <td class=xl29>343017</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Jumad Susanto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>61</td>
+  <td class=xl29>344006</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Kayat Sukendarsyah</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>62</td>
+  <td class=xl29>342031</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>M Ary Khairurrazikien</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>63</td>
+  <td class=xl29>344020</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Madlani</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>UMUM</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>64</td>
+  <td class=xl29>341028</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Malwi S</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>65</td>
+  <td class=xl29>341039</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Maman Abdurahman</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>66</td>
+  <td class=xl29>301138</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Mardy Karmiran</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>67</td>
+  <td class=xl29>344022</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Mila Citra Wati Dewi</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>68</td>
+  <td class=xl29>342010</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Muhamad Toha</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>UMUM</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>69</td>
+  <td class=xl29>341112</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Mulyadi</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>70</td>
+  <td class=xl29>342012</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Nana Novianto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>UMUM</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>71</td>
+  <td class=xl29>342030</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Nanang Supriyatna</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>72</td>
+  <td class=xl29>343081</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Nofi Tri Iryadhi</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>73</td>
+  <td class=xl29>342001</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Nono Suryono</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>74</td>
+  <td class=xl29>341030</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ono Warsono</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>75</td>
+  <td class=xl29>343047</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Racim Haryanto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>76</td>
+  <td class=xl29>341158</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Riki Julianto</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>77</td>
+  <td class=xl29>341058</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Risa Kurnia</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>IT</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>78</td>
+  <td class=xl29>341032</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Roni Yudha Sonjaya</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>79</td>
+  <td class=xl29>343067</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Rudi Hartono</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>80</td>
+  <td class=xl29>343068</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Rudi Yulianto Prabowo</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>81</td>
+  <td class=xl29>341066</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Rudiansyah</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>82</td>
+  <td class=xl29>343070</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Sahidin</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>83</td>
+  <td class=xl29>343411</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Sarif Abdulah Iman</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>84</td>
+  <td class=xl29>341033</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Suhendi </td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>85</td>
+  <td class=xl29>343036</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Sulaeman</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>86</td>
+  <td class=xl29>343021</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Sutisno</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>87</td>
+  <td class=xl29>344004</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Sutrisno</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>88</td>
+  <td class=xl29>343092</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Suwandi</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>89</td>
+  <td class=xl29>342019</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Thalita Tsamara Baeti</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>90</td>
+  <td class=xl29>342017</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Trio Saputro</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>91</td>
+  <td class=xl29>342016</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Triya Suhada</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>92</td>
+  <td class=xl29>341129</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Ucup Supriadi</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>93</td>
+  <td class=xl29>344013</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Umar Soleh</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>LOGISTIK</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>94</td>
+  <td class=xl29>341070</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Wawan Gunawan</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>95</td>
+  <td class=xl29>342014</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Winda Julianti</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>FINANCE & ACCOUNTING</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>96</td>
+  <td class=xl29>341159</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Winda Wati</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>97</td>
+  <td class=xl29>341088</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Yana Eka M</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>98</td>
+  <td class=xl29>341037</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Yudha Berlina</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>99</td>
+  <td class=xl29>341080</td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num>Yusuf Tojiri</td>
+  <td class=xl29 align=right>SUBANG</td>
+  <td class=xl29 align=right>SALES</td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>Sudah Dikembalikan</td>
+
+  
+ </tr> <tr height=18 style='height:13.5pt'>
+  <td class=xl28 align=right style='height:5.5pt'>176161531</td>
+  <td class=xl29></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right x:num></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+  <td class=xl29 align=right></td>
+   <td class=xl29 align=right></td>
+    <td class=xl29 align=right>JML PEG :99</td>
+
+  
+ </tr> <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+ <td colspan=11 width=80 clospan= style='width:41pt'></td></tr>
+ <![endif]>
+</table>
+
+
+</body>			
+</html>
+
+
